@@ -1,0 +1,140 @@
+{
+  "generated": "2026-10-14",
+  "overall": "PASS",
+  "passed": 22,
+  "failed": 0,
+  "checks": [
+    {
+      "id": "row_count",
+      "description": "Dataset has exactly 173 rows (CSV and rows_raw.jsonl)",
+      "status": "PASS",
+      "detail": "csv=173 jsonl=173"
+    },
+    {
+      "id": "unique_row_ids",
+      "description": "No duplicate row_ids; CSV/JSONL id sets identical",
+      "status": "PASS",
+      "detail": "unique=173"
+    },
+    {
+      "id": "drops_removed",
+      "description": "None of the 15 drop-list row_ids remain in dataset or rows_raw.jsonl",
+      "status": "PASS",
+      "detail": "leftover=none"
+    },
+    {
+      "id": "titles_corrected",
+      "description": "All 11 DOIs carry corrected paper_title in dataset, inventory and extraction_log; no old title remains",
+      "status": "PASS",
+      "detail": "violations=[] stale=[]"
+    },
+    {
+      "id": "titles_spotcheck",
+      "description": "Spot-check 3 corrected titles (polym11121990, c8ra10211b, nano8120997)",
+      "status": "PASS",
+      "detail": "10.3390/polym11121990; 10.1039/c8ra10211b; 10.3390/nano8120997"
+    },
+    {
+      "id": "loadings_corrected",
+      "description": "All 20 listed loadings: applied-with-corrected-value or dropped-row (3 expected skipped)",
+      "status": "PASS",
+      "detail": "applied=17 skipped=['a9d63e6e-014', 'a9d63e6e-015', 'a9d63e6e-016'] bad=[]"
+    },
+    {
+      "id": "loading_spotcheck_ETL70",
+      "description": "Spot-check: ETL-70 grade rows now 58.0 wt%",
+      "status": "PASS",
+      "detail": "rows=['a9d63e6e-019', 'a9d63e6e-020', 'a9d63e6e-021', 'a9d63e6e-024', 'a9d63e6e-025']"
+    },
+    {
+      "id": "k_range",
+      "description": "k range still 0.17–19.0 W/m·K",
+      "status": "PASS",
+      "detail": "0.17..19.0"
+    },
+    {
+      "id": "confidence_labels",
+      "description": "Only High/Medium labels; counts = pre-apply counts minus dropped rows",
+      "status": "PASS",
+      "detail": "got H=167/M=6, expected H=167/M=6"
+    },
+    {
+      "id": "medium_subset_uncertain",
+      "description": "Medium-confidence rows exactly covered by uncertain_measurements.csv",
+      "status": "PASS",
+      "detail": "medium=['2f8abcf1-046', '2f8abcf1-047', '4a11b03c-152', '4a11b03c-153', 'f02bb9ff-095', 'fdff050a-126'] unc=['2f8abcf1-046', '2f8abcf1-047', '4a11b03c-152', '4a11b03c-153', 'f02bb9ff-095', 'fdff050a-126']"
+    },
+    {
+      "id": "inventory_consistent",
+      "description": "paper_inventory per-DOI row counts and k min/max match dataset; DOI sets equal",
+      "status": "PASS",
+      "detail": "dois=63"
+    },
+    {
+      "id": "source_docs_unchanged",
+      "description": "All 104 protected source docs (fulltext/, extract_*.py, io_append.py, build_deliverables.py) unchanged",
+      "status": "PASS",
+      "detail": "changed=[]"
+    },
+    {
+      "id": "unusable_unchanged",
+      "description": "unusable_sources.csv matches Phase 1 baseline hash (48 entries)",
+      "status": "PASS",
+      "detail": "c0c1ec7c18fd4e97"
+    },
+    {
+      "id": "backups_exist",
+      "description": "Backups exist for the 6 mandated files (prefix + directory schemes)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "extraction_log",
+      "description": "extraction_log: 71 entries, prior 70 preserved (only sanctioned title fixes), PHASE2-REMEDIATION rows_appended=0 rows_removed=15",
+      "status": "PASS",
+      "detail": "entries=71 p2=1 prior_preserved=True prior_only_title_diffs=True"
+    },
+    {
+      "id": "schema_encoding",
+      "description": "All four CSVs: 31-col dataset schema unchanged, utf-8-sig BOM present",
+      "status": "PASS",
+      "detail": "cols=31"
+    },
+    {
+      "id": "jsonl_csv_consistent",
+      "description": "rows_raw.jsonl matches deliverable CSV row-for-row (all 31 fields)",
+      "status": "PASS",
+      "detail": "mismatch=[]"
+    },
+    {
+      "id": "non_numeric_repaired",
+      "description": "9 audited non-numeric cells now empty/parseable; originals relocated to notes",
+      "status": "PASS",
+      "detail": "bad=[]"
+    },
+    {
+      "id": "label_repairs",
+      "description": "Sample labels: 036 hybrid (Cu/BN), 147 none, 180 Al2O3/BN (not AlN); 095/152/153/188 contain \"hybrid\"; 151 dropped",
+      "status": "PASS",
+      "detail": "036=Cu/BN hybrid; 147=none; 180=Al2O3/BN hybrid; 095=BNNS hybrid; 152=h-BN/CNT hybrid; 153=h-BN/CNT hybrid; 188=h-BN/CNT hybrid"
+    },
+    {
+      "id": "docs_updated",
+      "description": "README + QC report counts updated (173 rows, 63 papers, 71 log entries, Medium count) and Phase 2 section present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "changes_record",
+      "description": "work/phase2_applied_changes.json matches approved plan counts (15/20/11/3/9, after=173)",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "id": "backups_match_baseline",
+      "description": "Directory backups byte-match Phase 1 baseline hashes (reversibility verified)",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

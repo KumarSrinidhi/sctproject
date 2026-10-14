@@ -1,0 +1,103 @@
+{
+  "total_rows": 188,
+  "total_papers": 63,
+  "by_matrix_top": [
+    [
+      "epoxy-based",
+      158
+    ],
+    [
+      "silicone",
+      14
+    ],
+    [
+      "polyimide",
+      9
+    ],
+    [
+      "PDMS",
+      2
+    ],
+    [
+      "PEG PCM",
+      2
+    ],
+    [
+      "polystyrene",
+      2
+    ],
+    [
+      "polyurethane",
+      1
+    ]
+  ],
+  "by_filler": [
+    [
+      "h-BN",
+      61
+    ],
+    [
+      "BN",
+      45
+    ],
+    [
+      "BNNS",
+      43
+    ],
+    [
+      "AlN",
+      22
+    ],
+    [
+      "Al2O3",
+      5
+    ],
+    [
+      "Al2O3/BN hybrid",
+      4
+    ],
+    [
+      "cBN",
+      3
+    ],
+    [
+      "Al2O3/BNNS hybrid",
+      2
+    ],
+    [
+      "AlN/BN hybrid",
+      2
+    ],
+    [
+      "none",
+      1
+    ]
+  ],
+  "by_confidence": [
+    [
+      "High",
+      179
+    ],
+    [
+      "Medium",
+      9
+    ]
+  ],
+  "by_value_source": [
+    [
+      "text",
+      131
+    ],
+    [
+      "table",
+      57
+    ]
+  ],
+  "k_min": 0.17,
+  "k_max": 19.0,
+  "k_median": 1.052,
+  "year_range": [
+    1997,
+    2026
+  ]
+}

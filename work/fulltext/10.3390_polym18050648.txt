@@ -1,0 +1,360 @@
+SOURCE doi=10.3390/polym18050648 FETCH=EPMC PMC12987129
+ 3589 polymers Polymers Polymers (Basel) Multidisciplinary Digital Publishing Institute (MDPI) PMC12987129 12987129 12987129 41829346 10.3390/polym18050648 Tailoring Flame Retardance and Thermal Conductivity of Epoxy/Benzoxazine Mixtures via Aluminum Trihydrate and Ceramic Hybridization Sung Kyung-Soo Conceptualization, Methodology, Formal analysis, Investigation, Funding acquisition Cho Hye-Won Formal analysis, Methodology Kwon Kyu-Hwan Data curation, Visualization Kim Namil Conceptualization, Formal analysis, Investigation, Data curation, Writing – review &amp; editing, Supervision, Funding acquisition Bifulco Aurelio Academic Editor 1 Department of Chemical Engineering, Hannam University, Daejeon 34054, Republic of Korea; kssung@protavic.co.kr (K.-S.S.); khkwon2100@naver.com (K.-H.K.) 2 Korea Research &amp; Development Center, Protavic Korea, Daejeon 34326, Republic of Korea; hwcho@protavic.co.kr * Correspondence: nikim@hnu.kr ; Tel.: +82-42-629-8839
+ 6 3 2026 18 5 648 648 14 3 2026 © 2026 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license . Abstract
+ A composite meeting the UL94 V-0 rating was produced by adding 30 wt% epoxy silane-modified aluminum trihydrate (EPATH) to a 60/40 epoxy/benzoxazine matrix. Various bimodal and trimodal composites containing 20–40 wt% of three types of ceramic fillers, i.e., aluminum oxide (Al 2 O 3 ), boron nitride (BN), and magnesium oxide (MgO), were prepared to simultaneously achieve flame-retardant and thermal conductive properties. The bimodal composites with 40 wt% of Al 2 O 3 and MgO exhibited thermal conductivities of 1.22 W/m∙K and 1.29 W/m∙K, respectively, which were superior to that of the composite containing the same amount of ATH (1.0 W/m∙K). In contrast, both the coefficient of thermal expansion (CTE) and shear strength decreased with increasing ceramic filler content. For agglomerated BN, the filler loading was constrained above 30 wt% because its high specific volume caused a significant rise in the viscosity. In the trimodal composites with a total filler content of 40 wt% of Al 2 O 3 and BN, a BN fraction of 7.5 wt% yielded the highest thermal conductivity of 1.64 W/m∙K and the lowest water absorption of 0.69%. When the trimodal composites were exposed to −55 °C and 150 °C for 1000 h, they exhibited a reduction in shear strength of less than 30% compared to their initial values.
+ Keywords: aluminum trihydrate, benzoxazine, composites, flame retardancy, thermal conductivity
+
+ status released display-pdf yes is-olf no is-manuscript no is-preprint no is-journal-matter no is-scanned no is-retracted no Received 2026 Feb 13; Revised 2026 Mar 3; Accepted 2026 Mar 5; Collection date 2026 Mar.
+
+ 1. Introduction
+ Power modules enable energy conversion, high-speed switching, and system management in electric vehicles, renewable energy systems, and high-density data centers. One of the critical issues faced is heat management, as significant heat generation can affect reliability, performance, and safety. Power semiconductor dies, such as silicon carbide (SiC) and gallium nitride (GaN), are increasingly operated at temperatures exceeding 200 °C due to their high-power densities [,,,]. Given that their performance is highly sensitive to temperature fluctuation, increasingly stringent requirements have been established for both the thermal conductivity and long-term thermal stability of packaging materials. Encapsulants used to protect the semiconductor chips and wire bond from environmental and mechanical damage play several critical roles to achieve successful operation and reliability of power electronics. They must possess a specific set of electrical, thermal, and mechanical properties to ensure the reliability and longevity of electrical components. For instance, a mismatch of coefficient of thermal expansion (CTE) between the encapsulants and the electrical components leads to device failure at high temperatures [,]. The thermal stress may be suppressed by lowering the thermal expansion mismatch between the matrix and the die. For the same weight percentage, smaller particles reduce the CTE more effectively than larger microparticles. Therefore, the criteria for choosing proper encapsulants are challenging because they should possess a combination of physical, chemical, and mechanical properties that are suitable for safe and reliable use in operating conditions.
+ The encapsulants for power module systems must satisfy the stringent requirements for thermal transport and stability, along with effective flame retardancy to prevent heat-induced mechanical failure and fire hazards [,,,]. The choice of soft silicone gels or hard epoxies is determined by the specific thermomechanical properties and operating environment. Most base polymeric resins possess inherent thermal insulation properties and high flammability, necessitating the use of additives to meet the rigorous safety and reliability standards. Thermal conductivities of conventional epoxy molding compounds (EMCs), typically comprising an epoxy matrix and fused silica (SiO 2 ), and silicone gel (potting) are reported to be approximately 0.8–1.0 W/m·K and 0.15–0.2 W/m∙K, respectively []. A simple and efficient strategy for enhancing thermal conductivity involves the incorporation of thermally conductive ceramic fillers such as aluminum oxide (Al 2 O 3 ), boron nitride (BN), and magnesium oxide (MgO), while maintaining electrical insulation [,,]. The degree of thermal improvement varies based on the intrinsic properties, size, and shape of the specific ceramic species. The widespread application of epoxy resins in the electronic packaging is often constrained by high flammability due to the combustible nature of the hydrocarbon structure. Aluminum trihydrate (ATH) is a prevalent flame retardant for polymeric resins due to its cost-effectiveness and the evolution of non-toxic gaseous byproducts [,,]. However, its application is limited by the high filler loadings, often exceeding 60 wt%, which inevitably leads to deterioration of mechanical properties and flow-related defects during the molding due to significantly increased viscosity. Benzoxazine resins are widely employed in industrial applications, such as coating, adhesives, and encapsulants, due to their outstanding dimensional stability derived from low cure shrinkage and high flame resistance [,,]. However, these resins suffer from high cure temperature and low crosslinking density caused by intermolecular hydrogen bonding. To overcome the drawbacks of epoxy resin, benzoxazine is often copolymerized. In our previous study, we focused on providing thermal resistance and flame-retardant characteristics to the matrix via epoxy–benzoxazine copolymerization. A 60/40 benzoxazine/epoxy blend was determined to be the optimal composition following a systematic evaluation of various mixing ratios []. The mixture revealed good thermomechanical properties and satisfied a UL-94 V0 rating at only 30 wt% ATH. This implies that the typical issues of reduced mechanical properties and poor processability associated with high ATH loading can be mitigated. Furthermore, the introduction of a silane coupling agent on the ATH surface improved its dispersibility and reduced the viscosity. However, the thermal conductivity of the composites remains unsatisfactory for high-power electronics, exhibiting below 1.0 W/m∙K even at 60 wt% ATH loading.
+ In the present study, three distinct ceramic fillers, including aluminum oxide (Al 2 O 3 ), boron nitride (BN), and magnesium oxide (MgO), were further added to a flame-retardant composite comprising a 60/40 epoxy/benzoxazine (Epoxy/BZ) blend and 30 wt% surface-modified ATH (EPATH) to supplement the thermal conductivity limitations of ATH. ATH with a similar particle size was also incorporated at the same load levels of ceramic fillers for comparison. Various bimodal and trimodal composites were fabricated by varying the filler composition and loading. Their properties, such as viscosity, coefficient of thermal expansion (CTE), viscoelastic properties, water absorption, shear strength, and thermal conductivity, were systematically compared to identify the optimal formulation that balances flame retardancy and thermal conductivity.
+
+ 2. Materials and Methods
+ 2.1. Materials and Sample Preparation
+ A blend of cycloaliphatic epoxy (CELLOXIDE 2021P, Daicel Chemical Industries, Tokyo, Japan) and benzoxazine (P-d type, Shikoku Chemicals, Kagawa, Japan) was prepared at a weight ratio of 60/40. The mixture was copolymerized with the addition of 50 wt% curing agent (RIKACID MH-T, New Japan Chemical, Osaka, Japan) and 5 wt% accelerator (2E4MZ-CN, Shikoku Chemicals, Kagawa, Japan). Aluminum trihydrate (SG25 LSA, Sibelco, Antwerpen, Belgium) with a mean particle size of 5.0 μm was incorporated into 60/40 epoxy/benzoxazine blend at a fixed loading of 30 wt%, after being surface-modified with an epoxy-containing silane coupling agent (KBM403, ShinEtsu Chemicals, Tokyo, Japan). For surface modification, 1.0 g of coupling agent was dissolved in 200 mL of ethanol, and then 100 g of ATH was slowly added to the solution. The mixtures were homogenized via mechanical stirring at room temperature and heated up to 60 °C for the reaction. The product was filtered and washed with deionized water several times. Silane-treated ATH was dried at 90 °C in a convection oven for 12 h []. Three different ceramic fillers were added as secondary reinforcement to enhance the thermal conductivity of epoxy/benzoxazine/EPATH composites. Spherical-shaped aluminum oxide (Al 2 O 3 , mean size: 75 µm) and magnesium oxide (MgO, mean size: 90 µm) were acquired from Denka Corp. Ltd. (Tokyo, Japan). Agglomerated boron nitride (BN) with a mean particle size of 130 µm was obtained from 3M Co., Ltd. (Kempten, Germany). For comparison, ATH (H-WF-100, Zibo Joyreach New Materials Co., Ltd., Zibo, China) with a mean particle size of 100 µm was selected and incorporated at the same loading levels as the ceramic fillers, and their properties were evaluated.
+ Each filler was uniformly dispersed within the epoxy/benzoxazine resin using a three-roll mill (EXAKT 80E, EXAKT, Norderstedt, Germany). The mixtures were then degassed in a vacuum bath at 100 rpm for 30 min to eliminate entrapped air. The prepared mixtures were stored in a freezer at −40 °C prior to use. The curing process was carried out at 175 °C for 60 min. Isothermal DSC analysis at 175 °C revealed that while the exothermic peak intensity was dependent on the filler loading, the curing process was finalized within 10 min for all compositions (). The compositions of the bimodal and trimodal epoxy/benzoxazine composites are listed in . In all formulations, the EPATH content was fixed at 30 wt%, whereas the content of additional ATH or ceramic fillers varied from 20 to 40 wt%. Composites containing 40 wt% BN could not be fabricated due to excessively high viscosity.
+
+[TABLE] Table 1 Composition of bimodal and trimodal epoxy/benzoxazine composites containing epoxy-silane-treated ATH (EPATH) and ceramic fillers.
+ 
+[ROW] Composition Resin Flame Retardant Ceramic Fillers 
+
+[ROW] Epoxy/BZ EPATH ATH Al 2 O 3 BN MgO 
+ 
+[ROW] | Bi-EPATH/ATH-1
+ | 50
+ | 30
+ | 20
+ | 
+
+ | 
+
+ | 
+
+[ROW] | Bi-EPATH/ATH-2
+ | 40
+ | 30
+ | 30
+ | 
+
+ | 
+
+ | 
+
+[ROW] | Bi-EPATH/ATH-3
+ | 30
+ | 30
+ | 40
+ | 
+
+ | 
+
+ | 
+
+[ROW] | Bi-EPATH/Al 2 O 3 -1
+ | 50
+ | 30
+ | 
+
+ | 20
+ | /
+ | /
+
+[ROW] | Bi-EPATH/Al 2 O 3 -2
+ | 40
+ | 30
+ | 
+
+ | 30
+ | /
+ | /
+
+[ROW] | Bi-EPATH/Al 2 O 3 -3
+ | 30
+ | 30
+ | 
+
+ | 40
+ | /
+ | /
+
+[ROW] | Bi-EPATH/BN-1
+ | 50
+ | 30
+ | 
+
+ | /
+ | 20
+ | /
+
+[ROW] | Bi-EPATH/BN-2
+ | 40
+ | 30
+ | 
+
+ | /
+ | 30
+ | /
+
+[ROW] | Bi-EPATH/MgO-1
+ | 50
+ | 30
+ | 
+
+ | /
+ | /
+ | 20
+
+[ROW] | Bi-EPATH/ MgO-2
+ | 40
+ | 30
+ | 
+
+ | /
+ | /
+ | 30
+
+[ROW] | Bi-EPATH/ MgO-3
+ | 30
+ | 30
+ | 
+
+ | /
+ | /
+ | 40
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-1
+ | 30
+ | 30
+ | 
+
+ | 37.5
+ | 2.5
+ | /
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-2
+ | 30
+ | 30
+ | 
+
+ | 35
+ | 5
+ | /
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-3
+ | 30
+ | 30
+ | 
+
+ | 32.5
+ | 7.5
+ | /
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-4
+ | 30
+ | 30
+ | 
+
+ | 30
+ | 10
+ | /
+
+ 
+[/TABLE]
+
+ 2.2. Characterization
+ The UL94 vertical flammability test for the epoxy/benzoxazine/EPATH composites was conducted using specimens with dimensions of 127 mm in length, 12.7 mm in width, and 3.2 mm in thickness. The viscosity of the bimodal and trimodal epoxy/benzoxazine mixture was measured using a Brookfield rotational viscometer (DV2T, Brookfield Engineering Labs, Middleboro, MA, USA) at room temperature by varying the spindle rotation speed from 0.2 rpm to 2 rpm. The adhesion property was investigated through a die shear test (Dage Series 4000, Aylesbury, UK). Adhesive paste was applied on a silver (Ag)-plated lead frame, and then a square-shaped silicon (Si) die with a dimension of 1.25 mm in length and 350 µm in thickness was attached. Following thermal curing, the shear force required to detach the Si die from the Ag lead frame was determined at a crosshead speed of 100 µm/s. The data presented are the average of five independent tests.
+ The coefficient of thermal expansion (CTE) of the composites was determined by measuring the dimensional change as a function of temperature using a thermomechanical analyzer (TMA, Model 2940, Eden Prairie, MN, USA). The samples were heated from 20 °C to 250 °C at a heating rate of 5 °C/min. The viscoelastic properties were evaluated in tension mode using a dynamic mechanical analyzer (Pyris Diamond DMA, Perkin Elmer, Waltham, MA, USA). The cured specimens (200 mm in length × 6 mm in width × 0.3 mm in thickness) were heated from 0 °C to 280 °C at a heating rate of 2 °C/min under a nitrogen atmosphere. The dynamic mechanical measurements were conducted at a fixed frequency of 1 Hz. Thermal conductivity measurement was carried out using the laser flash method (LFA447, Netzsch Instruments, Selb, Germany). Thermal conductivity was calculated from the thermal diffusivity, which was measured using square sheet specimens (10 mm in length and 1 mm in thickness). The data presented are the average of three independent tests. The crosslinking density ( ν c ) of the composites was calculated from the following equation []:
+ ν c = E e ′ 3 R T 
+where R is the gas constant, T is the absolute temperature at T g + 50 °C, and E e ′ is the equilibrium storage modulus at T g + 50 °C.
+ The water absorption of the trimodal composites was evaluated via the gravimetric method. The entire specimens were immersed in water at room temperature for 24 h. Upon removal, surface moisture was carefully wiped off, and the subsequent mass change was recorded to calculate water absorption. The mean water absorption value was calculated from five independent specimens. Thermal aging was conducted at −55 °C and 150 °C for a total duration of 1000 h. The specimens, Si die bonded to an Ag-plated lead frame, were stored in a freezer (DF9017, IlShinBioBase Co. Ltd., Dongducheon, Republic of Korea) and a convection oven (OF-02, Jeio Tech, Daejeon, Republic of Korea) maintained at their respective temperatures. Following the thermal aging, the specimens were removed from the chamber and stabilized at room temperature for 1 h prior to the measurements. The variation in shear strength was monitored every 200 h.
+
+ 3. Results
+ 3.1. Thermal and Mechanical Properties of Bimodal Epoxy/Benzoxazine Composites
+ Viscosity is a critical determinant of processability in microelectronic packaging, primarily influenced by the composition of the epoxy/benzoxazine (epoxy/BZ) matrix and the filler content. While high-temperature viscosity is typically characterized for large-scale applications, room-temperature viscosity is more commonly utilized for small-scale or one-component systems. Accordingly, the viscosity in this study was measured at ambient temperature. For syringe-dispensed encapsulants, the viscosity at 2–5 rpm represents the discharge flow, whereas the viscosity at 0.2–0.5 rpm indicates the resistance to flow when stopped. Dispensing occurs at an elevated temperature for bulk application or a two-component system. However, one-component systems or small-scale applications typically utilize viscosity values measured at ambient temperature. Viscosity measurements at elevated temperatures are not conducted in this study to evaluate the workability of the paste at ambient temperature. summarizes the viscosity at 0.2 and 2 rpm across the composite systems. It is noticed that all samples exhibit shear thinning behavior, characterized by a decrease in viscosity with increasing shear rate. For instance, the viscosity of the Bi-EPATH/ATH series ranges from 74,560 cPs to 194,700 cPs at 0.2 rpm and 14,290 cps to 119,300 cps at 2 rpm. Similar trends are observed across the other bimodal systems. The incorporation of BN led to a dramatic surge in viscosity, exceeding the instrument measurement limit at loadings above 30 wt%. This phenomenon is directly attributed to the exceptionally low bulk density of BN (0.5 g/cm 3 ). At equivalent weight fractions, BN occupies a larger volume compared to high-density ceramics such as Al 2 O 3 (~3.9 g/cm 3 ), MgO (~3.5 g/cm 3 ), or ATH (~2.4 g/cm 3 ). Because flow resistance is fundamentally governed by the volume fraction of dispersed solid particles, the large spatial volume of BN hinders flow, thereby increasing the viscosity. Furthermore, the thixotropic index (TI), calculated as the ratio of the viscosity at 0.2 rpm and 2 rpm, ranges from 1.2 to 5.2. Typical commercial potting compounds require a viscosity between 1000 and 120,000 cPs at 2 rpm and a TI of 1.0–2.0 to ensure processability.
+
+[TABLE] Table 2 Composition-dependent thermal and mechanical properties of epoxy/benzoxazine mixtures.
+ 
+[ROW] Composition Vicosity (cPs) CTE (ppm/°C) 
+
+[ROW] 0.2 rpm 2 rpm TI α 1 (0–100 °C) α 2 (190–250 °C) 
+ 
+[ROW] | Bi-EPATH/ATH-1
+ | 74,560
+ | 14,290
+ | 5.2
+ | 30.1
+ | 126
+
+[ROW] | Bi-EPATH/ATH-2
+ | 103,600
+ | 34,380
+ | 3.0
+ | 26.5
+ | 112
+
+[ROW] | Bi-EPATH/ATH-3
+ | 194,700
+ | 119,300
+ | 1.6
+ | 25.6
+ | 108
+
+[ROW] | Bi-EPATH/Al 2 O 3 -1
+ | 35,210
+ | 21,750
+ | 1.6
+ | 33.5
+ | 127
+
+[ROW] | Bi-EPATH/Al 2 O 3 -2
+ | 107,700
+ | 69,800
+ | 1.5
+ | 27.2
+ | 117
+
+[ROW] | Bi-EPATH/Al 2 O 3 -3
+ | 138,800
+ | 90,100
+ | 1.5
+ | 20.7
+ | 103
+
+[ROW] | Bi-EPATH/BN-1
+ | 372,800
+ | 167,600
+ | 2.2
+ | 24.5
+ | 125
+
+[ROW] | Bi-EPATH/BN-2
+ | Not Available
+ | Not Available
+ | Not Available.
+ | 21.4
+ | 118
+
+[ROW] | Bi-EPATH/MgO-1
+ | 82,850
+ | 16,570
+ | 5.0
+ | 28.7
+ | 131
+
+[ROW] | Bi-EPATH/ MgO-2
+ | 93,120
+ | 21,130
+ | 4.4
+ | 26.1
+ | 121
+
+[ROW] | Bi-EPATH/ MgO-3
+ | 111,800
+ | 95,480
+ | 1.2
+ | 21.1
+ | 107
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-1
+ | 138,800
+ | 99,420
+ | 1.4
+ | 26.0
+ | 109
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-2
+ | 281,700
+ | 154,900
+ | 1.8
+ | 25.5
+ | 104
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-3
+ | 602,700
+ | Not Available
+ | Not Available
+ | 26.4
+ | 104
+
+[ROW] | Tri-EPATH/Al 2 O 3 /BN-4
+ | 1,121,000
+ | Not Available.
+ | Not Available.
+ | 28.8
+ | 105
+
+ 
+[/TABLE]
+ While the addition of benzoxazine (BZ) to an epoxy resin effectively reduces the coefficient of thermal expansion (CTE), the unfilled 60/40 epoxy/BZ mixture still possesses high CTE values ( α 1 = 95 ppm/°C, α 2 = 162 ppm/°C) that are substantially larger than those of the microelectronic components they are designed to protect. The CTE of a standard silicon die typically ranges from 2.6 to 3.3 ppm/°C, which is roughly 30 to 50 times lower than that of the neat 60/40 epoxy/BZ blend []. Consequently, a high filler loading is required to minimize the CTE mismatch while maintaining processability. presents the CTE values below ( α 1 , 0–100 °C) and above ( α 2 , 190–250 °C) the glass transition temperature ( T g ) for various bimodal and trimodal composites. Irrespective of the filler type, the CTE consistently decreases as the filler content increases. In particular, the bimodal composites with BN exhibit the lowest CTE values at an equivalent filler loading. This reduction is driven by the inherently lower CTE of ATH or ceramic particles compared to the neat resin. Furthermore, in the trimodal composites with a fixed total filler loading of 40 wt%, the CTE exhibits a slight decrease as the ratio of BN to Al 2 O 3 increases.
+ shows the plots of storage modulus ( E ′ ) and loss factor (tan δ) curves of bimodal composites. The neat epoxy/benzoxazine mixture produced thin and brittle films that are unsuitable for mechanical characterization. The storage modulus of epoxy/BZ composite containing 30 wt% EPATH was approximately 8 GPa at 25 °C. As shown in a, the storage modulus increases to 14 GPa at 25 °C with the addition of 20 wt% Al 2 O 3 and reaches 18 GPa 30 wt%. At a constant loading of 30 wt%, the storage modulus of the composites decreases in the following order: BN &gt; Al 2 O 3 &gt; ATH &gt; MgO (b). The high modulus of the BN composites is attributed to the large volume occupied by the BN agglomerate. A vast polymer–filler interphase severely restricts polymer chain mobility and thereby stiffens the matrix. The addition of ATH or ceramics shifts the tan δ peak to a higher temperature due to the restricted mobility of the polymer chains. While these fillers elevate the T g by approximately 5 °C relative to the base composite containing 30 wt% EPATH, the T g remains largely invariant across filler loadings ranging from 20 to 40 wt%. Additionally, the amplitude of the tan δ peak is suppressed (). The addition of inherently rigid ceramic fillers reduces the free spaces between epoxy/benzoxazine macromolecules and restricts molecular chain rotation, thereby decreasing the overall energy dissipation capability of the composite system. The crosslinking density increases to 0.009, 0.016, 0.024 mol/cm 3 at Al 2 O 3 loadings of 20, 30, and 40 wt%, respectively. The relative stability of the T g within 2~3 °C suggests that the calculated density is predominantly influenced by the filler-induced increase in the rubbery plateau. This rise suggests that the rigid ceramic fillers effectively restrict the mobility of epoxy/benzoxazine chains. At a constant filler loading of 30 wt%, the crosslinking density varied depending on the filler type. Boron nitride (BN) exhibits the highest density of 0.029 mol/cm 3 , whereas magnesium oxide (MgO) shows the lowest value of 0.012 mol/cm 3 .
+
+[FIG] Figure 1 Storage modulus ( E ′ ) and loss factor (tan δ) curves of ( a ) bimodal composites containing different amounts of Al 2 O 3 and ( b ) different ceramic fillers with the same content.
+ illustrates the die shear strength of the bimodal composites containing different ceramic fillers at 20 wt% and 30 wt% loading. The adhesion between a silicon (Si) die and a silver (Ag)-plated lead frame was assessed not only at 23 °C but also at 180 °C and 250 °C, which correspond to typical wire bonding and solder reflow temperatures, respectively. An inverse relationship between filler content and shear strength is generally observed (). At an equivalent loading, the die shear strength is highly dependent on the type of ceramic filler. Furthermore, the shear strength undergoes a significant reduction at elevated temperatures. The behavior is attributed to the combined effects of the polymer matrix softening induced by the transition to a rubbery state near T g and the thermal stresses generated by the coefficient of thermal expansion (CTE) mismatch with the Si die (2.6 ppm/°C) and the Ag lead frame (19.1 ppm/°C). As confirmed in and , the composites exhibit a T g between 192 and 200 °C, with the CTE surpassing 100 ppm/°C above T g depending on the composition. At 250 °C, all epoxy/benzoxazine composites are well above their T g , residing entirely within the rubbery plateau region, as observed in . The Bi-EPATH/ATH (20 wt% ATH) exhibits die shear strength of 11.6 MPa at 23 °C, 5.3 MPa at 180 °C, and 1.1 MPa at 250 °C (a). A similar trend is observed upon increasing the ceramic filler loading to 30 wt% (b). Notably, the BN-filled composites display significantly lower shear strength at the same loading. At 20 wt% and 30 wt% loadings, the strength of the BN composites reached only about 56% and 54% of the Al 2 O 3 equivalents at 23 °C, respectively. This is primarily because the low bulk density of BN causes it to occupy a much larger volume fraction at the same weight percentage. Furthermore, the chemically inert surface of BN restricts its interaction with the resin matrix, which generates interfacial defects and undermines the macroscopic shear resistance.
+
+[FIG] Figure 2 Die shear strength of various bimodal composites with filler contents of ( a ) 20 wt% and ( b ) 30 wt%. The measurement was conducted between a silicon die and a silver-plated lead frame.
+ presents a comparison of mean thermal conductivity and the corresponding standard deviation of the neat epoxy/BZ matrix, the 30 wt% EPATH composite, and various bimodal composites with a total filler loading of 70 wt% obtained via the addition of 40 wt% ATH or ceramic fillers. Results for the bimodal BN system are not presented due to processing limitations at loading above 30 wt%. It is widely recognized that the BN-filled composites display anisotropic thermal conductivity owing to the preferential in-plane alignment [,,]. The neat epoxy/BZ matrix itself exhibits a low thermal conductivity of 0.18 W/m∙K. Upon the addition of 30 wt% EPATH, the thermal conductivity slightly increases to 0.31 W/m∙K, which remains insufficient for demanding thermal management applications. The bimodal composites exhibit thermal conductivity above 1.0 W/m∙K at 40 wt% regardless of the secondary filler type. Specifically, the incorporation of MgO and Al 2 O 3 yields higher values of 1.29 W/m∙K and 1.22 W/m∙K, compared to the ATH-filled composites (1.05 W/m∙K). Given the similarities in mean particle sizes and spherical shape, the disparity is directly ascribed to the superior intrinsic thermal conductivities of the ceramic particles.
+
+[FIG] Figure 3 Thermal conductivity of neat epoxy/BZ rein, a composite with 30 wt% EPATH, and bimodal composites consisting of 30 wt% EPATH and 40 wt% ceramic fillers.
+ 
+ 3.2. Thermal and Mechanical Properties of Trimodal Epoxy/Benzoxazine Composites
+ Considering overall properties of bimodal composites along with cost-effectiveness, Al 2 O 3 was chosen as the primary filler. Trimodal composites were subsequently prepared by progressively substituting Al 2 O 3 with BN in 2.5 wt% increments, while maintaining a constant total filler loading of 70 wt%. illustrates the storage modulus ( E ′ ) and tan δ profiles of the trimodal composites as a function of the Al 2 O 3 /BN ratios. As the BN content increases from 2.5 wt% (Tri-EPATH/Al 2 O 3 /BN-1) to 7.5 wt% (Tri-EPATH/Al 2 O 3 /BN-3), the storage modulus rises from 21.8 GPa to 24.5 GPa, while the peak intensity of the tan δ curve is systematically suppressed. The storage modulus of the bimodal composite with 40 wt% Al 2 O 3 is 20.5 GPa at 25 °C. Although the weight percentage of the trimodal composites remains constant, the higher volume fraction of BN imposes greater confinement on the polymer matrix, limiting molecular motion. Irrespective of the Al 2 O 3 /BN ratio, all trimodal composites exhibit a T g in the range of 193–195 °C. These restricted chains fail to dissipate applied stress efficiently, leading to the observed reduction in the tan δ peak. When BN content is further increased to 10 wt%, the storage modulus decreases to below 22.7 GPa. This deterioration is attributed to BN particle agglomeration, which initiates defect formation rather than providing mechanical reinforcement.
+
+[FIG] Figure 4 Storage modulus ( E ′ ) and tan δ curves of various trimodal composites with varying Al 2 O 3 to BN ratios at a fixed total filler loading of 40 wt%.
+ presents scanning electron microscopy (SEM) micrographs of the pristine ATH, Al 2 O 3 , BN, and MgO particles (a–d), and the fracture surfaces of the trimodal composites containing Al 2 O 3 and BN (e–h). Although the macroscopic shape of the particles is spherical, their size distributions are non-uniform. While the Al 2 O 3 and MgO powders form dense and monolithic clusters, the ATH and BN powders manifest as agglomerations of plate-like subunits. Especially, the constituent subunits of BN are more loosely bounded, making their boundaries identifiable (c). A cross-sectional analysis of the trimodal composites reveals that Al 2 O 3 (denoted by blue circles) retains its original spherical shape within the matrix, whereas the BN agglomerates are no longer identifiable, presumably due to their fragmentation of agglomerates during the compounding processing. In certain regions, cavities resulting from the pull-out of spherical particles can be observed. At BN loadings of 5 wt% BN or less, the composites exhibit a relatively smooth surface with the filler particles homogeneously dispersed throughout the polymer matrix (e,f). However, as the BN loading increases to 7.5 wt%, the agglomeration of irregular fragments (denoted by orange squares) occurs in localized regions, resulting in a rougher surface. This agglomeration phenomenon becomes even more pronounced when the BN content is further increased to 10 wt% (g,h).
+
+[FIG] Figure 5 SEM images of pure particles of ( a ) ATH, ( b ) Al 2 O 3 , ( c ) BN, ( d ) MgO, and the fracture surface of trimodal composites with various Al 2 O 3 /BN ratio of ( e ) Tri-EPATH/Al 2 O 3 /BN-1, ( f ) Tri-EPATH/Al 2 O 3 /BN-2, ( g ) Tri-EPATH/Al 2 O 3 /BN-3, and ( h ) Tri-EPATH/Al 2 O 3 /BN-4.
+ illustrates the temperature-dependent shear strength of the trimodal composites. Consistent with the behavior of the bimodal systems, the shear strength undergoes a significant reduction when the test temperature is elevated to 180 °C and 250 °C. With low BN content of 5 wt% or less, i.e., Tri-EPATH/Al 2 O 3 /BN-1 and Tri-EPATH/Al 2 O 3 /BN-2, no obvious differences in shear strength are observed across the entire temperature range. For comparison, it should be noted that the shear strength of the bimodal composites containing Al 2 O 3 and MgO at an equivalent total composition was 5.3 MPa and 4.8 MPa, respectively. When the BN content is increased to 7.5 wt% (Tri-EPATH/Al 2 O 3 /BN-3), the shear strength decreases to 7.2 MPa at 23 °C and 4. 2 MPa at 180 °C. At a higher loading of 10 wt% BN (Tri-EPATH/Al 2 O 3 /BN-4), the shear strength undergoes further reduction of 32% at 23 °C, 31% at 180 °C, and 10% at 250 °C, respectively, relative to the 2.5 wt% BN composites. As observed in the SEM analysis, the presence of the BN agglomerates at loadings above 7.5 wt% exerts a distinctly detrimental effect on the adhesion, causing premature mechanical failure under relatively low stress. Furthermore, the high viscosity exceeding 602,700 cPs, coupled with the chemically inert nature, hinders uniform wetting on the Ag substrate.
+
+[FIG] Figure 6 Die shear strength of various trimodal composites with varying Al 2 O 3 to BN ratios at a fixed total filler loading of 40 wt%. The measurement was conducted between a silicon die and a silver-plated lead frame.
+ The effect of the Al 2 O 3 to BN ratio on the thermal conductivity of the trimodal composites is examined. As shown in , while the bimodal composite containing 40 wt% Al 2 O 3 exhibits a thermal conductivity of 1.22 W/m∙K, a steady enhancement is observed upon the progressive substitution of Al 2 O 3 with BN. The thermal conductivity reaches a maximum value of 1.64 W/m∙K at 7.5 wt% BN. Microscopically, individual plate-like BN particles formed from the fragmentation of larger agglomerates during processing are dispersed uniformly within the matrix. These platelets connect the neighboring micro-spherical Al 2 O 3 particles that constitute the primary thermally conductive network, thereby constructing highly efficient phonon transmission pathways. The synergistic combination of micro-sized spherical Al 2 O 3 and plate-like BN optimizes the packing density and generates additional thermal conduction channels. However, at a higher BN loading of 10 wt%, the thermal conductivity drops to 1.31 W/m∙K. This reduction is attributed to the re-agglomeration of BN particles at high concentrations.
+
+[FIG] Figure 7 Thermal conductivity of various trimodal composites with varying Al 2 O 3 to BN ratios at a fixed total filler loading of 40 wt%.
+ 
+ 3.3. Water Absorption and Shear Strength of Trimodal Composites
+ The presence of absorbed moisture within microelectronic packages can induce softening of the encapsulant materials and delamination driven by vaporization during reflow soldering. Although blending hydrophilic epoxy with benzoxazine mitigates the water absorption, the filler plays a dominant role at high loading. By increasing the filler content, the volume of the moisture-vulnerable organic resin matrix is reduced. Water absorption profiles of the trimodal composites are plotted in . As the BN content increases from 2.5 wt% (Tri-EPATH/Al 2 O 3 /BN-1) to 7.5 wt% Tri-EPATH/Al 2 O 3 /BN-3), the total water absorption systematically decreases from 0.94% to 0.69%. For comparison, the bimodal composites containing 40 wt% Al 2 O 3 and MgO exhibit higher absorption values of 1.62% and 1.19%, respectively. The high water absorption of Al 2 O 3 originates from its free –OH groups on the surface, which chemically absorb water via hydrogen bonding, and physical adsorption to form Al 2 O 3 ∙H 2 O [,]. However, BN is characterized by a chemically inert surface that is devoid of –OH groups and difficult to wet with polymer resins [,]. This hydrophobic nature effectively repels moisture, leading to superior moisture resistance. Therefore, by increasing the BN content, the volume of the water-vulnerable Al 2 O 3 and organic resin is reduced.
+
+[FIG] Figure 8 Water absorption of trimodal composites with varying Al 2 O 3 to BN ratios at a fixed total filler loading of 40 wt%. The value was measured after immersion at room temperature for 24 h.
+ The low- and high-temperature endurability of the trimodal composites has been evaluated by sequential exposure at −55 °C and 150 °C, respectively. As shown in , the time-dependent behavior of shear strength differs depending on the composition. When aged at −55 °C, although the rate of decline varied across time intervals, the shear strength generally exhibited a downward trend. Following 1000 h of exposure, the average shear strength of Tri-EPATH/Al 2 O 3 /BN-1, Tri-EPATH/Al 2 O 3 /BN-2, Tri-EPATH/Al 2 O 3 /BN-3, and Tri-EPATH/Al 2 O 3 /BN-4 shows reductions of approximately 22.0%, 26.9%, 16.4%, and 5.5%, respectively, compared to their initial values before aging. Upon exposure to 150 °C, the behavior is dependent on their composition. While Tri-EPATH/Al 2 O 3 /BN-1 and Tri-EPATH/Al 2 O 3 /BN-2 show an overall decrease in average shear strength over time, the other specimens, i.e., Tri-EPATH/Al 2 O 3 /BN-3 and Tri-EPATH/Al 2 O 3 /BN-4, display an initial increase followed by a subsequent decline. After 1000 h, the average shear strength of Tri-EPATH/Al 2 O 3 /BN-1 to Tri-EPATH/Al 2 O 3 /BN-3 decreases by 27.7%, 17.8%, and 18.6%, respectively, whereas Tri-EPATH/Al 2 O 3 /BN-4 exhibits an increase of 6.4%. Tri-EPATH/Al 2 O 3 /BN-4 exhibits consistently high shear strength throughout the aging process, showing increases of 18.4%, 14.3%, 10.7%, and 8.9% after 200, 400, 600, and 800 h, respectively. This behavior is attributed to the additional crosslinking of the unreacted epoxy/benzoxazine component during continuous exposure to high temperature. According to DSC thermograms of the epoxy/benzoxazine mixture, the onset of the reaction occurs around 130 °C.
+
+[FIG] Figure 9 Variation of die shear strength of trimodal composites according to continuous exposure for 1000 h at ( a ) −55 °C and ( b ) 150 °C.
+ 
+
+ 4. Conclusions
+ This study investigated the simultaneous enhancement of flame retardancy and heat dissipation in bimodal and trimodal composites by incorporating Al 2 O 3 , MgO, or BN fillers into a UL94 V-0 epoxy/benzoxazine/EPATH (30 wt%) composite. The addition of the ceramic fillers improved both the storage modulus and thermal conductivity. The composites with 40 wt% Al 2 O 3 or MgO achieved thermal conductivities of 1.22 W/m∙K and 1.29 W/m∙K, respectively. The incorporation of BN was constrained above 30 wt% because its relatively large volume at the same weight fraction led to a substantial rise in viscosity, which limited its further incorporation. Furthermore, the chemical inertness resulted in superior water absorption and inferior shear strength compared to Al 2 O 3 and MgO composites. The trimodal composites incorporating both Al 2 O 3 and BN exhibited an enhanced thermal conductivity exceeding 1.6 W/m∙K, where the BN platelets connect the neighboring micro-spherical Al 2 O 3 particles, thereby constructing highly efficient phonon transmission pathways. However, at BN loadings above 7.5 wt%, the formation of particle agglomerates adversely affected the composite by reducing thermal conductivity and promoting water absorption. The trimodal composite showed a shear strength reduction of less than 30% even after 1000 h of exposure at −55 °C and 150 °C. These thermal conductive and flame-retardant composites are expected to play a critical role in ensuring the safety and reliability of encapsulants for high-power, highly integrated electronic devices.
+
+ Acknowledgments
+ This work was supported by the Development of Nano Convergence Innovative Products Project of the Ministry of Trade, Industry, and Energy (grant number 20014374) and the Korea Institute for Advancement of Technology (KIAT) grant funded by the Korea Government (MOTIE) (RS-2024-00409639, HRD Program for Industrial Innovation).
+
+ Supplementary Materials
+ The following supporting information can be downloaded at: https://www.mdpi.com/article/10.3390/polym18050648/s1 , Figure S1: Isothermal DSC thermograms of epoxy/benzoxazine mixture, epoxy/benzoxazine with 30 wt% EPATH, and epoxy/benzoxazine/EPATH with 40 wt% Al 2 O 3 composites measured at 175 °C.; Figure S2: Storage modulus ( E ′ ) and loss factor (tan δ) curves of bimodal composites containing different amount of (a) ATH and (b) MgO.; Figure S3: Die shear strength of bimodal composites containing different amount of (a) ATH, (b) Al 2 O 3 , and (c) MgO.
+ 
+ Author Contributions
+ Conceptualization, K.-S.S. and N.K.; Methodology, K.-S.S. and H.-W.C.; Formal Analysis, K.-S.S., H.-W.C. and N.K.; Investigation, K.-S.S. and N.K.; Data curation, K.-H.K. and N.K.; Writing—Review and Editing, N.K.; Visualization, K.-H.K.; Supervision, N.K.; Funding acquisition, K.-S.S. and N.K. All authors have read and agreed to the published version of the manuscript.
+
+ Institutional Review Board Statement
+ Not applicable.
+
+ Data Availability Statement
+ The original contributions presented in this study are included in the article/. Further inquiries can be directed to the corresponding author.
+
+ Conflicts of Interest
+ The authors declare no conflicts of interest.
+
+ Funding Statement
+ This research was funded by the Development of Nano Convergence Innovative Products Project of the Ministry of Trade, Industry, and Energy (grant number 20014374).
+
+ Footnotes
+ Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+ 
+ References
+ 1. Han G., Kim J., Park S., Bae W. Thermal Management of Wide-Bandgap Power Semiconductors: Strategies and Challenges in SiC and GaN Power Devices. Electronics. 2025;14:4193. doi: 10.3390/electronics14214193. 2. Asim M., Baig T., Siddiqui F.R., Khan S., Khan S.A., Babar H., Said Z., Zhao J., Abidi I.H. Advancements in Thermal Management Solutions for Electric Vehicle High-Power Electronics: Innovations, Cooling Methods, and Future Perspectives. J. Energy Storage. 2025;111:115344. doi: 10.1016/j.est.2025.115344. 3. Belguith M., Eloued S., Kadi M., Slama J.B.H., Hamouda M. A Review of Thermal Management Techniques Adopted for High-Power-Density GaN-Based Converters. Chips. 2026;5:4. doi: 10.3390/chips5010004. 4. Chen J., Luo T., Huang H., Zhang L., Chen W., Qin G., Fan J., Zeng H. Glass-based encapsulant enabling SiC power devices to long-term operate at 300 °C. Appl. Surf. Sci. 2025;680:161452. doi: 10.1016/j.apsusc.2024.161452. 5. Gao H., Liu P. High-Temperature Encapsulation Materials for Power Modules: Technology and Future Development Trends. IEEE Trans. Compon. Packag. Manuf. Technol. 2022;12:1867–1880. doi: 10.1109/TCPMT.2022.3225960. 6. Phua E.J.R., Liu M., Cho B., Liu Q., Amini S., Hu X., Gan C.L. Novel High Temperature Polymeric Encapsulation Material for Extreme Environment Electronics Packaging. Mater. Des. 2018;141:202–209. doi: 10.1016/j.matdes.2017.12.029. 7. Shi Z., Fu R., Agathopoulos S., Gu X., Zhao W. Thermal Conductivity and Fire Resistance of Epoxy Molding Compounds Filled with Si3N4 and Al(OH)3. Mater. Des. 2012;34:820–824. doi: 10.1016/j.matdes.2011.07.012. 8. Huang J., Zhu F., Hu W., Li X., Xie Q., Fei X., Liu J., Li X., Wei W. Phthalonitrile/Epoxy Copolymers Endowing Molding Compounds with High Tg, Low CTE, and Intrinsic Flame Retardancy. Ind. Eng. Chem. Res. 2024;63:9701–9714. doi: 10.1021/acs.iecr.4c00746. 9. Eyann L., Mukhtar M.A.F.M., Saad A.A., Jaafar M. Epoxy Molding Compounds for High-Performance Electronic Packaging: A Review on Recent Studies. Mater. Sci. Semicon. Process. 2025;197:109665. doi: 10.1016/j.mssp.2025.109665. 10. Pecht M., Deng Y. Electronic Device Encapsulation using Red Phosphorus Flame Retardants. Microelectron. Reliab. 2006;46:53–62. doi: 10.1016/j.microrel.2005.09.001. 11. Bae J.-W., Kim W., Hwang S., Choe Y.-S., Lee S.-H. A Low-Viscousity, Highly Thermally Conductive Epoxy Molding Compound (EMC) Macromol. Res. 2004;12:78–84. doi: 10.1007/BF03218998. 12. Long Y., Shi L., Wang Q., Qu H., Hao C., Lei Q. Effect of Branched Alumina on Thermal Conductivity of Epoxy Resin. J. Ind. Eng. Chem. 2023;120:209–215. doi: 10.1016/j.jiec.2022.12.027. 13. Donnay M., Tzavalas S., Logakis E. Boron Nitride Filled Epoxy with Improved Thermal Conductivity and Dielectric Breakdown Strength. Compos. Sci. Technol. 2015;110:152–158. doi: 10.1016/j.compscitech.2015.02.006. 14. Wereszczak A.A., Morrissey T.G., Volante C.N., Farris P.J., Jr., Groele R.J., Wiles R.H., Wang H. Thermally Conductive MgO-Filled Epoxy Molding Compounds. IEEE Trans. Compon. Packag. Manuf. Technol. 2013;3:1994–2005. doi: 10.1109/TCPMT.2013.2281212. 15. Khalili P., Tshai K.Y., Hui D., Kong I. Synergistic of Ammonium Polyphosphate and Alumina Trihydrate as Fire Retardants for Natural Fiber Reinforced Epoxy Composite. Compos. Part B Eng. 2017;114:101–110. doi: 10.1016/j.compositesb.2017.01.049. 16. Nasirzadeh M., Ebrahimi M., Zahedi S. Tailoring Self-Stratification in Epoxy-Acrylic/ATH Coatings: Effects of Resin Selection and Filler Incorporation Method. Colloid Surface A. 2025;722:137694. doi: 10.1016/j.colsurfa.2025.137694. 17. Qin Z., Li D., Li Q., Yang R. Effect of Nano-aluminum Hydroxide on Mechanical Properties, Flame Retardancy and Combustion Behavior of Intumescent Flame Retarded Polypropylene. Mater. Des. 2016;89:988–995. doi: 10.1016/j.matdes.2015.10.007. 18. Kao Y.-C., Lin J.-Y., Chen W.-C., Mohamed M.G., Huang C.-F., Chen J.-H., Kuo S.-W. High-Thermal Stable Epoxy Resin through Blending Nanoarchitectonics with Double-Decker-Shaped Polyhedral Silsesquioxane-Functionalized Benzoxazine Derivatives. Polymers. 2024;16:112. doi: 10.3390/polym16010112. 19. Rafiqul Bari G.A.K.M., Kim H. Composite Organic Encapsulate Film with Epoxy and Benzoxazine. Eur. Polym. J. 2019;116:453–462. doi: 10.1016/j.eurpolymj.2019.04.039. 20. Heyman E., Pearce M., Ishida H. Synthesis of Water-Soluble, Intrinsically Flame-Retardant Benzoxazine Based on Renewable, Natural Resources. ACS Sustain. Chem. Eng. 2025;13:4182–4191. doi: 10.1021/acssuschemeng.4c10471. 21. Sung K.-S., Kim N. Synergistic Improvement of Flame Retardancy and Mechanical Properties of Epoxy/Benzoxazine/Aluminum Trihydrate Adhesive Composites. Polymers. 2023;15:2452. doi: 10.3390/polym15112452. 22. Huang J., Fu P., Li W., Xiao L., Chen J., Nie X. Influence of Crosslinking Density on the Mechanical and Thermal Properties of Plant Oil-based Epoxy Resin. RCS Adv. 2022;12:23048. doi: 10.1039/D2RA04206A. 23. Han J., Du G., Gao W., Bai H. An Anisotropically High Thermal Conductive Boron Nitride/Epoxy Composite Based on Nacre-Mimetic 3D Network. Adv. Funct. Mater. 2019;29:1900412. doi: 10.1002/adfm.201900412. 24. Zhao N., Li J., Wang W., Gao W., Bai H. Isotropically Ultrahigh Thermal Conductive Polymer Composites by Assembling Anisotropic Boron Nitride Nanosheets into a Biaxially Oriented Network. ACS Nano. 2022;16:18959–18967. doi: 10.1021/acsnano.2c07862. 25. Yu C., Zhang J., Li Z., Tian W., Wang L., Luo J., Li Q., Fan X., Yao Y. Enhanced Through-plane Thermal Conductivity of Boron Nitride/Epoxy Composites. Compos. Part A Appl. Sci. Manuf. 2017;98:25–31. doi: 10.1016/j.compositesa.2017.03.012. 26. Al-Abadleh H.A., Grassian V.H. FT-IR Study of Water Adsorption on Aluminum Oxide Surfaces. Langmuir. 2003;19:341–347. doi: 10.1021/la026208a. 27. Hussain M., Niihara K. Control of Water Absorption and Its Effect on Interlaminar Shear Strength of CFRC with Al2O3 dispersion. Mater. Sci. Eng. A. 1999;272:264–268. doi: 10.1016/S0921-5093(99)00482-7. 28. Ahmad F., Zulkurnain E.S.B., Ullah S., Amir N. Effects of nano-sized boron nitride on thermal decomposition and water resistance behaviour of epoxy-based intumescent coating. J. Anal. Appl. Pyrolysis. 2018;132:171–183. doi: 10.1016/j.jaap.2018.03.002. 29. Ayoob R., Alhabill F., Andritsch T., Vaughan A. The Effect of Water Absorption on the Dielectric Properties of Polyethylene Hexagonal Boron Nitride Nanocomposites. J. Phys. D Appl. Phys. 2018;51:065307. doi: 10.1088/1361-6463/aaa306. 
+
+ Associated Data
+ Supplementary Materials
+ 
+ Data Availability Statement
+ The original contributions presented in this study are included in the article/. Further inquiries can be directed to the corresponding author.
+
+ 

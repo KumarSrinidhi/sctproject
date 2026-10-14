@@ -1,0 +1,2640 @@
+{
+ "summary": {
+  "verified": 110,
+  "incorrect_value": 17,
+  "duplicate_measurement": 19,
+  "incorrect_sample_mapping": 3,
+  "verified_with_warning": 37,
+  "out_of_scope": 1,
+  "not_verifiable": 1,
+  "total": 188,
+  "rows_with_findings": 78,
+  "notes": "Base statuses from automated evidence check (k-value string search + numeric-col scan); overrides/manual findings from context-level fulltext reading and Crossref title verification during Phase 1 audit. duplicate_measurement on BOTH sides of a pair; \"RECOMMEND DROP/KEEP\" text in findings names the row to drop."
+ },
+ "rows": [
+  {
+   "row_id": "b450fec2-001",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "0.8",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.8",
+   "filler_loading": "13.4",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80-30",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-002",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "2.21",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.21",
+   "filler_loading": "26.7",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80-50",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-003",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "3.4",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "3.4",
+   "filler_loading": "35.0",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80-60",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-004",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "0.77",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.77",
+   "filler_loading": "17.1",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/2-30",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-005",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "2.72",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.72",
+   "filler_loading": "32.4",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/2-50",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-006",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "4.02",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.02",
+   "filler_loading": "40.8",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/2-60",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-007",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "0.75",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.75",
+   "filler_loading": "17.1",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/6-30",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-008",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "2.71",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.71",
+   "filler_loading": "33.0",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/6-50",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b450fec2-009",
+   "doi": "10.3390/polym10030340",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym10030340.txt",
+   "k_original_value": "4.17",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.17",
+   "filler_loading": "42.1",
+   "source_location": "Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/6-60",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "a9d63e6e-010",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "1.28",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.28",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN2-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-011",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "1.49",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.49",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN2-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-012",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "2.36",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.36",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN30-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-013",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "4.44",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.44",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN30-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-014",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "3.34",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "3.34",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN30-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2",
+    "CROSS-PAPER duplicate of d831a829-135 (3.34 W/mK ETLBN30-70 ambient-pressure sample; identical in both papers (polym13060955 Table 2 vs polym13020286 Table 1 S1)). RECOMMEND DROP: a9d63e6e-014"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-015",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "4.77",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.77",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN30-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2",
+    "CROSS-PAPER duplicate of d831a829-136 (4.77 W/mK ETLBN30-70 175 kPa sample; identical in both papers (S2)). RECOMMEND DROP: a9d63e6e-015"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-016",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "7.67",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "7.67",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN30-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2",
+    "CROSS-PAPER duplicate of d831a829-138 (7.67 W/mK ETLBN30-70 2 MPa sample; identical in both papers (S4)). RECOMMEND DROP: a9d63e6e-016"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-017",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "3.02",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "3.02",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN180-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-018",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "3.8",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "3.8",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN180-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-019",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "4.22",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.22",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN180-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-020",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "5.38",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "5.38",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN180-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-021",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "8.52",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "8.52",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN180-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-022",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "3.42",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "3.42",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN120s-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-023",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "5.34",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "5.34",
+   "filler_loading": "34.2",
+   "source_location": "Table 2 sample ETLBN120s-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-024",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "5.55",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "5.55",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN120s-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-025",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "10.49",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "10.49",
+   "filler_loading": "44.7",
+   "source_location": "Table 2 sample ETLBN120s-70",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-026",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "1.87",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.87",
+   "filler_loading": "38.1",
+   "source_location": "Table 2 sample EJBN30-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-027",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "4.19",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.19",
+   "filler_loading": "38.1",
+   "source_location": "Table 2 sample EJBN30-60",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-028",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "2.37",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.37",
+   "filler_loading": "43.3",
+   "source_location": "Table 2 sample EJBN30-65",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "a9d63e6e-029",
+   "doi": "10.3390/polym13060955",
+   "verification_status": "incorrect_value",
+   "evidence_inspected": "fulltext:10.3390_polym13060955.txt",
+   "k_original_value": "4.32",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.32",
+   "filler_loading": "43.3",
+   "source_location": "Table 2 sample EJBN30-65",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_loading_wt_pct stores formulation parts (BN/(binder+BN) ratio, paper's own wording \"70% by weight of BN with respect to combined weight of epoxy and BN\"), not wt%% of total; paper states true composition 58.0 wt%% BN (=44.7 vol%%) for the -70 grade (and ~47 wt%% for -60); vol%% column is correct; k verified against source Table 2"
+   ]
+  },
+  {
+   "row_id": "34f029dc-030",
+   "doi": "10.3390/nano8040242",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano8040242.txt",
+   "k_original_value": "0.17",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.17",
+   "filler_loading": "0.5",
+   "source_location": "Table 1 row 0.5 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "34f029dc-031",
+   "doi": "10.3390/nano8040242",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano8040242.txt",
+   "k_original_value": "0.185",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.185",
+   "filler_loading": "1.0",
+   "source_location": "Table 1 row 1 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "34f029dc-032",
+   "doi": "10.3390/nano8040242",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano8040242.txt",
+   "k_original_value": "0.205",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.205",
+   "filler_loading": "2.0",
+   "source_location": "Table 1 row 2 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "4935af7a-033",
+   "doi": "10.3390/polym12020426",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12020426.txt",
+   "k_original_value": "1.13",
+   "k_original_unit": "W m-1 K-1",
+   "k_composite_W_mK": "1.13",
+   "filler_loading": "25.0",
+   "source_location": "Table 1 row this paper (25vol% BNNSs)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "4935af7a-034",
+   "doi": "10.3390/polym12020426",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12020426.txt",
+   "k_original_value": "2.14",
+   "k_original_unit": "W m-1 K-1",
+   "k_composite_W_mK": "2.14",
+   "filler_loading": "25.0",
+   "source_location": "Table 1 row this paper (25vol% AgNPs-BNNSs); confirmed in text",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "32b9d43b-035",
+   "doi": "10.1038/srep04779",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1038_srep04779.txt",
+   "k_original_value": "2.03",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.03",
+   "filler_loading": "40.0",
+   "source_location": "Table 1 our-work row (40 wt AlN@PI/Epoxy 2.03 W/mK); confirmed in text",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "fa7ce3db-036",
+   "doi": "10.3390/polym10121412",
+   "verification_status": "incorrect_sample_mapping",
+   "evidence_inspected": "fulltext:10.3390_polym10121412.txt",
+   "k_original_value": "4.32",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.32",
+   "filler_loading": "10.0",
+   "source_location": "Table 1 this-work row (10 wt % 4.32 W/mK); confirmed in text",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_material=\"BN\" mislabels a (CuNPs-CuNWs)@BN/PI hybrid film at 10 wt% (Cu-dominated hybrid, k=4.32); README requires hybrids to be labeled with \"hybrid\" in filler_material"
+   ]
+  },
+  {
+   "row_id": "587d9f0d-037",
+   "doi": "10.3390/polym13244417",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13244417.txt",
+   "k_original_value": "0.347",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.347",
+   "filler_loading": "20.0",
+   "source_location": "Table 4 this-research column, sample BN/Ag-0/EP",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "587d9f0d-038",
+   "doi": "10.3390/polym13244417",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13244417.txt",
+   "k_original_value": "0.352",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.352",
+   "filler_loading": "20.0",
+   "source_location": "Table 4 this-research column, sample BN/Ag-1/EP",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "587d9f0d-039",
+   "doi": "10.3390/polym13244417",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13244417.txt",
+   "k_original_value": "0.374",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.374",
+   "filler_loading": "20.0",
+   "source_location": "Table 4 this-research column, sample BN/Ag-4/EP",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "860b33d9-040",
+   "doi": "10.3390/polym12092072",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12092072.txt",
+   "k_original_value": "0.344",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.344",
+   "filler_loading": "10.0",
+   "source_location": "Table 1 row h-BN 10 wt.%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "860b33d9-041",
+   "doi": "10.3390/polym12092072",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12092072.txt",
+   "k_original_value": "0.357",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.357",
+   "filler_loading": "20.0",
+   "source_location": "Table 1 row h-BN 20 wt.%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "860b33d9-042",
+   "doi": "10.3390/polym12092072",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12092072.txt",
+   "k_original_value": "0.424",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.424",
+   "filler_loading": "30.0",
+   "source_location": "Table 1 row h-BN 30 wt.%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "860b33d9-043",
+   "doi": "10.3390/polym12092072",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12092072.txt",
+   "k_original_value": "0.418",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.418",
+   "filler_loading": "10.0",
+   "source_location": "Table 1 row FL-hBN (few-layered h-BN) 10 wt.%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "860b33d9-044",
+   "doi": "10.3390/polym12092072",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12092072.txt",
+   "k_original_value": "0.438",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.438",
+   "filler_loading": "20.0",
+   "source_location": "Table 1 row FL-hBN (few-layered h-BN) 20 wt.%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "860b33d9-045",
+   "doi": "10.3390/polym12092072",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12092072.txt",
+   "k_original_value": "0.515",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.515",
+   "filler_loading": "30.0",
+   "source_location": "Table 1 row FL-hBN (few-layered h-BN) 30 wt.%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "2f8abcf1-046",
+   "doi": "10.1021/acsanm.4c01646",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1021_acsanm.4c01646.txt",
+   "k_original_value": "3.43",
+   "k_original_unit": "Wm–1 K–1",
+   "k_composite_W_mK": "3.43",
+   "filler_loading": "30 wt% BNNS + 1 wt% BNNT",
+   "source_location": "Table 1 this-work row; text (neat k values; hybrid sentence)",
+   "k_found_in_text": true,
+   "findings": [
+    "loading value not found in fulltext",
+    "non-numeric value in numeric column filler_loading_original_value: '30 wt% BNNS + 1 wt% BNNT'",
+    "curing_agent \"Aradur 2954 (100:38)\" conflicts with source (LY564/Aradur2954 = 100:35; 100:38 is the LY5052/HY5052 ratio); notes typo \"LY654\" (paper: LY564)"
+   ]
+  },
+  {
+   "row_id": "2f8abcf1-047",
+   "doi": "10.1021/acsanm.4c01646",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1021_acsanm.4c01646.txt",
+   "k_original_value": "2.6",
+   "k_original_unit": "Wm–1 K–1",
+   "k_composite_W_mK": "2.6",
+   "filler_loading": "30 wt% BNNS + 1 wt% BNNT",
+   "source_location": "Table 1 this-work row; text (neat k values; hybrid sentence)",
+   "k_found_in_text": true,
+   "findings": [
+    "loading value not found in fulltext",
+    "non-numeric value in numeric column filler_loading_original_value: '30 wt% BNNS + 1 wt% BNNT'",
+    "curing_agent \"Aradur 2954 (100:38)\" conflicts with source (LY564/Aradur2954 = 100:35; 100:38 is the LY5052/HY5052 ratio); notes typo \"LY654\" (paper: LY564)"
+   ]
+  },
+  {
+   "row_id": "296786e5-048",
+   "doi": "10.3390/nano13010138",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano13010138.txt",
+   "k_original_value": "0.372",
+   "k_original_unit": "W∙m−1∙K−1",
+   "k_composite_W_mK": "0.372",
+   "filler_loading": "30.0",
+   "source_location": "Table 1 / text section Thermal Conductivity of PBE, sample neat BNNS composite (no plasma)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "296786e5-049",
+   "doi": "10.3390/nano13010138",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano13010138.txt",
+   "k_original_value": "0.446",
+   "k_original_unit": "W∙m−1∙K−1",
+   "k_composite_W_mK": "0.446",
+   "filler_loading": "30.0",
+   "source_location": "Table 1 / text section Thermal Conductivity of PBE, sample PBE-5",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "296786e5-050",
+   "doi": "10.3390/nano13010138",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano13010138.txt",
+   "k_original_value": "0.535",
+   "k_original_unit": "W∙m−1∙K−1",
+   "k_composite_W_mK": "0.535",
+   "filler_loading": "30.0",
+   "source_location": "Table 1 / text section Thermal Conductivity of PBE, sample PBE-7",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "7aa286cf-051",
+   "doi": "10.3390/polym11081359",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym11081359.txt",
+   "k_original_value": "0.478",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.478",
+   "filler_loading": "50.0",
+   "source_location": "Results text: unmodified RIP k=0.203; 50 wt% nano-h-BN max k=0.478",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-052",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.328",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.328",
+   "filler_loading": "4.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample BM@KH550/epoxy at 4 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-053",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.307",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.307",
+   "filler_loading": "7.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample R-BN/epoxy at 7 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-054",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.354",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.354",
+   "filler_loading": "7.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample BM-BN/epoxy at 7 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-055",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.391",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.391",
+   "filler_loading": "7.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample BM-KH550/epoxy at 7 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-056",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.431",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.431",
+   "filler_loading": "7.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample BM@KH550/epoxy at 7 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-057",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.325",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.325",
+   "filler_loading": "10.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample R-BN/epoxy at 10 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-058",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.433",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.433",
+   "filler_loading": "10.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample BM-BN/epoxy at 10 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-059",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.507",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.507",
+   "filler_loading": "10.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample BM-KH550/epoxy at 10 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "03b2d6cf-060",
+   "doi": "10.3390/polym15061415",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061415.txt",
+   "k_original_value": "0.615",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.615",
+   "filler_loading": "10.0",
+   "source_location": "Results text Thermal Conductivity Analysis section, sample BM@KH550/epoxy at 10 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "2f8abcf1-061",
+   "doi": "10.1021/acsanm.4c01646",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.1021_acsanm.4c01646.txt",
+   "k_original_value": "3.43",
+   "k_original_unit": "Wm-1 K-1",
+   "k_composite_W_mK": "3.43",
+   "filler_loading": "31.0",
+   "source_location": "Table 1 this-work row; text neat k values",
+   "k_found_in_text": true,
+   "findings": [
+    "loading value not found in fulltext",
+    "duplicate of row 2f8abcf1-046 (same doi/filler/loading/k)"
+   ]
+  },
+  {
+   "row_id": "2f8abcf1-062",
+   "doi": "10.1021/acsanm.4c01646",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.1021_acsanm.4c01646.txt",
+   "k_original_value": "2.6",
+   "k_original_unit": "Wm-1 K-1",
+   "k_composite_W_mK": "2.6",
+   "filler_loading": "31.0",
+   "source_location": "Table 1 this-work row; text neat k values",
+   "k_found_in_text": true,
+   "findings": [
+    "loading value not found in fulltext",
+    "duplicate of row 2f8abcf1-047 (same doi/filler/loading/k)"
+   ]
+  },
+  {
+   "row_id": "6cd2b119-063",
+   "doi": "10.1039/d1ra04602k",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra04602k.txt",
+   "k_original_value": "2.4",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "2.4",
+   "filler_loading": "40.0",
+   "source_location": "Results text: K= of CF/40 vol% BN/EP up to (values) for 2 mm CF",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "6cd2b119-064",
+   "doi": "10.1039/d1ra04602k",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra04602k.txt",
+   "k_original_value": "2.7",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "2.7",
+   "filler_loading": "40.0",
+   "source_location": "Results text: K= of CF/40 vol% BN/EP up to (values) for 5 mm CF",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "6cd2b119-065",
+   "doi": "10.1039/d1ra04602k",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra04602k.txt",
+   "k_original_value": "3.1",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "3.1",
+   "filler_loading": "40.0",
+   "source_location": "Results text: K= of CF/40 vol% BN/EP up to (values) for 10 mm CF",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "6a3c21ee-066",
+   "doi": "10.3390/polym13010147",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13010147.txt",
+   "k_original_value": "0.98",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.98",
+   "filler_loading": "60.0",
+   "source_location": "Results text Fig 6a discussion: m-Al2O3/EP 60 wt% = 0.98",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "6a3c21ee-067",
+   "doi": "10.3390/polym13010147",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13010147.txt",
+   "k_original_value": "0.7",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.7",
+   "filler_loading": "60.0",
+   "source_location": "Results text Fig 6a discussion: n-Al2O3/EP 60 wt% = 0.70",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "6a3c21ee-068",
+   "doi": "10.3390/polym13010147",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13010147.txt",
+   "k_original_value": "1.72",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "1.72",
+   "filler_loading": "80.0",
+   "source_location": "Abstract + text: 80 wt.% hybrid Al2O3-BN -> 1.72 W m-1 K-1",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ad883006-069",
+   "doi": "10.3390/nano14020205",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano14020205.txt",
+   "k_original_value": "0.2495",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.2495",
+   "filler_loading": "10.0",
+   "source_location": "Results text (Fig 4a discussion): BNNSs/epoxy 10 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ad883006-070",
+   "doi": "10.3390/nano14020205",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano14020205.txt",
+   "k_original_value": "0.5496",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.5496",
+   "filler_loading": "20.0",
+   "source_location": "Results text (Fig 4a discussion): BNNSs/epoxy 20 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ad883006-071",
+   "doi": "10.3390/nano14020205",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano14020205.txt",
+   "k_original_value": "0.8062",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.8062",
+   "filler_loading": "30.0",
+   "source_location": "Results text (Fig 4a discussion): BNNSs/epoxy 30 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ad883006-072",
+   "doi": "10.3390/nano14020205",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano14020205.txt",
+   "k_original_value": "0.9457",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.9457",
+   "filler_loading": "40.0",
+   "source_location": "Results text (Fig 4a discussion): BNNSs/epoxy 40 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ad883006-073",
+   "doi": "10.3390/nano14020205",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_nano14020205.txt",
+   "k_original_value": "0.3969",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.3969",
+   "filler_loading": "20 wt% BNNS + 2 wt% G-POSS",
+   "source_location": "Results text (Fig 4b discussion): BNNS/G-POSS/epoxy, G-POSS 2 wt%",
+   "k_found_in_text": true,
+   "findings": [
+    "non-numeric value in numeric column filler_loading_original_value: '20 wt% BNNS + 2 wt% G-POSS'"
+   ]
+  },
+  {
+   "row_id": "4036d33a-074",
+   "doi": "10.1039/d1ra00976a",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra00976a.txt",
+   "k_original_value": "0.279",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.279",
+   "filler_loading": "4.0",
+   "source_location": "Results text Fig 9a discussion: EP/h-BN 4 vol% = 0.279",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "4036d33a-075",
+   "doi": "10.1039/d1ra00976a",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra00976a.txt",
+   "k_original_value": "1.052",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "1.052",
+   "filler_loading": "16.0",
+   "source_location": "Results text Fig 9a: EP/h-BN 16 vol% = 1.052 (also Table literature-like row 1.052 at 60wt% microBN is ref [3], not this)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "4036d33a-076",
+   "doi": "10.1039/d1ra00976a",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra00976a.txt",
+   "k_original_value": "1.197",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "1.197",
+   "filler_loading": "16.0",
+   "source_location": "Text: h-BN-PGMA 16 vol% -> 1.197 (Table a this-work row lists 1.198, hot disk)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ad883006-077",
+   "doi": "10.3390/nano14020205",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_nano14020205.txt",
+   "k_original_value": "0.3969",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.3969",
+   "filler_loading": "22.0",
+   "source_location": "Results text (Fig 4b discussion): BNNS/G-POSS/epoxy",
+   "k_found_in_text": true,
+   "findings": [
+    "duplicate of row ad883006-073 (same doi/filler/loading/k)"
+   ]
+  },
+  {
+   "row_id": "9dd3de7c-078",
+   "doi": "10.3390/gels12070644",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_gels12070644.txt",
+   "k_original_value": "0.224",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "0.224",
+   "filler_loading": "1.0",
+   "source_location": "Results text k section: SG/P-BN_k values at RT",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "9dd3de7c-079",
+   "doi": "10.3390/gels12070644",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_gels12070644.txt",
+   "k_original_value": "0.237",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "0.237",
+   "filler_loading": "2.0",
+   "source_location": "Results text k section: SG/P-BN_k values at RT",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "9dd3de7c-080",
+   "doi": "10.3390/gels12070644",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_gels12070644.txt",
+   "k_original_value": "0.25",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "0.25",
+   "filler_loading": "3.0",
+   "source_location": "Results text k section: SG/P-BN_k values at RT",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "9dd3de7c-081",
+   "doi": "10.3390/gels12070644",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_gels12070644.txt",
+   "k_original_value": "0.246",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "0.246",
+   "filler_loading": "4.0",
+   "source_location": "Results text k section: SG/P-BN_k values at RT",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "c3e29272-082",
+   "doi": "10.3390/polym13050694",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13050694.txt",
+   "k_original_value": "4.49",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "4.49",
+   "filler_loading": "49.86",
+   "source_location": "Abstract + Results: 400-1:1 sample, 49.86 vol% -> 4.49 W m-1 K-1",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "699915b7-083",
+   "doi": "10.3390/polym13193253",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13193253.txt",
+   "k_original_value": "0.65",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.65",
+   "filler_loading": "30.0",
+   "source_location": "Abstract + text: Ep/PHO30/nBN30 -> 0.65 W/mK (Tg 215 C)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "8b987b69-084",
+   "doi": "10.1038/s41598-021-81925-x",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1038_s41598-021-81925-x.txt",
+   "k_original_value": "0.32",
+   "k_original_unit": "W/m K",
+   "k_composite_W_mK": "0.32",
+   "filler_loading": "8.0",
+   "source_location": "Results text Fig 3a discussion: A8 = 0.32 W/m K",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "8b987b69-085",
+   "doi": "10.1038/s41598-021-81925-x",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1038_s41598-021-81925-x.txt",
+   "k_original_value": "0.35",
+   "k_original_unit": "W/m K",
+   "k_composite_W_mK": "0.35",
+   "filler_loading": "10.0",
+   "source_location": "Results text Fig 3a discussion: A10 = 0.35 W/m K",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "8b987b69-086",
+   "doi": "10.1038/s41598-021-81925-x",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1038_s41598-021-81925-x.txt",
+   "k_original_value": "0.38",
+   "k_original_unit": "W/m K",
+   "k_composite_W_mK": "0.38",
+   "filler_loading": "8.0",
+   "source_location": "Results text: A6+B2 through-plane = 0.38 W/m K",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "8b987b69-087",
+   "doi": "10.1038/s41598-021-81925-x",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1038_s41598-021-81925-x.txt",
+   "k_original_value": "0.47",
+   "k_original_unit": "W/m K",
+   "k_composite_W_mK": "0.47",
+   "filler_loading": "10.0",
+   "source_location": "Results text: A6+B4 through-plane = 0.47 W/m K",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "12379735-088",
+   "doi": "10.1007/s42114-023-00804-3",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1007_s42114-023-00804-3.txt",
+   "k_original_value": "1.92",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "1.92",
+   "filler_loading": "8.6",
+   "source_location": "Abstract/conclusion: BNWK@Al2O3(1:7)/CA/EP 8.6 wt% -> 1.92",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "12379735-089",
+   "doi": "10.1007/s42114-023-00804-3",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1007_s42114-023-00804-3.txt",
+   "k_original_value": "1.04",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "1.04",
+   "filler_loading": "8.6",
+   "source_location": "Results Fig 5a text: ratio 1:1 -> 1.04 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "12379735-090",
+   "doi": "10.1007/s42114-023-00804-3",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1007_s42114-023-00804-3.txt",
+   "k_original_value": "0.87",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.87",
+   "filler_loading": "8.6",
+   "source_location": "Conclusion text: BNWK@Al2O3(1:7)/CA/EP (Blend) = 0.87 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "cb757023-091",
+   "doi": "10.1039/d3ra00428g",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d3ra00428g.txt",
+   "k_original_value": "1.88",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "1.88",
+   "filler_loading": "40.0",
+   "source_location": "Results text: TC reaches 1.88 W m-1 K-1 at 40 wt% Si11 in silicone rubber",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "38cf40e1-092",
+   "doi": "10.3390/polym12091954",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12091954.txt",
+   "k_original_value": "0.95",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.95",
+   "filler_loading": "33.0",
+   "source_location": "Abstract + Results: hybrid filler (a-BN:SAC305 = 1:0.5) reached 0.95 W/mK (33 wt%)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "38cf40e1-093",
+   "doi": "10.3390/polym12091954",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym12091954.txt",
+   "k_original_value": "0.6",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.6",
+   "filler_loading": "25.0",
+   "source_location": "Abstract: raw a-BN only 0.60 W/mK (25 wt%)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "0e680d76-094",
+   "doi": "10.1007/s40820-022-00863-z",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1007_s40820-022-00863-z.txt",
+   "k_original_value": "2.21",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "2.21",
+   "filler_loading": "16.69",
+   "source_location": "Abstract + Eq(1) discussion: CA/0.10 m-SiC/1.8 m-BN/EP Kc = 2.21 W m-1 K-1 at 16.69 wt%",
+   "k_found_in_text": true,
+   "findings": [
+    "non-numeric value in numeric column measurement_temperature_C: 'RT'"
+   ]
+  },
+  {
+   "row_id": "f02bb9ff-095",
+   "doi": "10.3390/nano12183235",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_nano12183235.txt",
+   "k_original_value": "0.9372",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.9372",
+   "filler_loading": "40.0",
+   "source_location": "Results text: BNNSs 40 wt% + 0.5% SiO2 + 0.5% MWCNTs@AGE -> 0.9372 W m-1 K-1",
+   "k_found_in_text": true,
+   "findings": [
+    "hybrid row (BNNS 40 + SiO2 0.5 + MWCNTs@AGE 0.5) labeled filler_material=\"BNNS\" without \"hybrid\"; wt_pct=41 total vs original=40 documented in notes; k=0.9372 verified"
+   ]
+  },
+  {
+   "row_id": "cf08c6ce-096",
+   "doi": "10.3390/polym13234074",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13234074.txt",
+   "k_original_value": "1.31",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "1.31",
+   "filler_loading": "20.0",
+   "source_location": "Results: AlN 20 wt% AlN/DG-ER sheet -> 1.31 W·m−1·K−1 (6.89x ER matrix)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "cf08c6ce-097",
+   "doi": "10.3390/polym13234074",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13234074.txt",
+   "k_original_value": "0.83",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.83",
+   "filler_loading": "20.0",
+   "source_location": "Results: AlN 20 wt% AlN/ER sheet -> 0.83 W·m−1·K−1",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "0e680d76-098",
+   "doi": "10.1007/s40820-022-00863-z",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.1007_s40820-022-00863-z.txt",
+   "k_original_value": "2.21",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "2.21",
+   "filler_loading": "16.69",
+   "source_location": "Abstract + Eq(1) discussion: CA/0.10 m-SiC/1.8 m-BN/EP Kc = 2.21 W m-1 K-1 at 16.69 wt%",
+   "k_found_in_text": true,
+   "findings": [
+    "duplicate of row 0e680d76-094 (same doi/filler/loading/k)"
+   ]
+  },
+  {
+   "row_id": "2cfda874-099",
+   "doi": "10.1186/1556-276x-9-643",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1186_1556-276x-9-643.txt",
+   "k_original_value": "5.24",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "5.24",
+   "filler_loading": "70.0",
+   "source_location": "Abstract + Results: silane-treated sample max 5.24 W/mK at 70 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "2cfda874-100",
+   "doi": "10.1186/1556-276x-9-643",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1186_1556-276x-9-643.txt",
+   "k_original_value": "4.61",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.61",
+   "filler_loading": "70.0",
+   "source_location": "Results: plasma-treated sample ~4.61 W/mK at 70 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "22387e18-101",
+   "doi": "10.2109/jcersj.105.197",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.2109_jcersj.105.197.txt",
+   "k_original_value": "7.15",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "7.15",
+   "filler_loading": "68.5",
+   "source_location": "Abstract + Results: AlN composite 7.15 W/mK at 68.5 vol%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "22387e18-102",
+   "doi": "10.2109/jcersj.105.197",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.2109_jcersj.105.197.txt",
+   "k_original_value": "2.68",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.68",
+   "filler_loading": "63.8",
+   "source_location": "Abstract + Results: alumina composite <2.68 W/mK at 63.8 vol%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "63431a49-103",
+   "doi": "10.3390/polym16223126",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym16223126.txt",
+   "k_original_value": "1.24",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.24",
+   "filler_loading": "30.0",
+   "source_location": "Abstract + Results: V-BP 30 wt% -> out-of-plane 1.24 W/mK",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "2a7dd240-104",
+   "doi": "10.3390/polym11040597",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym11040597.txt",
+   "k_original_value": "3.35",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "3.35",
+   "filler_loading": "3.63",
+   "source_location": "Results text: 3.63 vol% (BN50DAB1800) -> 3.35 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "2a7dd240-105",
+   "doi": "10.3390/polym11040597",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11040597.txt",
+   "k_original_value": "4.44",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "4.44",
+   "filler_loading": "5.32",
+   "source_location": "Results text: 5.32 vol% (BN75DAB1800) -> 4.44 W/(m·K); optimum 5.3 vol% BN, max 4.4",
+   "k_found_in_text": true,
+   "findings": [
+    "source_location wording largely absent from fulltext",
+    "k_direction=\"through-plane\" unsupported: paper states k at 5.32 vol% follows the in-plane model; also filler_loading_vol_pct=6.32 (text value) vs 6.33 in the paper table"
+   ]
+  },
+  {
+   "row_id": "2a7dd240-106",
+   "doi": "10.3390/polym11040597",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11040597.txt",
+   "k_original_value": "4.05",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "4.05",
+   "filler_loading": "6.32",
+   "source_location": "Results text: 6.32 vol% (BN90DAB1800) -> 4.05 W/(m·K) (drop attributed to BN reorientation)",
+   "k_found_in_text": true,
+   "findings": [
+    "source_location wording largely absent from fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-107",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "1.83",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.83",
+   "filler_loading": "1.0",
+   "source_location": "Fig 6a quoted in text: in-plane at 1 wt% = 1.83 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-108",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "2.22",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.22",
+   "filler_loading": "3.0",
+   "source_location": "Fig 6a quoted in text: in-plane at 3 wt% = 2.22 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-109",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "2.76",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.76",
+   "filler_loading": "5.0",
+   "source_location": "Fig 6a quoted in text: in-plane at 5 wt% = 2.76 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-110",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "2.95",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "2.95",
+   "filler_loading": "7.0",
+   "source_location": "Fig 6a quoted in text: in-plane at 7 wt% = 2.95 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-111",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "0.26",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.26",
+   "filler_loading": "1.0",
+   "source_location": "Fig 6b quoted in text: out-of-plane at 1 wt% = 0.26 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-112",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "0.33",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.33",
+   "filler_loading": "3.0",
+   "source_location": "Fig 6b quoted in text: out-of-plane at 3 wt% = 0.33 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-113",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "0.36",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.36",
+   "filler_loading": "5.0",
+   "source_location": "Fig 6b quoted in text: out-of-plane at 5 wt% = 0.36 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "8289e073-114",
+   "doi": "10.1038/s41598-018-19945-3",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1038_s41598-018-19945-3.txt",
+   "k_original_value": "0.44",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.44",
+   "filler_loading": "7.0",
+   "source_location": "Fig 6b quoted in text: out-of-plane at 7 wt% = 0.44 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b8850d43-115",
+   "doi": "10.3390/polym11121990",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11121990.txt",
+   "k_original_value": "0.933",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.933",
+   "filler_loading": "30.0",
+   "source_location": "Text: composites filled with only 30 vol% 1 um-AlN = 0.933 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b8850d43-116",
+   "doi": "10.3390/polym11121990",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11121990.txt",
+   "k_original_value": "1.401",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.401",
+   "filler_loading": "30 AlN + 2 Ni",
+   "source_location": "Fig 5 discussion: Ni 50 nm -> 1.401 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "non-numeric value in numeric column filler_loading_original_value: '30 AlN + 2 Ni'",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b8850d43-117",
+   "doi": "10.3390/polym11121990",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11121990.txt",
+   "k_original_value": "1.474",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.474",
+   "filler_loading": "30 AlN + 2 Ni",
+   "source_location": "Text + Fig 5: Ni 1 um -> 1.474 W/mK (max, +737% vs pure EP, +58% vs AlN-only)",
+   "k_found_in_text": true,
+   "findings": [
+    "non-numeric value in numeric column filler_loading_original_value: '30 AlN + 2 Ni'",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b8850d43-118",
+   "doi": "10.3390/polym11121990",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11121990.txt",
+   "k_original_value": "1.445",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.445",
+   "filler_loading": "30 AlN + 2 Ni",
+   "source_location": "Fig 5 discussion: Ni 10 um -> 1.445 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "non-numeric value in numeric column filler_loading_original_value: '30 AlN + 2 Ni'",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b8850d43-119",
+   "doi": "10.3390/polym11121990",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym11121990.txt",
+   "k_original_value": "1.401",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.401",
+   "filler_loading": "32.0",
+   "source_location": "Fig 5 discussion: Ni 50 nm -> 1.401 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "duplicate of row b8850d43-116 (same doi/filler/loading/k)",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b8850d43-120",
+   "doi": "10.3390/polym11121990",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym11121990.txt",
+   "k_original_value": "1.474",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.474",
+   "filler_loading": "32.0",
+   "source_location": "Text + Fig 5: Ni 1 um -> 1.474 W/mK (max, +737% vs pure EP, +58% vs AlN-only)",
+   "k_found_in_text": true,
+   "findings": [
+    "duplicate of row b8850d43-117 (same doi/filler/loading/k)",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b8850d43-121",
+   "doi": "10.3390/polym11121990",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym11121990.txt",
+   "k_original_value": "1.445",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.445",
+   "filler_loading": "32.0",
+   "source_location": "Fig 5 discussion: Ni 10 um -> 1.445 W/mK",
+   "k_found_in_text": true,
+   "findings": [
+    "duplicate of row b8850d43-118 (same doi/filler/loading/k)",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "e5a9c8bd-122",
+   "doi": "10.3390/mi16040413",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_mi16040413.txt",
+   "k_original_value": "0.352",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.352",
+   "filler_loading": "10.0",
+   "source_location": "Abstract + Results: pulsed EF 8 kV/mm -> 0.352 W/(m·K), 1.84x pure EP (0.191)",
+   "k_found_in_text": true,
+   "findings": [
+    "CROSS-PAPER duplicate of a8b6fee9-141 (0.352 W/mK pulsed 8 kV/mm value cited from previous work by same group (mi16040413) into mi16101126; violates README literature-comparison exclusion). RECOMMEND KEEP: e5a9c8bd-122"
+   ]
+  },
+  {
+   "row_id": "e5a9c8bd-123",
+   "doi": "10.3390/mi16040413",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_mi16040413.txt",
+   "k_original_value": "0.364",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.364",
+   "filler_loading": "10.0",
+   "source_location": "Abstract: DC 70 V/mm -> 0.364 W/(m·K), 1.91x pure EP",
+   "k_found_in_text": true,
+   "findings": [
+    "CROSS-PAPER duplicate of a8b6fee9-142 (0.364 W/mK DC 70 V/mm value cited from previous work by same group into mi16101126; violates README literature-comparison exclusion). RECOMMEND KEEP: e5a9c8bd-123"
+   ]
+  },
+  {
+   "row_id": "728b82b9-124",
+   "doi": "10.1039/d1ra08929c",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra08929c.txt",
+   "k_original_value": "1.22",
+   "k_original_unit": "W (m−1 K−1)",
+   "k_composite_W_mK": "1.22",
+   "filler_loading": "70.0",
+   "source_location": "Abstract: HCSG TC = 1.22 W (m-1 K-1); Fig 6b caption: MQ dosage effect at filler content 70 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "728b82b9-125",
+   "doi": "10.1039/d1ra08929c",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_d1ra08929c.txt",
+   "k_original_value": "0.91",
+   "k_original_unit": "W (m−1 K−1)",
+   "k_composite_W_mK": "0.91",
+   "filler_loading": "70.0",
+   "source_location": "Results Fig 6b discussion: same filler content (70 wt%), SBN/PDMS = 0.91 vs MQ@SBN 1.22",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "fdff050a-126",
+   "doi": "10.3390/nano11020373",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano11020373.txt",
+   "k_original_value": "0.215",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.215",
+   "filler_loading": "5.0",
+   "source_location": "Results: experimental value of 5 BN -> 0.215 W/mK (matrix 0.165 W/mK)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "d3a7a8bf-127",
+   "doi": "10.3390/polym13020248",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13020248.txt",
+   "k_original_value": "0.914",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.914",
+   "filler_loading": "20.0",
+   "source_location": "Abstract: 20 vol% BN@15AgNWs/PDMS = 0.914 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "3e56126a-128",
+   "doi": "10.3390/polym12092080",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym12092080.txt",
+   "k_original_value": "0.29",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "0.29",
+   "filler_loading": "10.0",
+   "source_location": "Conclusions: 0.1 wt% CNFs + 10 wt% h-BN/RIP -> 0.29 W/m.K",
+   "k_found_in_text": true,
+   "findings": [
+    "loading value not found in fulltext"
+   ]
+  },
+  {
+   "row_id": "caf49a8d-129",
+   "doi": "10.3390/polym14142950",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym14142950.txt",
+   "k_original_value": "0.22",
+   "k_original_unit": "W/(m K)",
+   "k_composite_W_mK": "0.22",
+   "filler_loading": "0.0",
+   "source_location": "Abstract + Table 1 (Epoxy TC=0.22)",
+   "k_found_in_text": true,
+   "findings": [
+    "neat-matrix row (filler_material=\"none\", 0 wt%) retained in a composite-measurement dataset; usable as baseline but out of the stated filler-composite scope"
+   ]
+  },
+  {
+   "row_id": "caf49a8d-130",
+   "doi": "10.3390/polym14142950",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym14142950.txt",
+   "k_original_value": "10.18",
+   "k_original_unit": "W/(m K)",
+   "k_composite_W_mK": "10.18",
+   "filler_loading": "75.0",
+   "source_location": "Abstract: TC = 10.18 W/(m K) at 75 wt% AlN-BN hybrid; Results 3.x",
+   "k_found_in_text": true,
+   "findings": [
+    "non-numeric value in numeric column filler_mean_size_um: '55 (AlN) / 35 (BN)'"
+   ]
+  },
+  {
+   "row_id": "caf49a8d-131",
+   "doi": "10.3390/polym14142950",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym14142950.txt",
+   "k_original_value": "6.83",
+   "k_original_unit": "W/(m K)",
+   "k_composite_W_mK": "6.83",
+   "filler_loading": "75.0",
+   "source_location": "Results: AlN/EP 75 wt% = 6.83 W/(m K) (49% lower than hybrid)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "caf49a8d-132",
+   "doi": "10.3390/polym14142950",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym14142950.txt",
+   "k_original_value": "3.51",
+   "k_original_unit": "W/(m K)",
+   "k_composite_W_mK": "3.51",
+   "filler_loading": "45.0",
+   "source_location": "Results (thermal shock section): TC of BN/EP decreasing from 3.51 W/(m K); BN max loading = 45 wt%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "caf49a8d-133",
+   "doi": "10.3390/polym14142950",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym14142950.txt",
+   "k_original_value": "1.43",
+   "k_original_unit": "W/(m K)",
+   "k_composite_W_mK": "1.43",
+   "filler_loading": "30.0",
+   "source_location": "Results: at 30 wt% TC of BN/EP is 1.43 W/(m K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "caf49a8d-134",
+   "doi": "10.3390/polym14142950",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym14142950.txt",
+   "k_original_value": "1.1",
+   "k_original_unit": "W/(m K)",
+   "k_composite_W_mK": "1.1",
+   "filler_loading": "30.0",
+   "source_location": "Results: AlN/EP at 30 wt% is 1.10 W/(m K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "d831a829-135",
+   "doi": "10.3390/polym13020286",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym13020286.txt",
+   "k_original_value": "3.34",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "3.34",
+   "filler_loading": "58.0",
+   "source_location": "Table 1: S1 ambient 3.34 W/mK, density 1.55",
+   "k_found_in_text": true,
+   "findings": [
+    "CROSS-PAPER duplicate of a9d63e6e-014 (3.34 W/mK ETLBN30-70 ambient-pressure sample; identical in both papers (polym13060955 Table 2 vs polym13020286 Table 1 S1)). RECOMMEND KEEP: d831a829-135"
+   ]
+  },
+  {
+   "row_id": "d831a829-136",
+   "doi": "10.3390/polym13020286",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym13020286.txt",
+   "k_original_value": "4.77",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "4.77",
+   "filler_loading": "58.0",
+   "source_location": "Table 1: S2 0.175 MPa 4.77 W/mK, density 1.56",
+   "k_found_in_text": true,
+   "findings": [
+    "CROSS-PAPER duplicate of a9d63e6e-015 (4.77 W/mK ETLBN30-70 175 kPa sample; identical in both papers (S2)). RECOMMEND KEEP: d831a829-136"
+   ]
+  },
+  {
+   "row_id": "d831a829-137",
+   "doi": "10.3390/polym13020286",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13020286.txt",
+   "k_original_value": "6.47",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "6.47",
+   "filler_loading": "58.0",
+   "source_location": "Table 1: S3 1.4 MPa 6.47 W/mK, density 1.63",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "d831a829-138",
+   "doi": "10.3390/polym13020286",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym13020286.txt",
+   "k_original_value": "7.67",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "7.67",
+   "filler_loading": "58.0",
+   "source_location": "Table 1: S4 2.0 MPa 7.67 W/mK, density 1.71",
+   "k_found_in_text": true,
+   "findings": [
+    "CROSS-PAPER duplicate of a9d63e6e-016 (7.67 W/mK ETLBN30-70 2 MPa sample; identical in both papers (S4)). RECOMMEND KEEP: d831a829-138"
+   ]
+  },
+  {
+   "row_id": "d831a829-139",
+   "doi": "10.3390/polym13020286",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym13020286.txt",
+   "k_original_value": "6.86",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "6.86",
+   "filler_loading": "58.0",
+   "source_location": "Table 1: S5 2.0 MPa 6.86 W/mK, density 1.73",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "a8b6fee9-140",
+   "doi": "10.3390/mi16101126",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_mi16101126.txt",
+   "k_original_value": "0.271",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.271",
+   "filler_loading": "10.0",
+   "source_location": "Results: random sample 0.271 W/(m·K); 74.91% below combined field sample",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "a8b6fee9-141",
+   "doi": "10.3390/mi16101126",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_mi16101126.txt",
+   "k_original_value": "0.352",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.352",
+   "filler_loading": "10.0",
+   "source_location": "Results: pulsed field at 8 kV/mm -> 0.352 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": [
+    "CROSS-PAPER duplicate of e5a9c8bd-122 (0.352 W/mK pulsed 8 kV/mm value cited from previous work by same group (mi16040413) into mi16101126; violates README literature-comparison exclusion). RECOMMEND DROP: a8b6fee9-141"
+   ]
+  },
+  {
+   "row_id": "a8b6fee9-142",
+   "doi": "10.3390/mi16101126",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_mi16101126.txt",
+   "k_original_value": "0.364",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.364",
+   "filler_loading": "10.0",
+   "source_location": "Results: DC field at 70 V/mm -> 0.364 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": [
+    "CROSS-PAPER duplicate of e5a9c8bd-123 (0.364 W/mK DC 70 V/mm value cited from previous work by same group into mi16101126; violates README literature-comparison exclusion). RECOMMEND DROP: a8b6fee9-142"
+   ]
+  },
+  {
+   "row_id": "a8b6fee9-143",
+   "doi": "10.3390/mi16101126",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_mi16101126.txt",
+   "k_original_value": "0.474",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.474",
+   "filler_loading": "10.0",
+   "source_location": "Abstract+Results: combined 30 V/mm DC + 8 kV/mm pulse -> 0.474 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "a8b6fee9-144",
+   "doi": "10.3390/mi16101126",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_mi16101126.txt",
+   "k_original_value": "0.464",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.464",
+   "filler_loading": "10.0",
+   "source_location": "Results: combined 70 V/mm DC + 4 kV/mm pulse -> 0.464 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "62815d2f-145",
+   "doi": "10.3390/nano12030446",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano12030446.txt",
+   "k_original_value": "1.47",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "1.47",
+   "filler_loading": "18.3",
+   "source_location": "Results: A-3D-LBN/epoxy up to 1.47 W/m·K; TGA volume fraction 18.3%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "62815d2f-146",
+   "doi": "10.3390/nano12030446",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano12030446.txt",
+   "k_original_value": "2.01",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "2.01",
+   "filler_loading": "15.4",
+   "source_location": "Abstract: larger-BN composite through-plane TC 2.01 W/m·K; TGA V-3D-LBN volume fraction 15.4%",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "3bde4e56-147",
+   "doi": "10.3390/ma18214860",
+   "verification_status": "incorrect_sample_mapping",
+   "evidence_inspected": "fulltext:10.3390_ma18214860.txt",
+   "k_original_value": "0.77",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.77",
+   "filler_loading": "0.0",
+   "source_location": "Abstract: from 0.77 W/mK in resin without additive",
+   "k_found_in_text": true,
+   "findings": [
+    "filler_material=\"cBN\" with 0.0 wt% loading: this is the neat-matrix baseline row mislabeled as a cBN-filled composite"
+   ]
+  },
+  {
+   "row_id": "3bde4e56-148",
+   "doi": "10.3390/ma18214860",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_ma18214860.txt",
+   "k_original_value": "1.0",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.0",
+   "filler_loading": "30.0",
+   "source_location": "Abstract: 1 and 1.5 W/mK in ones filled with 30 and 50 wt.% cBN",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "3bde4e56-149",
+   "doi": "10.3390/ma18214860",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_ma18214860.txt",
+   "k_original_value": "1.5",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "1.5",
+   "filler_loading": "50.0",
+   "source_location": "Abstract+Results 3.3: maximum 1.5 W/mK for 50 wt.% cBN (sample 6), 1.87x sample 1",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "caf49a8d-150",
+   "doi": "10.3390/polym14142950",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.3390_polym14142950.txt",
+   "k_original_value": "10.18",
+   "k_original_unit": "W/(m K)",
+   "k_composite_W_mK": "10.18",
+   "filler_loading": "75.0",
+   "source_location": "Abstract: TC = 10.18 W/(m K) at 75 wt% AlN-BN hybrid",
+   "k_found_in_text": true,
+   "findings": [
+    "duplicate of row caf49a8d-130 (same doi/filler/loading/k)"
+   ]
+  },
+  {
+   "row_id": "4a11b03c-151",
+   "doi": "10.3390/nano8120997",
+   "verification_status": "out_of_scope",
+   "evidence_inspected": "fulltext:10.3390_nano8120997.txt",
+   "k_original_value": "0.54",
+   "k_original_unit": "W/mk",
+   "k_composite_W_mK": "0.54",
+   "filler_loading": "40.0",
+   "source_location": "Abstract/Results: h-BN 40 wt% baseline (per previous work value quoted in this paper: resin matrix with h-BN 40 wt% = 0.54 W/mk)",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Synergistic Effects of Functional CNTs and h-BN on Enhanced Thermal Conductivity\"); DOI, k value and source_location verified correct against fulltext",
+    "k=0.54 is explicitly a literature value from \"our previous work\" quoted in this paper (not data measured in nano8120997); README policy excludes literature-comparison values. RECOMMEND DROP or re-source to original DOI"
+   ]
+  },
+  {
+   "row_id": "4a11b03c-152",
+   "doi": "10.3390/nano8120997",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_nano8120997.txt",
+   "k_original_value": "0.648",
+   "k_original_unit": "W/mk",
+   "k_composite_W_mK": "0.648",
+   "filler_loading": "40.0",
+   "source_location": "Abstract/Results: h-BN 40 wt% + 0.3 wt% f-CNTs",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Synergistic Effects of Functional CNTs and h-BN on Enhanced Thermal Conductivity\"); DOI, k value and source_location verified correct against fulltext",
+    "co-filler row (h-BN + 0.3 wt% f-CNT) labeled filler_material=\"h-BN\" without \"hybrid\", contrary to README hybrid-labeling convention; k verified against paper text"
+   ]
+  },
+  {
+   "row_id": "4a11b03c-153",
+   "doi": "10.3390/nano8120997",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_nano8120997.txt",
+   "k_original_value": "0.745",
+   "k_original_unit": "W/mk",
+   "k_composite_W_mK": "0.745",
+   "filler_loading": "40.0",
+   "source_location": "Abstract/Results: h-BN 40 wt% + 0.5 wt% f-CNTs; 1.38x BN-only, +38%",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Synergistic Effects of Functional CNTs and h-BN on Enhanced Thermal Conductivity\"); DOI, k value and source_location verified correct against fulltext",
+    "co-filler row (h-BN + 0.5 wt% f-CNT) labeled filler_material=\"h-BN\" without \"hybrid\", contrary to README hybrid-labeling convention; k verified against paper text"
+   ]
+  },
+  {
+   "row_id": "f16de70b-154",
+   "doi": "10.3390/ma10121442",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_ma10121442.txt",
+   "k_original_value": "7.5",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "7.5",
+   "filler_loading": "19.7",
+   "source_location": "Results: TC increased from 7.5 to 19.0 W/(m·K) with AlN skeleton fraction 19.7% to 27.9%; pure epoxy 0.2 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "f16de70b-155",
+   "doi": "10.3390/ma10121442",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_ma10121442.txt",
+   "k_original_value": "19.0",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "19.0",
+   "filler_loading": "27.9",
+   "source_location": "Results: TC increased from 7.5 to 19.0 W/(m·K) with AlN skeleton fraction 19.7% to 27.9%; pure epoxy 0.2 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "985861ee-156",
+   "doi": "10.3390/polym17111429",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym17111429.txt",
+   "k_original_value": "0.58",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.58",
+   "filler_loading": "30.0",
+   "source_location": "Results: 0&BN-EP = 0.58 W/(m·K) (2.52x epoxy)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "985861ee-157",
+   "doi": "10.3390/polym17111429",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym17111429.txt",
+   "k_original_value": "0.95",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.95",
+   "filler_loading": "30.0",
+   "source_location": "Results: 30 V/mm -> TC = 0.95 W/(m·K) (also optimum for mechanical/breakdown)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "985861ee-158",
+   "doi": "10.3390/polym17111429",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym17111429.txt",
+   "k_original_value": "1.03",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "1.03",
+   "filler_loading": "30.0",
+   "source_location": "Results: 60 V/mm -> 60&BN-EP = 1.03 W/(m·K) (1.77x no-field)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b639a9c9-159",
+   "doi": "10.3390/ma18215011",
+   "verification_status": "not_verifiable",
+   "evidence_inspected": "fulltext:10.3390_ma18215011.txt",
+   "k_original_value": "1.052",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "1.052",
+   "filler_loading": "30.0",
+   "source_location": "Results: 30 wt% AlN = 1.052 W/m·K (25.2% lower than BN-AlN)",
+   "k_found_in_text": true,
+   "findings": [
+    "k=1.052 has 0 occurrences in fulltext (also absent: 1.05). Value is consistent with 1.278/1.214=1.0527 derivation from the stated +21.4% vs AlN-only, or with digitization of Figure 5 (log says \"TC figures\" inspected); neither derivation nor digitization is disclosed in source_location (\"Results: 30 wt% AlN = 1.052 W/m.K\")"
+   ]
+  },
+  {
+   "row_id": "b639a9c9-160",
+   "doi": "10.3390/ma18215011",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_ma18215011.txt",
+   "k_original_value": "1.182",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "1.182",
+   "filler_loading": "25.0",
+   "source_location": "Abstract+Results: BN-AlN = 1.182 W/m·K at 25 wt%, BN:AlN 4:1, 48.7% over commercial adhesive 381-4DZ",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b639a9c9-161",
+   "doi": "10.3390/ma18215011",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_ma18215011.txt",
+   "k_original_value": "1.278",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "1.278",
+   "filler_loading": "30.0",
+   "source_location": "Results: at 30 wt%, BN-AlN = 1.278 W/m·K; 25.2% higher than AlN-only",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "b37967a4-162",
+   "doi": "10.3390/polym15061552",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym15061552.txt",
+   "k_original_value": "2.0",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "2.0",
+   "filler_loading": "55.0",
+   "source_location": "Results/Discussion: highest cast hBN/epoxy = 2.0 W/m·K at 55 wt% (~28 vol%) hBN (~20 um)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "a043c1fb-163",
+   "doi": "10.3390/ma14185251",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_ma14185251.txt",
+   "k_original_value": "0.68",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.68",
+   "filler_loading": "20.0",
+   "source_location": "Abstract+Results: TC = 0.68 W m−1 K−1 at 20 wt% filler (187% higher than epoxy)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "7239d84d-164",
+   "doi": "10.1039/c9ra00282k",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_c9ra00282k.txt",
+   "k_original_value": "0.44",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.44",
+   "filler_loading": "9.0",
+   "source_location": "Results: modified h-BN at 9 vol% -> 0.44 W m−1 K−1 (2.3x neat EP 0.195)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "7239d84d-165",
+   "doi": "10.1039/c9ra00282k",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_c9ra00282k.txt",
+   "k_original_value": "0.421",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.421",
+   "filler_loading": "6.5",
+   "source_location": "Results: 6.5 vol% BN (h-BN/c-BN = 2:1) -> 0.421 W m−1 K−1",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "7239d84d-166",
+   "doi": "10.1039/c9ra00282k",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_c9ra00282k.txt",
+   "k_original_value": "0.384",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.384",
+   "filler_loading": "7.5",
+   "source_location": "Results: 7.5 vol% (h-BN/c-BN = 3:4) -> unexpectedly low 0.384 W m−1 K−1",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ce78048d-167",
+   "doi": "10.3390/nano11081898",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano11081898.txt",
+   "k_original_value": "0.754",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.754",
+   "filler_loading": "35.6",
+   "source_location": "Abstract: 120-60 through-plane TC = 0.754 W/(m·K) (4.1x epoxy)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ce78048d-168",
+   "doi": "10.3390/nano11081898",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano11081898.txt",
+   "k_original_value": "1.88",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "1.88",
+   "filler_loading": "35.6",
+   "source_location": "Results: in-plane TC 1.88 W/(m·K) for 120-60 based on parallel models",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "ce78048d-169",
+   "doi": "10.3390/nano11081898",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_nano11081898.txt",
+   "k_original_value": "0.904",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.904",
+   "filler_loading": "35.6",
+   "source_location": "Results: TPTC of 130-60 reaches 0.904 W/(m·K)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "7b4cfa14-170",
+   "doi": "10.3390/polym11010138",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym11010138.txt",
+   "k_original_value": "1.21",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "1.21",
+   "filler_loading": "75.0",
+   "source_location": "Abstract+Results: highest TC 1.21 W/m·K at 75 wt% AlN (820% over neat)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "500bb71e-171",
+   "doi": "10.3390/polym14061252",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.3390_polym14061252.txt",
+   "k_original_value": "9.36",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "9.36",
+   "filler_loading": "60.0",
+   "source_location": "Abstract: SBPDAE/s-BN (60%) = 9.36 W/mK vertical",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "7501fc89-172",
+   "doi": "10.3390/polym12091913",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym12091913.txt",
+   "k_original_value": "0.58",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "0.58",
+   "filler_loading": "5.0",
+   "source_location": "Results: K-LCE/BN at 5.00 wt% = 0.58 W/m·K; pure K-LCE 0.34 W/m·K",
+   "k_found_in_text": true,
+   "findings": [
+    "source_location wording largely absent from fulltext"
+   ]
+  },
+  {
+   "row_id": "e9f5118b-173",
+   "doi": "10.1039/c8ra03875a",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1039_c8ra03875a.txt",
+   "k_original_value": "1.25",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "1.25",
+   "filler_loading": "50.0",
+   "source_location": "Abstract+Results: AT-BN_2 highest TC = 1.25 W m−1 K−1 (8.06x pristine ETDS 0.19)",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "6e55ab8a-174",
+   "doi": "10.3390/polym11081335",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11081335.txt",
+   "k_original_value": "1.66",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "1.66",
+   "filler_loading": "40.0",
+   "source_location": "Results: 40 wt% BNS -> 1.66 W·m−1·K−1 at 298 K (765% vs neat epoxy)",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Optimization of Boron Nitride Sphere Loading in Epoxy...\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "6e55ab8a-175",
+   "doi": "10.3390/polym11081335",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym11081335.txt",
+   "k_original_value": "0.84",
+   "k_original_unit": "W·m−1·K−1",
+   "k_composite_W_mK": "0.84",
+   "filler_loading": "40.0",
+   "source_location": "Results: 40 wt% BNS -> 0.84 W·m−1·K−1 at 77 K",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Optimization of Boron Nitride Sphere Loading in Epoxy...\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "3abe733b-176",
+   "doi": "10.3390/polym13030456",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym13030456.txt",
+   "k_original_value": "0.89",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.89",
+   "filler_loading": "30.0",
+   "source_location": "Results: P-c-BN/PEG at 30 wt% = 0.89 W/mK (286% vs neat PEG 0.23)",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Thermal Properties of Surface-Modified and Cross-Linked Boron Nitride/Polyethyle\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "3abe733b-177",
+   "doi": "10.3390/polym13030456",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym13030456.txt",
+   "k_original_value": "0.61",
+   "k_original_unit": "W/mK",
+   "k_composite_W_mK": "0.61",
+   "filler_loading": "30.0",
+   "source_location": "Results: PEG/BN at 30 wt% = 0.61 W/mK (pristine BN comparison)",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Thermal Properties of Surface-Modified and Cross-Linked Boron Nitride/Polyethyle\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "9eddc768-178",
+   "doi": "10.3390/nano15120936",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_nano15120936.txt",
+   "k_original_value": "0.58",
+   "k_original_unit": "Wm−1K−1",
+   "k_composite_W_mK": "0.58",
+   "filler_loading": "10.0",
+   "source_location": "Results: 10 wt% h-BN -> 0.58 Wm−1K−1 (field-assisted)",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Preparation and Properties of Magnetically Responsive Graphene/Boron Nitride/Iro\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "9eddc768-179",
+   "doi": "10.3390/nano15120936",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_nano15120936.txt",
+   "k_original_value": "1.44",
+   "k_original_unit": "Wm−1K−1",
+   "k_composite_W_mK": "1.44",
+   "filler_loading": "25.0",
+   "source_location": "Results: 25 wt% h-BN -> 1.44 Wm−1K−1 (field-assisted)",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Preparation and Properties of Magnetically Responsive Graphene/Boron Nitride/Iro\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "544349ee-180",
+   "doi": "10.3390/polym18050648",
+   "verification_status": "incorrect_sample_mapping",
+   "evidence_inspected": "fulltext:10.3390_polym18050648.txt",
+   "k_original_value": "1.64",
+   "k_original_unit": "W/m∙K",
+   "k_composite_W_mK": "1.64",
+   "filler_loading": "40.0",
+   "source_location": "Results: trimodal Al2O3+BN at 40 wt% total, 7.5 wt% BN fraction -> highest TC 1.64 W/m∙K",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Tailoring Flame Retardance and Thermal Conductivity of Epoxy/Benzoxazine Mixture\"); DOI, k value and source_location verified correct against fulltext",
+    "filler_material=\"AlN\" but source text and filler_material_original say trimodal Al2O3+BN (40 wt% total, 7.5 wt% BN) at k=1.64; \"AlN\" appears nowhere in the paper (0 hits)"
+   ]
+  },
+  {
+   "row_id": "44f4c094-181",
+   "doi": "10.1007/s40820-023-01163-w",
+   "verification_status": "verified",
+   "evidence_inspected": "fulltext:10.1007_s40820-023-01163-w.txt",
+   "k_original_value": "4.29",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "4.29",
+   "filler_loading": "50.0",
+   "source_location": "Abstract+Results: F-CB/CEP coating TC = 4.29 W m−1 K−1 at 50 wt% BN",
+   "k_found_in_text": true,
+   "findings": []
+  },
+  {
+   "row_id": "bf4f3fd7-182",
+   "doi": "10.1039/c8ra10211b",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1039_c8ra10211b.txt",
+   "k_original_value": "0.6",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.6",
+   "filler_loading": "30-4",
+   "source_location": "Results: 3D BN/PA66-30-4 composite -> 0.6 W m−1 K−1 (5x neat epoxy)",
+   "k_found_in_text": true,
+   "findings": [
+    "non-numeric value in numeric column filler_loading_original_value: '30-4'",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Improved dielectric stability of epoxy composites with ultralow boron nitride lo\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "bf4f3fd7-183",
+   "doi": "10.1039/c8ra10211b",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.1039_c8ra10211b.txt",
+   "k_original_value": "0.2",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.2",
+   "filler_loading": "4.0",
+   "source_location": "Results: random BN/EP-4 -> 0.2 W m−1 K−1",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Improved dielectric stability of epoxy composites with ultralow boron nitride lo\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "0ab9ce56-184",
+   "doi": "10.3390/ijms24098221",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_ijms24098221.txt",
+   "k_original_value": "0.653",
+   "k_original_unit": "W/(m·K)",
+   "k_composite_W_mK": "0.653",
+   "filler_loading": "70.0",
+   "source_location": "Results: BN70/PU unordered -> 0.653 W/(m·K) (281.87% vs pure PU 0.170)",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Boron Nitride/Polyurethane Composites with Good Thermal Conductivity and Flexibi\"); DOI, k value and source_location verified correct against fulltext",
+    "paper text internally inconsistent: one passage attributes 0.653 W/(m.K) to BN60/PU unordered, another to BN70/PU (0.545 vs 0.653 with +218.71%/+281.87% confirms 0.653=BN70); row follows BN70 attribution"
+   ]
+  },
+  {
+   "row_id": "bf4f3fd7-185",
+   "doi": "10.1039/c8ra10211b",
+   "verification_status": "duplicate_measurement",
+   "evidence_inspected": "fulltext:10.1039_c8ra10211b.txt",
+   "k_original_value": "0.6",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "0.6",
+   "filler_loading": "30.0",
+   "source_location": "Results: 3D BN/PA66-30-4 composite -> 0.6 W m−1 K−1 (5x neat epoxy)",
+   "k_found_in_text": true,
+   "findings": [
+    "duplicate of row bf4f3fd7-182 (same doi/filler/loading/k)",
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Improved dielectric stability of epoxy composites with ultralow boron nitride lo\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b552a656-186",
+   "doi": "10.3390/polym16081169",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym16081169.txt",
+   "k_original_value": "1.6",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "1.6",
+   "filler_loading": "10.0",
+   "source_location": "Results: PS/BN-C5 five molding cycles 140C 10 MPa -> in-plane 1.6 W/m·K",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhancing Thermal Conductivity in Polymer Composites through Molding-Assisted Or\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "b552a656-187",
+   "doi": "10.3390/polym16081169",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym16081169.txt",
+   "k_original_value": "0.22",
+   "k_original_unit": "W/m·K",
+   "k_composite_W_mK": "0.22",
+   "filler_loading": "10.0",
+   "source_location": "Results: control PS/BN (no molding optimization) -> 0.22 W/m·K",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Enhancing Thermal Conductivity in Polymer Composites through Molding-Assisted Or\"); DOI, k value and source_location verified correct against fulltext"
+   ]
+  },
+  {
+   "row_id": "031e3932-188",
+   "doi": "10.3390/polym17111507",
+   "verification_status": "verified_with_warning",
+   "evidence_inspected": "fulltext:10.3390_polym17111507.txt",
+   "k_original_value": "1.1",
+   "k_original_unit": "W m−1 K−1",
+   "k_composite_W_mK": "1.1",
+   "filler_loading": "60.0",
+   "source_location": "Results: 60 wt.% h-BN + 2 wt.% CNTs -> λ = 1.10 W m−1 K−1",
+   "k_found_in_text": true,
+   "findings": [
+    "paper_title in dataset is NOT the Crossref title of this DOI (actual: \"Preparation of Phenolic Epoxy-Based Electronic Packaging Materials with High The\"); DOI, k value and source_location verified correct against fulltext",
+    "co-filler row (60 wt% h-BN + 2 wt% CNT) labeled filler_material=\"BN\" without \"hybrid\", contrary to README hybrid-labeling convention; k=1.10 verified against paper text"
+   ]
+  }
+ ]
+}

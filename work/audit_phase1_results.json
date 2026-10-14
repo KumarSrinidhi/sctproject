@@ -1,0 +1,133 @@
+{
+  "audit": {
+    "name": "ARGUS thermal-conductivity dataset Phase 1 zero-trust audit",
+    "date": "2026-10-14",
+    "mode": "READ-ONLY - no existing artifact was modified; only NEW files created (work/audit_*.py, work/audit_phase1_rows.json, work/audit_phase1_results.json, audit_phase1_report.md)",
+    "target_root": "C:/Users/Ivermectin/Desktop/sctproject",
+    "version_control": "NOT a git repository (git rev-parse exit 128) - no VCS protection; byte-preservation verified by sha256 before/after",
+    "environment": {
+      "os": "win32",
+      "python": "3.13.13",
+      "shell": "powershell (cp1252 console; PYTHONIOENCODING=utf-8 required for all runs)"
+    }
+  },
+
+  "deliverables": {
+    "thermal_conductivity_dataset.csv": {"sha256_16": "78999ab6f289b68d", "bytes": 120546},
+    "paper_inventory.csv": {"sha256_16": "6d6ceca2efe18ec9", "bytes": 14949},
+    "extraction_log.csv": {"sha256_16": "bd459be54b86bd3e", "bytes": 27225},
+    "uncertain_measurements.csv": {"sha256_16": "cc8ab3b308051a03", "bytes": 6980},
+    "unusable_sources.csv": {"sha256_16": "c0c1ec7c18fd4e97", "bytes": 3153},
+    "quality_control_report.md": {"sha256_16": "6cb2e76643e7f981", "bytes": 4281},
+    "README.md": {"sha256_16": "05c04bc3f6e24214", "bytes": 4760},
+    "note": "hashes recorded at end of audit; files were never opened for writing by the audit"
+  },
+
+  "claim_verification": {
+    "total_rows": {"claimed": 188, "actual": 188, "status": "match"},
+    "columns": {"claimed": 31, "actual": 31, "status": "match", "note": "2 columns 100% empty: filler_aspect_ratio, size_distribution (README advertises filler_aspect_ratio)"},
+    "unique_dois": {"claimed": 63, "actual": 63, "status": "match", "note": "extraction_log.csv and dataset DOI sets are identical (63 vs 63, zero diff)"},
+    "confidence_split": {"claimed": "179 High / 9 Medium", "actual": "179 High / 9 Medium", "status": "match"},
+    "k_range": {"claimed": "0.17-19.0", "actual": "0.17-19.0", "status": "match"},
+    "k_median": {"claimed": 1.052, "actual": 1.052, "status": "match"},
+    "year_range": {"claimed": "1997-2026", "actual": "1997-2026", "status": "match"},
+    "extraction_log_entries": {"claimed": 70, "actual": 70, "status": "match", "note": "63 paper entries + 7 retry/correction entries (extract_005/008/010/013/018b/018c, P009-fix)"},
+    "unusable_sources": {"claimed": 48, "actual": 48, "status": "match", "note": "zero DOI overlap with dataset; but none of the 48 appear in extraction_log (exclusions are hardcoded in build_deliverables.py, not logged)"},
+    "value_source_split": {"claimed": "text 131 / table 57", "actual": "text 131 / table 57", "status": "match"},
+    "qc_by_filler_table": {"status": "mismatch", "note": "table sums to 187; deliverable has 188 rows (the filler_material='none' neat-epoxy row omitted)"},
+    "qc_examples": {"status": "match", "note": "all 5 QC-report exclusion examples exist in unusable_sources.csv with matching reasons"},
+    "rows_raw_vs_csv": {"status": "match", "note": "work/rows_raw.jsonl (188 lines) byte-equal content to deliverable CSV fields"}
+  },
+
+  "tests_executed": [
+    {"cmd": "python work/audit_normalize_k_test.py", "exit": 0, "result": "26 designed cases: 24 PASS, 2 FAIL. FAIL 1: normalize_k(1.0,'kW/mK')=1.0 (expected 1000.0) - fallback path drops kW prefix. FAIL 2: normalize_k(1.5,'uW/(m·K)')=1.5 (expected None) - any unit containing w...k...m silently accepted unscaled. INFO: 'W m-1 mm-1' -> None (table lacks entry). Explicit W/mK-family table entries all correct."},
+    {"cmd": "grep -r normalize_k (project)", "exit": 0, "result": "normalize_k is DEFINED in work/io_append.py:24 but NEVER called by any extract_*.py, append_rows, or build_deliverables. QC report claim 'normalize_k() applied' is FALSE. Latent defect only: all 188 rows carry W/mK-family k_original_unit and k_original_value == k_composite for every row."},
+    {"cmd": "grep -n 'try:/except' work/extract_*.py", "exit": 0, "result": "no try/except in extract scripts; the append-does-not-reject bug lives solely in work/io_append.py validation (non-numeric -> problems list, row still appended)."},
+    {"cmd": "python work/audit_evidence_check.py", "exit": 0, "result": "k-value string search in fulltext for all 188 rows + numeric-column scan: base statuses verified=166, verified_with_warning=13, duplicate_measurement=9; wrote work/audit_phase1_rows.json"},
+    {"cmd": "python work/audit_finalize_rows.py", "exit": 0, "result": "layered manual verification: final statuses verified=110, verified_with_warning=37, duplicate_measurement=19, incorrect_value=17, incorrect_sample_mapping=3, out_of_scope=1, not_verifiable=1 (total 188); 78 rows carry >=1 finding"},
+    {"cmd": "python inline: loading-co-occurrence check (k value within +/-500 chars of loading value in fulltext, all 188 rows)", "exit": 0, "result": "34 flags; each manually reviewed: 33 explained (k and loading in same table/abstract but beyond window, or loading stored as range), 1 genuine (row b639a9c9-159, k=1.052 absent from fulltext)"},
+    {"cmd": "python inline: paper_title vs fulltext TITLE header for 63 DOIs, then vs Crossref API for the 11 mismatches", "exit": 0, "result": "52/63 titles match source; 11/63 dataset paper_title values are NOT the Crossref title of their own DOI (wrong/paraphrased/other-paper titles). Crossref confirms the fulltext headers are correct and the dataset titles wrong. Wrong titles propagate identically into paper_inventory.csv and extraction_log.csv."},
+    {"cmd": "python inline: structural/statistical recomputation (rows, cols, DOI sets, counters, median, ranges)", "exit": 0, "result": "all claimed structural statistics reproduce exactly (see claim_verification)"},
+    {"cmd": "python inline: unusable/candidates/orphan provenance cross-check", "exit": 0, "result": "43/48 unusable DOIs present in candidates.json (5 sourced elsewhere); 3 fulltext files on disk reach neither dataset nor unusable list: 10.3390/nano13152243 (in candidates+screen_report), 10.3390/polym11101548 and 10.3390/polym15051214 (in epmc_wave2+wave2_screen with n_k=2 lit-comparison-only and n_k=0) - documented exclusions, undocumented outcomes"},
+    {"cmd": "webfetch https://api.crossref.org/works/{doi} for 11 suspect DOIs", "exit": 0, "result": "Crossref titles retrieved; confirmed dataset paper_title mismatches and that fulltext files belong to the DOIs they claim (values verified against correct papers)"},
+    {"cmd": "python inline (first attempt, PowerShell quoting)", "exit": 1, "result": "SyntaxError from nested-quote mangling in inline -c string; rerun as work/audit_tmp_lists2.py succeeded (exit 0). Tooling incident, not an audit defect."}
+  ],
+
+  "defect_register": [
+    {"id": "D1", "severity": "high", "category": "pipeline integrity",
+     "title": "io_append validation logs rows as 'rejected' but appends them anyway; retry scripts then re-append -> 9 duplicate pairs",
+     "evidence": "work/io_append.py problems-list logic (non-numeric -> appended with logging); extraction_log rows_rejected_at_append for 2f8abcf1-046/047 while those row_ids exist in CSV; 9 duplicate pairs (046/061,047/062,073/077,094/098,116/119,117/120,118/121,130/150,182/185)",
+     "rows_affected": "9 later-id rows duplicate_measurement; dataset 188 rows -> 179 unique measurements",
+     "remediation": "make validation failure actually skip the append (continue/return), dedupe rows, add idempotency key (doi+sample+condition) checked before append"},
+    {"id": "D2", "severity": "high", "category": "data correctness",
+     "title": "filler_loading_wt_pct stores formulation parts (not wt%) for all 20 polym13060955 rows",
+     "evidence": "paper text: '70% by weight of BN with respect to the combined weight of epoxy and BN' AND 'samples with 58.0 wt.% BN'; rows carry 60/70/65 in wt_pct with correct vol% (34.2/44.7/38.1/43.3)",
+     "rows_affected": "a9d63e6e-010..029 (20 rows; 3 of them also cross-paper duplicates)",
+     "remediation": "recompute wt% from paper Table (58.0/47.x) or move parts value to filler_loading_original_value + unit 'phr-equivalent'"},
+    {"id": "D3", "severity": "high", "category": "data correctness",
+     "title": "Cross-paper duplicated measurements (companion/citing papers) - 5 pairs",
+     "evidence": "a9d63e6e-014/015/016 (3.34/4.77/7.67, ETLBN30-70) identical to d831a829-135/136/138 (polym13020286 Table 1 S1/S2/S4, same group, same samples, both papers present in fulltext); a8b6fee9-141/142 (0.352/0.364) are 'previous work by our group' citations of e5a9c8bd-122/123 (mi16040413)",
+     "rows_affected": "10 rows marked duplicate_measurement (both sides); drop a9d63e6e-014/015/016 and a8b6fee9-141/142 (also policy violations: README excludes literature-comparison values)",
+     "remediation": "drop the 5 recommended rows; add cross-paper value+sample fingerprint dedup"},
+    {"id": "D4", "severity": "high", "category": "documentation claim false",
+     "title": "QC report claims 'unit normalization: normalize_k() applied' - function is never called",
+     "evidence": "grep: normalize_k defined only; 2/26 unit tests FAIL on fallback path (kW/mK unscaled, uW silently accepted)",
+     "rows_affected": "latent: 0 manifested (all rows already W/mK-family)",
+     "remediation": "wire normalize_k into append_rows OR correct the QC claim; fix kW/muW fallback before any future non-W unit enters"},
+    {"id": "D5", "severity": "high", "category": "metadata integrity",
+     "title": "11 of 63 paper_title values are not the title of their own DOI (verified against Crossref)",
+     "evidence": "e.g. 10.1038/s41598-018-19945-3 actual 'Enhanced Thermal Conductivity of PI Composites with BNNS' vs dataset 'In-plane and out-of-plane...'; 10.1039/c8ra10211b actual 'Improved dielectric stability of epoxy composites with ultralow boron nitride loading' vs dataset '3D BN/PA66 aerogel scaffolds...'; full list in work/audit_phase1_rows.json findings; wrong titles propagate to paper_inventory.csv and extraction_log.csv",
+     "rows_affected": "all rows of the 11 DOIs (~30 rows) carry wrong paper_title; DOI/k/source_location verified CORRECT",
+     "remediation": "re-fetch titles from Crossref/EPMC and overwrite paper_title in all three files"},
+    {"id": "D6", "severity": "medium", "category": "sample mapping",
+     "title": "3 rows mislabel the measured sample",
+     "evidence": "fa7ce3db-036 filler='BN' for (CuNPs-CuNWs)@BN/PI hybrid (README requires 'hybrid' label); 3bde4e56-147 filler='cBN' with 0.0 wt% (neat-matrix baseline); 544349ee-180 filler='AlN' but paper is trimodal Al2O3+BN ('AlN' 0 hits in fulltext)",
+     "rows_affected": "036, 147, 180",
+     "remediation": "fix filler_material; label hybrid/co-filler rows per README convention (rows 151/152/153/188/095 also non-conforming but documented in notes)"},
+    {"id": "D7", "severity": "medium", "category": "unverifiable value",
+     "title": "Row b639a9c9-159 k=1.052 does not occur in its fulltext",
+     "evidence": "0 hits for '1.052'/'1.05' in 10.3390/ma18215011.txt; consistent with 1.278/1.214=1.0527 derivation from stated +21.4% or Figure-5 digitization (log: figures inspected 'TC figures'); source_location presents it as a direct Results value",
+     "rows_affected": "159",
+     "remediation": "either disclose derivation/digitization in source_location+value_source='figure', or drop the row"},
+    {"id": "D8", "severity": "medium", "category": "policy violation",
+     "title": "Literature-comparison values present despite README exclusion policy",
+     "evidence": "a8b6fee9-141/142 (cited previous-work values, also cross-paper dups); 4a11b03c-151 k=0.54 explicitly 'According to our previous work' in nano8120997",
+     "rows_affected": "141, 142, 151",
+     "remediation": "drop 141/142/151 or re-source to original DOIs"},
+     {"id": "D9", "severity": "medium", "category": "pipeline integrity",
+      "title": "Non-numeric values in numeric fields (2 true violations + 7 unparsable loading strings)",
+      "evidence": "numeric-column violations: filler_mean_size_um '55 (AlN) / 35 (BN)' (130); measurement_temperature_C 'RT' (094). unparsable strings in text column filler_loading_original_value: '30 wt% BNNS + 1 wt% BNNT' (046/047), '20 wt% BNNS + 2 wt% G-POSS' (073), '30 AlN + 2 Ni' (116/117/118), '30-4' (182) - log claims rejections that did not happen",
+      "rows_affected": "9 rows (2 numeric-column violations + 7 unparsable original-value strings)",
+      "remediation": "fix the 2 numeric cells; split the 7 strings into value+detail columns; make validation authoritative (reject-and-skip)"},
+    {"id": "D10", "severity": "medium", "category": "scope/documentation",
+     "title": "3 screened papers excluded without appearing in unusable_sources.csv or extraction_log",
+     "evidence": "10.3390/polym11101548 (wave2_screen n_k=2, both literature-comparison), 10.3390/polym15051214 (n_k=0), 10.3390/nano13152243 (screen_report, candidates) - fulltext on disk, zero rows, absent from both outputs",
+     "rows_affected": "0 rows (coverage gap)",
+     "remediation": "add exclusion rows to unusable_sources.csv with reasons; verify polym11101548 truly has no own-data k values"},
+    {"id": "D11", "severity": "low", "category": "row-level metadata",
+     "title": "Assorted per-row defects on verified values",
+     "evidence": "2f8abcf1-046/047 curing_agent 100:38 vs source 100:35 (+notes typo LY654 vs LY564); 2a7dd240-105 k_direction='through-plane' unsupported (paper: follows in-plane model) + vol 6.32 vs table 6.33; caf49a8d-129 neat-epoxy row retained; 0ab9ce56-184 source paper internally inconsistent BN60 vs BN70 attribution; schema columns filler_aspect_ratio+size_distribution 100% empty",
+     "rows_affected": "046,047,105,129,184 + 2 empty columns",
+     "remediation": "fix field values; drop or fill empty columns"},
+    {"id": "D12", "severity": "low", "category": "process/provenance",
+     "title": "Exclusion decisions hardcoded, search_log written retrospectively",
+     "evidence": "unusable DOIs absent from extraction_log.jsonl (only in build_deliverables.py); search_log.json mtime after deliverables; 5/48 unusable DOIs not in candidates.json; 3 IOP 'PDFs' are Radware captcha HTML (correctly listed unusable)",
+     "rows_affected": "n/a",
+     "remediation": "log exclusion decisions at screening time with reason codes"}
+  ],
+
+  "verification_coverage": {
+    "automated": "188/188 rows: k-value string search in own fulltext + loading co-occurrence window + numeric-column scan; 63/63 DOI-title header checks; 63/63 Crossref spot pipeline (11 mismatches fetched individually); structural stats recomputed",
+    "manual_context_reading": "all base-warning rows (22), all cross-paper duplicate candidates (10), all 20 polym13060955 loading rows (Table 2 read), all 11 wrong-title paper headers, all 9 Medium-confidence rows, the k>=3 stratum, both mismatched-DOI full abstracts, ~35 additional stratified High rows",
+    "not_manually_reread": "roughly 100 rows rely on the automated k+loading co-occurrence check only (no independent table re-read)",
+    "network_checks": "Crossref API (12 DOI lookups); no publisher-site scraping"
+  },
+
+  "verdict": {
+    "structural_integrity": "PASS (all claimed counts/stats reproduce)",
+    "value_traceability": "CONDITIONAL PASS (187/188 k values located in own fulltext; 1 value absent; ~95% of located values context-confirmed; 0 fabricated values detected by string search)",
+    "metadata_integrity": "FAIL (11 wrong titles, 20 wrong wt% loadings, 3 sample mislabels, 9 non-numeric-in-numeric, 12 empty-column/documented-convention breaches)",
+    "pipeline_reliability": "FAIL (validation does not reject, retry duplicates, normalize_k claim false, exclusions not logged)",
+    "overall": "CONDITIONAL PASS for k values with mandatory Phase-2 fixes (dedup + loading units + titles) before publication use; pipeline claims in README/QC report are overstated"
+  }
+}

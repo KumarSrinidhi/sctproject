@@ -1,0 +1,823 @@
+[
+ {
+  "file": "10.3390_nano8040242.txt",
+  "chars": 35874,
+  "title": "Alignment of Boron Nitride Nanofibers in Epoxy Composite Films for Thermal Condu",
+  "tables": 2,
+  "rel_tables": 2,
+  "figs": 5,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 34,
+  "vol_pct_mentions": 3
+ },
+ {
+  "file": "10.3390_nano11020373.txt",
+  "chars": 41746,
+  "title": "3D Printing of PDMS-Like Polymer Nanocomposites with Enhanced Thermal Conductivi",
+  "tables": 10,
+  "rel_tables": 0,
+  "figs": 10,
+  "scope": [
+   "epoxy",
+   "silicone",
+   "pdms"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 9,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.1039_d3ra00428g.txt",
+  "chars": 36437,
+  "title": "Hydroxy silicone oil modified boron nitride for high thermal conductivity and lo",
+  "tables": 4,
+  "rel_tables": 0,
+  "figs": 8,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "Al2O3",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 7,
+  "vol_pct_mentions": 2
+ },
+ {
+  "file": "10.3390_ma12091522.txt",
+  "chars": 49172,
+  "title": "Electrical and Thermal Conductivity of Epoxy-Carbon Filler Composites Processed ",
+  "tables": 4,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "SiC"
+  ],
+  "wt_pct_mentions": 81,
+  "vol_pct_mentions": 15
+ },
+ {
+  "file": "10.3390_polym10030340.txt",
+  "chars": 42209,
+  "title": "Epoxy-Thiol Systems Filled with Boron Nitride for High Thermal Conductivity Appl",
+  "tables": 4,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 3,
+  "vol_pct_mentions": 32
+ },
+ {
+  "file": "10.3390_polym11081359.txt",
+  "chars": 25219,
+  "title": "Dielectric and Thermal Conductivity of Epoxy Resin Impregnated Nano-h-BN Modifie",
+  "tables": 4,
+  "rel_tables": 0,
+  "figs": 10,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "BN"
+  ],
+  "wt_pct_mentions": 79,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_polym12020426.txt",
+  "chars": 25498,
+  "title": "Synergistic Effects of Boron Nitride (BN) Nanosheets and Silver (Ag) Nanoparticl",
+  "tables": 4,
+  "rel_tables": 0,
+  "figs": 8,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 12,
+  "vol_pct_mentions": 32
+ },
+ {
+  "file": "10.3390_polym13244417.txt",
+  "chars": 22976,
+  "title": "Nanoarchitectonics of BN/AgNWs/Epoxy Composites with High Thermal Conductivity a",
+  "tables": 4,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 0,
+  "vol_pct_mentions": 2
+ },
+ {
+  "file": "10.3390_gels12070644.txt",
+  "chars": 58668,
+  "title": "Polydopamine-Modified Boron Nitride Reinforced Silicone Gel Composites with Enha",
+  "tables": 3,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "silicone"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 8,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.1021_acsanm.4c01646.txt",
+  "chars": 17835,
+  "title": "Synergistic Improvement in the Thermal Conductivity of Hybrid Boron Nitride Nano",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 4,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "BNNS",
+   "Si3N4",
+   "SiC"
+  ],
+  "wt_pct_mentions": 32,
+  "vol_pct_mentions": 4
+ },
+ {
+  "file": "10.1038_srep04779.txt",
+  "chars": 19988,
+  "title": "The use of polyimide-modified aluminum nitride fillers in AlN@PI/Epoxy composite",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 4,
+  "scope": [
+   "epoxy",
+   "polyimide"
+  ],
+  "fillers": [
+   "AlN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 12,
+  "vol_pct_mentions": 1
+ },
+ {
+  "file": "10.1039_d1ra00976a.txt",
+  "chars": 28136,
+  "title": "Preparation of poly glycidyl methacrylate (PGMA) chain-grafted boron nitride/epo",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 10,
+  "scope": [
+   "epoxy",
+   "polyimide"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "BNNS",
+   "Si3N4",
+   "SiC"
+  ],
+  "wt_pct_mentions": 3,
+  "vol_pct_mentions": 24
+ },
+ {
+  "file": "10.1039_d1ra04602k.txt",
+  "chars": 27812,
+  "title": "Epoxy composite with high thermal conductivity by constructing 3D-oriented carbo",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 7,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 0,
+  "vol_pct_mentions": 31
+ },
+ {
+  "file": "10.1039_d1ra08929c.txt",
+  "chars": 27111,
+  "title": "Liquid cooling system for battery modules with boron nitride based thermal condu",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 10,
+  "scope": [
+   "epoxy",
+   "silicone",
+   "pdms"
+  ],
+  "fillers": [
+   "AlN",
+   "BN"
+  ],
+  "wt_pct_mentions": 15,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_mi16040413.txt",
+  "chars": 31192,
+  "title": "The Influence of Microsecond Pulsed Electric Field and Direct Current Electric F",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "Al2O3",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 8,
+  "vol_pct_mentions": 2
+ },
+ {
+  "file": "10.3390_molecules21050670.txt",
+  "chars": 28943,
+  "title": "Thermal Conductivity of Epoxy Resin Composites Filled with Combustion Synthesize",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 18,
+  "vol_pct_mentions": 26
+ },
+ {
+  "file": "10.3390_nano12183235.txt",
+  "chars": 42504,
+  "title": "Synergistic Enhanced Thermal Conductivity and Crack Resistance of Reactor Epoxy ",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 5,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 58,
+  "vol_pct_mentions": 1
+ },
+ {
+  "file": "10.3390_polym10121412.txt",
+  "chars": 18679,
+  "title": "Synergistic Improvement in Thermal Conductivity of Polyimide Nanocomposite Films",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 3,
+  "scope": [
+   "polyimide"
+  ],
+  "fillers": [
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 14,
+  "vol_pct_mentions": 10
+ },
+ {
+  "file": "10.3390_polym12091954.txt",
+  "chars": 23232,
+  "title": "3D Interconnected Boron Nitride Networks in Epoxy Composites via Coalescence Beh",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 5,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 8,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_polym12092072.txt",
+  "chars": 23222,
+  "title": "Enhanced Thermal Conductivity of Silicone Composites Filled with Few-Layered Hex",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 10,
+  "scope": [
+   "silicone"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 25,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_polym13060955.txt",
+  "chars": 45875,
+  "title": "Remarkable Thermal Conductivity of Epoxy Composites Filled with Boron Nitride an",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 15,
+  "vol_pct_mentions": 21
+ },
+ {
+  "file": "10.3390_polym13193253.txt",
+  "chars": 30351,
+  "title": "Environmental Resistance and Fatigue Behaviors of Epoxy/Nano-Boron Nitride Therm",
+  "tables": 2,
+  "rel_tables": 0,
+  "figs": 10,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "BN"
+  ],
+  "wt_pct_mentions": 4,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.31248_ajps2025.124.txt",
+  "chars": 46521,
+  "title": "Simulation of dielectric properties and thermal conductivity in boron nitride/po",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "polyimide"
+  ],
+  "fillers": [
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 0,
+  "vol_pct_mentions": 1
+ },
+ {
+  "file": "10.3390_nano13010138.txt",
+  "chars": 24157,
+  "title": "Effect of Ambient Plasma Treatments on Thermal Conductivity and Fracture Toughne",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 2,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_nano13152243.txt",
+  "chars": 25982,
+  "title": "Thermally Conductive and Electrically Insulating Epoxy Composites Filled with Ne",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 22,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_polym11040597.txt",
+  "chars": 21925,
+  "title": "Rheological Properties and Thermal Conductivity of Epoxy Resins Filled with a Mi",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 0,
+  "vol_pct_mentions": 13
+ },
+ {
+  "file": "10.3390_polym11071156.txt",
+  "chars": 39238,
+  "title": "Achieving High Thermal Conductivity in Epoxy Composites: Effect of Boron Nitride",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 1,
+  "vol_pct_mentions": 15
+ },
+ {
+  "file": "10.3390_polym12092080.txt",
+  "chars": 22811,
+  "title": "Dielectric and Thermal Conductivity Characteristics of Epoxy Resin-Impregnated H",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "AlN",
+   "BN"
+  ],
+  "wt_pct_mentions": 80,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_polym13010147.txt",
+  "chars": 36939,
+  "title": "Enhanced Thermal Conductivity of Epoxy Composites Filled with Al2O3/Boron Nitrid",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 36,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_polym13020248.txt",
+  "chars": 21565,
+  "title": "Enhanced the Thermal Conductivity of Polydimethylsiloxane via a Three-Dimensiona",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone",
+   "pdms"
+  ],
+  "fillers": [
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 2,
+  "vol_pct_mentions": 10
+ },
+ {
+  "file": "10.3390_polym15061415.txt",
+  "chars": 27496,
+  "title": "Synthesis of KH550-Modified Hexagonal Boron Nitride Nanofillers for Improving Th",
+  "tables": 1,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone"
+  ],
+  "fillers": [
+   "BN"
+  ],
+  "wt_pct_mentions": 13,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.1007_s40820-022-00863-z.txt",
+  "chars": 43812,
+  "title": "Vertically Aligned Silicon Carbide Nanowires/Boron Nitride Cellulose Aerogel Net",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 10,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 7,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.1007_s42114-023-00804-3.txt",
+  "chars": 47170,
+  "title": "Boron nitride whiskers and nano alumina synergistically enhancing the vertical t",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone",
+   "polyimide"
+  ],
+  "fillers": [
+   "Al2O3",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 3,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.1038_s41598-018-19945-3.txt",
+  "chars": 22690,
+  "title": "Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanoshe",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 7,
+  "scope": [
+   "polyimide"
+  ],
+  "fillers": [
+   "BN",
+   "BNNS"
+  ],
+  "wt_pct_mentions": 15,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.1038_s41598-021-81925-x.txt",
+  "chars": 36167,
+  "title": "Simultaneously enhanced dielectric properties and through-plane thermal conducti",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 8,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 0,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.1186_1556-276x-9-643.txt",
+  "chars": 22364,
+  "title": "Solvent-free fabrication of thermally conductive insulating epoxy composites wit",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 8,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 18,
+  "vol_pct_mentions": 2
+ },
+ {
+  "file": "10.14314_polimery.2017.560.txt",
+  "chars": 5256,
+  "title": "Epoxy composites filled with boron nitride and aluminum nitride for improved the",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 0,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.2109_jcersj.105.197.txt",
+  "chars": 18420,
+  "title": "Thermal Conductivity of Epoxy Resin Filled with Particulate Aluminum Nitride Pow",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "Si3N4",
+   "SiC"
+  ],
+  "wt_pct_mentions": 0,
+  "vol_pct_mentions": 7
+ },
+ {
+  "file": "10.3390_ma13163634.txt",
+  "chars": 127771,
+  "title": "Thermal Conductivity and Cure Kinetics of Epoxy-Boron Nitride Composites\u2014A Revie",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 12,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "Al2O3",
+   "AlN",
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 121,
+  "vol_pct_mentions": 31
+ },
+ {
+  "file": "10.3390_nano14020205.txt",
+  "chars": 35877,
+  "title": "Significantly Improve the Thermal Conductivity and Dielectric Performance of Epo",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "polyimide"
+  ],
+  "fillers": [
+   "BN",
+   "BNNS",
+   "SiC"
+  ],
+  "wt_pct_mentions": 44,
+  "vol_pct_mentions": 0
+ },
+ {
+  "file": "10.3390_polym11121990.txt",
+  "chars": 24610,
+  "title": "Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "pdms"
+  ],
+  "fillers": [
+   "AlN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 5,
+  "vol_pct_mentions": 14
+ },
+ {
+  "file": "10.3390_polym13050694.txt",
+  "chars": 22703,
+  "title": "Highly Thermal Conductive and Electrical Insulating Epoxy Composites with a Thre",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "pdms"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 1,
+  "vol_pct_mentions": 7
+ },
+ {
+  "file": "10.3390_polym13234074.txt",
+  "chars": 36979,
+  "title": "D-GQDs Modified Epoxy Resin Enhances the Thermal Conductivity of AlN/Epoxy Resin",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy"
+  ],
+  "fillers": [
+   "AlN",
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 22,
+  "vol_pct_mentions": 2
+ },
+ {
+  "file": "10.3390_polym16223126.txt",
+  "chars": 24023,
+  "title": "Thermally Conductive Polydimethylsiloxane-Based Composite with Vertically Aligne",
+  "tables": 0,
+  "rel_tables": 0,
+  "figs": 0,
+  "scope": [
+   "epoxy",
+   "silicone",
+   "pdms"
+  ],
+  "fillers": [
+   "BN",
+   "SiC"
+  ],
+  "wt_pct_mentions": 11,
+  "vol_pct_mentions": 0
+ }
+]

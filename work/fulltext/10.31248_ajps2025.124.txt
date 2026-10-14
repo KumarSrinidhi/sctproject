@@ -1,0 +1,1922 @@
+SOURCE doi=10.31248/ajps2025.124
+TITLE: Simulation of dielectric properties and thermal conductivity in boron nitride/polyimide composites using the Debye Relaxation Model
+YEAR: 2025
+JOURNAL: Applied Journal of Physical Science
+OA_URL: https://doi.org/10.31248/ajps2025.124
+
+
+===== PAGE 1 =====
+ 
+ 
+ 
+Applied Journal of Physical Science 
+Volume 6(5), pages 149-164, December 2025 
+Article Number: BA3567251 
+ISSN: 2756-6684  
+https://doi.org/10.31248/AJPS2025.124 
+https://integrityresjournals.org/journal/AJPS 
+Full Length Research 
+ 
+ 
+ 
+ 
+Simulation of dielectric properties and thermal 
+conductivity in boron nitride/polyimide composites 
+using the Debye Relaxation Model 
+ 
+Aungwa F.1*, Jamila A. B.2, Ahuome B. A.2, and Igba D.S.1 
+ 
+1Department of Industrial Physics, Joseph Sarwuan Tarka University, P.M.B. 2373, Makurdi, Benue State, Nigeria. 
+2Department of Physics, Federal University Dutsin-Ma, Katsina State, Nigeria. 
+ 
+*Corresponding author. Email: francisaungwa@gmail.com; Tel: +2347030682458. 
+ 
+Copyright © 2025 Aungwa et al. This article remains permanently open access under the terms of the Creative Commons Attribution License 4.0, 
+which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. 
+ 
+Received 21st May 2025; Accepted 12th September 2025 
+ 
+ABSTRACT: This study investigates the dielectric properties and thermal conductivity of boron nitride/polyimide (BN/PI) 
+composites using the Debye relaxation model. Simulations were conducted using MATLAB to analyse the impact of 
+varying BN content on the dielectric constant, dielectric loss, and thermal conductivity across a range of frequencies and 
+temperatures. The results revealed a strong positive correlation between thermal conductivity and dielectric constant, with 
+a Pearson correlation coefficient of 0.99221 at a frequency of 1 MHz. The thermal conductivity increased from 0.23092 
+W/m·K at a BN volume fraction of 0.05 to 0.58701 W/m·K at a volume fraction of 0.4, indicating that higher BN content 
+significantly enhances heat dissipation capabilities. The dielectric constant showed a slight but consistent increase, rising 
+from 3.5006 to 3.5046 over the same range. The findings highlight the potential of BN/PI composites for high-performance 
+electronic applications, where efficient thermal management and dielectric stability are essential. These composites, with 
+their exceptional thermal and dielectric properties, are particularly suited for applications in electronic substrates and 
+thermal interface materials, where their tailored balance of properties ensures optimal performance. 
+ 
+Keywords: Boron nitride, dielectric, Debye Relaxation Model, polyimide composites, thermal conductivity. 
+ 
+ 
+INTRODUCTION 
+ 
+The dielectric properties of composite materials have 
+attracted significant attention due to their potential in 
+electronic and thermal management systems (Aungwa et 
+al., 2025a). Among such materials, boron nitride (BN) and 
+polyimide (PI) are widely studied for their complementary 
+functionalities. BN, a ceramic material, is known for its high 
+thermal conductivity and excellent electrical insulating 
+properties, making it ideal for heat dissipation and 
+electronic substrate applications (Ahmed et al., 2018; 
+Calay et al.,1995). PI, a high-performance polymer, offers 
+exceptional thermal stability, mechanical strength, and 
+electrical insulation (Franco et al., 2017; Franco et al., 
+2015). When combined, BN/PI composites leverage these 
+synergistic properties to enhance both dielectric and 
+thermal performance, thus meeting the growing demand 
+for materials capable of withstanding high thermal loads 
+while maintaining electrical reliability in advanced 
+electronics (Hasted 1973; İçier and Baysal, 2004). 
+The combination of these materials into a BN/PI 
+composite aims to leverage BN's high thermal conductivity 
+and PI's excellent dielectric properties to create a material 
+that manages heat effectively while maintaining electrical 
+insulation (Ikediala et al., 2000). The Debye relaxation 
+method is a valuable analytical tool in this context, allowing 
+for the examination of dielectric relaxation processes by 
+applying an alternating electric field and analysing the 
+material's response (Kim et al., 2018). This method 
+provides insights into the interactions between BN and PI   
+
+
+===== PAGE 2 =====
+ 
+ 
+150       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+within the composite, revealing how these interactions 
+affect the material’s overall dielectric properties. 
+The significance of this study lies in its potential to 
+advance the understanding of how boron nitride/polyimide 
+composites perform in terms of both dielectric properties 
+and thermal management. By elucidating the relationship 
+between BN content and dielectric relaxation, this 
+research contributes to the development of materials that 
+are optimised for high-performance electronic systems 
+(Ravika and Sharma, 2023). 
+Enhanced understanding of these properties can lead to 
+the design of composites with improved thermal and 
+dielectric characteristics, benefiting industries where high-
+performance materials are crucial (Singh, 2018). This 
+includes electronics, where efficient thermal management 
+and reliable electrical insulation are essential for device 
+longevity and functionality (Kuang and Nelson,1997). 
+Furthermore, the study supports the development of 
+advanced composite materials that could lead to 
+innovations in thermal interface materials and high-
+temperature electronics (Nelson, 2005). 
+Numerous studies have explored the dielectric properties 
+of pure polyimide and its composites. For instance, studies 
+by Kim et al. 2018) have demonstrated that polyimide 
+exhibits low dielectric loss and high dielectric strength, 
+making it an excellent material for electronic insulation. 
+However, the incorporation of thermally conductive fillers 
+like BN into polyimide matrices introduces complex 
+interactions that affect dielectric behaviour (Vijay et al., 
+2015). The addition of BN particles alters the dielectric 
+properties of polyimide composites, influencing both the 
+dielectric constant and the dielectric loss (Zhu et al., 2014). 
+The Debye relaxation method has been widely used to 
+analyse dielectric properties by examining how materials 
+respond to alternating electric fields over a range of 
+frequencies (Zhu et al., 2012). This method provides 
+insights into the polarisation mechanisms and relaxation 
+times within the material. Previous research has applied 
+this method to various dielectric materials, including 
+polymers and composites. For instance, studies by Wang 
+et al. (2003) used the Debye relaxation method to 
+investigate the dielectric relaxation behaviour of polymer 
+composites, finding that the relaxation times and dielectric 
+constants are sensitive to filler content and distribution 
+(Sosa-Morales et al., 2010). 
+In the context of BN/PI composites, the literature highlights 
+the need for a detailed investigation into how BN affects 
+dielectric relaxation. Research by Feng et al. (2002) 
+explored the impact of BN fillers on the dielectric properties 
+of PI matrices and found that BN particles can induce 
+changes in the relaxation behaviour, potentially due to 
+interactions at the interface between the BN particles and 
+the PI matrix (Kim et al., 2018). This interaction is crucial 
+for understanding how these composites can be optimised 
+for specific applications. 
+Despite  the   significant   advantages   offered   by  BN/PI  
+ 
+ 
+ 
+ 
+composites, there is a lack of detailed understanding of 
+their dielectric properties, particularly how the presence of 
+boron nitride affects dielectric relaxation in polyimide 
+matrices (Aungwa et al., 2025b). While individual studies 
+have explored either the thermal conductivity of BN or the 
+dielectric properties of PI, few have investigated the 
+combined effects in a composite material. This gap in 
+research limits the ability to fully optimise the performance 
+of BN/PI composites for applications where both thermal 
+management and electrical insulation are critical (Mendes-
+Oliveira et al., 2020). The complex interactions between 
+the conductive boron nitride particles and the insulating 
+polyimide matrix create challenges in predicting the 
+dielectric behaviour of the composite (Nelson and Bartley, 
+2002). Understanding these interactions through the 
+Debye relaxation method is essential for addressing this 
+problem, as it can elucidate how different boron nitride 
+content and distribution influence dielectric relaxation 
+processes and overall material performance (Regier and 
+Schubert, 2005). 
+ 
+ 
+THEORETICAL FORMALISM  
+ 
+The theoretical background for this study involves several 
+key principles related to the behaviour of dielectric 
+properties 
+and 
+thermal 
+conductivity 
+in 
+boron 
+nitride/polyimide composites 
+ 
+ 
+Complex Permittivity (𝛆∗) 
+ 
+The composite’s dielectric behaviour is represented by its 
+complex permittivity, expressed as:  
+ 
+𝜀∗(𝜔) = 𝜀′(𝜔) −𝑗𝜀′′(𝜔)  
+ 
+ 
+(1) 
+ 
+where 𝜀′(𝜔) is the real part of permittivity (dielectric 
+constant), representing the material’s ability to store 
+energy, 𝜀′′(𝜔) is the imaginary part of permittivity, 
+representing dielectric losses due to conduction and 
+polarisation effects, 𝑗 is the imaginary unit, and ω is the 
+angular frequency (Ravika and Sharma, 2023). 
+ 
+ 
+Debye Relaxation Model 
+ 
+The Debye model, which captures dielectric relaxation as 
+a function of frequency, is defined as: 
+ 
+𝜀∗(𝜔) = 𝜀∞+
+𝜀𝑠−𝜀∞
+(1+𝑗𝜔𝜏) 
+ 
+ 
+ 
+(2) 
+ 
+Here  𝜀𝑠 is the static permittivity, 𝜀∞ is the permittivity at 
+infinite frequency, τ is the relaxation time, α is the 
+distribution parameter, and ω is the angular frequency 𝜔=
+2𝜋𝑓 (Singh, 2018). 
+
+
+===== PAGE 3 =====
+ 
+ 
+ 
+ 
+ 
+ 
+Loss Tangent (tan δ) 
+ 
+In the analysis of dielectric materials, the loss tangent 
+(often denoted as tan 𝛿 is a crucial parameter that 
+describes the energy dissipation within a material when 
+subjected to an oscillating electric field. The loss tangent 
+is a measure of how much energy from the electric field is 
+absorbed by the material and converted into heat, versus 
+how much is stored. This relationship is given by the 
+following equation: 
+ 
+tan 𝛿=
+𝜀′′
+𝜀′  
+ 
+ 
+ 
+ 
+(3) 
+ 
+Where 𝜀′′ is the real part of permittivity (dielectric 
+constant), representing the Material’s ability to store 
+energy, 𝜀′ is the imaginary part of permittivity, representing 
+dielectric losses due to conduction and polarisation effects 
+(Ravika and Sharma, 2023). 
+ 
+ 
+Thermal Conductivity (k) 
+ 
+The effective thermal conductivity 𝑘𝑒𝑓𝑓 of the composite 
+with varying BN content can be estimated using a 
+theoretical model like the Maxwell-Garnett model:  
+ 
+𝑘𝑒𝑓𝑓= 𝑘𝑚𝑎𝑡𝑟𝑖𝑥(
+2𝑘𝑚𝑎𝑡𝑟𝑖𝑥+𝑘𝑓𝑖𝑙𝑡𝑒𝑟+2ϕ(𝑘𝑓𝑖𝑙𝑡𝑒𝑟−𝑘𝑚𝑎𝑡𝑟𝑖𝑥)
+2𝑘𝑚𝑎𝑡𝑟𝑖𝑥+𝑘𝑓𝑖𝑙𝑡𝑒𝑟−2ϕ(𝑘𝑓𝑖𝑙𝑡𝑒𝑟−𝑘𝑚𝑎𝑡𝑟𝑖𝑥))  (4) 
+ 
+Here, 𝑘𝑚𝑎𝑡𝑟𝑖𝑥 is the thermal conductivity of polyimide, 
+𝑘𝑓𝑖𝑙𝑙𝑒𝑟 is the thermal conductivity of BN and ϕ is the volume 
+fraction of BN (Maxwell, 1906). 
+ 
+ 
+Effective Dielectric Constant (𝜺′
+𝒆𝒇𝒇) 
+ 
+For composites with multiple phases, the effective 
+dielectric constant can be approximated using mixing rules 
+such as the Bruggeman model: 
+ 
+(
+𝜀𝑖𝑓𝑖𝑙𝑡𝑒𝑟−𝜀𝑒𝑓𝑓
+𝜀𝑓𝑖𝑙𝑡𝑒𝑟+2𝜀𝑒𝑓𝑓) + (1 −ϕ) (
+𝜀𝑚𝑎𝑡𝑖𝑥−𝜀𝑒𝑓𝑓
+𝜀𝑚𝑎𝑡𝑟𝑖𝑥+2𝜀𝑒𝑓𝑓) = 0  
+(5) 
+ 
+Where, 𝜀𝑖𝑓𝑖𝑙𝑙𝑒𝑟 is the dielectric constant of BN, 𝜀𝑚𝑎𝑡𝑖𝑥 is the 
+dielectric constant of polyimide and 𝜀𝑒𝑓𝑓 is the effective 
+dielectric constant of the composite (Maxwell, 1906) 
+ 
+ 
+MATERIALS AND METHODS 
+ 
+This study employed a simulation-based approach to 
+investigate the dielectric and thermal properties of boron 
+nitride/polyimide 
+(BN/PI) 
+composites. 
+The 
+authors 
+reported that the simulation framework was implemented 
+using   MATLAB,  where  material  properties  were  defined  
+Aungwa et al.        151 
+ 
+ 
+ 
+based on values extracted from previously published 
+experimental data (Kim et al., 2018; Kuang and 
+Nelson,1997; Aungwa et al., 2025a). These properties are 
+summarised in Table 1, which outlines the typical input 
+parameters, 
+including 
+frequency 
+range, 
+thermal 
+conductivity, dielectric constant, volume fraction, and 
+conductivity values for both BN and polyimide. 
+For the polyimide matrix, the dielectric constant (ε') and 
+loss factor (ε'') were adopted from literature to represent its 
+baseline dielectric behaviour (Wang et al., 2003; Zhu et al., 
+2012; Mendes-Oliveira et al., 2020). The thermal 
+conductivity of polyimide was also specified according to 
+established values, serving as a reference for evaluating 
+heat dissipation in the simulated composites. 
+The boron nitride phase was defined with its known 
+dielectric constant and loss factor, and its high intrinsic 
+thermal conductivity was included to model its effect as a 
+thermal conductor. The authors noted that the particle size 
+and morphology of BN, whether nano- or micro-scale, 
+were considered in the simulation because of their known 
+impact on dielectric polarisation and phonon transport 
+efficiency within the composite. 
+The composite configurations were modelled at varying 
+BN volume fractions, ranging from 5% to 40% by volume. 
+Each configuration was subjected to simulation under 
+controlled frequency and temperature conditions, as 
+outlined in Table 1. MATLAB was used to calculate the 
+dielectric constant, dielectric loss, and relaxation time 
+based on the Debye relaxation model, which is widely used 
+for 
+characterising 
+frequency-dependent 
+dielectric 
+behaviour. In addition, thermal conductivity was computed 
+using the Maxwell-Garnett effective medium theory, which 
+models the impact of filler volume fraction on overall 
+thermal transport in composite materials. 
+This setup allowed the authors to systematically analyse 
+the influence of BN content on key performance metrics. 
+By leveraging accurate input parameters and robust 
+analytical models within MATLAB, the simulations 
+provided reliable predictions of composite behaviour under 
+varying operational conditions. 
+ 
+ 
+Simulation procedure 
+ 
+The dielectric properties of the BN/PI composites were 
+analysed for each level of boron nitride content using 
+simulations conducted across a defined frequency and 
+temperature range. Specifically, the real part of the 
+permittivity (ε') was determined to assess the material’s 
+energy storage capacity, while the imaginary part (ε'') was 
+used to quantify dielectric losses due to polarisation and 
+conduction. The loss tangent (tan δ), derived from ε' and 
+ε'', was calculated to evaluate the extent of energy 
+dissipation and its relation to heat generation within the 
+composite matrix. 
+To  characterise   the   dielectric  relaxation  behaviour,  the 
+
+
+===== PAGE 4 =====
+ 
+ 
+152       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+Table 1. Simulation parameters. 
+ 
+Parameters 
+Symbol 
+Typical Values/Range 
+Description 
+Frequency Range 
+F 
+103 to 1010 Hz 
+Frequency range for dielectric relaxation analysis 
+Permittivity of Polyimide 
+εrPI 
+3.4 - 3.6 
+Relative permittivity of pure polyimide 
+Permittivity of Boron Nitride 
+εrBN 
+4- 6 
+Relative permittivity of hexagonal boron nitride (h-BN) 
+Dielectric Constant of Composite 
+εr 
+Computed 
+Effective permittivity based on composite model 
+Loss Tangent 
+Tanδ 
+0.001 - 0.01 
+Measures dielectric losses 
+Debye Relaxation Time 
+Τ 
+10-12−10-9 s 
+Characterizes dielectric relaxation 
+Volume Fraction of BN 
+VBN 
+0 - 50% 
+Proportion of boron nitride in the composite 
+Conductivity of Polyimide 
+σPI 
+10-14−10-10 S/m 
+Electrical conductivity of polyimide 
+Conductivity of BN 
+σBN 
+10-15−10-12 S/m 
+Electrical conductivity of boron nitride 
+Thermal Conductivity of Polyimide 
+kPI 
+0.12 - 0.3 W/m·K 
+Thermal conductivity of polyimide 
+Thermal Conductivity of BN 
+kBN 
+20- 400 W/m·K 
+Thermal conductivity of boron nitride 
+Effective Thermal Conductivity 
+keff 
+Computed 
+Estimated using Maxwell-Garnett or other mixing models 
+Temperature Range 
+T 
+273K - 400K 
+Temperature range for simulation 
+Dielectric Strength 
+Ebd 
+100-300 kV/mm 
+Breakdown strength of composite material 
+ 
+ 
+ 
+relaxation time (τ) was calculated for each BN content and 
+temperature point using the Debye model. This provided 
+insights into the influence of BN filler on the time-
+dependent response of the dielectric material. Additionally, 
+Debye 
+plots 
+were 
+generated 
+for 
+all 
+composite 
+configurations by plotting ε'' against ε', enabling 
+visualisation of the relaxation process and confirmation of 
+single-time-constant behaviour, typically associated with 
+homogeneous dielectric systems. 
+The effective thermal conductivity (k) of each BN/PI 
+composite configuration was simulated using the Maxwell-
+Garnett effective medium approximation. While both 
+Maxwell–Garnett and Bruggeman models were presented 
+in the theoretical formalism for completeness, only the 
+Maxwell–Garnett model was used in the simulations. This 
+choice is justified by the nature of the composite system: 
+the BN volume fractions (5–40%) fall within the range 
+where the Maxwell–Garnett model is most accurate, 
+assuming distinct matrix and filler phases. In contrast, the 
+Bruggeman model is more appropriate for systems near 
+the percolation threshold or with nearly equal distribution 
+of phases, which was not the case in this study. The 
+simulation emphasised the role of BN as a thermally 
+conductive filler and its impact on the overall heat 
+dissipation ability of the composite. To understand the 
+relationship between dielectric and thermal performance, 
+a Pearson correlation analysis was conducted. This 
+analysis evaluated how closely thermal conductivity was 
+linked to changes in dielectric constant, helping to 
+determine whether enhanced thermal transport influences 
+dielectric stability. 
+The simulation procedure involved defining the  
+composite model in MATLAB, specifying the dielectric and 
+thermal properties of the polyimide matrix and BN filler. For 
+each BN content level, frequency sweeps from 10 Hz to 1 
+GHz and  temperature  sweeps  from  20°C to 200°C (293– 
+473 K) were performed to reflect practical application 
+conditions. Additionally, a separate set of theoretical 
+simulations was conducted at elevated temperatures 
+(2000–2500 K) to explore dielectric behaviour under 
+extreme thermal stress, as shown in Figures 4–8. During 
+each simulation, ε', ε'', and tan δ were evaluated and 
+stored. Relaxation time and thermal conductivity values 
+were also recorded for all compositions to support post-
+processing and comparative analysis. 
+Post-simulation, Debye plots were generated to visually 
+assess dielectric relaxation across all configurations. 
+These plots helped confirm consistency with theoretical 
+expectations. In addition, thermal conductivity values were 
+statistically correlated with dielectric data to investigate 
+possible 
+interdependencies 
+between 
+electrical 
+and 
+thermal behaviours in the composite system. 
+ 
+ 
+Comparative analysis 
+ 
+To verify the accuracy of the simulation model, the thermal 
+and dielectric results were compared with published 
+experimental data on boron nitride (BN)-reinforced 
+polymer composites. In the present study, the simulated 
+thermal 
+conductivity 
+of 
+the 
+BN/polyimide 
+(BN/PI) 
+composite at 40 vol% BN was 0.58701 W·m⁻¹·K⁻¹, and the 
+corresponding dielectric constant at 1 MHz was 3.5046. 
+These values were found to be in good agreement with 
+experimental findings. For instance, Ravika and Sharma 
+(2023) reported a thermal conductivity of approximately 
+0.52 W·m⁻¹·K⁻¹ in BN-enhanced Kapton-based composi-
+tes with comparable filler content, closely matching the 
+value obtained in this simulation. Similarly, Singh (2018) 
+documented thermal conductivity values ranging from 0.6 
+to 0.9 W·m⁻¹·K⁻¹ in epoxy composites with functionalized 
+BN  nanosheets.  The  simulated  thermal  conductivity  lies    
+
+
+===== PAGE 5 =====
+[TABLE p5]
+ | 5% 10% |  |  |  | 
+BN Content = BN Content = | 5% 10% |  |  |  | 
+BN Content = BN Content = BN Content = | 20% 30% 40% |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 
+ |  |  |  |  | 
+[/TABLE]
+ 
+ 
+Aungwa et al.        153 
+ 
+ 
+ 
+ 
+ 
+Figure 1. Imaginary permittivity vs real permittivity. 
+ 
+ 
+ 
+well within this experimental range, particularly when 
+considering that these values depend heavily on factors 
+such as filler dispersion, interface engineering, and matrix-
+filler compatibility. 
+Therefore, the close numerical agreement between our 
+simulated result and those reported by Mendes-Oliveira et 
+al. (2020) affirms the validity and predictive accuracy of the 
+simulation approach. 
+Furthermore, a sensitivity analysis conducted on the 
+model showed that increasing the BN volume fraction 
+significantly 
+improved 
+thermal 
+conductivity, 
+while 
+temperature variations influenced the dielectric loss and 
+relaxation characteristics. These observations confirm that 
+the Debye relaxation and Maxwell–Garnett models, as 
+implemented in MATLAB, offer a robust and physically 
+consistent framework for predicting the thermal and 
+dielectric 
+performance 
+of 
+BN/PI 
+composites. 
+The 
+simulation parameters are shown in Table 1. 
+ 
+ 
+RESULTS 
+ 
+The simulation results provide insight into the dielectric 
+and thermal behaviour of BN/polyimide composites across 
+varying BN volume fractions and operating conditions. Key 
+outcomes include the frequency and temperature-
+dependent trends in permittivity, dielectric loss, and loss 
+tangent, as well as the correlation between BN content and 
+thermal conductivity. The results also reveal a strong 
+positive relationship between thermal conductivity and 
+dielectric constant, which was further quantified through 
+Pearson 
+correlation 
+analysis. 
+These 
+findings 
+are 
+presented and discussed with reference to both theoretical 
+expectations and previously published experimental data. 
+The behaviour illustrated in Figure 1 aligns with the 
+classical Debye relaxation model, where the imaginary 
+component of permittivity (ε'') is plotted against the real 
+component (ε'). The observed semi-circular arc is 
+indicative of a single relaxation time, characteristic of 
+homogeneous dielectric materials. This behaviour is 
+attributed to the dominant dipolar relaxation mechanism in 
+the BN/PI composite, where polarisation lags behind the 
+applied alternating electric field. The near-symmetry of the 
+arc suggests minimal interfacial polarisation or dispersion 
+effects, implying a relatively uniform distribution of BN 
+particles within the polyimide matrix. 
+In Figure 2, the effective thermal conductivity exhibits 
+negligible variation across a broad frequency range. This 
+behaviour is attributed to the fact that thermal transport in 
+solids, particularly in dielectric composites, is primarily 
+phonon-driven and not frequency-dependent in the context 
+of electric fields. The frequency-invariant nature of thermal 
+conductivity reinforces the material's suitability for high-
+frequency electronic applications, where consistent heat 
+dissipation 
+is 
+essential 
+for 
+device 
+reliability 
+and 
+performance. 
+Figure 3 demonstrates a clear positive correlation 
+between the volume fraction of boron nitride and the 
+effective thermal conductivity of the composite. This trend 
+is attributed to the high intrinsic  thermal conductivity of BN. 
+3.5
+3.6
+3.7
+3.8
+3.9
+4
+4.1
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+Real Permittivity (')
+Imaginary Permittivity ('')
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 6 =====
+ 
+ 
+154       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+ 
+ 
+Figure 2. Effective thermal conductivity vs frequency, calculated using the 
+Maxwell–Garnett effective medium model. 
+ 
+ 
+ 
+ 
+ 
+Figure 3. Effective thermal conductivity vs BN volume fraction. 
+ 
+ 
+ 
+As the BN content increases, the percolation threshold for 
+thermally 
+conductive 
+networks 
+is 
+approached 
+or 
+exceeded, resulting in enhanced phonon transport 
+throughout the material. This improved heat conduction 
+supports the role of BN as an effective filler for thermal 
+management in polymer-based dielectrics.
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5
+0.55
+0.6
+0.65
+Frequency (Hz)
+Effective Thermal Conductivity (W/mK)
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5
+0.55
+0.6
+0.65
+BN Volume Fraction
+Effective Thermal Conductivity (W/mK)
+
+
+===== PAGE 7 =====
+ 
+ 
+Aungwa et al.        155 
+ 
+ 
+ 
+ 
+ 
+Figure 4. Real permittivity vs frequency at T = 2000K. 
+ 
+ 
+ 
+ 
+ 
+Figure 5. Real permittivity vs frequency at T = 2125K. 
+ 
+ 
+ 
+In Figures 4 to 8, the real part of the permittivity 
+consistently decreases with increasing frequency across 
+all investigated temperatures (2000 K to 2500 K). This 
+frequency-dependent decline is attributed to the inability 
+of dipolar and interfacial polarisation mechanisms to follow 
+rapid oscillations of the applied electric field. At lower 
+frequencies, dipoles have sufficient time to align with the 
+field, resulting in higher permittivity values. The subtle 
+shifts observed at elevated temperatures suggest 
+thermally induced changes in dipole mobility and matrix 
+relaxation, potentially enhancing orientation polarisation at 
+low frequencies while slightly reducing permittivity at 
+higher frequencies due to increased disorder. 
+The  trend observed in (Figures 9 - 13) shows a declining  
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+0.55
+10
+0.56
+10
+0.57
+10
+0.58
+10
+0.59
+10
+0.6
+10
+0.61
+Frequency (Hz)
+Real Permittivity (')
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+0.55
+10
+0.56
+10
+0.57
+10
+0.58
+10
+0.59
+10
+0.6
+10
+0.61
+Frequency (Hz)
+Real Permittivity (')
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 8 =====
+ 
+ 
+156       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+ 
+ 
+Figure 6. Real permittivity vs frequency at T = 2250K. 
+ 
+ 
+ 
+ 
+ 
+Figure 7. Real permittivity vs frequency at T = 2375K. 
+ 
+ 
+ 
+imaginary permittivity with rising frequency, consistent with 
+the classical understanding of dielectric losses. This 
+behaviour is attributed to the reduced ability of dipoles to 
+reorient in phase with the electric field at higher 
+frequencies, leading to lower energy dissipation. However, 
+an increase in ε'' at higher temperatures is evident, which 
+is likely due to enhanced ionic or electronic conduction and 
+thermally activated molecular motion  within  the  polyimide  
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+0.55
+10
+0.56
+10
+0.57
+10
+0.58
+10
+0.59
+10
+0.6
+10
+0.61
+Frequency (Hz)
+Real Permittivity (')
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+0.55
+10
+0.56
+10
+0.57
+10
+0.58
+10
+0.59
+10
+0.6
+10
+0.61
+Frequency (Hz)
+Real Permittivity (')
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 9 =====
+ 
+ 
+Aungwa et al.        157 
+ 
+ 
+ 
+ 
+ 
+Figure 8. Real permittivity vs frequency at T = 2500K. 
+ 
+ 
+ 
+ 
+Figure 9. Imaginary permittivity vs frequency at T = 2000K. 
+ 
+ 
+ 
+matrix. This suggests that the dielectric loss becomes 
+more prominent as thermal excitation of charge carriers 
+intensifies. 
+The data presented in (Figures 14 – 17) reveal that the 
+loss tangent (tan δ) decreases with frequency, mirroring 
+the trends of both real and imaginary permittivity. This 
+behaviour is attributed to the diminishing dielectric loss 
+relative to energy storage as frequency increases. At 
+higher temperatures, the loss tangent rises modestly, a 
+phenomenon that can be explained by increased electrical  
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+0.55
+10
+0.56
+10
+0.57
+10
+0.58
+10
+0.59
+10
+0.6
+10
+0.61
+Real Part of Permittivity (') vs Frequency at T = 2500 K
+Frequency (Hz)
+Real Permittivity (')
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+10
+0
+Frequency (Hz)
+Imaginary Permittivity (")
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 10 =====
+ 
+ 
+158       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+ 
+ 
+Figure 10. Imaginary permittivity vs frequency at T = 2125K. 
+ 
+ 
+ 
+ 
+Figure 11. Imaginary permittivity vs frequency at T = 2250K. 
+ 
+ 
+ 
+conductivity and dipolar relaxation losses. These effects 
+are more pronounced in thermally activated regimes, 
+where thermal energy enhances carrier mobility and 
+interfacial polarisation, thereby contributing to greater 
+energy dissipation. 
+DISCUSSION 
+ 
+The behaviour illustrated in Figure 1 aligns with the 
+classical Debye relaxation model, where the imaginary 
+component of  permittivity  (ε'')  is  plotted  against  the  real  
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+10
+0
+Frequency (Hz)
+Imaginary Permittivity (")
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+10
+0
+Frequency (Hz)
+Imaginary Permittivity (")
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 11 =====
+ 
+ 
+Aungwa et al.        159 
+ 
+ 
+ 
+ 
+ 
+Figure 12. Imaginary permittivity vs frequency at T = 2375K. 
+ 
+ 
+ 
+ 
+ 
+Figure 13. Imaginary permittivity vs frequency at T = 2500K. 
+ 
+ 
+ 
+component (ε'). The resulting semi-circular arc is 
+characteristic of a single relaxation time, typically observed 
+in homogeneous dielectric materials. This arc suggests 
+dominant dipolar relaxation with minimal interfacial 
+polarisation, indicating that the BN particles are well-
+dispersed within the polyimide matrix. Similar patterns 
+were reported by Ravika and Sharma (2023), who found 
+that uniformly distributed fillers lead to cleaner Debye arcs 
+and reduced dispersion effects. The nearly symmetric arc 
+in this case further confirms a consistent distribution of BN,  
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+10
+0
+Frequency (Hz)
+Imaginary Permittivity (")
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+10
+0
+Frequency (Hz)
+Imaginary Permittivity (")
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 12 =====
+ 
+ 
+160       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+ 
+ 
+Figure 14. Loss tangent vs frequency at T = 2000K. 
+ 
+ 
+ 
+ 
+ 
+Figure 15. Loss tangent vs frequency at T = 2125K. 
+ 
+ 
+ 
+supporting 
+the 
+idea 
+that 
+particle 
+clustering 
+or 
+agglomeration is minimal. 
+In Figure 2, the effective thermal conductivity shows 
+negligible variation with frequency across the studied 
+range. This indicates that thermal transport in the BN/PI 
+composite is largely phonon-driven and not influenced by 
+the alternating electric field frequency, which is expected 
+in dielectric materials. This result is consistent with findings 
+from Nelson and Bartley (2002), who also observed 
+frequency-independent thermal conductivity in polymer 
+composites. The result reinforces the material's suitability 
+for 
+high-frequency 
+applications, 
+where 
+thermal 
+management 
+must 
+remain 
+stable 
+under 
+varying 
+electromagnetic conditions. 
+Figure 3 demonstrates that the effective thermal 
+conductivity of the  composite  increases  consistently  with  
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+Frequency (Hz)
+Loss Tangent (tan )
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+Frequency (Hz)
+Loss Tangent (tan )
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 13 =====
+ 
+ 
+Aungwa et al.        161 
+ 
+ 
+ 
+ 
+ 
+Figure 16. Loss tangent vs Frequency at T = 2250K. 
+ 
+ 
+ 
+ 
+ 
+Figure 17. Loss tangent vs frequency at T = 2375K. 
+ 
+ 
+ 
+the volume fraction of boron nitride. This is attributed to the 
+inherently high thermal conductivity of BN and its ability to 
+form thermally conductive pathways as the filler loading 
+increases. As the BN content approaches the percolation 
+threshold, phonon transport becomes more efficient, 
+leading to improved heat dissipation throughout the 
+composite. These findings agree with Arora and Gupta 
+(2020), who documented similar enhancements in thermal 
+conductivity in BN-filled systems. The ability to tune 
+thermal performance by adjusting BN content highlights 
+the composite’s potential for thermal interface materials. 
+Figures 4 to 8 show how the real part of permittivity (ε') 
+decreases with increasing frequency at all tested 
+temperatures,   from   2000 K   to   2500 K.   This  trend  is  
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+Frequency (Hz)
+Loss Tangent (tan )
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+10
+2
+10
+3
+10
+4
+10
+5
+10
+6
+10
+7
+10
+8
+10
+-7
+10
+-6
+10
+-5
+10
+-4
+10
+-3
+10
+-2
+10
+-1
+Frequency (Hz)
+Loss Tangent (tan )
+ 
+ 
+BN Content = 5%
+BN Content = 10%
+BN Content = 20%
+BN Content = 30%
+BN Content = 40%
+
+
+===== PAGE 14 =====
+ 
+ 
+162       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+Table 2. Results Table at Target Frequency (Averaged over Temperatures): Pearson 
+Correlation Coefficient between thermal conductivity and dielectric constant at 1000000 
+Hz is 0.99221. 
+ 
+BN Volume Fraction  
+Target Frequency  
+Thermal Conductivity 
+Avg. Real Permittivity 
+0.05 
+0.23092 
+3.5006 
+0.1 
+0.26521 
+3.5011 
+0.2 
+0.34632 
+3.5023 
+0.3 
+0.44995 
+3.5034 
+0.4 
+0.58701 
+3.5046 
+ 
+ 
+ 
+characteristic of dielectric relaxation, where dipoles can 
+align with the electric field at lower frequencies but fail to 
+keep up as frequency increases. At higher frequencies, 
+polarisation lags behind, resulting in a lower ε' value. The 
+slight shift in ε' with temperature suggests increased dipole 
+mobility at elevated temperatures, which enhances 
+orientation polarisation at low frequencies but slightly 
+disrupts alignment at higher frequencies due to increased 
+thermal agitation. These observations align with those of 
+Vijay et al. (2015), who reported similar frequency-
+dependent dielectric behaviours in polymer composites 
+with thermally conductive fillers. 
+In Figures 9 to 13, the imaginary part of permittivity (ε'') 
+also shows a declining trend with frequency, which 
+indicates reduced dielectric losses at higher frequencies. 
+This is a common characteristic of dielectric materials, 
+where energy dissipation decreases as dipoles fail to 
+respond rapidly to the alternating field. However, ε'' 
+increases 
+with 
+temperature, 
+especially 
+at 
+lower 
+frequencies, suggesting enhanced dielectric losses due to 
+thermally activated charge carrier motion or ionic 
+conduction. This observation supports the conclusions of 
+Sosa-Morales et al. (2010), who noted that dielectric loss 
+becomes more pronounced at elevated temperatures due 
+to increased molecular motion and conductivity. 
+Figures 14 to 17 further reinforce this behaviour, 
+showing that the loss tangent (tan δ) decreases with 
+frequency but increases slightly with temperature. The 
+reduction in tan δ at higher frequencies is indicative of 
+lower dielectric loss and energy dissipation, which is 
+desirable in high-frequency electronic applications. On the 
+other hand, the increase in tan δ with temperature can be 
+attributed to increased interfacial polarisation and 
+conductivity within the polymer matrix, consistent with the 
+findings of Kim et al. (2018). These temperature-induced 
+increases suggest that while the composite performs well 
+under normal conditions, elevated operating temperatures 
+may introduce additional loss mechanisms. 
+The data summarised in Table 2 reveal a statistically 
+strong correlation (Pearson coefficient = 0.99221) 
+between thermal conductivity and real permittivity at 1 
+MHz. However, it is important to note that while thermal 
+conductivity increases significantly with BN volume 
+fraction, the corresponding increase in real permittivity 
+(from 3.5006 to 3.5046) is minimal. Therefore, the 
+observed correlation reflects a parallel trend due to 
+common compositional changes, rather than a direct or 
+physically meaningful interdependence. This nuance has 
+now been clarified in the interpretation to avoid 
+overstatement of the correlation’s significance. Although 
+the change in real permittivity is relatively modest, rising 
+from 3.5006 to 3.5046, the increase in thermal conductivity 
+is significant, growing from 0.23092 to 0.58701 W/m·K. 
+This dual improvement is in line with previous reports by 
+Hasted 1973) and İçier and Baysal (2004), who 
+emphasised the potential of BN fillers to simultaneously 
+enhance thermal and dielectric properties in polymer 
+matrices. The high correlation observed in this study 
+suggests that BN/PI composites can be tailored to achieve 
+balanced performance in electronic systems that demand 
+both effective heat dissipation and dielectric stability. 
+The findings show a strong correlation between thermal 
+conductivity and dielectric constant, as highlighted by the 
+Pearson correlation coefficient of 0.99221 at a target 
+frequency of 1 MHz (1,000,000 Hz). This value indicates a 
+near-perfect positive linear relationship between the two 
+variables, suggesting that as thermal conductivity 
+increases, the dielectric constant also increases in a 
+consistent manner. 
+The thermal conductivity values rise steadily with the BN 
+volume fraction, starting at 0.23092 when the BN fraction 
+is 0.05 and reaching 0.58701 at a BN fraction of 0.4. This 
+trend implies that increasing the BN volume in the material 
+composition enhances its thermal conductivity, which is 
+typical due to BN’s high thermal conductivity properties. 
+The real permittivity values also show a slight increase 
+with the BN volume fraction, from 3.5006 to 3.5046. 
+However, this increase is very gradual, suggesting that 
+while the dielectric constant is affected by BN content, the 
+effect is relatively minor compared to the significant rise 
+observed in thermal conductivity. 
+ Thermal Conductivity and Dielectric Constant: The 
+Pearson correlation coefficient of 0.99221 emphasises a 
+nearly   linear    and   strong   positive    association between  
+
+
+===== PAGE 15 =====
+ 
+ 
+ 
+ 
+ 
+ 
+thermal conductivity and dielectric constant at the 1 MHz 
+frequency. This correlation could be valuable for 
+applications where materials need both high thermal 
+conductivity and specific dielectric properties, as it 
+suggests that by adjusting BN volume fractions, both 
+properties can be modulated together. The results indicate 
+that boron nitride effectively enhances thermal conduc-
+tivity, with a strong yet subtle impact on the dielectric 
+constant. This makes BN an ideal additive in materials 
+aimed at electronic applications where efficient heat 
+dissipation and stable dielectric properties are essential. 
+ 
+ 
+Conclusion 
+ 
+The simulation study of boron nitride/polyimide (BN/PI) 
+composites has demonstrated the significant influence of 
+boron nitride on the thermal conductivity and dielectric 
+properties of the composites. The results showed a strong 
+positive correlation between thermal conductivity and 
+dielectric constant, with thermal conductivity increasing 
+substantially as the BN volume fraction rose. While the 
+dielectric constant also increased, its change was 
+relatively minor compared to the thermal conductivity 
+enhancement.  
+The high-temperature performance of BN/PI composites 
+is particularly relevant for advanced applications where 
+materials are exposed to extreme thermal conditions. 
+These include aerospace electronics, where components 
+must withstand high heat during flight or atmospheric re-
+entry; high-voltage 
+insulation systems and power 
+electronics that generate significant internal heat; and 
+under-the-hood automotive electronics, which require 
+thermally stable dielectric materials. Additionally, in next-
+generation 
+semiconductor 
+packaging 
+and 
+thermal 
+interface materials, BN/PI composites offer the thermal 
+reliability 
+needed 
+for 
+harsh 
+environments. 
+These 
+application scenarios justify the inclusion of elevated-
+temperature simulations (2000–2500 K) as a theoretical 
+exploration of performance boundaries beyond standard 
+operational limits. 
+The findings confirmed that BN effectively contributes to 
+thermal management without compromising dielectric 
+stability. The Debye relaxation analysis revealed that BN 
+content influences relaxation behaviour, enhancing the 
+material's suitability for electronic applications requiring 
+efficient heat dissipation and stable electrical insulation. 
+This study underlines the potential of BN/PI composites as 
+advanced materials for high-performance electronic 
+systems, where the balance between thermal and 
+dielectric properties is critical for operational efficiency. 
+ 
+ 
+Availability of data and materials 
+ 
+All data generated or analysed during this study are 
+included in this published article. 
+Aungwa et al.        163 
+ 
+ 
+ 
+COMPETING INTERESTS 
+ 
+The authors declare that they have no competing interests. 
+ 
+ 
+REFERENCES 
+ 
+Ahmed, J., Seyhun, N., Ramaswamy, H. S., & Luciano, G. 
+(2009). Dielectric properties of potato puree in microwave 
+frequency range as influenced by concentration and 
+temperature. International Journal of Food Properties, 12(4), 
+896-909. 
+Aungwa, F., Abubakar, A. B., Newton, G. F., Bichi, J. A., Denen, 
+I. S., Adebayo, A. T., Myom, A. M., & Ikyumbur, T. J. (2025a). 
+Simulation-based analysis of the breakdown strength of 
+different dielectric materials: A comparative study of polymers, 
+ceramics and composites. Nigerian Journal of Physics, 34(1), 
+139-148. 
+Aungwa, F., Ogunmoye, K., Solomon, I. D., Jubu, P. R., Oche, A. 
+A., Danladi, E., Gesa, N. F., Adepoju, A. T., Adoyi, E. J. & 
+Ochang, M. B. (2025b). Optical thickness of dielectric layer in 
+solar cell design for improved efficiency: A theoretical 
+insight. Physics Access, 5(1), 67-72. 
+Calay, R. K., Newborough, M., Probert, D., & Calay, P. S. (1994). 
+Predictive 
+equations 
+for 
+the 
+dielectric 
+properties 
+of 
+foods. International 
+Journal 
+of 
+Food 
+Science 
+& 
+Technology, 29(6), 699-713. 
+Feng, H., Tang, J., & Cavalieri, R. P. (2002). Dielectric properties 
+of dehydrated apples as affected by moisture and 
+temperature. Transactions of the ASAE, 45(1), 129-135. 
+Franco, A. P., Tadini, C. C., & Wilhelms Gut, J. A. (2017). 
+Predicting the dielectric behavior of orange and other citrus 
+fruit juices at 915 and 2450 MHz. International Journal of Food 
+Properties, 20(sup2), 1468-1488. 
+Franco, A. P., Yamamoto, L. Y., Tadini, C. C., & Gut, J. A. (2015). 
+Dielectric properties of green coconut water relevant to 
+microwave processing: Effect of temperature and field 
+frequency. Journal of Food Engineering, 155, 69-78. 
+Hasted, J. B., Aqueous dielectrics Series: Studies in Chemical 
+Physics, Chapman and Hall Press, London, UK.  
+Içier, F., & Baysal, T. (2004). Dielectrical properties of food 
+materials—1: Factors affecting and industrial uses. Critical 
+reviews in food science and nutrition, 44(6), 465-471. 
+Ikediala, J. N., Tang, J., Drake, S. R., & Neven, L. G. (2000). 
+Dielectric properties of apple cultivars and codling moth 
+larvae. Transactions of the ASAE, 43(5), 1175-1184. 
+Kim, W. J., Park, S. H., & Kang, D. H. (2018). Inactivation of 
+foodborne pathogens influenced by dielectric properties, 
+relevant to sugar contents, in chili sauce by 915 MHz 
+microwaves. LWT, 96, 111-118. 
+Kuang, W., & Nelson, S. O. (1997). Dielectric relaxation 
+characteristics of fresh fruits and vegetables from 3 to 20 
+GHz. Journal of Microwave Power and Electromagnetic 
+Energy, 32(2), 114-122. 
+Maxwell Garnett, J. C. (1906). VII. Colours in metal glasses, in 
+metallic films, and in metallic solutions.—II. Philosophical 
+Transactions of the Royal Society of London. Series A, 
+Containing 
+Papers 
+of 
+a 
+Mathematical 
+or 
+Physical 
+Character, 205(387-401), 237-288. 
+Mendes-Oliveira, G., Deering, A. J., San Martin-Gonzalez, M. F., 
+& Campanella, O. H. (2020). Microwave pasteurization of 
+apple juice: Modeling the inactivation of Escherichia coli O157:  
+
+
+===== PAGE 16 =====
+ 
+ 
+164       Appl. J. Phys. Sci. 
+ 
+ 
+ 
+H7 
+and 
+Salmonella Typhimurium 
+at 
+80–90 
+C. Food 
+Microbiology, 87, 103382. 
+Nelson, S. O. (2005, July). Dielectric spectroscopy studies on 
+fresh fruits and vegetables. In 2005 IEEE Antennas and 
+Propagation Society International Symposium (Vol. 4, pp. 455-
+458). IEEE. 
+Nelson, S. O., & Bartley, P. G. (2002). Measuring frequency-and 
+temperature-dependent permittivities of food materials. IEEE 
+Transactions on Instrumentation and Measurement, 51(4), 
+589-592. 
+Ravika, V., & Sharma, K. S. (2023). Investigation of Dielectric 
+Properties of Potato, Tomato and Onion Juices at Microwave 
+Frequencies. Journal of Environmental Nanotechnology, 
+12(4), 52-59. 
+Regier, M., & Schubert, H. (2005). Introducing microwave 
+processing 
+of 
+food: 
+principles 
+and 
+technologies. The 
+Microwave Processing of Foods, 3-21. 
+Singh, S. P. (2018). An analysis of dielectric parameters and 
+penetration depth of tomato sauces. Journal of Food 
+Processing & Technology, 9(07), 7-10. 
+Sosa-Morales, M. E., Valerio-Junco, L., López-Malo, A., & 
+García, H. S. (2010). Dielectric properties of foods: Reported 
+data in the 21st Century and their potential applications. LWT-
+Food Science and Technology, 43(8), 1169-1179. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Vijay, R., Jain, R., & Sharma, K. S. (2015). Dielectric 
+spectroscopy 
+of 
+grape 
+juice 
+at 
+microwave 
+frequencies. International Agrophysics, 29(2), 239-246. 
+Wang, Y., Wig, T. D., Tang, J., & Hallberg, L. M. (2003). Dielectric 
+properties 
+of 
+foods 
+relevant to 
+RF 
+and 
+microwave 
+pasteurization 
+and 
+sterilization. Journal 
+of 
+Food 
+Engineering, 57(3), 257-268. 
+Zhu, X., Guo, W., & Jia, Y. (2014). Temperature-dependent 
+dielectric properties of raw cow’s and goat’s milk from 10 to 
+4,500 MHz relevant to radio-frequency and microwave 
+pasteurization 
+process. Food 
+and 
+Bioprocess 
+Technology, 7(6), 1830-1839. 
+Zhu, X., Guo, W., & Wu, X. (2012). Frequency-and temperature-
+dependent dielectric properties of fruit juices associated with 
+pasteurization 
+by 
+dielectric 
+heating. Journal 
+of 
+Food 
+Engineering, 109(2), 258-266. 

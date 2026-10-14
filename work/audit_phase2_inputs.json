@@ -1,0 +1,369 @@
+{
+ "baseline_hashes": {
+  "thermal_conductivity_dataset.csv": "78999ab6f289b68d",
+  "paper_inventory.csv": "6d6ceca2efe18ec9",
+  "extraction_log.csv": "bd459be54b86bd3e",
+  "uncertain_measurements.csv": "cc8ab3b308051a03",
+  "unusable_sources.csv": "c0c1ec7c18fd4e97",
+  "quality_control_report.md": "6cb2e76643e7f981",
+  "README.md": "05c04bc3f6e24214"
+ },
+ "baseline_hashes_ok": true,
+ "title_fixes": {
+  "10.1038/s41598-018-19945-3": {
+   "current": "In-plane and out-of-plane thermal conductivity of polyimide composites with boron nitride nanosheets",
+   "corrected": "Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanosheets"
+  },
+  "10.3390/polym11121990": {
+   "current": "Magnetically aligned nickel powder in AlN/epoxy composites with enhanced thermal conductivity",
+   "corrected": "Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin-Based Composites under Magnetic Alignment"
+  },
+  "10.3390/polym11081335": {
+   "current": "Epoxy/BN Composites with High Thermal Conductivity and Excellent Electrical Insulation",
+   "corrected": "Optimization of Boron Nitride Sphere Loading in Epoxy: Enhanced Thermal Conductivity and Excellent Electrical Insulation"
+  },
+  "10.3390/polym13030456": {
+   "current": "Thermal Conductivity Enhancement of Phase Change Material with Boron Nitride via Surface Modification",
+   "corrected": "Thermal Properties of Surface-Modified and Cross-Linked Boron Nitride/Polyethylene Glycol Composite as Phase Change Material"
+  },
+  "10.3390/nano15120936": {
+   "current": "Preparation of High Thermal Conductivity Epoxy Composites with Hexagonal Boron Nitride via Magnetic Field-Assisted Curing",
+   "corrected": "Preparation and Properties of Magnetically Responsive Graphene/Boron Nitride/Iron Oxide Filler Composite Epoxy Resin Materials"
+  },
+  "10.3390/polym18050648": {
+   "current": "Tailoring Flame-Retardant and Thermal Conductive Properties of Epoxy Composites with Multimodal Ceramic Fillers",
+   "corrected": "Tailoring Flame Retardance and Thermal Conductivity of Epoxy/Benzoxazine Mixtures via Aluminum Trihydrate and Ceramic Hybridization"
+  },
+  "10.1039/c8ra10211b": {
+   "current": "3D BN/PA66 aerogel scaffolds for epoxy composites with enhanced thermal conductivity",
+   "corrected": "Improved dielectric stability of epoxy composites with ultralow boron nitride loading"
+  },
+  "10.3390/ijms24098221": {
+   "current": "Fabrication of BN/PU Composite Films with Enhanced Thermal Conductivity via Phase Inversion",
+   "corrected": "Boron Nitride/Polyurethane Composites with Good Thermal Conductivity and Flexibility"
+  },
+  "10.3390/polym16081169": {
+   "current": "High In-Plane Thermal Conductivity of Polystyrene/BN Composites via Cyclic Compression Molding",
+   "corrected": "Enhancing Thermal Conductivity in Polymer Composites through Molding-Assisted Orientation of Boron Nitride"
+  },
+  "10.3390/polym17111507": {
+   "current": "Enhancing Thermal Conductivity of Epoxy Molding Compounds via CNT-Optimized Interfacial Networks",
+   "corrected": "Preparation of Phenolic Epoxy-Based Electronic Packaging Materials with High Thermal Conductivity by Creating an Interfacial Heat Conduction Network"
+  },
+  "10.3390/nano8120997": {
+   "current": "Synergistic Effects of Functionalized CNTs and h-BN on Enhanced Thermal Conductivity of Epoxy/Cyanate Ester Composites",
+   "corrected": "Synergistic Effects of Functional CNTs and h-BN on Enhanced Thermal Conductivity of Epoxy/Cyanate Matrix Composites"
+  }
+ },
+ "loading_fixes": [
+  {
+   "row_id": "a9d63e6e-010",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-011",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-012",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-013",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-014",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-015",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-016",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-017",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-018",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-019",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-020",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-021",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-022",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-023",
+   "family": "ETL",
+   "grade": "60",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 47.1,
+   "vol_pct": "34.2",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-024",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-025",
+   "family": "ETL",
+   "grade": "70",
+   "matrix": "Epoxy-thiol (DGEBA + thiol)",
+   "curing_agent": "Thiol hardener (LC-80)",
+   "stored_wt_pct": "70.0",
+   "corrected_wt_pct": 58.0,
+   "vol_pct": "44.7",
+   "basis": "ETL grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-026",
+   "family": "EJ",
+   "grade": "60",
+   "matrix": "Epoxy-diamine (DGEBA + Jeffamine D-230)",
+   "curing_agent": "Jeffamine D-230",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 53.0,
+   "vol_pct": "38.1",
+   "basis": "EJ grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-027",
+   "family": "EJ",
+   "grade": "60",
+   "matrix": "Epoxy-diamine (DGEBA + Jeffamine D-230)",
+   "curing_agent": "Jeffamine D-230",
+   "stored_wt_pct": "60.0",
+   "corrected_wt_pct": 53.0,
+   "vol_pct": "38.1",
+   "basis": "EJ grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-028",
+   "family": "EJ",
+   "grade": "65",
+   "matrix": "Epoxy-diamine (DGEBA + Jeffamine D-230)",
+   "curing_agent": "Jeffamine D-230",
+   "stored_wt_pct": "65.0",
+   "corrected_wt_pct": 58.2,
+   "vol_pct": "43.3",
+   "basis": "EJ grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  },
+  {
+   "row_id": "a9d63e6e-029",
+   "family": "EJ",
+   "grade": "65",
+   "matrix": "Epoxy-diamine (DGEBA + Jeffamine D-230)",
+   "curing_agent": "Jeffamine D-230",
+   "stored_wt_pct": "65.0",
+   "corrected_wt_pct": 58.2,
+   "vol_pct": "43.3",
+   "basis": "EJ grade: BN/(epoxy+BN+curing agent) from Table 1 (compositions by weight)"
+  }
+ ],
+ "drop_intra_recommended": [
+  "2f8abcf1-061",
+  "2f8abcf1-062",
+  "ad883006-077",
+  "0e680d76-098",
+  "b8850d43-119",
+  "b8850d43-120",
+  "b8850d43-121",
+  "caf49a8d-150",
+  "bf4f3fd7-185"
+ ],
+ "drop_cross_recommended": [
+  "a9d63e6e-014",
+  "a9d63e6e-015",
+  "a9d63e6e-016",
+  "a8b6fee9-141",
+  "a8b6fee9-142"
+ ],
+ "drop_out_of_scope_recommended": [
+  "4a11b03c-151"
+ ],
+ "row_totals": {
+  "current": 188,
+  "after_intra": 179,
+  "after_intra_and_cross": 174,
+  "after_all_recommended": 173
+ },
+ "numeric_col_violations": [
+  {
+   "row_id": "0e680d76-094",
+   "column": "measurement_temperature_C",
+   "value": "RT"
+  },
+  {
+   "row_id": "caf49a8d-130",
+   "column": "filler_mean_size_um",
+   "value": "55 (AlN) / 35 (BN)"
+  }
+ ],
+ "unparsable_original_strings": [
+  {
+   "row_id": "2f8abcf1-046",
+   "value": "30 wt% BNNS + 1 wt% BNNT",
+   "numeric_wt": "31.0",
+   "numeric_vol": ""
+  },
+  {
+   "row_id": "2f8abcf1-047",
+   "value": "30 wt% BNNS + 1 wt% BNNT",
+   "numeric_wt": "31.0",
+   "numeric_vol": ""
+  },
+  {
+   "row_id": "ad883006-073",
+   "value": "20 wt% BNNS + 2 wt% G-POSS",
+   "numeric_wt": "22.0",
+   "numeric_vol": ""
+  },
+  {
+   "row_id": "b8850d43-116",
+   "value": "30 AlN + 2 Ni",
+   "numeric_wt": "",
+   "numeric_vol": "32.0"
+  },
+  {
+   "row_id": "b8850d43-117",
+   "value": "30 AlN + 2 Ni",
+   "numeric_wt": "",
+   "numeric_vol": "32.0"
+  },
+  {
+   "row_id": "b8850d43-118",
+   "value": "30 AlN + 2 Ni",
+   "numeric_wt": "",
+   "numeric_vol": "32.0"
+  },
+  {
+   "row_id": "bf4f3fd7-182",
+   "value": "30-4",
+   "numeric_wt": "",
+   "numeric_vol": ""
+  }
+ ],
+ "pending_decisions": [
+  "drop_cross list needs domain-owner approval (keep-side: d831a829-135..139 pressure series)",
+  "row 4a11b03c-151: drop (recommended) vs re-source to original DOI",
+  "sample-label fixes for rows 036 / 147 / 180 + hybrid convention (095, 151-153, 188) = judgment edits, applied at Phase 2"
+ ],
+ "errors": []
+}

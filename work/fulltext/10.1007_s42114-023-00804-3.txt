@@ -1,0 +1,694 @@
+SOURCE doi=10.1007/s42114-023-00804-3
+TITLE: Boron nitride whiskers and nano alumina synergistically enhancing the vertical thermal conductivity of epoxy-cellulose aerogel nanocomposites
+YEAR: 2023
+JOURNAL: Advanced Composites and Hybrid Materials
+OA_URL: https://www.researchsquare.com/article/rs-3369352/latest.pdf
+
+
+===== PAGE 1 =====
+Page 1/23
+Boron nitride whiskers and nano alumina
+synergistically enhancing the vertical thermal
+conductivity of epoxy-cellulose aerogel
+nanocomposites
+Zhaoyang Li 
+Key Laboratory of Materials Processing and Mold (Zhengzhou University), Ministry of Education;
+National Engineering Research Center for Advanced Polymer Processing Technology, Zhengzhou
+University
+Duo Pan 
+(
+
+panduonerc@zzu.edu.cn
+)
+Key Laboratory of Materials Processing and Mold (Zhengzhou University), Ministry of Education;
+National Engineering Research Center for Advanced Polymer Processing Technology, Zhengzhou
+University
+Ziyuan Han 
+Key Laboratory of Materials Processing and Mold (Zhengzhou University), Ministry of Education;
+National Engineering Research Center for Advanced Polymer Processing Technology, Zhengzhou
+University
+D. Jaya Prasanna Kumar 
+Department of Chemical Engineering, Ramaiah Institute of Technology
+Juanna Ren 
+College of Materials Science and Engineering, Taiyuan University of Science and Technology
+Hua Hou 
+College of Materials Science and Engineering, Taiyuan University of Science and Technology
+Zeinhom M. El-Bahy 
+Department of Chemistry, Faculty of Science, Al-Azhar University
+Gaber A. M. Mersal 
+Department of Chemistry, College of Science, Taif University
+Ben Bin Xu 
+Mechanical and Construction Engineering, Faculty of Engineering and Environment, Northumbria
+University
+Yongzhi Liu 
+Key Laboratory of Materials Processing and Mold (Zhengzhou University), Ministry of Education;
+National Engineering Research Center for Advanced Polymer Processing Technology, Zhengzhou
+University
+Chuntai Liu 
+
+
+===== PAGE 2 =====
+Page 2/23
+Key Laboratory of Materials Processing and Mold (Zhengzhou University), Ministry of Education;
+National Engineering Research Center for Advanced Polymer Processing Technology, Zhengzhou
+University
+Mohamed M. Ibrahim 
+Department of Chemistry, College of Science, Taif University
+Research Article
+Keywords: Boron nitride whiskers, Nano-Al2O3, Epoxy-based composites, Thermal conductivity
+Posted Date: October 10th, 2023
+DOI: https://doi.org/10.21203/rs.3.rs-3369352/v1
+License:
+
+
+This work is licensed under a Creative Commons Attribution 4.0 International
+License.
+ 
+Read Full License
+Additional Declarations: No competing interests reported.
+Version of Record: A version of this preprint was published at Advanced Composites and Hybrid Materials
+on December 8th, 2023. See the published version at https://doi.org/10.1007/s42114-023-00804-3.
+
+
+===== PAGE 3 =====
+Page 3/23
+Abstract
+With the continuous innovation of electronic information technology, thermal interface materials, which
+mainly play the role of heat dissipation in microelectronic devices, will face great challenges. In this work,
+the boron nitride whiskers (BNWK)@Al2O3/cellulose aerogels (CA) obtained by electrostatic self-assembly
+one-dimensional BNWK and zero-dimensional nano-Al2O3 combined with directional freezing of CA. The
+obtained BNWK@Al2O3/CA not only has a unique vertical network structure, but also exhibits exceptional
+compressive mechanical strength, especially when the mass ratio of BNWK/nano-Al2O3 is 1:7, the
+compressive strength of BNWK@Al2O3(1:7)/CA reaches 97 kPa, based on the flexibility of the CA and the
+support of the rigid hybrid filler BNWK@Al2O3, the theoretical relaxation time of the composite is also as
+high as 25327 s. Furthermore, the thermal conductivity of the epoxy-based composite
+(BNWK@Al2O3/CA/EP) with a filler loading of 8.6 wt% is about 1.92 W/(m·K), which is 9.6 times that of
+pure EP, the excellent thermally conductive property is due to the accelerated phonon transport by the
+vertically arranged BNWK@Al2O3 network structure. Hence, this work provides a new idea for developing
+a new generation of thermal interface materials.
+1 Introduction
+With the development of science and technology, the power and performance of various electronic
+devices have been greatly improved [1–3]. It follows that the heat dissipation problem inside the
+electronic components will face a major test [4, 5]. Polymers are widely used in microelectronic packaging
+materials due to their excellent physical and chemical properties, however, their intrinsic thermal
+conductivity is generally low, and they can no longer meet the needs of practical production as heat
+dissipation interface materials alone [6, 7].
+At present, filler-filled polymer-based composites are an effective strategy to solve the problem of efficient
+heat dissipation of interface materials [8, 9]. These fillers mainly include metal and metal oxide particles
+(such as Ag, Zn, Cu and their corresponding oxides, etc.) [5, 10, 11], carbon-based materials (carbon black,
+graphite and carbon nanotubes, etc.) [12, 13] and ceramic materials (aluminum oxide, silicon carbide and
+boron nitride, etc.) [14, 15]. Among them, metal and metal oxide particles as well as carbon-based
+materials have high electrical conductivity, which violates the basic insulating properties that electronic
+packaging materials need to meet in practical applications [16]. While ceramic materials are considered
+to be the most promising thermally conductive fillers due to their good electrical insulation and excellent
+chemical stability [17]. In particular, boron nitride (BN), known as white graphite, has become a star
+thermally conductive filler because of its excellent properties such as high thermal conductivity, low
+dielectric loss and corrosion resistance [18, 19]. For instance, Pan et al. [20] obtained a highly thermally
+conductive epoxy-based composite (2.11 W/(m·K)) which possesses a unique three-dimensional (3D)
+carbonized cellulose/BN aerogel network structure. As a typical one-dimensional boron nitride single
+crystal material, boron nitride whiskers (BNWK) have gradually become a hot material due to their highly
+ordered atomic arrangement, low crystal defects and outstanding advantages in directional heat transfer
+
+
+===== PAGE 4 =====
+Page 4/23
+[21]. In addition, aluminum oxide (Al2O3), as another ceramic thermal conductive filler, is also widely used
+in the synthesis of thermal management composites based on its low price [22]. Bian et al. [23] chosen
+modified nano-Al2O3 and BN as fillers for fabricating epoxy-based composites, and found that the
+thermal conductivity of the composite was 700% higher than that of pure epoxy.
+For the preparation of thermal management composites, traditional blending methods are limited by the
+low promotion efficiency of thermal conductivity and generally require a larger filler content, while large
+loadings are bound to degrade mechanical and other properties of the composite [24, 25]. Therefore, there
+is a great need for new processing strategies to prepare excellent thermally conductive composites with
+low filler contents. Based on isotropic composites with high thermal conductivity required to build
+complex and perfect thermally conductive filler network structures which could further excavate the
+potential of polymer-based composites [26], in recent years, more and more researchers began to focus
+on the orientation distribution of fillers in the polymer to achieve a rapid heat dissipation of the
+composites in a certain direction [27]. At present, the methods included in this strategy contain magnetic
+field or electric field orientation method, electrospinning method and vacuum filtration method, etc [28–
+30]. Although there have been many studies on improving the overall thermal conductivity of composites
+by constructing directional thermal pathway strategies, the above-mentioned methods have high
+technical challenge.
+In this work, one-dimensional BNWK and nano-Al2O3 are used as composite fillers for the first time to
+obtain a BNWK/Al2O3/cellulose aerogel (CA) vertically oriented framework with certain mechanical
+strength through simple electrostatic self-assembly and directional freeze-drying. Finally, it was found
+that the thermal conductivity of the epoxy-based composite BNWK@Al2O3/CA/EP obtained by vacuum
+impregnation EP was as high as 1.92 W/(m·K) when the mass ratio of BNWK and Nano-Al2O3 was 1:7
+and the total content was only 8.6 wt%. The excellent thermally conductive performance is mainly
+attributed to the stable vertically oriented framework and efficient phonon transport pathway.
+2 Experimental
+2.1 Materials
+BN whiskers (BNWK, diameters: 0.4–1.0 µm, length: 5–10 µm) were purchased from Beijing Dake Daojin
+Science and Technology Co., Ltd., China. Nano-Al2O3 (γ phase, ~ 20 nm, 99%), ammonium hydroxide
+solution (NH4OH, 25–28%), N,N′-Methylenebis(acrylamide) (MBA, C7H10N2O2, 1.235 g/cm3), Sodium
+hydroxide (NaOH, AR, 96%) and Urea (H2NCONH2, AR, 99%) were supplied by Shanghai McLean
+Biochemical Technology Co., Ltd., China. Cellulose (length: ≤ 25 mm) and ethanol (CH3CH2OH, AR, 95%)
+were provided by Shanghai Aladdin Reagent Co., Ltd., China. Epoxy (EP, E-44) and amine curing agent 593
+were obtained from WuXi Pinhua Chemical Co., Ltd., China. Deionized (DI) water was supplied in
+unlimited quantities by the laboratory.
+
+
+===== PAGE 5 =====
+Page 5/23
+2.2 Preparation of BNWK@Al2O3 hybrid filler
+The preparation of BNWK@Al2O3 hybrid fillers is based on a simple and environmentally friendly water-
+phase electrostatic self-assembly strategy. The detailed preparation process is shown in Fig. S1, first, 1 g
+BNWK was diluted into 5 mg/mL dispersion with DI water, and the solution pH value was adjusted to
+about 11 with aqueous ammonia to obtain a dispersion with a negative Zeta potential. Next, a series of
+mass (1 g, 3 g, 5 g and 7 g) of nano-Al2O3 were weighed and dissolved in 200 mL of a mixed solution of
+ethanol and DI water (Vethanol: VDI = 3:1) to obtain a dispersion with a positive Zeta potential. Finally, the
+above two dispersions were fully mixed under mechanical stirring for 3 h, followed by centrifugation and
+drying to obtain BNWK@Al2O3 hybrid filler powder. The obtained series of hybrid fillers are labeled as
+BNWK@Al2O3 (1:1), BNWK@Al2O3 (1:3), B BNWK@Al2O3 (1:5) and BNWK@Al2O3 (1:7), respectively.
+2.3 Preparation of BNWK@Al2O3/cellulose aerogel
+(BNWK@Al2O3/CA)
+The BNWK@Al2O3/cellulose aerogel (BNWK@Al2O3/CA) was obtained from the corresponding
+BNWK@Al2O3/cellulose hydrogel (Fig. S1), and the specific preparation process of aerogel is similar to
+our previous research works [20, 31]. To simplify writing, the obtained BNWK@Al2O3/cellulose hydrogel
+and BNWK@Al2O3/cellulose aerogel were marked as BNWK@Al2O3/CH and BNWK@Al2O3/CA,
+respectively.
+2.4 Preparation of BNWK@Al2O3/CA/EP composites
+The BNWK@Al2O3/CA/EP composites were obtained by a vacuum-assisted impregnation strategy, the
+specific operation can learn from our previous research work [32, 33]. In addition, BNWK/CA/EP with the
+same synthesis method, and for comparison, BNWK@Al2O3/CA/EP(Blend) composites were also
+prepared by a simple blending.
+2.5 Characterization
+The microstructure and morphology of the synthesized materials were observed through scanning
+electron microscope (SEM; Thermo Scientific Apreo 2). The Fourier transform infrared spectroscopy
+(FTIR, Nicolet 6700) with a test range of 500–4000 cm− 1. Zeta potentials of samples were investigated
+by a Zeta potential analyzer (Zetasizernano). The thermal gravimetric analyzer (TGA 2) was used to
+accurately determine filler content. The thermal conductivity was measured by a Hot Disk Thermal
+Constant Analyzer (TPS 2500S, Sweden) and the infrared radiation intensity over time of the composites
+were measured by an infrared thermal camera (E60, FLIR). The compression test by using UTM2203
+microcomputer with a compression rate of 5 mm/s.
+3 Results and discussions
+
+
+===== PAGE 6 =====
+Page 6/23
+3.1 Characterization
+The zeta potentials of BNWK dispersion and Al2O3 dispersion are demonstrated in Fig. 1a. Due to the
+coating of hydroxide ions in an alkaline environment, BNWK exhibits a negative zeta potential of − 49.7
+mV. Meanwhile, the Al2O3 dispersion presents positive zeta potential (26.5 mV). The relatively large
+charge of BNWK (|-49.7|>|26.5|) facilitates the deposition of more nano-Al2O3 on its surface via
+electrostatic interactions. From Fig. 1b, a single BN exhibits the characteristic peaks at ~ 795 cm− 1 for the
+B–N–B bending vibrations and at ~ 1375 cm− 1 for the B–N stretching vibrations [34]. The peaks at 818
+and 552 cm− 1 are the infrared absorption peaks of nano-Al2O3 [35]. After electrostatic self-assembly, the
+infrared spectra of the hybrid fillers contain all the above characteristic peaks, wherein the characteristic
+peak intensity of nano-Al2O3 increases with the increase of its content (From BNWK@Al2O3 (1:1) to
+BNWK@Al2O3 (1:7)). Furthermore, the peak at ~ 3475 cm− 1 can be found in all samples due to the
+presence of adsorbed water on the filler surface.
+The microscopic morphologies of nano-Al2O3, BNWK, and hybrid filler BNWK@Al2O3 with different quality
+ratios are shown in Fig. 2. From Fig. 2a, due to size effect, nano-Al2O3 aggregates to form heterogeneous
+clusters. It can be seen from the Fig. 2b that BNWK presents smooth rod-like morphology with a diameter
+of 0.5–1.5 µm and a length of 5–10 µm. Figure 2c − f show the SEM images of BNWK@Al2O3 with
+different mass ratios of BNWK/Al2O3 are1:1, 1:3, 1:5 and 1:7, respectively. It can be clearly seen that
+nano-Al2O3 uniformly loads on the surface of BNWK by electrostatic action, and with the increase of
+nano-Al2O3 content, its loading on the surface of BNWK gradually increases until it completely covers
+BNWK at the mass ratio of BNWK to nano-Al2O3 is 1:7.
+In order to demonstrate the vertically oriented structure of fillers in cellulose aerogels, the side-view
+images of different samples were studied. During directional-freezing, the water in the hydrogel gradually
+turns into ice crystals and transitions from the bottom to the top [36]. As shown in Fig. 3a, pure CAs
+obtained by directional freezing exhibit continuous oriented pore structures [37, 38], and the light-weight
+property of CAs are reflected from the illustration [39, 40]. While the addition of BNWK and hybrid filler
+BNWK@Al2O3 did not affect the vertical skeleton structure formed by ice crystals (Fig. 3b-f). From Fig. 3b,
+BNWKs (marked in the red circles) are oriented along the CA wall under the extrusion of ice crystals, for
+which the heat conduction pathways are marked by orange lines. Obviously, with the introduction of the
+hybrid filler BNWK@Al2O3 and the increase of nano-Al2O3 content, the thermal conduction pathway
+framework in the CA becomes thicker, (Fig. 3c-f), which provides an effective theoretical support for the
+ideal mechanical support of composite. Especially, when the mass ratio of BNWK to nano-Al2O3 is 1:7,
+the nano-Al2O3 bound on the surface of BNWK through electrostatic self-assembly begins to connect with
+each other between adjacent vertical skeleton BNWKs, which is greatly beneficial to the heat dissipation
+performance [41].
+3.2 Mechanical properties
+
+
+===== PAGE 7 =====
+Page 7/23
+The compressive mechanical properties of the aerogel are critical to determining its durability and
+suitability for thermal conduction applications [42, 43]. The size of the test samples is 20 mm in diameter
+and 10 mm in height, and the compressive stress-strain curves of different CAs are shown in Fig. 4a. All
+aerogels can be compressed to about 50% strain and exhibit excellent flexibility. Pure CA exhibits a near-
+linear compressive stress response up to 15.2 kPa, and there is an obvious fracture in the later period.
+When BNWK or different contents of hybrid fillers (BNWK@Al2O3) were introduced into CA, the stress-
+strain curves of the composites exhibit three stages of foam-like structural characteristics, including
+linear elastic region at low strain values (less than 25%), plastic region at medium strain values (from
+25–40%) and densification stage at high strain values (over 40%). It is clear to see that the
+BNWK@Al2O3/CA with different ratios (1:1, 1:3, 1:5 and 1:7) of BNWK/Al2O3 have a compressive stress of
+33, 46, 69, and 97 kPa at 50% strain, respectively, which is much higher than that of 24 kPa for the
+BNWK/CA.
+In order to further study the effect of the addition of hybrid fillers on the mechanical properties of the
+composite, the stress relaxation of different aerogel samples under 50% constant strain was analyzed in
+Fig. 4b. According to Maxwell's viscoelastic theoretical model, the relaxation time of the sample can be
+simulated according to Eq. (1) [44, 45]:
+1
+where  (t) refers to the stress at time t, 
+ corresponds to the stress at the initial moment, e is the base
+of the natural logarithm,  represents the stress relaxation time. It can be seen from Fig. S2 that the
+stress-time curve of the samples has a good linear relationship with the Maxwell equation, and the fitting
+data summarized in Fig. 4c shows that the addition of filler has a obvious effect on the stress relaxation
+time of different CA composites. Based on the rigid support of vertical BNWK, the relaxation time of
+BNWK/CA is increased from 14054 s of pure CA to 19325 s. In addition, the addition of rigid Al2O3
+particles further increased the skeleton support function of the hybrid filler BNWK@Al2O3 [46]. With the
+increase of Al2O3 content, the hybrid filler formed a continuous and dense network structure in CA, as
+shown in Fig. 4d, at this time, the slip degree of the filler in CA decreases due to the existence of the
+hybrid network, so the theoretical relaxation time gradually increases. When the mass ratio of BNWK to
+Al2O3 is 1:7, the relaxation time of BNWK@Al2O3(1:7)/CA reaches up to 25327 s.
+3.3 Thermally conductive properties
+Figure 5a presents the thermal conductivity and thermal conductivity enhancement (TCE) of different EP-
+based composites. For reference, the thermal conductivity of pure epoxy is 0.2 W/(m·K) [47]. After testing,
+the thermal conductivity of EP-based composites with single BNWK filler is 0.48 W/(m·K), while the value
+of BNWK@Al2O3/CA/EP rapidly increases from 1.04 to 1.92 W/(m·K) as the ratios of BNWK/Al2O3
+changes from 1:1 to 1:7. Obviously, the interacting hybrid fillers BNWK and nano-Al2O3 contribute to the
+σ (t) = σ0e−t/τ
+σ
+σ0
+τ
+
+
+===== PAGE 8 =====
+Page 8/23
+heat conduction, which stems from efficient phonon transport paths. As a comparison, the
+BNWK@Al2O3/CA/EP(Blend) with a simple blending method is only 0.87 W/(m·K), indicating there is an
+obvious interfacial thermal resistance in this system. In order to more intuitively reflect the thermal
+management performance of different composites, the TCE value was introduced and its magnitude was
+calculated by Eq. (2) [48]:
+2
+where Kc and Km are the TC of composites and polymer matrix. After calculation, the highest thermal
+conductivity (1.92 W/(m·K)) of BNWK@Al2O3(1:7)/CA/EP represents an enhancement of 840% with
+respect to the thermal conductivity of neat EP, which is mainly because of the interconnected vertical
+thermal network structure formed by BNWK and nano-Al2O3 in this system.
+To evaluate the filler distribution state in the network, the thermal conductivity of EP-based composites
+were theoretically described according to the Hashin-Shtrikman (HS) model as shown by Eqs. (3 and 4)
+[49, 50]:
+3
+4
+where the KHS+ and KHS− refer to the upper and lower boundary values, respectively. Kf and Km represent
+the thermal conductivity of filler and matrix, φm and φf are the content of matrix and filler. Figure 5b
+presents the simulation results of boundary thermal conductivity, and it can be clearly seen that the
+actual measured thermal conductivity of all samples (red line) stayed between the upper and lower
+boundary as expected. In addition, Xinterconnectivity, a parameter representing the interconnectivity of fillers,
+which can be calculated by the Eq. (5) [51]:
+5
+TCE =
+× 100%
+Kc −Km
+Km
+KHS+ = Kf
+2Kf + Km −2ϕm (Kf −Km)
+2Kf + Km + ϕm (Kf −Km)
+KHS−= Km
+2Km + Kf −2ϕf (Km −Kf)
+2Km + Kf + ϕf (Km −Kf)
+Xinterconnectivity =
+Kc −KHS−
+KHS+ −KHS−
+
+
+===== PAGE 9 =====
+Page 9/23
+from Fig. 5b, it should be noted that the interconnectivity in BNWK@Al2O3(1:7)/CA/EP is generally higher
+than other composites. The resulting interconnection differences are closely related to the vertical
+structural topography, which also agrees with the thermal conductivity values of Fig. 5a.
+In practical application, the interfacial thermal resistance between filler and matrix in thermal
+management composites is a non-negligible factor [52, 53]. In order to reflect the interface effect more
+intuitively, the effective medium theory (EMT) is employed to model different systems and the detailed
+calculations are presented in the Supporting Information [54]. Based on the theoretical calculation, the
+final fitting results are shown in Fig. 5c and the thermal boundary resistance of BNWK@Al2O3(1:7)/CA/EP
+is 5.46×10− 7 m2·K/W, which is much lower than that of other systems. The above conclusions further
+demonstrates that the vertical hybrid network structure tightly connected by BNWK and nano-Al2O3
+corporately contributes to the high thermal conductivity.
+Figure 5d shows the comparison of the thermally conductive effect between our composite and other
+representative BN filled composites reported in the literature [55–60], among them, the filler content of
+this work is obtained by thermogravimetric analysis test (Fig. S3). Obviously, our work exhibits a high
+thermal conductivity than those of other composites at the lower filler contents.
+To confirm the actual thermally conductive performances of the samples, an infrared thermal imager was
+used to record their temperature change with time [61, 62]. Specifically, for the heating test, as shown in
+Fig. 6(a2), the as-prepared samples were vertically placed on a heating plate (set to 80°C) at the same
+time, and the average surface temperatures of the different samples were measured at an interval of
+every 20 s to obtain infrared thermal images (Fig. 6(a1)) and the data of surface temperature (Fig. 6(a3)).
+As expected, the surface temperature of different of composites gradually increases, After 80 s, the
+surface temperature of BNWK@Al2O3/CA/EP is up to about 74.8°C, which is much than the pure EP
+(62.7°C), BNWK/CA/EP (67.3°C) and BNWK@Al2O3/CA/EP (Blend) with ordinary blending method
+(68.9°C).
+While for the cooling process, the heated samples were quickly transferred to a foam plate and the
+change in surface temperature was recorded (Fig. 6(b1) and (b2)). Similar to the heating process, the
+BNWK@Al2O3/CA/EP still shows excellent heat dissipation capacity. It can quickly drop from 77.2°C to
+about 30.5°C within 120 s (Fig. 6(b3)). The above results demonstrate that the BNWK@Al2O3/CA/EP has
+an extremely high heat transfer efficiency and will be expected to be deployed in the heat dissipation for
+the micro-electronic devices.
+3.4 Thermally conductive mechanism of different
+composites
+Based on the above morphological characterization and thermal performance test results, the thermally
+conductive mechanism of the four systems of epoxy resin-based composites is presented in Fig. 7a. For
+pure EP, the heat flux is difficult to transmit in the vertical direction due to the disordered arrangement of
+
+
+===== PAGE 10 =====
+Page 10/23
+its molecular chains and the severe scattering of phonons [63]. The thermal conductivity of BNWK/CA/EP
+with vertically aligned BNWK increases from 0.2 to 0.48 W/(m·K) compared to pure EP. However, due to
+the limited heat conduction pathway formed by vertical BNWK and the inability to form an efficient
+phonon transmission path, the thermal conductivity did not increase significantly. For
+BNWK@Al2O3/CA/EP (Blend) with randomly dispersed hybrid fillers (BNWK@Al2O3) by ordinary blending
+method, although a thermally conductive network structure is formed inside, the weak interaction
+between the hybrid fillers and the matrix EP hinders the further improvement of thermal conductivity.
+Combined with the advantages of internal filler distribution of BNWK/CA/EP and BNWK@Al2O3/CA/EP
+(Blend), the thermal conductivity of BNWK@Al2O3/CA/EP system with vertically arranged hybrid filler
+BNWK@Al2O3 has been significantly improved in the vertical direction. The reason is that on one hand,
+BNWK forms fast phonon transmission paths in the vertical direction, and on the other hand, the
+electrostatically assembled nano-Al2O3 on the surface of BNWK is connected to each other to form an
+effective thermal conduction network.
+In order to clearly see the thermal conduction process of the sample from the macroscopic level, we
+adopted the finite element analysis (COMSOL Multiphysics) technique [64, 65]. The specific modeling and
+analysis process is presented in the Supporting Information. Figure 7b shows the steady-state
+temperature distribution images of the models with different composites. From the simulation results, we
+can clearly see that the heat flow of BNWK@Al2O3/CA/EP can rapidly cover the entire sample from the
+bottom in the same time due to its unique vertical structure and thermal conductive network structure
+[66].
+4 Conclusions
+In summary, the hybrid filler BNWK@Al2O3 was first synthesized by an electrostatic self-assembly
+method, and then a unique vertical network structure (BNWK@Al2O3/CA) was successfully constructed by
+introducing BNWK@Al2O3 into cellulose aerogel (CA) with the help of directional freezing technology of
+cellulose hydrogel. The obtained BNWK@Al2O3/CA not only exhibits exceptional compressive mechanical
+strength, especially when the mass ratio of BNWK and nano-Al2O3 is 1:7, the compressive strength of
+BNWK@Al2O3(1:7)/CA reaches 97 kPa, but also shows a large compressive relaxation time as high as
+25327 s based on the flexibility of the cellulose aerogel and the support of the rigid hybrid filler
+BNWK@Al2O3. More importantly, the resulting EP-based BNWK@Al2O3(1:7)/CA/EP composites exhibit
+excellent thermal management properties in the vertical direction, at a BNWK@Al2O3 loading of 8.6 wt%,
+the composites showed a dramatically enhanced thermal conductivity to 1.92 W/mK, which far exceeds
+of BNWK@Al2O3(1:7)/CA/EP (Blend) composites obtained by ordinary blending method (0.87 W/mK)
+BNWK/CA/EP composites without nano-Al2O3 (0.48 W/mK), and pure EP (0.2 W/mK). Besides, the finite
+element heat conduction simulation further analyzes the heat conduction mechanism from the
+theoretical level. Therefore, this work provides a new idea for the development of a new generation of
+thermal interface materials.
+
+
+===== PAGE 11 =====
+Page 11/23
+Declarations
+Declaration of competing interest
+The authors declare that they have no competing financial interests or personal relationships that could
+have influenced the work reported in this paper. 
+Acknowledgements
+The researchers would like to acknowledge Deanship of Scientific Research, Taif University for funding
+this work.
+Author contribution
+Zhaoyang Li prepared the materials and conducted most of the measurements and data analysis. Duo
+Pan conceived the idea, wrote the paper, and coordinated the overall project. Ziyuan Han, Jaya Prasanna
+Kumar D, Juanna Ren, Hua Hou, Zeinhom M. El-Bahy, and Gaber A. M. Mersal contributed to the data
+analysis. Ben Bin Xu and Yongzhi Liu revised the paper. Chuntai Liu provided supervision and resources.
+Mohamed M. Ibrahim reviewed and revised the manuscript. All authors reviewed the manuscript.
+Funding
+This work was financially supported by National Natural Science Foundation of China (12072325). 
+Data availability 
+The authors confirm that the data supporting the findings of this study are available within the article and
+its Supplementary material. Raw data that support the findings of this study are available from the
+corresponding author, upon reasonable request.
+References
+1. Yang G, Zhang X, Shang Y, Xu P, Pan D, Su F, Ji Y, Feng Y, Liu Y, Liu C (2021) Highly thermally
+conductive polyvinyl alcohol/boron nitride nanocomposites with interconnection oriented boron
+nitride nanoplatelets. Compos Sci Technol 201:108521.
+https://doi.org/10.1016/j.compscitech.2020.108521
+2. He L (2021) Improve thermal conductivity of polymer composites via conductive network. ES Mater
+Manuf 13:1-2. https://dx.doi.org/10.30919/esmm5f460
+3. Yang X, Fan S, Li Y, Guo Y, Li Y, Ruan K, Zhang S, Zhang J, Kong J, Gu J (2020) Synchronously
+improved electromagnetic interference shielding and thermal conductivity for epoxy nanocomposites
+by constructing 3D copper nanowires/thermally annealed graphene aerogel framework. Compos Part
+A 128:105670. https://doi.org/10.1016/j.compositesa.2019.105670
+
+
+===== PAGE 12 =====
+Page 12/23
+4. Han H, Sun H, Lei F, Huang J, Lyu S, Wu B, Yang M, Zhang C, Li D, Zhang Z, Sun D (2021) Flexible
+Ethylene-vinyl Acetate Copolymer/Fluorographene Composite Films with Excellent Thermal
+Conductive and Electrical Insulation Properties for Thermal Management. ES Mater Manuf 15:53-64.
+https://doi.org/10.30919/esmm5f523
+5. Xu F, Bao D, Cui Y, Gao Y, Lin D, Wang X, Peng J, Geng H, Wang H (2021) Copper nanoparticle-
+deposited graphite sheets for highly thermally conductive polymer composites with reduced
+interfacial thermal resistance. Adv Compos Hybrid Mater 3:2235-2246.
+https://doi.org/10.1007/s42114-021-00367-1
+6. Sun J, Zhang X, Du Q, Murugadoss V, Wu D, Guo Z (2021) The contribution of conductive network
+conversion in thermal conductivity enhancement of polymer composite: a theoretical and
+experimental study. ES Mater Manuf 13:53-65. https://doi.org/10.30919/10.30919/esmm5f450
+7. Zhang T, Sun J, Ren L, Yao Y, Wang M, Zeng X, Sun R, Xu J-B, Wong C-P (2019) Nacre-inspired
+polymer composites with high thermal conductivity and enhanced mechanical strength. Compos
+Part A 121:92-99. https://doi.org/10.1016/j.compositesa.2019.03.017
+8. Li C, Zhang H, Zhang X, Zhang Z, Li N, Liu Y, Zheng X, Gao D, Wu D, Sun J (2022) Construction of bi-
+continuous structure in fPC/ABS-hBN (GB) composites with simultaneous enhanced thermal
+conductivity and mechanical properties. Compos Sci Technol 223:109437.
+https://doi.org/10.1016/j.compscitech.2022.109437
+9. Yu Z, Bai Y, Wang JH, Li Y (2021) Effects of functional additives on structure and properties of
+polycarbonate-based composites filled with hybrid chopped carbon fiber/graphene nanoplatelet
+fillers. ES Energy Environ 12:66-76. https://dx.doi.org/10.30919/esee8c434
+10. Zhang D, Hu S, Sun Y, Liu X, Wang H, Wang H, Chen Y, Ni Y (2020) XTe (X = Ge, Sn, Pb) Monolayers:
+Promising Thermoelectric Materials with Ultralow Lattice Thermal Conductivity and High-power
+Factor. ES Energy Environ 10: 59-65. https://doi.org/10.30919/esee8c934
+11. Dar UA, Salunke-Gawali SS, Shinde D, Bh S, Satpute S (2021) Thermal and Spectral Studies of
+Transition Metal Complexes of 2-Bromo-3-Hydroxynaphthalene-1,4-Dione: Evaluation of Antibacterial
+Activity Against Six Bacterial Strains. Eng Sci 15:105-115. https://doi.org/10.30919/es8d492
+12. Bustero I, Gaztelumendi I, Obieta I, Mendizabal MA, Zurutuza A, Ortega A, Alonso B (2020) Free-
+standing graphene films embedded in epoxy resin with enhanced thermal properties. Adv Compos
+Hybrid Mater 3:31-40. https://doi.org/10.1007/s42114-020-00136-6
+13. Tülbez S, Esen Z, Dericioglu AF (2020) Effect of CNT impregnation on the mechanical and thermal
+properties of C/C-SiC composites. Adv Compos Hybrid Mater 3:177-186
+https://doi.org/10.1007/s42114-020-00155-3
+14. Roy R, Das D, Rout PK (2022) A Review of Advanced Mullite Ceramics. Eng Sci 18:20-30.
+https://doi.org/10.30919/es8d582
+15. Jia X, Li Q, Ao C, Hu R, Xia T, Xue Z, Wang Q, Deng X, Zhang W, Lu C (2020) High thermal conductive
+shape-stabilized phase change materials of polyethylene glycol/boron nitride@chitosan composites
+
+
+===== PAGE 13 =====
+Page 13/23
+for thermal energy storage. Compos Part A 129:105710.
+https://doi.org/10.1016/j.compositesa.2019.105710
+16. Evans AM, Giri A, Sangwan VK, Xun S, Bartnof M, Torres-Castanedo CG, Balch HB, Rahn MS,
+Bradshaw NP, Vitaku E (2021) Thermally conductive ultra-low-k dielectric layers based on two-
+dimensional covalent organic frameworks. Nat Mater 20:1142-1148.
+https://doi.org/10.1038/s41563-021-00934-3
+17. Yu J, Zhang Y, Guo Q, Hou H, Ma Y, Zhao Y (2022) Effect of pressure on anisotropy in elasticity,
+sound velocity, and thermal conductivity of vanadium borides. Adv Compos Hybrid Mater 5:2297-
+2305. https://doi.org/10.1007/s42114-021-00403-0
+18. Liu H, Yan Z, Sun Z, Li A, Guo Z, Qian L (2021) Highly Efficient Synthesis of Hexagonal Boron Nitride
+Nanofibers with High Specific Surface Area. ES Mater Manuf 16: 56-65.
+https://doi.org/10.30919/esmm5f561
+19. Jing X, Li Y, Zhu J, Chang L, Maganti S, Naik N, Xu BB, Murugadoss V, Huang M, Guo Z (2022)
+Improving thermal conductivity of polyethylene/polypropylene by styrene-ethylene-propylene-styrene
+wrapping hexagonal boron nitride at the phase interface. Adv Compos Hybrid Mater 5:1090-1099.
+https://doi.org/10.1007/s42114-022-00438-x
+20. Pan D, Dong J, Yang G, Su F, Chang B, Liu C, Zhu Y-C, Guo Z (2022) Ice template method assists in
+obtaining carbonized cellulose/boron nitride aerogel with 3D spatial network structure to enhance
+the thermal conductivity and flame retardancy of epoxy-based composites. Adv Compos Hybrid
+Mater 5:58-70. https://doi.org/10.1007/s42114-021-00362-6
+21. Gao Z, Li L (2021) Boron nitride whisker@graphene nanohybrid-filled epoxy composites with high
+thermal conductivities and low dielectric losses. Mater Res Express 8:075008.
+https://doi.org/10.1088/2053-1591/abeab8
+22. Yan H, Dai X, Ruan K, Zhang S, Shi X, Guo Y, Cai H, Gu J (2021) Flexible thermally conductive and
+electrically insulating silicone rubber composite films with BNNS@Al2O3 fillers. Adv Compos Hybrid
+Mater 4:36-50. https://doi.org/10.1007/s42114-021-00208-1
+23. Bian W, Yao T, Chen M, Zhang C, Shao T, Yang Y (2018) The synergistic effects of the micro-BN and
+nano-Al2O3 in micro-nano composites on enhancing the thermal conductivity for insulating epoxy
+resin. Compos Sci Technol 168:420-428. https://doi.org/10.1016/j.compscitech.2018.10.002
+24. Cheng H, Lu Z, Gao Q, Zuo Y, Liu X, Guo Z, Liu C, Shen C (2021) PVDF-Ni/PE-CNTs Composite Foams
+with Co-Continuous Structure for Electromagnetic Interference Shielding and Photo-Electro-Thermal
+Properties. Eng Sci 16:331-340. https://doi.org/10.30919/es8d518
+25. Duan X, Cheng S, Tao R, Zhang Z, Zhao G (2022) Synergistically enhanced thermal control ability
+and mechanical properties of natural rubber for tires through a graphene/silica with a dot-face
+structure. Adv Compos Hybrid Mater 5, 1145-1157. https://doi.org/10.1007/s42114-022-00453-y
+26. Chen N, Li T, Wang Y, Pan L, Bao W, Chen Z (2020) Generalized &ldquo;Slope Method&rdquo; of the
+3&omega;&nbsp;Analysis to Measure the Thermal Conductivity and Heat Capacity of Solids:
+Frequency- vs. Current-sweep. ES Energy Environ 10:13-21. https://doi.org/10.30919/esee8c725
+
+
+===== PAGE 14 =====
+Page 14/23
+27. Feng C-P, Bai L, Bao R-Y, Liu Z-Y, Yang M-B, Chen J, Yang W (2018) Electrically insulating POE/BN
+elastomeric composites with high through-plane thermal conductivity fabricated by two-roll milling
+and hot compression. Adv Compos Hybrid Mater 1:160-167. https://doi.org/10.1007/s42114-017-
+0013-2
+28. Cao X, Jia Z, Hu D, Wu G (2022) Synergistic construction of three-dimensional conductive network
+and double heterointerface polarization via magnetic FeNi for broadband microwave absorption. Adv
+Compos Hybrid Mater 5: 1030-1043. https://doi.org/10.1007/s42114-021-00415-w
+29. Zhang LDH (2020) Recent Advances in Probiotics Encapsulation by Electrospinning. ES Food Agrof.
+2:3-12. https://doi.org/10.30919/esfaf1120
+30. Xiao L, Qi H, Qu K, Shi C, Cheng Y, Sun Z, Yuan B, Huang Z, Pan D, Guo Z (2021) Layer-by-layer
+assembled free-standing and flexible nanocellulose/porous Co3O4 polyhedron hybrid film as
+supercapacitor electrodes. Adv Compos Hybrid Mater 4(2):306-316. https://doi.org/10.1007/s42114-
+021-00223-2
+31. Pan D, Yang G, Abo-Dief HM, Dong J, Su F, Liu C, Li Y, Bin Xu B, Murugadoss V, Naik N, El-Bahy SM, El-
+Bahy ZM, Huang M, Guo Z (2022) Vertically Aligned Silicon Carbide Nanowires/Boron Nitride
+Cellulose Aerogel Networks Enhanced Thermal Conductivity and Electromagnetic Absorbing of
+Epoxy Composites. Nano-Micro Lett 14:118. https://doi.org/10.1007/s40820-022-00863-z
+32. Pan D, Li Q, Zhang W, Dong J, Su F, Murugadoss V, Liu Y, Liu C, Naik N, Guo Z (2021) Highly thermal
+conductive epoxy nanocomposites filled with 3D BN/C spatial network prepared by salt template
+assisted method. Compos Part B 209:108609. https://doi.org/10.1016/j.compositesb.2021.108609
+33. Pan D, Luo S, Feng Y, Zhang X, Su F, Liu H, Liu C, Mai X, Naik N, Guo Z (2021) Highly thermally
+conductive 3D BN/MWCNTs/C spatial network composites with improved electrically insulating and
+flame retardancy prepared by biological template assisted method. Compos Part B 222:109039.
+https://doi.org/10.1016/j.compositesb.2021.109039
+34. Wu X, Su C, Shi K, Wu F, Fu C (2022) Coupling Between Hyperbolic Phonon Polaritons Excited in Two
+Ultrathin Hexagonal Boron Nitride Sheets. Eng Sci 19:273-278. https://doi.org/10.30919/es8e669
+35. Liang C, Zhao P, Email E, Hou P, Wang S, Strokova V, Lu L, Cheng X (2020) Investigation of
+Compatibility of Fluorine-Acrylic Emulsion and Sulphoaluminate Cement in the Design of Composite
+Coating: Effects of Sorbitol and Its Mechanism. ES Mater Manuf 8:36-45.
+https://doi.org/10.30919/esmm5f707
+36. Gu H, Huo X, Chen J, El-Bahy SME, El-Bahy ZME (2022) An Overview of Cellulose Aerogel:
+Classification and Applications. ES Food Agrof 10:1-9. https://doi.org/10.30919/esfaf782
+37. Atta OM, Manan S, Ul-Islam MU, Ahmed AAQ, Ullah MW, Yang G (2021) Silver Decorated Bacterial
+Cellulose Nanocomposites as Antimicrobial Food Packaging Materials. ES Food Agrof 6:12-26.
+https://doi.org/10.30919/esfaf590
+38. Sun Z, Qi H, Chen M, Guo S, Huang Z, Maganti S, Murugadoss V, Huang M, Guo Z (2022) Progress in
+Cellulose/Carbon Nanotube Composite Flexible Electrodes for Supercapacitors. Eng Sci 18:59-74.
+https://doi.org/10.30919/es8d588
+
+
+===== PAGE 15 =====
+Page 15/23
+39. Li Y, Guo J, Li M, Tang Y, Murugadoss V, Seok I, Yu J, Sun L, Sun C, Luo Y (2021) Recent Application
+of Cellulose Gel in Flexible Sensing-A Review. ES Food Agrof 4:9-27.
+https://doi.org/10.30919/esfaf466
+40. Zhang M, Du H, Liu K, Nie S, Xu T, Zhang X, Si C (2021) Fabrication and applications of cellulose-
+based nanogenerators. Adv Compos Hybrid Mater 4:865-884. https://doi.org/10.1007/s42114-021-
+00312-2
+41. Cheng Y, Zhang G (2022) Impact of Atomic Coating on Thermal Conductivity of Nano Materials. ES
+Energy Environ 17:1-10. https://doi.org/10.30919/esee8c741
+42. Osman A, Elhakeem A, Kaytbay S, Ahmed A (2022) A comprehensive review on the thermal, electrical,
+and mechanical properties of graphene-based multi-functional epoxy composites. Adv Compos
+Hybrid Mater 5: 547-605. https://doi.org/10.1007/s42114-022-00423-4
+43. Kowshik S, Sharma S, U SR, Shettar M, Hiremath P, Upadhyaya A (2022) Investigation on the Effects
+of Uncarbonised, Carbonised and Hybrid Eggshell Filler Addition on the Mechanical Properties of
+Glass Fibre/Polyester Composites. Eng Sci 18:121-131. https://doi.org/10.30919/es8d679
+44. Huang J, Zou W, Luo Y, Wu Q-b, Lu X, Qu J (2021) Phase morphology, rheological behavior, and
+mechanical properties of poly (lactic acid)/poly (butylene succinate)/hexamethylene diisocyanate
+reactive blends. ES Energy Environ 12:86-94. https://doi.org/10.30919/es8d679
+45. Zhang S, Cheng B, Jia Z, Zhao Z, Jin X, Zhao Z, Wu G (2022) The art of framework construction:
+hollow-structured materials toward high-efficiency electromagnetic wave absorption. Adv. Compos.
+Hybrid Mater 5:1658-1698. https://doi.org/10.1007/s42114-022-00514-2
+46. Wang X, Qi F, Wang Z, Zhang Z, Li Q, Wu J, Shi G (2022) Dependence of Al Doping on the in-Situ
+Reactive Preparation and Mechanical Properties of Ti3SiC2/Al2O3 Composites. ES Mater Manuf
+15:85-95. https://doi.org/10.30919/esmm5f467
+47. Chen F, Xiao H, Peng ZQ, Zhang ZP, Rong MZ, Zhang MQ (2021) Thermally conductive glass fiber
+reinforced epoxy composites with intrinsic self-healing capability. Adv Compos Hybrid Mater 4:1048-
+1058. https://doi.org/10.1007/s42114-021-00303-3
+48. Wu Z, Wang X, Annamareddy SHK, Gao S, Xu Q, Algadi H, Sridhar D, Wasnik P, Xu BB, Weng L, Guo Z
+Dielectric Properties and Thermal Conductivity of Polyvinylidene Fluoride Synergistically Enhanced
+with Silica@Multi-walled Carbon Nanotubes and Boron Nitride. ES Mater Manuf 847.
+https://doi.org/10.30919/esmm5f847
+49. Duan X, Cheng S, Tao R, Zhang Z, Zhao G (2022) Synergistically enhanced thermal control ability
+and mechanical properties of natural rubber for tires through a graphene/silica with a dot-face
+structure. Adv Compos Hybrid Mater 5:1145-1157. https://doi.org/10.1007/s42114-022-00453-y
+50. Yang D, Kong X, Ni Y, Gao D, Yang B, Zhu Y, Zhang L (2019) Novel nitrile-butadiene rubber composites
+with enhanced thermal conductivity and high dielectric constant. Compos Part A 124:105447.
+https://doi.org/10.1016/j.compositesa.2019.05.015
+51. Chen H, Li C, Yao Q, Chen F, Fu Q (2022) Enhanced thermal conductivity and wear resistance of
+polytetrafluoroethylene via incorporating hexagonal boron nitride and alumina particles. J Appl
+
+
+===== PAGE 16 =====
+Page 16/23
+Polym Sci 139:51497 https://doi.org/10.1002/app.51497
+52. Wang S, Lu X, Negi A, He J, Kim K, Shao H, Jiang P, Liu J, Hao Q (2021) Revisiting the Reduction of
+Thermal Conductivity in Nano- to Micro-Grained Bismuth Telluride: The Importance of Grain-
+Boundary Thermal Resistance. Eng Sci17:45-55. https://doi.org/10.30919/es8d513
+53. Liu W, Huang D, Yue Y (2023) Interfacial Thermal Transport in Energy and Environmental
+Applications. ES Energy Environ 21:596. https://doi.org/10.30919/esee8c596
+54. Min J, Hu J, Sun C, Wan H, Liao P, Teng H, Lin J (2022) Fabrication processes of metal-fiber
+reinforced polymer hybrid components: a review. Adv Compos Hybrid Mater 5: 651-678.
+https://doi.org/10.1007/s42114-021-00393-z
+55. Han G, Zhao X, Feng Y, Ma J, Zhou K, Shi Y, Liu C, Xie X (2020) Highly flame-retardant epoxy-based
+thermal conductive composites with functionalized boron nitride nanosheets exfoliated by one-step
+ball milling. Chem Eng J 407:127099. https://doi.org/10.1016/j.cej.2020.127099
+56. Ruan Y, Li N, Liu C, Chen L, Zhang S, Wang Z (2020) Increasing heat transfer performance of
+thermoplastic polyurethane by constructing thermal conduction channels of ultra-thin boron nitride
+nanosheets and carbon nanotubes. New J Chem 44:18823-18830.
+https://doi.org/10.1039/D0NJ04215C
+57. Li M, Wang M, Hou X, Zhan Z, Wang H, Fu H, Lin C-T, Fu L, Jiang N, Yu J (2020) Highly thermal
+conductive and electrical insulating polymer composites with boron nitride. Compos Part B
+184:107746. https://doi.org/10.1016/j.compositesb.2020.107746
+58. Zhong B, Zou J, An L, Ji C, Huang X, Liu W, Yu Y, Wang H, Wen G, Zhao K, Lin X (2019) The effects of
+the hexagonal boron nitride nanoflake properties on the thermal conductivity of hexagonal boron
+nitride nanoflake/silicone rubber composites. Compos Part A 127:105629.
+https://doi.org/https://doi.org/10.1016/j.compositesa.2019.105629
+59. Yi W, Wu W, Drummer D, Shen W, Chao L, Ning W (2019) Synergistic construction of thermally
+conductive network in polybenzoxazine with boron nitride hybrid fillers. Mater Res Express 6:125369.
+https://doi.org/10.1088/2053-1591/ab6e7d
+60. Li X, Feng Y, Chen C, Ye Y, Zeng H, Qu H, Liu J, Zhou X, Long S, Xie X (2018) Highly thermally
+conductive flame retardant epoxy nanocomposites with multifunctional ionic liquid flame retardant-
+functionalized boron nitride nanosheets. J Mater Chem A 6:20500-20512.
+https://doi.org/10.1039/C8TA08008A
+61. Jia W, Qi Y, Hu Z, Xiong Z, Luo Z, Xiang Z, Hu J, Lu W (2021) Facile fabrication of monodisperse
+CoFe2O4 nanocrystals@ dopamine@ DOX hybrids for magnetic-responsive on-demand cancer
+theranostic applications. Adv Compos Hybrid Mater 4:989-1001. https://doi.org/10.1007/s42114-
+021-00276-3
+62. Han Z, Song Y, Wang J, Li S, Pan D, Liu C, Guo Z (2023) Research Progress of Thermal Insulation
+Materials used in Spacesuits. ES Energy Environ 21:947. https://doi.org/10.30919/esee947
+63. Yan X, Zhang S, Tang W, Xia M (2020) Thermal conductivity of PBX compound calculated by
+phonons of explosive and binder molecular crystals. ES Energy Environ 11:74-83.
+
+
+===== PAGE 17 =====
+Page 17/23
+https://doi.org/10.30919/esee8c1036
+64. Choo H, Bourke MA, Daymond MR (2001) A finite-element analysis of the inelastic relaxation of
+thermal residual stress in continuous-fiber-reinforced composites. Compos Sci Technol 61:1757-
+1772. https://doi.org/10.1016/S0266-3538(01)00075-6
+65. Goli E, Parikh N, Yourdkhani M, Hibbard N, Moore J, Sottos N, Geubelle P (2020) Frontal
+polymerization of unidirectional carbon-fiber-reinforced composites. Compos Part A 130:105689.
+https://doi.org/10.1016/j.compositesa.2019.105689
+66. Zhang X, Dong J, Pan D, Yang G, Su F, Ji Y, Liu C, Shen C (2021) Constructing dual thermal
+conductive networks in electrospun polyimide membranes with highly thermally conductivity but
+electrical insulation properties. Adv Compos Hybrid Mater 4:1102-1112.
+https://doi.org/10.1007/s42114-021-00335-9
+Figures
+Figure 1
+(a) Zeta potentials of BNWK and Al2O3 dispersions and (b) FTIR spectra of different fillers
+
+
+===== PAGE 18 =====
+Page 18/23
+Figure 2
+SEM images of (a) nano-Al2O3, (b) BNWK and (c-f) hybrid filler BNWK@Al2O3 with different quality ratios
+of 1:1, 1:3, 1:5 and 1:7
+
+
+===== PAGE 19 =====
+Page 19/23
+Figure 3
+SEM images of (a) CA, (b) BNWK/CA, and (c-f) BNWK@Al2O3/CA with different quality ratios
+(BNWK/Al2O3) of 1:1, 1:3, 1:5 and 1:7
+
+
+===== PAGE 20 =====
+Page 20/23
+Figure 4
+(a) Compressive tress-strain curve, (b) compressive stress relaxation curve, (c) theoretical stress
+relaxation time of CA, BNWK/CA and BNWK@Al2O3/CA, and (d) mechanical support mechanism of
+BNWK@Al2O3/CA
+
+
+===== PAGE 21 =====
+Page 21/23
+Figure 5
+(a) The thermal conductivity and thermal conductivity enhancement, (b) Hashin-Shtrikman (HS) model
+and interconnectivity values, (c) fitting thermal conductivity results by EMT model of different
+composites. (d) The comparison of the thermal conductivity of our composites with the values of other
+BN filled composites reported in the literature
+
+
+===== PAGE 22 =====
+Page 22/23
+Figure 6
+Infrared thermal images (a1), schematic design (a2) and surface temperature variation (a3) of heating
+test with different composite; Infrared thermal images (b1), schematic design (b2) and surface
+temperature variation (b3) of cooling test with different composite
+
+
+===== PAGE 23 =====
+Page 23/23
+Figure 7
+(a) Schematic illustration of duction mechanism of different EP-based composites and (b) numerical
+simulation of the bottom temperature of four systems
+Supplementary Files
+This is a list of supplementary files associated with this preprint. Click to download.
+Supportinginformation.docx
