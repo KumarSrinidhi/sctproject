@@ -1,0 +1,194 @@
+SOURCE doi=10.3390/polym12091913 FETCH=EPMC PMC7564299
+
+ 
+ Polymers (Basel) Polymers (Basel) 3589 polymers 101545357 polymers Polymers 2073-4360 Multidisciplinary Digital Publishing Institute (MDPI) PMC7564299 PMC7564299.1 7564299 7564299 32854322 10.3390/polym12091913 polymers-12-01913 1 Article Preparation and Thermomechanical Properties of Ketone Mesogenic Liquid Crystalline Epoxy Resin Composites with Functionalized Boron Nitride Lin Yi-Sheng https://orcid.org/0000-0002-9363-1893 Hsu Steve Lien-Chung Ho Tsung-Han https://orcid.org/0000-0003-3377-1031 Jheng Li-Cheng Hsiao Yu-Hsiang 1 Department of Materials Science &amp; Engineering, National Cheng Kung University, Tainan 701-01, Taiwan; sheng-013@hotmail.com 2 Product Characterization, Advanced Semiconductor Engineering, Inc., Kaohsiung 801-70, Taiwan; Hunter_Hsiao@aseglobal.com 3 Department of Chemical &amp; Materials Engineering, National Kaohsiung University of Science and Technology, Kaohsiung 807-78, Taiwan; thho@nkust.edu.tw (T.-H.H.); lcjheng@nkust.edu.tw (L.-C.J.) * Correspondence: lchsu@mail.ncku.edu.tw ; Tel.: +886-6-275-7575 (ext. 62904); Fax: +886-6-234-6290 25 8 2020 9 2020 12 9 367018 1913 18 7 2020 22 8 2020 25 08 2020 28 10 2020 29 10 2020 © 2020 by the authors. 2020 https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license ( http://creativecommons.org/licenses/by/4.0/ ). In order to enhance the thermomechanical behaviors of epoxy molding compounds, the hexagonal boron nitride (h-BN) fillers were incorporated in a ketone mesogenic liquid crystalline epoxy (K–LCE) matrix to prepare a high-performance epoxy composites. The h-BN was modified by surface coupling agent 3-aminopropyltriethoxysilane (APTES). The grafting of silane molecules onto the surface of BN fillers improved the compatibility and homogeneous dispersion state of BN fillers in the K–LCE matrix with a strong interface interaction. The surface-modified BN fillers were characterized using Fourier transform infrared spectroscopy. The thermomechanical properties and morphologies of K–LCE/BN composites loading with different contents of modified BN fillers, ranging from 0.50 to 5.00 wt%, were investigated. These results show that modified BN fillers uniformly dispersed in K–LCE matrix, contributing to the enhancement in storage modulus, glass transition temperatures, impact strength and reduction in the coefficient of thermal expansion (CTE). The thermal stability and char yield of the K–LCE/BN composites were increased by increasing the amount of modified BN fillers and the thermal decomposition temperatures of composites were over 370 °C. The thermal conductivity of the K–LCE/BN composites was up to 0.6 W/m·K, for LC epoxy filled with 5.00-wt%-modified BN fillers. Furthermore, the K–LCE/BN composites have excellent thermal and mechanical properties compared to those of the DGEBA/BN composites.
+
+ liquid crystalline epoxy resin boron nitride composites surface modification thermomechanical properties pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no pmc-status-released yes pmc-prop-open-access yes pmc-prop-olf no pmc-prop-manuscript no pmc-prop-legally-suppressed no pmc-prop-has-pdf yes pmc-prop-has-supplement no pmc-prop-pdf-only no pmc-prop-suppress-copyright no pmc-prop-is-real-version no pmc-prop-is-scanned-article no pmc-prop-preprint no pmc-prop-in-epmc yes pmc-license-ref CC BY 1. Introduction
+ With the development of electronic packaging technology, the heat management is becoming increasingly important, which has led to the increased demand for higher density and higher power integrated circuits (ICs). When high-power–density devices are worked, a large amount of heat is produced. The issue of heat dissipation must be improved to prevent overheating [,,].
+ Epoxy molding compounds (EMCs) and underfills has often been used as electrical encapsulating materials for microelectronic devices to provide protection of the IC devices []. However, common epoxy resins have poor thermal properties such as high CTE and low thermal conductivity (0.17–0.20 W/m·K), but these properties of epoxides can be improved by the rigid rod structures with liquid crystalline characteristics introduced [,,,]. We have reported that the liquid crystalline (LC) epoxy resin exhibited much lower CTE and a higher thermal conductivity (0.34 W/m·K) compared to those of a traditional epoxy resin (DGEBA) []. In general, the ICs are encapsulated by silica-filled epoxy composites, but the thermal conductivity of the composites is less than 1.0 W/m·K, which is far below the demand of ICs heat dissipation []. It can be enhanced by incorporation of inorganic fillers with a high thermal conductivity and electrical insulation, such as alumina (Al 2 O 3 ) [,,,,], silicon carbide (SiC) [,,], silicon nitride (Si 3 N 4 ) [,,], aluminum nitride (AlN) [,,,,], boron nitride (BN) [,,,,,], carbon nanotubes (CNTs) [,,] and grapheme [,,] or other ceramic fillers. Boron nitride with a hexagonal lattice structure (h-BN) is a platelet-shaped ceramic and is often called “white graphite”. h-BN has the greatest potential application in polymer composites due to its superior intrinsic thermal conductivity (up to 400 W/m·k), excellent electrical insulation properties, thermal stability with low dielectric constant and low density, compared to those of Al 2 O 3 , SiC, Si 3 N 4 and AlN. Therefore, in order to obtain the better thermal and mechanical properties of the composites, it is necessary to increase the interface between filler and epoxy matrix by surface modification with chemical treatment. The surface modification of inorganic filler improves the affinity of the filler matrix, which provides strong interconnection and homogeneous dispersion. Hence, the incorporation of functionalized ceramic materials in polymers enhances the demand of highly thermally properties for electronic encapsulation application.
+ In this study, a LC epoxy resin containing ketone mesogenic group was synthesized and a silane-coupling agent 3-aminopropyltriethoxysilane was used to modify the surface of h-BN fillers. The h-BN surface treatment was characterized, which confirms the silane functional groups were grafted onto the h-BN surface. The surface modification of BN fillers dispersed in LC epoxy resin matrix and then cured using aromatic amines as curing agent to produce high-performance composites. Its morphology and the dispersion states were examined. The thermomechanical properties, thermal stability and thermal conductivity of the cured composites were also investigated.
+
+ 2. Experimental Section
+ 2.1. Materials
+ Hexagonal boron nitride (h-BN) with an average diameter of 1 μm was purchased from Aldrich. 3-aminopropyltriethoxysilane (APTES) was purchased from Acros (Geel, Belgium). 4,4′-diaminodiphenylsulfone (DDS) was purchased from Tokyo Chemical Industry (TCI, Tokyo, Japan). Sulfuric acid, nitric acid and hydrochloric acid were purchased from TEDIA (Fairfield, OH, USA). Ethanol was purchased from ECHO (Lake Zurich, IL, USA). All chemicals and solvents were analytical grade and used directly without further purification as received.
+
+ 2.2. Synthesis of 1,5-bis(ρ-glycidyloxy-phenyl)-1,4-pentadiene-3-one (K–LCE)
+ The K–LCE was synthesized following the method described in our previous work []. The synthetic route of K–LCE is shown in . The product as a yellow powder was recrystallized from ethanol.
+ K–LCE: calcd. 378; found: 379. 1 H NMR (acetone–D 6 ): δ = 2.75, 2.90 (4H, epoxy–CH 2 ), 3.34 (2H, epoxy–CH), 3.93, 4.27 (4H, glycidyl–CH 2 ), 6.92, 7.53 (8H, aromatic), 7.09 (2H, Ph–CH=), 7.69 (2H, =CH-). The epoxy equivalent weight (EEW) was determined using the HClO 4 /potentiometric titration method and found to be 196.2 g·eq −1 .
+
+ 2.3. Surface Modification of BN Fillers
+ In order to decrease the agglomeration of h-BN fillers, sulfuric acid, nitric acid and silane were used for surface treatment, and the surface of h-BN was functionalized to increase the degree of dispersion in K–LCE. First, 500 mg of BN powder was added into a 400-mL mixture solution of sulfuric acid and nitric acid (volume ration = 3:1), and the mixture was ultrasonicated for 10 h. The mixture was stirred with reflux condensation at 80 °C for 72 h and then cooled to room temperature. The resulting solution was filtered off, washed with deionized water and then dried at 60 °C under vacuum for 24 h. This pretreatment method was first, carried out to introduce the hydroxyl groups onto the surface of h-BN fillers through strong oxidation, named OH–BN.
+ Second, OH–BN fillers were modified with a silane-coupling agent APTES for grafting of hyperbranched. In a 250-mL three-neck flask, the mixture of deionized water and APTES (mole ratio = 12:1) were magnetic stirred for 30 min. The hydrolytic solution was added into ethanol and adjusted the pH to 3 with hydrochloric acid. Then the 5 g OH–BN filler was added into the mixed solution. The resulting mixture was heated to 70 °C and magnetic stirred for 5 h. After cooling, the silane modified BN filler was filtered, washed with ethanol and then obtained after dried at 60 °C under vacuum for 24 h, name Si–BN [].
+
+ 2.4. Preparation of K–LCE/BN Composites
+ The K–LCE-based composites were prepared as follows: First of all, a stoichiometric ratio of the K–LCE and curing agent DDS were mixed and the weight ratio of the Si–BN which set at 0.50, 1.00, 2.00 and 5.00 wt% were added to the mixture and pestle together in an agate mortar, respectively. Second, the mixture powders were poured into die, adequately degassed using manual hydraulic press and then placed into an aluminum mold. Finally, the K–LCE/BN composites were obtained after pre-cured at 120 °C for 1 h, 170 °C for 2 h and post-cured at 210 °C for 3 h. illustrates the process of the K–LCE/BN composites fabrication.
+
+ 2.5. Characterization
+ FTIR spectra were recorded on PerkinElmer GX50003 instrument ranging from 4000 to 400 cm −1 . The spectra of specimens were obtained by dispersing them in potassium bromide (KBr) and scanning. The surface morphologies of the K–LCE/BN composites were examined by scanning electron microscopy (SEM; Phenom XL, Waltham, MA, USA). The liquid crystalline property of the K–LCE/BN composites was observed by polarized optical microscopy (POM, Olympus BS51, Tokyo, Japan) with a heating stage during the curing process. The storage modulus and glass transition temperature (T g ) were measured using a dynamic mechanical thermal analyzer (DMA; DMA Q800, TA Instruments, New Castle, DE, USA) with three-point bending mode at a frequency of 1 Hz. Specimens with dimensions of 20 mm × 15 mm × 2 mm were measured from the temperature range of 0 to 270 °C at a heating rate of 5 °C/min. The in-plane CTE was determined using a thermal mechanical analyzer (TMA; TMA Q400, TA Instruments, New Castle, DE, USA). The CTEs were tested by the expansion mode under a 0.05-N tension force from the temperature range of 0 to 270 °C at a heating rate of 5 °C/min. The impact testing for V-shape notched specimens was performed with a Charpy impact tester according to ASTM D6110. The impact strength was measured at room temperature and the impact velocity was 3.1 m/s. The decomposition temperature and weight loss were measured using a thermogravimetric analyzer (TGA; TGA Q500, TA Instruments, New Castle, USA) from room temperature to 800 °C at a heating rate of 10 °C/min under nitrogen gas. The thermal conductivities of the composite at room temperature were determined using a hot disk thermal conductivity analyzer (TPS2500, Gothenburg, Sweden) equipped with a Kapton disk-shaped sensor.
+
+ 3. Results and Discussion
+ 3.1. Characterization of BN Surface Modification
+ FTIR was performed to validate the grafting of the silane-coupling agent APTES on the h-BN surface during acid treatment and silanization. The FTIR spectra of the acid-treated OH–BN (a), APTES (b) and the silane-modified Si–BN (c) are shown in for comparison. The broad absorption peaks of OH–BN and APTES showed at around 3430 cm -1 , which corresponded to the hydroxyl groups and amino groups, respectively. The strong absorption peaks at 1398 and 780 cm -1 are attributed to the vibration of B–N in-plane stretching and B–N–B out-of-plane bending, respectively. After OH–BN modified with silane, the new peaks at 3013, 2824, 1140 and 1036 cm -1 appeared in the IR spectrum of Si–BN, which corresponded to symmetric and asymmetric stretching vibrations of the methylene group of APTES and O–Si–O stretching, respectively. From the chemical structure characterization results that the silane-coupling agent APTES is successfully grafted on the h-BN surface.
+
+ 3.2. Morphology Observation of K–LCE/BN Composites
+ The morphology of K–LCE/BN composites and the dispersion states of h-BN fillers in the K–LCE matrix were examined. Representative SEM images of the fractured surfaces of the K–LCE and K–LCE with different h-BN filler contents are shown in . The neat K–LCE shows a smooth fractured surface in a. The fractured shape of crack propagation reveals as river patterns, which indicated a brittle structure. For the composites with 2.00 wt% filer content, d shows that h-BN fillers were well dispersed uniformly in the K–LCE matrix compared to those of the composites with 0.50 and 1.00 wt% filler content, as shown in b,c. The surface morphologies of the Si–BN and raw h-BN-based composites with 5.00 wt% filler content are shown in e,f, respectively. By comparisons, the raw h-BN-based composites showed much voids and the agglomeration of fillers. On the other hand, the surface-modified BN revealed good homogeneity and dispersion in K–LCE matrix without voids and agglomeration. This is due to the bonding between silane-coupling agent and the h-BN surface is to decrease the interaction of filler–filler and to enhance interfacial properties of the surface-modified BN fillers in the K–LCE matrix, such as good compatibility and uniform dispersion []. In addition, all the composites showed a rough fractured surface because of the K–LCE matrix shear yielding, which resulted by h-BN fillers added.
+ To further examine the texture formation during the curing process, the liquid crystalline phase of K–LCE/BN/DDS mixtures was observed using POM with a heating stage at the isothermal curing temperature. shows the POM image of cured K–LCE/BN composites. The cured K–LCE/BN composites showed the smectic phase which can also offer excellent physical properties. This is due to the mesogenic characteristic of liquid crystalline being introduced to produce a high orderly arrangement networks.
+
+ 3.3. Thermal and Mechanical Properties of K–LCE/BN Composites
+ DMA can be used to investigate the viscoelastic properties and damping characteristics such as the Young’s modulus (E) and the tan δ, as shown in . The storage modulus (E’) and loss modulus (E’’) were calculated from the applied stress and strain as a function of temperature or frequency. Furthermore, the T g was calculated from the maximum peak position of the tan δ curve measurement. These properties reflect the molecular relaxation of the individual materials and reveal interactions among each material of the polymer composites. a shows the storage modulus of the neat K–LCE and K–LCE/BN composites at a heating rate of 5 °C/min; the tan delta curves of the neat K–LCE and its composites filled with different h-BN filler content are shown in b. The values of the pertinent parameters are summarized in . The storage modulus and T g of the K–LCE /BN composites (above 2460 MPa, 245 °C) were higher than that of neat K–LCE (1968 MPa, 228 °C), which indicates that the mechanical properties enhancement can be attributed to the formation of covalent bridge bonding between the LC resin and functionalized h-BN fillers. Thus, silane-coupling agent played an important role in interaction and compatibility between filler and epoxy resin matrix. Nevertheless, the storage modulus and T g of the 5.00 wt% modified BN-filled composites did not increased significantly compared to those of the loading of 2.00 wt% modified BN fillers. This result is due to the presence of some aggregations on the vitrification stage of curing reaction cause the phenomenon.
+ TMA is a useful technique to measure the dimensional changes of a material as a function of temperature under non-oscillating stress. TMA also is a very sensitive tool which can calculate the T g and the CTEs in both the glassy and rubbery regions. TMA thermographs of the neat K–LCE and K–LCE/BN composites are shown in . The CTE values of the composites were gradually decreased with increasing h-BN fillers, as listed in . This is ascribed to the surface modification with silane-coupling agent APTES, which can improve the dispersion of Si–BN in the K–LCE matrix and enhance the crosslinking density of the composites, resulting in the reduction of thermal expansion.
+ The impact tester was used to study the mechanical properties of composites. The composites toughness in terms of the impact strength in the unit of kJ/m 2 was determined by the absorbed energy while breaking a sample under an impact load. shows the impact strength of the neat K–LCE and K–LCE/BN composites. It can be seen that the impact strength slightly increased with increasing Si–BN content compared to the neat K–LCE. This indicates that the incorporation of modified BN fillers did not affect the mechanical properties of the epoxy molding compounds.
+ TGA was performed to further investigate the thermal stability of composites such as weight loss, decomposition temperature and char yields. The thermal stability of the neat K–LCE and its composites filled with different h-BN filler content were determined by TGA at a heating rate of 10 °C/min under nitrogen gas, as shown in . The neat K–LCE and all composites exhibited similar decomposition temperature at 5% and 10% weight loss, respectively. This is due to the existence of rigid rod group of LC epoxy, which can resist to thermal attack. Notice that the decomposition temperature of 5.00 wt% modified BN-filled composites at 10% weight loss was slightly lower compared to that of 2.00 wt% modified BN-filled composites. This result is may attributed to the existence of some aggregations effect the crosslinking density of composites. In addition, the char yields of the composites at 800 °C were gradually increased with increasing Si–BN fillers, as listed in . This result can be explained that the h-BN fillers as mass transfer barriers can form isolation layers []. Based on the above results, the thermomechanical properties of the composites are indeed enhanced by the incorporation of modified BN fillers.
+
+ 3.4. Thermal Conductivity of K–LCE/BN Composites
+ The thermal conductivities of the neat K–LCE and K–LCE/BN composites increased along with the BN filler contents, as shown in . The thermal conductivity values of K–LCE/BN composites with 0%, 0.05%, 1.00%, 2.00%, and 5.00 wt% BN filler contents were 0.34, 0.39, 0.45, 0.53 and 0.58 W/m·K, respectively. With incorporation of Si–BN to neat K–LCE, the thermal conductivity increased by 70.58% (from 0.34 to 0.58) at 5.00 wt% Si–BN fillers content. The enhancement in the thermal conductivity can be explained that the silane-coupling agent APTES modification improved the compatibility of h-BN fillers, which can provide the better dispersion state of Si–BN in the K–LCE matrix, thus obtaining the good path of heat dissipation.
+ In addition, the thermal and mechanical properties of the cured conventional epoxy resin (Diglycidyl ether of bisphenol A, DGEBA) composites were also investigated. The K–LCE/BN composites exhibited superior thermal and mechanical properties than DGEBA/BN composites, as summarized in . The properties of composites can be greatly enhanced when the rigid rod mesogenic structures with LC behavior are introduced, which can form a highly crosslinked composites with orderly arrangement structure.
+
+ 4. Conclusions
+ K–LCE/BN composites were successfully prepared from functionalized h-BN fillers embedded in an LC epoxy resin. The silane-coupling agent APTES was used to modify raw h-BN and acted as a bridge between h-BN fillers and K–LCE matrix. The FTIR spectrum of modified h-BN confirms that APTES is successfully grafted on the surface of h-BN fillers. The thermomechanical properties of the composites are indeed enhanced by the incorporation of modified BN fillers, and the LC epoxy/BN composites shows excellent physical properties compared to those of the traditional epoxy/BN composites. Therefore, The K–LCE/BN composite have the potential for use as a high-performance epoxy molding compounds in electronics encapsulation industry with a low CTE, high storage modulus and thermal conductivity.
+
+ Author Contributions
+ Conceptualization, Y.-S.L. and S.L.-C.H.; methodology, Y.-S.L. and S.L.-C.H.; formal analysis, Y.-S.L. and Y.-H.H.; investigation, Y.-S.L.; resources, T.-H.H. and L.-C.J.; data curation, Y.-S.L.; writing—original draft preparation, Y.-S.L.; writing—review and editing, S.L.-C.H., T.-H.H. and L.-C.J.; visualization, Y.-S.L. and S.L.-C.H.; project administration, S.L.-C.H. All authors have read and agreed to the published version of the manuscript.
+ Funding
+ The financial support provided by the Ministry of Science and Technology (Taiwan, R.O.C.) through project MOST 103-2120-M-006-004-CC1 is greatly appreciated.
+ Conflicts of Interest
+ The authors declare no conflict of interest.
+ References
+ 1. McGlen R.J. Jachuck R. Integrated thermal management techniques for high power electronic devices Appl. Therm. Eng. 2004 24 1143 1156 10.1016/j.applthermaleng.2003.12.029 2. Garimella S.V. Fleischer A.S. Murthy J.Y. Keshavarzi A. Prasher R. Patel C. Bhavnani S.H. Venkatasubramanian R. Mahajan R. Joshi Y. Thermal Challenges in Next-Generation Electronic Systems IEEE Trans. Compon. Packag. Technol. 2008 31 801 815 10.1109/TCAPT.2008.2001197 3. Liang Y.C. Zhang J.N. Li M. Guo Y.P. Yuan J.S. Thermal Analysis of the Heat Exchanger for Power Electronic Device with Higher Power Density Prz. Elektrotechniczn 2012 88 328 332 4. Gonon P. Sylvestre A. Teysseyre J. Prior C. Dielectric properties of epoxy/silica composites used for microlectronic packaging, and their dependence on post-curing J. Mater. Sci. Mater. Electron. 2001 12 81 86 10.1023/A:1011241818209 5. Harada M. Okamoto N. Kannan P. Ochi M. Fracture toughness and fracture mechanism of liquid-crystalline epoxy resins with different polydomain structures J. Polym. Sci. Part B Polym. Phys. 2010 48 2337 2345 10.1002/polb.22119 6. Liu Y.L. Cai Z.Q. Wen X. Pi P. Zheng D. Cheng J. Yang Z. A new and efficient synthetic method of a liquid crystalline epoxy resin with biphenol and aromatic ester group Polym. Bull. 2011 67 57 66 10.1007/s00289-010-0366-y 7. Harada M. Ando J. Ochi M. Synthesis, Characterization, and Mechanical Properties of a Novel Terphenyl Liquid Crystalline Epoxy Resin J. Appl. Polym. Sci. 2015 132 41296 10.1002/app.41296 8. Nazarenko V. Kurik M.V. Klimusheva G.V. Gotra Z.Y. Sorokin V.M. Lisetski L.M. Liquid crystals in Ukraine and Ukrainians in liquid crystals J. Mol. Liq. 2018 267 29 33 10.1016/j.molliq.2018.01.053 9. Lin Y.S. Hsu S.L.C. Ho T.H. Cheng S.S. Hsiao Y.H. Synthesis, characterization, and thermomechanical properties of liquid crystalline epoxy resin containing ketone mesogen Polym. Eng. Sci. 2017 57 424 431 10.1002/pen.24437 10. Huang X. Jiang P. Tanaka T. A review of dielectric polymer composites with high thermal conductivity IEEE Electr. Insul. Mag. 2011 27 8 16 10.1109/MEI.2011.5954064 11. Fu J.F. Shi L.Y. Zhong Q.D. Chen Y. Chen L.Y. Thermally conductive and electrically insulative nanocomposites based on hyperbranched epoxy and nano-Al 2 O 3 particles modified epoxy resin Polym. Adv. Technol. 2011 22 1032 1041 10.1002/pat.1638 12. Fang L. Wu C. Qian R. Xie L. Yang K. Jiang P. Nano–micro structure of functionalized boron nitride and aluminum oxide for epoxy composites with enhanced thermal conductivity and breakdown strength RSC Adv. 2014 40 21010 21017 10.1039/C4RA01194E 13. Yu Z. Di H. Ma Y. Lv L. Pan Y. Zhang C. He Y. Fabrication of graphene oxide–alumina hybrids to reinforce the anti-corrosion performance of composite epoxy coatings Appl. Surf. Sci. 2015 351 986 996 10.1016/j.apsusc.2015.06.026 14. Akhtar M.W. Lee Y.S. Yoo D.J. Kim J.S. Alumina-graphene hybrid filled epoxy composite: Quantitative validation and enhanced thermal conductivity Compos. Part B Eng. 2017 131 184 195 10.1016/j.compositesb.2017.07.067 15. Lazouziet G. Vuksanović M.M. Tomić N.Z. Mitrić M. Petrović M. Radojević V. Heinemann R.J. Optimized preparation of alumina based fillers for tuning composite properties Ceram. Int. 2018 44 7442 7449 10.1016/j.ceramint.2018.01.083 16. Choi J. Yang S. Yu S. Shin H. Cho M. Method of scale bridging for thermoelasticity of cross-linked epoxy/SiC nanocomposites at a wide range of temperatures Polymer 2012 53 5178 5189 10.1016/j.polymer.2012.08.041 17. Abenojar J. Pantoja M. Martinez M.A. Real J.C. Aging by moisture and/or temperature of epoxy/SiC composites: Thermal and mechanical properties J. Compos. Mater. 2015 49 2963 2975 10.1177/0021998314558496 18. Shen D. Zhan Z. Liu Z. Cao Y. Zhou L. Liu Y. Dai W. Nishimura K. Li C. Lin C.T. Enhanced thermal conductivity of epoxy composites filled with silicon carbide nanowires Sci. Rep. 2017 7 2606 10.1038/s41598-017-02929-0 28572604 PMC5453999 19. Shi Z. Fu R. Agathopoulos S. Gu X. Zhao W. Thermal conductivity and fire resistance of epoxy molding compounds filled with Si 3 N 4 and Al(OH) 3 Mater. Design. 2012 34 820 824 10.1016/j.matdes.2011.07.012 20. Kusunose T. Yagi T. Fiorz S.H. Sekino T. Fabrication of epoxy/silicon nitridenanowire composites and evaluation of their thermal conductivity J. Mater. Chem. A 2013 1 3440 3445 10.1039/c3ta00686g 21. Shimamura A. Hotta Y. Hyuga H. Kondo N. Hirao K. Effect of amounts and types of silicon nitride on thermal conductivity of Si 3 N 4 /epoxy resin composite J. Ceram. Soc. Jpn. 2015 123 908 912 10.2109/jcersj2.123.908 22. Teng C.C. Ma C.C.M. Chiou K.C. Lee T.M. Synergetic effect of thermal conductive properties of epoxy composites containing functionalized multi-walled carbon nanotubes and aluminum nitride Compos. Part B Eng. 2012 43 265 271 10.1016/j.compositesb.2011.05.027 23. Choudhury M. Mohanty S. Nayak S.K. Effect of surface modification of aluminum nitride on electrical and thermal characterizations of thermosetting polymeric nanocomposites Polym. Compos. 2013 34 1 14 10.1002/pc.22366 24. Qian R. Yu J. Xie L. Li Y. Jiang P. Efficient thermal properties enhancement to hyperbranched aromatic polyamide grafted aluminum nitride in epoxy composites Polym. Adv. Technol. 2013 24 348 356 10.1002/pat.3090 25. He Z. Dai W. Yu J. Pan L. Xiao X. Lu S. Jiang N. Enhanced thermal and mechanical properties of polyimide composites by mixing thermotropic liquid crystalline epoxy grafted aluminum nitride J. Polym. Res. 2014 21 595 10.1007/s10965-014-0595-0 26. Wang Y. Qiao X. Wan J. Xiao Y. Fan X. Preparation of AlN microspheres/UHMWPE composites for insulating thermal conductors RSC Adv. 2016 6 80262 80267 10.1039/C6RA18228C 27. Yu J. Huang X. Wu C. Wu X. Wang G. Jiang P. Interfacial modification of boron nitride nanoplatelets for epoxy composites with improved thermal properties Polymer 2012 53 471 480 10.1016/j.polymer.2011.12.040 28. Harada M. Hamaura N. Ochi M. Agari Y. Thermal conductivity of liquid crystalline epoxy/BN filler composites having ordered network structure Compos. Part B Eng. 2013 55 306 313 10.1016/j.compositesb.2013.06.031 29. Hou J. Li G. Yang N. Qin L. Grami M.E. Zhang Q. Wang N. Qu X. Preparation and characterization of surface modified boron nitride epoxy composites with enhanced thermal conductivity RSC Adv. 2014 4 44282 44290 10.1039/C4RA07394K 30. Yang N. Xu C. Hou J. Yao Y. Zhang Q. Grami M.E. He L. Wanga N. Qu X. Preparation and properties of thermally conductive polyimide/boron nitride composites RSC Adv. 2016 6 18279 18287 10.1039/C6RA01084A 31. Wu K. Lei C. Yang W. Chai S. Chen F. Fu Q. Surface modification of boron nitride by reduced graphene oxide for preparation of dielectric material with enhanced dielectric constant and well-suppressed dielectric loss Compos. Sci. Technol. 2016 134 191 200 10.1016/j.compscitech.2016.08.015 32. Mittal G. Rhee K.Y. Park S.J. Processing and characterization of PMMA/PI composites reinforced with surface functionalized hexagonal boron nitride Appl. Surf. Sci. 2017 415 49 54 10.1016/j.apsusc.2016.10.029 33. Im H. Kim J. The effect of Al 2 O 3 doped multi-walled carbon nanotubes on the thermal conductivity of Al 2 O 3 /epoxy terminated poly(dimethylsiloxane) composites Carbon 2011 49 3503 3511 10.1016/j.carbon.2011.04.049 34. Hsu S. Wu M.C. Chen S. Chuang C.M. Lin S.H. Su W.F. Synthesis, morphology and physical properties of multi-walled carbon nanotube/biphenyl liquid crystalline epoxy composites Carbon 2012 50 896 905 10.1016/j.carbon.2011.09.051 35. Ma A. Chen W. Hou Y. Mechanical and Thermal Conductivities of MWCNTs/Si 3 N 4 /Epoxy Composites Polym. Plast. Technol. Eng. 2013 52 1590 1594 10.1080/03602559.2013.828230 36. Hsiao M.C. Ma C.C.M. Chiang J.C. Ho K.K. Chou T.Y. Xie X. Tsai C.H. Changa L.H. Hsieh C.K. Thermally conductive and electrically insulating epoxy nanocomposites with thermally reduced graphene oxide–silica hybrid nanosheets Nanoscale 2013 13 5863 5871 10.1039/c3nr01471a 23695448 37. Kausar A. Rafique I. Anwar Z. Muhammad B. Perspectives of Epoxy/Graphene Oxide Composite: Significant Features and Technical Applications Polym. Plast. Tech. Eng. 2016 55 704 722 10.1080/03602559.2015.1098700 38. Pourhashem S. Vaezi M.R. Rashidi A. Bagherzadeh M.R. Exploring corrosion protection properties of solvent based epoxy-graphene oxide nanocomposite coatings on mild steel Corros. Sci. 2017 115 78 92 10.1016/j.corsci.2016.11.008 Figures, Scheme and Tables
+
+[FIG] polymers-12-01913-sch001_Scheme 1 Scheme 1 Synthesis of ketone mesogenic liquid crystalline epoxy (K–LCE).
+ 
+[FIG] Figure 1 Process of the K–LCE/ boron nitride (BN)composites fabrication.
+ 
+[FIG] Figure 2 FTIR spectra. ( a ) Acid-treated OH–BN; ( b ) APTES; ( c ) silane-modified Si–BN.
+ 
+[FIG] Figure 3 SEM images. ( a )Fractured surface of neat K–LCE; ( b ) fractured surface of 0.50 wt% Si–BN/K–LCE composites; ( c ) fractured surface of 1.00 wt% Si–BN/K–LCE composites; ( d ) fractured surface of 2.00 wt% Si–BN/K–LCE composites; ( e ) fractured surface of 5.00 wt% Si–BN/K–LCE composites; ( f ) fractured surface of 5.00 wt% raw BN/K–LCE composites.
+ 
+[FIG] Figure 4 Optical micrograph of cured K–LCE/BN composites.
+ 
+[FIG] Figure 5 DMA curves of neat K–LCE and K–LCE/BN composites ( a ) storage modulus ( b ) tan delta.
+ 
+[FIG] Figure 6 TMA thermographs of neat K–LCE and K–LCE/BN composites.
+ 
+[FIG] Figure 7 Impact strength of neat K–LCE and its composites filled with different Si–BN contents.
+ 
+[FIG] Figure 8 TGA thermograms of neat K–LCE and K–LCE/BN composites.
+ 
+[FIG] Figure 9 Thermal conductivity of neat K–LCE and its composites filled with different Si–BN contents.
+ 
+[TABLE] polymers-12-01913-t001_Table 1 Table 1 Thermomechanical properties of K–LCE/BN composites.
+ 
+[ROW] wt% of Si–BN E’ a (MPa) T g 
+ b (°C) CTE c (ppm/°C) 
+
+[ROW] E’ 50 °C E’ 150 °C E’ 295 °C Glassy Region Rubbery Region 
+ 
+[ROW] | 0.00
+ | 2493
+ | 1968
+ | 124
+ | 228
+ | 70
+ | 157
+
+[ROW] | 0.50
+ | 3279
+ | 2464
+ | 157
+ | 249
+ | 63
+ | 143
+
+[ROW] | 1.00
+ | 3356
+ | 2577
+ | 166
+ | 256
+ | 60
+ | 136
+
+[ROW] | 2.00
+ | 3524
+ | 2795
+ | 189
+ | 267
+ | 56
+ | 122
+
+[ROW] | 5.00
+ | 3698
+ | 2812
+ | 193
+ | 271
+ | 53
+ | 117
+
+ 
+
+[TABLE] a Storage modulus measured by DMA. b Peak temperature of tan δ curve. c Coefficient of thermal expansion measured by TMA.
+ [/TABLE]
+
+[TABLE] polymers-12-01913-t002_Table 2 Table 2 Thermal stabilities of K–LCE/BN composites.
+ 
+[ROW] wt% of Si–BN T d 5% 
+ a (°C) T d 10% 
+ b (°C) Char Yield (%) at 800 °C 
+ 
+[ROW] | 0.00
+ | 344
+ | 372
+ | 40.1
+
+[ROW] | 0.50
+ | 349
+ | 376
+ | 42.9
+
+[ROW] | 1.00
+ | 355
+ | 379
+ | 45.3
+
+[ROW] | 2.00
+ | 363
+ | 384
+ | 49.7
+
+[ROW] | 5.00
+ | 362
+ | 382
+ | 56.6
+
+ 
+
+[TABLE] a Temperature for decomposition of 5% weight loss. b Temperature for decomposition of 10% weight loss.
+ [/TABLE]
+
+[TABLE] polymers-12-01913-t003_Table 3 Table 3 Comparison of thermal and mechanical properties of K–LCE/BN and DGEBA/BN composites.
+ 
+[ROW] 5.00 wt% of Si–BN E’ (MPa) T g (°C) CTE (ppm/°C) T d 10% (°C) Char Yield at 800 °C (%) Thermal Conductivity (W/m·K) 
+
+[ROW] E’ 150 °C Glassy Region Rubbery Region 
+ 
+[ROW] | K–LCE/BN
+ | 2812
+ | 271
+ | 53
+ | 117
+ | 382
+ | 56.6
+ | 0.58
+
+[ROW] | DGEBA/BN
+ | 2588
+ | 262
+ | 55
+ | 121
+ | 369
+ | 51.1
+ | 0.46
+
+ 
+[/TABLE]
+
+ 

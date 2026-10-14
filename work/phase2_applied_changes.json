@@ -1,0 +1,292 @@
+{
+  "applied_at": "2026-10-14",
+  "input": "work/audit_phase2_inputs.json",
+  "backup_dir": "work/backup_phase1/",
+  "backup_prefix": "work/backup_phase1_",
+  "before": {
+    "rows": 188
+  },
+  "drops": {
+    "total": 15,
+    "intra_paper_duplicates": [
+      "2f8abcf1-061",
+      "2f8abcf1-062",
+      "ad883006-077",
+      "0e680d76-098",
+      "b8850d43-119",
+      "b8850d43-120",
+      "b8850d43-121",
+      "caf49a8d-150",
+      "bf4f3fd7-185"
+    ],
+    "cross_paper_duplicates": [
+      "a9d63e6e-014",
+      "a9d63e6e-015",
+      "a9d63e6e-016",
+      "a8b6fee9-141",
+      "a8b6fee9-142"
+    ],
+    "out_of_scope": [
+      "4a11b03c-151"
+    ],
+    "row_ids_dropped": [
+      "a9d63e6e-014",
+      "a9d63e6e-015",
+      "a9d63e6e-016",
+      "2f8abcf1-061",
+      "2f8abcf1-062",
+      "ad883006-077",
+      "0e680d76-098",
+      "b8850d43-119",
+      "b8850d43-120",
+      "b8850d43-121",
+      "a8b6fee9-141",
+      "a8b6fee9-142",
+      "caf49a8d-150",
+      "4a11b03c-151",
+      "bf4f3fd7-185"
+    ]
+  },
+  "title_overwrites": {
+    "dois": 11,
+    "dataset_rows_fixed": [
+      "8289e073-107",
+      "8289e073-108",
+      "8289e073-109",
+      "8289e073-110",
+      "8289e073-111",
+      "8289e073-112",
+      "8289e073-113",
+      "8289e073-114",
+      "b8850d43-115",
+      "b8850d43-116",
+      "b8850d43-117",
+      "b8850d43-118",
+      "6e55ab8a-174",
+      "6e55ab8a-175",
+      "3abe733b-176",
+      "3abe733b-177",
+      "9eddc768-178",
+      "9eddc768-179",
+      "544349ee-180",
+      "bf4f3fd7-182",
+      "bf4f3fd7-183",
+      "0ab9ce56-184",
+      "b552a656-186",
+      "b552a656-187",
+      "031e3932-188",
+      "4a11b03c-152",
+      "4a11b03c-153"
+    ],
+    "already_correct_skipped": [],
+    "extraction_log_entries_fixed": [
+      "P031",
+      "P032",
+      "P032",
+      "P043",
+      "P055",
+      "P056",
+      "P057",
+      "P058",
+      "P060",
+      "P061",
+      "P060",
+      "P060",
+      "P062",
+      "P063"
+    ]
+  },
+  "loading_fixes": {
+    "listed": 20,
+    "applied": [
+      "a9d63e6e-010",
+      "a9d63e6e-011",
+      "a9d63e6e-012",
+      "a9d63e6e-013",
+      "a9d63e6e-017",
+      "a9d63e6e-018",
+      "a9d63e6e-019",
+      "a9d63e6e-020",
+      "a9d63e6e-021",
+      "a9d63e6e-022",
+      "a9d63e6e-023",
+      "a9d63e6e-024",
+      "a9d63e6e-025",
+      "a9d63e6e-026",
+      "a9d63e6e-027",
+      "a9d63e6e-028",
+      "a9d63e6e-029"
+    ],
+    "skipped_dropped": [
+      "a9d63e6e-014",
+      "a9d63e6e-015",
+      "a9d63e6e-016"
+    ],
+    "note_added": "Loading corrected in Phase 2 audit (Table 1 weight composition).",
+    "original_value_update": "filler_loading_original_value set to corrected wt% with unit wt% (Table 1 weight basis); vol% preserved in filler_loading_vol_pct"
+  },
+  "sample_label_repairs": {
+    "applied": {
+      "fa7ce3db-036": {
+        "old": "BN",
+        "new": "Cu/BN hybrid"
+      },
+      "3bde4e56-147": {
+        "old": "cBN",
+        "new": "none"
+      },
+      "544349ee-180": {
+        "old": "AlN",
+        "new": "Al2O3/BN hybrid"
+      },
+      "f02bb9ff-095": {
+        "old": "BNNS",
+        "new": "BNNS hybrid"
+      },
+      "4a11b03c-152": {
+        "old": "h-BN",
+        "new": "h-BN/CNT hybrid"
+      },
+      "4a11b03c-153": {
+        "old": "h-BN",
+        "new": "h-BN/CNT hybrid"
+      },
+      "031e3932-188": {
+        "old": "BN",
+        "new": "h-BN/CNT hybrid"
+      }
+    },
+    "skipped": [
+      "151 (dropped in Phase 2)"
+    ],
+    "basis": "audit_phase1_rows.json findings + README hybrid convention (filler_material contains \"hybrid\"); filler_material_original values verified verbatim-correct and left unchanged"
+  },
+  "non_numeric_repairs": {
+    "numeric_column_cells": [
+      {
+        "row_id": "0e680d76-094",
+        "column": "measurement_temperature_C",
+        "old": "RT",
+        "new": "",
+        "note": "measurement_temperature_C non-numeric value 'RT' relocated to notes in Phase 2 audit."
+      },
+      {
+        "row_id": "caf49a8d-130",
+        "column": "filler_mean_size_um",
+        "old": "55 (AlN) / 35 (BN)",
+        "new": "",
+        "note": "filler_mean_size_um non-numeric value '55 (AlN) / 35 (BN)' relocated to notes in Phase 2 audit."
+      }
+    ],
+    "text_column_cells": [
+      {
+        "row_id": "2f8abcf1-046",
+        "old": "30 wt% BNNS + 1 wt% BNNT",
+        "new": 31.0,
+        "note": "filler_loading_original_value string '30 wt% BNNS + 1 wt% BNNT' relocated to notes in Phase 2 audit; field set to 31.0 per audit guidance."
+      },
+      {
+        "row_id": "2f8abcf1-047",
+        "old": "30 wt% BNNS + 1 wt% BNNT",
+        "new": 31.0,
+        "note": "filler_loading_original_value string '30 wt% BNNS + 1 wt% BNNT' relocated to notes in Phase 2 audit; field set to 31.0 per audit guidance."
+      },
+      {
+        "row_id": "ad883006-073",
+        "old": "20 wt% BNNS + 2 wt% G-POSS",
+        "new": 22.0,
+        "note": "filler_loading_original_value string '20 wt% BNNS + 2 wt% G-POSS' relocated to notes in Phase 2 audit; field set to 22.0 per audit guidance."
+      },
+      {
+        "row_id": "b8850d43-116",
+        "old": "30 AlN + 2 Ni",
+        "new": 32.0,
+        "note": "filler_loading_original_value string '30 AlN + 2 Ni' relocated to notes in Phase 2 audit; field set to 32.0 per audit guidance."
+      },
+      {
+        "row_id": "b8850d43-117",
+        "old": "30 AlN + 2 Ni",
+        "new": 32.0,
+        "note": "filler_loading_original_value string '30 AlN + 2 Ni' relocated to notes in Phase 2 audit; field set to 32.0 per audit guidance."
+      },
+      {
+        "row_id": "b8850d43-118",
+        "old": "30 AlN + 2 Ni",
+        "new": 32.0,
+        "note": "filler_loading_original_value string '30 AlN + 2 Ni' relocated to notes in Phase 2 audit; field set to 32.0 per audit guidance."
+      },
+      {
+        "row_id": "bf4f3fd7-182",
+        "old": "30-4",
+        "new": "",
+        "note": "filler_loading_original_value string '30-4' relocated to notes in Phase 2 audit; field set to empty per audit guidance."
+      }
+    ]
+  },
+  "after": {
+    "rows": 173,
+    "papers": 63
+  },
+  "extraction_log_entry": {
+    "candidate_id": "PHASE2-REMEDIATION",
+    "rows_appended": 0,
+    "rows_removed": 15,
+    "entries_before": 70,
+    "entries_after": 71
+  },
+  "regenerated": [
+    "thermal_conductivity_dataset.csv",
+    "paper_inventory.csv",
+    "extraction_log.csv",
+    "uncertain_measurements.csv"
+  ],
+  "docs_updated": [
+    "README.md",
+    "quality_control_report.md"
+  ],
+  "stats": {
+    "rows": 173,
+    "papers": 63,
+    "high": 167,
+    "medium": 6,
+    "k_min": 0.17,
+    "k_max": 19.0,
+    "k_median": 1.03,
+    "year_range": [
+      1997,
+      2026
+    ],
+    "by_matrix": {
+      "epoxy-based": 143,
+      "silicone": 14,
+      "polyimide": 9,
+      "PDMS": 2,
+      "PEG PCM": 2,
+      "polystyrene": 2,
+      "polyurethane": 1
+    },
+    "by_filler": {
+      "h-BN": 55,
+      "BN": 41,
+      "BNNS": 37,
+      "AlN": 18,
+      "Al2O3": 5,
+      "Al2O3/BN hybrid": 5,
+      "h-BN/CNT hybrid": 3,
+      "Al2O3/BNNS hybrid": 2,
+      "none": 2,
+      "cBN": 2,
+      "Cu/BN hybrid": 1,
+      "BNNS hybrid": 1,
+      "AlN/BN hybrid": 1
+    },
+    "by_confidence": {
+      "High": 167,
+      "Medium": 6
+    },
+    "by_value_source": {
+      "text": 121,
+      "table": 52
+    }
+  }
+}

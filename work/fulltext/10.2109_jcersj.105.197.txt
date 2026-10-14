@@ -1,0 +1,623 @@
+SOURCE doi=10.2109/jcersj.105.197
+TITLE: Thermal Conductivity of Epoxy Resin Filled with Particulate Aluminum Nitride Powder
+YEAR: 1997
+JOURNAL: Journal of the Ceramic Society of Japan
+OA_URL: https://www.jstage.jst.go.jp/article/jcersj1988/105/1219/105_1219_197/_pdf
+
+
+===== PAGE 1 =====
+Journal of the Ceramic Society of Japan 105 [3] 197-200 
+(1997)
+Thermal 
+Conductivity 
+of Epoxy 
+Resin 
+Filled with
+ 
+Particulate 
+Aluminum 
+Nitride 
+Powder
+Yuji NAGAI and Gao-Chao LAI
+Research and Development 
+Laboratory, 
+Toyo Aluminium 
+K. K., 4-1, Aioi-cho, 
+Yao-shi, Osaka 
+581
+窒化アルミニウム添加エポキシ樹脂の熱伝導率
+永井裕二・頼
+高潮
+東洋アルミニウム (株) 
+研究開発本部研究所, 581大阪府八尾市相生町4-1
+The thermal conductivity of an AlN and an alumina-particulate-filled 
+epoxy resin was investigated as a func
+tion of their volume content ratios. AlN composite exhibited thermal conductivity of 7.15W/mK 
+at 68.5
+ 
+vol% filler content but that of alumina composite was lower than 2.68W/mK 
+even if the filler content was 
+as much as 63.8 vol%. The thermal conductivity of the composites is strongly dependnt on that of the filler. 
+In the AlN filler properties, the particle size of the filler used affected the thermal conductivity of compo
+sites, and composites with higher thermal conductivity could be obtained by using filler with large particle 
+size. The thermal conductivity of composites is governed by the number of resin layers on the surface of an 
+AlN particle. The composite thermal conductivities 
+decreased with increasing the oxygen content of the 
+filler. The thermal conductivity of an AlN particle depends on the oxygen content of the particle itself and 
+the decrease of the composite thermal conductivity with the increase of the oxygen content of the filler is 
+due to the increase of the aluminum oxide layer thickness produced on the surface of particles. In the ther
+mal conductivity model, the measured thermal conductivity of AlN-ground-powder-filled 
+composites dis
+agreed with the ones calculated using Bruggeman's 
+expression. However the measured values of alumina
+spherical-powder-filled 
+composites agreed with the calculated ones. It is considered that the results depend
+ed on the sphericity of the used powder. 
+[Received July 2, 1996; Accepted November 12, 1996]
+Key-words: Aluminum nitride, Epoxy resin, AlN filler, Alumina filler, Thermal conductivity, Thermal conductivity 
+model, Composite
+1. 
+Introduction
+The latest miniaturization 
+of electronic 
+devices and 
+integrated circuits has caused an increase of power densi
+ties. The current trend in the field of microelectronic parts 
+requires an epoxy resin with high thermal conductivity for 
+encapsulating 
+these 
+heat-dissipating 
+electronic 
+compo
+nents.1)-3)
+Epoxy resin has a low thermal conductivity, about 0.15 to 
+0.25W/mK,4), 
+5) which can be increased by the addition of 
+particulate inorganic filler materials with a high thermal 
+conductivity.6)-8) Since the thermal conductivity of the inor
+ganic filler is much larger than that of the epoxy resin, the 
+addition of fillers is an effective way of raising the thermal 
+property of the epoxy resin. Silicon oxide (silica), in the 
+fused or crystalline state, and aluminum oxide (alumina) 
+particles have been used as the resin.9)-12) Recently, the ad
+dition of silicon nitride (SiN) or aluminum nitride (AlN) 
+particles 
+with higher 
+thermal 
+conductivity 
+has been 
+attempted.13)-15)
+In this study, the thermal conductivities of the epoxy re
+sins containing two kinds of particulate fillers were meas
+ured. Ground AlN and spherical alumina particles were em
+ployed as the filler. For AlN filler, in particular, 
+the 
+influence of the filling ratio and of the characteristics 
+such 
+as particle size and oxygen content on the composite ther
+mal conductivities were studied.
+Table 
+1. 
+Properties 
+and Oxygen 
+Content 
+of AlN Powders
+Fig. 1. 
+Microstructures 
+of (a) AlN and (b) Al2O3 powders.
+2. 
+Experimental procedures
+To prepare test specimens, thermosetting 
+epoxy resin 
+powder modified with imido radical (Best Lex LS, Sumito
+mo Chemical Ind., Co., Ltd.) and particulate AlN material 
+(D50=23.7m, 
+R335 Toyo Aluminium K. K.) made from 
+direct nitridation of aluminum metal were mixed in a glass 
+container. Properties 
+of the particulate AlN material used 
+in this experiment are shown in Table 1, and a scanning
+ electron microscope (SEM) image of the AlN material is 
+shown in Fig. 1. The mixed materials were put into circular 
+cylinders with 12mm diameter and 40mm height made of
+1 9 7
+
+
+===== PAGE 2 =====
+1 9 8
+ Thermal 
+Conductivity of Epoxy 
+Resin Filled with Particulate Aluminum 
+Nitride Powder
+stainless 
+steel 
+and were 
+pressed 
+under 
+29MPa. 
+The 
+green 
+bodies 
+were 
+cured 
+in an 
+oven 
+at 180 
+for 30min. 
+Speci
+mens, 
+with 
+10mm 
+diameter 
+and 
+2mm 
+height, 
+were 
+ob
+tained 
+for the 
+measurement 
+of thermal 
+conductivity.
+Fig. 2. 
+Particle 
+size distribution 
+of AlN.
+For comparison, the same procedure was carried out to 
+obtain test specimens 
+filled with the particulate alumina 
+material. Spherical alumina particles (D50=10m 
+alumina 
+beads CB, Showa Denko Co., Ltd.) were used. A SEM im
+age of the alumina particles is also indicated in Fig. 1.
+To investigate the effect of the particle size of AlN filler 
+on the thermal conductivity of epoxy resin-AlN 
+compo
+sites, various powders with different particle sizes were pre
+pared by grinding a coarse AlN powder and adjusting the 
+average particle size of ground powders by classification. 
+The properties of the powders are also shown in Table 1 
+and their particle size distributions are shown in Fig. 2. Fur
+thermore, in order to study the influence of oxygen content 
+in AlN powder on the composite thermal conductivities, 
+that of AlN powder with average particle size of 20.4m 
+was adjusted by controlling heat treatment time at 450
+Densities and thermal conductivities 
+of specimens were 
+measured 
+by the water 
+displacement 
+and laser flash 
+methods (TC-3000H-NC, 
+Sinku-Riko, Inc.), respectively. 
+Before measuring 
+thermal 
+conductivity, 
+the surfaces of 
+specimens were covered with carbon by spray coating.
+3. 
+Results and discussion
+3.1 
+Thermal conductivities 
+of composites
+The addition of AlN and alumina fillers to the epoxy resin 
+resulted in a steady increase in the thermal conductivity of 
+the composites, as shown in Fig. 3. The thermal conductivi
+ties of both composites rose with increasing filler content. 
+AlN composite exhibited thermal conductivity of 7.15W/
+mK 
+at 68.5 vol% filler content. However alumina compo
+site had lower thermal conductivity of 2.68W/mK 
+even if 
+the filler content was as high as 63.8 vol%. This result rev
+eals that an epoxy composite with high thermal conductivi
+ty can be obtained by using AlN filler. There is a large differ
+ence between the thermal condutivities of AlN and alum
+in
+a-filler-added epoxy resin composites. It is obvious that 
+the thermal 
+conductivity 
+of epoxy resin composites 
+is 
+strongly dependent on the type of filler.
+3.2 
+Effect of particle size of AlN powder
+Relationship between the thermal conductivity of compo
+site and the average particle size of filled AlN powders is 
+shown in Fig. 4. The filler content was fixed at 60 vol%. In 
+this experiment 
+(Fig. 4), the relative density of specimens 
+is as follows: 95.5% for D50=5.7m, 
+97.7% for D50=10.3
+m, 98.2% 
+for D50=15.6m, 
+98.7% for D50=19m, 
+98.3% for D50=26.1m, 
+and 97.5% for D50=27.6m. 
+The 
+specimen has a slightly lower density of small powder, 5.7
+m, in comparison 
+to specimens 
+with other fillers but it is 
+recognized 
+that there is no obvious difference 
+among these 
+specimens 
+and no influence 
+on the thermal 
+conductivity 
+of 
+the composite 
+density. The thermal 
+conductivities 
+of compo
+sites rose with increasing 
+particle size. The use of large pow
+der particles 
+is an effective 
+way of increasing 
+the thermal 
+conductivity 
+of composites.
+Fig. 3. 
+Variation 
+in thermal 
+conductivity 
+as a function 
+of filler con
+tent.
+Fig. 4. 
+Relationship 
+between 
+thermal 
+conductivity 
+of composites 
+and size of AlN filler particles.
+Assuming 
+that 
+the AlN fillers 
+used 
+in this study 
+are spher
+ical and dispersed 
+uniformly 
+in the epoxy 
+resin 
+matrix, 
+their 
+volume 
+fraction 
+can be given 
+as,
+( 1 )
+where 
+V: volume fraction 
+AlN filler,
+n: 
+number 
+of AlN 
+filler 
+particles,
+ ratio 
+of particle 
+circumference 
+to its diameter,
+r: radius 
+of AlN 
+filler 
+particle.
+From Eq. (1), the relation between r and n can be derived 
+as.
+( 2 )
+Since Vis fixed in the result shown in Fig. 3, on the basis of 
+Fq. (2), it is understood that when r of filler particles is in
+creased, n decreases rapidly. The number of filler particles 
+in the matrix strongly depends on the particle size. Mean
+while, a particle in the epoxy resin matrix inevitably has a 
+resin layer on its surface, the thickness of which is constant 
+regardless of the particle size because the volume fraction 
+of filler is fixed and filler is dispersed uniformly in the 
+matrix. The number of the resin layers is numerous in the 
+matrix filled with small filler particles in comparison to the 
+matrix filled with large particles. In the AlN-filled compo
+sites, added heat is carried from one side to the opposite 
+side of the composite through a resin layer and an AlN parti
+cle in turn and at this time, as the thermal conductivity of
+
+
+===== PAGE 3 =====
+Yuji NAGAI 
+et al 
+Journal of the Ceramic Society of Japan 105 [3] 1997
+ 1 9 9
+epoxy 
+resin 
+is lower, 
+that 
+of the 
+composite 
+decreases 
+grad
+ually 
+as heat 
+is carried 
+through 
+the 
+resin 
+layer. 
+Therefore 
+the 
+thermal 
+conductivity 
+of epoxy 
+composites 
+filled 
+with 
+small 
+AlN filler 
+particles 
+becomes 
+lower 
+than 
+that 
+of large
+particle-filled 
+composites.
+Fig. 5. 
+Thermal 
+conductivity 
+of composites 
+as a function 
+of the 
+oxygen 
+content 
+in the AlN filler.
+3.3 
+Effect of oxygen content of powder
+The variation in thermal conductivity of composites as a 
+function of total oxygen content of AlN powders is shown in 
+Fig. 5. The thermal conductivity of composites decreased 
+with increasing total oxygen content of AlN powder. It can 
+be understood that the thermal conductivity of AlN-filled 
+composites is influenced by the oxygen content of powder. 
+To increase the thermal conductivity of composites, it is bet
+ter to use AlN powder with lower oxygen content.
+There are many reports concerning the relationship be
+tween thermal conductivity and the oxygen content of AlN 
+powder and sintered 
+odies.16)-18) All reports mention that 
+the oxygen 
+content 
+of powder 
+and sintered 
+bodies 
+influences the thermal 
+conductivity 
+of sintered 
+bodies. 
+Higher oxygen content causes lower thermal conductivity. 
+From the discussions, it is understood that the thermal con
+ductivity of a particle of AlN ceramics is basically governed 
+by the oxygen content in the particle itself. In this study, 
+the increase of total oxygen content of the AlN powders 
+used is caused by oxidation at the time of heat treatment 
+and an oxidized substance, aluminum oxide compounds, is 
+produced on the surface of a particle in the form of a thin 
+layer. Then the increase of total oxygen content of the filler 
+can be understood to correspond to the thickness of the alu
+minum oxide layer. Since the thermal conductivity of alui
+num oxide compounds is lower than that of AlN, that of an 
+AlN particle having a high total oxygen content (thick alu
+minum oxide layer), is naturally decreased. Therefore, an 
+addition of high oxygen content filler to the epoxy resin 
+does not greatly increase the thermal conductivity of the 
+composites.
+3.4 
+Thermal conductivity 
+models
+Many reports concerning the thermal conductivity of re
+sin composites filled with various inorganic materials as 
+filler have appeared and its relations to the volume fraction 
+of filler have been theoretically discusse.7), 19)-27) Among 
+them, Bruggean 
+presented 
+the following expression for 
+the relationship between the thermal conductivity of compo
+site and the volume fraction of filler.19)
+( 3 )
+: volume 
+fraction
+e: thermal 
+conductivity 
+of composite
+: thermal 
+conductivity 
+of filler
+c: thermal 
+conductivity 
+of matrix
+On the other 
+hand, 
+Kanari20) 
+revised 
+Bruggeman's 
+equa
+tion, 
+expanding 
+the theoretical 
+expression 
+derived 
+by Hamilm 
+ton and others:24)
+( 4 )
+where , e, d and  
+are the same as in Eq. (3), and x is the 
+constant determined by sphericity of the filler and 
+d/22) 
+or by only the sphericity of the filler.24) When the value of 
+180W/mK28) 
+is substituted as the thermal conductivity of 
+the AlN filler into Eq. (3), thermal conductivity of the com
+posites with various filler volume fractions can be calculat
+ed. Using the same value of thermal conductivity and by 
+changing the value of x in Eq. (4), thermal conductivity of 
+the composites also can 
+e calculated.
+The same calculation was carried out for the alumina com
+posites using the value of 20W/mK29) 
+as the thermal con
+ductivity of the alumina filler for Bruggeman's Eq. (3) and 
+Kanari's Eq. (4). As a result of calculation for AlN and alu
+mina composites, the values of thermal conductivities calcu
+lated using Kanari's equation are found to be higher than 
+those calculated using Bruggeman's equation. For AlN com
+posites the measured data do not agree with the values cal
+culated using Bruggeman's 
+equation, but generally agree 
+with the values obtained using Kanari's equation with the 
+numerical value of 2.5 substituted 
+for x. The results are 
+shown in Fig. 3 (dotted line 1). However, in alumina compo
+sites, the measured data agree with the values calculated us
+ing Bruggeman's 
+equation for every plot; the results are 
+also shown in Fig. 3 (solid line 2). It is estimated that this 
+phenomenon is related to the sphericity of the filler used, 
+since Bruggeman's equation can only be applied to compo
+sites with spherical fillers.7), 24) Therefore, it is necessary to 
+revise Bruggeman's 
+equation for nonspherical AlN fillers.
+4. 
+Conclusion
+The thermal conductivity of epoxy resin composites filled 
+with particulate AlN and alumina fillers increased with in
+creasing filler content. An AlN composite exhibited the ther
+mal conductivity of 7.15W/mK 
+with the filler content of 
+68.5 vol%, but an alumina-filled composite had lower ther
+mal conductivity of 2.68W/mK 
+at 63.8 vol% filler con
+tent. The thermal conductivity of the composites is strongly 
+dependent on that of filler.
+In the AlN-filled epoxy composites, the particle size of 
+the filler used influenced the thermal conductivity, and com
+posites with higher thermal conductivity could be obtained 
+b
+y using larger filler particles. On the basis of the calcula
+tion results on the relation between the number of particles 
+and particle size, the total number of epoxy resin layers on 
+the surfaces of large particles in the composite is greatly 
+decreased in comparison with that of small particles. There
+fore, the use of large filler particles increases the thermal 
+conductivity of the resin matrix more than does the use of 
+small filler particles.
+The total oxygen content of AlN filler affected the ther
+mal 
+conductivity 
+of epoxy 
+resin 
+composites, 
+which 
+decreased with increasing total oxygen content of the filler. 
+The thermal conductivity of an AlN particle depends on the 
+oxygen content of the particle itself. An increase of oxygen 
+content due to oxidation between AlN and oxygen produces 
+aluminium oxide compounds in the form of a thin layer on 
+the surface of a particle and can be understood to be the 
+thickness of the layer. The presence of this layer reduces 
+the thermal conductivity of the particle itself.
+In thermal conductivity models, the measured thermal 
+conductivities of AlN composites filled with ground powder 
+did not agree with the ones calculated using Bruggeman's 
+equation, but agreed with those calculated using Kanari's
+
+
+===== PAGE 4 =====
+2 0 0
+ Thermal 
+Conductivity of Epoxy Resin Filled with Particulate Aluminum 
+Nitride Powder
+equation (revised Bruggeman's equation). Conversely, the 
+measured 
+thermal 
+conductivities 
+of alumina composites 
+filled with spherical powder agreed with the ones calculated 
+using Bruggeman's 
+equation. 
+It is estimated 
+that this 
+phenomenon is related to the sphericity of the filler particle.
+References
+1) K. Nakamura, Nikkei Microdevices, No. 9, 91-99 (1989).
+2) A. Fukuda, Nikkei Electronics, No. 518, 123-36 (1991).
+3) K. Yoshimoto, JETI, 42, 348-51 (1994).
+4) 
+H. Lee and K. Neville, "Handbook of Epoxy Resins," 
+McGraw Hill (1982) pp. 14-24.
+5) C. I. Nicholls and H. M. Rosenberg, J. Phys. D: Appl. Phys.,
+ 
+17, 1247-58 (1974).
+6) D. W. Sundstrom and Y. D. Lee, J. Polymer Sci., 50, 441-50
+ 
+(1961).
+7) K. Kanari, High Polymers Japan, 26, 557-61 (1977).
+8) K. Hani, "Kinousei Filler no Saisin Gijutu," CMC (1990) pp.
+ 
+136-43.
+9) B. Reich, Solid State Tech., 21, 82-86 (1978).
+10) M. Ogata, T. Kawata and N. Kinjo, J. J. Polymer Sci. and
+ 
+Tech., 44, 193-99 (1989).
+11) K. Takahashi, Kogyo Zairyo, 42, 112-16 (1994).
+12) K. Matsumoto, Shin Sozai, No. 5, 22-25 (1996).
+13) P. Bujard and J. P. Ansermet, Proceeding of the 5th IEEE
+SEM-THERM Symp. (1989) pp. 126-30.
+14) 
+H. Ikeya, Polymer Preprints. Japan, 39, 1340 (1990).
+15) 
+K. Matsumoto and K. Uchida, Proc. of Thermosetting 
+Plas.
+ 
+Sym. Japan (1994) pp. 29-32.
+16) 
+G. A. Slack, J. Phys. Chem. Solids, 34, 321-35 (1973).
+17) 
+H. Buhr, G. Muller, H. Wiggers, F. Aladinger, P. Foley and 
+A. Roosen, J. Am. Ceram. Soc., 74, 718-23 (1991).
+18) 
+G. E. Potter, A. K. Knudsen and J. C. Tou, J. Am. Ceram.
+ 
+Soc., 75, 3215-23 (1992).
+19) 
+D. A. G. Bruggeman, Ann. Phys., 24, 636-64 (1935).
+20) 
+K. Kanari, Dai 14 Kai Nippon Dennetu Sinpojiumu Ronbun
+shu (1977) pp, 208-10.
+21) 
+J. C. Maxwell, "A Treatise on Electicity and Magnetism," 
+Vol. 1, Oxford Press (1904) pp. 418-64.
+22) 
+H. Fricke, Phys. Rev., 24, 575-87 (1924).
+23) 
+. E. Meredith and C. W. Tobios, J. Electrochemical Soc.,
+ 
+108, 286-90 (1961).
+24) 
+R. L. Hamilton and O. K. Crosser, Ind. Eng. Chem. Fundam.,
+ 
+1, 187-91 (1962).
+25) 
+S. C. Cheng and R. I. Vochon, Int. J. Heat Mass Transfer, 12, 
+249-64 (1969).
+26) 
+D. W. Sandstrom and Y. Lee, J. Appl. Polymer Sci., 16, 3159
+67 (1972).
+27) 
+L. E. Nielsen, Ind. Chem. Fundam., 13, 17-20 (1974).
+28) 
+Sinsozai Manual Hensyuiinkai, "Sinsozai Manual", Tekuno
+puraza (1991) p. 63.
+29) 
+Sinsozai Manual Hensyuiinkai, "Sinsozai Manual", Tekuno
+puraza (1991) p. 48.

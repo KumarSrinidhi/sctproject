@@ -1,0 +1,543 @@
+[
+ {
+  "doi": "10.3390/ma18214860",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 17,
+  "vals": {
+   "0.77": " with the resin base and further with the hardener, and (b) the cBN powder was first mixed with hardener and afterwards with the resin base. Both methods show a similar enhancement trend in the thermal conductivity from 0.77 W/mK in the resin without additive to 1 and 1.5 W/mK in the ones filled with 30 and 50 wt.% cBN, respectively. A reasonable decrease i",
+   "1.5": "r, and (b) the cBN powder was first mixed with hardener and afterwards with the resin base. Both methods show a similar enhancement trend in the thermal conductivity from 0.77 W/mK in the resin without additive to 1 and 1.5 W/mK in the ones filled with 30 and 50 wt.% cBN, respectively. A reasonable decrease in bending strength from 74 for 0 wt.% cBN to 70 ",
+   "0.5": "ce the contact resistance of heat sources [,]. However, traditional polymers face challenges in meeting the high heat dissipation requirements due to their inherently low thermal conductivity\u2014usually in the range of 0.1\u22120.5 W/mK [,,]. A higher crystallinity and chain alignment, a lower entangling, and stronger interchain interactions can push thermal condu",
+   "62.0": "ow thermal conductivity\u2014usually in the range of 0.1\u22120.5 W/mK [,,]. A higher crystallinity and chain alignment, a lower entangling, and stronger interchain interactions can push thermal conductivity to high values (up to 62 W/mK) as has been shown for polyethylene (PE) films obtained in Ref. []. At present, highly conductive polymers face scaling-up challen",
+   "2000.0": "), single and multiwall BN nano tubes (BNNT), BN nano ribbon (BNNR)/sheet (BNNS) with zigzag (ZBNNR) and armchair edges (ABNNR), BN nano cages, and quantum dots. The BN materials show high thermal conductivities, up to ~2000 W/mK in BNNR, and it is no surprise that many papers focus on BNNR preparation and use in polymer composites with high thermal conduct",
+   "1300.0": " difficult to control and possess many defects, and their relatively small lateral size restricts the large-scale application of BNNS []. Remarkably, isotropic cBN also has a relatively high thermal conductivity: up to 1300 W/mK. For comparison, bulk h-BN has a thermal conductivity as high as ~390 W/mK (for in (ab)-plane bulk h-BN versus about half of the ",
+   "390.0": "ateral size restricts the large-scale application of BNNS []. Remarkably, isotropic cBN also has a relatively high thermal conductivity: up to 1300 W/mK. For comparison, bulk h-BN has a thermal conductivity as high as ~390 W/mK (for in (ab)-plane bulk h-BN versus about half of the indicated value for the out of plane along c -axis thermal conductivity). B",
+   "30.0": "esin (sample \u20181\u2019), namely SiO 2 (ICCD 005-0490), and perhaps it has a role that is similar to that of alumina. According to Refs. [,,], alumina and silica are thermally conductive, with thermal conductivity values of 14\u201330 W/m\u00b7K and 1\u201314 W/m\u00b7K, respectively. These values are significantly lower than for cBN. No significant differences were observed by XRD",
+   "14.0": "\u2019), namely SiO 2 (ICCD 005-0490), and perhaps it has a role that is similar to that of alumina. According to Refs. [,,], alumina and silica are thermally conductive, with thermal conductivity values of 14\u201330 W/m\u00b7K and 1\u201314 W/m\u00b7K, respectively. These values are significantly lower than for cBN. No significant differences were observed by XRD () when compar",
+   "0.2": "ation of cBN is less than 30 wt.%, its influence on thermal conductivity is low, and the major role is played by the other additives. Indeed, fillers Al 2 O 3 and SiO 2 enhance thermal conductivity of pristine EP from ~ 0.2 W/mK [] up to 0.77 W/mK in sample \u20181\u2019 without cBN. But, when cBN concentration is higher than 30 wt.%, particles of cBN are not isolat",
+   "2.98": " as it was measured for sample \u20181\u2019 without cBN addition, while the thermal conductivity of the filler k f was a free parameter. The parameter k f extracted by fitting with addressed models uses small values ( k f = 0.85\u20132.98 W/m\u00b7K, see ), namely, at least two orders of magnitude lower than for pristine cBN. This result suggests that the quality of the contac",
+   "3.6": "untered. This observation might be more general and applicable to many materials from the same class of TC composites. For example, the composite (12 vol. % BN + 70 vol.% Al 2 O 3 )/PDMS [] has a thermal conductivity of 3.6 W/mK, the composite with 30 wt.% hBN in EP has a thermal conductivity of 0.82 W/mK [], the composite with 80 wt. % (Al 2 O 3 -BN) in E",
+   "0.82": "als from the same class of TC composites. For example, the composite (12 vol. % BN + 70 vol.% Al 2 O 3 )/PDMS [] has a thermal conductivity of 3.6 W/mK, the composite with 30 wt.% hBN in EP has a thermal conductivity of 0.82 W/mK [], the composite with 80 wt. % (Al 2 O 3 -BN) in EP has a thermal conductivity of 1.72 W/mK [], and the composite with 20 wt.% B",
+   "1.72": " Al 2 O 3 )/PDMS [] has a thermal conductivity of 3.6 W/mK, the composite with 30 wt.% hBN in EP has a thermal conductivity of 0.82 W/mK [], the composite with 80 wt. % (Al 2 O 3 -BN) in EP has a thermal conductivity of 1.72 W/mK [], and the composite with 20 wt.% BNNS covered with flower-like Al 2 O 3 in cyclic olefin copolymer has a thermal conductivity o"
+  }
+ },
+ {
+  "doi": "10.3390/polym15061552",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "alumina",
+   "boron nitride"
+  ],
+  "n_k": 16,
+  "vals": {
+   "21.3": "tudies of hBN/polymer composites. (wt% = weight percentage, vol% = volume percentage). [ROW] Materials Filler Loading Processing Method Thermal Conductivity [ROW] | hBN/epoxy [] | 95 wt% | Compression moulding | 21.3 W/m\u00b7K (in-plane) 7 W/m\u00b7K (through-plane) [ROW] | hBN/epoxy [] | 57 vol% | Casting | 5.27 W/m\u00b7K (through-plane) [ROW] | hBN/polyim",
+   "7.0": "composites. (wt% = weight percentage, vol% = volume percentage). [ROW] Materials Filler Loading Processing Method Thermal Conductivity [ROW] | hBN/epoxy [] | 95 wt% | Compression moulding | 21.3 W/m\u00b7K (in-plane) 7 W/m\u00b7K (through-plane) [ROW] | hBN/epoxy [] | 57 vol% | Casting | 5.27 W/m\u00b7K (through-plane) [ROW] | hBN/polyimide [] | 60 vol% ",
+   "5.27": " Materials Filler Loading Processing Method Thermal Conductivity [ROW] | hBN/epoxy [] | 95 wt% | Compression moulding | 21.3 W/m\u00b7K (in-plane) 7 W/m\u00b7K (through-plane) [ROW] | hBN/epoxy [] | 57 vol% | Casting | 5.27 W/m\u00b7K (through-plane) [ROW] | hBN/polyimide [] | 60 vol% | Spin-cast (film) | 17.5 W/m\u00b7K (in-plane) 5.4 W/m\u00b7K (through-plane) [ROW",
+   "17.5": "] | 95 wt% | Compression moulding | 21.3 W/m\u00b7K (in-plane) 7 W/m\u00b7K (through-plane) [ROW] | hBN/epoxy [] | 57 vol% | Casting | 5.27 W/m\u00b7K (through-plane) [ROW] | hBN/polyimide [] | 60 vol% | Spin-cast (film) | 17.5 W/m\u00b7K (in-plane) 5.4 W/m\u00b7K (through-plane) [ROW] | hBN/PE [] | 50 vol% | Injection moulding | 3.66 W/m\u00b7K [ROW] | hBN/PA12 [] | 40",
+   "5.4": "sion moulding | 21.3 W/m\u00b7K (in-plane) 7 W/m\u00b7K (through-plane) [ROW] | hBN/epoxy [] | 57 vol% | Casting | 5.27 W/m\u00b7K (through-plane) [ROW] | hBN/polyimide [] | 60 vol% | Spin-cast (film) | 17.5 W/m\u00b7K (in-plane) 5.4 W/m\u00b7K (through-plane) [ROW] | hBN/PE [] | 50 vol% | Injection moulding | 3.66 W/m\u00b7K [ROW] | hBN/PA12 [] | 40 wt% | Powder bed fu",
+   "3.66": " [] | 57 vol% | Casting | 5.27 W/m\u00b7K (through-plane) [ROW] | hBN/polyimide [] | 60 vol% | Spin-cast (film) | 17.5 W/m\u00b7K (in-plane) 5.4 W/m\u00b7K (through-plane) [ROW] | hBN/PE [] | 50 vol% | Injection moulding | 3.66 W/m\u00b7K [ROW] | hBN/PA12 [] | 40 wt% | Powder bed fusion | 0.55 W/m\u00b7K (77% higher than pure PA12) [ROW] | hBN/Al 2 O 3 /PA12 [] | 1",
+   "0.55": "hBN/polyimide [] | 60 vol% | Spin-cast (film) | 17.5 W/m\u00b7K (in-plane) 5.4 W/m\u00b7K (through-plane) [ROW] | hBN/PE [] | 50 vol% | Injection moulding | 3.66 W/m\u00b7K [ROW] | hBN/PA12 [] | 40 wt% | Powder bed fusion | 0.55 W/m\u00b7K (77% higher than pure PA12) [ROW] | hBN/Al 2 O 3 /PA12 [] | 15 wt% hBN and 35 wt% Al 2 O 3 | Powder bed fusion | 1.05 W/m\u00b7K ",
+   "1.05": " | Injection moulding | 3.66 W/m\u00b7K [ROW] | hBN/PA12 [] | 40 wt% | Powder bed fusion | 0.55 W/m\u00b7K (77% higher than pure PA12) [ROW] | hBN/Al 2 O 3 /PA12 [] | 15 wt% hBN and 35 wt% Al 2 O 3 | Powder bed fusion | 1.05 W/m\u00b7K (275% higher than pure PA12) [ROW] | hBN/AlN/TPU [] | 15 wt% hBN and 20 wt% AlN | Powder bed fusion | 0.9 W/m\u00b7K (391% higher ",
+   "0.9": "n pure PA12) [ROW] | hBN/Al 2 O 3 /PA12 [] | 15 wt% hBN and 35 wt% Al 2 O 3 | Powder bed fusion | 1.05 W/m\u00b7K (275% higher than pure PA12) [ROW] | hBN/AlN/TPU [] | 15 wt% hBN and 20 wt% AlN | Powder bed fusion | 0.9 W/m\u00b7K (391% higher than pure TPU) [ROW] | hBN/TPU [] | 30 wt% | Fused deposition modelling (material extrusion) | 1.51 W/m\u00b7K (in-pl",
+   "1.51": "gher than pure PA12) [ROW] | hBN/AlN/TPU [] | 15 wt% hBN and 20 wt% AlN | Powder bed fusion | 0.9 W/m\u00b7K (391% higher than pure TPU) [ROW] | hBN/TPU [] | 30 wt% | Fused deposition modelling (material extrusion) | 1.51 W/m\u00b7K (in-plane) 1.26 W/m\u00b7K (through-plane) [/TABLE] Hexagonal BN consists of B and N atoms arranged in a honeycomb configuration w",
+   "1.26": "[ROW] | hBN/AlN/TPU [] | 15 wt% hBN and 20 wt% AlN | Powder bed fusion | 0.9 W/m\u00b7K (391% higher than pure TPU) [ROW] | hBN/TPU [] | 30 wt% | Fused deposition modelling (material extrusion) | 1.51 W/m\u00b7K (in-plane) 1.26 W/m\u00b7K (through-plane) [/TABLE] Hexagonal BN consists of B and N atoms arranged in a honeycomb configuration with a layer structure ",
+   "5.3": "hods, hBN loading, hBN particle size and matrix material. Compression moulded hBN/epoxy in ref. [] achieved a thermal conductivity of 7 W/m\u00b7K with 95 wt% hBN. Cast hBN/epoxy in ref. [] reached a thermal conductivity of 5.3 W/m\u00b7K with 57 vol% hBN (with size of 5\u201311 \u03bcm), but values for lower hBN loadings were not presented. Our highest thermal conductivity f",
+   "2.0": "xy in ref. [] reached a thermal conductivity of 5.3 W/m\u00b7K with 57 vol% hBN (with size of 5\u201311 \u03bcm), but values for lower hBN loadings were not presented. Our highest thermal conductivity for cast hBN/epoxy composites was 2.0 W/m\u00b7K for 55 wt% (about 28 vol%) hBN (with size of ca. 20 \u03bcm). Our casting resin could not be processed with a filler loading higher th",
+   "3.7": "cast hBN/epoxy composites was 2.0 W/m\u00b7K for 55 wt% (about 28 vol%) hBN (with size of ca. 20 \u03bcm). Our casting resin could not be processed with a filler loading higher than this. For injection moulding, ref. [] achieved 3.7 W/m\u00b7K for PE with 50 vol% hBN with particle diameter 4\u20135 \u03bcm. Our injection moulded composite based on TPU with 65 wt% hBN (about 48 vol"
+  }
+ },
+ {
+  "doi": "10.3390/polym13020286",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 14,
+  "vals": {
+   "3.0": "as been densified by curing under pressures of up to 2.0 MPa and then cooling the cured sample to room temperature before releasing the pressure. It is found that the thermal conductivity is increased from approximately 3 W/mK for a sample cured at ambient pressure to approximately 7 W/mK; in parallel, the density increases from 1.55 to 1.72 \u00b1 0.01 g/cm ",
+   "7.0": "d then cooling the cured sample to room temperature before releasing the pressure. It is found that the thermal conductivity is increased from approximately 3 W/mK for a sample cured at ambient pressure to approximately 7 W/mK; in parallel, the density increases from 1.55 to 1.72 \u00b1 0.01 g/cm 3 . This densification process is much more effective in enhanc",
+   "5.0": "lidate the epoxy composite mixture before curing or applying pressure during cure but then removing the pressure before cooling to room temperature; this last procedure results in a thermal conductivity of approximately 5 W/mK. Furthermore, it has been shown that the densification and corresponding effect on the thermal conductivity is reversible; it can",
+   "10.0": "rfaces of the sample material, and the thermal conductivity is determined from the temperature change \u0394 T as a function of time []. The instrument was calibrated with 5 different standards covering the range from 0.2 to 10 W/mK. 2.2.3. Differential Scanning Calorimetry (DSC) The DSC instrument (Mettler-Toledo DCS821e, Greifensee, Switzerland) was equip",
+   "6.86": " DSC, whereby the second scans are the same, indicating that they always begin from the same state B. The same effect can be seen in the thermal conductivity. The densified sample S5, which had a thermal conductivity of 6.86 W/mK, was reheated to above its glass transition temperature and then cooled again to RT , and the thermal conductivity was again meas",
+   "5.44": "fied sample S5, which had a thermal conductivity of 6.86 W/mK, was reheated to above its glass transition temperature and then cooled again to RT , and the thermal conductivity was again measured. It was found now to be 5.44 W/mK, much lower than that of the densified sample, though still larger than that of the \u201cundensified\u201d sample, S1, which was 3.44 W/mK",
+   "3.44": "led again to RT , and the thermal conductivity was again measured. It was found now to be 5.44 W/mK, much lower than that of the densified sample, though still larger than that of the \u201cundensified\u201d sample, S1, which was 3.44 W/mK. This implies that the effect of curing under pressure, which results in a more compact epoxy matrix and hence a better matrix-pa",
+   "6.76": "he glass transition region, allowed to equilibrate for several minutes, and then cooled back to RT while maintaining the pressure. After releasing the pressure, the thermal conductivity was then measured and found to be 6.76 W/mK. This demonstrates that the densification is reversible and, importantly, that an enhancement of the thermal conductivity can be ",
+   "1.6": "worthy of some comment. First, there is only one value, that of He et al. [], which falls above the upper trend curve. With only 10 wt% of functionalized BN nanoparticles, these authors achieve a thermal conductivity of 1.6 W/mK, in comparison with a value of only 0.5 W/mK when the BN particles are not surface treated. This result is particularly remarkabl",
+   "0.5": "one value, that of He et al. [], which falls above the upper trend curve. With only 10 wt% of functionalized BN nanoparticles, these authors achieve a thermal conductivity of 1.6 W/mK, in comparison with a value of only 0.5 W/mK when the BN particles are not surface treated. This result is particularly remarkable as pressure (though an unspecified value) i",
+   "0.23": "the epoxy/glass/BN hybrid by factors of 5.4 and 3.0 in the in-plane and through-plane directions, respectively. To compare this result with our own values, we have applied an average factor of 4.2 to the unfilled epoxy (0.23 W/mK) to obtain the value of 0.97 W/mK plotted in , which falls just on the intermediate trend curve. Likewise, Zhang et al. [] report ",
+   "0.97": "rs of 5.4 and 3.0 in the in-plane and through-plane directions, respectively. To compare this result with our own values, we have applied an average factor of 4.2 to the unfilled epoxy (0.23 W/mK) to obtain the value of 0.97 W/mK plotted in , which falls just on the intermediate trend curve. Likewise, Zhang et al. [] report an increase in the thermal conduc",
+   "0.2": " [] report an increase in the thermal conductivity by a factor of 2.5, in both the in-plane and through-plane directions, for epoxy/glass/BN hybrids filled with 15 wt% BN. Applying the same factor to the unfilled epoxy (0.2 W/mK) gives a value of 0.50 W/mK for the thermal conductivity of an epoxy/BN composite for comparison with our own results. This is plo",
+   "10.5": "ases [,], appears therefore to raise the thermal conductivity to the level of the intermediate trend curve, but these values still fall below that which can be obtained by densification. Finally, the very high value of 10.5 W/mK at 58 wt% BN reported by Moradi et al. [] corresponds to BN in the form of agglomerates, densified at 2.0 MPa pressure. The effec"
+  }
+ },
+ {
+  "doi": "10.3390/polym14142950",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "aluminum nitride",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 14,
+  "vals": {
+   "0.22": "brid filler composed of zero-dimensional spherical AlN particles and two-dimensional BN flakes on the thermal conductivity of epoxy resin were studied. The thermal conductivity (TC) of the pristine epoxy matrix (EP) was 0.22 W/(m K), while the composite showed the TC of 10.18 W/(m K) at the 75 wt% AlN\u2013BN hybrid filler loading, which is approximately a 46-fold ",
+   "10.18": "AlN particles and two-dimensional BN flakes on the thermal conductivity of epoxy resin were studied. The thermal conductivity (TC) of the pristine epoxy matrix (EP) was 0.22 W/(m K), while the composite showed the TC of 10.18 W/(m K) at the 75 wt% AlN\u2013BN hybrid filler loading, which is approximately a 46-fold increase. Moreover, various essential application pr",
+   "0.4": "or next-generation chip connections [,]. The addition of highly thermally conductive fillers has been widely employed to obtain composites with TCs higher than those of epoxy matrices, which are generally quite low (0.1\u20130.4 W/(m K)) [,]. Characteristic filler materials comprise metals (i.e., silver, aluminum, and copper) and ceramics (i.e., AlN and BN) [,]. H",
+   "320.0": "rial are typically the results of the particularly high filler content, limiting the practical use of electronic encapsulation packaging [,]. AlN has attracted considerable interest because of its high intrinsic TC (285\u2013320 W/(m K)), high electrical insulation, and, in particular, its spherical particle shape [,,], which enables simple processability and make",
+   "400.0": "rticular, its spherical particle shape [,,], which enables simple processability and makes extremely large filler content (&gt;60 wt%) feasible. Similarly, bulk hexagonal BN (h-BN) has a remarkably high in-plane TC (250\u2013400 W/(m K)) [,,,], which is expected to be in considerable demand for underfill applications. Nevertheless, numerous studies have shown tha",
+   "1.54": " filler dispersion in the epoxy matrix (EP). Feng et al. [] prepared high-density polyethylene with 30 wt% BN and 3 wt% multi-walled carbon nanotubes as fillers. In this study, the ternary composites showed a higher TC (1.54 W/(m K)) than the binary composites (1.19 W/(m K)). Thus, Feng et al. [] concluded that the synergistic effect of the fillers endowed the",
+   "1.19": "). Feng et al. [] prepared high-density polyethylene with 30 wt% BN and 3 wt% multi-walled carbon nanotubes as fillers. In this study, the ternary composites showed a higher TC (1.54 W/(m K)) than the binary composites (1.19 W/(m K)). Thus, Feng et al. [] concluded that the synergistic effect of the fillers endowed the ternary composites with superior TC. Liu ",
+   "1.43": "ected by the geometry of filler particles [,,,,,,,,]. The TC of the BN/EP composites is slightly higher than that of AlN/EP composites at lower filler loadings. For instance, at 30 wt% filler loading, the TC of BN/EP is 1.43 W/(m K), while that of AlN/EP is 1.10 W/(m K). This difference was ascribed to the exceptional TC of BN particles, which is slightly high",
+   "1.1": "les [,,,,,,,,]. The TC of the BN/EP composites is slightly higher than that of AlN/EP composites at lower filler loadings. For instance, at 30 wt% filler loading, the TC of BN/EP is 1.43 W/(m K), while that of AlN/EP is 1.10 W/(m K). This difference was ascribed to the exceptional TC of BN particles, which is slightly higher than that of AlN particles. However",
+   "6.83": "mum TC obtained in this study is 10.18 W/(m K) for the AlN\u2013BN/EP composite at 75 wt% of filler loading, which is approximately 46 times higher than that of EP and approximately 49% higher than that of the AlN/EP 75 wt% (6.83 W/(m K)). This result was attributed to the incorporation of a small amount of BN particles, which, in combination, built a 3D interconne",
+   "3.51": "20 \u00b0C) and low temperature chamber (5 \u00b0C), respectively. The specimens stayed in each chamber for 2 min alternately and the entire test was performed for 50 cycles. As illustrated in , the TC of BN/EP is decreasing from 3.51 W/(m K) to 3.40 W/(m K) throughout the 50 cycles of thermal shocks, showing a TC reduction of 3.13%. Similarly, the AlN/EP composite pres",
+   "3.4": "emperature chamber (5 \u00b0C), respectively. The specimens stayed in each chamber for 2 min alternately and the entire test was performed for 50 cycles. As illustrated in , the TC of BN/EP is decreasing from 3.51 W/(m K) to 3.40 W/(m K) throughout the 50 cycles of thermal shocks, showing a TC reduction of 3.13%. Similarly, the AlN/EP composite presented a TC decli",
+   "6.72": "of BN/EP is decreasing from 3.51 W/(m K) to 3.40 W/(m K) throughout the 50 cycles of thermal shocks, showing a TC reduction of 3.13%. Similarly, the AlN/EP composite presented a TC decline of 1.61% (from 6.83 W/(m K) to 6.72 W/(m K)), meanwhile the AlN\u2013BN/EP composite exhibited a TC decrease of 0.49% (from 10.18 W/(m K) to 10.13 W/(m K)). The slight variation ",
+   "10.13": "ing a TC reduction of 3.13%. Similarly, the AlN/EP composite presented a TC decline of 1.61% (from 6.83 W/(m K) to 6.72 W/(m K)), meanwhile the AlN\u2013BN/EP composite exhibited a TC decrease of 0.49% (from 10.18 W/(m K) to 10.13 W/(m K)). The slight variation in TC may be ascribed to the CTE difference of AlN, BN and epoxy matrix, leading to interface discrepancy "
+  }
+ },
+ {
+  "doi": "10.3390/polym16081169",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "alumina",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 11,
+  "vals": {
+   "1.6": " intensify with increased molding time and pressure, markedly boosting the in-plane thermal conductivity of the PS/BN molded composites. Within the range of molding parameters examined, the highest thermal conductivity (1.6 W/m\u00b7K) was observed in PS/BN composites subjected to five molding cycles at 140 \u00b0C and 10 MPa, without compromising mechanical propertie",
+   "1.49": "erials [,,,,,,,]. Guo et al. [] utilized a gradient temperature field to fabricate alternating layers of GO and BN through an ice-template method, achieving a polyimide composite with an in-plane thermal conductivity of 1.49 W/m\u00b7K at a filler loading of 3.8 wt%. Wu et al. [] engineered a thermal pathway combining micro-scale BN and nano-scale alumina within ",
+   "0.228": "iller loading of 3.8 wt%. Wu et al. [] engineered a thermal pathway combining micro-scale BN and nano-scale alumina within poly(dimethylsiloxane) using an electric field, resulting in an in-plane thermal conductivity of 0.228 W/m\u00b7K. Yuan et al. [] aligned FeCo-BN vertically within poly(dimethylsiloxane) under magnetic field, obtaining a thermal conductivity o",
+   "2.25": "e) using an electric field, resulting in an in-plane thermal conductivity of 0.228 W/m\u00b7K. Yuan et al. [] aligned FeCo-BN vertically within poly(dimethylsiloxane) under magnetic field, obtaining a thermal conductivity of 2.25 W/m\u00b7K with a filler composition of 30 wt% FeCo and 50 wt% BN. Beyond electric and magnetic fields, mechanical force fields have garnere",
+   "33.4": "\u2013graphene foam under directed gas pressure, employing 42.4 wt% spherical alumina as support and 12.1 wt% sheet-like graphenes as a filler, to produce epoxy resin composites exhibiting an in-plane thermal conductivity of 33.4 W/m\u00b7K. Through the application of shear fields within an extruder, Zhang et al. [] oriented BN within high-viscosity, high-density poly",
+   "3.57": "K. Through the application of shear fields within an extruder, Zhang et al. [] oriented BN within high-viscosity, high-density polyethylene, achieving an anisotropic index of 480% and an in-plane thermal conductivity of 3.57 W/m\u00b7K at a 40 wt% loading rate. Yu et al. [] achieved an in-plane thermal conductivity of 50.3 W/m\u00b7K in thermoplastic polyurethane comp",
+   "50.3": "in high-viscosity, high-density polyethylene, achieving an anisotropic index of 480% and an in-plane thermal conductivity of 3.57 W/m\u00b7K at a 40 wt% loading rate. Yu et al. [] achieved an in-plane thermal conductivity of 50.3 W/m\u00b7K in thermoplastic polyurethane composites by ball milling and hot pressing of hexagonal boron nitride into the polymer matrix. How",
+   "1.58": "es was meticulously evaluated. Through parameter optimization, it was demonstrated that these PS/BN composites, when subjected to five molding cycles at 140 \u00b0C and 10 MPa, can achieve an in-plane thermal conductivity of 1.58 W/m\u00b7K with only 10 wt% BN loading. This study introduces a straightforward method for producing highly thermally conductive polymer com",
+   "0.033": "nderscore the significant impact of BN incorporation and processing techniques on enhancing thermal transport within polystyrene matrices. The baseline thermal conductivity of the pure PS matrix was measured at a modest 0.033 W/m\u00b7K. The addition of BN to create control PS/BN samples resulted in an increased thermal conductivity of 0.22 W/m\u00b7K. This enhancement",
+   "0.22": "hin polystyrene matrices. The baseline thermal conductivity of the pure PS matrix was measured at a modest 0.033 W/m\u00b7K. The addition of BN to create control PS/BN samples resulted in an increased thermal conductivity of 0.22 W/m\u00b7K. This enhancement, though substantial, was limited by challenges in achieving uniform dispersion of BN within the PS matrix, whic",
+   "1.1": " in-plane thermal conductivity ((a 1 )\u2013(a 4 )). For instance, after a single compression molding cycle, the thermal conductivities of PS/BN-A 1 , PS/BN-B 1 , PS/BN-C 1 , and PS/BN-D 1 were measured at 0.7, 1.0, 1.2, and 1.1 W/m\u00b7K, respectively, representing at least a threefold increase over the control samples. It is noteworthy that the enhancement of the "
+  }
+ },
+ {
+  "doi": "10.3390/mi16101126",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "boron nitride"
+  ],
+  "n_k": 10,
+  "vals": {
+   "0.474": "sed to construct efficient thermally conductive channels. The study found that the thermal conductivity of the composite prepared by superimposing an 8 kV/mm pulsed electric field on a 30 V/mm DC electric field is about 0.474 W/(m\u00b7K), which is 34.66% higher than that prepared by only a pulsed-induced field and 17.5% higher than the theoretical superposition val",
+   "0.464": "only a pulsed-induced field and 17.5% higher than the theoretical superposition value. Similarly, the composite prepared by superimposing a 4 kV/mm pulsed electric field on a 70 V/mm DC electric field increased to about 0.464 W/(m\u00b7K), which is 27.47% higher than that prepared by only a DC-induced field and 12.4% higher than the theoretical superposition value. ",
+   "0.588": "ers [,,]. Mi et al. [] applied microsecond pulsed electric fields to align BNNSs in epoxy composites. At 10 wt% filler loading, composites processed under a 12 kV/mm, 100 Hz pulsed field showed a thermal conductivity of 0.588 W/(m\u00b7K), exceeding a 200% enhancement compared to pure EP. Yang et al. [] used a nanosecond pulsed electric field of 0\u2013120 V/mm to induce",
+   "3.35": "ion of magnetic orientation and the ice-templating method to fabricate cactus-like dual-oriented magnetic SiC and BN networks in epoxy composites. At a filler volume fraction of 20 vol%, the thermal conductivity reached 3.35 W/(m\u00b7K). Wang et al. [] used BN and SiC as fillers and adopted solution blending, electrospinning, and hot pressing to prepare high-therm",
+   "0.251": "g, electrospinning, and hot pressing to prepare high-thermal-conductivity poly (ether ketone nitrile) (PEK-CN) composites. Their results showed that with 20 wt% BN and 10 wt% SiC, the thermal conductivity increased from 0.251 W/(m\u00b7K) (pure PEK-CN) to 0.812 W/(m\u00b7K), and the glass transition temperature (Tg) increased from 228.1 \u00b0C to 232.4 \u00b0C, indicating enhance",
+   "0.812": "ssing to prepare high-thermal-conductivity poly (ether ketone nitrile) (PEK-CN) composites. Their results showed that with 20 wt% BN and 10 wt% SiC, the thermal conductivity increased from 0.251 W/(m\u00b7K) (pure PEK-CN) to 0.812 W/(m\u00b7K), and the glass transition temperature (Tg) increased from 228.1 \u00b0C to 232.4 \u00b0C, indicating enhanced thermal stability. Previous ",
+   "0.352": " enhanced thermal stability. Previous work by our group found that pulsed electric fields enhance the thermal conductivity of composites mainly by improving the local alignment of BN nanosheets (thermal conductivity of 0.352 W/(m\u00b7K) at 8 kV/mm), while DC electric fields enhance the global alignment of BN nanosheets, leading to a thermal conductivity of 0.364 W",
+   "0.364": "s mainly by improving the local alignment of BN nanosheets (thermal conductivity of 0.352 W/(m\u00b7K) at 8 kV/mm), while DC electric fields enhance the global alignment of BN nanosheets, leading to a thermal conductivity of 0.364 W/(m\u00b7K) at 70 V/mm []. In summary and inspired by this, this study takes epoxy resin as the research object and BNNSs as the filler. The ",
+   "0.271": ", the sample prepared under the superimposed induction field of 30 V/mm DC and 8 kV/mm pulse shows an increase in thermal conductivity to about 0.474 W/(m\u00b7K), which is a 74.91% improvement compared to the random sample (0.271 W/(m\u00b7K)), a 148.2% increase compared to pure epoxy resin, and 17.5% higher than the theoretical superposition value. The sample prepared ",
+   "0.224": " with units of W/(m\u00b7K). v 1 is the volume fraction of the matrix, v 2 is the volume fraction of the filler. Considering the random distribution and flaky characteristics of BNNSs, the theoretical thermal conductivity is 0.224 W/(m\u00b7K). By comparing the theoretical and experimental values, it can be seen that the application of a pulsed superimposed DC electric f"
+  }
+ },
+ {
+  "doi": "10.3390/polym11010138",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "aluminum nitride",
+   "boron nitride"
+  ],
+  "n_k": 7,
+  "vals": {
+   "0.2": " with a large number of materials, high electrical insulating characteristics, and good thermal, corrosion and chemical resistance []. However, unmodified epoxy thermosets show low thermal conductivity, typically around 0.2 W/m\u00b7K, which may limit their use when thermal dissipation is required []. It must be noticed, that the dissipation of heat generated be",
+   "42.0": "loaliphatic epoxy resin formulations. Al 2 O 3 particles are widely used in the electronic field, because of their cheaper price compared to other ceramic fillers, despite their relatively lower thermal conductivity (38\u201342 W/m\u00b7K) []. Its CTE is reported to be 7 ppm/\u00b0C. AlN particles are relatively expensive, but show higher thermal conductivity (150\u2013220 W/m",
+   "220.0": "pared to other ceramic fillers, despite their relatively lower thermal conductivity (38\u201342 W/m\u00b7K) []. Its CTE is reported to be 7 ppm/\u00b0C. AlN particles are relatively expensive, but show higher thermal conductivity (150\u2013220 W/m\u00b7K) and lower thermal expansion coefficient (CTE) (2.5\u20135 ppm/\u00b0C) []. Finally, SiC has an intermediate thermal conductivity of 85 W/m\u00b7",
+   "85.0": "/\u00b0C. AlN particles are relatively expensive, but show higher thermal conductivity (150\u2013220 W/m\u00b7K) and lower thermal expansion coefficient (CTE) (2.5\u20135 ppm/\u00b0C) []. Finally, SiC has an intermediate thermal conductivity of 85 W/m\u00b7K [] and CTE on the range 4.1\u20134.7 ppm/\u00b0C []. With regards to the cycloaliphatic epoxy, few studies are based on this. The combinati",
+   "1.21": "y of the cycloaliphatic epoxy matrix by the addition of thermal conductive particles. The results of the thermal conductivity determined for the composites prepared are represented in . The highest conductivity values (1.21 W/m\u00b7K) were reached for the sample with a 75 wt % of AlN, followed by the composite with the highest proportion of SiC (1.12 W/m\u00b7K). How",
+   "1.12": " determined for the composites prepared are represented in . The highest conductivity values (1.21 W/m\u00b7K) were reached for the sample with a 75 wt % of AlN, followed by the composite with the highest proportion of SiC (1.12 W/m\u00b7K). However, it is quite curious that at the same filler content (70%) SiC leads to a higher value of this parameter, although pure ",
+   "1.04": "ticles, which is related to the percolation phenomenon, which for AlN has not been achieved at this filler content. The thermal conductivity obtained in the present study is higher than that obtained in BN composites (1.04 W/m\u00b7K) []. However, in the present case a higher proportion of filler has been added to the formulation, since the addition of h-BN was "
+  }
+ },
+ {
+  "doi": "10.3390/nano12030446",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "BNNS",
+   "boron nitride"
+  ],
+  "n_k": 6,
+  "vals": {
+   "2.01": "N) framework. In addition, the effect of filler sizes in 3D-BN skeletons on thermal conductivity was investigated. The epoxy composite with larger BN in lateral size showed a higher through-plane thermal conductivity of 2.01 W/m\u00b7K and maintained a low dielectric constant of 3.7 and a dielectric loss of 0.006 at 50 Hz, making it desirable for the application ",
+   "0.3": "ce will be reduced []. Polymers, such as epoxy resin or silicone rubber, are commonly used as TIMs due to their superior adhesiveness, thermal stability and electrical insulation [,]. However, their low TC values (below 0.3 W/m\u00b7K) cannot satisfy the needs of microelectronic devices. Therefore, TIMs with excellent through-plane thermal conductivity are urgent",
+   "600.0": "g ceramic fillers, such as AlN [,,], Al 2 O 3 [,,], Si 3 N 4 [] and BN [,]. Especially for BN with a similar layered structure of graphite, it has attracted great interest due to its superior thermal conductivity (about 600 W/m\u00b7K in the plane direction) and wide band gap [,,,]. Therefore, the incorporation of BN into polymer has placed great significance on",
+   "3.13": "ng intermediate to construct a three-dimensional network framework with interconnected BNNS and then infiltrated the epoxy resin solution into the framework, thus obtaining a nanocomposite with a thermal conductivity of 3.13 W/m\u00b7K. However, the phonon conduction was weakened due to the random distribution of BNNS in the framework, which made it difficult to ",
+   "1.1": "environment were compared. Remarkably, the composites with 3D-BN showed a distinct increase of TC on through-plane orientation with increasing sizes of BN. To be more specific, the through-plane TC of A-3D-SBN/epoxy was 1.10 W/m\u00b7K under 25 \u00b0C, while that of the A-3D-LBN/epoxy was up to 1.47 W/m\u00b7K, which is mainly attributed to the different intensity of the ",
+   "1.47": "owed a distinct increase of TC on through-plane orientation with increasing sizes of BN. To be more specific, the through-plane TC of A-3D-SBN/epoxy was 1.10 W/m\u00b7K under 25 \u00b0C, while that of the A-3D-LBN/epoxy was up to 1.47 W/m\u00b7K, which is mainly attributed to the different intensity of the phonon transport. BN platelets with a larger lateral size (LBN) in "
+  }
+ },
+ {
+  "doi": "10.3390/polym14061252",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 6,
+  "vals": {
+   "9.36": "tivity of the composites is closely related to the molecular arrangement of the LC resin and the amount of BN added. The results demonstrate that the SBPDAE/s-BN (60%) composite shows the highest thermal conductivity of 9.36 W/mK in the vertical direction. These data prove that the LC alignment of the matrix will greatly enhance the thermal conductivity of ",
+   "0.6": " is quite high. On the other hand, inorganic ceramics and polymer materials mainly rely on lattice vibration only. Most polymers have an amorphous characteristic, and their thermal conductivities are usually between 0.1~0.6 W/mK. The character of inorganic ceramics is relatively higher; their thermal conductivity is typically 2\u20133 orders of magnitude higher",
+   "3000.0": "er materials. One effective method is to add high thermal conductivity inorganic fillers, such as AlN, Al 2 O 3 , Si 3 N 4 [,,,,], BN [,,,,,,,], etc. The thermal conductivity of single-layer carbon nanotubes could reach 3000W/mK, and that of graphene can be even higher, reaching 5000W/mK. In view of the application of liquid crystal materials with high th",
+   "5000.0": "nductivity inorganic fillers, such as AlN, Al 2 O 3 , Si 3 N 4 [,,,,], BN [,,,,,,,], etc. The thermal conductivity of single-layer carbon nanotubes could reach 3000W/mK, and that of graphene can be even higher, reaching 5000W/mK. In view of the application of liquid crystal materials with high thermal conductivity, we synthesized 4,4\u2032-Biphenol diglycidyl ",
+   "6.77": "he f-BN demonstrate an anisotropic behavior, which will lead to many limitations in practical applications. Among these five liquid crystal epoxy resin composites with f-BN, TMBPE shows the highest thermal conductivity (6.77 W/mK), which is much higher than the thermal conductivity of the pure LC epoxies (0.17~0.21 W/mK). Because the molecular chain of TMBPE",
+   "0.21": "l applications. Among these five liquid crystal epoxy resin composites with f-BN, TMBPE shows the highest thermal conductivity (6.77 W/mK), which is much higher than the thermal conductivity of the pure LC epoxies (0.17~0.21 W/mK). Because the molecular chain of TMBPE cured material has a lower degree of regularity, the arrangement of the f-BN makes less of "
+  }
+ },
+ {
+  "doi": "10.3390/ijms24098221",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 6,
+  "vals": {
+   "0.653": "lexibility of PU. The stress and strain of BN60/PU are 7.52 \u00b1 0.87 MPa and 707.34 \u00b1 38.34%, respectively. As prepared, BN60/PU composites with unordered BN exhibited high thermal conductivity and a volume resistivity of 0.653 W/(m\u00b7K) and 23.9 \u00d7 10 12 \u03a9\u00b7cm, which are 218.71 and 39.77% higher than that of pure PU, respectively. Moreover, these composite films dem",
+   "0.3": "anufacturing cost [], which are crucial to addressing the issue of equipment overheating and have become the focus of scientific research []. However, most polymers have low thermal conductivity (TC; typically less than 0.3 W/(m\u00b7K)) []. A promising way to produce thermally conductive materials for industrialization is to make the composite material form a hea",
+   "390.0": "uctive filler. Hexagonal boron nitride (BN) is an inorganic ceramic material with a microstructure similar to that of graphene. It is an ideal thermally conductive filler for polymer composites because of its high TC of 390 W/(m\u00b7K) [,]. The thermal conductivity of polymer composites mainly depends on the thermal conduction chain and network formed by the fil",
+   "0.17": "0/PU | 306.0 | 398.3 | 64.92 [ROW] | PU | 281.5 | 313.5 | 2.30 [/TABLE] 2.5. TC of BN/PU Composite Films a show the TC and TC enhancement of different BN/PU composite films. The pure PU exhibits a low TC of 0.170 W/(m\u00b7K), owing to the severe phonon scattering resulting from its low crystallinity. As shown in b, the TC of the BN/PU composites increa",
+   "0.425": "nd 9122.16% higher than the strain of the composites prepared using the traditional NIPS and SE methods with the 60% unmodified BN. As depicted in c, the TC of BN60/PU, BN60/PU-NIPS, and BN60/PU-SE are 0.545, 0.319, and 0.425 W/(m\u00b7K), respectively. The TC of BN60/PU are 70.85 and 28.24% higher than those of BN60/PU-NIPS and BN60/PU-SE composite film. Thus, the ",
+   "50.0": "doi: 10.1002/mame.202100734. 13. Yu C., Gong W., Tian W., Zhang Q., Xu Y., Lin Z., Hu M., Fan X., Yao Y. Hot-pressing induced alignment of boron nitride in polyurethane for composite films with thermal conductivity over 50 W/(m\u00b7K) Compo. Sci. Tech. 2018;160:199\u2013207. doi: 10.1016/j.compscitech.2018.03.028. 14. Niu H., Zhang Y., Xiao G., He X., Yao T. Preparat"
+  }
+ },
+ {
+  "doi": "10.3390/polym12091913",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "alumina",
+   "aluminum nitride",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 6,
+  "vals": {
+   "0.6": "K\u2013LCE/BN composites were increased by increasing the amount of modified BN fillers and the thermal decomposition temperatures of composites were over 370 \u00b0C. The thermal conductivity of the K\u2013LCE/BN composites was up to 0.6 W/m\u00b7K, for LC epoxy filled with 5.00-wt%-modified BN fillers. Furthermore, the K\u2013LCE/BN composites have excellent thermal and mechanica",
+   "0.2": "as electrical encapsulating materials for microelectronic devices to provide protection of the IC devices []. However, common epoxy resins have poor thermal properties such as high CTE and low thermal conductivity (0.17\u20130.20 W/m\u00b7K), but these properties of epoxides can be improved by the rigid rod structures with liquid crystalline characteristics introduced ",
+   "0.34": "be improved by the rigid rod structures with liquid crystalline characteristics introduced [,,,]. We have reported that the liquid crystalline (LC) epoxy resin exhibited much lower CTE and a higher thermal conductivity (0.34 W/m\u00b7K) compared to those of a traditional epoxy resin (DGEBA) []. In general, the ICs are encapsulated by silica-filled epoxy composites",
+   "1.0": "al conductivity (0.34 W/m\u00b7K) compared to those of a traditional epoxy resin (DGEBA) []. In general, the ICs are encapsulated by silica-filled epoxy composites, but the thermal conductivity of the composites is less than 1.0 W/m\u00b7K, which is far below the demand of ICs heat dissipation []. It can be enhanced by incorporation of inorganic fillers with a high t",
+   "400.0": "nal lattice structure (h-BN) is a platelet-shaped ceramic and is often called \u201cwhite graphite\u201d. h-BN has the greatest potential application in polymer composites due to its superior intrinsic thermal conductivity (up to 400 W/m\u00b7k), excellent electrical insulation properties, thermal stability with low dielectric constant and low density, compared to those of",
+   "0.58": " composites increased along with the BN filler contents, as shown in . The thermal conductivity values of K\u2013LCE/BN composites with 0%, 0.05%, 1.00%, 2.00%, and 5.00 wt% BN filler contents were 0.34, 0.39, 0.45, 0.53 and 0.58 W/m\u00b7K, respectively. With incorporation of Si\u2013BN to neat K\u2013LCE, the thermal conductivity increased by 70.58% (from 0.34 to 0.58) at 5.0"
+  }
+ },
+ {
+  "doi": "10.3390/polym17111429",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 5,
+  "vals": {
+   "0.95": " is comparatively ideal when the applied electric field strength is 30 V/mm, the tensile strength is 48.3 MPa, the breakdown field strength is 37.65 kV/mm, and the thermal conductivity of the BN/epoxy resin composite is 0.95 W/(m\u00b7K). The thermal conductivity greatly increased and BN was organized into chains when the electric field approached 60 V/mm. The tens",
+   "1.52": "research on BN/epoxy resin composites, a novel kind of high-thermal-conductivity insulation composite, has accelerated. Wang et al. [] found that the thermal conductivity of the BN/epoxy composite could be increased to 1.52 W/(m\u00b7K), and that the mechanical properties first increased and then decreased with the content of BN. Jang et al. [] found that the long",
+   "0.23": "uctivity of composite and pure epoxy materials are displayed in , illustrating how the composite\u2019s thermal conductivity rises with the applied electric field strength. Pure epoxy resin has a thermal conductivity of only 0.23 W/(m\u00b7K), whereas 0&amp;BN-EP has a thermal conductivity of 0.58 W/(m\u00b7K). At a 60 V/mm electric field intensity, 60&amp;BN-EP reaches 1.03",
+   "0.58": ", illustrating how the composite\u2019s thermal conductivity rises with the applied electric field strength. Pure epoxy resin has a thermal conductivity of only 0.23 W/(m\u00b7K), whereas 0&amp;BN-EP has a thermal conductivity of 0.58 W/(m\u00b7K). At a 60 V/mm electric field intensity, 60&amp;BN-EP reaches 1.03 W/(m\u00b7K) thermal conductivity. Its thermal conductivity is 1.77 ",
+   "1.03": "lied electric field strength. Pure epoxy resin has a thermal conductivity of only 0.23 W/(m\u00b7K), whereas 0&amp;BN-EP has a thermal conductivity of 0.58 W/(m\u00b7K). At a 60 V/mm electric field intensity, 60&amp;BN-EP reaches 1.03 W/(m\u00b7K) thermal conductivity. Its thermal conductivity is 1.77 times higher than that of 0&amp;BN-EP and 4.47 times higher than that of p"
+  }
+ },
+ {
+  "doi": "10.3390/nano11081898",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN "
+  ],
+  "n_k": 5,
+  "vals": {
+   "0.754": "nd thermal conductivity. The most optimized sandwich composite, with an outer layer thickness of 120 \u03bcm and an inner layer thickness of 60 \u03bcm (abbreviated as 120-60) exhibits a high through-plane thermal conductivity of 0.754 W/(m\u00b7K) (4.1 times of epoxy) and has a dielectric breakdown strength of 69.7 kV/mm, 8.1% higher compared to that of epoxy. The sandwich c",
+   "1.88": "al conductivity of 0.754 W/(m\u00b7K) (4.1 times of epoxy) and has a dielectric breakdown strength of 69.7 kV/mm, 8.1% higher compared to that of epoxy. The sandwich composites also have higher in-plane thermal conductivity (1.88 W/(m\u00b7K) for 120-60) based on the novel parallel models. The sandwich composites with desirable thermal and electrical properties are very",
+   "320.0": "ch as Al 2 O 3 , BN and AlN, are usually used as fillers of polymer-based composites to enhance thermal conductivity and dielectric properties [,,,,]. AlN is a good filler candidate due to its high thermal conductivity (320 W/(m\u00b7K)) and wide band gap (6.2 eV) []. To a large extent, the use of micro-sized fillers to improve the thermal conductivity of the epox",
+   "0.2": "ive contrast between thermal conductivity and dielectric breakdown strength is shown in c. The dielectric breakdown strength of the 1.0 vol.% ANNP/epoxy composite is 66.5 kV/mm. However, its thermal conductivity is only 0.20 W/(m\u00b7K). It is evident that the dielectric breakdown strength and TPTC of the sandwich composites are higher and can be adjusted by layer",
+   "0.904": "h composites are higher and can be adjusted by layer thickness. For instance, the TPTC and dielectric breakdown strength of 120-60 are 0.754 W/(m\u00b7K) and 69.7 kV/mm, respectively. More notably, the TPTC of 130-60 reaches 0.904 W/(m\u00b7K), and its dielectric breakdown strength is still close to that of pure epoxy. [FIG] Figure 3 ( a ) TPTC of sandwich composites at"
+  }
+ },
+ {
+  "doi": "10.3390/ma10121442",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "alumina"
+  ],
+  "n_k": 4,
+  "vals": {
+   "19.0": " the resulting composites were investigated. The compressive strengths of the AlN/epoxy composites were enhanced compared with the pure epoxy. The AlN/epoxy composites demonstrate much higher thermal conductivity, up to 19.0 W/(m\u00b7K), compared with those by the traditional particles filling method, because of continuous thermal channels formed by the walls and ",
+   "0.2": "for the devices, especially in high operating temperatures []. However, traditional polymers such as polyethylene (PE) and polypropylene (PP) can hardly dissipate heat effectively due to their low thermal conductivity (~0.2 W/(m\u00b7K)) [,]. Therefore, it is highly desirable to increase the thermal conductivity of traditional polymers []. Normally, the most comm",
+   "2.0": "N, SiC, BN, or Si 3 N 4 into polymer matrixes [,]. However, a high loading fraction of these fillers is generally needed to achieve a satisfactory thermal conductivity. For instance, to achieve a thermal conductivity of 2 W/(m\u00b7K), a loading fraction of more than 30 vol % is required for BN, AlN, and Si 3 N 4 [,,,,]. However, with the increasing solid conten",
+   "7.5": "site and epoxy matrix, respectively. The thermal conductivities of the AlN/epoxy composites and the corresponding AlN porous ceramics are plotted in . The thermal conductivity of the AlN/epoxy composites increased from 7.5 W/(m\u00b7K) to 19.0 W/(m\u00b7K) with the fraction of the AlN skeleton increasing from 19.7% to 27.9%, which are two orders of magnitude higher th"
+  }
+ },
+ {
+  "doi": "10.3390/nano8120997",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 4,
+  "vals": {
+   "0.745": " the synergetic enhancements, the thermal conductivity was investigated and analyzed with Agari\u2019s model. Results indicated that with introduction of 0.5 wt% f -CNTs, the thermal conductivity coefficient (\u019b) increased to 0.745 W/mk, which is 1.38 times that of composites with just h-BN. Furthermore, the flexural strength and modulus of composites with 0.5 wt%",
+   "0.5": "oefficient (\u019b) of pristine epoxy resin and the cyanate ester matrix has limited their wider application [,]. As is well known, it is too difficult to fabricate a resin matrix with an intrinsic higher \u019b value than (&gt;0.50 W/mK). Thus, thermally conductive inorganic fillers have been incorporated into polymeric composites to improve their thermal conductiv",
+   "0.54": "resin matrix composites were investigated and the content of f -CNTs affecting the \u019b values of the resin matrix composites are shown in . According to our previous work, the \u019b value of resin matrix with h-BN (40 wt%) is 0.54 W/mk []. Moreover, Agari\u2019s model was used to evaluate the effect of the h-BN fillers in the resin matrix and results indicated that it",
+   "0.648": " f -CNTs, the \u019b values of composites increase significantly, composites with 0.5 wt% f -CNTs show a \u019b value of 0.745 W/mk. Besides, on increasing the content of f-CNTs, \u019b values increase correspondingly, increasing from 0.648 W/mk (with 0.3 wt% f -CNTs) to 0.745 W/mk (with 0.5 wt% f -CNTs). The microphotographs of h-BN/ f -CNT reinforced composites are also "
+  }
+ },
+ {
+  "doi": "10.3390/ma18215011",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 4,
+  "vals": {
+   "1.182": "ty of the adhesive. A series of comprehensive characterizations and thermal tests demonstrates the effectiveness of this approach. The results demonstrate that the BN-AlN sample exhibits superior thermal conductivity of 1.182 W/m\u00b7K at 25 wt% filler loading, a 48.7% enhancement over commercially adhesive 381-4DZ, with only a 38% increase in cost. Meanwhile, it",
+   "5.0": "-fine point thermocouples (Kaipusen Co., Yancheng, China) were installed on the surface of the windings before potting. [FIG] Figure 2 Analog thermal test of ACLSM. During the tests, a heat-conducting silicone grease (5 W/m\u00b7K) was evenly applied between the windings and the liquid-cooled plate, while other surfaces were covered with thermal insulation co",
+   "0.2": "est of ACLSM. During the tests, a heat-conducting silicone grease (5 W/m\u00b7K) was evenly applied between the windings and the liquid-cooled plate, while other surfaces were covered with thermal insulation cotton ( k &lt; 0.2 W/m\u00b7K) to minimize the effect of natural convection. The heating power started at 5 W, increasing in 5 W increments after stabilization ",
+   "1.278": "due to AlN\u2019s inherently higher thermal conductivity compared to Al 2 O 3 , samples incorporating AlN demonstrate superior heat transfer performance. At a 30 wt% filler loading, the thermal conductivity of BN-AlN reaches 1.278 W/m\u00b7K, representing a 7.1%, 21.4%, and 25.2% increase compared to the BN-Al 2 O 3 , AlN, and Al 2 O 3 composites, respectively. [FIG] "
+  }
+ },
+ {
+  "doi": "10.3390/polym13030456",
+  "epoxy": false,
+  "fillers": [
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 4,
+  "vals": {
+   "0.89": "ace of BN and cross-linking due to hydrogen bonding between the hydroxyl groups in PVA and oxygen atoms in PEG improved the wettability of fillers. By employing this strategy, we achieved a thermal conductivity value of 0.89 W/mK, a 286% improvement compared to the thermal conductivity of the pristine PEG (0.23 W/mK). Although the latent heat of composites ",
+   "0.23": "nd oxygen atoms in PEG improved the wettability of fillers. By employing this strategy, we achieved a thermal conductivity value of 0.89 W/mK, a 286% improvement compared to the thermal conductivity of the pristine PEG (0.23 W/mK). Although the latent heat of composites decreased due to the mobility of the polymer chain, the value was still reasonable for PC",
+   "0.3": "e glycol (PEG) is a widely used polymer PCM due to its moderate phase change temperature, nontoxicity, and high latent heat []. However, PEG has a low thermal conductivity and weight leakage during phase transition (0.2~0.3 W/mK) [,]. This low thermal conductivity is disadvantageous for energy storage applications. To overcome this problem, many different s",
+   "0.61": "rformance of PEG composites. The thermal conductivity of the composites monotonically increased as the filler fraction increased. The thermal conductivity of PEG/BN composites at 10, 20, and 30 wt.% were 0.35, 0.46, and 0.61 W/mK, respectively. The thermal conductivity was improved 165% after addition of 30 wt.% of raw BN. The addition of the BN into the PE"
+  }
+ },
+ {
+  "doi": "10.3390/polym11101548",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 2,
+  "vals": {
+   "0.2": "edium, degrading the original insulating properties. Therefore, thermal management has become an important issue in the development of epoxy materials [,,,,]. The thermal conductivity of epoxy resin itself is very low (0.2 W/m\u00b7K), which cannot meet the actual demand. At present, the method of rapidly increasing the thermal conductivity of epoxy resin is to ",
+   "320.0": "ty of epoxy resin is to add a high thermal conductivity filler [,] such as Al 2 O 3 , AlN, BN, etc. [,,]. Among them, BN is a hot spot of current research due to its good thermal stability and high thermal conductivity (320 W/m\u00b7K) [,,,,]. However, due to the poor compatibility of BN with epoxy resin, the addition of epoxy resin causes a decrease in the mecha"
+  }
+ },
+ {
+  "doi": "10.3390/polym13132161",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "alumina",
+   "aluminum nitride",
+   "boron nitride"
+  ],
+  "n_k": 2,
+  "vals": {
+   "0.2": " electrical devices [,,,,,,,,]. Epoxy resin is a commonly used material for electrical insulation; it is frequently applied as a potting material or an external cover. Pure epoxy exhibits very low thermal conductivity (0.2 W/m\u00b7K) [], and relatively moderate dielectric and mechanical properties. All these parameters can be enhanced by incorporation of the fi",
+   "2.3": "tained by the formation of an outer thin layer of aluminum nitride (AlN), led to the enhancement of the thermal conductivity of epoxy composite by 63% in relation to the standard Al 2 O 3 filler, and reaching a value of 2.3 W/m\u00b7K []. However, in order to assess if a new material can be used as an efficient electrical insulation, several additional parameter"
+  }
+ },
+ {
+  "doi": "10.3390/polym10030277",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 1,
+  "vals": {
+   "0.3": "is transferred, how fast and in what direction. Although epoxy resins are extremely valuable materials in coatings and adhesion applications, thermal conductivity of these polymer resins is in the low range from 0.1 to 0.3 W/m\u00b7K. The addition of inorganic filler particles into the epoxy material can significantly improve the TC and can also affect the mech"
+  }
+ },
+ {
+  "doi": "10.3390/polym17111507",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "aluminum nitride",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 1,
+  "vals": {
+   "1.14": "ted the complete aromatic structure, indicating non-destructive carbon nanotube resin binding []. These mechanisms synergistically reduced the interfacial thermal resistance, thereby increasing the thermal conductivity (1.14 W/m \u00b7 K, ). In summary, CNTs provide physicochemical mechanism support for improving thermal conductivity (\u03bb = 1.14 W/m\u00b7K) by optimizing "
+  }
+ },
+ {
+  "doi": "10.3390/polym18050648",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 1,
+  "vals": {
+   "1.0": "liability standards. Thermal conductivities of conventional epoxy molding compounds (EMCs), typically comprising an epoxy matrix and fused silica (SiO 2 ), and silicone gel (potting) are reported to be approximately 0.8\u20131.0 W/m\u00b7K and 0.15\u20130.2 W/m\u2219K, respectively []. A simple and efficient strategy for enhancing thermal conductivity involves the incorporatio"
+  }
+ },
+ {
+  "doi": "10.3390/ma14185251",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.3390/polym11081335",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.1039/c9ra00282k",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.3390/nano9101396",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "BNNS",
+   "boron nitride"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.1039/c8ra10645b",
+  "epoxy": true,
+  "fillers": [
+   "AlN",
+   "BN ",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.1039/c8ra10211b",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "boron nitride"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.3390/molecules28093797",
+  "epoxy": false,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.1007/s40820-023-01163-w",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.3390/nano15120936",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "boron nitride"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.3390/polym15051214",
+  "epoxy": false,
+  "fillers": [
+   "BN ",
+   "BNNS",
+   "boron nitride"
+  ],
+  "n_k": 0,
+  "vals": {}
+ },
+ {
+  "doi": "10.1039/c8ra03875a",
+  "epoxy": true,
+  "fillers": [
+   "BN ",
+   "boron nitride",
+   "h-BN"
+  ],
+  "n_k": 0,
+  "vals": {}
+ }
+]

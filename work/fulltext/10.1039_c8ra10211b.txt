@@ -1,0 +1,566 @@
+SOURCE doi=10.1039/c8ra10211b FETCH=EPMC PMC9060514
+
+ 
+ pmc RSC Adv RSC Adv 4079 rscadv 101581657 RA RSC Advances 2046-2069 Royal Society of Chemistry PMC9060514 PMC9060514.1 9060514 9060514 35520150 10.1039/c8ra10211b c8ra10211b 1 Chemistry Improved dielectric stability of epoxy composites with ultralow boron nitride loading † Electronic supplementary information (ESI) available. See DOI: 10.1039/c8ra10211b 
+ Fu Xiuwu However, polymer-based composites are limited due to their relatively low working temperatures and dielectric instability, which means that they fail to meet increasing demands of industrial applications. Therefore, it is urgent to fabricate polymer-based composites with stable dielectric properties over a wide range of temperature and frequency.
+ Filler doping has been widely utilized to improve thermal properties or dielectric stability of the polymer-based composites. For instance, the functional fillers with high thermal conductivity, such as carbon nanotube, metallic materials and graphene, are usually introduced into the polymer matrix to prepare the high-temperature composites. However, due to the random dispersion and aggregation of fillers, the thermal conduction network cannot be formed unless large amounts of fillers are doped, which will conversely weaken dielectric stability of the polymer-based composites. Besides, the surface modification and functionalization have been usually used to improve the compatibility between fillers and polymer matrix. However, the effect of surface modification and functionalization on thermal properties and dielectric stability of polymer-based composites are undesired at high temperature.
+ Recently, a lot of novel strategies have been developed to improve the thermal conductivity or dielectric stability of the polymer-based composites. Shao et al. have prepared a hybrid three-dimensional boron nitride nanosheet (BNNS)/graphene framework as thermal conductive filler in the polymeric composites. They observed a synergistic effect between BNNSs and graphene, which can significantly improve the thermal conductivity of neat nylon 6. Dai et al. have fabricated a rigid three-dimensional structure composed of silicon carbide nanowire and graphene sheets by using the high frequency heating process. The thermal conductivity of the composites is significantly raised, approximately a 10-fold enhancement in comparison with that of neat polyimide. Although the three-dimensional graphene structure can significantly improve the thermal conductivity of the composites, it cannot effectively suppress dielectric loss of the composites due to its high electric conductivity. The dielectric loss of the composites containing conductive phases ( e.g. graphene, metal particles) is too high to meet the requirements of electronic device. Three-dimensional boron nitride (3D BN) aerogels give consideration to both high-efficiency thermal conductivity and excellent electrical insulating property, which are more suitable for preparing the polymer-based composites with excellent dielectric stability. Zeng et al. have successfully prepared the 3D BN aerogel by introducing the PVA. However, the preparation process of the 3D BN network composites is complicated and requires pressing with a mould, which may be difficult to prepare large or special size polymer-based composites. Hu et al. have successfully prepared the 3D BN aerogel by introducing the sodium methylcellulose. However, the introduction of the sodium ion will increase the dielectric loss of the polymer-based composites. Li et al. have fabricated crosslinked polymer nanocomposites containing BN nanosheets, which exhibits stable dielectric constant and low dielectric loss over a wide temperature and frequency range. Although fillers introduced for the preparation of 3D BN aerogels may lead to an increase in the dielectric loss of the polymer-based composites, the 3D BN aerogels prepared by reasonable strategy could be ideal functional fillers to prepare the polymer-based composites with excellent dielectric stability due to their excellent thermal and electrical insulating properties. 
+ The nylon 66 (PA66) is a thermoplastic resin material and one of the most widely used engineering materials, owing to their excellent mechanical and thermal properties, good electrical insulation properties and easy processing. We have found that PA66 pellets can be dissolved in formic acid to form an aerogel after the freeze-drying without templates, which can be used as a three-dimensional framework. The functional fillers can adhere to the PA66 aerogel to form a thermal conduction network at an ultralow loading. However, the 3D PA66 aerogels prepared by the freeze-drying have not been reported yet. Although the thermal conductivity of epoxy resin (model no. E-51) is low (around 0.15 W m −1 K −1 ), epoxy E-51 is widely used as the matrix for the polymer-based composites in the field of electronic devices due to their good electrical insulation, easy casting and excellent mechanical strength. To date, there are few reports on improving the dielectric stability of epoxy-based composites. The epoxy-based composites can possess much higher thermal conductivity by introducing a large amount of high thermal conductivity fillers, while excessive fillers will hinder the crosslinking and polymerization of the epoxy and form lots of interface with the epoxy matrix, which not only increases processing difficulty but also increases the dielectric loss of the epoxy composites. 
+ In this study, the 3D BN/PA66 aerogels have been prepared by the freeze-drying without templates, and BN microplatelets can adhere to 3D PA66 aerogels to form a continuous thermal conduction network at an ultralow loading. The BN/PA66 composites are prepared by infiltrating 3D BN/PA66 aerogels with epoxy resin. Moreover, the dielectric and thermal properties of the 3D BN/PA66 composites are investigated.
+
+ 2. Experimental
+ 2.1. Materials
+ The PA66 pellets were obtained from Tengfei Co., Ltd with average size of 2–4 mm. Epoxy resin (model no. E-51) was purchased from Dow Chemical Co. Acetone and formic acid were purchased from Aladdin Industries Ltd and used as solvent. The 4,4-diaminodiphenylmethane (DDM) was purchased from Sinopharm Chemical Reagent Co., Ltd and used as the curing agent. Hexagonal BN microplatelets were supplied by Yaan Bestry Performance Materials Co., Ltd and used as received.
+
+ 2.2. Preparation of 3D BN/PA66 aerogels
+ 2.0 g of PA66 pellets were dissolved into 20 mL of formic acid by stirring at 60 °C. The BN/PA66 slurries were prepared by dispersing different volume fraction of BN microplatelets into the formic acid solution of PA66. The slurries were processed by ball-milling for 24 h at 400 rpm. Subsequently, the slurries were poured into a mould. Through the freeze-drying (Freeze-dryer, FD-1C-50, China) at minus 100 °C and 20 Pa for 48 h, the 3D BN/PA66 aerogels were successfully prepared.
+
+ 2.3. Preparation of 3D BN/PA66 composites
+ Epoxy E-51 is used as the matrix due to its excellent electrical insulation, mechanical property and chemical resistance, which is very suitable for application in the electronic devices. DDM was dissolved into acetone by stirring at 70 °C. A certain amount of liquid epoxy resin was mixed with DDM by stirring for 30 min at room temperature (epoxy E-51/DDM = 5 : 1, wt/wt). The mixture was poured into the 3D BN/PA66 aerogels to prepare the 3D BN/PA66 composites, and then the composites were transferred into vacuum oven to remove the bubbles at 10 4 Pa and 70 °C. The epoxy resin can be effectively infused into the 3D BN/PA66 aerogels due to capillary force and low pressure atmosphere. Finally, the 3D BN/PA66 composites were cured at 80 °C for 2 h and 120 °C for 4 h. According to the volume ratio of the BN, the as-prepared three-dimensional composites are named as 3D BN/PA66- X – Y composites, where X stands for the volume fraction of the BN in the aerogel and Y stands for the volume fraction of the BN in the whole composite. The conversion of volume fraction and mass fraction of BN microplatelets in the whole composite are shown in the Table S1. For comparison, epoxy resin directly mixed with 4 vol% of BN microplatelets without 3D PA66 aerogels was also prepared and denoted as random BN/EP-4 composites. The schematic fabrication process of the 3D BN/PA66 composite is shown in .
+
+ 2.4. Characterizations
+ The morphologies of hexagonal BN microplatelets, 3D PA66 aerogels and cross section of the 3D BN/PA66 composites were observed by scanning electron microscope (S-4800, HITACHI, Japan). The morphology of hexagonal BN microplatelets was also characterized by transmission electron microscope (JEM-2100F, JEOL, Japan). The phase structure of BN microplatelets was characterized by X-ray diffraction (XRD, D/MAX2550/PC, Rigaku Co.) using Cu Kα radiation from 15° to 80° at scanning rate of 5° min −1 under 35 kV and 200 mA. The thermal diffusivity ( D , mm 2 s −1 ) of the 3D BN/PA66 composites was measured by the laser flash technique (LFA 457). The thermal conductivity ( λ , W m −1 K −1 ) of the 3D BN/PA66 composites was calculated through the following formula: 1 λ = DρC p where ρ stands for the density of 3D BN/PA66 composites, which is calculated by water displacement method, and C p stands for the specific heat of 3D BN/PA66 composites. The samples were prepared into disc-shaped forms with a diameter of 12.5 ± 0.2 mm and a thickness of 1.0 mm. Before testing, the surface of the sample was treated by graphite spraying to ensure uniform temperature on the front and back of the sample. The degradation temperature ( T d ) of 3D BN/PA66 composites was measured by Pyris1 TGA from 25 °C to 800 °C at heating rate of 10 °C min −1 under nitrogen atmosphere. The glass transition temperature ( T g ) of 3D BN/PA66 composites was measured by Perkin-Elmer DMA 8000 from 0 °C to 200 °C at heating rate of 3 °C min −1 and 1 Hz. Dielectric constant and dielectric loss of 3D BN/PA66 composites were characterized by the impedance analyzer (Agilent 4990A) from 10 2 Hz to 10 6 Hz at room temperature and from 25 °C to 200 °C at 10 4 Hz, respectively. Before measurement, silver paste was applied on both sizes of the composite films to ensure their good electric conduction.
+
+[FIG] Fig. 1 The schematic illustration of preparation process for the 3D BN/PA66 composites.
+ 
+
+ 3. Results and discussion
+ The XRD patterns of BN microplatelets are shown in , and the diffraction peaks of any impurities are not observed within the range of 15–80°. The result of the XRD indicates that the BN microplatelet is of high purity.
+
+[FIG] Fig. 2 The XRD spectra of the BN microplatelets.
+ The microscopic surface morphology of the BN microplatelet was characterized by SEM and TEM as shown in . The average size of BN microplatelets ranges from 3 to 5 μm, and the thickness is in the range of 100–300 nm. The 3D PA66 aerogel is macroscopically composed of slice stacks with a porous structure, as shown in Fig. S1. From the , the 3D PA66 aerogels possess good mechanical strength and compactness. In addition, the external shape of 3D PA66 aerogels can be adjusted according to the preparation process to meet different requirements for the shape and size of the electronic device. As shown in , the 3D PA66 aerogel also possesses an abundance of internal interface. The BN microplatelets can easily adhere to the PA66 aerogel to form a continuous thermal conduction network at an ultralow loading. Moreover, the dispersion of BN microplatelets in PA66 aerogel was characterized by SEM as shown in Fig. S2. As illustrated in , the fracture section of the 3D BN/PA66-0–0 composite is relatively smooth, showing the brittleness characteristics of the epoxy resin. Meanwhile, it can be observed that 3D PA66 aerogels can be well coated by the epoxy resin, which is attributed to the good compatibility between 3D PA66 aerogels and epoxy resin. The well-compatibility between epoxy resin and 3D PA66 aerogels plays a crucial role in improving dielectric and thermal properties of 3D BN/PA66 composites.
+
+[FIG] Fig. 3 (a) SEM image of the BN microplatelets; (b) TEM image of the BN microplatelets; (c) and (d) the optical image of pristine 3D PA66 aerogel; (e) SEM image of pristine 3D PA66 aerogel; (f) cross section SEM image of pristine 3D BN/PA66-0–0 composite.
+ The degradation temperature ( T d ) is one of the most important parameters to characterize the thermal stability of polymer-based composites. The T d of 3D BN/PA66 composites were measured in nitrogen atmosphere as illustrated in . In the temperature range of 330–450 °C, the mass of 3D BN/PA66 composites drops sharply due to the decomposition of the epoxy matrix in this temperature range. From the , the T 5 of all 3D BN/PA66 composites are above 330 °C, which is higher than that of the neat epoxy. The effect of BN/PA66 aerogels on the T d can be ascribed to the following aspects: on one hand, the PA66 aerogel can improve the thermal stability of the composite due to their excellent thermal stability. Besides, PA66 aerogel and epoxy matrix can form a partially crosslinked structure, further reducing the degradation rate. On the other hand, the increase in BN content makes adverse effect on the compatibility between PA66 aerogel and epoxy matrix, which will reduce the T d of the BN/PA66 composites. The excellent thermal stability suggests the 3D BN/PA66 aerogel is a potential candidate for preparing high-temperature polymer-based composites.
+
+[FIG] Fig. 4 The TGA curve of the neat epoxy and 3D BN/PA66 composites in the N 2 atmosphere.
+ 
+[TABLE] Degradation temperature ( T d ) and glass transition temperature ( T g ) of the neat epoxy and 3D BN/PA66 composites
+ 
+[ROW] Sample 
+ T 
+ 5 /°C 
+ T 
+ g /°C 
+ 
+[ROW] | Neat epoxy
+ | 320
+ | 115
+
+[ROW] | 3D BN/PA66-0–0 composite
+ | 347
+ | 127
+
+[ROW] | 3D BN/PA66-10–1 composite
+ | 336
+ | 125
+
+[ROW] | 3D BN/PA66-20–2.5 composite
+ | 335
+ | 124
+
+[ROW] | 3D BN/PA66-30–4 composite
+ | 334
+ | 123
+
+[ROW] | 3D BN/PA66-40–6 composite
+ | 332
+ | 120
+
+ 
+
+[TABLE] a 
+ T 
+ 5 indicates the temperature at which the mass loss of the materials is 5%.
+ [/TABLE]
+ The glass transition temperature ( T g ) in this work is defined as the temperature at the peak of the loss factor curves, as shown in and . The T g of all 3D BN/PA66 composites are above 120 °C, which is higher than that of the neat epoxy. The 3D PA66 aerogels constrain the segmental mobility of polymer chain and thus lead to an increase in the T g of 3D BN/PA66 composites. However, as the increase of the BN content, the T g value of 3D BN/PA66 composites slightly reduces. The BN microplatelets introduce the additional free volume inside epoxy matrix, which improves the segmental mobility of polymer chain and thus leads to reduction in T g value. Meanwhile, the only one loss factor peak of 3D BN/PA66 composites is observed from 0 °C to 200 °C, which indicates the good compatibility between 3D BN/PA66 aerogel and epoxy matrix.
+
+[FIG] Fig. 5 The loss factor as a function of temperature of the neat epoxy and 3D BN/PA66 composites.
+ The thermal conductivity of the 3D BN/PA66 composite was investigated over the temperature range 25–200 °C as illustrated in . The thermal conductivity of the neat epoxy and random BN/EP-4 composite are about 0.15 W m −1 K −1 and 0.2 W m −1 K −1 , respectively. The BN microplatelets are far from enough to form the continuous thermal conduction network in random BN/EP-4 composite at an ultralow loading of 4 vol%. However, a large amount of randomly distributed BN microplatelets will not only cause serious agglomeration but also prevent epoxy resin from curing and cross-linking, which makes adverse effect on the dielectric stability of the composites. From the , the thermal conductivity of 3D BN/PA66-20–2.5 composite is about 0.3 W m −1 K −1 , which is slightly higher than that of neat epoxy and random BN/EP-4 composite. As shown in , since the BN content is too low, a continuous thermal conduction network can't be formed throughout the composite. However, it can be observed the thermal conductivity of 3D BN/PA66-30–4 composite significantly increases up to 0.6 W m −1 K −1 , which is about 5-fold and 3-fold higher than that of neat epoxy and random BN/EP-4 composite. As shown in , the continuous thermal conduction networks have been effectively formed along the 3D PA66 aerogel in the whole composites at an ultralow BN loading of 4 vol%. According to the percolation theory, when the content of BN microplatelets exceeds the percolation threshold, the increase in BN content will no longer have such significant effect on the thermal conductivity of the 3D BN/PA66 composite. Therefore, the thermal conductivity of 3D BN/PA66-40–6 composite slightly increases compared with that of 3D BN/PA66-30–4 composite. It is also well-noted that the thermal conductivity of 3D BN/PA66 composites basically remains stable over the temperature range 25–200 °C (Table S2). summarizes the thermal conductivity of the previously reported epoxy-based composites (model no. E-51) using different kinds of high thermal conductivity materials as fillers. From the , the thermal conductivity of low density polyethylene (LDPE)/BN/epoxy composite is 0.65 W m −1 K −1 , which is similar to that of 3D BN/PA66-30–4 composite. As shown in , it can be observed that the compatibility between epoxy and 3D PA66 aerogel is excellent. There are no clear interfaces and microcracks between 3D PA66 aerogel and epoxy. However, the compatibility between the LDPE and epoxy is poor. There are clear interfaces and microcracks between LDPE and epoxy, which could make negative impact on the mechanical property and dielectric stability of the composites. 
+
+[FIG] Fig. 6 The thermal conductivity as a function of temperature of the neat epoxy, random BN/PA66-4 composite and 3D BN/PA66 composites.
+ 
+[FIG] Fig. 7 The cross section SEM images of the (a) 3D BN/PA66-10–1 composites; (b) 3D BN/PA66-20–2.5 composites; (c) and (e) 3D BN/PA66-30–4 composites; (d) and (f) 3D BN/PA66-40–6 composites.
+ 
+[TABLE] Comparison of thermal conductivity of this work with the previously reported epoxy E51-based composites
+ 
+[ROW] Sample Filler loading in the whole composite TC (W m −1 K −1 ) Ref. 
+ 
+[ROW] | Graphene/epoxy-E-51
+ | 0.5 wt%
+ | 0.25
+ | 
+
+[ROW] | MWCNT@SiO 2 /epoxy-E-51
+ | 1 wt%
+ | 0.25
+ | 
+
+[ROW] | BN/LDPE/epoxy-E51
+ | 50 vol%
+ | 0.65
+ | 
+
+[ROW] | AIN/LDPE/epoxy-E51
+ | 50 vol%
+ | 0.68
+ | 
+
+[ROW] | PES/GNPs/epoxy-E51
+ | 15 vol%
+ | 0.85
+ | 
+
+[ROW] | 3D BN/PA66-30–4
+ | 4 vol%
+ | 0.6
+ | This work
+
+ 
+
+[TABLE] a The MWCNT is multi-walled carbon nanotubes.
+ b The LDPE is low density polyethylene.
+ c The PES is polyethersulphone; the GNPs is graphite nanoplatelets.
+ [/TABLE]
+ The frequency dependence of dielectric constant of 3D BN/PA66 composites with different volume fractions of BN microplatelets are shown in . The dielectric constant of the neat epoxy and random BN/EP-4 composite are about 3.55 and 4.32 over the frequency range 10 2 to 10 6 Hz at room temperature (RT, 25 °C), respectively. The dielectric constant of 3D BN/PA66 composites remains stable in the frequency range of 10 2 to 10 6 Hz, the specific values are shown in Table S3. In addition, the dielectric constant of 3D BN/PA66 composites slightly improves as the loading of BN microplatelets increases. As shown in , the dielectric loss of the neat epoxy and random BN/EP-4 composite are about 0.023 and 0.035 over the frequency range 10 2 to 10 6 Hz at RT, respectively. Moreover, the dielectric loss of 3D BN/PA66 composites also remains stable in the frequency range of 10 2 to 10 6 Hz, and the specific values are shown in Table. S3. The weak frequency dependence of dielectric properties is mainly attributed to the well-compatibility between 3D BN/PA66 aerogel and epoxy matrix, which can effectively suppresses the dielectric loss of the BN/PA66 composite.
+
+[FIG] Fig. 8 Frequency dependence of dielectric constant and dielectric loss (a and b) of the neat epoxy, random BN/EP-4 composite and 3D BN/PA66 composites at room temperature.
+ The temperature dependence of dielectric properties of 3D BN/PA66 composites are shown in , and the specific values are shown in Table S4. As shown in , the dielectric constant of the neat epoxy, random BN/EP-4 composite and 3D BN/PA66-20–2.5 composites significantly varies over the temperature range 25–200 °C at 10 4 Hz. From the , the variation of dielectric constant of the neat epoxy, random BN/EP-4 composite and 3D BN/PA66-20–2.5 composite are 48%, 38% and 37%, respectively. The temperature dependence of dielectric loss of 3D BN/PA66 composites are shown in . It can be observed the dielectric loss of neat epoxy, random BN/EP-4 composite and 3D BN/PA66-20–2.5 composite also severely varies with temperature. From the , the dielectric loss of neat epoxy, random BN/EP-4 composite and 3D BN/PA66-20–2.5 composites are 0.025, 0.031 and 0.029 at RT, which increases up to 0.141, 0.094 and 0.119 at 200 °C, respectively. Since no continuous thermal conduction network has been formed throughout the composite, heat accumulates inside the composite and cannot be effectively conducted to the outside. Therefore, the dielectric constant and dielectric loss of these composites significantly vary with temperature, especially when temperature approaches the glass transition temperature of the composite. In the previous works, a large amount of BN microplatelets are directly added into epoxy matrix to improve its thermal conductivity. However, a lot of BN microplatelets will also hinder the crosslinking and polymerization of the epoxy and create plenty of interfaces with epoxy matrix, which leads to an increase in the dielectric loss of the epoxy-based composites. As shown in the , the 3D BN/PA66-30–4 and BN/PA66-40–6 composites show the excellent stability of dielectric constant. The variation of dielectric constant of 3D BN/PA66-30–4 composites is only 6%, which is much lower than 38% of random BN/EP-4 composite. Meanwhile, 3D BN/PA66-30–4 composite shows weak temperature dependence of dielectric loss in comparison with the random BN/EP-4 composite. From the , the dielectric loss of 3D BN/PA66-30–4 composites are 0.027 at RT, which remains 0.044 at 200 °C. The improved dielectric stability of the composites is mainly attributed to the following aspects: on the one hand, BN microplatelets can form a continuous thermal conduction network along the PA66 aerogel throughout the composite at an ultralow loading. The heat can be effectively conducted, and does not accumulate inside the composites. On the other hand, an ultralow loading of BN microplatelets can guarantee well-compatibility between BN/PA66 aerogel and epoxy matrix, thus suppressing the dielectric loss.
+
+[FIG] Fig. 9 Temperature dependence of dielectric constant and dielectric loss (a and b) of the neat epoxy, random BN/EP-4 composite and 3D BN/PA66 composites at 10 4 Hz, (c) the variation of dielectric constant over the temperature range 25–200 °C, (d) the specific value of dielectric loss over the temperature range 25–200 °C at 10 4 Hz.
+ It should be pointed out that in addition to the epoxy resin, 3D BN/PA66 aerogel also has good compatibility with a variety of polymers, such as polyurethane, polymethyl methacrylate and silicon rubber, etc. According to the different demands of application, the composites can be obtained by infiltrating 3D BN/PA66 aerogel with the different kinds of polymer matrices.
+
+ 4. Conclusions
+ The high mechanical strength 3D BN/PA66 aerogel has been facilely prepared by the freeze-drying without templates, and BN microplatelets can uniformly adhere to 3D PA66 aerogel to form a continuous thermal conductivity network at an ultralow loading of 4 vol%. The 3D BN/PA66 composites are obtained by infiltrating 3D BN/PA66 aerogel with epoxy resin (model no. E-51). The degradation temperature and glass transition temperature of 3D BN/PA66 composites are above 330 °C and 120 °C, respectively. For 3D BN/PA66-30–4 composites, the thermal conductivity is 0.6 W m −1 K −1 , which is about 5-fold and 3-fold higher than that of the neat epoxy and random BN/EP-4 composite. Meanwhile, 3D BN/PA66-30–4 composite shows the weak frequency and temperature dependence of dielectric properties. The dielectric constant and dielectric loss of 3D BN/PA66-30–4 composite are about 4.28 and 0.032 over the frequency range 10 2 to 10 6 Hz at RT. In addition, due to the continuous thermal conduction network formed by BN microplatelets along 3D PA66 aerogels throughout the composite, the variation of dielectric constant of the 3D BN/PA66-30–4 composite is only 6%, which is much lower than 38% of random BN/EP-4 composite, and the dielectric loss is below 0.044 over temperature range 25–200 °C at 10 4 Hz. The results indicate that 3D BN/PA66 aerogel is a potential platform for preparing the polymer-based composites with excellent dielectric stability.
+
+ Conflicts of interest
+ There are no conflicts to declare.
+
+ Supplementary Material
+ RA-009-C8RA10211B-s001 
+ This work was supported by the Natural Science Foundation of China (No. 51332009 and 11474199). The Instrumental Analysis Centre of Shanghai Jiao Tong University is sincerely acknowledged for assisting with the relevant analyses.
+ Notes and references
+ 
+ Alam M. A. 
+ 
+ Azarian M. H. 
+ 
+ Pecht M. G. 
+ J. Electron. Mater. 2013 42 1101 1107 10.1007/s11664-013-2523-1 
+ Zhao H. 
+ 
+ Zhang L. 
+ 
+ Yang M.-H. 
+ 
+ Dang Z.-M. 
+ 
+ Bai J. 
+ Appl. Phys. Lett. 2015 106 092904 10.1063/1.4914012 
+ Xu W. 
+ 
+ Ding Y. 
+ 
+ Jiang S. 
+ 
+ Chen L. 
+ 
+ Liao X. 
+ 
+ Hou H. 
+ Mater. Lett. 2014 135 158 161 10.1016/j.matlet.2014.07.157 
+ Zhang Y.-H. 
+ 
+ Dang Z.-M. 
+ 
+ Xin J. H. 
+ 
+ Daoud W. A. 
+ 
+ Ji J.-H. 
+ 
+ Liu Y. 
+ 
+ Fei B. 
+ 
+ Li Y. 
+ 
+ Wu J. 
+ 
+ Yang S. 
+ 
+ Li L.-F. 
+ Macromol. Rapid Commun. 2005 26 1473 1477 10.1002/marc.200500310 
+ Li Q. 
+ 
+ Chen L. 
+ 
+ Gadinski M. R. 
+ 
+ Zhang S. 
+ 
+ Zhang G. 
+ 
+ Li H. U. 
+ 
+ Iagodkine E. 
+ 
+ Haque A. 
+ 
+ Chen L.-Q. 
+ 
+ Jackson T. N. 
+ 
+ Wang Q. 
+ Nature 2015 523 576 10.1038/nature14647 26223625 
+ Qi F. 
+ 
+ Chen N. 
+ 
+ Wang Q. 
+ Mater. Des. 2018 143 72 80 10.1016/j.matdes.2018.01.050 
+ Wu S.-Q. 
+ 
+ Wang J.-W. 
+ 
+ Shao J. 
+ 
+ Wei L. 
+ 
+ Ge R.-K. 
+ 
+ Ren H. 
+ Mater. Des. 2018 146 208 218 10.1016/j.matdes.2018.03.023 
+ Fang L. 
+ 
+ Wu C. 
+ 
+ Qian R. 
+ 
+ Xie L. 
+ 
+ Yang K. 
+ 
+ Jiang P. 
+ RSC Adv. 2014 4 21010 21017 10.1039/C4RA01194E 
+ Yang K. 
+ 
+ Gu M. 
+ Composites, Part A 2010 41 215 221 10.1016/j.compositesa.2009.10.019 
+ Du M. 
+ 
+ Guo B. 
+ 
+ Jia D. 
+ Eur. Polym. J. 2006 42 1362 1369 10.1016/j.eurpolymj.2005.12.006 
+ Biercuk M. J. 
+ 
+ Llaguno M. C. 
+ 
+ Radosavljevic M. 
+ 
+ Hyun J. K. 
+ 
+ Johnson A. T. 
+ 
+ Fischer J. E. 
+ Appl. Phys. Lett. 2002 80 2767 2769 10.1063/1.1469696 
+ Gojny F. H. 
+ 
+ Wichmann M. H. G. 
+ 
+ Fiedler B. 
+ 
+ Kinloch I. A. 
+ 
+ Bauhofer W. 
+ 
+ Windle A. H. 
+ 
+ Schulte K. 
+ Polymer 2006 47 2036 2045 10.1016/j.polymer.2006.01.029 
+ Zhang X. 
+ 
+ Pint C. L. 
+ 
+ Lee M. H. 
+ 
+ Schubert B. E. 
+ 
+ Jamshidi A. 
+ 
+ Takei K. 
+ 
+ Ko H. 
+ 
+ Gillies A. 
+ 
+ Bardhan R. 
+ 
+ Urban J. J. 
+ 
+ Wu M. 
+ 
+ Fearing R. 
+ 
+ Javey A. 
+ Nano Lett. 2011 11 3239 3244 10.1021/nl201503e 21736337 
+ Wang S. 
+ 
+ Cheng Y. 
+ 
+ Wang R. 
+ 
+ Sun J. 
+ 
+ Gao L. 
+ ACS Appl. Mater. Interfaces 2014 6 6481 6486 10.1021/am500009p 24716483 
+ Teng C.-C. 
+ 
+ Ma C.-C. M. 
+ 
+ Lu C.-H. 
+ 
+ Yang S.-Y. 
+ 
+ Lee S.-H. 
+ 
+ Hsiao M.-C. 
+ 
+ Yen M.-Y. 
+ 
+ Chiou K.-C. 
+ 
+ Lee T.-M. 
+ Carbon 2011 49 5107 5116 10.1016/j.carbon.2011.06.095 
+ Balandin A. A. 
+ Nat. Mater. 2011 10 569 10.1038/nmat3064 21778997 
+ Vadukumpully S. 
+ 
+ Paul J. 
+ 
+ Mahanta N. 
+ 
+ Valiyaveettil S. 
+ Carbon 2011 49 198 205 10.1016/j.carbon.2010.09.004 
+ Tang H. 
+ 
+ Ma Z. 
+ 
+ Zhong J. 
+ 
+ Yang J. 
+ 
+ Zhao R. 
+ 
+ Liu X. 
+ Colloids Surf., A 2011 384 311 317 10.1016/j.colsurfa.2011.04.007 
+ Yang C. 
+ 
+ Lin Y. 
+ 
+ Nan C. W. 
+ Carbon 2009 47 1096 1101 10.1016/j.carbon.2008.12.037 
+ Xie A. 
+ 
+ Wang Y. 
+ 
+ Jiang P. 
+ 
+ Li S. 
+ 
+ Huang X. 
+ Compos. Sci. Technol. 2018 154 154 164 10.1016/j.compscitech.2017.11.022 
+ Shao L. 
+ 
+ Shi L. 
+ 
+ Li X. 
+ 
+ Song N. 
+ 
+ Ding P. 
+ Compos. Sci. Technol. 2016 135 83 91 10.1016/j.compscitech.2016.09.013 
+ Dai W. 
+ 
+ Yu J. 
+ 
+ Wang Y. 
+ 
+ Song Y. 
+ 
+ Alam F. E. 
+ 
+ Nishimura K. 
+ 
+ Lin C.-T. 
+ 
+ Jiang N. 
+ J. Mater. Chem. A 2015 3 4884 4891 10.1039/C4TA06417H 
+ Wang D. 
+ 
+ Zhou T. 
+ 
+ Zha J.-W. 
+ 
+ Zhao J. 
+ 
+ Shi C.-Y. 
+ 
+ Dang Z.-M. 
+ J. Mater. Chem. A 2013 1 6162 6168 10.1039/C3TA10460E 
+ Li M. 
+ 
+ Huang X. 
+ 
+ Wu C. 
+ 
+ Xu H. 
+ 
+ Jiang P. 
+ 
+ Tanaka T. 
+ J. Mater. Chem. 2012 22 23477 23484 10.1039/C2JM34683D 
+ Wu C. 
+ 
+ Huang X. 
+ 
+ Xie L. 
+ 
+ Wu X. 
+ 
+ Yu J. 
+ 
+ Jiang P. 
+ J. Mater. Chem. 2011 21 17729 17736 10.1039/C1JM12903A 
+ Zeng X. 
+ 
+ Yao Y. 
+ 
+ Gong Z. 
+ 
+ Wang F. 
+ 
+ Sun R. 
+ 
+ Xu J. 
+ 
+ Wong C.-P. 
+ Small 2015 11 6205 6213 10.1002/smll.201502173 26479262 
+ Hu J. 
+ 
+ Huang Y. 
+ 
+ Yao Y. 
+ 
+ Pan G. 
+ 
+ Sun J. 
+ 
+ Zeng X. 
+ 
+ Sun R. 
+ 
+ Xu J.-B. 
+ 
+ Song B. 
+ 
+ Wong C.-P. 
+ ACS Appl. Mater. Interfaces 2017 9 13544 13553 10.1021/acsami.7b02410 28362080 
+ Li R. 
+ 
+ Chen Z. 
+ 
+ Pei J. 
+ Polymers 2016 8 1 8 10.1021/acsami.5b09079 30979100 PMC6432524 
+ Xu X. 
+ 
+ Li B. 
+ 
+ Lu H. 
+ 
+ Zhang Z. 
+ 
+ Wang H. 
+ Appl. Surf. Sci. 2007 254 1456 1462 10.1016/j.apsusc.2007.07.014 
+ 
+ Li H. 
+ , Tian H. , Cai M. , Gong A. , Zhou Z. , Wang C. and Peng Z. , 2017 International Symposium on Electrical Insulating Materials (ISEIM) , 2017 , pp. 149–152 
+ Cui W. 
+ 
+ Du F. 
+ 
+ Zhao J. 
+ 
+ Zhang W. 
+ 
+ Yang Y. 
+ 
+ Xie X. 
+ 
+ Mai Y.-W. 
+ Carbon 2011 49 495 500 10.1016/j.carbon.2010.09.047 
+ Yang W. 
+ 
+ Yu S. 
+ 
+ Sun R. 
+ 
+ Du R. 
+ Ceram. Int. 2012 38 3553 3562 10.1016/j.ceramint.2011.12.071 
+ Dai Z. 
+ 
+ Zhang B. 
+ 
+ Shi F. 
+ 
+ Li M. 
+ 
+ Zhang Z. 
+ 
+ Gu Y. 
+ Appl. Surf. Sci. 2011 257 8457 8461 10.1016/j.apsusc.2011.04.129 
+ Donnay M. 
+ 
+ Tzavalas S. 
+ 
+ Logakis E. 
+ Compos. Sci. Technol. 2015 110 152 158 10.1016/j.compscitech.2015.02.006 
+ Gu J. 
+ 
+ Zhang Q. 
+ 
+ Dang J. 
+ 
+ Xie C. 
+ Polym. Adv. Technol. 2011 23 1025 1028 10.1002/pat.2063 
+ Chen S. 
+ 
+ Wang Q. 
+ 
+ Wang T. 
+ Mater. Chem. Phys. 2011 130 680 684 10.1016/j.matchemphys.2011.07.044 
+ Zhu B. L. 
+ 
+ Wang J. 
+ 
+ Zheng H. 
+ 
+ Ma J. 
+ 
+ Wu J. 
+ 
+ Gan Z. H. 
+ 
+ Liu J. 
+ J. Alloys Compd. 2017 701 499 507 10.1016/j.jallcom.2017.01.182 
+ Zhang Y. 
+ 
+ Shen Y. 
+ 
+ Shi K. 
+ 
+ Wang T. 
+ 
+ Harkin-Jones E. 
+ Composites, Part A 2018 110 62 69 10.1016/j.compositesa.2018.04.009 

@@ -1,0 +1,58 @@
+[
+  {
+    "date": "2026-10-13",
+    "engine": "Crossref API",
+    "provider": "api.crossref.org",
+    "query": "polymer ceramic composite thermal conductivity epoxy BN AlN",
+    "purpose": "initial candidate discovery",
+    "result_count": 50
+  },
+  {
+    "date": "2026-10-13",
+    "engine": "Semantic Scholar API",
+    "provider": "api.semanticscholar.org",
+    "query": "epoxy boron nitride thermal conductivity",
+    "purpose": "initial candidate discovery",
+    "result_count": 50
+  },
+  {
+    "date": "2026-10-13",
+    "engine": "Europe PMC API",
+    "provider": "ebi.ac.uk/europepmc",
+    "query": "(epoxy OR polymer) AND (BN OR boron nitride OR AlN OR aluminum nitride) AND thermal conductivity",
+    "purpose": "discovery wave 1",
+    "result_count": 80
+  },
+  {
+    "date": "2026-10-13",
+    "engine": "Europe PMC API",
+    "provider": "ebi.ac.uk/europepmc",
+    "query": "DOI lookups for full text retrieval (fullTextXML)",
+    "purpose": "full-text fetch",
+    "result_count": 33
+  },
+  {
+    "date": "2026-10-13",
+    "engine": "Unpaywall API",
+    "provider": "api.unpaywall.org",
+    "query": "DOI OA status lookup",
+    "purpose": "access route triage",
+    "result_count": 100
+  },
+  {
+    "date": "2026-10-13",
+    "engine": "Europe PMC API",
+    "provider": "ebi.ac.uk/europepmc",
+    "query": "discovery wave 2: expanded queries + author/title mining",
+    "purpose": "discovery wave 2",
+    "result_count": 146
+  },
+  {
+    "date": "2026-10-13",
+    "engine": "SearXNG",
+    "provider": "local searxng",
+    "query": "various fallback searches for blocked DOIs",
+    "purpose": "access fallback",
+    "result_count": 10
+  }
+]
