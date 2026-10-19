@@ -1,0 +1,33 @@
+{
+  "phase": "3 (RETRY)",
+  "date": "2026-10-14",
+  "baseline_before_phase3": {
+    "rows": 173,
+    "papers": 63
+  },
+  "after_phase3": {
+    "rows": 232,
+    "papers": 93
+  },
+  "delta": {
+    "rows": 59,
+    "papers": 30
+  },
+  "targets": {
+    "rows_min_200": true,
+    "papers_min_65": true
+  },
+  "checks": {
+    "total_rows": 232,
+    "unique_row_ids": 232,
+    "row_ids_unique": true,
+    "total_papers": 93,
+    "dropped_ids_resurrected": [],
+    "all_k_numeric_positive": true,
+    "all_rows_have_source_location": true,
+    "abstract_only_confidence_medium": true
+  },
+  "deliverables_regenerated": true,
+  "build_deliverables_run_before_unusable_postprocess": true,
+  "unusable_sources_postprocessed_separately": true
+}

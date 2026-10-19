@@ -1,0 +1,167 @@
+{
+  "generated": "2026-10-18",
+  "source_of_truth": "work/rows_raw.jsonl",
+  "checks": [
+    {
+      "id": "jsonl_csv_rowcount",
+      "description": "CSV row count matches rows_raw.jsonl",
+      "status": "PASS",
+      "detail": "jsonl=260 csv=260 regenerated=none"
+    },
+    {
+      "id": "jsonl_csv_fields",
+      "description": "No field mismatches remain between JSONL and dataset CSV",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "id": "phase2_drops_absent",
+      "description": "None of the Phase-2 dropped row_ids remain",
+      "status": "PASS",
+      "detail": "dropped=15 resurrected=[]"
+    },
+    {
+      "id": "unique_row_ids",
+      "description": "row_ids unique",
+      "status": "PASS",
+      "detail": "unique=260 total=260"
+    },
+    {
+      "id": "k_numeric_positive",
+      "description": "All k_composite_W_mK numeric and positive",
+      "status": "PASS",
+      "detail": "bad=[]"
+    },
+    {
+      "id": "required_fields",
+      "description": "All rows have source_location + loading + DOI (0.0 counts as present; 1 documented no-numeric-loading exception)",
+      "status": "PASS",
+      "detail": "all present"
+    },
+    {
+      "id": "confidence_labels",
+      "description": "Only High/Medium confidence",
+      "status": "PASS",
+      "detail": {
+        "High": 196,
+        "Medium": 64
+      }
+    },
+    {
+      "id": "uncertain_covers_medium",
+      "description": "uncertain_measurements.csv row count == non-High rows",
+      "status": "PASS",
+      "detail": "unc=64 nonHigh=64"
+    },
+    {
+      "id": "inventory_papers",
+      "description": "paper_inventory.csv paper count == unique DOIs",
+      "status": "PASS",
+      "detail": "inv=95 dois=95"
+    },
+    {
+      "id": "p4_figure_rows_flagged",
+      "description": "Every figure-derived row is Medium and cites the digitizer + overlay",
+      "status": "PASS",
+      "detail": "figure_rows=28"
+    },
+    {
+      "id": "p4_upgrades_high_fulltext",
+      "description": "Phase-4 upgraded rows are High and cite a local full text",
+      "status": "PASS",
+      "detail": "upgraded=['fd88f33b-209', 'b1ee3c22-222', '7dee9c50-202', '7dee9c50-203']"
+    },
+    {
+      "id": "p4_new_rows_present",
+      "description": "All Phase-4 new row_ids present; row total matches change record",
+      "status": "PASS",
+      "detail": "new=28 after=260 now=260"
+    },
+    {
+      "id": "p4_ag_hybrid_excluded",
+      "description": "Silver-hybrid 2.35 W/mK (out of scope) not extracted",
+      "status": "PASS",
+      "detail": "ok"
+    },
+    {
+      "id": "p4_unusable_updated",
+      "description": "Figure-only DOIs re-classified as recovered; Sci-Hub policy row retained",
+      "status": "PASS",
+      "detail": {
+        "10.3390/polym11071156": "recovered (Phase 4 pixel digitization of",
+        "10.3390/molecules21050670": "recovered (Phase 4 pixel digitization of"
+      }
+    }
+  ],
+  "stats": {
+    "total_rows": 260,
+    "total_papers": 95,
+    "unique_row_ids": 260,
+    "year_range": [
+      1997,
+      2026
+    ],
+    "k_min": 0.17,
+    "k_max": 47.03,
+    "k_median": 1.046,
+    "by_confidence": {
+      "High": 196,
+      "Medium": 64
+    },
+    "confidence_pct_high": 75.4,
+    "by_value_source": {
+      "table": 72,
+      "text": 160,
+      "figure": 28
+    },
+    "by_matrix": {
+      "epoxy-based": 230,
+      "silicone": 14,
+      "polyimide": 9,
+      "PDMS": 2,
+      "PEG PCM": 2,
+      "polystyrene": 2,
+      "polyurethane": 1
+    },
+    "by_filler": {
+      "h-BN": 87,
+      "BN": 56,
+      "BNNS": 53,
+      "AlN": 22,
+      "BN/graphene hybrid": 11,
+      "Al2O3": 6,
+      "Al2O3/BN hybrid": 5,
+      "h-BN/CNT hybrid": 3,
+      "Al2O3/BNNS hybrid": 2,
+      "none": 2,
+      "cBN": 2,
+      "h-BN/Al2O3 hybrid": 2,
+      "BNNS/diamond hybrid": 2,
+      "MgO": 2,
+      "Cu/BN hybrid": 1,
+      "BNNS hybrid": 1,
+      "AlN/BN hybrid": 1,
+      "Al2O3/graphene hybrid": 1,
+      "BNNS/SiC hybrid": 1
+    },
+    "epoxy_rows": 230,
+    "epoxy_pct": 88.5,
+    "bn_family_rows_incl_hybrids": 227,
+    "bn_pure_rows": 198
+  },
+  "deliverable_counts": {
+    "thermal_conductivity_dataset.csv": 260,
+    "paper_inventory.csv": 95,
+    "extraction_log.csv": 104,
+    "extraction_log.jsonl_entries": 104,
+    "uncertain_measurements.csv": 64,
+    "unusable_sources.csv": 49
+  },
+  "phase4": {
+    "phase4_changes_exists": true,
+    "upgrades": 4,
+    "new_rows": 28,
+    "metadata_corrections": 12
+  },
+  "overall": "PASS"
+}

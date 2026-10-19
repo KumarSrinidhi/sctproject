@@ -1,0 +1,242 @@
+{
+ "10.1039/d4dt00979g": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/slct.202507155": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1016/j.compscitech.2020.108304": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1016/j.compscitech.2020.108322": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/pc.27985": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1016/j.jcomc.2020.100087": {
+  "candidates": [
+   [
+    "openalex:Composites Part C Open Access",
+    "https://www.sciencedirect.com/science/article/pii/S2666682020300876/pdf"
+   ],
+   [
+    "s2",
+    "https://www.sciencedirect.com/science/article/pii/S2666682020300876/pdf"
+   ],
+   [
+    "unpaywall",
+    "https://www.sciencedirect.com/science/article/pii/S2666682020300876/pdf"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "gold",
+  "dl_fail": [
+   "openalex:Composites Part C Open Access: RuntimeError"
+  ],
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/pc.29136": {
+  "candidates": [
+   [
+    "s2",
+    "https://hdl.handle.net/20.500.12868/5476"
+   ],
+   [
+    "unpaywall",
+    "https://hdl.handle.net/20.500.12868/5476"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "green",
+  "dl_fail": [
+   "s2: RuntimeError"
+  ],
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1088/1361-6463/ae6b9b": {
+  "candidates": [
+   [
+    "s2",
+    "https://doi.org/10.1088/1361-6463/ae6b9b"
+   ],
+   [
+    "unpaywall",
+    "https://doi.org/10.1088/1361-6463/ae6b9b"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1063/5.0205196": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/app.55612": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1063/5.0211580": {
+  "candidates": [
+   [
+    "openalex:Journal of Applied Physics",
+    "https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/5.0211580/20069060/045101_1_5.0211580.pdf"
+   ],
+   [
+    "s2",
+    "https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/5.0211580/20069060/045101_1_5.0211580.pdf"
+   ],
+   [
+    "unpaywall",
+    "https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/5.0211580/20069060/045101_1_5.0211580.pdf"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "hybrid",
+  "dl_fail": [
+   "openalex:Journal of Applied Physics: RuntimeError"
+  ],
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1016/j.apsusc.2020.147091": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1177/0021998320942575": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/adfm.201900412": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1016/j.compositesb.2020.107855": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1177/09540083211046456": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1177/09673911221110143": {
+  "candidates": [
+   [
+    "s2",
+    "https://doi.org/10.1177/09673911221110143"
+   ],
+   [
+    "unpaywall",
+    "https://doi.org/10.1177/09673911221110143"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "gold",
+  "dl_fail": [
+   "s2: RuntimeError"
+  ],
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1016/j.cej.2018.04.196": {
+  "candidates": [
+   [
+    "s2",
+    "https://doi.org/10.1016/j.cej.2018.04.196"
+   ],
+   [
+    "unpaywall",
+    "https://doi.org/10.1016/j.cej.2018.04.196"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "bronze",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/pc.28316": {
+  "candidates": [
+   [
+    "openalex:Polymer Composites",
+    "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.28316"
+   ],
+   [
+    "s2",
+    "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.28316"
+   ],
+   [
+    "unpaywall",
+    "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.28316"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "bronze",
+  "dl_fail": [
+   "openalex:Polymer Composites: RuntimeError"
+  ],
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1063/1.5121349": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1080/15440478.2021.1966568": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/smll.75841": {
+  "candidates": [],
+  "is_oa": false,
+  "oa_status": "closed",
+  "outcome": "failed:no-oa-or-dl"
+ },
+ "10.1002/pc.70149": {
+  "candidates": [
+   [
+    "openalex:Polymer Composites",
+    "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.70149"
+   ],
+   [
+    "unpaywall",
+    "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.70149"
+   ]
+  ],
+  "is_oa": true,
+  "oa_status": "bronze",
+  "dl_fail": [
+   "openalex:Polymer Composites: RuntimeError"
+  ],
+  "outcome": "failed:no-oa-or-dl"
+ }
+}

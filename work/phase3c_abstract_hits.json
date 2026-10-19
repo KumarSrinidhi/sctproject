@@ -1,0 +1,845 @@
+[
+ {
+  "doi": "10.1515/polyeng-2025-0193",
+  "title": "Preparation of modified-boron nitride/epoxy resin composite with good thermal stability and thermal conductivity via directional freezing method",
+  "year": 2026,
+  "venue": "Journal of polymer engineering",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "composite exhibited maximum improvement rate of 210 % when the filling ratio of BN@TA was 30 wt%. The got ER composite could quickly transfer the heat, demonstrating its good heat diss"
+  ],
+  "abstract": "Abstract Improving thermal conductivity by directly blending filler with epoxy resin (ER) is often not ideal. The key is solving the dispersion of filler particle in matrix, which is crucial for establishing thermal conductive network. To achieve it, by utilizing the tannic acid (TA) modification and the alkali treatment of boron nitride (BN), OH-BN and BN@TA were obtained. Then, the chitosan-based framework was prepared via directional freezing method, where OH-BN or BN@TA acted as filler. Finally, the acquired framework was soaked in ER mixture, and the compound was cured to fabricate a new-type thermal conductive modified-BN/ER composite. The results indicated that the filler was uniformly dispersed, well adhered and directionally arranged within the framework, causing the formation of efficient thermal conductive pathway. The derived ER composite had good thermal stability with the decomposition temperature over 200 °C. Moreover, the thermal conductivity of ER composite exhibited maximum improvement rate of 210 % when the filling ratio of BN@TA was 30 wt%. The got ER composite could quickly transfer the heat, demonstrating its good heat dissipation capability. This study provided a new route to attain safe and efficient thermal conductive ER composite, which had great application prospect in the field of thermal management."
+ },
+ {
+  "doi": "10.1002/pc.71726",
+  "title": "Epoxy Composites With Improved Thermal Conductivity and Low Viscosity for Electronic Packaging via Nanodiamond‐Decorated Boron Nitride Nanosheets",
+  "year": 2026,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.71726",
+  "k_hits": [
+   "y, compared to pure EP, incorporating merely 30 phr BNNS@ND increases the TC by 522.2% to 1.12 W/(m·K) and raises the glass transition temperature (  T  g  ) by 25.1% to 133.8°C of BNNS@ND/"
+  ],
+  "abstract": "\n \n Electronic packaging underfill materials require high thermal conductivity (TC) and low viscosity, but combining these in epoxy (EP) remains a critical bottleneck. Prefabricated skeleton networks or high filler content enhance EP's TC yet severely compromise viscosity. Therefore, improving TC at a relatively low filler content without significantly sacrificing viscosity is highly desirable. Here, a dense, uniform layer of nanodiamonds (ND) is decorated on the boron nitride nanosheets (BNNS) surface to fabricate BNNS@ND, which is then incorporated into EP to develop a BNNS@ND/EP composite. The anchored ND is proposed to suppress BNNS stacking, thereby favoring uniform dispersion of BNNS@ND and the formation of continuous heat‐conducting pathways at relatively low filler content in EP. The ND coating is also considered to improve interfacial compatibility between BNNS and EP, as well as to alleviate the viscosity increase of EP composite associated with BNNS stacking. Consequently, compared to pure EP, incorporating merely 30 phr BNNS@ND increases the TC by 522.2% to 1.12 W/(m·K) and raises the glass transition temperature (\n T\n g\n ) by 25.1% to 133.8°C of BNNS@ND/EP, while the composite retains a low viscosity of 16.7 Pa·s. This work offers a feasible approach for electronic‐packaging polymer composites with exceptional TC,\n T\n g\n , and viscosity.\n"
+ },
+ {
+  "doi": "10.1002/smll.75841",
+  "title": "Interfacial Engineering of Graphene-Derived Shells on Spherical Boron Nitride Fillers for Thermally Conductive and Electrically Insulating Epoxy Composites.",
+  "year": 2026,
+  "venue": "Small",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "",
+  "k_hits": [
+   "ptimized GO-BN/prGO-BN hybrid composite simultaneously achieves a thermal conductivity of 6.25 W m-1 K-1 and a volume resistivity of 1.3 × 1012 Ω cm at 60 wt.% total filler loading, demonstratin",
+   "s a thermal conductivity of 6.25 W m-1 K-1 and a volume resistivity of 1.3 × 1012 Ω cm at 60 wt.% total filler loading, demonstrating that precise interfacial engineering of graphene-d"
+  ],
+  "abstract": "Spherical boron nitride (BN) particles offer geometric advantages for three-dimensional thermal network formation, yet their large filler-matrix interfacial area amplifies interfacial thermal resistance, limiting practical thermal conductivity enhancement. To address this limitation, an inverse core-shell hybrid filler strategy was developed in which graphene oxide-coated BN (GO-BN) and partially reduced graphene oxide-coated BN (prGO-BN) serve complementary and distinct functional roles within an epoxy matrix. The prGO-derived shell acts as a phonon-bridging interlayer that reduces interfacial thermal resistance and promotes thermally conductive pathway formation, while the oxygen-rich GO shell of GO-BN improves filler dispersibility and suppresses electrical percolation among prGO-BN particles at high filler loadings. Comprehensive characterization confirmed that the two fillers differ exclusively in the chemical state and surface polarity of their outer shells, enabling systematic decoupling of thermal and electrical transport pathways within the composite. The optimized GO-BN/prGO-BN hybrid composite simultaneously achieves a thermal conductivity of 6.25 W m-1 K-1 and a volume resistivity of 1.3 × 1012 Ω cm at 60 wt.% total filler loading, demonstrating that precise interfacial engineering of graphene-derived shell chemistry constitutes an effective strategy for next-generation electrically insulating thermal interface materials."
+ },
+ {
+  "doi": "10.1002/pc.71558",
+  "title": "Sustainable Bio‐Based Thermally Conductive Epoxy Composites With Recyclable Three‐Dimensional Boron Nitride Networks",
+  "year": 2026,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.71558",
+  "k_hits": [
+   "e 3D BN‐10/ESOCA7 composite containing only 10 vol% BN achieved a thermal conductivity of 1.063 W/(m·K), representing a 423.65% improvement relative to neat ESOCA7. Infrared thermography and"
+  ],
+  "abstract": "\n Developing sustainable polymer composites with high thermal conductivity at low filler loadings is essential for advanced thermal management. Herein, a bio‐based thermally conductive composite was fabricated by vacuum impregnating a preconstructed three‐dimensional boron nitride (3D BN) scaffold with epoxidized soybean oil/citric acid/tetraethyl orthosilicate (ESO/CA/TEOS) resin. The optimized ESOCA7 matrix, with a carboxyl‐to‐epoxy molar ratio of 0.7, exhibited a high gel fraction, low water uptake, improved mechanical properties, and alkali degradability. The interconnected 3D BN scaffold, constructed by salt templating with waterborne polyurethane as a binder, provided continuous thermal conduction pathways and reduced interfacial thermal resistance. Consequently, the 3D BN‐10/ESOCA7 composite containing only 10 vol% BN achieved a thermal conductivity of 1.063 W/(m·K), representing a 423.65% improvement relative to neat ESOCA7. Infrared thermography and finite element simulations further verified the superior heat transfer performance of the 3D interconnected network. Moreover, degradation of the bio‐based matrix enabled the recovery and reuse of the 3D BN scaffold, and the regenerated composites maintained satisfactory thermal conductivity after three reuse cycles. This work provides a sustainable route to fabricate recyclable bio‐based polymer composites that deliver efficient thermal transport under low filler loadings."
+ },
+ {
+  "doi": "10.1002/inf2.70139",
+  "title": "Superior through‐plane thermal conductivity in carbon fibers/spherical graphene/epoxy laminated composites for low‐altitude aircrafts",
+  "year": 2026,
+  "venue": "InfoMat",
+  "ceramic": false,
+  "carbon": true,
+  "oa_pdf": "https://doi.org/10.1002/inf2.70139",
+  "k_hits": [
+   "neered spherical thermally reduced graphene (s‐TRG) as a bridging filler. At a loading of 10 wt% s‐TRG and 60 wt% MPCF, the MPCF/s‐TRG/epoxy composite achieves a  λ  ⊥  of 2.73 W m  –1",
+   "thermally reduced graphene (s‐TRG) as a bridging filler. At a loading of 10 wt% s‐TRG and 60 wt% MPCF, the MPCF/s‐TRG/epoxy composite achieves a  λ  ⊥  of 2.73 W m  –1  K  –1  , repres",
+   "ding of 10 wt% s‐TRG and 60 wt% MPCF, the MPCF/s‐TRG/epoxy composite achieves a  λ  ⊥  of 2.73 W m  –1  K  –1  , representing a 173.0% improvement over the MPCF/epoxy composite (1.00 W m  ",
+   "f 2.73 W m  –1  K  –1  , representing a 173.0% improvement over the MPCF/epoxy composite (1.00 W m  –1  K  –1  ) and about 1.71 times the  λ  ⊥  of its conventional TRG‐filled analogue (1.",
+   " m  –1  K  –1  ) and about 1.71 times the  λ  ⊥  of its conventional TRG‐filled analogue (1.60 W m  –1  K  –1  ). Monte Carlo simulations reveal that the enhancement originates from the is"
+  ],
+  "abstract": "\n \n The rapid expansion of the low‐altitude economy has driven growing demand for carbon fiber/epoxy composites in applications including unmanned aerial vehicles and electric vertical take‐off and landing aircraft. However, the characteristically low through‐plane thermal conductivity (\n λ\n ⊥\n ) of these composites poses a critical thermal conduction limitation, which adversely affects the performance and reliability of onboard electronic systems. In this work, we present an architectural design to improve the\n λ\n ⊥\n of mesophase pitch‐based carbon fiber (MPCF)/epoxy composites by incorporating precisely engineered spherical thermally reduced graphene (s‐TRG) as a bridging filler. At a loading of 10 wt% s‐TRG and 60 wt% MPCF, the MPCF/s‐TRG/epoxy composite achieves a\n λ\n ⊥\n of 2.73 W m\n –1\n K\n –1\n , representing a 173.0% improvement over the MPCF/epoxy composite (1.00 W m\n –1\n K\n –1\n ) and about 1.71 times the\n λ\n ⊥\n of its conventional TRG‐filled analogue (1.60 W m\n –1\n K\n –1\n ). Monte Carlo simulations reveal that the enhancement originates from the isotropic spherical architecture of s‐TRG, which facilitates efficient multi‐point bridging within the three‐dimensional interlaminar space, thereby overcoming the limited through‐plane contact characteristic of planar graphene sheets. This work not only provides an efficient filler structural design strategy for thermal enhancement but also suggests a feasible route toward managing heat in high power density electronics for next‐generation lightweight low‐altitude aircraft.\n \n \n \n \n image\n \n \n"
+ },
+ {
+  "doi": "10.1002/slct.202507155",
+  "title": "Thermal Conductive, Dielectric, and Viscosity Properties of Multidimensional Hexagonal Boron Nitride/Aluminum Modified Epoxy Resin Composites",
+  "year": 2026,
+  "venue": "ChemistrySelect",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "ile ensuring other properties. The results showed that when the content of h‐BN/Al  2  O  3  was 20 wt%, the thermal conductivity reached 0.827 W/(m·K), which was 359.44% higher than t",
+   "uring other properties. The results showed that when the content of h‐BN/Al  2  O  3  was 20 wt%, the thermal conductivity reached 0.827 W/(m·K), which was 359.44% higher than that of ",
+   "d that when the content of h‐BN/Al  2  O  3  was 20 wt%, the thermal conductivity reached 0.827 W/(m·K), which was 359.44% higher than that of pure EP. When the usage of BGE was 3 wt%, the v",
+   " thermal conductivity reached 0.827 W/(m·K), which was 359.44% higher than that of pure EP. When the usage of BGE was 3 wt%, the viscosity of 20 wt% h‐BN/Al  2  O  3  /EP suspension d",
+   "d 0.827 W/(m·K), which was 359.44% higher than that of pure EP. When the usage of BGE was 3 wt%, the viscosity of 20 wt% h‐BN/Al  2  O  3  /EP suspension decreased from 13677 to 5301 ",
+   "as 359.44% higher than that of pure EP. When the usage of BGE was 3 wt%, the viscosity of 20 wt% h‐BN/Al  2  O  3  /EP suspension decreased from 13677 to 5301 mP·s, while its thermal c",
+   "ion decreased from 13677 to 5301 mP·s, while its thermal conductivity still maintained at 0.796 W/(m·K). Zero‐dimensional spherical Al  2  O  3  was filled between two‐dimensional h‐BN, prom",
+   "rmal conductivity still maintained at 0.796 W/(m·K). Zero‐dimensional spherical Al  2  O  3  was filled between two‐dimensional h‐BN, promoting the formation of a thermal conductivity "
+  ],
+  "abstract": "\n \n Epoxy resin (EP) is widely used in electronic devices and dry‐type power equipment due to its excellent insulation and thermal stability properties. However, lower thermal conductivity limits heat dissipation and the capacity improvement of equipment. Adding high thermal conductive fillers to increase thermal conductivity often increases its viscosity, which restricts the processability. In this work, multidimensional thermal conductive fillers were proposed to construct an efficient thermal conductivity network to increase the thermal conductivity of EP, and benzyl glycidyl ether (BGE) was added to reduce viscosity while ensuring other properties. The results showed that when the content of h‐BN/Al\n 2\n O\n 3\n was 20 wt%, the thermal conductivity reached 0.827 W/(m·K), which was 359.44% higher than that of pure EP. When the usage of BGE was 3 wt%, the viscosity of 20 wt% h‐BN/Al\n 2\n O\n 3\n /EP suspension decreased from 13677 to 5301 mP·s, while its thermal conductivity still maintained at 0.796 W/(m·K). Zero‐dimensional spherical Al\n 2\n O\n 3\n was filled between two‐dimensional h‐BN, promoting the formation of a thermal conductivity network in composites, and this network was not severely damaged under the action of BGE. The high thermal conductivity and low viscosity EP composites will provide references for the development of insulation materials for electronic devices and dry‐type power equipment.\n"
+ },
+ {
+  "doi": "10.1088/1361-6463/ae6b9b",
+  "title": "Interface engineering of AlN via phosphoric acid modification for enhanced thermal conduction, electrical insulation, and mechanical properties of epoxy composites",
+  "year": 2026,
+  "venue": "Journal of Physics D: Applied Physics",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://doi.org/10.1088/1361-6463/ae6b9b",
+  "k_hits": [
+   "operties in epoxy composites. The results demonstrate that at an optimal P-AlN loading of 35 wt%, the composite exhibits a thermal conductivity of 0.41 W·m−1·K−1, representing a 78.3% ",
+   "t at an optimal P-AlN loading of 35 wt%, the composite exhibits a thermal conductivity of 0.41 W·m−1·K−1, representing a 78.3% improvement over the pristine. The surface flashover voltage "
+  ],
+  "abstract": "Epoxy resin (EP), widely employed as an insulating material in electrical and electronic devices, faces application challenges arising from its insufficient thermal conductivity. In this work, we report a phosphoric acid modification strategy for aluminum nitride (P-AlN) fillers to resolve interfacial compatibility issues at high loadings, realizing synergistic enhancement of thermal conductivity, electrical insulation, and mechanical properties in epoxy composites. The results demonstrate that at an optimal P-AlN loading of 35 wt%, the composite exhibits a thermal conductivity of 0.41 W·m−1·K−1, representing a 78.3% improvement over the pristine. The surface flashover voltage reaches 16.2 kV, and the volume resistivity attains 4.1 × 1014 Ω·m. Additionally, the tensile strength and Young’s modulus achieve 77.5 MPa and 4.7 GPa, respectively. In addition to the intrinsic contribution of AlN, the hydrogen bonding network formed between phosphate groups and the EP matrix plays a pivotal role in enhancing interfacial adhesion, reducing thermal resistance, and improving both insulation and mechanical properties. The underlying mechanism is revealed using molecular dynamics simulations. This work effectively alleviates the trade-off among thermal conductivity, electrical insulation, and mechanical properties at high filler loadings, offering theoretical guidance for the design of high-performance epoxy materials."
+ },
+ {
+  "doi": "10.1002/app.56949",
+  "title": "Silver Nanoparticle Decorated Boron Nitride for Reducing Interfacial Thermal Resistance in Thermal Conductivity Epoxy Resin Composite",
+  "year": 2025,
+  "venue": "Journal of Applied Polymer Science",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "e. At a filler content of 42.8%, the thermal conductivity of the composite increased from 1.36 Wm−1 K−1 for BN fillers to 2.57 Wm−1 K−1 for Ag nanoparticle‐modified BN fillers, representing an ",
+   " the thermal conductivity of the composite increased from 1.36 Wm−1 K−1 for BN fillers to 2.57 Wm−1 K−1 for Ag nanoparticle‐modified BN fillers, representing an improvement of 89%. The Foygel m"
+  ],
+  "abstract": "The thermal conductivity of polymer composite is often constrained by the discontinuous structure of filler networks within the matrix and the high thermal contact resistance at filler interfaces. In response to these limitations, this study proposes a novel method for reducing interfacial thermal resistance by creating silver nanoparticle “bridges” through the deposition of silver onto filler surfaces. In this work, boron nitride (BN) hybrids modified with silver nanoparticles (BN‐Ag) were synthesized via the in situ reduction of silver ions. A continuous BN‐Ag framework was constructed using a sacrificial template method, followed by the infiltration of epoxy resin to produce an epoxy resin composite. At a filler content of 42.8%, the thermal conductivity of the composite increased from 1.36 Wm−1 K−1 for BN fillers to 2.57 Wm−1 K−1 for Ag nanoparticle‐modified BN fillers, representing an improvement of 89%. The Foygel model was employed to fit the thermal conductivity data, revealing that the incorporation of silver nanoparticles effectively reduced the contact thermal resistance between fillers. Furthermore, the electrical insulating properties of the composite were preserved, making this design approach highly promising for the development of thermally conductive and electrically insulating polymer composites suitable for electronic applications."
+ },
+ {
+  "doi": "10.1177/09540083251319488",
+  "title": "Flame-retardant functionalized boron nitride for epoxy resin with excellent flame retardancy and enhanced thermal conductivity",
+  "year": 2025,
+  "venue": "High Performance Polymers",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "ity and mechanical properties of epoxy resin (EP) was investigated. The EP composite with 15 wt% BN@DT (EP/15BN@DT) achieves the UL-94 V-0 rating and a limiting oxygen index of 40%. Th",
+   "nd impact strengths of EP/15BN@DT are higher than the ones of the EP composite containing 15 wt% unmodified BN. This work provides a promising method for the preparation of the thermal"
+  ],
+  "abstract": "A flame-retardant functionalized boron nitride (BN@DT) was prepared through the modification of boron nitride (BN) by a reaction product (DT) among 9, 10-dihydro-9-oxa-10-phosphaphenanthrene-10-oxide (DOPO), 4-aminobenzoic acid, and p-phthalaldehyde, and the effect of BN@DT on flame retardancy, thermal conductivity and mechanical properties of epoxy resin (EP) was investigated. The EP composite with 15 wt% BN@DT (EP/15BN@DT) achieves the UL-94 V-0 rating and a limiting oxygen index of 40%. The peak heat release rate, total heat release and total smoke production of EP/15BN@DT are reduced by 36.3%, 31.9% and 38.9%, respectively compared with the ones of pure EP. The thermal conductivity of EP/15BN@DT increases by 148% in comparison with that of pure EP. Moreover, the tensile and impact strengths of EP/15BN@DT are higher than the ones of the EP composite containing 15 wt% unmodified BN. This work provides a promising method for the preparation of the thermally conductive EP composites with excellent flame retardancy."
+ },
+ {
+  "doi": "10.1002/pat.70120",
+  "title": "Development of Boron Nitride Hydroxide/Aluminum Oxide/Epoxy Resin Spheres and Graphene Oxide‐Loaded L‐Ascorbic Acid Aerogel for Enhanced Thermal Conductivity and Insulation via Hot‐Pressing",
+  "year": 2025,
+  "venue": "Polymers for Advanced Technologies",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "",
+  "k_hits": [
+   "), and epoxy resin (EP) (BN‐OH/Al2O3/EP/r‐GO@L‐AA). To create BN‐OH/Al2O3/EP spheres, Al2O3 was used as the core, with a small amount of EP and BN‐OH surrounding it to form ceramic sp",
+   "omposites were fabricated by hot‐pressing the BN‐OH/Al2O3/EP spheres and r‐GO@L‐AA aerogel. With the vertical alignment of the BNs arranged according to the r‐GO@L‐AA aerogel, the BN‐",
+   "A aerogel, the BN‐OH/Al2O3/EP/r‐GO@L‐AA composite achieved a high thermal conductivity of 4.632 W/m K, a tensile strength of 65 MPa, and insulating properties."
+  ],
+  "abstract": "Polymer composites have easy processability, low cost, and wide applicability. Moreover, arranging fillers within such polymer composites to form a heat transfer path plays a crucial role in enhancing thermal conductivity. In this paper, composites were composed using boron nitride (BN), aluminum oxide (Al2O3), reduced graphene oxide (r‐GO), L‐ascorbic acid (L‐AA), and epoxy resin (EP) (BN‐OH/Al2O3/EP/r‐GO@L‐AA). To create BN‐OH/Al2O3/EP spheres, Al2O3 was used as the core, with a small amount of EP and BN‐OH surrounding it to form ceramic spheres. An r‐GO@L‐AA aerogel was formed by cross‐linking r‐GO and L‐AA, followed by freeze‐drying. The BN‐OH/Al2O3/EP/r‐GO@L‐AA composites were fabricated by hot‐pressing the BN‐OH/Al2O3/EP spheres and r‐GO@L‐AA aerogel. With the vertical alignment of the BNs arranged according to the r‐GO@L‐AA aerogel, the BN‐OH/Al2O3/EP/r‐GO@L‐AA composite achieved a high thermal conductivity of 4.632 W/m K, a tensile strength of 65 MPa, and insulating properties."
+ },
+ {
+  "doi": "10.1016/j.matlet.2025.139278",
+  "error": "HTTP Error 404: Not Found"
+ },
+ {
+  "doi": "10.31248/ajps2025.124",
+  "title": "Simulation of dielectric properties and thermal conductivity in boron nitride/polyimide composites using the Debye Relaxation Model",
+  "year": 2025,
+  "venue": "Applied Journal of Physical Science",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "n coefficient of 0.99221 at a frequency of 1 MHz. The thermal conductivity increased from 0.23092 W/m·K at a BN volume fraction of 0.05 to 0.58701 W/m·K at a volume fraction of 0.4, indicatin",
+   " The thermal conductivity increased from 0.23092 W/m·K at a BN volume fraction of 0.05 to 0.58701 W/m·K at a volume fraction of 0.4, indicating that higher BN content significantly enhances h"
+  ],
+  "abstract": "This study investigates the dielectric properties and thermal conductivity of boron nitride/polyimide (BN/PI) composites using the Debye relaxation model. Simulations were conducted using MATLAB to analyse the impact of varying BN content on the dielectric constant, dielectric loss, and thermal conductivity across a range of frequencies and temperatures. The results revealed a strong positive correlation between thermal conductivity and dielectric constant, with a Pearson correlation coefficient of 0.99221 at a frequency of 1 MHz. The thermal conductivity increased from 0.23092 W/m·K at a BN volume fraction of 0.05 to 0.58701 W/m·K at a volume fraction of 0.4, indicating that higher BN content significantly enhances heat dissipation capabilities. The dielectric constant showed a slight but consistent increase, rising from 3.5006 to 3.5046 over the same range. The findings highlight the potential of BN/PI composites for high-performance electronic applications, where efficient thermal management and dielectric stability are essential. These composites, with their exceptional thermal and dielectric properties, are particularly suited for applications in electronic substrates and thermal interface materials, where their tailored balance of properties ensures optimal performance."
+ },
+ {
+  "doi": "10.1002/pc.70149",
+  "title": "Fabrication and Thermal Conductivity Optimization of Epoxy Composites With Multidimensional Hybrid Fillers",
+  "year": 2025,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "nificantly improves the compatibility between BN and the resin matrix. The composite with 5 wt% BN@PDA exhibited enhanced mechanical performance. Thermal conductivity analysis reveale",
+   "xhibited enhanced mechanical performance. Thermal conductivity analysis revealed that the 20 wt% BN@PDA/MBE composite achieved optimal thermal conductivity [0.441 W/(m·K)]. Furthermore",
+   "ysis revealed that the 20 wt% BN@PDA/MBE composite achieved optimal thermal conductivity [0.441 W/(m·K)]. Furthermore, copper nanowires (CuNWs) were coated with PDA, and the synergistic inte",
+   "ers was achieved via PDA's adhesive properties. The BN@PDA‐CuNWs/MBE composite containing 3 wt% CuNWs@PDA demonstrated superior thermal conductivity [0.461 W/(m·K)], highlighting the ",
+   "uNWs/MBE composite containing 3 wt% CuNWs@PDA demonstrated superior thermal conductivity [0.461 W/(m·K)], highlighting the effectiveness of hybrid filler design in enhancing heat transfer pe"
+  ],
+  "abstract": "Utilizing the self‐polymerization property of dopamine, boron nitride (BN) was coated with polydopamine (PDA) to prepare BN@PDA. A biphenyl type epoxy resin (MBE) and 4,4′‐diaminodiphenyl sulfone curing agent were selected to fabricate BN@PDA/MBE composites. The composite structure was characterized via Fourier‐transform infrared spectroscopy, x‐ray diffraction, Raman spectroscopy, scanning electron microscopy, and transmission electron microscopy, while its flexural strength, dielectric properties, and thermal conductivity were systematically investigated. Results demonstrate that PDA significantly improves the compatibility between BN and the resin matrix. The composite with 5 wt% BN@PDA exhibited enhanced mechanical performance. Thermal conductivity analysis revealed that the 20 wt% BN@PDA/MBE composite achieved optimal thermal conductivity [0.441 W/(m·K)]. Furthermore, copper nanowires (CuNWs) were coated with PDA, and the synergistic integration of BN@PDA and CuNWs@PDA fillers was achieved via PDA's adhesive properties. The BN@PDA‐CuNWs/MBE composite containing 3 wt% CuNWs@PDA demonstrated superior thermal conductivity [0.461 W/(m·K)], highlighting the effectiveness of hybrid filler design in enhancing heat transfer performance."
+ },
+ {
+  "doi": "10.1063/5.0205196",
+  "title": "Enhanced thermal conductivity of epoxy resin by incorporating three-dimensional boron nitride thermally conductive network.",
+  "year": 2024,
+  "venue": "Journal of Chemical Physics",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   " TGA. The results show that the thermal conductivity of the BNNS@PU/EP composites reaches 0.521 W/m K with an enhancement rate η of 30.89 at an ultra-low BNNS filler content (5.93 wt. %). A",
+   "ches 0.521 W/m K with an enhancement rate η of 30.89 at an ultra-low BNNS filler content (5.93 wt. %). Additionally, the BNNS@PU/EP composites have excellent dielectric properties with t"
+  ],
+  "abstract": "Packaging insulation materials with high thermal conductivity and excellent dielectric properties are favorable to meet the high demand and rapid development of third generation power semiconductors. In this study, we propose to improve the thermal conductivity of epoxy resin (EP) by incorporating a three-dimensional boron nitride thermally conductive network. Detailedly, polyurethane foam (PU) was used as a supporter, and boron nitride nanosheets (BNNSs) were loaded onto the PU supporter through chemical bonding (BNNS@PU). After immersing BNNS@PU into the EP resin, EP-based thermally conductive composites were prepared by vacuum-assisted impregnation. Fourier transform infrared spectrometer and scanning electron microscope were used to characterize the chemical bonding and morphological structure of BNNS@PU, respectively. The content of BNNS in BNNS@PU/EP composites was quantitatively analyzed by TGA. The results show that the thermal conductivity of the BNNS@PU/EP composites reaches 0.521 W/m K with an enhancement rate η of 30.89 at an ultra-low BNNS filler content (5.93 wt. %). Additionally, the BNNS@PU/EP composites have excellent dielectric properties with the frequency range from 101 to 106 Hz. This paper provides an interesting idea for developing high thermal conductivity insulating materials used for power semiconductor packaging."
+ },
+ {
+  "doi": "10.1002/app.56293",
+  "title": "Boron nitride nanosheets synergized with two‐dimensional micron silver sheets to enhance thermal conductivity and insulation of epoxy resin composites",
+  "year": 2024,
+  "venue": "Journal of Applied Polymer Science",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "s were added to the composites, and the AgMS/BNNS/EP composites were successfully prepared. When BNNS was 25 wt% and AgMS was 1 wt%, its out‐of‐plane thermal conductivity was enhanced",
+   "the composites, and the AgMS/BNNS/EP composites were successfully prepared. When BNNS was 25 wt% and AgMS was 1 wt%, its out‐of‐plane thermal conductivity was enhanced from 0.17 W m−1 ",
+   "the AgMS/BNNS/EP composites were successfully prepared. When BNNS was 25 wt% and AgMS was 1 wt%, its out‐of‐plane thermal conductivity was enhanced from 0.17 W m−1 K−1 of pure epoxy r",
+   "NS was 25 wt% and AgMS was 1 wt%, its out‐of‐plane thermal conductivity was enhanced from 0.17 W m−1 K−1 of pure epoxy resin to 0.43 W m−1 K−1. When BNNS was 20 wt% and AgMS was 1 wt%, the break",
+   "out‐of‐plane thermal conductivity was enhanced from 0.17 W m−1 K−1 of pure epoxy resin to 0.43 W m−1 K−1. When BNNS was 20 wt% and AgMS was 1 wt%, the breakdown strength was enhanced from 105 kV",
+   "hermal conductivity was enhanced from 0.17 W m−1 K−1 of pure epoxy resin to 0.43 W m−1 K−1. When BNNS was 20 wt% and AgMS was 1 wt%, the breakdown strength was enhanced from 105 kV/mm",
+   "ity was enhanced from 0.17 W m−1 K−1 of pure epoxy resin to 0.43 W m−1 K−1. When BNNS was 20 wt% and AgMS was 1 wt%, the breakdown strength was enhanced from 105 kV/mm for pure epoxy t",
+   "m 0.17 W m−1 K−1 of pure epoxy resin to 0.43 W m−1 K−1. When BNNS was 20 wt% and AgMS was 1 wt%, the breakdown strength was enhanced from 105 kV/mm for pure epoxy to 130 kV/mm. This w"
+  ],
+  "abstract": "With the rapid progress of the advanced electronic device industry, precision electronic instruments are gradually developing towards miniaturization. In this case, epoxy resin gradually attracts people's attention, but its intrinsic thermal conductivity is not high, and the resulting heat dissipation problem limits the further application of epoxy resin in the field of electronic packaging. Therefore, how to enhance the thermal conductivity of epoxy resins has become an urgent problem in the field of electronic packaging. In this work, BNNS was successfully prepared by stripping h‐BN into a flaky two‐dimensional material, which was added to the epoxy resin as a filler to make the composite material. And on the basis of the above, two‐dimensional micron silver flakes (AgMS) with different mass fractions were added to the composites, and the AgMS/BNNS/EP composites were successfully prepared. When BNNS was 25 wt% and AgMS was 1 wt%, its out‐of‐plane thermal conductivity was enhanced from 0.17 W m−1 K−1 of pure epoxy resin to 0.43 W m−1 K−1. When BNNS was 20 wt% and AgMS was 1 wt%, the breakdown strength was enhanced from 105 kV/mm for pure epoxy to 130 kV/mm. This work provides a new strategy for synthesizing high‐thermal‐conductivity epoxy matrix composites."
+ },
+ {
+  "doi": "10.1039/d4dt00979g",
+  "title": "Synchronously enhancing thermal conductivity and dielectric properties in epoxy composites via incorporation of functionalized boron nitride.",
+  "year": 2024,
+  "venue": "Dalton Transactions",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "ed composites were thoroughly examined across various filler contents (ranging from 10 to 80 wt%). Among them, the DNBN/epoxy composite exhibited higher thermal conductivity (in-plane:",
+   "%). Among them, the DNBN/epoxy composite exhibited higher thermal conductivity (in-plane: 47.03 W m-1 K-1) at 60 wt% filler content compared to BN/epoxy (39.40 W m-1 K-1) and PNBN/epoxy (33 W m-1 ",
+   "DNBN/epoxy composite exhibited higher thermal conductivity (in-plane: 47.03 W m-1 K-1) at 60 wt% filler content compared to BN/epoxy (39.40 W m-1 K-1) and PNBN/epoxy (33 W m-1 K-1) com",
+   "l conductivity (in-plane: 47.03 W m-1 K-1) at 60 wt% filler content compared to BN/epoxy (39.40 W m-1 K-1) and PNBN/epoxy (33 W m-1 K-1) composites. These results highlight the usefulness of surfa",
+   " m-1 K-1) at 60 wt% filler content compared to BN/epoxy (39.40 W m-1 K-1) and PNBN/epoxy (33 W m-1 K-1) composites. These results highlight the usefulness of surface modification of BN in impro",
+   " epoxy, ultimately reducing composite viscosity. Furthermore, the DNBN/epoxy composite at 60 wt% demonstrated superb dielectric constant (∼6.15) without compromising on dissipation los"
+  ],
+  "abstract": "Polymer-like dielectrics with superb thermal conductivity as well as high dielectric properties hold great promise for the modern electronic field. Nevertheless, integrating these properties into a single material simultaneously remains problematic due to their mutually limited physical connotations. In this study, we developed high-quality thermally conductive epoxy composites with excellent dielectric properties. This was achieved by incorporating surface-functionalized microscale hexagonal boron nitride (BN) along with N-[3-(Trimethoxysilyl)propyl]ethylene diamine (DN) and N-[3-(Trimethoxysilyl)propyl]aniline (PN). In the resulting epoxy composite, microscale BN serves as the primary building block for establishing the thermally conductive network, while silica particles act as bridges to regulate heat transfer and reduce interfacial phonon-scattering. The prepared composites were thoroughly examined across various filler contents (ranging from 10 to 80 wt%). Among them, the DNBN/epoxy composite exhibited higher thermal conductivity (in-plane: 47.03 W m-1 K-1) at 60 wt% filler content compared to BN/epoxy (39.40 W m-1 K-1) and PNBN/epoxy (33 W m-1 K-1) composites. These results highlight the usefulness of surface modification of BN in improving compatibility between fillers and epoxy, ultimately reducing composite viscosity. Furthermore, the DNBN/epoxy composite at 60 wt% demonstrated superb dielectric constant (∼6.15) without compromising on dissipation loss (∼0.06). The strategy adopted in this study offers significant insights into designing dielectric thermally conductive composites with superior performance outcomes."
+ },
+ {
+  "doi": "10.1063/5.0211580",
+  "title": "Significantly enhancing the through-plane thermal conductivity of epoxy dielectrics by constructing aramid nanofiber/boron nitride three-dimensional interconnected framework",
+  "year": 2024,
+  "venue": "Journal of Applied Physics",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://pubs.aip.org/aip/jap/article-pdf/doi/10.1063/5.0211580/20069060/045101_1_5.0211580.pdf",
+  "k_hits": [
+   "nected thermal framework. The resultant ANF-BNNS/epoxy achieved a high through-plane λ of 0.87 W m−1 K−1 at only 1.43 vol. % BNNS, which is ∼17.1% higher than that of the BNNS/epoxy counterpart "
+  ],
+  "abstract": "Epoxy dielectrics with high through-plane thermal conductivity (λ) hold great promise for applications in the thermal management of advanced power electronics. Intensive attempts have been made to improve the λ of epoxy by filling with boron nitride nanosheets (BNNSs). However, it remains a great challenge to achieve a satisfactory increased λ by a small amount of BNNS loading. Herein, we reported a new strategy to prepare epoxy dielectrics with internal three-dimensional phonon transport channels by vacuum freeze-drying and vacuum impregnation. Aramid nanofibers (ANFs) and BNNSs were used for the collaborative construction of a vertical interconnected thermal framework. The resultant ANF-BNNS/epoxy achieved a high through-plane λ of 0.87 W m−1 K−1 at only 1.43 vol. % BNNS, which is ∼17.1% higher than that of the BNNS/epoxy counterpart with even 18.34 vol. % randomly distributed BNNS. The increasing efficiency of λ of epoxy by ANF-BNNS is tenfold more than that of the conventional blending methods. In addition, the ANF-BNNS/epoxy composite also exhibits a low dielectric constant and low dielectric loss. The findings of this study offer an inspired venue to develop high-performance thermally conductive epoxy dielectrics with a minimal BNNS loading."
+ },
+ {
+  "doi": "10.1002/app.55612",
+  "title": "Sugar‐template method to construct a boron nitride filler network to enhance the thermal conductivity of epoxy composites",
+  "year": 2024,
+  "venue": "Journal of Applied Polymer Science",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "g to a notable enhancement in TC. Specifically, the composite for h‐BN/EP reaches a TC of 2.25 W/m K when composed of 52 vol% h‐BN. A dielectric loss of 0.008 for the composite with the sa"
+  ],
+  "abstract": "In this work, a technique for constructing a three‐dimensional (3D) skeleton of hexagonal boron nitride (h‐BN) using sugar as the fulcrum and preparing composites by embedding in the epoxy (EP) in a vacuum environment is proposed. The study of thermal conductivity (TC) in polymer composites is conducted through a blend of techniques: laser flashing, theoretical modeling, and finite element simulation. The h‐BN skeleton exhibits a honeycomb structure through the scanning electron microscopy findings. Further investigation using finite element simulation demonstrates that conductive networks are formed by the h‐BN skeleton within the composites, leading to a notable enhancement in TC. Specifically, the composite for h‐BN/EP reaches a TC of 2.25 W/m K when composed of 52 vol% h‐BN. A dielectric loss of 0.008 for the composite with the same h‐BN loading shows a considerable improvement. The compressive yield strength of the 3D h‐BN/EP composites reached 312 MPa at 5 vol% h‐BN loading."
+ },
+ {
+  "doi": "10.1080/09276440.2024.2320482",
+  "title": "Enhancing thermal conductivity of spherical boron nitride/silicone rubber composites by matching interfacial modulus",
+  "year": 2024,
+  "venue": "Composite interfaces (Print)",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "eving higher thermal conductivity compared with the original BN at the same filler loading. When the SR composite is filled with 40 wt% SiO2@BN, the thermal conductivity can reach 1.2",
+   "red with the original BN at the same filler loading. When the SR composite is filled with 40 wt% SiO2@BN, the thermal conductivity can reach 1.2 W m−1 K−1, which is 16.5% higher than t",
+   ". When the SR composite is filled with 40 wt% SiO2@BN, the thermal conductivity can reach 1.2 W m−1 K−1, which is 16.5% higher than that of the 40 wt% s-BN/SR composite. Simultaneously, the 40 ",
+   " the thermal conductivity can reach 1.2 W m−1 K−1, which is 16.5% higher than that of the 40 wt% s-BN/SR composite. Simultaneously, the 40 wt% SiO2@BN/SR composite material not only ex",
+   "K−1, which is 16.5% higher than that of the 40 wt% s-BN/SR composite. Simultaneously, the 40 wt% SiO2@BN/SR composite material not only exhibits excellent dielectric, thermal, and mech"
+  ],
+  "abstract": "ABSTRACT Lightweight, electrically insulating and high thermally conductive materials are highly desirable in electronic and power systems because they can effectively transfer heat and avoid temperature rise of the equipment and devices, thus guaranteeing normal operation. In this work, silica-coated spherical boron nitride (SiO2@s-BN) was successfully fabricated and prepared as a thermally conductive composite by blending with silicone rubber (SR). Due to the modulus matching, SiO2@BN could decrease the thermal resistance between the SR matrices and the thermally conductive fillers, thus achieving higher thermal conductivity compared with the original BN at the same filler loading. When the SR composite is filled with 40 wt% SiO2@BN, the thermal conductivity can reach 1.2 W m−1 K−1, which is 16.5% higher than that of the 40 wt% s-BN/SR composite. Simultaneously, the 40 wt% SiO2@BN/SR composite material not only exhibits excellent dielectric, thermal, and mechanical properties but also demonstrates outstanding processability, maintaining a low precursor viscosity of only 14.5 Pa·s. Overall, this work provides a novel strategy for developing high thermally conductive SR composites with good processability. GRAPHICAL ABSTRACT"
+ },
+ {
+  "doi": "10.1002/pc.29039",
+  "title": "Fluorinated boron nitride nanosheets for high thermal conductivity and low dielectric constant silicone rubber composites",
+  "year": 2024,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "LSR) and reduce the Dk of LSR composites. The thermal conductivity of LSR composites with 20 wt% F‐BNNS reached 0.489 W·m−1·K−1, showing an increase of 307.35% in comparison with pure ",
+   " of LSR composites. The thermal conductivity of LSR composites with 20 wt% F‐BNNS reached 0.489 W·m−1·K−1, showing an increase of 307.35% in comparison with pure LSR (0.12 W·m−1·K−1). Meant",
+   "BNNS reached 0.489 W·m−1·K−1, showing an increase of 307.35% in comparison with pure LSR (0.12 W·m−1·K−1). Meantime, the Dk of as‐obtained LSR/F‐BNNS (20 wt%) composites is reduced from 3.",
+   "in comparison with pure LSR (0.12 W·m−1·K−1). Meantime, the Dk of as‐obtained LSR/F‐BNNS (20 wt%) composites is reduced from 3.4 to 2.6, and the dielectric loss (Df) is less than 0.012"
+  ],
+  "abstract": "Increasing miniaturization and integration of microelectronic devices have led to an unprecedented attention on heat dissipation and signal transmission of electronic equipment. However, the mostly used method to enhance the thermal conductivity of polymers by adding thermally conductive fillers usually results in the increase of dielectric constant (Dk). It was still challenging to synergistically achieve low Dk and high thermal conductivity of polymer‐matrix composites. Herein, hydroxylated boron nitride nanosheet (BNNS‐OH) with a high yield of 35.67% was prepared by the liquid ultrasonic exfoliation under the assistance of sodium cholate (SC), and grafted with (1H,1H,2H,2H‐perfluorodecyl) trimethoxy silane to prepare fluorinated boron nitride nanosheets (F‐BNNS), which can uniformly disperse in liquid silicone rubber (LSR) and reduce the Dk of LSR composites. The thermal conductivity of LSR composites with 20 wt% F‐BNNS reached 0.489 W·m−1·K−1, showing an increase of 307.35% in comparison with pure LSR (0.12 W·m−1·K−1). Meantime, the Dk of as‐obtained LSR/F‐BNNS (20 wt%) composites is reduced from 3.4 to 2.6, and the dielectric loss (Df) is less than 0.012. The facile and rational design of fluorinated BNNS offers a new insight for the high‐end electronic packaging materials.\nA new method of exfoliation and fluorinated treatment of h‐BN was proposed.\nThe LSR composites achieved an ultralow Dk of 2.63 via fluorinated BNNS.\nThermal conductivity of LSR composites increased by 307.35% than pure LSR.\n"
+ },
+ {
+  "doi": "10.1002/pc.28295",
+  "title": "Multifunctional boron nitride nanosheets/fluorinated‐polyimide composites with ultra‐low dielectric constant and high thermal conductivity",
+  "year": 2024,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "al property and dielectric properties, exhibiting a high heat conductivity coefficient of 2.36 Wm−1 K−1 with a filler content of 4.99 wt.%. Moreover, the permittivity and dielectric loss of the",
+   "exhibiting a high heat conductivity coefficient of 2.36 Wm−1 K−1 with a filler content of 4.99 wt.%. Moreover, the permittivity and dielectric loss of the film are as low as 1.76 and 0.0",
+   " low dielectric performance. The composite exhibits a high heat‐conducting coefficient of 2.36 Wm−1 K−1. Ultra‐low dielectric constant of 1.76 was achieved by the modification of film. Excellen",
+   "its a high heat‐conducting coefficient of 2.36 Wm−1 K−1. Ultra‐low dielectric constant of 1.76 was achieved by the modification of film. Excellent breakdown resistance and flexibility we"
+  ],
+  "abstract": "Thermally conductive polymeric composites with low dielectric constant are highly promising for the packaging materials in the field of modern communication. Therefore, the synergistic improvement of low dielectric constant and high thermal conductivity has become a current research hotspot. In this work, we propose a one‐step alkylation of boron nitride nanosheet (BNNS) with ultrasonic stratification using 1‐hexanol, and then hot press the films to make Alkyl‐BNNSs orient in the fluorinated polyimide (f‐PI). The resulting Alkyl‐BNNS/f‐PI composite successfully realizes the synergistic improvement of thermal property and dielectric properties, exhibiting a high heat conductivity coefficient of 2.36 Wm−1 K−1 with a filler content of 4.99 wt.%. Moreover, the permittivity and dielectric loss of the film are as low as 1.76 and 0.0065 at 1 MHz, respectively. This work provides a facile strategy for breaking the bottleneck of making polyimide composites simultaneously with high thermal conduction and low dielectric performance.\nThe composite exhibits a high heat‐conducting coefficient of 2.36 Wm−1 K−1.\nUltra‐low dielectric constant of 1.76 was achieved by the modification of film.\nExcellent breakdown resistance and flexibility were endowed with the composites.\n"
+ },
+ {
+  "doi": "10.1002/pc.29136",
+  "title": "Enhancing directional thermal conductivity in hexagonal boron nitride reinforced epoxy composites through robust interfacial bonding",
+  "year": 2024,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://hdl.handle.net/20.500.12868/5476",
+  "k_hits": [
+   " plane, going from 0.21 to 0.47 (W/mK), showing a remarkable 123.8% enhancement by adding 10 wt% of silane‐modified‐thermal treated h‐BN particles. The improvement resulted from effect"
+  ],
+  "abstract": "Establishing a robust interfacial bond between hexagonal boron nitride (h‐BN) plates and the epoxy matrix is essential for enhancing heat transfer, which is difficult because of h‐BN's low‐surface energy, tendency to clump together, and the chemical inertness of the epoxy matrix. This research shows different techniques for treating the surface of h‐BN fillers by applying acids and thermal processes to activate the surface. The silanization process was used to increase the silane content on the surface of activated h‐BN in order to make it more compatible with the epoxy matrix. X‐ray photoelectron spectroscopy analysis revealed silicon peaks (Si2s peak at 150.1 eV and Si2p peak at 100.3 eV) in the spectrum of silane‐treated samples. Heat treatment resulted in the production of more oxygen molecules on the shell of h‐BN compared to the acid treatment. Here, the primary focus was on examining how surface treatment affects thermal conductivity (TC) performance in both in‐plane and through‐thickness paths. There was an increase in the epoxy's TC perpendicular to the plane, going from 0.21 to 0.47 (W/mK), showing a remarkable 123.8% enhancement by adding 10 wt% of silane‐modified‐thermal treated h‐BN particles. The improvement resulted from effectively silanizing the exterior boundary of h‐BN particles, enhancing connection and distribution in the epoxy matrix. Surface modification of h‐BN‐epoxy composites improves TC, leading to better heat conduction in thermal management systems, benefiting industries like aerospace, automotive, and energy systems.\nSilanization of h‐BN for better filler‐matrix bonding leading to improved heat transfer\nBoosting thermal conductivity in the through‐thickness direction with surface‐modified h‐BN\nSignificant improvement in through‐thickness thermal conductivity with treated h‐BN.\nThermal treatment of h‐BN produced better oxygenation than acid treatment.\nApplication in aerospace and automotive through improved heat transfer.\n"
+ },
+ {
+  "doi": "10.1007/s10854-024-13657-3",
+  "title": "Functionalization of boron nitride with poly(catechol-polyamine) and bis(γ-triethoxysilylpropyl)tetrasulfide for preparing epoxy nanocomposites with enhanced thermal conductivity",
+  "year": 2024,
+  "venue": "Journal of materials science. Materials in electronics",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://doi.org/10.1007/s10854-024-13657-3",
+  "k_hits": [
+   "n BN and epoxy resin is improved. The heat conductivity of final BN/Ep composite achieved 0.817 W/(m·K) containing 30 wt% BN. Correspondingly, the heat conductivity of the composite (mBN/Ep)",
+   "mproved. The heat conductivity of final BN/Ep composite achieved 0.817 W/(m·K) containing 30 wt% BN. Correspondingly, the heat conductivity of the composite (mBN/Ep) achieved 0.881 W/(",
+   "ning 30 wt% BN. Correspondingly, the heat conductivity of the composite (mBN/Ep) achieved 0.881 W/(m·K) containing 30 wt% BN-PCPA-Si69. Compared to pure epoxy resin (0.200 W/(m·K), the therm",
+   "dingly, the heat conductivity of the composite (mBN/Ep) achieved 0.881 W/(m·K) containing 30 wt% BN-PCPA-Si69. Compared to pure epoxy resin (0.200 W/(m·K), the thermal conductivity (TC",
+   "/Ep) achieved 0.881 W/(m·K) containing 30 wt% BN-PCPA-Si69. Compared to pure epoxy resin (0.200 W/(m·K), the thermal conductivity (TC) of the mBN/Ep composite increased by 364% while maintai"
+  ],
+  "abstract": "Hexagonal boron nitride (hBN) has garnered significant interest as inorganic thermally conductive material in electronic packaging due to its high-efficiency thermal management capability and electrical insulation properties. However, the relatively inert chemical environment of the BN surface hinders phonon transfer at the interface. Additionally, the high content of inorganic components in the matrix leads to the deterioration of the composite’s mechanical properties. In this research, h-BN surface is modified using poly(catechol-polyamine) (PCPA) and bis (γ-triethoxysi-lylpropyl)tetrasulphide (Si69) (denoted as BN-PCPA-Si69). The noncovalent PCPA modification protects the endothermic properties of BN, Si69 provides covalent bonding between thermally conductive fillers and bisphenol A-type epoxy resin (Ep), and the interfacial compatibility between BN and epoxy resin is improved. The heat conductivity of final BN/Ep composite achieved 0.817 W/(m·K) containing 30 wt% BN. Correspondingly, the heat conductivity of the composite (mBN/Ep) achieved 0.881 W/(m·K) containing 30 wt% BN-PCPA-Si69. Compared to pure epoxy resin (0.200 W/(m·K), the thermal conductivity (TC) of the mBN/Ep composite increased by 364% while maintaining good electrical insulation properties. The proposed BN surface functionalization approach has potential applications in fields such as microelectronic packaging, where materials need to balance high thermal conductivity and electrical insulation."
+ },
+ {
+  "doi": "10.1002/pc.28316",
+  "title": "Hyperbranched boron nitride structure‐based epoxy composite: Simultaneous enhancement of mechanical properties, thermal conductivity, and superior electrical insulation at cryogenic temperatures",
+  "year": 2024,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/pc.28316",
+  "k_hits": [
+   "s was significantly enhanced, with maximum tensile and impact strengths achieved at 6 and 4 wt% HBP‐BN content. These values exceeded those of pure EP by 47% and 22% at room temperatu",
+   "he composite demonstrated a remarkable 430% improvement in thermal conductivity, reaching 1.1627 W·m−1·K−1, when the HBP‐BN content reached 40 wt%. Simultaneously, EP/HBP‐BN composites exhib",
+   "ement in thermal conductivity, reaching 1.1627 W·m−1·K−1, when the HBP‐BN content reached 40 wt%. Simultaneously, EP/HBP‐BN composites exhibit low dielectric permittivity and high volu"
+  ],
+  "abstract": "Epoxy resins (EPs) are highly coveted as insulating materials for engineering applications. However, their limited mechanical properties and inadequate thermal conductivity at cryogenic temperatures significantly restrict their range of applications. Herein, a novel approach was introduced for crafting EP composites infused with boron nitride (BN) using hyperbranched polymer (HBP) grafting. The resulting HBP‐BN was uniformly dispersed within the EP and securely bonded to the matrix through robust chemical interactions, significantly improving the property enhancement efficiency of HBP‐BN on EP. Thus, the mechanical strength of EP/HBP‐BN composites was significantly enhanced, with maximum tensile and impact strengths achieved at 6 and 4 wt% HBP‐BN content. These values exceeded those of pure EP by 47% and 22% at room temperature (RT) and increased even more substantially to 72% and 135% at 77 K. Moreover, the composite demonstrated a remarkable 430% improvement in thermal conductivity, reaching 1.1627 W·m−1·K−1, when the HBP‐BN content reached 40 wt%. Simultaneously, EP/HBP‐BN composites exhibit low dielectric permittivity and high volume resistivity, signifying exceptional electrical insulation properties. HBP‐BN substantially enhances the cryogenic properties of EP composites, offering an efficient pathway for the utilization of EPs in engineering applications."
+ },
+ {
+  "doi": "10.1002/pc.27947",
+  "title": "Enhancing cryogenic thermal conductivity of epoxy composites through the incorporation of boron nitride nanosheets/nanodiamond aerogels prepared by directional‐freezing method",
+  "year": 2023,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "ly, the 3D‐BNNS/ND/epoxy composites illustrate exceptional thermal conductivity values of 1.326 W/(m·K), indicating a remarkable synergistic effect of BNNS and ND in improving thermal conduc"
+  ],
+  "abstract": "In the realm of electronic circuits, materials with high thermal conductivity are sought after as ideal packaging components. It is crucial that such materials not only possess excellent thermal conductivity, but also maintain desirable dielectric properties. To this end, boron nitride nanosheets (BNNS) and BNNS/nanodiamond (ND) aerogels with a three‐dimensional (3D) structure using the ice‐template method were prepared. Subsequently, these aerogels were utilized as a framework to produce 3D‐BNNS/epoxy and 3D‐BNNS/ND/epoxy composites via the vacuum‐assisted impregnation method, which exhibit enhanced anisotropic thermal conductivity. Furthermore, the thermal conductivity exhibited by the 3D‐BNNS/epoxy composites outperforms those containing randomly distributed BNNS. The experiment also reveals sintering the aerogel at elevated temperatures to remove the PVA can significantly improve the thermal conductivity exhibited by the 3D‐BNNS/epoxy and 3D‐BNNS/ND/epoxy composites. Importantly, the 3D‐BNNS/ND/epoxy composites illustrate exceptional thermal conductivity values of 1.326 W/(m·K), indicating a remarkable synergistic effect of BNNS and ND in improving thermal conductivity. It is noteworthy to state that the relative thermal conductivity ratio of the 3D‐BNNS/epoxy and 3D‐BNNS/ND/epoxy composites to pure epoxy resin was markedly higher at lower temperatures than the values measured at room temperature, signifying their superior heat transfer performance at lower temperatures. In addition, the composites depict excellent dielectric properties and lower coefficients of thermal expansion values. Finally, the 3D‐BNNS/ND/epoxy composites also have significantly improved Tg (132.5 and 152.6°C). The high‐performance polymer composites described in this study are envisaged for implementation within the realm of electronic packaging materials."
+ },
+ {
+  "doi": "10.1002/pc.27985",
+  "title": "Boron nitride nanosheet @ quantum‐sized diamond nanocrystal complex/epoxy nanocomposites with enhancing thermal conductivity and sufficient dielectric breakdown strength",
+  "year": 2023,
+  "venue": "Polymer Composites",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "",
+  "k_hits": [
+   " and in‐plane thermal conductivity of epoxy composite with 5% BA@DN‐2 reaches to 0.56 and 3.824 W/m K, respectively. The study proposes a modified plane thermal conductivity model. Based on",
+   "sed on calculations, it was found that the modified thermal conductivity of 5% BA@DN‐2 is 3.47 W/m K, which is significantly higher than that of pure EP, specifically 17.35 times higher. T",
+   "cifically 17.35 times higher. These findings are significant in terms of materials science. while its alternating current and direct current dielectric breakdown strength are 48.84 an"
+  ],
+  "abstract": "With the development of high‐voltage and high‐power devices in the direction of compactness, lightness and extreme working environments, the contradiction between thermal conductivity and dielectric breakdown strength is becoming more and more obvious. In this work, a novel boron nitride nanosheet with uniformly dispersed diamond nanocrystalline (abbreviated as BA@DN) was prepared via facile acidizing hydroxylation, in situ copolymerization self‐assembly of dopamine and blending process. The obtained hybrid filler was employed to embed into epoxy matrix, showing enhanced thermal conductivity and sufficient dielectric breakdown strength. For example, the through‐plane and in‐plane thermal conductivity of epoxy composite with 5% BA@DN‐2 reaches to 0.56 and 3.824 W/m K, respectively. The study proposes a modified plane thermal conductivity model. Based on calculations, it was found that the modified thermal conductivity of 5% BA@DN‐2 is 3.47 W/m K, which is significantly higher than that of pure EP, specifically 17.35 times higher. These findings are significant in terms of materials science. while its alternating current and direct current dielectric breakdown strength are 48.84 and 136.31 kV/mm, about 85.68% and 99.1% of pure epoxy, respectively. The mechanism of outstanding dielectric breakdown strength was analyzed via dielectric characteristic, partial discharge performance and the theory of quantum size effect. In addition, a modified multi‐core model with a multilevel overlapping interface is presented.\nThe acidified diamond nanocrystals (DNs) were attached to dopamine‐coated boron nitride nanocrystals by a blending process.\nThe small size effect of DNs allows the epoxy film to have both high thermal conductivity and high insulation properties.\nA thermal conductivity correction model is proposed to eliminate the effect of graphite layer on the film.\n"
+ },
+ {
+  "doi": "10.1016/j.ceramint.2021.10.063",
+  "title": "Amino functionalized boron nitride and enhanced thermal conductivity of epoxy composites via combining mixed sizes of fillers",
+  "year": 2021,
+  "venue": "Ceramics International",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "erty of the pBN/wBN/epoxy composites with pBN/wBN ratio of 2.5/7.5 can reach the value of 0.386 W/mK, which is 96% higher than that of pure epoxy. Meanwhile, the measured value is superior f",
+   "ttributed to the efficient construction of the fillers network and thermal conduction path. Within the epoxy matrix, wBN can fill the pores between pBN and form a denser filler networ"
+  ],
+  "abstract": "Abstract With the emergence of 5G communication and the rapid development of the microelectronics industry, the heat dissipation of high power circuits has become quite an important issue. Along these lines, the thermal conductivity distribution of the electronic packaging materials, which plays a key role in the protecting circuits, requires urgent improvement. In this study, amino-functional boron nitride nanosheets (BNNS) were prepared by employing ball milling boron nitride with urea (aqueous solution) as agents. Then, the epoxy composites filled with large size pristine boron nitride (pBN) and small size functional boron nitride were fabricated by using the wet ball-milling (wBN) technique. The acquired results indicate that the thermal conductivity property of the pBN/wBN/epoxy composites with pBN/wBN ratio of 2.5/7.5 can reach the value of 0.386 W/mK, which is 96% higher than that of pure epoxy. Meanwhile, the measured value is superior from both the pBN/epoxy and wBN/epoxy composites with the same filling amount. This effect can be attributed to the efficient construction of the fillers network and thermal conduction path. Within the epoxy matrix, wBN can fill the pores between pBN and form a denser filler network. In addition, the amino-functional groups grafted with wBN result in their enhanced dispersion within the epoxy matrix that leads to a more stronger interfacial effect. Our approach provides useful insights in understanding the incorporation mechanisms of fillers in polymers, and thereby enhancing their potential applications."
+ },
+ {
+  "doi": "10.1177/09673911221110143",
+  "title": "Improved thermal conductivity of epoxy composites via linked boron nitride nanosheets with in-situ generated silver nanoparticles",
+  "year": 2022,
+  "venue": "Polymers and Polymer Composites",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://doi.org/10.1177/09673911221110143",
+  "k_hits": [
+   "on nitride nanosheets (BNNSs) are particularly attractive as fillers in polymer composites. While the thermal properties rely on the connection of BNNSs in polymer matrices significan",
+   "conducting networks were effectively constructed. The thermal conductivity increased from 1.26 W/mK for the composites only with BNNSs to 2.35 W/mK for the composites with BNNS/[Ag (2E4MI)2",
+   ". The thermal conductivity increased from 1.26 W/mK for the composites only with BNNSs to 2.35 W/mK for the composites with BNNS/[Ag (2E4MI)2Ac] hybrids at 20 vol% BNNSs content. Fitting th"
+  ],
+  "abstract": "Thermal management plays an important role in electrical and electronic systems. Owing to both excellent thermal conduction and electrical insulation, boron nitride nanosheets (BNNSs) are particularly attractive as fillers in polymer composites. While the thermal properties rely on the connection of BNNSs in polymer matrices significantly. Herein, BNNSs absorbed with silver acetate and 2-ethyl-4-methylimidazole (Ag (2E4MI)2Ac) complex were prepared as thermal conductive fillers for epoxy resin. During the cure of matrix, nano silver ions were in-situ reduced, sintered and bridged individual BNNSs together. Therefore, thermal contact resistance between BNNSs decreased and thermal conducting networks were effectively constructed. The thermal conductivity increased from 1.26 W/mK for the composites only with BNNSs to 2.35 W/mK for the composites with BNNS/[Ag (2E4MI)2Ac] hybrids at 20 vol% BNNSs content. Fitting the measured thermal conductivity results indicated that the thermal contact resistance between fillers decreased with the connections by sintered silver. In addition, the electrically insulating properties of the composites were well preserved and the tensile strength of the composites containing sintered silver interconnects was obviously improved."
+ },
+ {
+  "doi": "10.1016/j.jcis.2022.07.058",
+  "title": "Synchronously improved thermal conductivity and dielectric constant for epoxy composites by introducing functionalized silicon carbide nanoparticles and boron nitride microspheres.",
+  "year": 2022,
+  "venue": "Journal of Colloid and Interface Science",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "t deal of minicapacitors in the composites. Consequently, favorable thermal conductivity (0.76 W/mK) and dielectric constant (∼8.19) are simultaneously achieved in the BNMS/SiC@SiO2/Epoxy co"
+  ],
+  "abstract": "Polymer-based dielectrics with high thermal conductivity and superb dielectric properties hold great promising for advanced electronic packaging and thermal management application. However, integrating these properties into a single material remains challenging due to their mutually exclusive physical connotations. Here, an ideal dielectric thermally conductive epoxy composite is successfully prepared by incorporating multiscale hybrid fillers of boron nitride microsphere (BNMS) and silicon dioxide coated silicon carbide nanoparticles (SiC@SiO2). In the resultant composites, the microscale BNMS serve as the principal building blocks to establish the thermally conductive network, while the nanoscale SiC@SiO2 as bridges to optimize the heat transfer and suppress the interfacial phonon scattering. In addition, the special core-shell nanoarchitecture of SiC@SiO2 can significantly impede the leakage current and generate a great deal of minicapacitors in the composites. Consequently, favorable thermal conductivity (0.76 W/mK) and dielectric constant (∼8.19) are simultaneously achieved in the BNMS/SiC@SiO2/Epoxy composites without compromising the dielectric loss (∼0.022). The strategy described in this study provides important insights into the design of high-performance dielectric composites by capitalizing on the merits of different particles."
+ },
+ {
+  "doi": "10.1155/2022/5343461",
+  "title": "Thermal Conductivity and Mechanical Characterization of Bamboo Fiber and Rice Husk/MWCNT Filler Epoxy Hybrid Composite",
+  "year": 2022,
+  "venue": "Journal of nanomaterials",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1155/2022/5343461",
+  "k_hits": [
+   "gical characterization. Thermal conductivity measured by Lee’s disc method is observed at 0.2577 W/mK for specimen 3. The tensile and flexural properties are higher for 0.5% MWCNT concentrati"
+  ],
+  "abstract": "Recent trends utilizing recycled materials from around the world aim to improve a wide range of industrial and domestic applications. The natural fiber/filler matrix is used to evaluate the mechanical qualities of the hybrid nanocomposites. The specific concentration is dealing with a bidirectional bamboo fiber mat/rice husk particle/MWCNT blend with epoxy composite. The experimental work plan to execute with the three different proportional composites was as follows: bamboo fiber mat constant loading for all the specimens, but the filler particle ratio will be varied, prominently rice husk particle concentrated for all the three specimens: 5%, 10%, and 15%, and additionally, MWCNT drawn two specific specimens (2 and 3): 0.5% and 1% based on the fiber/filler concentration balanced the epoxy resin. The research presented here is hybrid nanocomposite experimented with thermal, mechanical, and morphological characterization. Thermal conductivity measured by Lee’s disc method is observed at 0.2577 W/mK for specimen 3. The tensile and flexural properties are higher for 0.5% MWCNT concentration (specimen 2): 42.66 MPa and 54.72 MPa, respectively. The maximum impact strength is reached at 1% MWCNT concentration (specimen 3). Bamboo fiber and rice husk filler matrix composite (specimen 1) reached extremities shore-\n \n D\n \n hardness 84. Scanning electron microscopy was performed to examine the morphological characteristics of the tensile fractography specimen and analyzed the dispersion of the fiber/filler matrix adhesion of the surface. The bamboo fiber mat/rice husk/MWCNT (specimen 3) filler had better binding and observed fewer fiber pull-out, fiber fracture, fiber extension, and voids. In the graphic comparison, 0.5% MWCNT achieved more mechanical properties than the other two combinations."
+ },
+ {
+  "doi": "10.1177/09540083221106057",
+  "title": "Significantly enhanced thermally conductive epoxy composite composed of caterpillar-like structured expanded graphite/ boron nitride nanotubes",
+  "year": 2022,
+  "venue": "High Performance Polymers",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "",
+  "k_hits": [
+   "d BNNT, the through-plane thermal conductivity of epoxy-based nanocomposites can be up to 5.18 Wm−1 K−1. In addition, the composite possessed electromagnetic interference shielding performance "
+  ],
+  "abstract": "The trend toward miniaturization, integration and multifunctionality of modern electronics has led to a rapid increase in power density, which makes heat dissipation a critical issue. Despite the great potential of graphite-related nanocomposites in dissipating excess heat to ensure high efficiency and long lifetime of electronic devices, the practical application of these composites is limited by the ultra-low vertical thermal conductivity due to the interfacial thermal resistance between graphite layers. Here, a caterpillar-like hybrid filler was fabricated by the in situ intercalation of boron nitride nanotubes (BNNTs) between expanded graphite (EG) layers based on chemical vapor deposition technology. Owing to the optimized interfacial thermal resistance by forming covalent C-N bonding at the interface of EG and BNNT, the through-plane thermal conductivity of epoxy-based nanocomposites can be up to 5.18 Wm−1 K−1. In addition, the composite possessed electromagnetic interference shielding performance of 33.34 dB while maintaining electrical insulation due to the hierarchical structure. This work provided a new strategy for fabricating polymer-based composites with excellent through-plane thermal conductivity in thermal management applications."
+ },
+ {
+  "doi": "10.1080/15440478.2021.1966568",
+  "title": "Thermal Conductivity of Boron Nitride/ Banana Fiber Reinforced Epoxy Hybrid Composites",
+  "year": 2021,
+  "venue": "Journal of Natural Fibers",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "lidation of optimized results with experimental one is discussed. Thermal conductivity of 1.06741 W/m-K is obtained for optimum combination of 5 wt. % of BN with particle size of 5 μm and 1.2",
+   "s discussed. Thermal conductivity of 1.06741 W/m-K is obtained for optimum combination of 5 wt. % of BN with particle size of 5 μm and 1.2 wt. % of BF.",
+   "W/m-K is obtained for optimum combination of 5 wt. % of BN with particle size of 5 μm and 1.2 wt. % of BF."
+  ],
+  "abstract": "ABSTRACT In this work, recent developments in area of thermally conductive polymer matrix composite are discussed. Thermally conductive Boron Nitride (BN)/ Banana fiber (BF)/ reinforced environment friendly epoxy polymer matrix composite is prepared. Scanning electron microscope (SEM) analysis of BN is carried out to ensure desired particle size. The effect of wt. % of BN/ BF on thermal conductivity is investigated. Box Behnken Model (BBD) from Response surface methodology (RSM), an approach of design of experiments (DOE), is used for preparation of sample to choose possible wt. % of BN/ BF and ANOVA is carried out using MINITAB software to get optimized levels of parameters through regression model. Validation of optimized results with experimental one is discussed. Thermal conductivity of 1.06741 W/m-K is obtained for optimum combination of 5 wt. % of BN with particle size of 5 μm and 1.2 wt. % of BF."
+ },
+ {
+  "doi": "10.1177/09540083211046456",
+  "title": "Novle layered boron nitride nanosheets/cellulose nanofibers/epoxy composite with high thermal conductivity",
+  "year": 2021,
+  "venue": "High Performance Polymers",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "in was dipped under vacuum condition to prepare composite with thermal conductivity up to 1.43 W/mK in through-plane when filler content is 4.3 vol%, and the composite had low thermal expan"
+  ],
+  "abstract": "Studies have shown that the construction of a three-dimensional interconnected filler network is an effective method to improve the thermal conductivity of the through-plane under a lower filler load. However, huge challenges still exist in building a long-range layered filler network and reducing the thermal resistance resulting from contact between fillers and matrix. In this work, boron nitride nanosheets (BNNSs) were proposed to be connected with modified cellulose nanofibers (CNFs) to obtain a long-range layered structure filler skeleton by bidirectional freezing orientation. Then epoxy resin was dipped under vacuum condition to prepare composite with thermal conductivity up to 1.43 W/mK in through-plane when filler content is 4.3 vol%, and the composite had low thermal expansion coefficient of 64.1 ppm/°C and excellent volume resistivity up to 3.7 × 1012 Ω cm at the same time."
+ },
+ {
+  "doi": "10.1088/1361-6528/ac0470",
+  "title": "Thermal conductivity and mechanical performance of hexagonal boron nitride nanosheets-based epoxy adhesives",
+  "year": 2021,
+  "venue": "Nanotechnology",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://iopscience.iop.org/article/10.1088/1361-6528/ac0470/pdf",
+  "k_hits": [
+   "ively. Thermal conductivity was enhanced by 153% increment in epoxy/BNNS nanocomposite at 7 wt% in comparison with neat epoxy. In parallel, Young’s modulus, lap shear strength, fractu",
+   "C ) and energy release rate (G 1C ) increased by 69%, 31%, 122% and 118%, respectively at 1 wt% BNNSs. Moreover, fatigue life and strength of lap shear joints were significantly impro"
+  ],
+  "abstract": "Thermosets possess diverse physical and chemical properties and thus they are widely used in various applications such as electronic packaging, construction, and automotive industries. However, their poor thermal conductivity and weak mechanical performance jeopardize their continual spread in modern industry. In this study, boron nitride nanosheets (BNNSs) were employed to promote both mechanical and thermal properties of epoxy nanocomposites. BNNSs and their epoxy nanocomposites were fabricated using in situ solvent ultrasonication and in situ polymerization, respectively. Thermal conductivity was enhanced by 153% increment in epoxy/BNNS nanocomposite at 7 wt% in comparison with neat epoxy. In parallel, Young’s modulus, lap shear strength, fracture toughness (K 1C ) and energy release rate (G 1C ) increased by 69%, 31%, 122% and 118%, respectively at 1 wt% BNNSs. Moreover, fatigue life and strength of lap shear joints were significantly improved upon adding BNNSs. A numerical model of the single lap shear joint was developed to validate the accuracy of the material constants obtained. Epoxy/BNNS nanocomposites exhibited an outstanding mechanical performance as well as high thermal conductivity giving them merits to widen their applications in electronic and automotive industry."
+ },
+ {
+  "doi": "10.1016/j.compscitech.2021.108794",
+  "title": "Significantly improved thermal conductivity of silicone rubber and aligned boron nitride composites by a novel roll-cutting processing method",
+  "year": 2021,
+  "venue": "Composites Science And Technology",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "gher than that prepared by the stacking-cutting method. A maximum thermal conductivity of 6.3 W/(m·K), which was 5.5 time that of the MVQ/BN composites, was achieved when the BN content wa"
+  ],
+  "abstract": "Abstract Composites of silicone rubber (MVQ) incorporated with aligned boron nitride (ABN) were prepared by two different processing methods, namely the stacking-cutting and roll-cutting methods, and compared with the pure MVQ and MVQ/unaligned BN composites that were prepared by mechanical mixing. The effect of the content and average diameter of BN on the thermal conductivity of the MVQ/ABN and MVQ/BN composites was investigated, and the accompanying mechanism was revealed. The results showed that the thermal conductivity of the composites increased with increasing BN content. The thermal conductivity of the MVQ/ABN composites was significantly improved in comparison with that of the MVQ/BN composites because the aligned BN can construct more efficient thermal conductive pathways than the unaligned BN. The BN composite sample with an average diameter of 30 μm exhibited higher thermal conductivity than that with an average diameter of 10 μm. Furthermore, the thermal conductivity of the MVQ/ABN composites prepared by the roll-cutting method was higher than that prepared by the stacking-cutting method. A maximum thermal conductivity of 6.3 W/(m·K), which was 5.5 time that of the MVQ/BN composites, was achieved when the BN content was 250 phr and its average diameter was 30 μm."
+ },
+ {
+  "doi": "10.1016/j.jcomc.2020.100087",
+  "title": "Filler surface adsorption of mesogenic epoxy for LC Epoxy/MgO composites with high thermal conductivity",
+  "year": 2021,
+  "venue": "",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://www.sciencedirect.com/science/article/pii/S2666682020300876/pdf",
+  "k_hits": [
+   "ilation lifetime spectroscopy (PALS). The thermal conductivity of the obtained composite (3.16 W/(m∙K)) was remarkably higher than that of the nonadsorbed MgO system (1.93 W/(m∙K)) at almos",
+   "d composite (3.16 W/(m∙K)) was remarkably higher than that of the nonadsorbed MgO system (1.93 W/(m∙K)) at almost the same content of 44–45 vol%. This significant improvement of the thermal"
+  ],
+  "abstract": "Abstract Mesogenic epoxies were adsorbed onto the surface of an MgO filler treated with an amino-silane coupling agent and the epoxy-adsorbed MgO filler was dispersed into the liquid crystalline (LC) epoxy matrix resin to develop a high thermal conductivity composite. The effect on the interfacial interaction and the free volume of the LC epoxy composite was investigated by X-ray photoelectron spectroscopy (XPS), X-ray diffractometry (XRD), and positron annihilation lifetime spectroscopy (PALS). The thermal conductivity of the obtained composite (3.16 W/(m∙K)) was remarkably higher than that of the nonadsorbed MgO system (1.93 W/(m∙K)) at almost the same content of 44–45 vol%. This significant improvement of the thermal conductivity can be attributed to the highly ordered structural formation that was induced by the π-π interaction effect of the mesogenic moieties between the adsorbed epoxies and the matrix resin."
+ },
+ {
+  "doi": "10.1016/j.coco.2020.100549",
+  "title": "Enhancement of thermal conductivity and dimensional stability of polyimide/boron nitride films through mechanochemistry",
+  "year": 2020,
+  "venue": "Composites Communications",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "g their processability and flexibility are critical for high-power microelectronic devices. We proposed a mechanochemical approach that was induced by ball-milling to prepare high-the",
+   "ransfer network in the composite. Therefore, a superhigh in-plane thermal conductivity of 14.7 W/(m·K) could be achieved at only 20 wt% BN and the CTE decreased simultaneously from 33.5 ppm",
+   "fore, a superhigh in-plane thermal conductivity of 14.7 W/(m·K) could be achieved at only 20 wt% BN and the CTE decreased simultaneously from 33.5 ppm/K of pure polyimide to ~20 ppm/K."
+  ],
+  "abstract": "Abstract Polyimide composites with high thermal conductivity and low coefficient of thermal expansion (CTE) at a low filler loading for maintaining their processability and flexibility are critical for high-power microelectronic devices. We proposed a mechanochemical approach that was induced by ball-milling to prepare high-thermal-conductivity polyimide/boron nitride (BN) films with low CTE. In the mechanochemical process, BN platelets were dispersed uniformly in poly(amic acid) solution along with partial BN exfoliation and covalent linkage with polymer chains under mechanical force, followed by in-plane orientation in polyimide matrix during film formation and thermal imidization, resulting in the formation of heat-transfer network in the composite. Therefore, a superhigh in-plane thermal conductivity of 14.7 W/(m·K) could be achieved at only 20 wt% BN and the CTE decreased simultaneously from 33.5 ppm/K of pure polyimide to ~20 ppm/K. This method is simple and efficient, and enables simultaneous BN platelets peeling and surface covalent modification in one step, which allows for excellent matrix dispersion and the fabrication of high-thermal-conductivity composites."
+ },
+ {
+  "doi": "10.1016/j.matdes.2020.108663",
+  "title": "Enhanced thermal conductivity of epoxy composites by introducing graphene@boron nitride nanosheets hybrid nanoparticles",
+  "year": 2020,
+  "venue": "Materials & Design (1980-2015)",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "https://doi.org/10.1016/j.matdes.2020.108663",
+  "k_hits": [
+   "al conductivity is significantly enhanced (~140%) in GBN/epoxy composites containing only 5 wt% of GBN. High electrical resistivity (3.05 × 1012 Ω·cm) and low dielectric loss (tanδ"
+  ],
+  "abstract": "Abstract Polymer composites with high thermal conductivity have promising applications for the thermal management of modern electronic devices. Here, a novel strategy is proposed to enhance the thermal conductivity of epoxy composites by employing a hybrid graphene and boron nitride nanoparticle (GBN). In the GBN, boron nitride nanosheets (BNNSs) tightly adsorb onto the surface of graphene via π-π interactions, and act as bridges for conveying phonons as well as barriers for electrons transporting between adjacent graphene particles. The thermal conductivity and dielectric properties of composites containing GBN are then systematically investigated. The thermal conductivity is significantly enhanced (~140%) in GBN/epoxy composites containing only 5 wt% of GBN. High electrical resistivity (3.05 × 1012 Ω·cm) and low dielectric loss (tanδ"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2020.107855",
+  "title": "Epoxy composite with significantly improved thermal conductivity by constructing a vertically aligned three-dimensional network of silicon carbide nanowires/ boron nitride nanosheets",
+  "year": 2020,
+  "venue": "",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   " channels for phonons in vertical direction that the maximum thermal conductivity reached 4.22 W/mK at a low hybrid filler loading of 21.9 vol%, increased by 1658% in comparison to that of "
+  ],
+  "abstract": "Abstract The trend of miniaturization, integration and multi-function of modern electronics leads to the speedily increased power density which makes heat dissipation a crucial issue. Herein, epoxy based composites with highly enhanced through-plane thermal conductivity were successfully prepared by constructing a free-standing and vertically aligned silicon carbide nanowires (SiCw)/functionalized boron nitride nanosheets (f-BNNS) framework through modified filtration strategy. The synergetic effect between hybrid fillers ensured highly efficient channels for phonons in vertical direction that the maximum thermal conductivity reached 4.22 W/mK at a low hybrid filler loading of 21.9 vol%, increased by 1658% in comparison to that of pure epoxy. Due to the entanglement effect of SiCw/f-BNNS framework and the enhanced interface interaction by BNNS modification, the interfacial thermal resistance between filler/filler and filler/matrix were both reduced a lot compared with random dispersion method. Exceptional heat dissipation capability of the vertically orientated architecture was also demonstrated by theoretical simulation and chip encapsulation applications. In addition, the coefficient of thermal expansion of composite reached as low as 41.1 ppm/°C, only half of the epoxy resin (83.5 ppm/°C). This work provides a novel strategy for fabricating polymer based composites with superior through-plane thermal conductivity in thermal management applications."
+ },
+ {
+  "doi": "10.1016/j.compscitech.2020.108322",
+  "title": "Bi-directional high thermal conductive epoxy composites with radially aligned boron nitride nanosheets lamellae",
+  "year": 2020,
+  "venue": "",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   " boron nitride nanosheets lamellae exhibits bidirectional high thermal conductivity, with 4.02 W m−1 K−1 in the through-plane direction and 3.87 W m−1 K−1 in the in-plane direction even at low B",
+   "ctional high thermal conductivity, with 4.02 W m−1 K−1 in the through-plane direction and 3.87 W m−1 K−1 in the in-plane direction even at low BNNS loading (e.g., 15 vol%), respectively. Besides"
+  ],
+  "abstract": "Abstract Hexagonal boron nitride (h-BN), as a high thermal conductive filler, has been widely used to construct thermal transport network in polymers. However, anisotropic thermal property of BN and its conventional thermal conductive network usually lead to high thermal conductivity in one direction that limits the overall heat dissipation effect. Herein, we report a novel radially aligned three-dimensional boron nitride nanosheets/epoxy composite for thermal interface materials via radial freeze-casting method. The as-prepared composite with radially aligned boron nitride nanosheets lamellae exhibits bidirectional high thermal conductivity, with 4.02 W m−1 K−1 in the through-plane direction and 3.87 W m−1 K−1 in the in-plane direction even at low BNNS loading (e.g., 15 vol%), respectively. Besides, excellent electronic insulation property and shape stability can also meet the requirements of isotropic TIM in thermal management."
+ },
+ {
+  "doi": "10.1016/j.compscitech.2020.108304",
+  "title": "Enhanced thermal conductivity of epoxy composites by constructing aluminum nitride honeycomb reinforcements",
+  "year": 2020,
+  "venue": "Composites Science And Technology",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   " increase in AlN loading. The composites exhibited maximal thermal conductivity values of 9.48 W m−1 K−1 and 4.45 W m−1 K−1 in the directions parallel and perpendicular to the AlN–H channels, re",
+   "ading. The composites exhibited maximal thermal conductivity values of 9.48 W m−1 K−1 and 4.45 W m−1 K−1 in the directions parallel and perpendicular to the AlN–H channels, respectively, at AlN "
+  ],
+  "abstract": "Abstract Recently, anisotropic polymer/ceramic composites have attracted great attention because of their high thermal conductivity for the extensive usage in microelectronic devices. However, further enhancement of their thermal conductivity is a great challenge due to the presence of interface thermal resistance and lack of efficient heat conduction pathways. Herein, epoxy (EP)/aluminum nitride honeycomb (AlN–H) composites were fabricated through a two-step method including freeze-casting of the AlN–H reinforcements and EP infiltration. The results showed that the vertically aligned and interconnected thermal conductive networks contributed to the enhanced thermal conductivity and thermal stability of the composites with the increase in AlN loading. The composites exhibited maximal thermal conductivity values of 9.48 W m−1 K−1 and 4.45 W m−1 K−1 in the directions parallel and perpendicular to the AlN–H channels, respectively, at AlN loading of 47.26 vol%. The composites displayed excellent heat dissipation performance when they were attached to a working CPU, which indicates significant promise for application in thermal interface materials."
+ },
+ {
+  "doi": "10.1016/j.crcon.2019.12.003",
+  "title": "Improved thermal conductivity of epoxy resin by graphene–nickel three-dimensional filler",
+  "year": 2020,
+  "venue": "",
+  "ceramic": false,
+  "carbon": true,
+  "oa_pdf": "https://www.sciencedirect.com/science/article/pii/S2588913319300523/pdf",
+  "k_hits": [
+   " epoxy resin, the thermal conductivity of graphene-nickel/epoxy composite can reach up to 2.6549 W·m−1·k−1, which was 9 times higher than that of raw epoxy resin."
+  ],
+  "abstract": "Abstract Owing to high thermal conductivity, carbon nanotube and graphene have been used as nanofillers to improve the thermal conductivity of polymer. However, the agglomeration of nanofillers in polymer inhibits their applications in improving the thermal conductivity of composite. To overcome this problem, graphene was grown on Ni foam by chemical vapor deposition in this work. And graphene-nickel three-dimensional filler was added into epoxy resin to improve the thermal conductivity of epoxy resin. Ni foam can prevent the agglomeration of graphene in epoxy resin and a thermally conductive network by graphene and Ni foam was formed in epoxy resin. By adding graphene-nickel three-dimensional filler into epoxy resin, the thermal conductivity of graphene-nickel/epoxy composite can reach up to 2.6549 W·m−1·k−1, which was 9 times higher than that of raw epoxy resin."
+ },
+ {
+  "doi": "10.1177/0021998320942575",
+  "title": "Enhanced thermal conductivity of epoxy/alumina composite through multiscale-disperse packing",
+  "year": 2020,
+  "venue": "Journal of composite materials",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "hest thermal conductivity of Al2O3-filled liquid epoxy measured by steady-state method is 6.7 W m−1 K−1 at 25°C, which is approximately 23 times higher than the neat epoxy (0.28 W m−1 K−1). Thr",
+   "hod is 6.7 W m−1 K−1 at 25°C, which is approximately 23 times higher than the neat epoxy (0.28 W m−1 K−1). Three models based on Maxwell mean-field scheme (MMF), differential effective medium (DE",
+   "colation theory model (PTM) were utilized to assess our measured thermal conductivity data. We found that both DEM and PTM models could give good results at high volume fraction regim",
+   " found that both DEM and PTM models could give good results at high volume fraction regime. We have also observed a considerable reduction (10–15%) of thermal conductivity in our Al2O",
+   "derable reduction (10–15%) of thermal conductivity in our Al2O3-filled cured epoxy samples. We attribute this reduction to the increasing of thermal interfacial resistance between Al2",
+   "ticle sizes exhibit lower viscosity and can be filled with much higher fraction of fillers. We thus expect that higher thermal conductivity (probably >12 W m−1 K−1 based on DEM) can b",
+   "ch higher fraction of fillers. We thus expect that higher thermal conductivity (probably >12 W m−1 K−1 based on DEM) can be achieved in future via filling higher thermal conductivity spherical"
+  ],
+  "abstract": "Inspired by the size of the voids in closest packing structures, we propose to use the combination of spherical particles with different size scales to increase the loading fraction of the fillers in epoxy-based composites. In this study, high loading up to 79 vol% has been achieved with multiscale particle sizes of spherical Al2O3 particles. The highest thermal conductivity of Al2O3-filled liquid epoxy measured by steady-state method is 6.7 W m−1 K−1 at 25°C, which is approximately 23 times higher than the neat epoxy (0.28 W m−1 K−1). Three models based on Maxwell mean-field scheme (MMF), differential effective medium (DEM) and percolation theory model (PTM) were utilized to assess our measured thermal conductivity data. We found that both DEM and PTM models could give good results at high volume fraction regime. We have also observed a considerable reduction (10–15%) of thermal conductivity in our Al2O3-filled cured epoxy samples. We attribute this reduction to the increasing of thermal interfacial resistance between Al2O3 particles and cured epoxy matrix, induced by cure shrinkage during the reaction. Our experiments have demonstrated that systems with multiscale particle sizes exhibit lower viscosity and can be filled with much higher fraction of fillers. We thus expect that higher thermal conductivity (probably >12 W m−1 K−1 based on DEM) can be achieved in future via filling higher thermal conductivity spherical fillers (e.g., AlN, SiC), increasing loading fraction by multiscale-disperse packing and reducing the effect from cure shrinkage."
+ },
+ {
+  "doi": "10.1016/j.apsusc.2020.147091",
+  "title": "Enhanced thermal conductivity of a polysilazane-coated A-BN/epoxy composite following surface treatment with silane coupling agents",
+  "year": 2020,
+  "venue": "",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "tained the BN surface modified with PSZ and APTES had the highest thermal conductivity of 11.8 W m−1 K−1 at a filler fraction of 75 wt%. Its thermal conductivity was 62 times higher than that of",
+   " and APTES had the highest thermal conductivity of 11.8 W m−1 K−1 at a filler fraction of 75 wt%. Its thermal conductivity was 62 times higher than that of the neat epoxy."
+  ],
+  "abstract": "Abstract Spherically aggregated boron nitride (BN) is advantageous for improving thermal conductivity. However, it is difficult to process due to its fragility and poor wettability. Herein we report coating boron nitride aggregates with polysilazane (PSZ) and three different silanes, glycidoxypropyltrimethoxysilane (GPTMS), aminopropyltriethoxysilane (APTES), and mercaptopropyltrimethoxysilane (MPTMS), via hydrolysis and condensation. The PSZ coating protected BN from external force, and the silane coatings enhanced interfacial adhesion between the filler and the matrix. An epoxy composite contained the BN surface modified with PSZ and APTES had the highest thermal conductivity of 11.8 W m−1 K−1 at a filler fraction of 75 wt%. Its thermal conductivity was 62 times higher than that of the neat epoxy."
+ },
+ {
+  "doi": "10.1016/j.matlet.2020.128596",
+  "title": "Synergy boost thermal conductivity through the design of vertically aligned 3D boron nitride and graphene hybrids in silicone rubber under low loading",
+  "year": 2020,
+  "venue": "",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "",
+  "k_hits": [
+   " freeze-drying and thermal reduction. Different ratios of m-BN/rGO frameworks (loading of 5 wt%) were incorporated to fabricate flexible silicone rubber composites (SR/3dBG) with enha",
+   "ermal conductivity. SR/3dBG composite (m-BN/rGO = 5/1) showed the thermal conductivity of 0.88 W/m−1 K−1, 449% and 129% higher than pure SR and random SR/BG, respectively. The synergistic effect"
+  ],
+  "abstract": "Abstract A novel vertically aligned three-dimensional (3D) modified boron nitride/reduced graphene sheets (m-BN/rGO) hybrid framework was uniquely achieved involving a simple blending followed by freeze-drying and thermal reduction. Different ratios of m-BN/rGO frameworks (loading of 5 wt%) were incorporated to fabricate flexible silicone rubber composites (SR/3dBG) with enhanced thermal conductivity. SR/3dBG composite (m-BN/rGO = 5/1) showed the thermal conductivity of 0.88 W/m−1 K−1, 449% and 129% higher than pure SR and random SR/BG, respectively. The synergistic effect between m-BN and rGO, along with the effectively vertical aligned 3D thermal conductive networks were the major factors for the boosted performance."
+ },
+ {
+  "doi": "10.1016/j.ijadhadh.2019.102540",
+  "title": "Enhancing thermal conductivity of epoxy with a binary filler system of h-BN platelets and Al2O3 nanoparticles",
+  "year": 2020,
+  "venue": "International Journal of Adhesion and Adhesives",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://hdl.handle.net/11511/42125",
+  "k_hits": [
+   "nalyzed the effect of the ratio of these fillers on the thermal conductivity of composites. While h-BN platelets form the main thermal conductive network, Al2O3 nanoparticles bridge t",
+   "anoparticles bridge the separated h-BN platelets to build more thermal conductive pathways. We proposed the improving of thermal conductivity as well as the mechanical properties of t"
+  ],
+  "abstract": "Abstract Epoxy resin is a common adhesive bonding material used to join dissimilar materials, especially in the electronics and aerospace industries. However, its low thermal conductivity and high coefficient of thermal expansion limit the direct use of epoxy in practical applications. In order to improve thermo-mechanical properties, we have prepared a series of epoxy composites using a binary system of hexagonal-boron nitride (h-BN) and aluminum oxide (Al2O3) fillers and analyzed the effect of the ratio of these fillers on the thermal conductivity of composites. While h-BN platelets form the main thermal conductive network, Al2O3 nanoparticles bridge the separated h-BN platelets to build more thermal conductive pathways. We proposed the improving of thermal conductivity as well as the mechanical properties of the epoxy matrix by incorporating h-BN and Al2O3 fillers at an optimum ratio."
+ },
+ {
+  "doi": "10.1016/j.polymer.2019.121653",
+  "title": "Enhanced through-thickness thermal conductivity of epoxy with cellulose-supported boron nitride nanosheets",
+  "year": 2019,
+  "venue": "Polymer",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://figshare.com/articles/journal_contribution/Enhanced_through-thickness_thermal_conductivity_of_epoxy_with_cellulose-supported_boron_nitride_nanosheets/20744539",
+  "k_hits": [
+   "thermal conductivity enhancement, i.e. approximately three times at a low BNNS loading of 8 wt% than the neat epoxy (0.2 W/mK). The structure of cellulose-supported network and BNNS s",
+   "ement, i.e. approximately three times at a low BNNS loading of 8 wt% than the neat epoxy (0.2 W/mK). The structure of cellulose-supported network and BNNS size have shown noticeable effects"
+  ],
+  "abstract": "Abstract Thermal management is an important application of nanocomposites. To effectively enhance the through-thickness thermal conductivity, we report a strategy by preparing cellulose-supported boron nitride nanosheets (BNNSs) aerogel and then impregnating with epoxy matrix. Two environmentally friendly approaches, i.e., the urea-NaOH aqueous solution and an ionic liquid 1-butyl-3-methylimidazolium acetate (BmimAc) with dimethyl sulfoxide (DMSO), were investigated to prepare cellulose-supported 3D BNNS network. The nanocomposites prepared by BmimAc-DMSO with supernatant BNNSs showed the highest through-thickness thermal conductivity enhancement, i.e. approximately three times at a low BNNS loading of 8 wt% than the neat epoxy (0.2 W/mK). The structure of cellulose-supported network and BNNS size have shown noticeable effects on thermal conductivity improvement. The infrared thermal images suggest that such epoxy nanocomposites responded more rapidly to heating and cooling."
+ },
+ {
+  "doi": "10.1016/j.ceramint.2019.08.120",
+  "title": "Enhanced thermal conductivity of epoxy composites using boron nitride nanoplatelets prepared by Fe3O4 assisted liquid-phase exfoliation",
+  "year": 2019,
+  "venue": "Ceramics International",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   " enhancement of the thermal conductivity by 480% with the addition of a filler content of 30 wt%."
+  ],
+  "abstract": "Abstract Liquid-phase exfoliation was employed to fabricate BN nanoplatelets (BNNPs) with the assistance of an additional shear force from Fe3O4 nanoparticles. Iron-oxide nanoparticles vibrated between BN layers and bulk BN particles were exfoliated into nanoplatelets. A thermally conductive composite was fabricated by the incorporation of the resultant BNNP into an epoxy matrix. After exfoliation, BNNP exhibited better dispersion in the polymer composite compared to bulk BN due to the reduced mean interparticle distances. Thus, the introduction of BNNP enables the decrease in the thermal percolation threshold via the formation of heat flow paths and enhancement of the thermal conductivity by 480% with the addition of a filler content of 30 wt%."
+ },
+ {
+  "doi": "10.1063/1.5121349",
+  "title": "Effect of frequency of microsecond pulsed electric field on orientation of boron nitride nanosheets and thermal conductivity of epoxy resin-based composites",
+  "year": 2019,
+  "venue": "",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "ate was lower under higher frequencies. The thermal conductivity of composites containing 10 wt. % BN nanosheets prepared under 100 Hz was 0.588 W/mK, which was more than twice that of",
+   "al conductivity of composites containing 10 wt. % BN nanosheets prepared under 100 Hz was 0.588 W/mK, which was more than twice that of composites without an applied electric field. Addition",
+   "ate was lower under higher frequencies. The thermal conductivity of composites containing 10 wt. % BN nanosheets prepared under 100 Hz was..."
+  ],
+  "abstract": "Nanosecond pulsed electric fields over 200 kV/mm have been used for filler alignment in polymer-based thin film (120–250 μm) composites to improve their thermal conductivity, but little research has been performed on bulk composites because of the requirement of an extremely high nanosecond pulsed voltage. In this paper, a microsecond pulsed voltage with a pulse width of 1 μs and an electric field of only 11.76 kV/mm was adopted for the first time to prepare bulk composites of 1.7 mm. The effects of frequency on nanosheets’ orientation and the thermal conductivity of epoxy composites were studied. The orientation degree of BN nanosheets was determined based on cross-sectional scanning electron microscopy images and X-ray diffraction peaks. The orientation degree and thermal conductivity of epoxy composites increased with the increase of the frequency, but the increase rate was lower under higher frequencies. The thermal conductivity of composites containing 10 wt. % BN nanosheets prepared under 100 Hz was 0.588 W/mK, which was more than twice that of composites without an applied electric field. Additionally, an effective medium theory model was adopted for thermal conductivity modeling. In addition, thermogravimetric and differential scanning calorimetry analyses were performed to evaluate the thermal properties of the composites. The results showed that after BN orientation in epoxy resin, the composites had higher glass transition temperature and better thermal stability. Microsecond pulsed electric fields are promising for preparing bulk insulation composites with higher thermal conductivity.Nanosecond pulsed electric fields over 200 kV/mm have been used for filler alignment in polymer-based thin film (120–250 μm) composites to improve their thermal conductivity, but little research has been performed on bulk composites because of the requirement of an extremely high nanosecond pulsed voltage. In this paper, a microsecond pulsed voltage with a pulse width of 1 μs and an electric field of only 11.76 kV/mm was adopted for the first time to prepare bulk composites of 1.7 mm. The effects of frequency on nanosheets’ orientation and the thermal conductivity of epoxy composites were studied. The orientation degree of BN nanosheets was determined based on cross-sectional scanning electron microscopy images and X-ray diffraction peaks. The orientation degree and thermal conductivity of epoxy composites increased with the increase of the frequency, but the increase rate was lower under higher frequencies. The thermal conductivity of composites containing 10 wt. % BN nanosheets prepared under 100 Hz was..."
+ },
+ {
+  "doi": "10.1016/j.matdes.2018.107580",
+  "title": "Improvement in thermal conductivity of through-plane aligned boron nitride/silicone rubber composites",
+  "year": 2019,
+  "venue": "Materials & Design (1980-2015)",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://doi.org/10.1016/j.matdes.2018.107580",
+  "k_hits": [
+   "n-orientated SR/BN composite. The through-plane thermal conductivity of SR/ABN150 reached 5.4 W m−1 K−1, which was ~6.3 and ~33 times higher than those of SR/BN150 and pure SR, respectively. In"
+  ],
+  "abstract": "Abstract Effective heat dissipation has become a critical issue for electronic devices. In this study, the silicone rubber (SR)/vertically aligned boron nitride (BN) composites were prepared and the thermal conductivity of the composites was systematically investigated. The vertically aligned BNs constructed effective vertical thermal conductive pathways in the SR matrix, and the SR/ABN composites exhibited much higher through-plane thermal conductivity compared to the non-orientated SR/BN composite. The through-plane thermal conductivity of SR/ABN150 reached 5.4 W m−1 K−1, which was ~6.3 and ~33 times higher than those of SR/BN150 and pure SR, respectively. In addition, the surface thermal infrared analysis also indicates that the vertically aligned SR/ABN composites possess excellent heat transfer capacity during the heating and cooling processes. The obtained results exhibit the potential for the design and preparation of thermal interface materials (TIMs) with high through-plane thermal conductivity to be applied in thermal conductive and electrical insulating field."
+ },
+ {
+  "doi": "10.1080/09276440.2019.1578569",
+  "title": "A novel silver nanoparticle-deposited aluminum oxide hybrids for epoxy composites with enhanced thermal conductivity and energy density",
+  "year": 2019,
+  "venue": "Composite interfaces (Print)",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "d compared with the pure epoxy resin and the AlN/epoxy composites. The samples containing 40 wt% AlN/AgNPs exhibit the highest thermal conductivity (4.72 Wm−1K−1), which is as high as ",
+   "osites. The samples containing 40 wt% AlN/AgNPs exhibit the highest thermal conductivity (4.72 Wm−1K−1), which is as high as 22 times to that of neat epoxy resin. We attribute the enhanced ther",
+   "rmal conductivity (4.72 Wm−1K−1), which is as high as 22 times to that of neat epoxy resin. We attribute the enhanced thermal conductivity to the silver nanoparticles, which can ‘brid"
+  ],
+  "abstract": "ABSTRACT AlN/AgNPs/epoxy composites were fabricated successfully, and the thermal conductivity and the dielectric properties of the composites were investigated. The thermal conductivity of the AlN/AgNPs/epoxy composites was enhanced compared with the pure epoxy resin and the AlN/epoxy composites. The samples containing 40 wt% AlN/AgNPs exhibit the highest thermal conductivity (4.72 Wm−1K−1), which is as high as 22 times to that of neat epoxy resin. We attribute the enhanced thermal conductivity to the silver nanoparticles, which can ‘bridge’ the adjacent fillers in the matrix and form a more effective heat-conducting network. Graphical Abstract A fabrication route for epoxy composites filled with AlN decorated with silver nanoparticles and their corresponding thermal conductivities."
+ },
+ {
+  "doi": "10.1016/j.polymer.2019.121834",
+  "title": "Co-curable poly(glycidyl methacrylate)-grafted graphene/epoxy composite for thermal conductivity enhancement",
+  "year": 2019,
+  "venue": "Polymer",
+  "ceramic": false,
+  "carbon": true,
+  "oa_pdf": "",
+  "k_hits": [
+   "rporated into the matrix. The thermal conductivity of the p-MRGO/epoxy composites reaches 0.75 W m−1 K−1 at p-MRGO content of 7 wt%, corresponding to a thermal conductivity enhancement of 249% F",
+   "l conductivity of the p-MRGO/epoxy composites reaches 0.75 W m−1 K−1 at p-MRGO content of 7 wt%, corresponding to a thermal conductivity enhancement of 249% Furthermore, the crosslink"
+  ],
+  "abstract": "Abstract Thermally conductive epoxy composite is prepared by directly incorporated graphene into the matrix. The 3-methacryloyloxypropyltriethoxysilane (MPTES) functionalized reduced graphene oxide (MRGO) is synthesized by a sol-gel reaction followed by chemical reduction, leading to the introduction of methacrylate groups with carbon-carbon double bonds. Then, radical copolymerization is employed to afford poly(glycidyl methacrylate) grafted MRGO, which can react with amine groups in the curing agent, 4.4′-diaminodiphenylmethane. The exothermic peaks were observed for the epoxy composites revealed that p-MRGO is co-cured with the curing agent and incorporated into the matrix. The thermal conductivity of the p-MRGO/epoxy composites reaches 0.75 W m−1 K−1 at p-MRGO content of 7 wt%, corresponding to a thermal conductivity enhancement of 249% Furthermore, the crosslinking density is calculated to confirm the co-curing effect of p-MRGO. Our results demonstrated that the covalent bond between the filler and matrix is an advantageous approach for improving the thermal conductivity of epoxy composites."
+ },
+ {
+  "doi": "10.1002/adfm.201900412",
+  "title": "An Anisotropically High Thermal Conductive Boron Nitride/Epoxy Composite Based on Nacre‐Mimetic 3D Network",
+  "year": 2019,
+  "venue": "Advanced Functional Materials",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "ional freezing technique. The as‐prepared composite exhibits a high thermal conductivity (6.07 W m−1 K−1) at 15 vol% BNNS loading, outstanding electrical resistivity, and thermal stability, makin"
+  ],
+  "abstract": "Polymer‐based thermal interface materials (TIMs) with excellent thermal conductivity and electrical resistivity are in high demand in the electronics industry. In the past decade, thermally conductive fillers, such as boron nitride nanosheets (BNNS), were usually incorporated into the polymer‐based TIMs to improve their thermal conductivity for efficient heat management. However, the thermal performance of those composites means that they are still far from practical applications, mainly because of poor control over the 3D conductive network. In the present work, a high thermally conductive BNNS/epoxy composite is fabricated by building a nacre‐mimetic 3D conductive network within an epoxy resin matrix, realized by a unique bidirectional freezing technique. The as‐prepared composite exhibits a high thermal conductivity (6.07 W m−1 K−1) at 15 vol% BNNS loading, outstanding electrical resistivity, and thermal stability, making it attractive to electronic packaging applications. In addition, this research provides a promising strategy to achieve high thermal conductive polymer‐based TIMs by building efficient 3D conductive networks."
+ },
+ {
+  "doi": "10.1016/j.compositesa.2019.105629",
+  "title": "The effects of the hexagonal boron nitride nanoflake properties on the thermal conductivity of hexagonal boron nitride nanoflake/silicone rubber composites",
+  "year": 2019,
+  "venue": "",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   "ced oriented h-BNNFs showed further enhanced thermal conductivity, and the composite with 40 wt% oriented h-BNNFs exhibits the best thermal conductivity of 0.901 W/(m K).",
+   " and the composite with 40 wt% oriented h-BNNFs exhibits the best thermal conductivity of 0.901 W/(m K)."
+  ],
+  "abstract": "Abstract Hexagonal boron nitride nanoflakes (h-BNNFs) are usually selected as fillers to improve the thermal conductivity of polymer materials. However, previous research mainly focused on the influence of h-BNNF content and orientation. In this report, the effects of the content, geometry, thickness, modification and orientation of h-BNNFs on the thermal conductivity of h-BNNF/polymer composites were systematically investigated based on the h-BNNF/silicone rubber (h-BNNF/SR) composites. The thermal conductivity of h-BNNF/SR composites increased tremendously with the increase of h-BNNF content. Meanwhile, the h-BNNF contents also show great effects on the viscosity, hardness and thermal stability of the composites, and the h-BNNF content of 20% is more advantageous for processing and application of the composites. Besides, modified, flake-like and thinner h-BNNFs can result in better reinforcement in thermal conductivity than unmodified, agglomerated and thicker ones. h-BNNF/SR composites with shear force induced oriented h-BNNFs showed further enhanced thermal conductivity, and the composite with 40 wt% oriented h-BNNFs exhibits the best thermal conductivity of 0.901 W/(m K)."
+ },
+ {
+  "doi": "10.1088/1742-6596/1003/1/012082",
+  "title": "The Effects of micro Aluminum fillers In Epoxy resin on the thermal conductivity",
+  "year": 2018,
+  "venue": "",
+  "ceramic": false,
+  "carbon": false,
+  "oa_pdf": "https://iopscience.iop.org/article/10.1088/1742-6596/1003/1/012082/pdf",
+  "k_hits": [
+   "show that, k increase with increasing Aluminums percentage and it have maximum values of (1.4595 W/m.K)."
+  ],
+  "abstract": "A hand lay-up molding method was used to prepare Epoxy / Aluminum composites. As a matrix used Epoxy resin (EP) with reinforced by Aluminum particles. The preparation technique includes preparing carousel mold with different weight percentage of fillers (0, 0.05, 0.15, 0.25, 0.35, and 0.45). Standard specimens (in 30 mm diameter) were prepared to the thermal conductivity tests. The result of experimental thermal conductivity (k), for EP/Aluminum composites show that, k increase with increasing Aluminums percentage and it have maximum values of (1.4595 W/m.K)."
+ },
+ {
+  "doi": "10.1016/j.cej.2018.04.196",
+  "title": "Melamine foam-supported 3D interconnected boron nitride nanosheets network encapsulated in epoxy to achieve significant thermal conductivity enhancement at an ultralow filler loading",
+  "year": 2018,
+  "venue": "Chemical Engineering Journal",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "https://doi.org/10.1016/j.cej.2018.04.196",
+  "k_hits": [
+   "infiltrated with epoxy resin. As a consequence, a relatively high thermal conductivity of 0.6 W m−1 K−1 was achieved at an ultralow BNNS loading of ∼1.1 vol%, which is equivalent to a thermal c"
+  ],
+  "abstract": "Abstract Realizing high-efficiency thermal conductivity enhancement at low filler loading has a great significance for thermally conductive composite. Herein, three-dimensional (3D) boron nitride nanosheets (BNNSs) wrapped melamine foams (MF@BNNS) were first fabricated by repeated layer-by-layer (L-B-L) assembly using melamine skeleton as substrate and BNNSs as building blocks. The resultant MF@BNNS scaffold with order and interconnected BNNS layer, as a thermally conductive network, was further infiltrated with epoxy resin. As a consequence, a relatively high thermal conductivity of 0.6 W m−1 K−1 was achieved at an ultralow BNNS loading of ∼1.1 vol%, which is equivalent to a thermal conductivity enhancement of 233% compared to epoxy resin. Besides, the obtained epoxy composite also possesses a good mechanical property and excellent electrical insulativity. This method can be further extended to construct 3D filler network of other 2D layered materials on the melamine foam for high-performance composite."
+ },
+ {
+  "doi": "10.1177/0040517518798654",
+  "title": "Fabrication of a thermally conductive silicone composite by incorporating surface-modified boron nitride",
+  "year": 2018,
+  "venue": "Textile research journal",
+  "ceramic": true,
+  "carbon": false,
+  "oa_pdf": "",
+  "k_hits": [
+   " using a simple sol–gel process for surface modification. The addition of BN filler up to 45 wt% enhanced the thermal conductivity of the composites and the surface modification of BN ",
+   " but elongation at the break decreased at high filler loadings. Surface modification with 7 wt% TEOS improved the mechanical properties of the composite."
+  ],
+  "abstract": "Digitization in the textile industry provides an effective manufacturing process; however, the integration of automation with computerization requires an excellent computer support system with a long lifespan. The lifespan of a computer is dependent on the heat generated from the system. The use of heatsinks combined with elastomeric thermal pads is a solution for heat dissipation. Silicone rubber composites exhibit excellent thermal conductivity with the incorporation of boron nitride (BN) as a filler. In this study, tetraethoxy orthosilicate (TEOS), a silane coupling agent, was doped onto to the surface of hydroxyl-functionalized BN using a simple sol–gel process for surface modification. The addition of BN filler up to 45 wt% enhanced the thermal conductivity of the composites and the surface modification of BN had an appreciable effect on the thermal conductivity, with a 16.52% improvement. The addition of TEOS improved the filler dispersion in the composite system and reduced the interfacial mismatch between the BN and silicone rubber. The tensile strength and hardness increased with the addition of the BN filler, but elongation at the break decreased at high filler loadings. Surface modification with 7 wt% TEOS improved the mechanical properties of the composite."
+ },
+ {
+  "doi": "10.1039/c7ra07272d",
+  "title": "Composites of epoxy/graphene-modified-diamond filler show enhanced thermal conductivity and high electrical insulation",
+  "year": 2017,
+  "venue": "",
+  "ceramic": false,
+  "carbon": true,
+  "oa_pdf": "https://pubs.rsc.org/en/content/articlepdf/2017/ra/c7ra07272d",
+  "k_hits": [
+   "rating diamond microparticles that were covered with few-layer graphene sheets on surfaces. We found not only did this modified filler improve the dispersion of diamond in the polymer",
+   "e on diamond particle surfaces was synthesized by a vacuum-based heating procedure. After 70 wt% of diamond fillers were added, we obtained a composite having a thermal conductivity of",
+   "% of diamond fillers were added, we obtained a composite having a thermal conductivity of 2.85 W m−1 k−1, which is 101% better than that of the composite with 70 wt% pure diamond as the filler, ",
+   "rmal conductivity of 2.85 W m−1 k−1, which is 101% better than that of the composite with 70 wt% pure diamond as the filler, and 1190% better than that of a neat epoxy, with electrical"
+  ],
+  "abstract": "In this work, we developed a single-step process to cast epoxy composites having a high thermal conductivity but a low electric conductivity. Performance of the epoxy was improved by incorporating diamond microparticles that were covered with few-layer graphene sheets on surfaces. We found not only did this modified filler improve the dispersion of diamond in the polymer matrix but it also decreased the interfacial thermal resistance between the diamond and epoxy while preserving an excellent electrical insulation. Graphene on diamond particle surfaces was synthesized by a vacuum-based heating procedure. After 70 wt% of diamond fillers were added, we obtained a composite having a thermal conductivity of 2.85 W m−1 k−1, which is 101% better than that of the composite with 70 wt% pure diamond as the filler, and 1190% better than that of a neat epoxy, with electrical resistivity maintained at 2.2 × 1010 Ω m."
+ },
+ {
+  "doi": "10.1088/1757-899x/274/1/012043",
+  "title": "Preparation and Properties Study of Thermally Conductive Epoxy/Modified Boron Nitride/Graphene Nanosheets Composites",
+  "year": 2017,
+  "venue": "",
+  "ceramic": true,
+  "carbon": true,
+  "oa_pdf": "https://iopscience.iop.org/article/10.1088/1757-899X/274/1/012043/pdf",
+  "k_hits": [
+   "tigated. The results indicate that the BNOTAB can homogeneously disperse into epoxy system. When the mass ratio of BNOTAB/GNP is 6:4 (total filler content is 10%), the thermal conduct",
+   " is 6:4 (total filler content is 10%), the thermal conductivity of the composites reached 0.48 W/(m·K), which is 108.7% higher than that of the neat epoxy. Meanwhile, the composite retains "
+  ],
+  "abstract": "A series of thermally conductive and electric-insulating epoxy composites filled with boron nitride (BN) modified by octadecyl trimethyl ammonium bromide and graphene nanosheets (GNP) were prepared. The effects of modified-BN (BNOTAB) and GNP content on thermal conductivity, electric-insulating and thermal stability properties of epoxy composite were investigated. The results indicate that the BNOTAB can homogeneously disperse into epoxy system. When the mass ratio of BNOTAB/GNP is 6:4 (total filler content is 10%), the thermal conductivity of the composites reached 0.48 W/(m·K), which is 108.7% higher than that of the neat epoxy. Meanwhile, the composite retains excellent electric-insulating property. TGA and DSC results showed that the addition of BNOTAB/GNP filler particles can improve the thermal stability of epoxy resin composites."
+ }
+]

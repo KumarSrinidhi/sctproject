@@ -1,0 +1,37 @@
+{
+  "10.3390/polym11071156": {
+    "oa_fcgi": "HTTP 404",
+    "mdpi": [
+      {
+        "file": null,
+        "fig": "g011",
+        "result": "all_fail"
+      },
+      {
+        "file": null,
+        "fig": "g001",
+        "result": "all_fail"
+      }
+    ]
+  },
+  "10.3390/molecules21050670": {
+    "oa_fcgi": "HTTP 404",
+    "mdpi": [
+      {
+        "file": null,
+        "fig": "g003",
+        "result": "all_fail"
+      },
+      {
+        "file": null,
+        "fig": "g002",
+        "result": "all_fail"
+      },
+      {
+        "file": null,
+        "fig": "g006",
+        "result": "all_fail"
+      }
+    ]
+  }
+}

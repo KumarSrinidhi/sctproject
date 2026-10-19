@@ -132,12 +132,17 @@ unusable = [
     {'doi': '10.3390/molecules28093797', 'reason': 'PCM (paraffin/LA-ODE) matrix, out of epoxy/BN primary scope', 'action': 'excluded_scope'},
     {'doi': '10.3390/polym13132161', 'reason': 'Al2O3/AlN literature values only; own data not BN/AlN primary', 'action': 'excluded_scope'},
 ]
-with open(OUT/'unusable_sources.csv', 'w', newline='', encoding='utf-8-sig') as f:
-    w = csv.DictWriter(f, fieldnames=['doi','reason','action'])
-    w.writeheader()
-    for u in unusable:
-        w.writerow(u)
-print(f'unusable_sources.csv: {len(unusable)} entries')
+# The list above is the Phase-1 seed only. From Phase 3 on, unusable_sources.csv is curated
+# (phase3c_unusable_update.py, phase4_apply.py), so it is written only if absent.
+if (OUT/'unusable_sources.csv').exists():
+    print('unusable_sources.csv: curated file kept (not regenerated)')
+else:
+    with open(OUT/'unusable_sources.csv', 'w', newline='', encoding='utf-8-sig') as f:
+        w = csv.DictWriter(f, fieldnames=['doi','reason','action'])
+        w.writeheader()
+        for u in unusable:
+            w.writerow(u)
+    print(f'unusable_sources.csv: {len(unusable)} entries')
 
 # ========== stats for QC report ==========
 by_matrix = collections.Counter()

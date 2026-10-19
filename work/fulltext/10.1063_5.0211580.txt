@@ -1,0 +1,502 @@
+SOURCE doi=10.1063/5.0211580 FETCH=chrome-dt AIP pubs.aip.org full HTML
+Skip to Main Content
+Open Menu
+header search
+Search input auto suggest
+filter your search
+All Content
+AIP Publishing Portfolio
+Journal of Applied Physics
+Search
+Advanced Search
+|
+Citation Search
+Cart
+Sign In
+Open Menu
+ 
+HOME
+BROWSE
+Open Menu
+COLLECTIONS
+Open Menu
+PUBLISH WITH US
+Open Menu
+ABOUT
+Open Menu
+Volume 136, Issue 4
+28 July 2024
+Previous Article
+Next Article
+Article Contents
+I. INTRODUCTION
+II. EXPERIMENTS
+III. RESULTS AND DISCUSSION
+IV. CONCLUSIONS
+SUPPLEMENTARY MATERIAL
+ACKNOWLEDGMENTS
+AUTHOR DECLARATIONS
+Conflict of Interest
+Author Contributions
+DATA AVAILABILITY
+REFERENCES
+RESEARCH ARTICLE| JULY 22 2024
+Significantly enhancing the through-plane thermal conductivity of epoxy dielectrics by constructing aramid nanofiber/boron nitride three-dimensional interconnected framework 
+Open Access
+Jun-Wen Ren 
+ ; Rui-Chi Zeng 
+ ; Jun Yang 
+ ; Zi Wang 
+ ; Zhong Wang
+Corresponding Author
+ 
+ ; Li-Hua Zhao; Guo-Long Wang
+Corresponding Author
+ 
+ ; Shen-Li Jia
+Corresponding Author
+ 
+Author & Article Information
+J. Appl. Phys. 136, 045101 (2024)
+https://doi.org/10.1063/5.0211580
+Article history
+Split-Screen
+Views Icon
+Views 
+Open Menu
+Open the
+PDF
+for Significantly enhancing the through-plane thermal conductivity of epoxy dielectrics by constructing aramid nanofiber/boron nitride three-dimensional interconnected framework in another window
+Share Icon
+Share 
+Tools Icon
+Tools 
+Open Menu
+
+Epoxy dielectrics with high through-plane thermal conductivity (λ) hold great promise for applications in the thermal management of advanced power electronics. Intensive attempts have been made to improve the λ of epoxy by filling with boron nitride nanosheets (BNNSs). However, it remains a great challenge to achieve a satisfactory increased λ by a small amount of BNNS loading. Herein, we reported a new strategy to prepare epoxy dielectrics with internal three-dimensional phonon transport channels by vacuum freeze-drying and vacuum impregnation. Aramid nanofibers (ANFs) and BNNSs were used for the collaborative construction of a vertical interconnected thermal framework. The resultant ANF-BNNS/epoxy achieved a high through-plane λ of 0.87 W m−1 K−1 at only 1.43 vol. % BNNS, which is ∼17.1% higher than that of the BNNS/epoxy counterpart with even 18.34 vol. % randomly distributed BNNS. The increasing efficiency of λ of epoxy by ANF-BNNS is tenfold more than that of the conventional blending methods. In addition, the ANF-BNNS/epoxy composite also exhibits a low dielectric constant and low dielectric loss. The findings of this study offer an inspired venue to develop high-performance thermally conductive epoxy dielectrics with a minimal BNNS loading.
+
+Topics Thermal conductivity, Ceramic materials, Composite materials, Dielectric properties, Nanofiber
+I. INTRODUCTION
+
+The emergence of wide bandgap semiconductors, such as SiC and GaN, has ushered advanced power electronics in a direction of developing unceasingly toward being more integrated, efficient, and higher-density.1 The subsequent issue of huge heat generation severely affects the working performance, reliability, as well as lifetime of devices and, thus, poses new challenges to thermal management. Thermal management materials (TMMs) with outstanding through-plane thermal conductivity (λ) are highly desired to alleviate the hot spots in devices.2–4 Epoxy dielectrics are widely used to prepare high-performance TMMs for their advantages of lightweight, easy processing, corrosion resistance, and electrical insulation.5,6 However, owing to the serious phonon scattering in the amorphous arrangement of molecular chains, the epoxy generally displays a rather low intrinsic λ of ∼0.2 Wm−1K−1, which does not satisfy the increasing demands of heat transfer capability for TMMs.7 
+
+Great efforts are spared to modify epoxy properties to improve its low λ value.2,8 One solution is introducing liquid crystal units into the molecular structures of the epoxy to optimize the local molecular regularity and, thus, inhibit phonon scattering in the inner epoxy.7 Unfortunately, the complicated synthetic process and limited improvement for λ fail to meet the practical application requirements of TMMs.7,9,10 Incorporating highly thermally conductive fillers into the epoxy matrix is another choice for enhancing the λ of TMMs.11 Among candidates including zero-dimensional (0D, nanoparticles and/or microspheres), 1D (nanowires and nanotubes), and 2D (nanosheets) ceramic fillers, 2D boron nitride nanosheets (BNNSs) is particularly outstanding because of its exceptional in-plane λ and dielectric properties.12 However, if using the traditional way of simply blending BNNS and epoxy to improve λ to an expected value, a substantial BNNS loading would be required, which is adverse, in turn, for the processability and mechanical properties of epoxy.13 Consequently, for TMMs of BNNSs being the filler, the key technical difficulty is to improve BNNS efficiency, so that even a small amount of BNNS loading can also achieve a satisfactorily increased λ.
+
+Currently, significant attention has been paid to increasing the through-plane λ of epoxy composites by forming a BNNS alignment to ensure the preferred direction for heat conduction. Various assembly attempts have been employed for this purpose, such as directional freeze-drying, stress-induced orientation, chemical vapor deposition, electrospinning, 3D printing, and magnetic-induced orientation. Specifically, pre-building the framework of BNNS by directional freeze-drying has been demonstrated as a versatile and efficient method. For example, Bai et al. prepared BNNS/epoxy composites with a λ of 6.07 W m−1 K−1 along the BNNS orientation directional at 15 vol. % filler contents.14 Using a similar technique, an ultrahigh λ of 11.5 W m−1 K−1 was achieved for composites at 80 vol. % BNNS loading as reported in their recent work.15 Obviously, the interconnect BNNS frameworks with a high degree of orientation are conducive to the efficient transport of phonons. However, the inert surface feature of BNNS yields its poor dispersion in solvents and weak interaction with each other, impeding the construction of a self-supported BNNS network.16 To address this issue, Miao et al. utilized aramid nanofibers (ANFs) as the framework to support BNNSs by a slow freezing method and achieved a high through-plane λ of 3.66  W m−1 K−1 (an enhancement efficiency of 131.06%) with a 13.2 vol. % BNNS loading.17 Unfortunately, this time-consuming strategy tends to cause anisotropy structures of lowly-oriented BNNSs in the ANF-BNNS hybrid, which will reduce the efficiency of phonon transport.18 Therefore, for epoxy TMMs at low BNNS contents, it remains challenging to build an efficient and reliable 3D continuous heat dissipation network of BNNSs.
+
+Herein, a novel hybrid framework composed of ANF and BNNS was designed and fabricated successfully by a rapid directional freezing technique. In the ANF-BNNS hybrid framework, ultrathin BNNSs were well arranged in the ANF network, contributing to a sufficient 3D heat conduction channel. In addition, the high-crystalline ANF provides another network channel for the efficient transmission of phonons. Subsequently, composites were prepared by integrating epoxy into the ANF-BNNS framework under vacuum conditions. Such ANF-BNNS/epoxy composites exhibited a high through-plane λ of 0.87 W m−1 K−1 at only 1.43 vol. % BNNS, the enhancement efficiency (267.78%) far exceeds the previously reported BN/polymer composites. Furthermore, the ANF-BNNS/epoxy composites possess low dielectric constants and dielectric loss. We believe that the strategy provided in this research brings new possibilities for achieving desirable through-plane λ of epoxy-based TMMs with a minimal BNNS loading.
+
+II. EXPERIMENTS
+
+ANFs were prepared by controlled deprotonation of Kevlar fiber in a concentrated alkali solution system of dimethyl sulfoxide (DMSO) and potassium hydroxide (KOH) as reported by Kotov and co-workers.19 Under a strong alkali environment, protons were abstracted from the amide groups of poly(paraphenylene terephthalamide) molecules, resulting in the formation of negatively charged ANFs [Fig. S1 in the supplementary material]. BNNSs were fabricated by a hydrothermal-assisted liquid-phase exfoliation approach based on the work of Wang et al.20 ANF-BNNS aerogels with various BNNS contents were prepared using a directional freezing method to make upward-growing ice templates within the wet gel and, subsequently, remove water using the vacuum freeze-drying method. The ANF-BNNS/epoxy composite dielectrics were prepared by impregnating the ANF-BNNS aerogels with epoxy resin using vacuum infusion. To investigate the impact of ANF on the through-plane λ of ANF-BNNS/epoxy composite dielectrics, aligned-ANF/epoxy composite dielectrics with the same ANF contents as ANF-BNNS were fabricated (details of ANF contents can be obtained from Table S1 in the supplementary material). The raw materials used, details of the experimental procedure, and characterizations are provided in the supplementary material.
+
+III. RESULTS AND DISCUSSION
+
+The obtained ANFs are flexible wires with lengths of more than 2 μm and diameters in the range of 5–15 nm [Figs. 1(a) and S2(a) and S2(b) in the supplementary material], which is significantly thinner than Kevlar fiber [Fig. S2(b) in the supplementary material]. In addition, the as-prepared ANFs can form a homogeneous dispersion in DMSO as a strong Tyndall effect [Fig. S3 in the supplementary material]. The excellent flexibility, dispersibility, and ultrahigh aspect ratio of ANFs (>100) promote the physical entanglement between the ANFs to form a robust framework. The BNNS was prepared by ion-assisted liquid-phase exfoliation of h-BN and the subsequent hydrothermal treatment process, whereby hydroxylated groups can be simultaneously grafted along the BNNS edge [Fig. S4 in the supplementary material]. Compared to the multi-layer stacked structure of h-BN [Fig. S5(a) in the supplementary material], the obtained BNNS shows an obviously thinner thickness with a well-preserved hexagonal crystalline structure [Fig. 1(b) and Fig. S5(b) in the supplementary material], which endows BNNS an outstanding thermal conductivity. Meanwhile, graft modification of edge-hydroxylated groups on the surface of BNNS contributes to the better dispersion of BNNS in ANF suspension and guarantees the homogeneity of the obtained ANF-BNNS mixture [Figs. S6(a) and S6(b) in the supplementary material]. During the directional freeze-casting process, the ANF and BNNS as building blocks can be readily assembled to form lightweight aerogels [Figs. 1(c) and 1(d), and S6(c) in the supplementary material]. The ANF-BNNS/epoxy composite dielectrics were then fabricated by subsequent infiltration and curing of the epoxy resin [Figs. 1(d) and S6(d) in the supplementary material].
+
+FIG. 1.
+VIEW LARGEDOWNLOAD SLIDE
+
+(a) TEM image of the as-prepared ANFs. (b) AFM image and the corresponding height profile of the BNNS. (c) Schematic diagram of fabricating ANF-BNNS/epoxy composite dielectric. (d) Images of ANF dispersion, ANF-BNNS hydrogel, ANF-BNNS aerogel, and ANF-BNNS/epoxy.
+
+SEM images provide direct evidence for the orientation structure of ANF-BNNS aerogel. As shown in Figs. 2(a) and S7(a) in the supplementary material, the ANF-BNNS exhibit a porous lotus root-like tubular structure with long range lamellar, owing to the vertical growth of ice crystals that nucleate under temperature gradients.21 To replicate the ice morphology, ANFs and BNNSs were expelled and assembled orderly along the tubular structure in the ANF-BNNS [Figs. 2(b) and 2(c) and S7(b) in the supplementary material]. Meanwhile, BNNSs are strongly confined within the ANF network, facilitating the generation of continuous expressways for heat transfer. Vertically aligned BNNS is conducive to taking full advantage of its remarkable λ, contributing to reduction of the pathway length of phonon propagation as well as interfacial thermal resistance.22 Microstructure of the cryo-fractured surface of the ANF-BNNS/epoxy composite is presented in Fig. 2(d). It can be clearly observed that the tubular configuration of ANF-BNNS is well maintained in the composite with good compatibility between the skeleton and the epoxy matrix [Figs. 2(e) and 2(f)]. The EDX mapping of C, O, and N reveals that the BNNS is uniformly distributed in the ANF-BNNS framework [Figs. 2(g)–2(i)], contributing to dense heat conduction pathways.
+
+FIG. 2.
+VIEW LARGEDOWNLOAD SLIDE
+
+(a)–(c) SEM images of the ANF-BNNS aerogel taken from the side. (d)–(f) Cross-sectional SEM image of ANF-BNNS/epoxy composite dielectrics. (g)–(i) Energy dispersive x-ray mapping of C, O, and N elements of the ANF-BNNS/epoxy.
+
+Figure 3(a) compares the through-plane λ of ANF-BNNS/epoxy and BNNS/epoxy composites with different BNNS contents. Explicitly, the through-plane λ of ANF-BNNS/epoxy composites increase dramatically with the increase in the BNNS fraction, in a sharp contrast to those of randomly distributed BNNS composites. The through-plane λ of ANF-BNNS/epoxy reaches up to 0.87 W m−1 K−1 at only 1.43 vol. % BNNS, a value of 372.8% greater than that of pure epoxy (∼0.184 W m−1 K−1) and ∼17.1% higher than that of the BNNS/epoxy counterpart with even 30 wt. % (18.34 vol. %) randomly distributed BNNS.
+
+FIG. 3.
+VIEW LARGEDOWNLOAD SLIDE
+
+(a) Through-plane λ of the ANF-BNNS/epoxy and the BNNS/epoxy filled with randomly distributed BNNS. (b) Thermal-conduction pathways in the ANF-BNNS/epoxy composites. (c) Comparison of λ enhancement efficiency of the ANF-BNNS framework and other particles (Filler ratio and through-plane λ of references samples in Table S3 in the supplementary material).
+
+Enhancement efficiency (η) is introduced to highlight the superiority of ANF-BNNS in enhancing the λ of composite and eliminate the influence of BNNS loading (Table S2 in the supplementary material).
+𝜂
+=
+𝜆
+𝑐
+−
+𝜆
+𝑚
+𝑣
+𝜆
+𝑚
+×
+100
+%
+,
+(1)
+where λc and λm represent thermal conductivities of the composite and the epoxy, respectively. v is the volume content of BNNS. A statistical comparison of η between ANF-BNNS and other BNNS reinforced composites from previous reports is shown in Fig. 3(c) and Table S3 in the supplementary material. Clearly, the ANF-BNNS possesses a prominent advantage for the enhancement of through-plane λ at ultra-low filler loading, indicating its superiority in the development of high-performance TMMs. The well-designed thermally conductive framework is invoked as being responsible for the admirable λ of the ANF-BNNS/epoxy composite. In the ANF-BNNS skeleton structure, vertically oriented BNNSs promote to generate continuous expressways for heat transfer [Fig. 3(b)]. Additionally, the combination of 2D BNNSs with robust 1D ANF networks creates a very stable ANF-BNNS skeleton, which further strengthens the thermally conductive framework in the composites. More importantly, a strong interfacial interaction between ANF and BNNS is beneficial to suppress the interfacial thermal resistance and facilitate the phonon propagation through the ANF-BNNS skeleton.23,24 To investigate the impact of ANF on the through-plane λ of ANF-BNNS/epoxy composite dielectrics, both the through-plane λ and the η of aligned-ANF/epoxy composite dielectrics with the same ANF contents as ANF-BNNS/epoxy in Table S1 in the supplementary material were measured. As shown in Fig. S8 of the supplementary material, with the increase in the ANF content, an increase in through-plane λ is observed for aligned-ANF/epoxy composite dielectrics. This can be attributed to the relatively high thermal conductivity (compared to the epoxy matrix) of ANFs. However, it can be noted that, at the same ANF loading, the η of aligned-ANF/epoxy is much lower than that of the ANF-BNNS/epoxy. The great difference in η for ANF-BNNS/epoxy and aligned-ANF/epoxy provided compelling evidence that the enhancement of the through-plane λ of ANF-BNNS/epoxy composite dielectrics mainly attributed to the well-aligned thermally conductive BNNSs. In the ANF-BNNS hybrid framework, ANFs with prominent mechanical properties are primarily utilized to support and align BNNSs. Therefore, although high-crystalline ANFs can provide network channels for effective phonon transmission within the epoxy, solely using highly oriented ANF alone cannot significantly enhance the through-plane λ of the epoxy.
+
+The effective medium theory (EMT) model is used to gain insight into the thermal transport in the ANF-BNNS/epoxy and BNNS/epoxy composites (supplementary material). Compared to the BNNS/epoxy, a reduction in interfacial thermal resistance at two orders of magnitude is observed for the ANF-BNNS/epoxy composite (Fig. S9 in the supplementary material).
+
+For a better and intuitional understanding of thermal transport within the composite, a constant (A) deriving from the Lewis–Nielsen model is introduced to describe the effect of the ANF-BNNS orientation.25 The general relationship between the λ of the composite and the filler volumetric fraction is
+𝜆
+𝜆
+𝑚
+=
+(
+1
++
+𝐴
+𝐵
+𝑓
+)
+/
+(
+1
+−
+𝐵
+𝜓
+𝑓
+)
+,
+(2)
+𝐵
+=
+𝜆
+𝑓
+𝜆
+𝑚
+−
+1
+𝜆
+𝑓
+𝜆
+𝑚
++
+𝐴
+,
+(3)
+where λm and λf represent the thermal conductivity of the epoxy matrix and BNNS, respectively. The parameter ψ is related to the maximum packing fraction of fillers (φm) and is defined as
+𝜓
+=
+1
++
+(
+1
+−
+𝜑
+𝑚
+)
+(
+𝜑
+𝑚
+2
+)
+𝑓
+.
+(4)
+
+In the ANF-BNNS, the BNNS was highly oriented in the ANF framework and integrated a robust 3D network structure. As a result, the ANF-BNNS can be regarded as an ensemble while evaluating the impact of its orientation. Since ANF-BNNS exhibits uniaxial random orientation within the composites, φm is assumed to be 0.82.26 As presented in Fig. 3(a), the A obtained from the Lewis–Nielsen model is approximately 500 for the ANF-BNNS/epoxy, a value significantly higher than that of a randomly distributed BNNS composite (∼14). Those results validate that the construction of an ANF-BNNS 3D skeleton can effectively inhibit phonon scattering and contribute to a more efficient thermal transfer.
+
+We further simulated the transient-state internal temperature distribution of ANF-BNNS/epoxy, BNNS/epoxy, and epoxy by finite element computations to investigate their heat transfer efficiencies (Fig. S10 in the supplementary material). The temperatures of the bottom and top surfaces are set at 398 and 298 K, respectively. The 3D results for the thermal field distribution of the composites are presented in Fig. 4(a). Compared with pure epoxy and randomly distributed BNNS composite, the ANF-BNNS/epoxy exhibits a faster movement of the isothermal surface and a significant improvement of the heat flux (Fig. S11 in the supplementary material). Moreover, at the same position, the skeleton temperature was considerably higher than that of the surrounding epoxy matrix. Since the thermal-conduction mechanism in epoxy composite dielectrics is phonon-dominated due to their electrically insulating nature, we can conclude that the construction of phonon transport pathways plays a significant role in enhancing the λ of the composite.8 The heat transfer ability of the composite dielectric was also analyzed by monitoring their surface temperature variation with time during the heating processes using an infrared thermal imager. The surface infrared thermal images and the corresponding surface temperature-time profiles of composites with time during the heat process are shown in Figs. 4(b) and 4(c). Note that the ANF-BNNS/epoxy displays the fastest increase in surface temperature and the highest surface temperature among all samples, providing additional support for its superior efficiency in heat transfer.
+
+FIG. 4.
+VIEW LARGEDOWNLOAD SLIDE
+
+(a) Finite element heat transfer analysis of pure epoxy BNNS/epoxy and ANF-BNNS/epoxy composites. (b) Infrared thermal images of different composites during heating from 293 K to 363 K. From left to right are the ANF-BNNS/epoxy, BNNSs/epoxy, and epoxy, respectively. (c) Surface temperature–time profiles of the ANF-BNNS/epoxy, BNNSs/epoxy, and epoxy during the heating process.
+
+Variations in dielectric constants and dielectric losses of the ANF-BNNS/epoxy composites are shown in Fig. 5. With the introduction of the ANF-BNNS framework, the dielectric constant of the composites decreases obviously from 5.1 to 4.0 (at 1 Hz), attributing to the relatively low dielectric constants of BNNS and ANF. In addition, the ANF-BNNS/epoxy composite exhibits a low dielectric loss (<0.01). Furthermore, the ANF-BNNS/epoxy possesses a higher glass-transition temperature compared to the epoxy (Fig. S12 in the supplementary material). We believe that the combination of ultrahigh through-plane λ, low dielectric constant, low dielectric loss, and high thermal stability enable the ANF-BNNS/epoxy composite an ideal material for thermal management applications.
+
+FIG. 5.
+VIEW LARGEDOWNLOAD SLIDE
+
+Dielectric constants and dielectric loss of the ANF-BNNS/epoxy and the epoxy composite as a function of frequency vary from 1 to 105 Hz.
+
+IV. CONCLUSIONS
+
+Overall, different from the low enhancement efficiency of the conventional blending methods, in this work, at only 1.43 vol. % BNNS loading, the ANF-BNNS/epoxy dielectric can achieve a high through-plane λ of 0.87 Wm−1K−1, together with a low dielectric constant and low dielectric loss. Our research paves the way for fabricating high-performance TMMs with desired through-plane λ by designing efficient 3D phonon transport frameworks.
+
+SUPPLEMENTARY MATERIAL
+
+See the supplementary material for details of the experimental section and finite element simulation; supporting images of the TEM and SEM images of ANFs, BNNS, and ANF-BNNS aerogel; related data of the through-plane λ of reference composites for comparison, and DMA curves of epoxy and ANF-BNNS/epoxy.
+
+ACKNOWLEDGMENTS
+
+We appreciate the financial support from the National Natural Science Foundation of China (Nos. 52107020 and 52377028), the Key R&D project of Sichuan Province (No. 2023YFG0236), the State Key Laboratory of Electrical Insulation and Power Equipment (No. EIPE23210), and the Postdoctoral Science Foundation of China (No. 2018M643475).
+
+AUTHOR DECLARATIONS
+Conflict of Interest
+
+The authors have no conflicts to disclose.
+
+Author Contributions
+
+Jun-Wen Ren: Conceptualization (equal); Data curation (equal); Formal analysis (equal); Investigation (equal); Methodology (equal); Validation (equal); Visualization (equal); Writing – original draft (equal). Rui-Chi Zeng: Investigation (equal); Resources (equal); Software (equal). Jun Yang: Investigation (equal); Software (equal). Zi Wang: Data curation (equal); Methodology (equal). Zhong Wang: Funding acquisition (equal); Supervision (equal); Writing – review & editing (equal). Li-Hua Zhao: Investigation (equal). Guo-Long Wang: Funding acquisition (equal); Writing – review & editing (equal). Shen-Li Jia: Funding acquisition (equal); Resources (equal); Supervision (equal); Writing – review & editing (equal).
+
+DATA AVAILABILITY
+
+The data that support the findings of this study are available from the corresponding authors upon reasonable request.
+
+Supplementary Material
+
+132
+views
+
+0
+shares
+
+77
+downloads
+
+Skip to figshare navigation
+Significantly
+ 
+enhancing
+ 
+the
+ 
+through-plane
+ 
+thermal
+ 
+conductivity
+ 
+of
+ 
+epoxy
+ 
+dielectrics
+ 
+by
+
+
+constructing aramid nanofiber/boron nitride three-dimensional interconnected framework
+
+
+Jun-Wen Ren
+1
+, Rui-Chi Zeng
+1
+, Jun Yang
+1
+, Zi Wang
+1
+, Zhong Wang
+1,
+*, Li-Hua Zhao
+1
+, Guo-Long
+
+
+Wang
+2,
+*, Shen-Li Jia
+1,
+*
+
+
+1
+College of Electrical Engineering, Sichuan University, Chengdu 610065, P.R. China
+
+
+2
+State Key Laboratory for Mechanical Behavior of Materials, School of Materials Science and
+
+
+Engineering, Xi’an Jiaotong University, Xi’an 710049, China
+
+
+* Corresponding author.
+
+
+E-mail: zhongwang@scu.edu.cn; guolongwang@xjtu.edu.cn; jiashenli@scu.edu.cn
+
+
+1
+S1. Methods
+
+
+S1.1 Preparation of BNNS by liquid-phase exfoliation of h-BN
+
+
+BNNS was prepared
+ 
+via
+ 
+a cation intercalation-assisted liquid-phase exfoliation as previously
+
+
+reported work of Zhao et al.
+1
+ 
+Specifically, 4 g h-BN and 4 g lithium citrate were added into the
+
+
+mixture solvent of 100 mL isopropanol and 300 mL deionized water. The lithium citrate was
+
+
+completely dissolved by continuous stirring. Then, the mixture suspension was sonicated under bath
+
+
+sonication (40 kHz, 200 W, Ningbo Scientz Biotechnology Co., Ltd., China) for 6 h. After that, the
+
+
+obtained suspension was loaded into a tetrafluoroethylene-lined reactor and hydrothermally treated
+
+
+at 180 °C for 12 h.
+
+
+After standing, the BNNSs were obtained by centrifugation at 1000 rpm for 20 min to remove
+
+
+the unexfoliated h-BN, washing the dispersion with deionized water for more than 3 times to
+
+
+remove the isopropanol and lithium citrate, then hydrothermal again at 180°C for 6h, separation by
+
+
+filtration and vacuum drying at 60°C for 24h.
+
+
+S1.2 Preparation of ANFs using deprotonation method
+
+
+The ANFs were prepared by the deprotonation method with reference to a previous report by
+
+
+Ren et al.
+5
+ 
+The dried Kevlar fibers, dimethyl sulfoxide, potassium hydroxide, and deionized water
+
+
+were packed into a brown lightproof silk-mouth bottle in a certain ratio and stirred magnetically for
+
+
+more than 14 days to obtain a red clarified liquid, which is the nano-aramid fiber dispersion.
+
+
+S1.3 Preparation of ANF-BNNS aerogel and ANF-BNNS/Epoxy composites
+
+
+A certain of BNNSs was added to DMSO and sonicated for 3h to obtain BNNSs/DMSO
+
+
+dispersion, and then a certain amount of ANFs dispersion was added and mixed into BNNSs/DMSO
+
+
+dispersion. The ANFs/BNNSs/DMSO dispersion was obtained by adding 4% vol of deionized water
+
+
+2
+Share
+Download
+figshare
+REFERENCES
+1.P. V. Acharya, M. Lokanathan, A. Ouroua, R. Hebner, S. Strank, and V. Bahadur, in 2021 20th IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems (iTherm) (IEEE, 2021), pp. 162–171.
+2.M. Lokanathan, P. V. Acharya, A. Ouroua, S. M. Strank, R. E. Hebner, and V. Bahadur, “Review of nanocomposite dielectric materials with high thermal conductivity,” Proc. IEEE 109(8), 1364–1397 (2021). https://doi.org/10.1109/JPROC.2021.3085836
+Google ScholarCrossref  
+3.A. L. Moore and L. Shi, “Emerging challenges and materials for thermal management of electronics,” Mater. Today 17(4), 163–174 (2014). https://doi.org/10.1016/j.mattod.2014.04.003
+Google ScholarCrossref  
+4.S. E. Kim, F. Mujid, A. Rai, F. Eriksson, J. Suh, P. Poddar, A. Ray, C. Park, E. Fransson, Y. Zhong, D. A. Muller, P. Erhart, D. G. Cahill, and J. Park, “Extremely anisotropic van der Waals thermal conductors,” Nature 597(7878), 660–665 (2021). https://doi.org/10.1038/s41586-021-03867-8
+Google ScholarCrossref PubMed 
+5.X. Chen, K. Wu, Y. Zhang, D. Liu, R. Li, and Q. Fu, “Tropocollagen-inspired hierarchical spiral structure of organic fibers in epoxy bulk for 3D high thermal conductivity,” Adv. Mater. 34(40), 2206088 (2022). https://doi.org/10.1002/adma.202206088
+Google ScholarCrossref  
+6.Y. Wen, C. Chen, Y. Ye, Z. Xue, H. Liu, X. Zhou, Y. Zhang, D. Li, X. Xie, and Y.-W. Mai, “Advances on thermally conductive epoxy-based composites as electronic packaging underfill materials—A review,” Adv. Mater. 34(52), 2201023 (2022). https://doi.org/10.1002/adma.202201023
+Google ScholarCrossref  
+7.J. Zhang, L. Dang, F. Zhang, K. Zhang, Q. Kong, and J. Gu, “Effect of the structure of epoxy monomers and curing agents: Toward making intrinsically highly thermally conductive and low-dielectric epoxy resins,” JACS Au 3(12), 3424–3435 (2023). https://doi.org/10.1021/jacsau.3c00582
+Google ScholarCrossref PubMed 
+8.W. Zhou, Y. Wang, F. Kong, W. Peng, Y. Wang, M. Yuan, X. Han, X. Liu, and B. Li, “Advances in liquid crystal epoxy: Molecular structures, thermal conductivity, and promising applications in thermal management,” Energy Environ. Mater. 7, e12698 (2023).https://doi.org/10.1002/eem2.12698
+Google ScholarCrossref  
+9.X. Fan, Z. Liu, S. Wang, and J. Gu, “Low dielectric constant and highly intrinsic thermal conductivity fluorine-containing epoxy resins with ordered liquid crystal structures,” SusMat 3(6), 877–893 (2023). https://doi.org/10.1002/sus2.172
+Google ScholarCrossref  
+10.J. Dang, J. Zhang, M. Li, L. Dang, and J. Gu, “Enhancing intrinsic thermal conductivities of epoxy resins by introducing biphenyl mesogen-containing liquid crystalline co-curing agents,” Polym. Chem. 13(42), 6046–6053 (2022). https://doi.org/10.1039/D2PY01157C
+Google ScholarCrossref  
+11.Z. Wang, T. Zhang, M. Hao, M. Li, Y. Zhou, W. Sun, J. Wang, and Y. Cheng, “Novel multifunctional melamine borate-boron nitride nanosheets/epoxy composites with enhanced thermal conductivity, flame retardancy and satisfying electrical insulation,” Compos. Part A: Appl. Sci. Manuf. 169, 107495 (2023). https://doi.org/10.1016/j.compositesa.2023.107495
+Google ScholarCrossref  
+12.L. An, Y. Yu, Q. Cai, S. Mateti, L. H. Li, and Y. I. Chen, “Hexagonal boron nitride nanosheets: Preparation, heat transport property and application as thermally conductive fillers,” Prog. Mater. Sci. 138, 101154 (2023). https://doi.org/10.1016/j.pmatsci.2023.101154
+Google ScholarCrossref  
+13.W. Jang, S. Lee, N. R. Kim, H. Koo, J. Yu, and C.-M. Yang, “Eco-friendly and scalable strategy to design electrically insulating boron nitride/polymer composites with high through-plane thermal conductivity,” Compos. Part B: Eng. 248, 110355 (2023). https://doi.org/10.1016/j.compositesb.2022.110355
+Google ScholarCrossref  
+14.J. Han, G. Du, W. Gao, and H. Bai, “An anisotropically high thermal conductive boron nitride/epoxy composite based on nacre-mimetic 3D network,” Adv. Funct. Mater. 29(13), 1900412 (2019). https://doi.org/10.1002/adfm.201900412
+Google ScholarCrossref  
+15.N. Zhao, J. Li, W. Wang, W. Gao, and H. Bai, “Isotropically ultrahigh thermal conductive polymer composites by assembling anisotropic boron nitride nanosheets into a biaxially oriented network,” ACS Nano 16(11), 18959–18967 (2022). https://doi.org/10.1021/acsnano.2c07862
+Google ScholarCrossref PubMed 
+16.Y. Lin, T. V. Williams, and J. W. Connell, “Soluble, exfoliated hexagonal boron nitride nanosheets,” J. Phys. Chem. Lett. 1(1), 277–283 (2010). https://doi.org/10.1021/jz9002108
+Google ScholarCrossref  
+17.Z. Miao, C. Xie, Z. Wu, Y. Zhao, Z. Zhou, S. Wu, H. Su, L. Li, X. Tuo, and R. Huang, “Self-stacked 3D anisotropic BNNS network guided by para-aramid nanofibers for highly thermal conductive dielectric nanocomposites,” ACS Appl. Mater. Interfaces 15(20), 24880–24891 (2023). https://doi.org/10.1021/acsami.3c02605
+Google ScholarCrossref PubMed 
+18.B. Yang, L. Wang, J. Zhao, R. Pang, B. Yuan, J. Tan, S. Song, J. Nie, and M. Zhang, “A robust, flexible, hydrophobic, and multifunctional pressure sensor based on an MXene/aramid nanofiber (ANF) aerogel film,” ACS Appl. Mater. Interfaces 14(41), 47075–47088 (2022). https://doi.org/10.1021/acsami.2c14094
+Google ScholarCrossref PubMed 
+19.M. Yang, K. Cao, L. Sui, Y. Qi, J. Zhu, A. Waas, E. M. Arruda, J. Kieffer, M. D. Thouless, and N. A. Kotov, “Dispersions of aramid nanofibers: A new nanoscale building block,” ACS Nano 5(9), 6945–6954 (2011). https://doi.org/10.1021/nn2014003
+Google ScholarCrossref PubMed 
+20.N. Wang, G. Yang, H. Wang, C. Yan, R. Sun, and C.-P. Wong, “A universal method for large-yield and high-concentration exfoliation of two-dimensional hexagonal boron nitride nanosheets,” Mater. Today 27, 33–42 (2019). https://doi.org/10.1016/j.mattod.2018.10.039
+Google ScholarCrossref  
+21.X. Zeng, Y. Yao, Z. Gong, F. Wang, R. Sun, J. Xu, and C.-P. Wong, “Ice-templated assembly strategy to construct 3D boron nitride nanosheet networks in polymer composites for thermal conductivity improvement,” Small 11(46), 6205–6213 (2015). https://doi.org/10.1002/smll.201502173
+Google ScholarCrossref PubMed 
+22.B.-H. Xie, X. Huang, and G.-J. Zhang, “High thermal conductive polyvinyl alcohol composites with hexagonal boron nitride microplatelets as fillers,” Compos. Sci. Technol. 85, 98–103 (2013). https://doi.org/10.1016/j.compscitech.2013.06.010
+Google ScholarCrossref  
+23.K. Wu, J. Wang, D. Liu, C. Lei, D. Liu, W. Lei, and Q. Fu, “Highly thermoconductive, thermostable, and super-flexible film by engineering 1D rigid rod-like aramid nanofiber/2D boron nitride nanosheets,” Adv. Mater. 32(8), 1906939 (2020). https://doi.org/10.1002/adma.201906939
+Google ScholarCrossref  
+24.J. Ren, G. Jiang, Z. Wang, Q. Qing, F. Teng, Z. Jia, G. Wu, and S. Jia, “Highly thermoconductive and mechanically robust boron nitride/aramid composite dielectric films from non-covalent interfacial engineering,” Adv. Compos. Hybrid Mater. 7(1), 5 (2024). https://doi.org/10.1007/s42114-023-00816-z
+Google ScholarCrossref  
+25.C. Vales-Pinzon, A. Vega-Flick, N. W. Pech-May, J. J. Alvarado-Gil, R. A. Medina-Esquivel, M. A. Zambrano-Arjona, and J. A. Mendez-Gamboa, “Increasing the thermal conductivity of silicone based fluids using carbon nanofibers,” J. Appl. Phys. 120(20), 205109 (2016). https://doi.org/10.1063/1.4969043
+Google ScholarCrossref  
+26.L. E. Nielsen, “The thermal and electrical conductivity of two-phase systems,” Ind. Eng. Chem. Fund. 13(1), 17–20 (1974). https://doi.org/10.1021/i160049a004
+Google ScholarCrossref  
+© 2024 Author(s). All article content, except where otherwise noted, is licensed under a Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+View Metrics
+Citing Articles Via
+Web Of Science (36)
+Google Scholar
+CrossRef (37)
+Submit your article
+
+ 
+
+Sign up for alerts
+New and popular articles
+Most Read
+Most Cited
+Fine-tuning universal machine-learned interatomic potentials: A Tutorial on methods and applications
+Xiaoqing Liu, Kehan Zeng, et al.
+Critical review on the analysis of electrochemical impedance spectroscopy data
+Sutanu Das, Ankita Banerjee, et al.
+Tutorial: Simulating modern magnetic material systems in mumax3
+Jonas J. Joos, Pedram Bassirian, et al.
+Related Content
+Enhanced thermal conductivity of epoxy resin by incorporating three-dimensional boron nitride thermally conductive network
+J. Chem. Phys. (April 2024)
+Research on PVDF/BNNSs/MXene multilayer films with high energy density and thermal conductivity for dielectric capacitors
+J. Chem. Phys. (February 2025)
+High strength fiber reinforced composites with surface fibrilized aramid fibers
+J. Appl. Phys. (July 2018)
+Significantly enhanced thermal conductivity of the aramid nanofiber composite film with GO and Ag nanoflakes for thermal management application
+J. Appl. Phys. (June 2023)
+The effect of nanoscale architecture on ionic diffusion in rGo/aramid nanofiber structural electrodes
+J. Appl. Phys. (May 2019)
+Online ISSN 1089-7550 Print ISSN 0021-8979
+Resources
+For Researchers
+For Librarians
+For Advertisers
+Our Publishing Partners 
+Explore
+Journals
+Physics Today
+AIP Conference Proceedings
+Books
+Special Topics
+Publishers
+pubs.aip.org
+About
+User Guide
+Contact Us
+Register
+Help
+Privacy Policy
+Terms of Use
+Connect with AIP Publishing
+Facebook
+LinkedIn
+Bluesky
+YouTube
+ 
+ 
+© Copyright 2026 AIP Publishing LLC

@@ -1,0 +1,470 @@
+{
+  "10.1002/pc.29136": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_landing_only",
+      "detail": {
+        "landing": "https://hdl.handle.net/20.500.12868/5476",
+        "host": "repository"
+      }
+    },
+    "status": "failed2(s2=s2oa_dl_fail:ConnectionError: HTTPSConnectionPool(host='acikerisim.alanya.edu.tr', port=443): Max retries exceeded with url: /hand; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_dl_fail:ConnectionError: HTTPSConnectionPool(host='acikerisim.alanya.edu.tr', port=443): Max retries exceeded with url: /hand",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1007/s10854-024-13657-3": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_pdf_download_fail:b'<!DO'",
+      "detail": null
+    },
+    "status": "failed2(s2=s2oa_not_pdf:b'<!DOCTYPE '; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_not_pdf:b'<!DOCTYPE '",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1088/1361-6463/ae6b9b": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_landing_only",
+      "detail": {
+        "landing": "https://doi.org/10.1088/1361-6463/ae6b9b",
+        "host": "publisher"
+      }
+    },
+    "status": "failed2(s2=s2oa_not_pdf:b'<head><tit'; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_not_pdf:b'<head><tit'",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1002/slct.202507155": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1063/5.0205196": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=1)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1002/app.55612": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1063/5.0211580": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_pdf_download_fail:HTTP 403",
+      "detail": null
+    },
+    "status": "failed2(s2=s2oa_dl_fail:HTTP 403; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_dl_fail:HTTP 403",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1039/d4dt00979g": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=1)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1016/j.compscitech.2020.108304": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1016/j.apsusc.2020.147091": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1177/0021998320942575": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1002/adfm.201900412": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1016/j.compscitech.2020.108322": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1016/j.compositesb.2020.107855": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1177/09540083211046456": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1177/09673911221110143": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_landing_only",
+      "detail": {
+        "landing": "https://doi.org/10.1177/09673911221110143",
+        "host": "publisher"
+      }
+    },
+    "status": "failed2(s2=s2oa_dl_fail:HTTP 403; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_dl_fail:HTTP 403",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1016/j.cej.2018.04.196": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_landing_only",
+      "detail": {
+        "landing": "https://doi.org/10.1016/j.cej.2018.04.196",
+        "host": "publisher"
+      }
+    },
+    "status": "failed2(s2=s2oa_not_pdf:b'\\n\\n\\n\\n\\n\\n\\n\\n\\n<'; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_not_pdf:b'\\n\\n\\n\\n\\n\\n\\n\\n\\n<'",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1002/pc.28316": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_pdf_download_fail:HTTP 403",
+      "detail": null
+    },
+    "status": "failed2(s2=s2oa_dl_fail:HTTP 403; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_dl_fail:HTTP 403",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1002/pc.27985": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1016/j.jcomc.2020.100087": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_pdf_download_fail:HTTP 403",
+      "detail": null
+    },
+    "status": "failed2(s2=s2oa_dl_fail:HTTP 403; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2oa_dl_fail:HTTP 403",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1063/1.5121349": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1080/15440478.2021.1966568": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1002/smll.75841": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=1)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_no_oa",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  },
+  "10.1002/pc.70149": {
+    "epmc": {
+      "status": "epmc_no_pmcid(hits=0)",
+      "detail": null
+    },
+    "unpaywall": {
+      "status": "unpaywall_pdf_download_fail:HTTP 403",
+      "detail": null
+    },
+    "status": "failed2(s2=s2_no_oa; openaire=openaire_no_pdf(urls=0))",
+    "s2oa": {
+      "status": "s2_no_oa",
+      "detail": null
+    },
+    "openaire": {
+      "status": "openaire_no_pdf(urls=0)",
+      "detail": null
+    }
+  }
+}
