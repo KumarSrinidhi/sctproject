@@ -1,0 +1,491 @@
+{
+  "phase": "4 (browser full texts + figure digitization)",
+  "date": "2026-10-18",
+  "baseline": {
+    "rows": 232,
+    "papers": 93
+  },
+  "upgrades": [
+    {
+      "row_id": "fd88f33b-209",
+      "doi": "10.1063/5.0211580",
+      "confidence": "Medium -> High",
+      "fields_changed": [
+        "filler_alignment",
+        "k_matrix_W_mK",
+        "matrix_polymer",
+        "measurement_method",
+        "notes",
+        "processing_method",
+        "source_location"
+      ],
+      "before": {
+        "matrix_polymer": "Epoxy dielectric",
+        "filler_alignment": "",
+        "processing_method": "",
+        "k_matrix_W_mK": "",
+        "measurement_method": "Not stated in abstract",
+        "source_location": "Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): \"The resultant ANF-BNNS/epoxy achieved a high through-plane of 0.87 W·m−1·K−1 at only 1.43 vol. % BNNS\"",
+        "notes": "Abstract-only; loading refers to BNNS fraction.",
+        "confidence": "Medium"
+      }
+    },
+    {
+      "row_id": "b1ee3c22-222",
+      "doi": "10.1177/09673911221110143",
+      "confidence": "Medium -> High",
+      "fields_changed": [
+        "curing_agent",
+        "filler_aspect_ratio",
+        "filler_material_original",
+        "filler_mean_size_um",
+        "k_matrix_W_mK",
+        "matrix_polymer",
+        "measurement_method",
+        "notes",
+        "processing_method",
+        "size_distribution",
+        "source_location"
+      ],
+      "before": {
+        "matrix_polymer": "Epoxy resin",
+        "curing_agent": "",
+        "filler_material_original": "BNNSs only (baseline in same paper; silver-linked hybrid excluded as metal-containing)",
+        "filler_mean_size_um": "",
+        "filler_aspect_ratio": "",
+        "size_distribution": "",
+        "processing_method": "",
+        "k_matrix_W_mK": "",
+        "measurement_method": "Not stated in abstract",
+        "source_location": "Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): \"The thermal conductivity increased from 1.26 W/mK for the composites only with BNNSs to 2.35 W/mK for the composites with BNNS/[Ag (2E4MI)2Ac] hybrids at 20 vol% BNNSs content.\"",
+        "notes": "Abstract-only. Silver-bridged hybrid value (2.35 W/mK) NOT extracted: silver is a metal, outside ceramic-filler scope.",
+        "confidence": "Medium"
+      }
+    },
+    {
+      "row_id": "7dee9c50-202",
+      "doi": "10.1007/s10854-024-13657-3",
+      "confidence": "Medium -> High",
+      "fields_changed": [
+        "curing_agent",
+        "filler_mean_size_um",
+        "matrix_polymer",
+        "measurement_method",
+        "notes",
+        "processing_method",
+        "source_location"
+      ],
+      "before": {
+        "matrix_polymer": "Bisphenol A-type epoxy (Ep)",
+        "curing_agent": "",
+        "filler_mean_size_um": "",
+        "processing_method": "",
+        "measurement_method": "Not stated in abstract",
+        "source_location": "Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): \"The heat conductivity of final BN/Ep composite achieved 0.817 W/(m·K) containing 30 wt% BN\"",
+        "notes": "Abstract-only (Springer PDF behind bot challenge).",
+        "confidence": "Medium"
+      }
+    },
+    {
+      "row_id": "7dee9c50-203",
+      "doi": "10.1007/s10854-024-13657-3",
+      "confidence": "Medium -> High",
+      "fields_changed": [
+        "curing_agent",
+        "filler_mean_size_um",
+        "matrix_polymer",
+        "measurement_method",
+        "notes",
+        "processing_method",
+        "source_location"
+      ],
+      "before": {
+        "matrix_polymer": "Bisphenol A-type epoxy (Ep)",
+        "curing_agent": "",
+        "filler_mean_size_um": "",
+        "processing_method": "",
+        "measurement_method": "Not stated in abstract",
+        "source_location": "Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): \"the heat conductivity of the composite (mBN/Ep) achieved 0.881 W/(m·K) containing 30 wt% BN-PCPA-Si69... compared to pure epoxy resin (0.200 W/(m·K))... increased by 364%\"",
+        "notes": "Abstract-only. Cross-check 0.881/0.200-1=340% (abstract states 364%; value 0.881 used as printed).",
+        "confidence": "Medium"
+      }
+    }
+  ],
+  "metadata_corrections": [
+    {
+      "row_id": "fd88f33b-209",
+      "doi": "10.1063/5.0211580",
+      "field": "year",
+      "before": 2023,
+      "after": 2024,
+      "evidence": "AIP article page: J. Appl. Phys. 136, 045101 (2024), July 22 2024"
+    },
+    {
+      "row_id": "fd88f33b-209",
+      "doi": "10.1063/5.0211580",
+      "field": "paper_title",
+      "before": "Significantly enhancing the through-plane thermal conductivity of epoxy dielectrics by constructing aramid nanofiber/boron nitride nanosheet framework",
+      "after": "Significantly enhancing the through-plane thermal conductivity of epoxy dielectrics by constructing aramid nanofiber/boron nitride three-dimensional interconnected framework",
+      "evidence": "AIP article page: J. Appl. Phys. 136, 045101 (2024), July 22 2024"
+    },
+    {
+      "row_id": "b1ee3c22-222",
+      "doi": "10.1177/09673911221110143",
+      "field": "paper_title",
+      "before": "Improved thermal conductivity of epoxy composites via linked boron nitride nanosheets with in-situ generated silver",
+      "after": "Improved thermal conductivity of epoxy composites via linked boron nitride nanosheets with in-situ generated silver nanoparticles",
+      "evidence": "SAGE article page title"
+    },
+    {
+      "row_id": "7dee9c50-202",
+      "doi": "10.1007/s10854-024-13657-3",
+      "field": "paper_title",
+      "before": "Functionalization of boron nitride with poly(catechol-polyamine) and bis(gamma-triethoxysilylpropyl)tetrasulfide for epoxy composites",
+      "after": "Functionalization of boron nitride with poly(catechol-polyamine) and bis(γ-triethoxysilylpropyl)tetrasulfide for preparing epoxy nanocomposites with enhanced thermal conductivity",
+      "evidence": "Springer article page title; J Mater Sci: Mater Electron 35, 1906 (2024)"
+    },
+    {
+      "row_id": "7dee9c50-203",
+      "doi": "10.1007/s10854-024-13657-3",
+      "field": "paper_title",
+      "before": "Functionalization of boron nitride with poly(catechol-polyamine) and bis(gamma-triethoxysilylpropyl)tetrasulfide for epoxy composites",
+      "after": "Functionalization of boron nitride with poly(catechol-polyamine) and bis(γ-triethoxysilylpropyl)tetrasulfide for preparing epoxy nanocomposites with enhanced thermal conductivity",
+      "evidence": "Springer article page title; J Mater Sci: Mater Electron 35, 1906 (2024)"
+    },
+    {
+      "row_id": "88ca330d-208",
+      "doi": "10.1002/app.55612",
+      "field": "year",
+      "before": 2020,
+      "after": 2024,
+      "evidence": "Wiley page: J. Appl. Polym. Sci. 141(27) e55612, first published 24 April 2024"
+    },
+    {
+      "row_id": "88ca330d-208",
+      "doi": "10.1002/app.55612",
+      "field": "paper_title",
+      "before": "Sugar-template method to construct a boron nitride filler network to enhance the thermal conductivity of epoxy",
+      "after": "Sugar-template method to construct a boron nitride filler network to enhance the thermal conductivity of epoxy composites",
+      "evidence": "Wiley page: J. Appl. Polym. Sci. 141(27) e55612, first published 24 April 2024"
+    },
+    {
+      "row_id": "bb69b79a-207",
+      "doi": "10.1063/5.0205196",
+      "field": "year",
+      "before": 2023,
+      "after": 2024,
+      "evidence": "AIP page: J. Chem. Phys. 160, 154903 (2024)"
+    },
+    {
+      "row_id": "538ce817-204",
+      "doi": "10.1088/1361-6463/ae6b9b",
+      "field": "year",
+      "before": 2025,
+      "after": 2026,
+      "evidence": "IOP page: J. Phys. D 59 205502 (2026), published 22 May 2026"
+    },
+    {
+      "row_id": "538ce817-204",
+      "doi": "10.1088/1361-6463/ae6b9b",
+      "field": "paper_title",
+      "before": "Interface engineering of AlN via phosphoric acid modification for enhanced thermal conduction, electrical insulation and mechanical properties of epoxy composites",
+      "after": "Interface engineering of AlN via phosphoric acid modification for enhanced thermal conduction, electrical insulation, and mechanical properties of epoxy composites",
+      "evidence": "IOP page: J. Phys. D 59 205502 (2026), published 22 May 2026"
+    },
+    {
+      "row_id": "8629061f-205",
+      "doi": "10.1002/slct.202507155",
+      "field": "year",
+      "before": 2025,
+      "after": 2026,
+      "evidence": "Wiley page: ChemistrySelect 11(12) e07155, first published 19 March 2026"
+    },
+    {
+      "row_id": "8629061f-206",
+      "doi": "10.1002/slct.202507155",
+      "field": "year",
+      "before": 2025,
+      "after": 2026,
+      "evidence": "Wiley page: ChemistrySelect 11(12) e07155, first published 19 March 2026"
+    }
+  ],
+  "abstract_crosschecks": [
+    {
+      "row_id": "c75e201d-201",
+      "doi": "10.1002/pc.29136",
+      "k": 0.47,
+      "result": "value confirmed verbatim",
+      "detail": "Wiley abstract page; full text paywalled. In-plane value (\"to 2.1 W/mK\") has no stated loading -> not extracted."
+    },
+    {
+      "row_id": "8629061f-205",
+      "doi": "10.1002/slct.202507155",
+      "k": 0.827,
+      "result": "value confirmed verbatim",
+      "detail": "Wiley abstract page; full text paywalled."
+    },
+    {
+      "row_id": "8629061f-206",
+      "doi": "10.1002/slct.202507155",
+      "k": 0.796,
+      "result": "value confirmed verbatim",
+      "detail": "Wiley abstract page; full text paywalled."
+    },
+    {
+      "row_id": "bb69b79a-207",
+      "doi": "10.1063/5.0205196",
+      "k": 0.521,
+      "result": "value confirmed verbatim",
+      "detail": "AIP abstract page (Cloudflare cleared in browser); full text paywalled."
+    },
+    {
+      "row_id": "538ce817-204",
+      "doi": "10.1088/1361-6463/ae6b9b",
+      "k": 0.41,
+      "result": "value confirmed verbatim",
+      "detail": "IOP abstract page; full text paywalled."
+    },
+    {
+      "row_id": "88ca330d-208",
+      "doi": "10.1002/app.55612",
+      "k": 2.25,
+      "result": "value confirmed verbatim",
+      "detail": "Wiley abstract page; full text paywalled."
+    }
+  ],
+  "new_rows": [
+    {
+      "row_id": "c027d8f9-233",
+      "doi": "10.3390/polym11071156",
+      "loading": 12.9,
+      "k": 0.99,
+      "source_location": "Figure 11, ETLBN180 (purple diamonds), ETLBN180-30 at 12.9 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-234",
+      "doi": "10.3390/polym11071156",
+      "loading": 25.7,
+      "k": 1.98,
+      "source_location": "Figure 11, ETLBN180 (purple diamonds), ETLBN180-50 at 25.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-235",
+      "doi": "10.3390/polym11071156",
+      "loading": 34.2,
+      "k": 3.01,
+      "source_location": "Figure 11, ETLBN180 (purple diamonds), ETLBN180-60 at 34.2 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-236",
+      "doi": "10.3390/polym11071156",
+      "loading": 44.7,
+      "k": 4.21,
+      "source_location": "Figure 11, ETLBN180 (purple diamonds), ETLBN180-70 at 44.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-237",
+      "doi": "10.3390/polym11071156",
+      "loading": 12.9,
+      "k": 0.72,
+      "source_location": "Figure 11, ETLBN30 (orange triangles), ETLBN30-30 at 12.9 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-238",
+      "doi": "10.3390/polym11071156",
+      "loading": 25.7,
+      "k": 1.61,
+      "source_location": "Figure 11, ETLBN30 (orange triangles), ETLBN30-50 at 25.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-239",
+      "doi": "10.3390/polym11071156",
+      "loading": 34.2,
+      "k": 2.33,
+      "source_location": "Figure 11, ETLBN30 (orange triangles), ETLBN30-60 at 34.2 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-240",
+      "doi": "10.3390/polym11071156",
+      "loading": 44.7,
+      "k": 3.31,
+      "source_location": "Figure 11, ETLBN30 (orange triangles), ETLBN30-70 at 44.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-241",
+      "doi": "10.3390/polym11071156",
+      "loading": 12.9,
+      "k": 0.36,
+      "source_location": "Figure 11, ETLBN2 (blue circles), ETLBN2-30 at 12.9 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-242",
+      "doi": "10.3390/polym11071156",
+      "loading": 25.7,
+      "k": 0.86,
+      "source_location": "Figure 11, ETLBN2 (blue circles), ETLBN2-50 at 25.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-243",
+      "doi": "10.3390/polym11071156",
+      "loading": 34.2,
+      "k": 1.29,
+      "source_location": "Figure 11, ETLBN2 (blue circles), ETLBN2-60 at 34.2 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-244",
+      "doi": "10.3390/polym11071156",
+      "loading": 15.0,
+      "k": 0.5,
+      "source_location": "Figure 11, EJBN30 (grey squares) at x≈15.0 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-245",
+      "doi": "10.3390/polym11071156",
+      "loading": 29.1,
+      "k": 1.21,
+      "source_location": "Figure 11, EJBN30 (grey squares) at x≈29.1 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-246",
+      "doi": "10.3390/polym11071156",
+      "loading": 38.1,
+      "k": 1.86,
+      "source_location": "Figure 11, EJBN30 (grey squares) at x≈38.1 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "c027d8f9-247",
+      "doi": "10.3390/polym11071156",
+      "loading": 43.3,
+      "k": 2.37,
+      "source_location": "Figure 11, EJBN30 (grey squares) at x≈43.3 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)"
+    },
+    {
+      "row_id": "9db97377-248",
+      "doi": "10.3390/molecules21050670",
+      "loading": 10.0,
+      "k": 0.58,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 10 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-249",
+      "doi": "10.3390/molecules21050670",
+      "loading": 20.0,
+      "k": 0.97,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 20 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-250",
+      "doi": "10.3390/molecules21050670",
+      "loading": 30.0,
+      "k": 1.94,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 30 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-251",
+      "doi": "10.3390/molecules21050670",
+      "loading": 40.0,
+      "k": 2.98,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 40 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-252",
+      "doi": "10.3390/molecules21050670",
+      "loading": 50.0,
+      "k": 6.78,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 50 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-253",
+      "doi": "10.3390/molecules21050670",
+      "loading": 60.0,
+      "k": 7.44,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 60 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-254",
+      "doi": "10.3390/molecules21050670",
+      "loading": 70.0,
+      "k": 6.72,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 70 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-255",
+      "doi": "10.3390/molecules21050670",
+      "loading": 80.0,
+      "k": 6.63,
+      "source_location": "Figure 3, treated 10.6um (filled green squares) at 80 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-256",
+      "doi": "10.3390/molecules21050670",
+      "loading": 30.0,
+      "k": 1.8,
+      "source_location": "Figure 3, treated 3.6um (filled blue circles) at 30 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-257",
+      "doi": "10.3390/molecules21050670",
+      "loading": 50.0,
+      "k": 2.79,
+      "source_location": "Figure 3, treated 3.6um (filled blue circles) at 50 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-258",
+      "doi": "10.3390/molecules21050670",
+      "loading": 60.0,
+      "k": 2.73,
+      "source_location": "Figure 3, treated 3.6um (filled blue circles) at 60 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-259",
+      "doi": "10.3390/molecules21050670",
+      "loading": 70.0,
+      "k": 2.14,
+      "source_location": "Figure 3, treated 3.6um (filled blue circles) at 70 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    },
+    {
+      "row_id": "9db97377-260",
+      "doi": "10.3390/molecules21050670",
+      "loading": 80.0,
+      "k": 1.77,
+      "source_location": "Figure 3, treated 3.6um (filled blue circles) at 80 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)"
+    }
+  ],
+  "not_extracted": [
+    {
+      "doi": "10.1177/09673911221110143",
+      "value": "2.35 W/mK (BNNS/[Ag(2E4MI)2]Ac, 20 vol%)",
+      "reason": "metal (Ag) hybrid; out of ceramic-filler scope"
+    },
+    {
+      "doi": "10.1063/5.0211580",
+      "value": "BNNS/epoxy random, 18.34 vol%",
+      "reason": "only stated relative to another value; would require derivation"
+    },
+    {
+      "doi": "10.1002/pc.29136",
+      "value": "in-plane 2.1 W/mK",
+      "reason": "no loading stated in abstract; full text paywalled"
+    },
+    {
+      "doi": "10.3390/molecules21050670",
+      "value": "naked (untreated) series, open markers",
+      "reason": "hollow markers not reliably separable by colour mask from curves/error bars"
+    },
+    {
+      "doi": "10.3390/polym11071156",
+      "value": "x=0 neat ETL/EJ baselines",
+      "reason": "overlapping markers; series not separable"
+    }
+  ],
+  "superseded": [
+    {
+      "file": "work/phase4_figures_digitized.json",
+      "reason": "visual estimates; molecules21050670 3.6 um series listed points at 10/20 vol% that are absent from Fig. 3 and polym11071156 omitted the ETLBN2 series. Replaced by work/phase4_figures_digitized_v2.json."
+    }
+  ],
+  "after": {
+    "rows": 260,
+    "papers": 95
+  }
+}

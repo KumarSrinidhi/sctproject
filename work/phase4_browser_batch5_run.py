@@ -1,0 +1,13 @@
+import json, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from phase4_browser_save import save
+text = '''Enhanced thermal conductivity of epoxy resin by incorporating three-dimensional boron nitride thermally conductive network
+Xubin Wang, Changhai Zhang, Tiandong Zhang, Chao Tang, Qingguo Chi
+J. Chem. Phys. 160, 154903 (2024)
+DOI: 10.1063/5.0205196
+Publisher: AIP Publishing. Cloudflare challenge cleared via browser. Available to Purchase (paywalled full text), abstract fully readable.
+
+Abstract
+Packaging insulation materials with high thermal conductivity and excellent dielectric properties are favorable to meet the high demand and rapid development of third generation power semiconductors. In this study, we propose to improve the thermal conductivity of epoxy resin (EP) by incorporating a three-dimensional boron nitride thermally conductive network. Detailedly, polyurethane foam (PU) was used as a supporter, and boron nitride nanosheets (BNNSs) were loaded onto the PU supporter through chemical bonding (BNNS@PU). After immersing BNNS@PU into the EP resin, EP-based thermally conductive composites were prepared by vacuum-assisted impregnation. Fourier transform infrared spectrometer and scanning electron microscope were used to characterize the chemical bonding and morphological structure of BNNS@PU, respectively. The content of BNNS in BNNS@PU/EP composites was quantitatively analyzed by TGA. The results show that the thermal conductivity of the BNNS@PU/EP composites reaches 0.521 W/mK with an enhancement rate of 30.89 at an ultra-low BNNS filler content (5.93 wt%). Additionally, the BNNS@PU/EP composites have excellent dielectric properties with the frequency range from 10^1 to 10^6 Hz. This paper provides an interesting idea for developing high thermal conductivity insulating materials used for power electronics packaging.
+'''
+save('10.1063/5.0205196', text)

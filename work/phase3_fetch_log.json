@@ -1033,3 +1033,668 @@
   "chars": 0,
   "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
  },
+ {
+  "doi": "10.1142/s1793292022500722",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMClink fail www.worldscientific.com: HTTP Error 403: Forbidden"
+ },
+ {
+  "doi": "10.1002/app.52615",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host onlinelibrary.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2022.109292",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1080/15440478.2021.1966568",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host www.tandfonline.com"
+ },
+ {
+  "doi": "10.1016/j.apsusc.2021.151094",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1177/09540083211046456",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMClink fail journals.sagepub.com: HTTP Error 403: Forbiddenlink fail journals.sagepub.com: HTTP Error 403: Forbidden"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2021.109106",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1007/s10854-021-07269-4",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host link.springer.comskip blocked host link.springer.com"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2021.109168",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2021.108794",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2021.108953",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1007/s41403-020-00186-8",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1007/s10965-021-02755-z",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host link.springer.comskip blocked host link.springer.com"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2021.109026",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1002/app.51943",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host onlinelibrary.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.coco.2020.100549",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1007/s42114-021-00362-6",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1021/acs.jpcc.0c01377",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host pubs.acs.org"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2020.107855",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2020.108322",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2020.108304",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1177/0021998320942575",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMClink fail journals.sagepub.com: HTTP Error 403: Forbiddenlink fail journals.sagepub.com: HTTP Error 403: Forbidden"
+ },
+ {
+  "doi": "10.1016/j.apsusc.2020.147091",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.matlet.2020.128596",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1007/s10965-020-02189-z",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1016/j.ceramint.2019.08.120",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.commatsci.2019.04.012",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1088/2053-1591/ab432a",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host iopscience.iop.orgskip blocked host iopscience.iop.orgskip blocked host iopscience.iop.org"
+ },
+ {
+  "doi": "10.1063/1.5121349",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host pubs.aip.org"
+ },
+ {
+  "doi": "10.1080/09276440.2019.1578569",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host www.tandfonline.com"
+ },
+ {
+  "doi": "10.1016/j.polymer.2019.121834",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1002/adfm.201900412",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host onlinelibrary.wiley.comskip blocked host onlinelibrary.wiley.comskip blocked host advanced.onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.compositesa.2019.105629",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1039/c8ta07435f",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host pubs.rsc.org"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2017.12.002",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1177/0040517518798654",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMClink fail journals.sagepub.com: HTTP Error 403: Forbiddenlink fail journals.sagepub.com: HTTP Error 403: Forbidden"
+ },
+ {
+  "doi": "10.1002/pc.25146",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.tca.2018.01.019",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1002/pc.24481",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1080/03602559.2017.1324576",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1109/cieec.2018.8745820",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1016/j.carbon.2017.04.013",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.colsurfa.2017.01.011",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2017.09.032",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1177/0954008316644036",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMClink fail journals.sagepub.com: HTTP Error 403: Forbiddenlink fail journals.sagepub.com: HTTP Error 403: Forbidden"
+ },
+ {
+  "doi": "10.1109/eeeic.2017.7977576",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1016/j.compositesa.2017.03.012",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1016/j.ijthermalsci.2015.09.013",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1039/c5ra27315c",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host pubs.rsc.org"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2016.02.052",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.applthermaleng.2016.05.005",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.compscitech.2015.02.006",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1016/j.ceramint.2015.06.053",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1002/app.42461",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.ceramint.2013.07.117",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1039/c4ra01194e",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host pubs.rsc.org"
+ },
+ {
+  "doi": "10.1016/j.ceramint.2013.10.076",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1039/c4ta04663c",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host pubs.rsc.org"
+ },
+ {
+  "doi": "10.1016/j.applthermaleng.2014.02.044",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1002/pssa.201330213",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2013.03.002",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1109/tdei.2013.6451370",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host xplorestaging.ieee.org"
+ },
+ {
+  "doi": "10.1016/j.tca.2012.03.002",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1088/0957-4484/23/6/065303",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1016/j.carbon.2012.07.029",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1002/pc.22277",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host 4spepublications.onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.compositesb.2011.05.027",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1080/03602559.2012.716479",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1002/pat.2063",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1007/s10853-011-5309-y",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host link.springer.comskip blocked host link.springer.comskip blocked host link.springer.com"
+ },
+ {
+  "doi": "10.1177/0021998310393297",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMClink fail journals.sagepub.com: HTTP Error 403: Forbidden"
+ },
+ {
+  "doi": "10.1016/j.carbon.2009.11.040",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1002/app.32889",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1016/j.colsurfa.2010.08.021",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.elsevier.comskip blocked host api.elsevier.com"
+ },
+ {
+  "doi": "10.1021/jp101857w",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host pubs.acs.org"
+ },
+ {
+  "doi": "10.1080/03602550903532091",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1002/app.31594",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1111/j.1551-2916.2008.02247.x",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1002/app.27027",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.com"
+ },
+ {
+  "doi": "10.1163/156855400750244969",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host www.tandfonline.com"
+ },
+ {
+  "doi": "10.1007/978-3-642-84888-9_19",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMC"
+ },
+ {
+  "doi": "10.1007/bf00683482",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host link.springer.comskip blocked host link.springer.comskip blocked host link.springer.com"
+ },
+ {
+  "doi": "10.1002/pssa.2210870216",
+  "reason": "candidate_epmc_probe",
+  "route": "",
+  "outcome": "blocked",
+  "chars": 0,
+  "note": "not in EPMCskip blocked host api.wiley.comskip blocked host onlinelibrary.wiley.com"
+ }
+]

@@ -1,0 +1,169 @@
+{
+ "10.1039/d4dt00979g": {
+  "epmc_hits": 1,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1007/s10854-024-13657-3": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "outcome": "saved:landing"
+ },
+ "10.1002/slct.202507155": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1016/j.compscitech.2020.108304": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "len=2722 no-k",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1016/j.compscitech.2020.108322": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "len=2726 no-k",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1002/pc.27985": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1016/j.jcomc.2020.100087": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "len=2719 no-k",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1002/pc.29136": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1088/1361-6463/ae6b9b": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "len=14371 no-k",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1063/5.0205196": {
+  "epmc_hits": 1,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1002/app.55612": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1063/5.0211580": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1016/j.apsusc.2020.147091": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "len=2747 no-k",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1177/0021998320942575": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1002/adfm.201900412": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1016/j.compositesb.2020.107855": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "len=2798 no-k",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1177/09540083211046456": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1177/09673911221110143": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1016/j.cej.2018.04.196": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "len=2797 no-k",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1002/pc.28316": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1063/1.5121349": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1080/15440478.2021.1966568": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1002/smll.75841": {
+  "epmc_hits": 1,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ },
+ "10.1002/pc.70149": {
+  "epmc_hits": 0,
+  "epmc": "no pmcid",
+  "unpaywall": "err RuntimeError",
+  "landing": "err RuntimeError",
+  "outcome": "failed:all-python-routes"
+ }
+}

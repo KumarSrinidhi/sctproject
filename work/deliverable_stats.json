@@ -1,10 +1,10 @@
 {
-  "total_rows": 188,
-  "total_papers": 63,
+  "total_rows": 260,
+  "total_papers": 95,
   "by_matrix_top": [
     [
       "epoxy-based",
-      158
+      230
     ],
     [
       "silicone",
@@ -34,30 +34,34 @@
   "by_filler": [
     [
       "h-BN",
-      61
+      87
     ],
     [
       "BN",
-      45
+      56
     ],
     [
       "BNNS",
-      43
+      53
     ],
     [
       "AlN",
       22
     ],
     [
+      "BN/graphene hybrid",
+      11
+    ],
+    [
       "Al2O3",
-      5
+      6
     ],
     [
       "Al2O3/BN hybrid",
-      4
+      5
     ],
     [
-      "cBN",
+      "h-BN/CNT hybrid",
       3
     ],
     [
@@ -65,36 +69,72 @@
       2
     ],
     [
-      "AlN/BN hybrid",
+      "none",
       2
     ],
     [
-      "none",
+      "cBN",
+      2
+    ],
+    [
+      "h-BN/Al2O3 hybrid",
+      2
+    ],
+    [
+      "BNNS/diamond hybrid",
+      2
+    ],
+    [
+      "MgO",
+      2
+    ],
+    [
+      "Cu/BN hybrid",
+      1
+    ],
+    [
+      "BNNS hybrid",
+      1
+    ],
+    [
+      "AlN/BN hybrid",
+      1
+    ],
+    [
+      "Al2O3/graphene hybrid",
+      1
+    ],
+    [
+      "BNNS/SiC hybrid",
       1
     ]
   ],
   "by_confidence": [
     [
       "High",
-      179
+      196
     ],
     [
       "Medium",
-      9
+      64
     ]
   ],
   "by_value_source": [
     [
       "text",
-      131
+      160
     ],
     [
       "table",
-      57
+      72
+    ],
+    [
+      "figure",
+      28
     ]
   ],
   "k_min": 0.17,
-  "k_max": 19.0,
+  "k_max": 47.03,
   "k_median": 1.052,
   "year_range": [
     1997,

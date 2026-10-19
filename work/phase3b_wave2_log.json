@@ -1,0 +1,12 @@
+[
+ {
+  "doi": "10.1002/pc.29136",
+  "url": "https://hdl.handle.net/20.500.12868/5476",
+  "outcome": "fail",
+  "note": "<urlopen error [Errno 11002] getaddrinfo failed>"
+ },
+ {
+  "doi": "10.1007/s10854-024-13657-3",
+  "outcome": "no_route"
+ }
+]

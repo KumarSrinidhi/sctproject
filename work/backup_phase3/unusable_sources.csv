@@ -1,0 +1,50 @@
+doi,reason,action
+10.1088/1361-6528/ac0470,"IOP Radware captcha (txt replacement, not PDF)",unusable
+10.1088/1742-6596/1003/1/012082,IOP Radware captcha,unusable
+10.1088/1757-899x/274/1/012043,IOP Radware captcha,unusable
+10.1515/polyeng-2025-0193,"Wiley blocked (403), no EPMC route",unusable
+10.1002/pc.71726,"Wiley blocked (403), no EPMC route",unusable
+10.1002/pc.71558,"Wiley blocked (403), no EPMC route",unusable
+10.1002/smll.75841,"Wiley blocked (403), no EPMC route; full text still blocked","abstract-recovered (Phase 3C, extract_027, Medium confidence)"
+10.1002/slct.202507155,Wiley blocked (403); full text still blocked,"abstract-recovered (Phase 3C, extract_027, Medium confidence)"
+10.1002/app.56949,Wiley blocked (403),unusable
+10.1002/pat.70120,Wiley blocked (403),unusable
+10.1002/inf2.70139,Wiley blocked (403),unusable
+10.1002/pc.70149,Wiley blocked (403); full text still blocked,"abstract-recovered (Phase 3C, extract_027, Medium confidence)"
+10.1002/pc.28534,Wiley blocked (403); recovered via non-Wiley OA mirror,"recovered (Phase 3B direct OA fetch, Kobe Univ repository; extract_025)"
+10.1002/pc.70279,Wiley blocked (403),unusable
+10.1016/j.compositesa.2026.110044,"Elsevier blocked (403), no EPMC route",unusable
+10.1016/j.compositesb.2025.112764,Elsevier blocked (403),unusable
+10.1016/j.cej.2026.180373,Elsevier blocked (403),unusable
+10.1016/j.carbon.2026.121402,Elsevier blocked (403),unusable
+10.1016/j.porgcoat.2025.109667,Elsevier blocked (403),unusable
+10.1016/j.ceramint.2026.04.021,Elsevier blocked (403),unusable
+10.1016/j.apsusc.2025.163268,Elsevier blocked (403),unusable
+10.1016/j.eurpolymj.2024.113084,Elsevier blocked (403),unusable
+10.1016/j.matlet.2025.139278,Elsevier blocked (403),unusable
+10.1016/j.compstruct.2025.119723,Elsevier blocked (403),unusable
+10.1088/1361-6463/ae6b9b,IOP blocked (403/captcha); full text still blocked,"abstract-recovered (Phase 3C, extract_027, Medium confidence)"
+10.1049/hve2.70112,IET blocked,unusable
+10.1007/s10853-026-12616-z,Springer blocked (403),unusable
+10.1007/s10854-026-18087-x,Springer blocked (403),unusable
+10.1007/s11837-025-07613-7,Springer blocked (403),unusable
+10.1007/s13726-025-01550-7,Springer blocked (403),unusable
+10.1007/s10965-024-04142-w,Springer blocked (403),unusable
+10.1007/s10570-024-05737-8,Springer blocked (403),unusable
+10.1007/s10443-023-10195-9,Springer blocked (403),unusable
+10.1007/s00289-025-06054-1,Springer blocked (403),unusable
+10.1063/5.0205196,AIP blocked; full text still blocked,"abstract-recovered (Phase 3C, extract_027, Medium confidence)"
+10.1021/acsapm.4c01099,ACS blocked,unusable
+10.1177/09540083251319488,SAGE blocked,unusable
+10.31248/ajps2025.124,"Modeling paper (Debye relaxation model), no experimental k values",excluded_modeling
+10.3390/ma13163634,Review article,excluded_review
+10.3390/ma12091522,Carbon fillers (out of BN/AlN scope),excluded_scope
+10.3390/polym11071156,Figure-only k values (no text numeric),excluded_figure_only
+10.3390/molecules21050670,Own data figure-only; text values are literature comparisons,excluded_figure_only
+10.14314/polimery.2017.560,"Abstract only, no k values",excluded_no_data
+10.3390/nano9101396,"Relative % increase only, no absolute k in text",excluded_no_absolute_k
+10.3390/polym10030277,No absolute k for own data in text,excluded_no_absolute_k
+10.1039/c8ra10645b,No absolute k hits in text,excluded_no_absolute_k
+10.3390/molecules28093797,"PCM (paraffin/LA-ODE) matrix, out of epoxy/BN primary scope",excluded_scope
+10.3390/polym13132161,Al2O3/AlN literature values only; own data not BN/AlN primary,excluded_scope
+(policy),Sci-Hub deliberately NOT used for any blocked DOI in Phase 3 (copyright/piracy concerns),excluded by project decision; see work/phase3_changes.json

@@ -1,0 +1,298 @@
+{
+  "10.3390/polym11071156": {
+    "source": "polymers-11-01156-g011.jpg",
+    "caption": "Figure 11 Thermal conductivity of ETLBN and EJBN samples as a function of the BN content: ETLBN2, blue circles; EJBN30, grey squares; ETLBN30, orange triangles; ETLBN180, purple diamonds.",
+    "method": "pixel digitization: tick-calibrated axes, colour mask, disk opening, component centroid (work/phase4_digitize_v2.py)",
+    "resolution": {
+      "x_units_per_px": 0.0822,
+      "k_W_mK_per_px": 0.0095
+    },
+    "series": {
+      "ETLBN180 (purple diamonds)": [
+        {
+          "x": 12.9,
+          "k": 0.986,
+          "px": [
+            281.0,
+            388.9
+          ],
+          "area_px": 134
+        },
+        {
+          "x": 25.71,
+          "k": 1.977,
+          "px": [
+            436.9,
+            284.9
+          ],
+          "area_px": 148
+        },
+        {
+          "x": 34.21,
+          "k": 3.012,
+          "px": [
+            540.3,
+            176.3
+          ],
+          "area_px": 155
+        },
+        {
+          "x": 44.65,
+          "k": 4.21,
+          "px": [
+            667.4,
+            50.4
+          ],
+          "area_px": 128
+        }
+      ],
+      "ETLBN30 (orange triangles)": [
+        {
+          "x": 12.87,
+          "k": 0.723,
+          "px": [
+            280.7,
+            416.6
+          ],
+          "area_px": 92
+        },
+        {
+          "x": 25.74,
+          "k": 1.607,
+          "px": [
+            437.3,
+            323.7
+          ],
+          "area_px": 78
+        },
+        {
+          "x": 34.15,
+          "k": 2.333,
+          "px": [
+            539.6,
+            247.5
+          ],
+          "area_px": 72
+        },
+        {
+          "x": 44.63,
+          "k": 3.31,
+          "px": [
+            667.2,
+            144.9
+          ],
+          "area_px": 76
+        }
+      ],
+      "EJBN30 (grey squares)": [
+        {
+          "x": -0.12,
+          "k": 0.189,
+          "px": [
+            122.6,
+            472.7
+          ],
+          "area_px": 163
+        },
+        {
+          "x": 14.97,
+          "k": 0.496,
+          "px": [
+            306.1,
+            440.4
+          ],
+          "area_px": 82
+        },
+        {
+          "x": 29.08,
+          "k": 1.212,
+          "px": [
+            477.9,
+            365.3
+          ],
+          "area_px": 182
+        },
+        {
+          "x": 38.06,
+          "k": 1.858,
+          "px": [
+            587.2,
+            297.4
+          ],
+          "area_px": 187
+        },
+        {
+          "x": 43.28,
+          "k": 2.373,
+          "px": [
+            650.7,
+            243.4
+          ],
+          "area_px": 170
+        }
+      ],
+      "ETLBN2 (blue circles)": [
+        {
+          "x": 12.82,
+          "k": 0.357,
+          "px": [
+            280.0,
+            455.0
+          ],
+          "area_px": 43
+        },
+        {
+          "x": 25.63,
+          "k": 0.857,
+          "px": [
+            435.9,
+            402.5
+          ],
+          "area_px": 136
+        },
+        {
+          "x": 33.96,
+          "k": 1.287,
+          "px": [
+            537.3,
+            357.3
+          ],
+          "area_px": 126
+        }
+      ]
+    }
+  },
+  "10.3390/molecules21050670": {
+    "source": "molecules-21-00670-g003.jpg",
+    "caption": "Figure 3 Effects of surface treatment, h-BN particle size and filler content on thermal conductivity of composites. (Series labelled in-plot: treated 10.6 um = filled green squares; treated 3.6 um = filled blue circles; naked series are open markers and are not digitized.)",
+    "method": "pixel digitization: tick-calibrated axes, colour mask, disk opening, component centroid (work/phase4_digitize_v2.py)",
+    "resolution": {
+      "x_units_per_px": 0.1587,
+      "k_W_mK_per_px": 0.0172
+    },
+    "series": {
+      "treated 10.6um (filled green squares)": [
+        {
+          "x": 10.02,
+          "k": 0.583,
+          "px": [
+            147.6,
+            448.1
+          ],
+          "area_px": 87
+        },
+        {
+          "x": 20.0,
+          "k": 0.973,
+          "px": [
+            210.5,
+            425.5
+          ],
+          "area_px": 80
+        },
+        {
+          "x": 29.97,
+          "k": 1.938,
+          "px": [
+            273.3,
+            369.5
+          ],
+          "area_px": 60,
+          "occluded": "partially hidden; centre = visible top edge + median half-height (4.5 px) of unoccluded markers in this series"
+        },
+        {
+          "x": 39.92,
+          "k": 2.983,
+          "px": [
+            336.0,
+            308.8
+          ],
+          "area_px": 64
+        },
+        {
+          "x": 50.0,
+          "k": 6.777,
+          "px": [
+            399.5,
+            88.5
+          ],
+          "area_px": 80
+        },
+        {
+          "x": 60.0,
+          "k": 7.444,
+          "px": [
+            462.5,
+            49.8
+          ],
+          "area_px": 74
+        },
+        {
+          "x": 69.92,
+          "k": 6.717,
+          "px": [
+            525.0,
+            92.0
+          ],
+          "area_px": 67
+        },
+        {
+          "x": 79.92,
+          "k": 6.627,
+          "px": [
+            588.0,
+            97.2
+          ],
+          "area_px": 64
+        }
+      ],
+      "treated 3.6um (filled blue circles)": [
+        {
+          "x": 29.94,
+          "k": 1.797,
+          "px": [
+            273.1,
+            377.6
+          ],
+          "area_px": 67
+        },
+        {
+          "x": 49.96,
+          "k": 2.79,
+          "px": [
+            399.2,
+            320.0
+          ],
+          "area_px": 73
+        },
+        {
+          "x": 59.96,
+          "k": 2.73,
+          "px": [
+            462.2,
+            323.5
+          ],
+          "area_px": 74
+        },
+        {
+          "x": 69.97,
+          "k": 2.14,
+          "px": [
+            525.3,
+            357.7
+          ],
+          "area_px": 79
+        },
+        {
+          "x": 79.98,
+          "k": 1.771,
+          "px": [
+            588.4,
+            379.2
+          ],
+          "area_px": 74
+        }
+      ]
+    }
+  }
+}

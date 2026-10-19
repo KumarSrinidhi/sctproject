@@ -1,0 +1,244 @@
+{
+  "10.3390/polym11071156": {
+    "pmcid": "PMC6680888",
+    "figs": [
+      {
+        "id": "polymers-11-01156-f001",
+        "label": "Figure 1",
+        "href": "polymers-11-01156-g001.jpg",
+        "caption": "Scanning Electron Microscopy (SEM) images of the as-received BN platelet particles: ( a ) PCTP2, 2 \u00b5m, magnification 1500\u00d7, scale bar 10 \u00b5m; ( b ) PCTP30, 30 \u00b5m, magnification 1500"
+      },
+      {
+        "id": "polymers-11-01156-f002",
+        "label": "Figure 2",
+        "href": "polymers-11-01156-g002.jpg",
+        "caption": "Non-isothermal DSC scans at 5 K/min for ETLBN2- y , ETLBN30- y and ETLBN180- y , in which y refers to the different BN contents given in Table 1 : purple, full line, y = 0; long da"
+      },
+      {
+        "id": "polymers-11-01156-f003",
+        "label": "Figure 3",
+        "href": "polymers-11-01156-g003a.jpg",
+        "caption": "Peak temperature during non-isothermal cure relative to that for the unfilled system, T p \u2212 T p0 , as a function of BN content for different platelet sizes, as indicated, and for d"
+      },
+      {
+        "id": "polymers-11-01156-f004",
+        "label": "Figure 4",
+        "href": "polymers-11-01156-g004.jpg",
+        "caption": "Isothermal DSC scans at 70 \u00b0C for ETLBN2- y , ETLBN30- y and ETLBN180- y , in which y refers to the different BN contents given in Table 1 : purple, full line, y = 0; long dash, re"
+      },
+      {
+        "id": "polymers-11-01156-f005",
+        "label": "Figure 5",
+        "href": "polymers-11-01156-g005.jpg",
+        "caption": "Time of exothermic peak during isothermal cure, t p , as a function of BN content for different platelet sizes, as indicated, and for different isothermal cure temperatures: 60 \u00b0C,"
+      },
+      {
+        "id": "polymers-11-01156-f006",
+        "label": "Figure 6",
+        "href": "polymers-11-01156-g006.jpg",
+        "caption": "Peak temperature during non-isothermal cure relative to that for the unfilled system, T p \u2212 T p0 , as a function of BN 30 \u00b5m content for the heating rates of 2 K/min ( left ) and 5"
+      },
+      {
+        "id": "polymers-11-01156-f007",
+        "label": "Figure 7",
+        "href": "polymers-11-01156-g007.jpg",
+        "caption": "Peak temperature during non-isothermal cure of the epoxy-thiol system relative to that for the unfilled system, T p \u2212 T p0 , as a function of BN content for the heating rate of 5 K"
+      },
+      {
+        "id": "polymers-11-01156-f008",
+        "label": "Figure 8",
+        "href": "polymers-11-01156-g008.jpg",
+        "caption": "TGA curves of sample mass versus temperature for the fully cured ETLBN30- y system at 10 K/min in an inert atmosphere: dash-dotted, green, y = 0; dotted, blue, y = 30; short dash, "
+      },
+      {
+        "id": "polymers-11-01156-f009",
+        "label": "Figure 9",
+        "href": "polymers-11-01156-g009.jpg",
+        "caption": "Measured TGA residue after degradation to 600 \u00b0C as a function of the theoretical value: 2 \u00b5m, blue squares; 30 \u00b5m, orange circles; 180 \u00b5m, grey triangles. The dashed line has a sl"
+      },
+      {
+        "id": "polymers-11-01156-f010",
+        "label": "Figure 10",
+        "href": "polymers-11-01156-g010.jpg",
+        "caption": "Density as a function of vol % BN for epoxy-thiol samples with different BN platelet sizes: 2 \u00b5m, blue circles; 30 \u00b5m, orange squares; 180 \u00b5m, grey triangles."
+      },
+      {
+        "id": "polymers-11-01156-f011",
+        "label": "Figure 11",
+        "href": "polymers-11-01156-g011.jpg",
+        "caption": "Thermal conductivity of ETLBN and EJBN samples as a function of the BN content: ETLBN2, blue circles; EJBN30, grey squares; ETLBN30, orange triangles; ETLBN180, purple diamonds."
+      },
+      {
+        "id": "polymers-11-01156-f012",
+        "label": "Figure 12",
+        "href": "polymers-11-01156-g012.jpg",
+        "caption": "SEM micrographs of epoxy-thiol composites. Left hand column, top to bottom: ETLBN2 -30, -50, -60; middle column, top to bottom: ETLBN30 -30, -50, -60; right hand column, top to bot"
+      },
+      {
+        "id": "polymers-11-01156-f013",
+        "label": "Figure 13",
+        "href": "polymers-11-01156-g013.jpg",
+        "caption": "SEM micrograph of an epoxy-composite, EJBN30-60. Magnification 500\u00d7, scale bar 50 \u03bcm."
+      }
+    ],
+    "saved": [
+      {
+        "file": "PMC6680888_polymers-11-01156-g001.jpg",
+        "label": "Figure 1",
+        "bytes": 21364,
+        "caption": "Scanning Electron Microscopy (SEM) images of the as-received BN platelet particles: ( a ) PCTP2, 2 \u00b5m, magnification 1500\u00d7, scale bar 10 \u00b5m; ( b ) PCTP30, 30 \u00b5m, magnification 1500"
+      },
+      {
+        "file": "PMC6680888_polymers-11-01156-g002.jpg",
+        "label": "Figure 2",
+        "bytes": 21364,
+        "caption": "Non-isothermal DSC scans at 5 K/min for ETLBN2- y , ETLBN30- y and ETLBN180- y , in which y refers to the different BN contents given in Table 1 : purple, full line, y = 0; long da"
+      },
+      {
+        "file": null,
+        "label": "Figure 3",
+        "href": "polymers-11-01156-g003a.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": "PMC6680888_polymers-11-01156-g004.jpg",
+        "label": "Figure 4",
+        "bytes": 21362,
+        "caption": "Isothermal DSC scans at 70 \u00b0C for ETLBN2- y , ETLBN30- y and ETLBN180- y , in which y refers to the different BN contents given in Table 1 : purple, full line, y = 0; long dash, re"
+      },
+      {
+        "file": "PMC6680888_polymers-11-01156-g005.jpg",
+        "label": "Figure 5",
+        "bytes": 21364,
+        "caption": "Time of exothermic peak during isothermal cure, t p , as a function of BN content for different platelet sizes, as indicated, and for different isothermal cure temperatures: 60 \u00b0C,"
+      },
+      {
+        "file": null,
+        "label": "Figure 6",
+        "href": "polymers-11-01156-g006.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": null,
+        "label": "Figure 7",
+        "href": "polymers-11-01156-g007.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": null,
+        "label": "Figure 8",
+        "href": "polymers-11-01156-g008.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": "PMC6680888_polymers-11-01156-g009.jpg",
+        "label": "Figure 9",
+        "bytes": 21364,
+        "caption": "Measured TGA residue after degradation to 600 \u00b0C as a function of the theoretical value: 2 \u00b5m, blue squares; 30 \u00b5m, orange circles; 180 \u00b5m, grey triangles. The dashed line has a sl"
+      },
+      {
+        "file": "PMC6680888_polymers-11-01156-g010.jpg",
+        "label": "Figure 10",
+        "bytes": 21365,
+        "caption": "Density as a function of vol % BN for epoxy-thiol samples with different BN platelet sizes: 2 \u00b5m, blue circles; 30 \u00b5m, orange squares; 180 \u00b5m, grey triangles."
+      },
+      {
+        "file": null,
+        "label": "Figure 11",
+        "href": "polymers-11-01156-g011.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": null,
+        "label": "Figure 12",
+        "href": "polymers-11-01156-g012.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": "PMC6680888_polymers-11-01156-g013.jpg",
+        "label": "Figure 13",
+        "bytes": 21364,
+        "caption": "SEM micrograph of an epoxy-composite, EJBN30-60. Magnification 500\u00d7, scale bar 50 \u03bcm."
+      }
+    ]
+  },
+  "10.3390/molecules21050670": {
+    "pmcid": "PMC6273151",
+    "figs": [
+      {
+        "id": "molecules-21-00670-f001",
+        "label": "Figure 1",
+        "href": "molecules-21-00670-g001.jpg",
+        "caption": "FT-IR spectra of the 2.4 wt % GPTMS-treated and the naked h-BN powders with an average particle size of 10.6 \u03bcm."
+      },
+      {
+        "id": "molecules-21-00670-f002",
+        "label": "Figure 2",
+        "href": "molecules-21-00670-g002.jpg",
+        "caption": "Effect of the amount of GPTMS used in surface treatment of h-BN on the thermal conductivity of the composites."
+      },
+      {
+        "id": "molecules-21-00670-f003",
+        "label": "Figure 3",
+        "href": "molecules-21-00670-g003.jpg",
+        "caption": "Effects of surface treatment, h-BN particle size and filler content on thermal conductivity of composites."
+      },
+      {
+        "id": "molecules-21-00670-f004",
+        "label": "Figure 4",
+        "href": "molecules-21-00670-g004.jpg",
+        "caption": "The density and porosity of the epoxy resin composites as a function of filler content."
+      },
+      {
+        "id": "molecules-21-00670-f005",
+        "label": "Figure 5",
+        "href": "molecules-21-00670-g005.jpg",
+        "caption": "SEM photographs of the fractured surfaces of the composites with filler contents of ( a ) 50 vol % and ( b ) 70 vol % (both composites were filled with 3.6 \u03bcm h-BN particles with 3"
+      },
+      {
+        "id": "molecules-21-00670-f006",
+        "label": "Figure 6",
+        "href": "molecules-21-00670-g006.jpg",
+        "caption": "The experimental and predicted thermal conductivity of h-BN/epoxy resin composites with various h-BN contents."
+      }
+    ],
+    "saved": [
+      {
+        "file": null,
+        "label": "Figure 1",
+        "href": "molecules-21-00670-g001.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": "PMC6273151_molecules-21-00670-g002.jpg",
+        "label": "Figure 2",
+        "bytes": 21366,
+        "caption": "Effect of the amount of GPTMS used in surface treatment of h-BN on the thermal conductivity of the composites."
+      },
+      {
+        "file": "PMC6273151_molecules-21-00670-g003.jpg",
+        "label": "Figure 3",
+        "bytes": 21367,
+        "caption": "Effects of surface treatment, h-BN particle size and filler content on thermal conductivity of composites."
+      },
+      {
+        "file": "PMC6273151_molecules-21-00670-g004.jpg",
+        "label": "Figure 4",
+        "bytes": 21366,
+        "caption": "The density and porosity of the epoxy resin composites as a function of filler content."
+      },
+      {
+        "file": null,
+        "label": "Figure 5",
+        "href": "molecules-21-00670-g005.jpg",
+        "error": "download_fail"
+      },
+      {
+        "file": "PMC6273151_molecules-21-00670-g006.jpg",
+        "label": "Figure 6",
+        "bytes": 21365,
+        "caption": "The experimental and predicted thermal conductivity of h-BN/epoxy resin composites with various h-BN contents."
+      }
+    ]
+  }
+}
