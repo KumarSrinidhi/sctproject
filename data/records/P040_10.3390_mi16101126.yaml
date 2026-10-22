@@ -1,0 +1,87 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P040
+paper:
+  doi: 10.3390/mi16101126
+  title: The Influence of Pulsed Superimposed DC Electric Field Synergistically Inducing Orientation of BNNSs on Thermal Conductivity of Epoxy Composites
+  year: 2025
+  source_url: https://doi.org/10.3390/mi16101126
+extraction_log:
+- seq: 44
+  candidate_id: P040
+  doi: 10.3390/mi16101126
+  paper_title: The Influence of Pulsed Superimposed DC Electric Field Synergistically Inducing Orientation of BNNSs on Thermal Conductivity of Epoxy Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_mi16101126.txt
+  tables_inspected: comparison tables (lit values)
+  figures_inspected: TC figures
+  candidate_measurements: 5
+  unit_conversions: none
+  duplicate_checks: Mi et al. 0.588 W/mK (other paper) and 3.35 W/mK SiC/BN lit values excluded
+  qc_findings: 5 rows all at 10 wt% BNNS; processing variable = field protocol
+  rows_appended: 5
+  rows_rejected_at_append: []
+measurements:
+- row_id: a8b6fee9-140
+  matrix_polymer: Epoxy
+  filler_material: BNNS
+  filler_material_original: BNNS 10 wt%, random orientation (no field)
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt% (~5.6 vol%)
+  functionalization: None
+  filler_alignment: random
+  processing_method: Magnetic stirring + probe ultrasonication, electric-field orientation then cure
+  k_composite_W_mK: 0.271
+  k_direction: through-plane
+  measurement_method: Laser flash analysis (LAF467HT Netzsch), through-thickness parallel to field
+  k_original_value: 0.271
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results: random sample 0.271 W/(m·K); 74.91% below combined field sample'
+  confidence: High
+  notes: 10 wt% BNNS throughout; pure EP not numerically quoted (148.2% below 0.474 implies ~0.19 W/mK, not extracted). Baseline random.
+- row_id: a8b6fee9-143
+  matrix_polymer: Epoxy
+  filler_material: BNNS
+  filler_material_original: BNNS 10 wt%, 30 V/mm DC + 8 kV/mm pulse
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt% (~5.6 vol%)
+  functionalization: None
+  filler_alignment: dc+pulse-aligned
+  processing_method: Magnetic stirring + probe ultrasonication, electric-field orientation then cure
+  k_composite_W_mK: 0.474
+  k_direction: through-plane
+  measurement_method: Laser flash analysis (LAF467HT Netzsch), through-thickness parallel to field
+  k_original_value: 0.474
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract+Results: combined 30 V/mm DC + 8 kV/mm pulse -> 0.474 W/(m·K)'
+  confidence: High
+  notes: 10 wt% BNNS throughout; pure EP not numerically quoted (148.2% below 0.474 implies ~0.19 W/mK, not extracted). Best condition, 74.9% over random.
+- row_id: a8b6fee9-144
+  matrix_polymer: Epoxy
+  filler_material: BNNS
+  filler_material_original: BNNS 10 wt%, 70 V/mm DC + 4 kV/mm pulse
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt% (~5.6 vol%)
+  functionalization: None
+  filler_alignment: dc+pulse-aligned
+  processing_method: Magnetic stirring + probe ultrasonication, electric-field orientation then cure
+  k_composite_W_mK: 0.464
+  k_direction: through-plane
+  measurement_method: Laser flash analysis (LAF467HT Netzsch), through-thickness parallel to field
+  k_original_value: 0.464
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results: combined 70 V/mm DC + 4 kV/mm pulse -> 0.464 W/(m·K)'
+  confidence: High
+  notes: 10 wt% BNNS throughout; pure EP not numerically quoted (148.2% below 0.474 implies ~0.19 W/mK, not extracted).

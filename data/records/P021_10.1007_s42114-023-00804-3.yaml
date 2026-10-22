@@ -1,0 +1,90 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P021
+paper:
+  doi: 10.1007/s42114-023-00804-3
+  title: Boron nitride whiskers and nano alumina synergistically enhancing the vertical thermal conductivity of epoxy-cellulose aerogel nanocomposites
+  year: 2023
+  source_url: https://doi.org/10.1007/s42114-023-00804-3
+extraction_log:
+- seq: 23
+  candidate_id: P021
+  doi: 10.1007/s42114-023-00804-3
+  paper_title: Vertically aligned BNWK@Al2O3 network in cellulose aerogel for thermally conductive epoxy composites
+  date_processed: '2026-10-13'
+  access_result: PDF-to-text (Springer OA)
+  files_inspected: work/fulltext/10.1007_s42114-023-00804-3.txt
+  tables_inspected: none with k
+  figures_inspected: Fig 5a (values quoted in text)
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: 'BNWK-only 0.48 excluded: filler loading not stated in text'
+  qc_findings: 3 rows; BNWK/CA/EP 0.48 not extracted (missing loading); ratio-series 1:0.5..1:3 intermediate figure-only
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 12379735-088
+  matrix_polymer: Epoxy resin (EP), cellulose aerogel (CA) scaffold
+  filler_material: BN
+  filler_material_original: BNWK@Al2O3 (BN whisker @ nano-Al2O3 core-shell, 1:7) in cellulose aerogel
+  filler_shape: whisker/nanowire
+  filler_loading_wt_pct: 8.6
+  filler_loading_original_value: 8.6
+  filler_loading_original_unit: wt%
+  functionalization: nano-Al2O3 coating on BNWK
+  filler_alignment: vertically aligned
+  processing_method: Directional freeze-drying of CA scaffold, vacuum EP impregnation
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.92
+  k_direction: through-plane (vertical)
+  measurement_method: Thermal conductivity of composites (method per text; vertical direction)
+  k_original_value: 1.92
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract/conclusion: BNWK@Al2O3(1:7)/CA/EP 8.6 wt% -> 1.92'
+  confidence: High
+  notes: Optimal 1:7 BNWK:nano-Al2O3, total 8.6 wt%.
+- row_id: 12379735-089
+  matrix_polymer: Epoxy resin (EP), cellulose aerogel (CA) scaffold
+  filler_material: BN
+  filler_material_original: BNWK@Al2O3 (BN whisker @ nano-Al2O3 core-shell, 1:7) in cellulose aerogel
+  filler_shape: whisker/nanowire
+  filler_loading_wt_pct: 8.6
+  filler_loading_original_value: 8.6
+  filler_loading_original_unit: wt%
+  functionalization: nano-Al2O3 coating on BNWK
+  filler_alignment: vertically aligned
+  processing_method: Directional freeze-drying, vacuum EP impregnation
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.04
+  k_direction: through-plane (vertical)
+  measurement_method: Thermal conductivity of composites (method per text; vertical direction)
+  k_original_value: 1.04
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results Fig 5a text: ratio 1:1 -> 1.04 W/(m·K)'
+  confidence: High
+  notes: 'BNWK@Al2O3 1:1, total 8.6 wt% (total loading assumed same series - confirm: text says ratios change from 1:1 to 1:7 with k 1.04 to 1.92).'
+- row_id: 12379735-090
+  matrix_polymer: Epoxy resin (EP), cellulose aerogel (CA) scaffold
+  filler_material: BN
+  filler_material_original: BNWK@Al2O3 (BN whisker @ nano-Al2O3 core-shell, 1:7) in cellulose aerogel
+  filler_shape: whisker/nanowire
+  filler_loading_wt_pct: 8.6
+  filler_loading_original_value: 8.6
+  filler_loading_original_unit: wt%
+  functionalization: nano-Al2O3 coating on BNWK
+  filler_alignment: vertically aligned
+  processing_method: Simple blending (comparison sample), same 1:7 filler
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.87
+  k_direction: through-plane (vertical)
+  measurement_method: Thermal conductivity of composites (method per text; vertical direction)
+  k_original_value: 0.87
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Conclusion text: BNWK@Al2O3(1:7)/CA/EP (Blend) = 0.87 W/(m·K)'
+  confidence: High
+  notes: Same filler loading 8.6 wt%, ordinary blending instead of aligned network - processing comparison row.

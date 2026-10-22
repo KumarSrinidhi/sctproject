@@ -1,0 +1,87 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P010
+paper:
+  doi: 10.3390/nano13010138
+  title: Effect of Ambient Plasma Treatments on Thermal Conductivity and Fracture Toughness of Boron Nitride Nanosheets/Epoxy Nanocomposites
+  year: 2022
+  source_url: https://doi.org/10.3390/nano13010138
+extraction_log:
+- seq: 10
+  candidate_id: P010
+  doi: 10.3390/nano13010138
+  paper_title: Effect of Ambient Plasma Treatments on Thermal Conductivity and Fracture Toughness of Boron Nitride Nanosheets/Epoxy Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano13010138.txt
+  tables_inspected: Table 1 (this-work row PBE-7)
+  figures_inspected: Figure 6a (k vs plasma time; partial values in text)
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: literature rows of Table 1 excluded
+  qc_findings: '3 rows: untreated + 2 plasma times; other plasma times figure-only'
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 296786e5-048
+  matrix_polymer: DGEBA epoxy (YD-128)
+  curing_agent: DDM (4,4-diaminodiphenylmethane)
+  filler_material: BNNS
+  filler_material_original: BNNS (from h-BN exfoliation)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Ambient plasma treatment of BNNS (0/5/7 min) then dispersion in DGEBA/DDM
+  k_composite_W_mK: 0.372
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA-447)
+  k_original_value: 0.372
+  k_original_unit: W∙m−1∙K−1
+  value_source: table
+  source_location: Table 1 / text section Thermal Conductivity of PBE, sample neat BNNS composite (no plasma)
+  confidence: High
+  notes: Sample neat BNNS composite (no plasma). untreated BNNS/epoxy reference. All 30 wt% BNNS. PBE-5 and PBE-7 values confirmed in text (0.446, 0.535); neat-BNNS composite 0.372 in text.
+- row_id: 296786e5-049
+  matrix_polymer: DGEBA epoxy (YD-128)
+  curing_agent: DDM (4,4-diaminodiphenylmethane)
+  filler_material: BNNS
+  filler_material_original: BNNS (from h-BN exfoliation)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  functionalization: Ambient plasma 5 min
+  processing_method: Ambient plasma treatment of BNNS (0/5/7 min) then dispersion in DGEBA/DDM
+  k_composite_W_mK: 0.446
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA-447)
+  k_original_value: 0.446
+  k_original_unit: W∙m−1∙K−1
+  value_source: table
+  source_location: Table 1 / text section Thermal Conductivity of PBE, sample PBE-5
+  confidence: High
+  notes: Sample PBE-5. . All 30 wt% BNNS. PBE-5 and PBE-7 values confirmed in text (0.446, 0.535); neat-BNNS composite 0.372 in text.
+- row_id: 296786e5-050
+  matrix_polymer: DGEBA epoxy (YD-128)
+  curing_agent: DDM (4,4-diaminodiphenylmethane)
+  filler_material: BNNS
+  filler_material_original: BNNS (from h-BN exfoliation)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  functionalization: Ambient plasma 7 min
+  processing_method: Ambient plasma treatment of BNNS (0/5/7 min) then dispersion in DGEBA/DDM
+  k_composite_W_mK: 0.535
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA-447)
+  k_original_value: 0.535
+  k_original_unit: W∙m−1∙K−1
+  value_source: table
+  source_location: Table 1 / text section Thermal Conductivity of PBE, sample PBE-7
+  confidence: High
+  notes: Sample PBE-7. optimal treatment time. All 30 wt% BNNS. PBE-5 and PBE-7 values confirmed in text (0.446, 0.535); neat-BNNS composite 0.372 in text.

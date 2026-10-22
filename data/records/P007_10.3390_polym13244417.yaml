@@ -1,0 +1,84 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P007
+paper:
+  doi: 10.3390/polym13244417
+  title: Nanoarchitectonics of BN/AgNWs/Epoxy Composites with High Thermal Conductivity and Electrical Insulation
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13244417
+extraction_log:
+- seq: 7
+  candidate_id: P007
+  doi: 10.3390/polym13244417
+  paper_title: Nanoarchitectonics of BN/AgNWs/Epoxy Composites with High Thermal Conductivity and Electrical Insulation
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym13244417.txt
+  tables_inspected: Table 4 (thermal conductivity comparison incl. this-research)
+  figures_inspected: ''
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: Table 4 literature columns excluded
+  qc_findings: measurement method unreported in extracted text; AgNWs are secondary hybrid component
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 587d9f0d-037
+  matrix_polymer: Epoxy (bisphenol A type)
+  curing_agent: MHHPA + MNA
+  filler_material: h-BN
+  filler_material_original: KH550-modified h-BN nanoplates + AgNWs
+  filler_shape: platelet
+  filler_loading_vol_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: vol%
+  functionalization: Silane KH550 (on BN); PDA treatment mentioned for AgNWs
+  processing_method: Fillers dispersed in epoxy, MHHPA/MNA curing, vacuum at 90 C
+  k_composite_W_mK: 0.347
+  k_direction: unknown
+  k_original_value: 0.347
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 this-research column, sample BN/Ag-0/EP
+  confidence: High
+  notes: 'Sample BN/Ag-0/EP: BN added at 20 vol% of epoxy; AgNWs:BN mass ratio 0:300 AgNWs:BN mass ratio. Measurement method not stated in extracted text. Table 4 Case1/Case2 columns are literature (excluded).'
+- row_id: 587d9f0d-038
+  matrix_polymer: Epoxy (bisphenol A type)
+  curing_agent: MHHPA + MNA
+  filler_material: h-BN
+  filler_material_original: KH550-modified h-BN nanoplates + AgNWs
+  filler_shape: platelet
+  filler_loading_vol_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: vol%
+  functionalization: Silane KH550 (on BN); PDA treatment mentioned for AgNWs
+  processing_method: Fillers dispersed in epoxy, MHHPA/MNA curing, vacuum at 90 C
+  k_composite_W_mK: 0.352
+  k_direction: unknown
+  k_original_value: 0.352
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 this-research column, sample BN/Ag-1/EP
+  confidence: High
+  notes: 'Sample BN/Ag-1/EP: BN added at 20 vol% of epoxy; AgNWs:BN mass ratio 1:300 AgNWs:BN mass ratio. Measurement method not stated in extracted text. Table 4 Case1/Case2 columns are literature (excluded).'
+- row_id: 587d9f0d-039
+  matrix_polymer: Epoxy (bisphenol A type)
+  curing_agent: MHHPA + MNA
+  filler_material: h-BN
+  filler_material_original: KH550-modified h-BN nanoplates + AgNWs
+  filler_shape: platelet
+  filler_loading_vol_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: vol%
+  functionalization: Silane KH550 (on BN); PDA treatment mentioned for AgNWs
+  processing_method: Fillers dispersed in epoxy, MHHPA/MNA curing, vacuum at 90 C
+  k_composite_W_mK: 0.374
+  k_direction: unknown
+  k_original_value: 0.374
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 this-research column, sample BN/Ag-4/EP
+  confidence: High
+  notes: 'Sample BN/Ag-4/EP: BN added at 20 vol% of epoxy; AgNWs:BN mass ratio 4:300 AgNWs:BN mass ratio. Measurement method not stated in extracted text. Table 4 Case1/Case2 columns are literature (excluded).'

@@ -1,0 +1,128 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P032
+paper:
+  doi: 10.3390/polym11121990
+  title: Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin-Based Composites under Magnetic Alignment
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11121990
+extraction_log:
+- seq: 35
+  candidate_id: P032
+  doi: 10.3390/polym11121990
+  paper_title: Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin-Based Composites under Magnetic Alignment
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym11121990.txt
+  tables_inspected: filler property tables
+  figures_inspected: Fig 5 (Ni size series, values in text)
+  candidate_measurements: 4
+  unit_conversions: none
+  duplicate_checks: 1.182 (nano-Al2O3) and 1.21 (AlN+MWCNT) are literature refs - excluded
+  qc_findings: 4 rows; metallic Ni secondary filler; 30vol% AlN control row included
+  rows_appended: 4
+  rows_rejected_at_append:
+  - - b8850d43-116
+    - non-numeric filler_loading_original_value
+  - - b8850d43-117
+    - non-numeric filler_loading_original_value
+  - - b8850d43-118
+    - non-numeric filler_loading_original_value
+- seq: 36
+  candidate_id: P032
+  doi: 10.3390/polym11121990
+  paper_title: Effect of Particle Sizes of Nickel Powder on Thermal Conductivity of Epoxy Resin-Based Composites under Magnetic Alignment
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym11121990.txt
+  tables_inspected: filler property tables
+  figures_inspected: Fig 5
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: retry of rejected b8850d43-116/117/118 (non-numeric 30 AlN + 2 Ni)
+  qc_findings: original loading made numeric (32 vol%), composition moved to filler_material_original/notes
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: b8850d43-115
+  matrix_polymer: Epoxy resin
+  filler_material: AlN
+  filler_material_original: AlN only (30 vol%, 1 um)
+  filler_shape: particle
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  filler_alignment: Ni chains aligned by vertical magnetic field
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.933
+  k_direction: through-plane (vertical alignment)
+  measurement_method: Thermal conductivity measurement (per text; values vs pure epoxy 0.2 W/mK)
+  k_original_value: 0.933
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Text: composites filled with only 30 vol% 1 um-AlN = 0.933 W/mK'
+  confidence: High
+  notes: 'Control: AlN-only at 30 vol%. Pure epoxy 0.2 W/mK.'
+- row_id: b8850d43-116
+  matrix_polymer: Epoxy resin
+  filler_material: AlN
+  filler_material_original: AlN 30 vol% + Ni 50 nm 2 vol%, magnetic alignment
+  filler_shape: particle
+  filler_loading_vol_pct: 32.0
+  filler_loading_original_value: 32.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  filler_alignment: Ni chains aligned by vertical magnetic field
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.401
+  k_direction: through-plane (vertical alignment)
+  measurement_method: Thermal conductivity measurement (per text; values vs pure epoxy 0.2 W/mK)
+  k_original_value: 1.401
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 5 discussion: Ni 50 nm -> 1.401 W/mK'
+  confidence: High
+  notes: Ni particle size series (50 nm) at 30 vol% AlN + 2 vol% Ni, magnetic field aligned. filler_loading_original_value string '30 AlN + 2 Ni' relocated to notes in Phase 2 audit; field set to 32.0 per audit guidance.
+- row_id: b8850d43-117
+  matrix_polymer: Epoxy resin
+  filler_material: AlN
+  filler_material_original: AlN 30 vol% + Ni 1 um 2 vol%, magnetic alignment
+  filler_shape: particle
+  filler_loading_vol_pct: 32.0
+  filler_loading_original_value: 32.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  filler_alignment: Ni chains aligned by vertical magnetic field
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.474
+  k_direction: through-plane (vertical alignment)
+  measurement_method: Thermal conductivity measurement (per text; values vs pure epoxy 0.2 W/mK)
+  k_original_value: 1.474
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Text + Fig 5: Ni 1 um -> 1.474 W/mK (max, +737% vs pure EP, +58% vs AlN-only)'
+  confidence: High
+  notes: Optimal Ni size 1 um. filler_loading_original_value string '30 AlN + 2 Ni' relocated to notes in Phase 2 audit; field set to 32.0 per audit guidance.
+- row_id: b8850d43-118
+  matrix_polymer: Epoxy resin
+  filler_material: AlN
+  filler_material_original: AlN 30 vol% + Ni 10 um 2 vol%, magnetic alignment
+  filler_shape: particle
+  filler_loading_vol_pct: 32.0
+  filler_loading_original_value: 32.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  filler_alignment: Ni chains aligned by vertical magnetic field
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.445
+  k_direction: through-plane (vertical alignment)
+  measurement_method: Thermal conductivity measurement (per text; values vs pure epoxy 0.2 W/mK)
+  k_original_value: 1.445
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 5 discussion: Ni 10 um -> 1.445 W/mK'
+  confidence: High
+  notes: Ni particle size series (10 um). filler_loading_original_value string '30 AlN + 2 Ni' relocated to notes in Phase 2 audit; field set to 32.0 per audit guidance.

@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P029
+paper:
+  doi: 10.3390/polym16223126
+  title: Thermally Conductive Polydimethylsiloxane-Based Composite with Vertically Aligned Hexagonal Boron Nitride
+  year: 2024
+  source_url: https://doi.org/10.3390/polym16223126
+extraction_log:
+- seq: 32
+  candidate_id: P029
+  doi: 10.3390/polym16223126
+  paper_title: Shear-assisted vertically aligned BN/PDMS composites via repeat blade coating for thermal interface materials
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym16223126.txt
+  tables_inspected: composition tables
+  figures_inspected: k curves (values in text at 30 wt%)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: lit values (45.15, 12.1, 1.227) excluded
+  qc_findings: 1 row, optional PDMS matrix, out-of-plane direction
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 63431a49-103
+  matrix_polymer: PDMS
+  filler_material: BN
+  filler_material_original: h-BN platelets, vertically aligned (V-BP)
+  filler_shape: platelet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  filler_alignment: vertically aligned (repeat blade coating + flipping)
+  processing_method: Repeat blade coating with flipping/cutting to align BN out-of-plane
+  k_composite_W_mK: 1.24
+  k_direction: out-of-plane
+  measurement_method: LFA (NETZSCH LFA 467) at 25 C; IR camera validation
+  measurement_temperature_C: 25.0
+  k_original_value: 1.24
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract + Results: V-BP 30 wt% -> out-of-plane 1.24 W/mK'
+  confidence: High
+  notes: 'Optional matrix: PDMS (not epoxy). Coating velocity effect ~40% (parametric, not separate rows).'

@@ -1,0 +1,139 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P015
+paper:
+  doi: 10.3390/nano14020205
+  title: Significantly Improve the Thermal Conductivity and Dielectric Performance of Epoxy Composite by Introducing Boron Nitride and POSS
+  year: 2024
+  source_url: https://doi.org/10.3390/nano14020205
+extraction_log:
+- seq: 16
+  candidate_id: P015
+  doi: 10.3390/nano14020205
+  paper_title: Significantly Improve the Thermal Conductivity and Dielectric Performance of Epoxy Composite by Constructing BNNSs/G-POSS Double Fillers
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano14020205.txt
+  tables_inspected: none with k
+  figures_inspected: Fig 4a/b referenced; values stated in text
+  candidate_measurements: 5
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 5 text-sourced rows; hybrid row total loading 22 wt%
+  rows_appended: 5
+  rows_rejected_at_append:
+  - - ad883006-073
+    - non-numeric filler_loading_original_value
+- seq: 18
+  candidate_id: P015
+  doi: 10.3390/nano14020205
+  paper_title: Significantly Improve the Thermal Conductivity and Dielectric Performance of Epoxy Composite by Constructing BNNSs/G-POSS Double Fillers
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano14020205.txt
+  tables_inspected: none with k
+  figures_inspected: Fig 4b
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: retry of rejected ad883006-073
+  qc_findings: non-numeric original loading rejected; re-appended numeric 22 wt% with composition in notes
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: ad883006-069
+  matrix_polymer: Epoxy resin
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: None (BNNS); G-POSS is glycidyl polyhedral oligomeric silsesquioxane secondary filler
+  k_matrix_W_mK: 0.1849
+  k_composite_W_mK: 0.2495
+  k_direction: unknown
+  measurement_method: Plane heat flow method (DRL-III, Xiangtan)
+  k_original_value: 0.2495
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results text (Fig 4a discussion): BNNSs/epoxy 10 wt%'
+  confidence: High
+  notes: 'BNNS/epoxy 10 wt%. Neat epoxy 0.1849 W·m−1·K−1. '
+- row_id: ad883006-070
+  matrix_polymer: Epoxy resin
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: None (BNNS); G-POSS is glycidyl polyhedral oligomeric silsesquioxane secondary filler
+  k_matrix_W_mK: 0.1849
+  k_composite_W_mK: 0.5496
+  k_direction: unknown
+  measurement_method: Plane heat flow method (DRL-III, Xiangtan)
+  k_original_value: 0.5496
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results text (Fig 4a discussion): BNNSs/epoxy 20 wt%'
+  confidence: High
+  notes: 'BNNS/epoxy 20 wt%. Neat epoxy 0.1849 W·m−1·K−1. '
+- row_id: ad883006-071
+  matrix_polymer: Epoxy resin
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: None (BNNS); G-POSS is glycidyl polyhedral oligomeric silsesquioxane secondary filler
+  k_matrix_W_mK: 0.1849
+  k_composite_W_mK: 0.8062
+  k_direction: unknown
+  measurement_method: Plane heat flow method (DRL-III, Xiangtan)
+  k_original_value: 0.8062
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results text (Fig 4a discussion): BNNSs/epoxy 30 wt%'
+  confidence: High
+  notes: 'BNNS/epoxy 30 wt%. Neat epoxy 0.1849 W·m−1·K−1. '
+- row_id: ad883006-072
+  matrix_polymer: Epoxy resin
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: None (BNNS); G-POSS is glycidyl polyhedral oligomeric silsesquioxane secondary filler
+  k_matrix_W_mK: 0.1849
+  k_composite_W_mK: 0.9457
+  k_direction: unknown
+  measurement_method: Plane heat flow method (DRL-III, Xiangtan)
+  k_original_value: 0.9457
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results text (Fig 4a discussion): BNNSs/epoxy 40 wt%'
+  confidence: High
+  notes: BNNS/epoxy 40 wt%. Neat epoxy 0.1849 W·m−1·K−1. max loading tested in Fig 4a
+- row_id: ad883006-073
+  matrix_polymer: Epoxy resin
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 22.0
+  filler_loading_original_value: 22.0
+  filler_loading_original_unit: wt%
+  functionalization: None (BNNS); G-POSS is glycidyl polyhedral oligomeric silsesquioxane secondary filler
+  k_matrix_W_mK: 0.1849
+  k_composite_W_mK: 0.3969
+  k_direction: unknown
+  measurement_method: Plane heat flow method (DRL-III, Xiangtan)
+  k_original_value: 0.3969
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results text (Fig 4b discussion): BNNS/G-POSS/epoxy, G-POSS 2 wt%'
+  confidence: High
+  notes: BNNS 20 wt% + G-POSS 2 wt% total 22 wt% (wt% column=22 total). filler_loading_original_value string '20 wt% BNNS + 2 wt% G-POSS' relocated to notes in Phase 2 audit; field set to 22.0 per audit guidance.

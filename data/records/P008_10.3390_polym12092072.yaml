@@ -1,0 +1,147 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P008
+paper:
+  doi: 10.3390/polym12092072
+  title: Enhanced Thermal Conductivity of Silicone Composites Filled with Few-Layered Hexagonal Boron Nitride
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12092072
+extraction_log:
+- seq: 8
+  candidate_id: P008
+  doi: 10.3390/polym12092072
+  paper_title: Enhanced Thermal Conductivity of Silicone Composites Filled with Few-Layered Hexagonal Boron Nitride Synthesized by Fluid-Promoted Exfoliation
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym12092072.txt
+  tables_inspected: Table 1 (physical properties incl. thermal conductivity)
+  figures_inspected: ''
+  candidate_measurements: 6
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: optional matrix silicone; 6 rows
+  rows_appended: 6
+  rows_rejected_at_append: []
+measurements:
+- row_id: 860b33d9-040
+  matrix_polymer: Silicone rubber
+  filler_material: h-BN
+  filler_material_original: h-BN
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Fluid-promoted exfoliation of h-BN (CMC/TW80/SDS media) then solution mixing into silicone
+  k_matrix_W_mK: 0.244
+  k_composite_W_mK: 0.344
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 457 MicroFlash); k = density x Cp x diffusivity
+  k_original_value: 0.344
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: Table 1 row h-BN 10 wt.%
+  confidence: High
+  notes: Optional matrix (silicone). Density/Cp/diffusivity also in Table 1. Pure silicone k=0.244 W/mK.
+- row_id: 860b33d9-041
+  matrix_polymer: Silicone rubber
+  filler_material: h-BN
+  filler_material_original: h-BN
+  filler_shape: platelet
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Fluid-promoted exfoliation of h-BN (CMC/TW80/SDS media) then solution mixing into silicone
+  k_matrix_W_mK: 0.244
+  k_composite_W_mK: 0.357
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 457 MicroFlash); k = density x Cp x diffusivity
+  k_original_value: 0.357
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: Table 1 row h-BN 20 wt.%
+  confidence: High
+  notes: Optional matrix (silicone). Density/Cp/diffusivity also in Table 1. Pure silicone k=0.244 W/mK.
+- row_id: 860b33d9-042
+  matrix_polymer: Silicone rubber
+  filler_material: h-BN
+  filler_material_original: h-BN
+  filler_shape: platelet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Fluid-promoted exfoliation of h-BN (CMC/TW80/SDS media) then solution mixing into silicone
+  k_matrix_W_mK: 0.244
+  k_composite_W_mK: 0.424
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 457 MicroFlash); k = density x Cp x diffusivity
+  k_original_value: 0.424
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: Table 1 row h-BN 30 wt.%
+  confidence: High
+  notes: Optional matrix (silicone). Density/Cp/diffusivity also in Table 1. Pure silicone k=0.244 W/mK.
+- row_id: 860b33d9-043
+  matrix_polymer: Silicone rubber
+  filler_material: BNNS
+  filler_material_original: FL-hBN (few-layered h-BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Fluid-promoted exfoliation of h-BN (CMC/TW80/SDS media) then solution mixing into silicone
+  k_matrix_W_mK: 0.244
+  k_composite_W_mK: 0.418
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 457 MicroFlash); k = density x Cp x diffusivity
+  k_original_value: 0.418
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: Table 1 row FL-hBN (few-layered h-BN) 10 wt.%
+  confidence: High
+  notes: Optional matrix (silicone). Density/Cp/diffusivity also in Table 1. Pure silicone k=0.244 W/mK.
+- row_id: 860b33d9-044
+  matrix_polymer: Silicone rubber
+  filler_material: BNNS
+  filler_material_original: FL-hBN (few-layered h-BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Fluid-promoted exfoliation of h-BN (CMC/TW80/SDS media) then solution mixing into silicone
+  k_matrix_W_mK: 0.244
+  k_composite_W_mK: 0.438
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 457 MicroFlash); k = density x Cp x diffusivity
+  k_original_value: 0.438
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: Table 1 row FL-hBN (few-layered h-BN) 20 wt.%
+  confidence: High
+  notes: Optional matrix (silicone). Density/Cp/diffusivity also in Table 1. Pure silicone k=0.244 W/mK.
+- row_id: 860b33d9-045
+  matrix_polymer: Silicone rubber
+  filler_material: BNNS
+  filler_material_original: FL-hBN (few-layered h-BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Fluid-promoted exfoliation of h-BN (CMC/TW80/SDS media) then solution mixing into silicone
+  k_matrix_W_mK: 0.244
+  k_composite_W_mK: 0.515
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 457 MicroFlash); k = density x Cp x diffusivity
+  k_original_value: 0.515
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: Table 1 row FL-hBN (few-layered h-BN) 30 wt.%
+  confidence: High
+  notes: Optional matrix (silicone). Density/Cp/diffusivity also in Table 1. Pure silicone k=0.244 W/mK.

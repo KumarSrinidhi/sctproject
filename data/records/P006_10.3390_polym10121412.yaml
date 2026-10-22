@@ -1,0 +1,45 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P006
+paper:
+  doi: 10.3390/polym10121412
+  title: Synergistic Improvement in Thermal Conductivity of Polyimide Nanocomposite Films Using Boron Nitride Coated Copper Nanoparticles and Nanowires
+  year: 2018
+  source_url: https://doi.org/10.3390/polym10121412
+extraction_log:
+- seq: 6
+  candidate_id: P006
+  doi: 10.3390/polym10121412
+  paper_title: Synergistic Improvement in Thermal Conductivity of Polyimide Nanocomposite Films Using Boron Nitride Coated Copper Nanoparticles and Nanowires
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym10121412.txt
+  tables_inspected: Table 1 (k and dielectric features incl. this-work row)
+  figures_inspected: ''
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: literature rows excluded
+  qc_findings: 1 row, optional matrix (PI); hybrid Cu/BN filler
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: fa7ce3db-036
+  matrix_polymer: Polyimide (from benzophenone-3,3 dicarboxylic acid / p-phenylenediamine, PEPA)
+  filler_material: Cu/BN hybrid
+  filler_material_original: (CuNPs-CuNWs)@BN hybrid (BN-coated Cu nanoparticles and nanowires)
+  filler_shape: other
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: BN coating on Cu NPs/NWs
+  k_composite_W_mK: 4.32
+  k_direction: unknown
+  measurement_method: Laser flash ( Netzsch LFA 447 HyperFlash); in-plane and cross-plane options reported in paper
+  k_original_value: 4.32
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 1 this-work row (10 wt % 4.32 W/mK); confirmed in text
+  confidence: High
+  notes: 'Optional matrix category: polyimide. Hybrid filler dominated by Cu NWs; BN serves as coating. Direction of the 4.32 value not unambiguously mapped in table; paper studies oriented films.'

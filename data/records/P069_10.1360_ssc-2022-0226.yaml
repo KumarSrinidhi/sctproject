@@ -1,0 +1,237 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P069
+paper:
+  doi: 10.1360/ssc-2022-0226
+  title: Preparation of boron nitride/graphene composite thermal conductive filler and study on flame retardant, thermal conductivity and insulation properties of epoxy resin composites
+  year: 2023
+  source_url: https://doi.org/10.1360/ssc-2022-0226
+extraction_log:
+- seq: 77
+  candidate_id: P069
+  doi: 10.1360/ssc-2022-0226
+  paper_title: Preparation of boron nitride/graphene composite thermal conductive filler and study on flame retardant, thermal conductivity and insulation properties of epoxy resin composites
+  date_processed: '2026-10-14'
+  access_result: Direct OA host engine.scichina.com (Phase 3B fetch, previously not extracted)
+  files_inspected: work/fulltext/10.1360_ssc-2022-0226.txt (Chinese full text)
+  tables_inspected: Table 1 (FEP/GBN thermal conductivity, both processing columns)
+  figures_inspected: Figure 6 (TC vs loading) - table values used
+  candidate_measurements: 10
+  unit_conversions: W/(m K) = W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: 10 composite rows (5 loadings x 2 processing routes); neat FEP 0.217 recorded as k_matrix (not as its own row, per dataset convention of composite-only rows)
+  rows_appended: 10
+  rows_rejected_at_append: []
+measurements:
+- row_id: 0412aae0-191
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 1.0
+  filler_loading_original_value: 1.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: Filler dispersed in ethanol (sonication 40 min) + preheated FEP, stir 30 min, 100 C to remove ethanol, + molten DDM, mix 40 s, cast steel mold; conventional oven cure 120 C then 150 C, 2 h each (no pressure)
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.245
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.245
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 未热压 (no hot press), FEP/GBN 1
+  confidence: High
+  notes: Conventional oven cure (no hot press).
+- row_id: 0412aae0-192
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 1.0
+  filler_loading_original_value: 1.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: 'Same as no-hot-press but hot-press cure on hydraulic press: 120 C then 150 C, 2 h each, 10 MPa'
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.273
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.273
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 热压后 (after hot press), FEP/GBN 1
+  confidence: High
+  notes: Hot-pressed at 10 MPa. At 2 wt% hot-press k (0.309) is below no-hot-press (0.341) as printed in Table 1.
+- row_id: 0412aae0-193
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 2.0
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: Filler dispersed in ethanol (sonication 40 min) + preheated FEP, stir 30 min, 100 C to remove ethanol, + molten DDM, mix 40 s, cast steel mold; conventional oven cure 120 C then 150 C, 2 h each (no pressure)
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.341
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.341
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 未热压 (no hot press), FEP/GBN 2
+  confidence: High
+  notes: Conventional oven cure (no hot press).
+- row_id: 0412aae0-194
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 2.0
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: 'Same as no-hot-press but hot-press cure on hydraulic press: 120 C then 150 C, 2 h each, 10 MPa'
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.309
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.309
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 热压后 (after hot press), FEP/GBN 2
+  confidence: High
+  notes: Hot-pressed at 10 MPa. At 2 wt% hot-press k (0.309) is below no-hot-press (0.341) as printed in Table 1.
+- row_id: 0412aae0-195
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 3.0
+  filler_loading_original_value: 3.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: Filler dispersed in ethanol (sonication 40 min) + preheated FEP, stir 30 min, 100 C to remove ethanol, + molten DDM, mix 40 s, cast steel mold; conventional oven cure 120 C then 150 C, 2 h each (no pressure)
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.363
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.363
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 未热压 (no hot press), FEP/GBN 3
+  confidence: High
+  notes: Conventional oven cure (no hot press).
+- row_id: 0412aae0-196
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 3.0
+  filler_loading_original_value: 3.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: 'Same as no-hot-press but hot-press cure on hydraulic press: 120 C then 150 C, 2 h each, 10 MPa'
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.524
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.524
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 热压后 (after hot press), FEP/GBN 3
+  confidence: High
+  notes: Hot-pressed at 10 MPa. At 2 wt% hot-press k (0.309) is below no-hot-press (0.341) as printed in Table 1.
+- row_id: 0412aae0-197
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 4.0
+  filler_loading_original_value: 4.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: Filler dispersed in ethanol (sonication 40 min) + preheated FEP, stir 30 min, 100 C to remove ethanol, + molten DDM, mix 40 s, cast steel mold; conventional oven cure 120 C then 150 C, 2 h each (no pressure)
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.461
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.461
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 未热压 (no hot press), FEP/GBN 4
+  confidence: High
+  notes: Conventional oven cure (no hot press).
+- row_id: 0412aae0-198
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 4.0
+  filler_loading_original_value: 4.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: 'Same as no-hot-press but hot-press cure on hydraulic press: 120 C then 150 C, 2 h each, 10 MPa'
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.699
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.699
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 热压后 (after hot press), FEP/GBN 4
+  confidence: High
+  notes: Hot-pressed at 10 MPa. At 2 wt% hot-press k (0.309) is below no-hot-press (0.341) as printed in Table 1.
+- row_id: 0412aae0-199
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: Filler dispersed in ethanol (sonication 40 min) + preheated FEP, stir 30 min, 100 C to remove ethanol, + molten DDM, mix 40 s, cast steel mold; conventional oven cure 120 C then 150 C, 2 h each (no pressure)
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.593
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.593
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 未热压 (no hot press), FEP/GBN 5
+  confidence: High
+  notes: Conventional oven cure (no hot press).
+- row_id: 0412aae0-200
+  matrix_polymer: 'Flame-retardant epoxy (FEP, lab-made): bisphenol-A epoxy resin + P-N synergistic additive flame retardant'
+  curing_agent: DDM (4,4-diaminodiphenylmethane, stoichiometric)
+  filler_material: BN/graphene hybrid
+  filler_material_original: GBN (BN nanosheets on graphene; BN 1 um liquid-phase exfoliated in IPA 12 h + graphene, PDDA-assisted)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: PDDA (polydiallyldimethylammonium chloride) surface treatment; BNNS exfoliated from 1 um BN
+  processing_method: 'Same as no-hot-press but hot-press cure on hydraulic press: 120 C then 150 C, 2 h each, 10 MPa'
+  k_matrix_W_mK: 0.217
+  k_composite_W_mK: 0.931
+  k_direction: unknown
+  measurement_method: Laser flash analysis (LFA), NETZSCH LFA 467, GB/T 22588-2008; disc 12.6 mm diameter, 1-3 mm thick, room temperature
+  k_original_value: 0.931
+  k_original_unit: W/(m K)
+  value_source: table
+  source_location: Table 1 "FEP/GBN composites thermal conductivity (W/(m K))" + text Sec. 3.3 (0.593 / 0.931 / 0.217 quoted in prose) - column 热压后 (after hot press), FEP/GBN 5
+  confidence: High
+  notes: Hot-pressed at 10 MPa. At 2 wt% hot-press k (0.309) is below no-hot-press (0.341) as printed in Table 1.

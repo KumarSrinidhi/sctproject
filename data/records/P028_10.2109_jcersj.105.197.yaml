@@ -1,0 +1,63 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P028
+paper:
+  doi: 10.2109/jcersj.105.197
+  title: Thermal Conductivity of Epoxy Resin Filled with Particulate Aluminum Nitride Powder
+  year: 1997
+  source_url: https://doi.org/10.2109/jcersj.105.197
+extraction_log:
+- seq: 31
+  candidate_id: P028
+  doi: 10.2109/jcersj.105.197
+  paper_title: Thermal conductivity of aluminum nitride and alumina particulate-filled epoxy resin (in Japanese, English abstract)
+  date_processed: '2026-10-13'
+  access_result: Full text (JCI/JCerS repository, PDF-derived txt)
+  files_inspected: work/fulltext/10.2109_jcersj.105.197.txt
+  tables_inspected: filler property tables (no k)
+  figures_inspected: Fig 3 curves
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 2 rows; alumina value is upper-bound phrasing (<2.68), flagged in notes; classic 1997 paper
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 22387e18-101
+  matrix_polymer: Epoxy resin
+  filler_material: AlN
+  filler_material_original: AlN particles (size series)
+  filler_shape: particle
+  filler_loading_vol_pct: 68.5
+  filler_loading_original_value: 68.5
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_composite_W_mK: 7.15
+  k_direction: unknown
+  measurement_method: Laser flash (TC-3000H-NC, Sinku-Riko), density by water displacement
+  k_original_value: 7.15
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract + Results: AlN composite 7.15 W/mK at 68.5 vol%'
+  confidence: High
+  notes: Max loading point. Fig 3 has full curve (figure-only). Filler particle size affects k (paper focus).
+- row_id: 22387e18-102
+  matrix_polymer: Epoxy resin
+  filler_material: Al2O3
+  filler_material_original: alumina particles
+  filler_shape: particle
+  filler_loading_vol_pct: 63.8
+  filler_loading_original_value: 63.8
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_composite_W_mK: 2.68
+  k_direction: unknown
+  measurement_method: Laser flash (TC-3000H-NC, Sinku-Riko), density by water displacement
+  k_original_value: 2.68
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract + Results: alumina composite <2.68 W/mK at 63.8 vol%'
+  confidence: High
+  notes: '"lower than 2.68" at 63.8 vol% (upper bound phrasing); treated as reported value with caveat.'

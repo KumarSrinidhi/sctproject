@@ -43,8 +43,10 @@ doi,reason,action
 10.3390/molecules21050670,Own data figure-only; text values are literature comparisons,"recovered (Phase 4 pixel digitization of Fig. 3; value_source=figure, Medium confidence)"
 10.14314/polimery.2017.560,"Abstract only, no k values",excluded_no_data
 10.3390/nano9101396,"Relative % increase only, no absolute k in text",excluded_no_absolute_k
-10.3390/polym10030277,No absolute k for own data in text,excluded_no_absolute_k
-10.1039/c8ra10645b,No absolute k hits in text,excluded_no_absolute_k
+10.3390/polym10030277,No absolute k for own data in text (Phase 1 screen); Phase 3A re-grep found 0.97 and 1.75 W/K·m printed in Sec. 3.5 and Conclusions,"recovered (Phase 3A local re-grep; rows 0aa28dc4-184..185, High)"
+10.1039/c8ra10645b,No absolute k hits in text (Phase 1 screen); Phase 3A re-grep found Table 1 with absolute k for h-BN and MBN series,"recovered (Phase 3A local re-grep of Table 1; rows 011e5815-174..183, High)"
 10.3390/molecules28093797,"PCM (paraffin/LA-ODE) matrix, out of epoxy/BN primary scope",excluded_scope
 10.3390/polym13132161,Al2O3/AlN literature values only; own data not BN/AlN primary,excluded_scope
 (policy),Sci-Hub deliberately NOT used for any blocked DOI in Phase 3 (copyright/piracy concerns),excluded by project decision; see work/phase3_changes.json
+10.3390/polym11101548,"Own k reported only relative to neat epoxy in text (""about 173% higher than that of pure epoxy resin""); absolute values only in Fig. 5 (CTBN series). Text k values are literature background (epoxy 0.2, BN 320 W/m·K). Screened in wave 2 but never logged (audit D10). Figure-digitization candidate.",excluded_no_absolute_k
+10.3390/polym15051214,"Own k reported only as a ratio in text (""increased by a factor of two"" at 20% BN); absolute values only in Fig. 5 (3-300 K). Text k values are literature background (h-BN 420 / ~5 W/m·K). Screened in wave 2 but never logged (audit D10). Figure-digitization candidate.",excluded_no_absolute_k

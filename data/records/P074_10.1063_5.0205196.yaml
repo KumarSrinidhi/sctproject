@@ -1,0 +1,45 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P074
+paper:
+  doi: 10.1063/5.0205196
+  title: Enhanced thermal conductivity of epoxy resin by incorporating three-dimensional boron nitride thermally conductive network
+  year: 2024
+  source_url: https://doi.org/10.1063/5.0205196
+extraction_log:
+- seq: 82
+  candidate_id: P074
+  doi: 10.1063/5.0205196
+  paper_title: Enhanced thermal conductivity of epoxy resin by incorporating three-dimensional boron nitride thermally conductive network
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: bb69b79a-207
+  matrix_polymer: Epoxy (EP)
+  filler_material: BNNS
+  filler_material_original: BNNS@PU (BN nanosheets chemically bonded to polyurethane foam supporter)
+  filler_shape: nanosheet network
+  filler_loading_wt_pct: 5.93
+  filler_loading_original_value: 5.93
+  filler_loading_original_unit: wt%
+  functionalization: Chemical bonding to PU foam scaffold
+  k_composite_W_mK: 0.521
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 0.521
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "the thermal conductivity of the BNNS@PU/EP composites reaches 0.521 W/m K with an enhancement rate of 30.89 at an ultra-low BNNS filler content (5.93 wt. %)"'
+  confidence: Medium
+  notes: 'Abstract-only. Loading = BNNS content in composite (quantified by TGA). Phase 4: value re-confirmed against publisher abstract page (work/phase4_browser/); AIP abstract page (Cloudflare cleared in browser); full text paywalled.'

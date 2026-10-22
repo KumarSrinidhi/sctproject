@@ -1,0 +1,46 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P022
+paper:
+  doi: 10.1039/d3ra00428g
+  title: 'Hydroxy silicone oil modified boron nitride for high thermal conductivity and low dielectric loss silicone rubber composites: experimental and molecular simulation studies'
+  year: 2023
+  source_url: https://doi.org/10.1039/d3ra00428g
+extraction_log:
+- seq: 24
+  candidate_id: P022
+  doi: 10.1039/d3ra00428g
+  paper_title: Hydroxy silicone oil modified boron nitride for high thermal conductivity and low dielectric loss silicone rubber composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML (RSC)
+  files_inspected: work/fulltext/10.1039_d3ra00428g.txt
+  tables_inspected: none with k
+  figures_inspected: Fig 6a (k vs loading)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: Fig 6b literature dataset excluded
+  qc_findings: 1 row, optional silicone-rubber matrix
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: cb757023-091
+  matrix_polymer: Silicone rubber (SiR)
+  filler_material: BN
+  filler_material_original: Si11 = long-chain hydroxyl silicone oil modified BN
+  filler_shape: platelet
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: Hydroxyl silicone oil graft (chain length 11)
+  processing_method: Silicone rubber compounding with modified BN, curing
+  k_composite_W_mK: 1.88
+  k_direction: isotropic
+  measurement_method: TPS1500 hot disk (isotropic, sample thickness ~6 mm)
+  k_original_value: 1.88
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results text: TC reaches 1.88 W m-1 K-1 at 40 wt% Si11 in silicone rubber'
+  confidence: High
+  notes: 'Optional matrix: silicone rubber (not epoxy). Pure SiR k not numerically stated (only +683.3%). Intermediate loadings figure-only (Fig 6a).'

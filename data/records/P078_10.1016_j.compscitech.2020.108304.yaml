@@ -1,0 +1,63 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P078
+paper:
+  doi: 10.1016/j.compscitech.2020.108304
+  title: Enhanced thermal conductivity of epoxy composites by constructing aluminum nitride honeycomb reinforcements
+  year: 2020
+  source_url: https://doi.org/10.1016/j.compscitech.2020.108304
+extraction_log:
+- seq: 86
+  candidate_id: P078
+  doi: 10.1016/j.compscitech.2020.108304
+  paper_title: Enhanced thermal conductivity of epoxy composites by constructing aluminum nitride honeycomb reinforcements
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 2
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 034b59a3-213
+  matrix_polymer: Epoxy (EP)
+  filler_material: AlN
+  filler_material_original: AlN-H (aluminum nitride honeycomb, freeze-cast)
+  filler_shape: honeycomb network
+  filler_loading_vol_pct: 47.26
+  filler_loading_original_value: 47.26
+  filler_loading_original_unit: vol%
+  functionalization: None; freeze-cast honeycomb
+  k_composite_W_mK: 9.48
+  k_direction: parallel to AlN-H channels (in-plane-like)
+  measurement_method: Not stated in abstract
+  k_original_value: 9.48
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "maximal thermal conductivity values of 9.48 W m−1 K−1 and 4.45 W m−1 K−1 in the directions parallel and perpendicular to the AlN–H channels, respectively, at AlN loading of 47.26 vol%"'
+  confidence: Medium
+  notes: Abstract-only.
+- row_id: 034b59a3-214
+  matrix_polymer: Epoxy (EP)
+  filler_material: AlN
+  filler_material_original: AlN-H (aluminum nitride honeycomb, freeze-cast)
+  filler_shape: honeycomb network
+  filler_loading_vol_pct: 47.26
+  filler_loading_original_value: 47.26
+  filler_loading_original_unit: vol%
+  functionalization: None; freeze-cast honeycomb
+  k_composite_W_mK: 4.45
+  k_direction: perpendicular to AlN-H channels (through-plane-like)
+  measurement_method: Not stated in abstract
+  k_original_value: 4.45
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): (same sentence as parallel value)'
+  confidence: Medium
+  notes: Abstract-only; perpendicular direction.

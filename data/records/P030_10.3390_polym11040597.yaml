@@ -1,0 +1,87 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P030
+paper:
+  doi: 10.3390/polym11040597
+  title: Rheological Properties and Thermal Conductivity of Epoxy Resins Filled with a Mixture of Alumina and Boron Nitride
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11040597
+extraction_log:
+- seq: 33
+  candidate_id: P030
+  doi: 10.3390/polym11040597
+  paper_title: Rheological Properties and Thermal Conductivity of Epoxy Resins Filled with a Mixture of Alumina and Boron Nitride
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym11040597.txt
+  tables_inspected: rheology tables
+  figures_inspected: k discussion in text (Fig 4b)
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: Al2O3-only film value not numerically stated (only 1.6x ratio) - excluded
+  qc_findings: 3 rows; loading recorded as BN vol% with total filler in notes
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 2a7dd240-104
+  matrix_polymer: Epoxy resin (EP)
+  filler_material: Al2O3/BN hybrid
+  filler_material_original: Al2O3 (DAB1800) + BN platelets, sample BN50DAB1800
+  filler_shape: other
+  filler_loading_vol_pct: 3.63
+  filler_loading_original_value: 3.63
+  filler_loading_original_unit: vol% (BN portion; total filler 73.72 vol%)
+  functionalization: None
+  processing_method: Al2O3 (DAB1800 grade) + BN platelets in epoxy, cast as film
+  k_composite_W_mK: 3.35
+  k_direction: through-plane
+  measurement_method: LFA (Netzsch LFA 447) perpendicular to film plane, RT; k = alpha x rho x Cp
+  measurement_temperature_C: 25.0
+  k_original_value: 3.35
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results text: 3.63 vol% (BN50DAB1800) -> 3.35 W/(m·K)'
+  confidence: High
+  notes: BN 3.63 vol%, total filler ~73.72 vol% (Al2O3-dominated).
+- row_id: 2a7dd240-105
+  matrix_polymer: Epoxy resin (EP)
+  filler_material: Al2O3/BN hybrid
+  filler_material_original: Al2O3 (DAB1800) + BN platelets, sample BN75DAB1800
+  filler_shape: other
+  filler_loading_vol_pct: 5.32
+  filler_loading_original_value: 5.32
+  filler_loading_original_unit: vol% (BN portion; total filler 74.14 vol%)
+  functionalization: None
+  processing_method: Al2O3 (DAB1800 grade) + BN platelets in epoxy, cast as film
+  k_composite_W_mK: 4.44
+  k_direction: through-plane
+  measurement_method: LFA (Netzsch LFA 447) perpendicular to film plane, RT; k = alpha x rho x Cp
+  measurement_temperature_C: 25.0
+  k_original_value: 4.44
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results text: 5.32 vol% (BN75DAB1800) -> 4.44 W/(m·K); optimum 5.3 vol% BN, max 4.4'
+  confidence: High
+  notes: Optimal BN content, max k of series. Total filler ~74.14 vol%.
+- row_id: 2a7dd240-106
+  matrix_polymer: Epoxy resin (EP)
+  filler_material: Al2O3/BN hybrid
+  filler_material_original: Al2O3 (DAB1800) + BN platelets, sample BN90DAB1800
+  filler_shape: other
+  filler_loading_vol_pct: 6.32
+  filler_loading_original_value: 6.32
+  filler_loading_original_unit: vol% (BN portion; total filler 74.47 vol%)
+  functionalization: None
+  processing_method: Al2O3 (DAB1800 grade) + BN platelets in epoxy, cast as film
+  k_composite_W_mK: 4.05
+  k_direction: through-plane
+  measurement_method: LFA (Netzsch LFA 447) perpendicular to film plane, RT; k = alpha x rho x Cp
+  measurement_temperature_C: 25.0
+  k_original_value: 4.05
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results text: 6.32 vol% (BN90DAB1800) -> 4.05 W/(m·K) (drop attributed to BN reorientation)'
+  confidence: High
+  notes: Total filler ~74.47 vol%; k drops vs 5.32 vol% BN due to orientation change.

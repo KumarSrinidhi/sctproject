@@ -1,0 +1,68 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P055
+paper:
+  doi: 10.3390/polym11081335
+  title: 'Optimization of Boron Nitride Sphere Loading in Epoxy: Enhanced Thermal Conductivity and Excellent Electrical Insulation'
+  year: 2020
+  source_url: https://doi.org/10.3390/polym11081335
+extraction_log:
+- seq: 60
+  candidate_id: P055
+  doi: 10.3390/polym11081335
+  paper_title: 'Optimization of Boron Nitride Sphere Loading in Epoxy: Enhanced Thermal Conductivity and Excellent Electrical Insulation'
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym11081335.txt
+  tables_inspected: TC tables
+  figures_inspected: k vs loading, log-log plot
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 2 rows; 40 wt% BNS at 298 K and 77 K
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 6e55ab8a-174
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: Boron nitride sheets (BNS), 40 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: None (gravity-mix)
+  processing_method: Gravity-mix method for controllable BNS loading (5-40 wt%)
+  k_matrix_W_mK: 0.21
+  k_composite_W_mK: 1.66
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; gravity-mix composites)
+  measurement_temperature_C: 298.0
+  k_original_value: 1.66
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results: 40 wt% BNS -> 1.66 W·m−1·K−1 at 298 K (765% vs neat epoxy)'
+  confidence: High
+  notes: BNS loading range 5-40 wt%. 298 K (room temperature).
+- row_id: 6e55ab8a-175
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: Boron nitride sheets (BNS), 40 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: None (gravity-mix)
+  processing_method: Gravity-mix method
+  k_composite_W_mK: 0.84
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; cryogenic)
+  measurement_temperature_C: 77.0
+  k_original_value: 0.84
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results: 40 wt% BNS -> 0.84 W·m−1·K−1 at 77 K'
+  confidence: High
+  notes: Cryogenic (77 K) value for superconducting magnet insulation application.

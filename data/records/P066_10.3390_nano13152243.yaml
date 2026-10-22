@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P066
+paper:
+  doi: 10.3390/nano13152243
+  title: Thermally Conductive and Electrically Insulating Epoxy Composites Filled with Network-like Alumina In Situ Coated Graphene
+  year: 2023
+  source_url: https://doi.org/10.3390/nano13152243
+extraction_log:
+- seq: 74
+  candidate_id: P066
+  doi: 10.3390/nano13152243
+  paper_title: Thermally Conductive and Electrically Insulating Epoxy Composites Filled with Network-like Alumina In Situ Coated Graphene
+  date_processed: '2026-10-14'
+  access_result: 'EPMC fullTextXML (already local: work/fulltext/10.3390_nano13152243.txt)'
+  files_inspected: work/fulltext/10.3390_nano13152243.txt (file existed locally but had never been extracted)
+  tables_inspected: Table 1 (FEM simulation parameters, no TC of own samples)
+  figures_inspected: Figure 7a TC vs filler content - figure-only values not digitized
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: 1 row; scope flag recorded in notes (Al2O3-coated graphene hybrid, ceramic-dominant)
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: c0b4aef3-186
+  matrix_polymer: Epoxy (E51) with curing agent 593 and diluent 501 (100:25:15)
+  curing_agent: 593 curing agent + 501 diluent
+  filler_material: Al2O3/graphene hybrid
+  filler_material_original: Al2O3@Graphene-CTAB (network-like alumina in situ coated graphene sheets)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: In situ Al2O3 coating from aluminium sulfate/NaOH (540 C, 3 h) with CTAB surfactant
+  processing_method: Filler dispersed in resin with vacuum defoaming mixer, poured into PTFE mold, cure 180 min at 120 C
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.97
+  k_direction: unknown
+  measurement_method: Laser flash (DXF-500, TA Instruments) + DSC Cp; k = alpha x Cp x rho, room temperature
+  k_original_value: 0.97
+  k_original_unit: W m-1 K-1
+  value_source: text
+  source_location: 'Sec. 3.3: "The TC of the pure epoxy resin was 0.2 W m-1 K-1, and the TC of the composite with 30 wt% filler reached 0.97 W m-1 K-1"; repeated "At 30 wt% mixed fillers, the TC of the epoxy composite reached 0.97 W m-1 K-1"'
+  confidence: High
+  notes: 'Hybrid filler judged in scope under "epoxy + other ceramics": alumina is the continuous insulating phase (~75% of filler mass), graphene core noted explicitly. Only 30 wt% has an absolute k in text (10/20 wt% are figure-only and were NOT digitized). CTAB variant shows the higher TC at 30 wt%.'

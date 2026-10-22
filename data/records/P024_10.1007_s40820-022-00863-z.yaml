@@ -1,0 +1,64 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P024
+paper:
+  doi: 10.1007/s40820-022-00863-z
+  title: Vertically Aligned Silicon Carbide Nanowires/Boron Nitride Cellulose Aerogel Networks Enhanced Thermal Conductivity and Electromagnetic Absorbing of Epoxy Composites
+  year: 2022
+  source_url: https://doi.org/10.1007/s40820-022-00863-z
+extraction_log:
+- seq: 26
+  candidate_id: P024
+  doi: 10.1007/s40820-022-00863-z
+  paper_title: Vertically aligned SiC nanowires/BN network in cellulose aerogel for thermally conductive epoxy composites
+  date_processed: '2026-10-13'
+  access_result: PDF-to-text (Springer OA)
+  files_inspected: work/fulltext/10.1007_s40820-022-00863-z.txt
+  tables_inspected: none with k
+  figures_inspected: Fig k curves (values partly in text)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 1 row; pure-EP k not numerically quoted (only TCE %)
+  rows_appended: 1
+  rows_rejected_at_append:
+  - - 0e680d76-094
+    - non-numeric measurement_temperature_C
+- seq: 29
+  candidate_id: P024
+  doi: 10.1007/s40820-022-00863-z
+  paper_title: Vertically aligned SiC nanowires/BN network in cellulose aerogel for thermally conductive epoxy composites
+  date_processed: '2026-10-13'
+  access_result: PDF-to-text (Springer OA)
+  files_inspected: work/fulltext/10.1007_s40820-022-00863-z.txt
+  tables_inspected: none with k
+  figures_inspected: Fig k curves
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: retry of rejected 0e680d76-094
+  qc_findings: RT changed to 25 C for numeric validation
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 0e680d76-094
+  matrix_polymer: Epoxy resin (EP), cellulose aerogel (CA) scaffold
+  filler_material: BN
+  filler_material_original: m-BN + m-SiC nanowires hybrid in vertically aligned CA (CA/0.10 m-SiC/1.8 m-BN)
+  filler_shape: other
+  filler_loading_wt_pct: 16.69
+  filler_loading_original_value: 16.69
+  filler_loading_original_unit: wt%
+  functionalization: SiC nanowire hybrid
+  filler_alignment: vertically aligned
+  processing_method: Ice-template assisted freeze casting of CA, vacuum EP impregnation
+  k_composite_W_mK: 2.21
+  k_direction: vertical
+  measurement_method: Hot Disk TPS 2500S (thermal constant analyzer), ISO-style transient; IR camera validation
+  k_original_value: 2.21
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract + Eq(1) discussion: CA/0.10 m-SiC/1.8 m-BN/EP Kc = 2.21 W m-1 K-1 at 16.69 wt%'
+  confidence: High
+  notes: Hybrid total 16.69 wt% (m-BN primary + m-SiC nanowires secondary). Pure EP stated as 890% enhancement (k not quoted numerically; ~0.22 implied but not extracted). measurement_temperature_C non-numeric value 'RT' relocated to notes in Phase 2 audit.

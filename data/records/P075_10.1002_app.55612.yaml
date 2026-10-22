@@ -1,0 +1,45 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P075
+paper:
+  doi: 10.1002/app.55612
+  title: Sugar-template method to construct a boron nitride filler network to enhance the thermal conductivity of epoxy composites
+  year: 2024
+  source_url: https://doi.org/10.1002/app.55612
+extraction_log:
+- seq: 83
+  candidate_id: P075
+  doi: 10.1002/app.55612
+  paper_title: Sugar-template method to construct a boron nitride filler network to enhance the thermal conductivity of epoxy
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 88ca330d-208
+  matrix_polymer: Epoxy (EP)
+  filler_material: h-BN
+  filler_material_original: h-BN honeycomb 3D skeleton (sugar template)
+  filler_shape: 3D network
+  filler_loading_vol_pct: 52.0
+  filler_loading_original_value: 52.0
+  filler_loading_original_unit: vol%
+  functionalization: None; sugar-templated honeycomb scaffold
+  k_composite_W_mK: 2.25
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 2.25
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "the composite for h-BN/EP reaches a TC of 2.25 W/m K when composed of 52 vol% h-BN"'
+  confidence: Medium
+  notes: 'Abstract-only; laser flash measurement per abstract. Phase 4: value re-confirmed against publisher abstract page (work/phase4_browser/); Wiley abstract page; full text paywalled.'

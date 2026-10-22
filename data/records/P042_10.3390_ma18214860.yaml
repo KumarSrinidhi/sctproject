@@ -1,0 +1,87 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P042
+paper:
+  doi: 10.3390/ma18214860
+  title: Advanced Epoxy Resin/Boron Nitride Composites for High-Performance Electrotechnical Applications
+  year: 2025
+  source_url: https://doi.org/10.3390/ma18214860
+extraction_log:
+- seq: 46
+  candidate_id: P042
+  doi: 10.3390/ma18214860
+  paper_title: Advanced Epoxy Resin/Boron Nitride Composites for High-Performance Electrotechnical Applications
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_ma18214860.txt
+  tables_inspected: sample tables
+  figures_inspected: lambda figures
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: 10/20/40 wt% k values figure-only; Al2O3/SiO2 filler k lit values (14-30, 1-14) excluded
+  qc_findings: 3 rows; matrix is preloaded commercial epoxy (flagged in notes); intermediate loadings figure-only
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 3bde4e56-147
+  matrix_polymer: Commercial bicomponent epoxy resin containing Al2O3 and SiO2 fillers (already loaded resin)
+  curing_agent: hardener (bicomponent system)
+  filler_material: none
+  filler_material_original: 0 wt% cBN, commercial resin reference (sample 1)
+  filler_shape: other
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Two mixing routes (a) cBN+resin base then hardener (samples 2-6); (b) cBN+hardener then resin base; cure RT 48 h
+  k_composite_W_mK: 0.77
+  k_direction: unknown
+  measurement_method: Netzsch LFA 457 Microflash laser flash, lambda = alpha x rho x Cp, room temperature
+  k_original_value: 0.77
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract: from 0.77 W/mK in resin without additive'
+  confidence: High
+  notes: Matrix resin itself contains Al2O3 and SiO2 (k baseline 0.77 W/mK, not neat epoxy 0.2). Baseline is Al2O3+SiO2-loaded epoxy, not neat epoxy.
+- row_id: 3bde4e56-148
+  matrix_polymer: Commercial bicomponent epoxy resin containing Al2O3 and SiO2 fillers (already loaded resin)
+  curing_agent: hardener (bicomponent system)
+  filler_material: cBN
+  filler_material_original: 30 wt% cBN (both routes ~equal)
+  filler_shape: other
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Two mixing routes (a) cBN+resin base then hardener (samples 2-6); (b) cBN+hardener then resin base; cure RT 48 h
+  k_composite_W_mK: 1.0
+  k_direction: unknown
+  measurement_method: Netzsch LFA 457 Microflash laser flash, lambda = alpha x rho x Cp, room temperature
+  k_original_value: 1.0
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract: 1 and 1.5 W/mK in ones filled with 30 and 50 wt.% cBN'
+  confidence: High
+  notes: Matrix resin itself contains Al2O3 and SiO2 (k baseline 0.77 W/mK, not neat epoxy 0.2). Abstract reports 1 W/mK at 30 wt% (both routes similar).
+- row_id: 3bde4e56-149
+  matrix_polymer: Commercial bicomponent epoxy resin containing Al2O3 and SiO2 fillers (already loaded resin)
+  curing_agent: hardener (bicomponent system)
+  filler_material: cBN
+  filler_material_original: 50 wt% cBN (sample 6, route a)
+  filler_shape: other
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Two mixing routes (a) cBN+resin base then hardener (samples 2-6); (b) cBN+hardener then resin base; cure RT 48 h
+  k_composite_W_mK: 1.5
+  k_direction: unknown
+  measurement_method: Netzsch LFA 457 Microflash laser flash, lambda = alpha x rho x Cp, room temperature
+  k_original_value: 1.5
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract+Results 3.3: maximum 1.5 W/mK for 50 wt.% cBN (sample 6), 1.87x sample 1'
+  confidence: High
+  notes: Matrix resin itself contains Al2O3 and SiO2 (k baseline 0.77 W/mK, not neat epoxy 0.2).

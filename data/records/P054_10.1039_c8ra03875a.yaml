@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P054
+paper:
+  doi: 10.1039/c8ra03875a
+  title: Surface modification of a BN/ETDS composite with aniline trimer for high thermal conductivity
+  year: 2018
+  source_url: https://doi.org/10.1039/c8ra03875a
+extraction_log:
+- seq: 59
+  candidate_id: P054
+  doi: 10.1039/c8ra03875a
+  paper_title: Surface modification of a BN/ETDS composite with aniline trimer for high thermal conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1039_c8ra03875a.txt
+  tables_inspected: TC tables
+  figures_inspected: k figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: pristine BN 50 wt% figure-only, excluded
+  qc_findings: 1 row; surface-modified BN; epoxy-thiol matrix
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: e9f5118b-173
+  matrix_polymer: ETDS epoxy-thiol (epoxy + thiol curing)
+  curing_agent: thiol
+  filler_material: BN
+  filler_material_original: AT-BN_2 (BN:AT = 2:1 aniline trimer treated), 50 wt% filler
+  filler_shape: platelet
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: Aniline trimer (AT) surface treatment
+  processing_method: AT-treated BN in ETDS epoxy-thiol matrix
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 1.25
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 1.25
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract+Results: AT-BN_2 highest TC = 1.25 W m−1 K−1 (8.06x pristine ETDS 0.19)'
+  confidence: High
+  notes: Surface-functionalized BN; AT amount optimized (BN:AT ratios 1:1 to 20:1 studied).
