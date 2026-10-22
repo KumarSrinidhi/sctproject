@@ -113,6 +113,10 @@ src/argus/
   ml/models.py      baselines + learners (grouped inner tuning, monotone boosting)
   ml/benchmark.py   paper-grouped validation, conformal intervals, ablation
   ml/report.py      Markdown report, prediction table, parity plot
+  fingerprint.py    dataset hash stamped into every analysis output
+  report/course.py  course report rendered from results (refuses stale outputs)
+  report/figures.py report figures (validated palette, small multiples)
+  report/templates/ Jinja2 template of the course report
   legacy.py     one-time migration from work/ + change-declaration check
   cli.py        `argus` commands
 tests/          pytest suite (unit, model identities, real-data invariants)

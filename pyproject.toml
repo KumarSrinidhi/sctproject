@@ -23,6 +23,7 @@ dev = ["pytest>=7.4"]
 plots = ["matplotlib>=3.7"]
 # GroupKFold(shuffle=True) needs scikit-learn >= 1.6
 ml = ["scikit-learn>=1.6", "xgboost>=2.0", "matplotlib>=3.7"]
+report = ["jinja2>=3.1", "matplotlib>=3.7"]
 
 [project.scripts]
 argus = "argus.cli:app"
@@ -31,7 +32,7 @@ argus = "argus.cli:app"
 where = ["src"]
 
 [tool.setuptools.package-data]
-argus = ["reference/*.yaml"]
+argus = ["reference/*.yaml", "report/templates/*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
