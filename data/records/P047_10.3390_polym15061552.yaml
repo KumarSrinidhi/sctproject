@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P047
+paper:
+  doi: 10.3390/polym15061552
+  title: 'Thermal Conductivity and Mechanical Properties of Polymer Composites with Hexagonal Boron Nitride—A Comparison of Three Processing Methods: Injection Moulding, Powder Bed Fusion and Casting'
+  year: 2023
+  source_url: https://doi.org/10.3390/polym15061552
+extraction_log:
+- seq: 52
+  candidate_id: P047
+  doi: 10.3390/polym15061552
+  paper_title: 'Thermal Conductivity and Mechanical Properties of Polymer Composites with Hexagonal Boron Nitride—A Comparison of Three Processing Methods: Injection Moulding, Powder Bed Fusion and Casting'
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym15061552.txt
+  tables_inspected: Table 1 lit comparisons
+  figures_inspected: Fig 3 cast k vs T, Fig 4
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: Table 1 lit values (21.3, 7, 5.27, 17.5, etc.) excluded as literature; only cast 55 wt% own data extracted
+  qc_findings: 1 row from cast series; temperature-dependent k in Fig 4 (not digitized)
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: b37967a4-162
+  matrix_polymer: Epoxy (bisphenol-F epoxy 35 wt% + diluent 35 wt% + curing agent 30 wt%)
+  curing_agent: curing agent 30 wt%
+  filler_material: h-BN
+  filler_material_original: h-BN platelets, ~20 um, 55 wt%
+  filler_shape: platelet
+  filler_mean_size_um: 20.0
+  filler_loading_wt_pct: 55.0
+  filler_loading_original_value: 55.0
+  filler_loading_original_unit: wt% (~28 vol%)
+  functionalization: None
+  processing_method: Vacuum mixing, cast into Teflon mould, cure 150 C 18 h
+  k_composite_W_mK: 2.0
+  k_direction: unknown
+  measurement_method: Transient laser flash analysis (LFA), k = alpha x Cp x rho; 2 mm specimens
+  k_original_value: 2.0
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results/Discussion: highest cast hBN/epoxy = 2.0 W/m·K at 55 wt% (~28 vol%) hBN (~20 um)'
+  confidence: High
+  notes: Casting route; pure epoxy 14x lower (~0.14 W/m·K implied, not quoted numerically). Intermediate loadings figure-only. This is the highest-loading cast sample.

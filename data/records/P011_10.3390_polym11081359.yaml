@@ -1,0 +1,46 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P011
+paper:
+  doi: 10.3390/polym11081359
+  title: Dielectric and Thermal Conductivity of Epoxy Resin Impregnated Nano-h-BN Modified Insulating Paper
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11081359
+extraction_log:
+- seq: 11
+  candidate_id: P011
+  doi: 10.3390/polym11081359
+  paper_title: Dielectric and Thermal Conductivity of Epoxy Resin Impregnated Nano-h-BN Modified Insulating Paper
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym11081359.txt
+  tables_inspected: Tables 1-2 (CTE params only)
+  figures_inspected: k vs content figure referenced (not digitized)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 1 row from text; matrix is impregnated paper (flagged)
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 7aa286cf-051
+  matrix_polymer: Epoxy resin impregnated insulating paper (RIP)
+  filler_material: h-BN
+  filler_material_original: nano-h-BN
+  filler_shape: unknown
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt %
+  functionalization: None
+  k_matrix_W_mK: 0.203
+  k_composite_W_mK: 0.478
+  k_direction: unknown
+  measurement_method: Thermal conductivity tester DTC-300 (TA Instruments)
+  k_original_value: 0.478
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results text: unmodified RIP k=0.203; 50 wt% nano-h-BN max k=0.478'
+  confidence: High
+  notes: Matrix is epoxy-impregnated paper (epoxy-based insulation system). Intermediate loadings (2.5-40 wt%) only in Figure (not digitized).

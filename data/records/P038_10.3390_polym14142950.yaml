@@ -1,0 +1,159 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P038
+paper:
+  doi: 10.3390/polym14142950
+  title: Highly Thermally Conductive Epoxy Composites with AlN/BN Hybrid Filler as Underfill Encapsulant Materials
+  year: 2022
+  source_url: https://doi.org/10.3390/polym14142950
+extraction_log:
+- seq: 42
+  candidate_id: P038
+  doi: 10.3390/polym14142950
+  paper_title: Highly Thermally Conductive Epoxy Composites with AlN/BN Hybrid Filler as Underfill Encapsulant Materials
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym14142950.txt
+  tables_inspected: Table 1 materials
+  figures_inspected: Fig 4c TC vs loading
+  candidate_measurements: 6
+  unit_conversions: none
+  duplicate_checks: post-thermal-shock values (3.40, 6.72, 10.13) excluded (degraded state)
+  qc_findings: 6 rows; BN/EP 45 wt% inferred as max loading from text context
+  rows_appended: 6
+  rows_rejected_at_append:
+  - - caf49a8d-130
+    - non-numeric filler_mean_size_um
+- seq: 47
+  candidate_id: P038
+  doi: 10.3390/polym14142950
+  paper_title: Highly Thermally Conductive Epoxy Composites with AlN/BN Hybrid Filler as Underfill Encapsulant Materials
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym14142950.txt
+  tables_inspected: Table 1 materials
+  figures_inspected: Fig 4c
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: retry of rejected hybrid row (non-numeric size removed)
+  qc_findings: retry only
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: caf49a8d-129
+  matrix_polymer: Epoxy
+  curing_agent: 150 C 4-5 h
+  filler_material: none
+  filler_material_original: neat epoxy (EP)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Centrifugal mixing, cure 150 C 4-5 h
+  k_composite_W_mK: 0.22
+  k_direction: unknown
+  measurement_method: TPS 2500 S Hot Disk thermal constant analyzer, room temp (mean of 5 measurements)
+  k_original_value: 0.22
+  k_original_unit: W/(m K)
+  value_source: text
+  source_location: Abstract + Table 1 (Epoxy TC=0.22)
+  confidence: High
+  notes: Matrix baseline.
+- row_id: caf49a8d-130
+  matrix_polymer: Epoxy
+  curing_agent: 150 C 4-5 h
+  filler_material: AlN/BN hybrid
+  filler_material_original: AlN (spherical, 55 um) + BN flakes (35 um) hybrid, 75 wt% total
+  filler_shape: hybrid
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  processing_method: Centrifugal mixing, cure 150 C 4-5 h
+  k_composite_W_mK: 10.18
+  k_direction: unknown
+  measurement_method: TPS 2500 S Hot Disk thermal constant analyzer, room temp (mean of 5 measurements)
+  k_original_value: 10.18
+  k_original_unit: W/(m K)
+  value_source: text
+  source_location: 'Abstract: TC = 10.18 W/(m K) at 75 wt% AlN-BN hybrid; Results 3.x'
+  confidence: High
+  notes: Best value, ~46x matrix. Hybrid ratio study at fixed 50 wt% is figure-only. filler_mean_size_um non-numeric value '55 (AlN) / 35 (BN)' relocated to notes in Phase 2 audit.
+- row_id: caf49a8d-131
+  matrix_polymer: Epoxy
+  curing_agent: 150 C 4-5 h
+  filler_material: AlN
+  filler_material_original: AlN spherical particles, 55 um, 75 wt%
+  filler_shape: sphere
+  filler_mean_size_um: 55.0
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  processing_method: Centrifugal mixing, cure 150 C 4-5 h
+  k_composite_W_mK: 6.83
+  k_direction: unknown
+  measurement_method: TPS 2500 S Hot Disk thermal constant analyzer, room temp (mean of 5 measurements)
+  k_original_value: 6.83
+  k_original_unit: W/(m K)
+  value_source: text
+  source_location: 'Results: AlN/EP 75 wt% = 6.83 W/(m K) (49% lower than hybrid)'
+  confidence: High
+  notes: Single-filler max.
+- row_id: caf49a8d-132
+  matrix_polymer: Epoxy
+  curing_agent: 150 C 4-5 h
+  filler_material: BN
+  filler_material_original: BN platelets, 35 um, 45 wt%
+  filler_shape: platelet
+  filler_mean_size_um: 35.0
+  filler_loading_wt_pct: 45.0
+  filler_loading_original_value: 45.0
+  filler_loading_original_unit: wt%
+  processing_method: Centrifugal mixing, cure 150 C 4-5 h
+  k_composite_W_mK: 3.51
+  k_direction: unknown
+  measurement_method: TPS 2500 S Hot Disk thermal constant analyzer, room temp (mean of 5 measurements)
+  k_original_value: 3.51
+  k_original_unit: W/(m K)
+  value_source: text
+  source_location: 'Results (thermal shock section): TC of BN/EP decreasing from 3.51 W/(m K); BN max loading = 45 wt%'
+  confidence: High
+  notes: BN/EP at max feasible BN loading 45 wt%.
+- row_id: caf49a8d-133
+  matrix_polymer: Epoxy
+  curing_agent: 150 C 4-5 h
+  filler_material: BN
+  filler_material_original: BN platelets, 35 um, 30 wt%
+  filler_shape: platelet
+  filler_mean_size_um: 35.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  processing_method: Centrifugal mixing, cure 150 C 4-5 h
+  k_composite_W_mK: 1.43
+  k_direction: unknown
+  measurement_method: TPS 2500 S Hot Disk thermal constant analyzer, room temp (mean of 5 measurements)
+  k_original_value: 1.43
+  k_original_unit: W/(m K)
+  value_source: text
+  source_location: 'Results: at 30 wt% TC of BN/EP is 1.43 W/(m K)'
+  confidence: High
+- row_id: caf49a8d-134
+  matrix_polymer: Epoxy
+  curing_agent: 150 C 4-5 h
+  filler_material: AlN
+  filler_material_original: AlN spherical, 55 um, 30 wt%
+  filler_shape: sphere
+  filler_mean_size_um: 55.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  processing_method: Centrifugal mixing, cure 150 C 4-5 h
+  k_composite_W_mK: 1.1
+  k_direction: unknown
+  measurement_method: TPS 2500 S Hot Disk thermal constant analyzer, room temp (mean of 5 measurements)
+  k_original_value: 1.1
+  k_original_unit: W/(m K)
+  value_source: text
+  source_location: 'Results: AlN/EP at 30 wt% is 1.10 W/(m K)'
+  confidence: High

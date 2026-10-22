@@ -1,0 +1,46 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P048
+paper:
+  doi: 10.3390/ma14185251
+  title: Synergistic Enhanced Thermal Conductivity and Dielectric Constant of Epoxy Composites with BNNSs and MWCNTs@mSiO2
+  year: 2021
+  source_url: https://doi.org/10.3390/ma14185251
+extraction_log:
+- seq: 53
+  candidate_id: P048
+  doi: 10.3390/ma14185251
+  paper_title: Synergistic Enhanced Thermal Conductivity and Dielectric Constant of Epoxy Composites with BNNSs and MWCNTs@mSiO2
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_ma14185251.txt
+  tables_inspected: Table 1 thermal data
+  figures_inspected: k vs filler content
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: BNNSs/BNMSs/epoxy 1.15 W/mK lit value excluded
+  qc_findings: 1 row; hybrid BNNS+MWCNT filler
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: a043c1fb-163
+  matrix_polymer: Epoxy
+  filler_material: BNNS
+  filler_material_original: BNNSs 20 wt% + 0.1 wt% MWCNTs@mSiO2 hybrid filler
+  filler_shape: platelet
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt% BNNSs (+0.1 wt% MWCNTs@mSiO2)
+  functionalization: MWCNTs@mSiO2 co-filler (0.1 wt%)
+  processing_method: BNNSs + MWCNTs@mSiO2 in epoxy, hybrid filler network
+  k_composite_W_mK: 0.68
+  k_direction: unknown
+  measurement_method: Thermal conductivity of composites (per paper; network structure explanation)
+  k_original_value: 0.68
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract+Results: TC = 0.68 W m−1 K−1 at 20 wt% filler (187% higher than epoxy)'
+  confidence: High
+  notes: Hybrid filler system. 20 wt% BNNSs is the threshold for remarkable TC increase.

@@ -1,0 +1,45 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P092
+paper:
+  doi: 10.1002/smll.75841
+  title: Interfacial Engineering of Graphene-Derived Shells on Spherical Boron Nitride Fillers for Thermally Conductive Composites
+  year: 2025
+  source_url: https://doi.org/10.1002/smll.75841
+extraction_log:
+- seq: 100
+  candidate_id: P092
+  doi: 10.1002/smll.75841
+  paper_title: Interfacial Engineering of Graphene-Derived Shells on Spherical Boron Nitride Fillers for Thermally Conductive Composites
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 13bf49ba-231
+  matrix_polymer: Epoxy matrix
+  filler_material: BN/graphene hybrid
+  filler_material_original: GO-BN + prGO-BN (graphene oxide / partially reduced GO coated spherical BN, hybrid mixture)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: GO and prGO coatings on spherical BN
+  k_composite_W_mK: 6.25
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 6.25
+  k_original_unit: W m-1 K-1
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "The optimized GO-BN/prGO-BN hybrid composite simultaneously achieves a thermal conductivity of 6.25 W m-1 K-1 and a volume resistivity of 1.3 × 10^12 Ω cm at 60 wt.% total filler loading"'
+  confidence: Medium
+  notes: Abstract-only; spherical BN cores with carbon (GO/prGO) shells - hybrid flagged.

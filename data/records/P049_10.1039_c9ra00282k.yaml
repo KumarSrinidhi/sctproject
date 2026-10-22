@@ -1,0 +1,85 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P049
+paper:
+  doi: 10.1039/c9ra00282k
+  title: Hybrid fillers of hexagonal and cubic boron nitride in epoxy composites for thermal management
+  year: 2019
+  source_url: https://doi.org/10.1039/c9ra00282k
+extraction_log:
+- seq: 54
+  candidate_id: P049
+  doi: 10.1039/c9ra00282k
+  paper_title: Hybrid fillers of hexagonal and cubic boron nitride in epoxy composites for thermal management
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1039_c9ra00282k.txt
+  tables_inspected: TC tables
+  figures_inspected: Fig 4, Fig 5 k vs loading
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: 6 vol% hybrid increase percentages (not absolute k) not extracted as separate rows
+  qc_findings: 3 rows; hybrid h-BN/c-BN ratios; neat EP 0.195
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 7239d84d-164
+  matrix_polymer: Epoxy
+  filler_material: h-BN
+  filler_material_original: modified h-BN platelets, 9 vol%
+  filler_shape: platelet
+  filler_loading_vol_pct: 9.0
+  filler_loading_original_value: 9.0
+  filler_loading_original_unit: vol%
+  functionalization: surface-modified (covalent)
+  processing_method: h-BN platelets + c-BN spheres hybrid in epoxy
+  k_matrix_W_mK: 0.195
+  k_composite_W_mK: 0.44
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; Agari model comparison)
+  k_original_value: 0.44
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results: modified h-BN at 9 vol% -> 0.44 W m−1 K−1 (2.3x neat EP 0.195)'
+  confidence: High
+  notes: Single-filler h-BN series at 9 vol%.
+- row_id: 7239d84d-165
+  matrix_polymer: Epoxy
+  filler_material: h-BN/cBN hybrid
+  filler_material_original: h-BN/c-BN hybrid, 6.5 vol% total, h-BN:c-BN = 2:1
+  filler_shape: hybrid
+  filler_loading_vol_pct: 6.5
+  filler_loading_original_value: 6.5
+  filler_loading_original_unit: vol% (2:1 h-BN:c-BN)
+  functionalization: modified h-BN + c-BN spheres
+  processing_method: h-BN platelets + c-BN spheres hybrid in epoxy
+  k_composite_W_mK: 0.421
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; Agari model comparison)
+  k_original_value: 0.421
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results: 6.5 vol% BN (h-BN/c-BN = 2:1) -> 0.421 W m−1 K−1'
+  confidence: High
+  notes: Hybrid ratio series; non-monotonic with loading (7.5 vol% 3:4 = 0.384 lower).
+- row_id: 7239d84d-166
+  matrix_polymer: Epoxy
+  filler_material: h-BN/cBN hybrid
+  filler_material_original: h-BN/c-BN hybrid, 7.5 vol% total, h-BN:c-BN = 3:4
+  filler_shape: hybrid
+  filler_loading_vol_pct: 7.5
+  filler_loading_original_value: 7.5
+  filler_loading_original_unit: vol% (3:4 h-BN:c-BN)
+  functionalization: modified h-BN + c-BN spheres
+  processing_method: h-BN platelets + c-BN spheres hybrid in epoxy
+  k_composite_W_mK: 0.384
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; Agari model comparison)
+  k_original_value: 0.384
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results: 7.5 vol% (h-BN/c-BN = 3:4) -> unexpectedly low 0.384 W m−1 K−1'
+  confidence: High
+  notes: Anomalous decrease vs 6.5 vol% 2:1 ratio (dispersion effect).

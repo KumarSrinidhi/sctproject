@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P062
+paper:
+  doi: 10.3390/polym16081169
+  title: Enhancing Thermal Conductivity in Polymer Composites through Molding-Assisted Orientation of Boron Nitride
+  year: 2024
+  source_url: https://doi.org/10.3390/polym16081169
+extraction_log:
+- seq: 69
+  candidate_id: P062
+  doi: 10.3390/polym16081169
+  paper_title: Enhancing Thermal Conductivity in Polymer Composites through Molding-Assisted Orientation of Boron Nitride
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym16081169.txt
+  tables_inspected: TC tables
+  figures_inspected: k figures, molding cycles
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: single-cycle values (0.7-1.2) not extracted as separate rows
+  qc_findings: 2 rows; PS matrix (optional); cyclic compression molding orientation
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: b552a656-186
+  matrix_polymer: Polystyrene (PS)
+  filler_material: BN
+  filler_material_original: PS/BN-C5, BN, 5 molding cycles at 140C 10 MPa
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: None (cyclic compression molding for orientation)
+  processing_method: Cyclic compression molding (5 cycles, 140C, 10 MPa) for BN orientation
+  k_matrix_W_mK: 0.033
+  k_composite_W_mK: 1.6
+  k_direction: in-plane
+  measurement_method: Thermal conductivity measurement (in-plane, per paper)
+  k_original_value: 1.6
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results: PS/BN-C5 five molding cycles 140C 10 MPa -> in-plane 1.6 W/m·K'
+  confidence: High
+  notes: PS matrix (optional polymer). Only 10 wt% BN achieves 1.6 W/m·K in-plane via cyclic molding orientation.
+- row_id: b552a656-187
+  matrix_polymer: Polystyrene (PS)
+  filler_material: BN
+  filler_material_original: Control PS/BN (no cyclic molding)
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Standard BN dispersion in PS without cyclic molding
+  k_matrix_W_mK: 0.033
+  k_composite_W_mK: 0.22
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 0.22
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results: control PS/BN (no molding optimization) -> 0.22 W/m·K'
+  confidence: High
+  notes: Baseline vs cyclic compression molding (1.6 W/m·K).

@@ -1,0 +1,207 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P012
+paper:
+  doi: 10.3390/polym15061415
+  title: Synthesis of KH550-Modified Hexagonal Boron Nitride Nanofillers for Improving Thermal Conductivity of Epoxy Nanocomposites
+  year: 2023
+  source_url: https://doi.org/10.3390/polym15061415
+extraction_log:
+- seq: 12
+  candidate_id: P012
+  doi: 10.3390/polym15061415
+  paper_title: Synthesis of KH550-Modified Hexagonal Boron Nitride Nanofillers for Improving Thermal Conductivity of Epoxy Nanocomposites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym15061415.txt
+  tables_inspected: Table 1 (DMA only)
+  figures_inspected: Figure 6A/B referenced; values stated in text
+  candidate_measurements: 9
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 9 text-sourced rows across 4 filler types x loadings
+  rows_appended: 9
+  rows_rejected_at_append: []
+measurements:
+- row_id: 03b2d6cf-052
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BM@KH550-BN (ball-milled KH550-modified BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 4.0
+  filler_loading_original_value: 4.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane KH550 (gamma-aminopropyl triethoxysilane)
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.328
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.328
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample BM@KH550/epoxy at 4 wt%
+  confidence: High
+  notes: Sample BM@KH550/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-053
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: R-BN (raw BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 7.0
+  filler_loading_original_value: 7.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.307
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.307
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample R-BN/epoxy at 7 wt%
+  confidence: High
+  notes: Sample R-BN/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-054
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BM-BN (ball-milled BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 7.0
+  filler_loading_original_value: 7.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.354
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.354
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample BM-BN/epoxy at 7 wt%
+  confidence: High
+  notes: Sample BM-BN/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-055
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BM-KH550-BN (ball-milled + KH550)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 7.0
+  filler_loading_original_value: 7.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane KH550
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.391
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.391
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample BM-KH550/epoxy at 7 wt%
+  confidence: High
+  notes: Sample BM-KH550/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-056
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BM@KH550-BN (ball-milled KH550-modified BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 7.0
+  filler_loading_original_value: 7.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane KH550
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.431
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.431
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample BM@KH550/epoxy at 7 wt%
+  confidence: High
+  notes: Sample BM@KH550/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-057
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: R-BN (raw BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.325
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.325
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample R-BN/epoxy at 10 wt%
+  confidence: High
+  notes: Sample R-BN/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-058
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BM-BN (ball-milled BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.433
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.433
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample BM-BN/epoxy at 10 wt%
+  confidence: High
+  notes: Sample BM-BN/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-059
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BM-KH550-BN (ball-milled + KH550)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane KH550
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.507
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.507
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample BM-KH550/epoxy at 10 wt%
+  confidence: High
+  notes: Sample BM-KH550/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.
+- row_id: 03b2d6cf-060
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BM@KH550-BN (ball-milled KH550-modified BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane KH550
+  processing_method: Ball-milling of h-BN (optionally with KH550 silane) to exfoliate, then blend with epoxy and cure
+  k_matrix_W_mK: 0.208
+  k_composite_W_mK: 0.615
+  k_direction: unknown
+  measurement_method: Quick thermal conductivity meter (Xiangyi)
+  k_original_value: 0.615
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: Results text Thermal Conductivity Analysis section, sample BM@KH550/epoxy at 10 wt%
+  confidence: High
+  notes: Sample BM@KH550/epoxy. Neat epoxy 0.208 W m−1 K−1. Ball-milled fillers rich in BN nanosheets.

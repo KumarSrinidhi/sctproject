@@ -1,0 +1,87 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P045
+paper:
+  doi: 10.3390/polym17111429
+  title: High Frequency Electric-Field-Assisted Preparation of BN/Epoxy Resin Composites with Excellent Thermal Conductivity
+  year: 2025
+  source_url: https://doi.org/10.3390/polym17111429
+extraction_log:
+- seq: 50
+  candidate_id: P045
+  doi: 10.3390/polym17111429
+  paper_title: High Frequency Electric-Field-Assisted Preparation of BN/Epoxy Resin Composites with Excellent Thermal Conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym17111429.txt
+  tables_inspected: property tables
+  figures_inspected: TC figures
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: literature values (1.52, 0.95 from other refs) excluded
+  qc_findings: 3 rows at 30 wt% BN; field strength is the variable
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 985861ee-156
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: BN 30 wt%, no electric field (0&BN-EP)
+  filler_shape: platelet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt% (BN in epoxy mixture)
+  functionalization: None
+  filler_alignment: random
+  processing_method: BN/epoxy mixed, high-frequency AC electric field applied during processing to align BN
+  k_composite_W_mK: 0.58
+  k_direction: out-of-plane
+  measurement_method: Thermal conductivity testing (per paper; BN/EP composites prepared with AC electric field)
+  k_original_value: 0.58
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results: 0&BN-EP = 0.58 W/(m·K) (2.52x epoxy)'
+  confidence: High
+  notes: 30 wt% BN throughout; pure epoxy 0.23 W/(m·K). High-frequency AC field aligns BN. Baseline no field.
+- row_id: 985861ee-157
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: BN 30 wt%, 30 V/mm AC field
+  filler_shape: platelet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt% (BN in epoxy mixture)
+  functionalization: None
+  filler_alignment: field-aligned
+  processing_method: BN/epoxy mixed, high-frequency AC electric field applied during processing to align BN
+  k_composite_W_mK: 0.95
+  k_direction: out-of-plane
+  measurement_method: Thermal conductivity testing (per paper; BN/EP composites prepared with AC electric field)
+  k_original_value: 0.95
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results: 30 V/mm -> TC = 0.95 W/(m·K) (also optimum for mechanical/breakdown)'
+  confidence: High
+  notes: 30 wt% BN throughout; pure epoxy 0.23 W/(m·K). High-frequency AC field aligns BN.
+- row_id: 985861ee-158
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: BN 30 wt%, 60 V/mm AC field
+  filler_shape: platelet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt% (BN in epoxy mixture)
+  functionalization: None
+  filler_alignment: field-aligned
+  processing_method: BN/epoxy mixed, high-frequency AC electric field applied during processing to align BN
+  k_composite_W_mK: 1.03
+  k_direction: out-of-plane
+  measurement_method: Thermal conductivity testing (per paper; BN/EP composites prepared with AC electric field)
+  k_original_value: 1.03
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results: 60 V/mm -> 60&BN-EP = 1.03 W/(m·K) (1.77x no-field)'
+  confidence: High
+  notes: 30 wt% BN throughout; pure epoxy 0.23 W/(m·K). High-frequency AC field aligns BN. Highest field tested; TC max at 60 V/mm.

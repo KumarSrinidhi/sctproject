@@ -1,0 +1,353 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P094
+paper:
+  doi: 10.3390/polym11071156
+  title: 'Achieving High Thermal Conductivity in Epoxy Composites: Effect of Boron Nitride Particle Size and Matrix-Filler Interface'
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11071156
+extraction_log:
+- seq: 103
+  date_processed: '2026-10-18'
+  access_result: Europe PMC full text (OA, CC-BY) + figure image from PMC CDN (browser-fetched)
+  tables_inspected: Table 1 (composition)
+  unit_conversions: none (axis label W/mK)
+  duplicate_checks: new DOI; no prior rows
+  candidate_id: P4-FIG1
+  doi: 10.3390/polym11071156
+  paper_title: 'Achieving High Thermal Conductivity in Epoxy Composites: Effect of Boron Nitride Particle Size and Matrix-Filler Interface'
+  files_inspected: work/fulltext/10.3390_polym11071156.txt; work/figures/polymers-11-01156-g011.jpg
+  figures_inspected: Fig. 11 (4 series; caption identifies series by marker)
+  candidate_measurements: 15
+  qc_findings: Digitized ETLBN x within 0.5 of printed vol% for all points; x=0 baselines overlap (k_matrix not set); earlier visual digitization (phase4_figures_digitized.json) superseded
+  rows_appended: 15
+  rows_rejected_at_append: []
+measurements:
+- row_id: c027d8f9-233
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 180 μm (Saint-Gobain), sample ETLBN180-30
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 12.9
+  filler_loading_wt_pct: 20.2
+  filler_loading_original_value: 12.9
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 0.99
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 0.99
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN180 (purple diamonds), ETLBN180-30 at 12.9 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=12.9 vs printed 12.9 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 70/30/47/1.4); the designation -30 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px.
+- row_id: c027d8f9-234
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 180 μm (Saint-Gobain), sample ETLBN180-50
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 25.7
+  filler_loading_wt_pct: 37.2
+  filler_loading_original_value: 25.7
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 1.98
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 1.98
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN180 (purple diamonds), ETLBN180-50 at 25.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=25.71 vs printed 25.7 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 50/50/33.5/1); the designation -50 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px.
+- row_id: c027d8f9-235
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 180 μm (Saint-Gobain), sample ETLBN180-60
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 46.9
+  filler_loading_original_value: 34.2
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 3.01
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 3.01
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN180 (purple diamonds), ETLBN180-60 at 34.2 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=34.21 vs printed 34.2 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 40/60/27/0.8); the designation -60 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px.
+- row_id: c027d8f9-236
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 180 μm (Saint-Gobain), sample ETLBN180-70
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 44.7
+  filler_loading_wt_pct: 58.0
+  filler_loading_original_value: 44.7
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 4.21
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 4.21
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN180 (purple diamonds), ETLBN180-70 at 44.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=44.65 vs printed 44.7 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 30/70/20/0.6); the designation -70 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px.
+- row_id: c027d8f9-237
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), sample ETLBN30-30
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 12.9
+  filler_loading_wt_pct: 20.2
+  filler_loading_original_value: 12.9
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 0.72
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 0.72
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN30 (orange triangles), ETLBN30-30 at 12.9 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=12.87 vs printed 12.9 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 70/30/47/1.4); the designation -30 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px.
+- row_id: c027d8f9-238
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), sample ETLBN30-50
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 25.7
+  filler_loading_wt_pct: 37.2
+  filler_loading_original_value: 25.7
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 1.61
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 1.61
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN30 (orange triangles), ETLBN30-50 at 25.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=25.74 vs printed 25.7 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 50/50/33.5/1); the designation -50 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px. Marker partly hidden under neighbouring marker (area 78 px); k may be biased by up to ~0.05 W/mK.
+- row_id: c027d8f9-239
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), sample ETLBN30-60
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 46.9
+  filler_loading_original_value: 34.2
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 2.33
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 2.33
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN30 (orange triangles), ETLBN30-60 at 34.2 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=34.15 vs printed 34.2 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 40/60/27/0.8); the designation -60 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px. Marker partly hidden under neighbouring marker (area 72 px); k may be biased by up to ~0.05 W/mK.
+- row_id: c027d8f9-240
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), sample ETLBN30-70
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 44.7
+  filler_loading_wt_pct: 58.0
+  filler_loading_original_value: 44.7
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 3.31
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 3.31
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN30 (orange triangles), ETLBN30-70 at 44.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=44.63 vs printed 44.7 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 30/70/20/0.6); the designation -70 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px. Marker partly hidden under neighbouring marker (area 76 px); k may be biased by up to ~0.05 W/mK.
+- row_id: c027d8f9-241
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 2 μm (Saint-Gobain), sample ETLBN2-30
+  filler_shape: platelet
+  filler_mean_size_um: 2.0
+  filler_loading_vol_pct: 12.9
+  filler_loading_wt_pct: 20.2
+  filler_loading_original_value: 12.9
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 0.36
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 0.36
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN2 (blue circles), ETLBN2-30 at 12.9 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=12.82 vs printed 12.9 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 70/30/47/1.4); the designation -30 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px. Marker partly hidden under neighbouring marker (area 43 px); k may be biased by up to ~0.05 W/mK. 44.7 vol% not achievable for 2 μm platelets (paper text).
+- row_id: c027d8f9-242
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 2 μm (Saint-Gobain), sample ETLBN2-50
+  filler_shape: platelet
+  filler_mean_size_um: 2.0
+  filler_loading_vol_pct: 25.7
+  filler_loading_wt_pct: 37.2
+  filler_loading_original_value: 25.7
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 0.86
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 0.86
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN2 (blue circles), ETLBN2-50 at 25.7 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=25.63 vs printed 25.7 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 50/50/33.5/1); the designation -50 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px. 44.7 vol% not achievable for 2 μm platelets (paper text).
+- row_id: c027d8f9-243
+  matrix_polymer: DGEBA epoxy (Araldite GY240), thiol-cured
+  curing_agent: Pentaerythritol tetrakis(3-mercaptopropionate) thiol (~60:40 epoxy:thiol) + LC-80 encapsulated imidazole initiator (2 phr)
+  filler_material: BN
+  filler_material_original: BN platelets, 2 μm (Saint-Gobain), sample ETLBN2-60
+  filler_shape: platelet
+  filler_mean_size_um: 2.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 46.9
+  filler_loading_original_value: 34.2
+  filler_loading_original_unit: vol%
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 1.29
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 1.29
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, ETLBN2 (blue circles), ETLBN2-60 at 34.2 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value; digitized x=33.96 vs printed 34.2 vol% (calibration check). wt% = BN share of total formulation mass, computed from Table 1 parts (epoxy/BN/thiol/LC-80 = 40/60/27/0.8); the designation -60 is BN per epoxy+BN only. Axis resolution ~0.0095 W/mK per px. 44.7 vol% not achievable for 2 μm platelets (paper text).
+- row_id: c027d8f9-244
+  matrix_polymer: DGEBA epoxy (Araldite GY240), diamine-cured
+  curing_agent: Jeffamine D-420 diamine
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), EJBN30 series (diamine-cured comparator)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 15.0
+  filler_loading_original_value: 15.0
+  filler_loading_original_unit: vol% (digitized x)
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 0.5
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 0.5
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, EJBN30 (grey squares) at x≈15.0 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value. Loading is the digitized x position (vol% not printed for EJBN30; ±0.0822 vol% per px). Per-point sample designation not stated.
+- row_id: c027d8f9-245
+  matrix_polymer: DGEBA epoxy (Araldite GY240), diamine-cured
+  curing_agent: Jeffamine D-420 diamine
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), EJBN30 series (diamine-cured comparator)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 29.1
+  filler_loading_original_value: 29.1
+  filler_loading_original_unit: vol% (digitized x)
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 1.21
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 1.21
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, EJBN30 (grey squares) at x≈29.1 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value. Loading is the digitized x position (vol% not printed for EJBN30; ±0.0822 vol% per px). Per-point sample designation not stated.
+- row_id: c027d8f9-246
+  matrix_polymer: DGEBA epoxy (Araldite GY240), diamine-cured
+  curing_agent: Jeffamine D-420 diamine
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), EJBN30 series (diamine-cured comparator)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 38.1
+  filler_loading_original_value: 38.1
+  filler_loading_original_unit: vol% (digitized x)
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 1.86
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 1.86
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, EJBN30 (grey squares) at x≈38.1 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value. Loading is the digitized x position (vol% not printed for EJBN30; ±0.0822 vol% per px). Per-point sample designation not stated.
+- row_id: c027d8f9-247
+  matrix_polymer: DGEBA epoxy (Araldite GY240), diamine-cured
+  curing_agent: Jeffamine D-420 diamine
+  filler_material: BN
+  filler_material_original: BN platelets, 30 μm (Saint-Gobain), EJBN30 series (diamine-cured comparator)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 43.3
+  filler_loading_original_value: 43.3
+  filler_loading_original_unit: vol% (digitized x)
+  functionalization: None (no surface treatment or coupling agent)
+  processing_method: Hand-mixed, cast in silicone mould, vacuum degassed at RT, cured isothermally 70 °C 1 h
+  k_composite_W_mK: 2.37
+  k_direction: unknown
+  measurement_method: Transient Hot Bridge (Linseis THB-100, Kapton Hot Point sensor), surfaces polished
+  k_original_value: 2.37
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 11, EJBN30 (grey squares) at x≈43.3 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_polymers-11-01156-g011.png)'
+  confidence: Medium
+  notes: Figure-only value. Loading is the digitized x position (vol% not printed for EJBN30; ±0.0822 vol% per px). Per-point sample designation not stated.

@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P041
+paper:
+  doi: 10.3390/nano12030446
+  title: The Investigation of the Effect of Filler Sizes in 3D-BN Skeletons on Thermal Conductivity of Epoxy-Based Composites
+  year: 2022
+  source_url: https://doi.org/10.3390/nano12030446
+extraction_log:
+- seq: 45
+  candidate_id: P041
+  doi: 10.3390/nano12030446
+  paper_title: The Investigation of the Effect of Filler Sizes in 3D-BN Skeletons on Thermal Conductivity of Epoxy-Based Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano12030446.txt
+  tables_inspected: none numeric k
+  figures_inspected: Fig 3a TC bars
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: 'A-3D-SBN 1.10 W/mK excluded: TGA volume fraction not in text (figure-only loading)'
+  qc_findings: 2 rows with explicit vol%; SBN/MBN size series figure-only for loadings
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 62815d2f-145
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: 3D-LBN (large BN) skeleton, atmospheric-pressure epoxy infiltration (A-3D-LBN/epoxy)
+  filler_shape: platelet
+  filler_loading_vol_pct: 18.3
+  filler_loading_original_value: 18.3
+  filler_loading_original_unit: vol% (TGA)
+  functionalization: None
+  filler_alignment: 3D network, through-plane oriented
+  processing_method: 3D-BN framework (BN skeleton), epoxy infiltration (atmospheric or vacuum)
+  k_composite_W_mK: 1.47
+  k_direction: through-plane
+  measurement_method: Laser flash thermal diffusivity, TC = alpha x Cp x rho
+  k_original_value: 1.47
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results: A-3D-LBN/epoxy up to 1.47 W/m·K; TGA volume fraction 18.3%'
+  confidence: High
+  notes: Atmospheric infiltration, more voids than vacuum route.
+- row_id: 62815d2f-146
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: 3D-LBN skeleton, vacuum epoxy infiltration (V-3D-LBN/epoxy)
+  filler_shape: platelet
+  filler_loading_vol_pct: 15.4
+  filler_loading_original_value: 15.4
+  filler_loading_original_unit: vol% (TGA)
+  functionalization: None
+  filler_alignment: 3D network, through-plane oriented
+  processing_method: 3D-BN framework (BN skeleton), epoxy infiltration (atmospheric or vacuum)
+  k_composite_W_mK: 2.01
+  k_direction: through-plane
+  measurement_method: Laser flash thermal diffusivity, TC = alpha x Cp x rho
+  k_original_value: 2.01
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Abstract: larger-BN composite through-plane TC 2.01 W/m·K; TGA V-3D-LBN volume fraction 15.4%'
+  confidence: High
+  notes: Vacuum infiltration, best value, fewer voids; slightly lower BN vol% than A-route.

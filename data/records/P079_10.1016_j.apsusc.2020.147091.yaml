@@ -1,0 +1,45 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P079
+paper:
+  doi: 10.1016/j.apsusc.2020.147091
+  title: Enhanced thermal conductivity of a polysilazane-coated A-BN/epoxy composite following surface treatment with silanes
+  year: 2020
+  source_url: https://doi.org/10.1016/j.apsusc.2020.147091
+extraction_log:
+- seq: 87
+  candidate_id: P079
+  doi: 10.1016/j.apsusc.2020.147091
+  paper_title: Enhanced thermal conductivity of a polysilazane-coated A-BN/epoxy composite following surface treatment with silanes
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: dba475a4-215
+  matrix_polymer: Epoxy
+  filler_material: h-BN
+  filler_material_original: A-BN (spherical aggregated BN) coated with polysilazane + APTES
+  filler_shape: spherical aggregate
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: PSZ coating + APTES silane
+  k_composite_W_mK: 11.8
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 11.8
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "An epoxy composite contained the BN surface modified with PSZ and APTES had the highest thermal conductivity of 11.8 W m−1 K−1 at a filler fraction of 75 wt%. Its thermal conductivity was 62 times higher than that of the neat epoxy."'
+  confidence: Medium
+  notes: Abstract-only. Implied neat epoxy ~0.19 (not extracted).

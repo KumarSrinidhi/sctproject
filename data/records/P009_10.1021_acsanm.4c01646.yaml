@@ -1,0 +1,86 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P009
+paper:
+  doi: 10.1021/acsanm.4c01646
+  title: Synergistic Improvement in the Thermal Conductivity of Hybrid Boron Nitride Nanotube/Nanosheet Epoxy Composites
+  year: 2024
+  source_url: https://doi.org/10.1021/acsanm.4c01646
+extraction_log:
+- seq: 9
+  candidate_id: P009
+  doi: 10.1021/acsanm.4c01646
+  paper_title: Synergistic Improvement in the Thermal Conductivity of Hybrid Boron Nitride Nanotube/Nanosheet/Epoxy Composites by Constructing a Dual-Scale Filler Network
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1021_acsanm.4c01646.txt
+  tables_inspected: Table 1 (k values of epoxy composites; this-work rows only)
+  figures_inspected: Figure 3 (k vs filler contents) referenced; not digitized
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: preprint 10.26434/chemrxiv-2024-n9mn8 same study - not counted separately
+  qc_findings: 'medium confidence: dual-epoxy value mapping ambiguity between Table 1 order and text sentence order'
+  rows_appended: 2
+  rows_rejected_at_append:
+  - - 2f8abcf1-046
+    - non-numeric filler_loading_original_value
+  - - 2f8abcf1-047
+    - non-numeric filler_loading_original_value
+- seq: 13
+  candidate_id: P009-fix
+  doi: 10.1021/acsanm.4c01646
+  paper_title: Synergistic Improvement in the Thermal Conductivity of Hybrid Boron Nitride Nanotube/Nanosheet/Epoxy Composites by Constructing a Dual-Scale Filler Network
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1021_acsanm.4c01646.txt
+  tables_inspected: Table 1
+  figures_inspected: ''
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: replaces 2 rows rejected for non-numeric original loading
+  qc_findings: 'correction: original loading stored as numeric 31 with detail in notes'
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 2f8abcf1-046
+  matrix_polymer: Araldite LY564 epoxy (DGEBA)
+  curing_agent: Aradur 2954 (100:38)
+  filler_material: BNNS
+  filler_material_original: BNNS + BNNT (multiwalled boron nitride nanotubes)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 31.0
+  filler_loading_original_value: 31.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.27
+  k_composite_W_mK: 3.43
+  k_direction: through-plane
+  measurement_method: Laser flash (NETZSCH LFA 427), through-plane
+  k_original_value: 3.43
+  k_original_unit: Wm–1 K–1
+  value_source: table
+  source_location: Table 1 this-work row; text (neat k values; hybrid sentence)
+  confidence: Medium
+  notes: Table 1 lists 3.43 and 2.6 for LY654 and LY5052 in that order; text says 2.6 and 3.4 for fig3b context - mapping taken from Table 1 order. Loading column 31 = 30 BNNS + 1 BNNT wt%. ChemRxiv preprint also exists (10.26434/chemrxiv-2024-n9mn8). filler_loading_original_value string '30 wt% BNNS + 1 wt% BNNT' relocated to notes in Phase 2 audit; field set to 31.0 per audit guidance.
+- row_id: 2f8abcf1-047
+  matrix_polymer: Araldite LY5052 epoxy (epoxy phenol novolac)
+  curing_agent: Aradur HY5052
+  filler_material: BNNS
+  filler_material_original: BNNS + BNNT (multiwalled boron nitride nanotubes)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 31.0
+  filler_loading_original_value: 31.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 2.6
+  k_direction: through-plane
+  measurement_method: Laser flash (NETZSCH LFA 427), through-plane
+  k_original_value: 2.6
+  k_original_unit: Wm–1 K–1
+  value_source: table
+  source_location: Table 1 this-work row; text (neat k values; hybrid sentence)
+  confidence: Medium
+  notes: mapping from Table 1 order (LY564 and LY5052 -> 3.43 and 2.6); slight ambiguity vs text sentence order. Loading column 31 = 30 BNNS + 1 BNNT wt%. ChemRxiv preprint also exists (10.26434/chemrxiv-2024-n9mn8). filler_loading_original_value string '30 wt% BNNS + 1 wt% BNNT' relocated to notes in Phase 2 audit; field set to 31.0 per audit guidance.

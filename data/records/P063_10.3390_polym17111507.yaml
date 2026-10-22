@@ -1,0 +1,47 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P063
+paper:
+  doi: 10.3390/polym17111507
+  title: Preparation of Phenolic Epoxy-Based Electronic Packaging Materials with High Thermal Conductivity by Creating an Interfacial Heat Conduction Network
+  year: 2025
+  source_url: https://doi.org/10.3390/polym17111507
+extraction_log:
+- seq: 70
+  candidate_id: P063
+  doi: 10.3390/polym17111507
+  paper_title: Preparation of Phenolic Epoxy-Based Electronic Packaging Materials with High Thermal Conductivity by Creating an Interfacial Heat Conduction Network
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym17111507.txt
+  tables_inspected: Table 4 TC values
+  figures_inspected: Figure 5
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: Si3N4, Al2O3 rows excluded (non-BN/AlN primary)
+  qc_findings: 1 row; EMC matrix; h-BN+CNT hybrid
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 031e3932-188
+  matrix_polymer: Epoxy molding compound (EMC)
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: 60 wt.% h-BN + 2 wt.% CNTs hybrid filler
+  filler_shape: hybrid
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt% h-BN (+2 wt% CNTs)
+  functionalization: CNT co-filler for interfacial thermal resistance reduction
+  processing_method: Twin-screw extrusion of EMC with h-BN + CNT hybrid filler
+  k_matrix_W_mK: 0.36
+  k_composite_W_mK: 1.1
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; twin-screw extruded EMC)
+  k_original_value: 1.1
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results: 60 wt.% h-BN + 2 wt.% CNTs -> λ = 1.10 W m−1 K−1'
+  confidence: High
+  notes: EMC matrix. CNTs reduce ITR. Si3N4+CNT comparisons (1.14) and Al2O3 (1.19) out of primary scope.

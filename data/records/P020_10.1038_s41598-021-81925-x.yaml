@@ -1,0 +1,103 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P020
+paper:
+  doi: 10.1038/s41598-021-81925-x
+  title: Simultaneously enhanced dielectric properties and through-plane thermal conductivity of epoxy composites with alumina and boron nitride nanosheets
+  year: 2021
+  source_url: https://doi.org/10.1038/s41598-021-81925-x
+extraction_log:
+- seq: 22
+  candidate_id: P020
+  doi: 10.1038/s41598-021-81925-x
+  paper_title: Simultaneously enhanced dielectric properties and through-plane thermal conductivity of epoxy composites with alumina and boron nitride nanosheets
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1038_s41598-021-81925-x.txt
+  tables_inspected: none with k
+  figures_inspected: Fig 3a curves (values quoted in text)
+  candidate_measurements: 4
+  unit_conversions: none (vol% native)
+  duplicate_checks: none needed
+  qc_findings: '4 rows: 2 alumina-only + 2 hybrid; A2/A4/A6 only in figure'
+  rows_appended: 4
+  rows_rejected_at_append: []
+measurements:
+- row_id: 8b987b69-084
+  matrix_polymer: Epoxy resin
+  filler_material: Al2O3
+  filler_material_original: alumina microspheres (A)
+  filler_shape: Sphere
+  filler_loading_vol_pct: 8.0
+  filler_loading_original_value: 8.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.32
+  k_direction: through-plane
+  measurement_method: LFA (NETZSCH LFA 467)
+  k_original_value: 0.32
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Results text Fig 3a discussion: A8 = 0.32 W/m K'
+  confidence: High
+  notes: A8 = 8 vol% alumina only. Pure epoxy 0.18 W/m K.
+- row_id: 8b987b69-085
+  matrix_polymer: Epoxy resin
+  filler_material: Al2O3
+  filler_material_original: alumina microspheres (A)
+  filler_shape: Sphere
+  filler_loading_vol_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.35
+  k_direction: through-plane
+  measurement_method: LFA (NETZSCH LFA 467)
+  k_original_value: 0.35
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Results text Fig 3a discussion: A10 = 0.35 W/m K'
+  confidence: High
+  notes: A10 = 10 vol% alumina only.
+- row_id: 8b987b69-086
+  matrix_polymer: Epoxy resin
+  filler_material: Al2O3/BNNS hybrid
+  filler_material_original: A6+B2 = 6 vol% alumina + 2 vol% BNNs
+  filler_shape: other
+  filler_loading_vol_pct: 8.0
+  filler_loading_original_value: 8.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.38
+  k_direction: through-plane
+  measurement_method: LFA (NETZSCH LFA 467)
+  k_original_value: 0.38
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Results text: A6+B2 through-plane = 0.38 W/m K'
+  confidence: High
+  notes: Total 8 vol% (6 vol% Al2O3 + 2 vol% BNNs). Hybrid synergy row.
+- row_id: 8b987b69-087
+  matrix_polymer: Epoxy resin
+  filler_material: Al2O3/BNNS hybrid
+  filler_material_original: A6+B4 = 6 vol% alumina + 4 vol% BNNs
+  filler_shape: other
+  filler_loading_vol_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.47
+  k_direction: through-plane
+  measurement_method: LFA (NETZSCH LFA 467)
+  k_original_value: 0.47
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Results text: A6+B4 through-plane = 0.47 W/m K'
+  confidence: High
+  notes: Total 10 vol% (6 vol% Al2O3 + 4 vol% BNNs). Hybrid synergy row.

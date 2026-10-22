@@ -1,5 +1,7 @@
 # FINAL REPORT — Source-Verified Thermal Conductivity Dataset for Polymer–Ceramic Composites
 
+> **Version note:** this report describes dataset **v1.0** (260 rows). The current release is v1.1 (258 rows): see [data/CHANGELOG.md](data/CHANGELOG.md) and [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
 **Project:** ARGUS data-extraction pipeline · **Finalized:** 2026-10-18 · **Status:** Complete, presentation-ready
 **Verification:** `work/final_verification.json` (14/14 checks PASS, incl. Phase 4) · **Dataset:** `thermal_conductivity_dataset.csv`
 
