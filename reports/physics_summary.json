@@ -63,5 +63,10 @@
       "convention": "semi-axis (Nan 1997)",
       "series_above_perfect_interface": 7
     }
+  },
+  "dataset": {
+    "rows": 258,
+    "papers": 95,
+    "sha256": "12ef8fe97057dafc"
   }
 }

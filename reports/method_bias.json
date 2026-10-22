@@ -601,5 +601,10 @@
       "difference": "+/-3-5% (LFA diffusivity, TPS, THB)",
       "source": "NETZSCH, Hot Disk, Linseis data sheets"
     }
-  ]
+  ],
+  "dataset": {
+    "rows": 258,
+    "papers": 95,
+    "sha256": "12ef8fe97057dafc"
+  }
 }

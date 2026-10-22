@@ -4,11 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-tc"
-version = "0.2.0"
+version = "0.3.0"
 description = "ARGUS: source-verified thermal conductivity dataset and toolkit for polymer-ceramic composites (epoxy + BN/AlN)"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "Code: MIT. Data: see README (values extracted from open-access sources)." }
+license = { text = "MIT (code); data under CC-BY-4.0, see LICENSE-DATA.md" }
+authors = [{ name = "Aniket Kumar" }, { name = "Rao Kumar Srinidhi Reddy" }]
 dependencies = [
     "pydantic>=2.5",
     "pyyaml>=6.0",
@@ -23,6 +24,7 @@ dev = ["pytest>=7.4"]
 plots = ["matplotlib>=3.7"]
 # GroupKFold(shuffle=True) needs scikit-learn >= 1.6
 ml = ["scikit-learn>=1.6", "xgboost>=2.0", "matplotlib>=3.7"]
+report = ["jinja2>=3.1", "matplotlib>=3.7"]
 
 [project.scripts]
 argus = "argus.cli:app"
@@ -31,7 +33,7 @@ argus = "argus.cli:app"
 where = ["src"]
 
 [tool.setuptools.package-data]
-argus = ["reference/*.yaml"]
+argus = ["reference/*.yaml", "report/templates/*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
