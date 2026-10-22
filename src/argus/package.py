@@ -27,16 +27,25 @@ def _fields(cols) -> list[dict[str, Any]]:
 
 
 def descriptor(lay: Layout, counts: dict[str, int]) -> dict[str, Any]:
+    from .release import LICENSE_INFO, author_names
+
     meta = load_yaml(lay.data / "dataset.yaml") if (lay.data / "dataset.yaml").exists() else {}
     base = _fields(COLUMNS)
+    licenses = []
+    if meta.get("license"):
+        title, url = LICENSE_INFO.get(meta["license"], (meta["license"], ""))
+        licenses.append({"name": meta["license"], "title": title, "path": url})
     return {
         "profile": "tabular-data-package",
         "name": meta.get("name", "argus-dataset"),
         "title": meta.get("title", ""),
         "version": meta.get("version", "0.0.0"),
-        "created": meta.get("released", ""),
+        "created": f"{meta['released']}T00:00:00Z" if meta.get("released") else "",  # RFC 3339
         "description": meta.get("description", ""),
         "homepage": meta.get("homepage", ""),
+        "licenses": licenses,
+        "contributors": [{"title": n, "role": "author"} for n in author_names(meta)],
+        "keywords": meta.get("keywords", []),
         "resources": [
             {
                 "name": "measurements",

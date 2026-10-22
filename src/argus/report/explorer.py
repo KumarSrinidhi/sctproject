@@ -107,10 +107,13 @@ def payload(lay: Layout) -> dict[str, Any]:
     phys = json.loads(phys_path.read_text(encoding="utf-8")) if phys_path.exists() else {}
     check_fresh("reports/physics_summary.json", phys, fp, "argus physics")
     rk = float(phys["parameters"]["nan_R_K_m2K_W"]["median"])
+    from ..release import citation_text
+
     meta = load_yaml(lay.data / "dataset.yaml") or {}
     rows = [row_payload(r) for r in enrich_records(records)]
     return {
         "meta": {"version": meta.get("version", ""), "released": meta.get("released", ""),
+                 "license": meta.get("license", ""), "citation": citation_text(meta),
                  "fingerprint": fp["sha256"], "rows": fp["rows"], "papers": fp["papers"],
                  "generated": _dt.date.today().isoformat(), "rk_median": rk, "km_ref": KM_REF,
                  "size_ref_um": SIZE_REF_UM},

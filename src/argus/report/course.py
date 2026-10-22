@@ -134,8 +134,11 @@ def build_context(lay: Layout, fig_dir: Path, fig_rel: str) -> dict[str, Any]:
     timed = {n: M[n]["time_split"]["mae_log10"] for n in M if M[n].get("time_split")}
     time_best = min(timed, key=timed.get) if timed else None
 
+    from ..release import author_names, citation_text
+
     ctx: dict[str, Any] = {
         "today": _dt.date.today().isoformat(),
+        "authors": author_names(meta), "citation": citation_text(meta),
         "meta": meta, "fp": fp, "stats": stats,
         "n_rows": stats["rows"], "n_papers": stats["papers"],
         "fam": fam, "base": base, "mat": mat, "method": method,
