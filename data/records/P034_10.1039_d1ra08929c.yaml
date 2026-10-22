@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P034
+paper:
+  doi: 10.1039/d1ra08929c
+  title: Liquid cooling system for battery modules with boron nitride based thermal conductivity silicone grease
+  year: 2022
+  source_url: https://doi.org/10.1039/d1ra08929c
+extraction_log:
+- seq: 38
+  candidate_id: P034
+  doi: 10.1039/d1ra08929c
+  paper_title: Liquid cooling system for battery modules with boron nitride based thermal conductivity silicone grease
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML (RSC)
+  files_inspected: work/fulltext/10.1039_d1ra08929c.txt
+  tables_inspected: none with k
+  figures_inspected: Fig 6a/6b (values quoted in text)
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: '58 wt% triplet (0.81/0.95/1.11) excluded: sample-to-value mapping ambiguous in text'
+  qc_findings: 2 rows at 70 wt%; optional PDMS/silicone-grease matrix
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 728b82b9-124
+  matrix_polymer: PDMS / silicone grease (MQ silicone resin modified)
+  filler_material: BN
+  filler_material_original: MQ@SBN (15 um spherical BN, 1.0 wt% MQ coating)
+  filler_shape: sphere
+  filler_mean_size_um: 15.0
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: MQ silicone resin coating (1.0 wt%)
+  processing_method: Spherical BN (SBN, self-made) modified with MQ silicone resin via sedimentation method, dispersed in PDMS
+  k_composite_W_mK: 1.22
+  k_direction: unknown
+  measurement_method: TC-3000 thermal conductivity instrument
+  k_original_value: 1.22
+  k_original_unit: W (m−1 K−1)
+  value_source: text
+  source_location: 'Abstract: HCSG TC = 1.22 W (m-1 K-1); Fig 6b caption: MQ dosage effect at filler content 70 wt%'
+  confidence: High
+  notes: 'Best HCSG: 70 wt% MQ@SBN, 1.0 wt% MQ. TR = 0.49 C/W. 15 um SBN.'
+- row_id: 728b82b9-125
+  matrix_polymer: PDMS / silicone grease (MQ silicone resin modified)
+  filler_material: BN
+  filler_material_original: SBN (15 um spherical BN), no MQ
+  filler_shape: sphere
+  filler_mean_size_um: 15.0
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Spherical BN (SBN, self-made) modified with MQ silicone resin via sedimentation method, dispersed in PDMS
+  k_composite_W_mK: 0.91
+  k_direction: unknown
+  measurement_method: TC-3000 thermal conductivity instrument
+  k_original_value: 0.91
+  k_original_unit: W (m−1 K−1)
+  value_source: text
+  source_location: 'Results Fig 6b discussion: same filler content (70 wt%), SBN/PDMS = 0.91 vs MQ@SBN 1.22'
+  confidence: High
+  notes: Control at 70 wt% without MQ modification.

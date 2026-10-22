@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P023
+paper:
+  doi: 10.3390/polym12091954
+  title: 3D Interconnected Boron Nitride Networks in Epoxy Composites via Coalescence Behavior of SAC305 Solder Alloy as a Bridging Material for Enhanced Thermal Conductivity
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12091954
+extraction_log:
+- seq: 25
+  candidate_id: P023
+  doi: 10.3390/polym12091954
+  paper_title: 3D Filler Network of Angular BN and SAC305 Solder in Epoxy for Enhanced Thermal Conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym12091954.txt
+  tables_inspected: none with k
+  figures_inspected: k vs hybrid ratio curves
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: 0.60/0.82 raw-BN conflict documented not duplicated
+  qc_findings: 2 rows; 1:1,1:2,2:1,3:1 hybrid ratios figure-only; abstract/text 0.60 vs 0.82 discrepancy flagged
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 38cf40e1-092
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: a-BN + SAC305 (Sn63Pb37) hybrid 1:0.5, 1 g a-BN on 3 g epoxy
+  filler_shape: platelet
+  filler_loading_wt_pct: 33.0
+  filler_loading_original_value: 33.0
+  filler_loading_original_unit: wt%
+  functionalization: None (hybrid with SAC305 solder)
+  filler_alignment: 3D network (hot-pressed)
+  processing_method: SAC305+a-BN hot-pressed 3D network infiltrated with epoxy
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.95
+  k_direction: unknown
+  measurement_method: LFA (Netzsch Nanoflash LFA 447); thermal diffusivity, Cp, rho
+  k_original_value: 0.95
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract + Results: hybrid filler (a-BN:SAC305 = 1:0.5) reached 0.95 W/mK (33 wt%)'
+  confidence: High
+  notes: Total filler 33 wt% (1 g a-BN + 0.5 g SAC305 per 3 g epoxy). SAC305 is metallic secondary component.
+- row_id: 38cf40e1-093
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: raw a-BN (angular BN)
+  filler_shape: platelet
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.6
+  k_direction: unknown
+  measurement_method: LFA (Netzsch Nanoflash LFA 447); thermal diffusivity, Cp, rho
+  k_original_value: 0.6
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract: raw a-BN only 0.60 W/mK (25 wt%)'
+  confidence: High
+  notes: 'Raw a-BN 1 g / 3 g epoxy = 25 wt%. CONFLICT: Results text also states 0.82 W/mK for raw a-BN "with equivalent amount of a-BN" - two reported values for near-identical loading; 0.60 (abstract) retained, 0.82 documented here. Confidence downgraded.'

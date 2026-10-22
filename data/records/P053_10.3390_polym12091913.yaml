@@ -1,0 +1,47 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P053
+paper:
+  doi: 10.3390/polym12091913
+  title: Preparation and Thermomechanical Properties of Ketone Mesogenic Liquid Crystalline Epoxy Resin/BN Composites with High Thermal Conductivity
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12091913
+extraction_log:
+- seq: 58
+  candidate_id: P053
+  doi: 10.3390/polym12091913
+  paper_title: Preparation and Thermomechanical Properties of Ketone Mesogenic Liquid Crystalline Epoxy Resin/BN Composites with High Thermal Conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym12091913.txt
+  tables_inspected: thermal tables
+  figures_inspected: k figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: DGEBA literature comparisons excluded
+  qc_findings: 1 row; LC epoxy matrix (optional)
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 7501fc89-172
+  matrix_polymer: Ketone mesogenic liquid crystalline epoxy (K-LCE)
+  filler_material: BN
+  filler_material_original: Modified BN fillers, 5.00 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: surface-modified BN
+  processing_method: K-LCE matrix + surface-modified BN fillers
+  k_matrix_W_mK: 0.34
+  k_composite_W_mK: 0.58
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 0.58
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results: K-LCE/BN at 5.00 wt% = 0.58 W/m·K; pure K-LCE 0.34 W/m·K'
+  confidence: High
+  notes: LC epoxy matrix (optional); 5 wt% modified BN gives 0.58 W/m·K. Intermediate loadings 0.05-2 wt% series (0.39-0.53) not all extracted as separate rows.

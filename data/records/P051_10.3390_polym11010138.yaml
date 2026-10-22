@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P051
+paper:
+  doi: 10.3390/polym11010138
+  title: Thermal Conductive Composites Prepared by Addition of Several Ceramic Fillers to Thermally Cationic Curing Cycloaliphatic Epoxy Resins
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11010138
+extraction_log:
+- seq: 56
+  candidate_id: P051
+  doi: 10.3390/polym11010138
+  paper_title: Thermal Conductive Composites Prepared by Addition of Several Ceramic Fillers to Thermally Cationic Curing Cycloaliphatic Epoxy Resins
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym11010138.txt
+  tables_inspected: TC tables
+  figures_inspected: TC figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: SiC and literature BN values excluded
+  qc_findings: 1 row; cycloaliphatic epoxy matrix (optional)
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 7b4cfa14-170
+  matrix_polymer: Cycloaliphatic epoxy (thermally cationic curing)
+  curing_agent: cationic latent initiator
+  filler_material: AlN
+  filler_material_original: AlN particles, 75 wt%
+  filler_shape: sphere
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Thermal cationic curing of cycloaliphatic epoxy with ceramic fillers
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.21
+  k_direction: unknown
+  measurement_method: Thermal conductivity determination (per paper; cycloaliphatic epoxy composites)
+  k_original_value: 1.21
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Abstract+Results: highest TC 1.21 W/m·K at 75 wt% AlN (820% over neat)'
+  confidence: High
+  notes: Cycloaliphatic epoxy (not DGEBA). SiC comparison (1.12 W/m·K) excluded (out of primary filler scope). BN comparison 1.04 is literature.

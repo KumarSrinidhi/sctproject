@@ -1,0 +1,63 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P088
+paper:
+  doi: 10.1002/pc.27985
+  title: Boron nitride nanosheet @ quantum-sized diamond nanocrystal complex/epoxy nanocomposites with enhanced thermal conductivity
+  year: 2021
+  source_url: https://doi.org/10.1002/pc.27985
+extraction_log:
+- seq: 96
+  candidate_id: P088
+  doi: 10.1002/pc.27985
+  paper_title: Boron nitride nanosheet @ quantum-sized diamond nanocrystal complex/epoxy nanocomposites with enhanced thermal conductivity
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 2
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 9f7d9a11-225
+  matrix_polymer: Epoxy
+  filler_material: BNNS/diamond hybrid
+  filler_material_original: BA@DN-2 (BNNS with quantum-sized diamond nanocrystals, dopamine self-assembly)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: Acid hydroxylation + dopamine copolymerization self-assembly
+  k_composite_W_mK: 0.56
+  k_direction: through-plane
+  measurement_method: Not stated in abstract
+  k_original_value: 0.56
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "the through-plane and in-plane thermal conductivity of epoxy composite with 5% BA@DN-2 reaches to 0.56 and 3.824 W/m K, respectively."'
+  confidence: Medium
+  notes: Abstract-only; hybrid BNNS + nanodiamond (carbon core, BNNS matrix-phase).
+- row_id: 9f7d9a11-226
+  matrix_polymer: Epoxy
+  filler_material: BNNS/diamond hybrid
+  filler_material_original: BA@DN-2 (BNNS with quantum-sized diamond nanocrystals, dopamine self-assembly)
+  filler_shape: hybrid
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: Acid hydroxylation + dopamine copolymerization self-assembly
+  k_composite_W_mK: 3.824
+  k_direction: in-plane
+  measurement_method: Not stated in abstract
+  k_original_value: 3.824
+  k_original_unit: W/m K
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): (same sentence as through-plane value)'
+  confidence: Medium
+  notes: Abstract-only; strong anisotropy (3.824 in-plane vs 0.56 through-plane).

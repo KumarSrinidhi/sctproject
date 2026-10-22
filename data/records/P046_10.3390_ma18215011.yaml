@@ -1,0 +1,65 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P046
+paper:
+  doi: 10.3390/ma18215011
+  title: Manufacturing and Application of Low-Cost Potting Adhesive with High Thermal Conductivity
+  year: 2025
+  source_url: https://doi.org/10.3390/ma18215011
+extraction_log:
+- seq: 51
+  candidate_id: P046
+  doi: 10.3390/ma18215011
+  paper_title: Manufacturing and Application of Low-Cost Potting Adhesive with High Thermal Conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_ma18215011.txt
+  tables_inspected: orthogonal design tables
+  figures_inspected: TC figures
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: literature comparison values excluded
+  qc_findings: 3 rows; matrix is commercial epoxy potting adhesive 381-4DZ
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: b639a9c9-160
+  matrix_polymer: Epoxy-based potting adhesive (381-4DZ)
+  filler_material: h-BN/AlN hybrid
+  filler_material_original: Functionalized h-BN (1 um) + AlN hybrid, h-BN:AlN = 4:1, 25 wt% total
+  filler_shape: hybrid
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt% (4:1 h-BN:AlN)
+  functionalization: KH-550 silane coupling agent
+  processing_method: KH-550 functionalized h-BN (1 um) + multi-scale AlN (1+10 um) into 381-4DZ, mechanical stirring
+  k_composite_W_mK: 1.182
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 1.182
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Abstract+Results: BN-AlN = 1.182 W/m·K at 25 wt%, BN:AlN 4:1, 48.7% over commercial adhesive 381-4DZ'
+  confidence: High
+  notes: Optimal loading (hardness constraint). Multi-scale 0D+2D filler network.
+- row_id: b639a9c9-161
+  matrix_polymer: Epoxy-based potting adhesive (381-4DZ)
+  filler_material: h-BN/AlN hybrid
+  filler_material_original: h-BN (1 um) + AlN hybrid, h-BN:AlN = 4:1, 30 wt% total
+  filler_shape: hybrid
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt% (4:1 h-BN:AlN)
+  functionalization: KH-550
+  processing_method: As above, 30 wt% loading
+  k_composite_W_mK: 1.278
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 1.278
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results (Sec. 3.3): "At a 30 wt% filler loading, the thermal conductivity of BN-AlN reaches 1.278 W/m·K, representing a 7.1%, 21.4%, and 25.2% increase compared to the BN-Al2O3, AlN, and Al2O3 composites, respectively."'
+  confidence: High
+  notes: Higher loading gives higher k but exceeds hardness requirement for potting.

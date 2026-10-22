@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P026
+paper:
+  doi: 10.3390/polym13234074
+  title: D-GQDs Modified Epoxy Resin Enhances the Thermal Conductivity of AlN/Epoxy Resin Thermally Conductive Composites
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13234074
+extraction_log:
+- seq: 28
+  candidate_id: P026
+  doi: 10.3390/polym13234074
+  paper_title: D-GQDs Modified Epoxy Resin Enhances the Thermal Conductivity of AlN/Epoxy Resin Thermally Conductive Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym13234074.txt
+  tables_inspected: composition tables (no k)
+  figures_inspected: lambda curves (values in text at 20 wt%)
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: higher loadings figure-only
+  qc_findings: 2 rows at 20 wt%; DG-ER vs ER matrix comparison pair
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: cf08c6ce-096
+  matrix_polymer: Epoxy (D-GQDs modified, DG-ER)
+  filler_material: AlN
+  filler_material_original: AlN in DG-ER (D-GQDs-grafted epoxy matrix)
+  filler_shape: particle
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: D-GQDs modify matrix (not filler)
+  processing_method: Sheet casting 5 mm, cured 80 C 12 h
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 1.31
+  k_direction: sheet plane (in-plane
+  measurement_method: Hot Disk TPS2500 (transient plate heat source, ISO 22007-2)
+  k_original_value: 1.31
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results: AlN 20 wt% AlN/DG-ER sheet -> 1.31 W·m−1·K−1 (6.89x ER matrix)'
+  confidence: High
+  notes: Matrix-modified system; neat ER sheet = 0.19 W·m−1·K−1. Sheet form (5 mm).
+- row_id: cf08c6ce-097
+  matrix_polymer: Epoxy (ER, unmodified)
+  filler_material: AlN
+  filler_material_original: AlN in neat ER
+  filler_shape: particle
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Sheet casting 5 mm, cured 80 C 12 h
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.83
+  k_direction: sheet plane (in-plane
+  measurement_method: Hot Disk TPS2500 (transient plate heat source, ISO 22007-2)
+  k_original_value: 0.83
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results: AlN 20 wt% AlN/ER sheet -> 0.83 W·m−1·K−1'
+  confidence: High
+  notes: Control with unmodified ER matrix at same 20 wt% AlN.

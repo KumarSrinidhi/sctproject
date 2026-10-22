@@ -1,0 +1,179 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P031
+paper:
+  doi: 10.1038/s41598-018-19945-3
+  title: Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanosheets
+  year: 2018
+  source_url: https://doi.org/10.1038/s41598-018-19945-3
+extraction_log:
+- seq: 34
+  candidate_id: P031
+  doi: 10.1038/s41598-018-19945-3
+  paper_title: Enhanced Thermal Conductivity of Polyimide Composites with Boron Nitride Nanosheets
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1038_s41598-018-19945-3.txt
+  tables_inspected: none with k
+  figures_inspected: Fig 6a/6b (values enumerated in text)
+  candidate_measurements: 8
+  unit_conversions: none
+  duplicate_checks: neat PI 0.25 kept as k_matrix
+  qc_findings: 8 rows (4 loadings x 2 directions); optional polyimide matrix
+  rows_appended: 8
+  rows_rejected_at_append: []
+measurements:
+- row_id: 8289e073-107
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 1.0
+  filler_loading_original_value: 1.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 1.83
+  k_direction: in-plane
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 1.83
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6a quoted in text: in-plane at 1 wt% = 1.83 W/mK'
+  confidence: High
+  notes: 'PI/BNNS 1 wt% in-plane. Optional matrix: polyimide (not epoxy). Neat PI 0.25 W/mK both directions.'
+- row_id: 8289e073-108
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 3.0
+  filler_loading_original_value: 3.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 2.22
+  k_direction: in-plane
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 2.22
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6a quoted in text: in-plane at 3 wt% = 2.22 W/mK'
+  confidence: High
+  notes: 'PI/BNNS 3 wt% in-plane. Optional matrix: polyimide (not epoxy). Neat PI 0.25 W/mK both directions.'
+- row_id: 8289e073-109
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 2.76
+  k_direction: in-plane
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 2.76
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6a quoted in text: in-plane at 5 wt% = 2.76 W/mK'
+  confidence: High
+  notes: 'PI/BNNS 5 wt% in-plane. Optional matrix: polyimide (not epoxy). Neat PI 0.25 W/mK both directions.'
+- row_id: 8289e073-110
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 7.0
+  filler_loading_original_value: 7.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 2.95
+  k_direction: in-plane
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 2.95
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6a quoted in text: in-plane at 7 wt% = 2.95 W/mK'
+  confidence: High
+  notes: 'PI/BNNS 7 wt% in-plane. Optional matrix: polyimide (not epoxy). Neat PI 0.25 W/mK both directions.'
+- row_id: 8289e073-111
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 1.0
+  filler_loading_original_value: 1.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 0.26
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 0.26
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6b quoted in text: out-of-plane at 1 wt% = 0.26 W/mK'
+  confidence: High
+  notes: PI/BNNS 1 wt% out-of-plane (paired with in-plane row at same loading).
+- row_id: 8289e073-112
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 3.0
+  filler_loading_original_value: 3.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 0.33
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 0.33
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6b quoted in text: out-of-plane at 3 wt% = 0.33 W/mK'
+  confidence: High
+  notes: PI/BNNS 3 wt% out-of-plane (paired with in-plane row at same loading).
+- row_id: 8289e073-113
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 0.36
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 0.36
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6b quoted in text: out-of-plane at 5 wt% = 0.36 W/mK'
+  confidence: High
+  notes: PI/BNNS 5 wt% out-of-plane (paired with in-plane row at same loading).
+- row_id: 8289e073-114
+  matrix_polymer: Polyimide (PI)
+  filler_material: BNNS
+  filler_material_original: BNNSs (boron nitride nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 7.0
+  filler_loading_original_value: 7.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  k_matrix_W_mK: 0.25
+  k_composite_W_mK: 0.44
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Thermal conductivity of PI/BNNS films (Fig 6a in-plane, Fig 6b out-of-plane)
+  k_original_value: 0.44
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Fig 6b quoted in text: out-of-plane at 7 wt% = 0.44 W/mK'
+  confidence: High
+  notes: PI/BNNS 7 wt% out-of-plane (paired with in-plane row at same loading).

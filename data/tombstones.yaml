@@ -1,0 +1,54 @@
+# Row ids that were deliberately removed. They must never reappear
+# (checked by `argus validate`, rule tombstone_reused).
+tombstones:
+- row_id: 0e680d76-098
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: 2f8abcf1-061
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: 2f8abcf1-062
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: 4a11b03c-151
+  removed: 2026-10-14 (Phase 2)
+  reason: Literature value quoted from previous work; violates the literature-comparison exclusion policy (audit D8)
+- row_id: a8b6fee9-141
+  removed: 2026-10-14 (Phase 2)
+  reason: 'Cross-paper duplicate: same samples reported in a companion paper or quoted as previous work (audit D3)'
+- row_id: a8b6fee9-142
+  removed: 2026-10-14 (Phase 2)
+  reason: 'Cross-paper duplicate: same samples reported in a companion paper or quoted as previous work (audit D3)'
+- row_id: a9d63e6e-014
+  removed: 2026-10-14 (Phase 2)
+  reason: 'Cross-paper duplicate: same samples reported in a companion paper or quoted as previous work (audit D3)'
+- row_id: a9d63e6e-015
+  removed: 2026-10-14 (Phase 2)
+  reason: 'Cross-paper duplicate: same samples reported in a companion paper or quoted as previous work (audit D3)'
+- row_id: a9d63e6e-016
+  removed: 2026-10-14 (Phase 2)
+  reason: 'Cross-paper duplicate: same samples reported in a companion paper or quoted as previous work (audit D3)'
+- row_id: ad883006-077
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: b8850d43-119
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: b8850d43-120
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: b8850d43-121
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: bf4f3fd7-185
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: caf49a8d-150
+  removed: 2026-10-14 (Phase 2)
+  reason: Intra-paper duplicate created by the legacy append-after-reject bug (audit D1)
+- row_id: b639a9c9-159
+  removed: 2026-10-22 (v1.1 audit fixes)
+  reason: 'Audit D7. k = 1.052 W/m·K (30 wt% AlN, 10.3390/ma18215011) is not printed anywhere in the paper; it was back-calculated from "1.278 W/m·K ... 21.4% ... increase compared to the ... AlN" composite, and the recorded quote misattributed the 25.2% (which is vs Al2O3). Derived values violate the zero-inference policy. Recoverable by digitizing Fig. 5a.'
+- row_id: ce78048d-168
+  removed: 2026-10-22 (v1.1 audit fixes)
+  reason: 'Model prediction, not a measurement. 10.3390/nano11081898 states "the predicted IPTC of 120-60 is 1.88 W/((m·K))" from its modified parallel (layer) model, Eq. (4); the paper measured only the through-plane value. The row also claimed an in-plane laser-flash measurement. Violates the no-inference policy (README: modeling values excluded).'

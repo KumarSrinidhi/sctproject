@@ -1,0 +1,95 @@
+{
+  "generated": "2026-10-22T15:56:09",
+  "overall": "PASS",
+  "checks": [
+    {
+      "id": "records_load",
+      "description": "All record files parse and match the schema",
+      "ok": true,
+      "detail": "95 records; 0 schema errors"
+    },
+    {
+      "id": "validation_clean",
+      "description": "No unwaived validation errors",
+      "ok": true,
+      "detail": "0 errors, 0 warnings: {}"
+    },
+    {
+      "id": "outputs_in_sync",
+      "description": "Every generated file (CSVs, rows.jsonl, enriched table, datapackage.json) equals a fresh build",
+      "ok": true,
+      "detail": "8 files in sync"
+    },
+    {
+      "id": "exclusions_consistent",
+      "description": "A DOI with rows is never listed as excluded (unless marked recovered)",
+      "ok": true,
+      "detail": "consistent"
+    },
+    {
+      "id": "papers_have_log",
+      "description": "Every paper has at least one extraction-log entry",
+      "ok": true,
+      "detail": "all papers logged"
+    },
+    {
+      "id": "figure_rows_cite_method",
+      "description": "Figure-derived rows name the digitization method",
+      "ok": true,
+      "detail": "28 figure rows"
+    },
+    {
+      "id": "waivers_justified",
+      "description": "Every waiver carries a written justification",
+      "ok": true,
+      "detail": "1 waivers"
+    },
+    {
+      "id": "changes_declared",
+      "description": "Every difference from the legacy v1.0 rows is declared in a curation-log entry",
+      "ok": true,
+      "detail": "all declared"
+    }
+  ],
+  "stats": {
+    "rows": 258,
+    "papers": 95,
+    "k_min": 0.17,
+    "k_max": 47.03,
+    "k_median": 1.0350000000000001,
+    "year_min": 1997,
+    "year_max": 2026,
+    "confidence": {
+      "High": 194,
+      "Medium": 64
+    },
+    "value_source": {
+      "text": 158,
+      "table": 72,
+      "figure": 28
+    },
+    "filler_material": {
+      "h-BN": 85,
+      "BN": 54,
+      "BNNS": 53,
+      "AlN": 20,
+      "BN/graphene hybrid": 11,
+      "Al2O3": 6,
+      "Al2O3/BN hybrid": 5,
+      "h-BN/CNT hybrid": 3,
+      "Al2O3/BNNS hybrid": 2,
+      "none": 2,
+      "cBN": 2,
+      "h-BN/AlN hybrid": 2,
+      "h-BN/cBN hybrid": 2,
+      "h-BN/Al2O3 hybrid": 2,
+      "BNNS/diamond hybrid": 2,
+      "MgO": 2,
+      "Cu/BN hybrid": 1,
+      "BNNS hybrid": 1,
+      "AlN/BN hybrid": 1,
+      "Al2O3/graphene hybrid": 1,
+      "BNNS/SiC hybrid": 1
+    }
+  }
+}

@@ -1,0 +1,46 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P005
+paper:
+  doi: 10.1038/srep04779
+  title: The use of polyimide-modified aluminum nitride fillers in AlN@PI/Epoxy composites with enhanced thermal conductivity for electronic encapsulation
+  year: 2014
+  source_url: https://doi.org/10.1038/srep04779
+extraction_log:
+- seq: 5
+  candidate_id: P005
+  doi: 10.1038/srep04779
+  paper_title: The use of polyimide-modified aluminum nitride fillers in AlN@PI/Epoxy composites with enhanced thermal conductivity for electronic encapsulation
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1038_srep04779.txt
+  tables_inspected: Table 1 (thermal conductivity and dielectric of composites)
+  figures_inspected: Figure 2/3 referenced for k vs loading (not digitized)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: literature comparison rows in Table 1 excluded
+  qc_findings: 1 high-confidence row extracted; lower loadings figure-only
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 32b9d43b-035
+  matrix_polymer: Epoxy (bisphenol A type, epoxy equivalent 0.51-0.54 mol/100g)
+  curing_agent: methyl hexahydrophthalic anhydride (MHHPA)
+  filler_material: AlN
+  filler_material_original: AlN@PI (polyimide-coated aluminum nitride)
+  filler_shape: other
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: Polyimide coating on AlN
+  k_composite_W_mK: 2.03
+  k_direction: unknown
+  measurement_method: Steady-state heat-flow apparatus (ASTM D5470)
+  k_original_value: 2.03
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 1 our-work row (40 wt AlN@PI/Epoxy 2.03 W/mK); confirmed in text
+  confidence: High
+  notes: Table 1 also lists literature comparison rows (excluded). Fig 2 has k vs 10-40 wt% for AlN@PI/epoxy and AlN/epoxy (not digitized). Matrix epoxy; filler density not given so wt->vol not converted.

@@ -1,5 +1,7 @@
 # Quality Control Report
 
+> **Version note:** sections 1–8 and the phase sections describe dataset **v1.0** (260 rows). For v1.1 (258 rows) see [data/CHANGELOG.md](data/CHANGELOG.md); current checks are produced by `argus verify` (`reports/verification.json`).
+
 **Dataset:** `thermal_conductivity_dataset.csv`
 **Generated:** 2026-10-13 (Phase 2 remediation 2026-10-14; Phase 3 expansion 2026-10-14; Phase 4 merge + **finalized 2026-10-18**)
 **Scope:** Experimental effective thermal conductivity of polymer–ceramic composites (epoxy + h-BN/BNNS/AlN primary; other matrices and fillers tagged in notes).

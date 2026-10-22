@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P057
+paper:
+  doi: 10.3390/nano15120936
+  title: Preparation and Properties of Magnetically Responsive Graphene/Boron Nitride/Iron Oxide Filler Composite Epoxy Resin Materials
+  year: 2025
+  source_url: https://doi.org/10.3390/nano15120936
+extraction_log:
+- seq: 62
+  candidate_id: P057
+  doi: 10.3390/nano15120936
+  paper_title: Preparation and Properties of Magnetically Responsive Graphene/Boron Nitride/Iron Oxide Filler Composite Epoxy Resin Materials
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano15120936.txt
+  tables_inspected: TC tables
+  figures_inspected: k vs loading figures
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: intermediate 5,15,20 wt% values not extracted as separate rows
+  qc_findings: 2 rows; magnetic field-assisted curing method
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 9eddc768-178
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: Hexagonal boron nitride (h-BN), 10 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: Magnetic field-assisted curing
+  processing_method: Magnetic field-assisted curing for BN alignment
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.58
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 0.58
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Results: 10 wt% h-BN -> 0.58 Wm−1K−1 (field-assisted)'
+  confidence: High
+  notes: Magnetic field-assisted curing improves BN alignment and k.
+- row_id: 9eddc768-179
+  matrix_polymer: Epoxy
+  filler_material: BN
+  filler_material_original: Hexagonal boron nitride (h-BN), 25 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: Magnetic field-assisted curing
+  processing_method: Magnetic field-assisted curing for BN alignment
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.44
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 1.44
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Results: 25 wt% h-BN -> 1.44 Wm−1K−1 (field-assisted)'
+  confidence: High
+  notes: Highest loading in field-assisted series (10-25 wt%).

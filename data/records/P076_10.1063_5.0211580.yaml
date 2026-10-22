@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P076
+paper:
+  doi: 10.1063/5.0211580
+  title: Significantly enhancing the through-plane thermal conductivity of epoxy dielectrics by constructing aramid nanofiber/boron nitride three-dimensional interconnected framework
+  year: 2024
+  source_url: https://doi.org/10.1063/5.0211580
+extraction_log:
+- seq: 84
+  candidate_id: P076
+  doi: 10.1063/5.0211580
+  paper_title: Significantly enhancing the through-plane thermal conductivity of epoxy dielectrics by constructing aramid nanofiber/boron nitride nanosheet framework
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: fd88f33b-209
+  matrix_polymer: Epoxy (dielectric)
+  filler_material: BNNS
+  filler_material_original: ANF-BNNS (aramid nanofiber + BNNS collaborative vertical framework)
+  filler_shape: nanosheet network
+  filler_loading_vol_pct: 1.43
+  filler_loading_original_value: 1.43
+  filler_loading_original_unit: vol%
+  functionalization: ANF hybridization (vacuum freeze-drying + impregnation)
+  filler_alignment: Vertically aligned (directional freeze-cast ANF-BNNS framework)
+  processing_method: ANF-BNNS aerogel by directional freezing + vacuum freeze-drying; vacuum infusion/impregnation with epoxy
+  k_matrix_W_mK: 0.184
+  k_composite_W_mK: 0.87
+  k_direction: through-plane
+  measurement_method: Not stated in main text (characterization in supplementary material)
+  k_original_value: 0.87
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Full text (AIP OA HTML; work/fulltext/10.1063_5.0211580.txt), Sec. III: "The through-plane λ of ANF-BNNS/epoxy reaches up to 0.87 W m−1 K−1 at only 1.43 vol. % BNNS, a value of 372.8% greater than that of pure epoxy (∼0.184 W m−1 K−1)"'
+  confidence: High
+  notes: Upgraded Phase 4 (full text). Loading = BNNS fraction. The BNNS/epoxy random comparator (30 wt%/18.34 vol%) is only given relative to this value ("~17.1% higher"), so no row was derived for it.

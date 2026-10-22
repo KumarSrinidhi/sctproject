@@ -1,0 +1,47 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P061
+paper:
+  doi: 10.3390/ijms24098221
+  title: Boron Nitride/Polyurethane Composites with Good Thermal Conductivity and Flexibility
+  year: 2023
+  source_url: https://doi.org/10.3390/ijms24098221
+extraction_log:
+- seq: 66
+  candidate_id: P061
+  doi: 10.3390/ijms24098221
+  paper_title: Boron Nitride/Polyurethane Composites with Good Thermal Conductivity and Flexibility
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_ijms24098221.txt
+  tables_inspected: TC tables
+  figures_inspected: k figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: BN60 series not extracted as separate rows
+  qc_findings: 1 row; PU matrix (optional)
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 0ab9ce56-184
+  matrix_polymer: PU (polyurethane)
+  filler_material: BN
+  filler_material_original: BN70/PU (70 wt% BN), unordered
+  filler_shape: platelet
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: None (unmodified BN)
+  processing_method: Phase inversion (NIPS) or solvent evaporation (SE) methods
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.653
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 0.653
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results: BN70/PU unordered -> 0.653 W/(m·K) (281.87% vs pure PU 0.170)'
+  confidence: High
+  notes: PU matrix (optional polymer). BN60/PU = 0.545; BN60/PU-NIPS = 0.319; BN60/PU-SE = 0.425.

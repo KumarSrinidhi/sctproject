@@ -1,0 +1,46 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P035
+paper:
+  doi: 10.3390/nano11020373
+  title: '3D Printing of PDMS-Like Polymer Nanocomposites with Enhanced Thermal Conductivity: Boron Nitride Based Photocuring System'
+  year: 2021
+  source_url: https://doi.org/10.3390/nano11020373
+extraction_log:
+- seq: 39
+  candidate_id: P035
+  doi: 10.3390/nano11020373
+  paper_title: '3D Printing of PDMS-Like Polymer Nanocomposites with Enhanced Thermal Conductivity: Boron Nitride Based Photocuring System'
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano11020373.txt
+  tables_inspected: formulation tables
+  figures_inspected: Fig 8 (k vs BN content)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: theoretical 12.1-14.4 W/mK excluded (not experimental)
+  qc_findings: 1 experimental row; other BN loadings (1-4 phr) figure-only
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: fdff050a-126
+  matrix_polymer: Silicone acrylate (PDMS-like photocurable, TEGORAD 2800)
+  filler_material: BN
+  filler_material_original: BN nanoparticles in silicone-acrylate (formulation 5 BN)
+  filler_shape: nanoparticle
+  filler_loading_wt_pct: 4.76
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: phr (4.76 wt%)
+  functionalization: None
+  processing_method: DLP vat photopolymerization (3D printing), UV cured
+  k_composite_W_mK: 0.215
+  k_direction: unknown
+  measurement_method: Experimental k of printed sample (hot-plate + thermo-camera setup; matrix k set by experimental measurement 0.165 W/mK)
+  k_original_value: 0.215
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results: experimental value of 5 BN -> 0.215 W/mK (matrix 0.165 W/mK)'
+  confidence: Medium
+  notes: '5 phr BN (4.76 wt%). Theoretical law-of-mixture bounds 12.1-14.4 W/mK NOT extracted (model). Optional matrix: silicone acrylate.'
