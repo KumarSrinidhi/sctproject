@@ -151,6 +151,52 @@ def analyze_bias(root: Optional[Path] = RootOpt):
     typer.echo("wrote reports/method_bias.md, reports/method_bias.json, reports/uncertainty_budget.csv")
 
 
+ml_app = typer.Typer(no_args_is_help=True, help="Machine learning validated by holding out whole papers.")
+app.add_typer(ml_app, name="ml")
+
+
+@ml_app.command("benchmark")
+def ml_benchmark(root: Optional[Path] = RootOpt,
+                 quick: bool = typer.Option(False, "--quick", help="Fewer trees and repeats (for smoke tests)"),
+                 ablate: bool = typer.Option(True, "--ablate/--no-ablate", help="Feature-group ablation for the best model")):
+    """Baselines vs learned models under leave-one-paper-out CV -> reports/ml_benchmark.{md,json}."""
+    import numpy as np
+
+    from .enrich import enrich_records
+    from .io import atomic_write_bytes, atomic_write_text, csv_bytes
+    from .ml.benchmark import Config, ablation, run_benchmark
+    from .ml.features import build_dataset
+    from .ml.report import parity_plot, predictions_table, render_markdown
+    from .records import load_records
+
+    lay = layout(root)
+    ds = build_dataset(enrich_records(load_records(lay).records))
+    cfg = Config.fast() if quick else Config()
+    typer.echo(f"{len(ds.y)} rows / {ds.n_papers} papers / {len(ds.names)} features; fitting models...")
+    res = run_benchmark(ds, cfg)
+    best = res["best_model"]
+    abl = ablation(ds, best if best not in ("gp_residual",) else "xgboost", cfg) if ablate and best else None
+    lay.reports.mkdir(exist_ok=True)
+    fig = parity_plot(ds, res, [m for m in ("physics", "knn", best) if m in res["models"]],
+                      lay.reports / "figures" / "ml_parity_lopo.png")
+    table = predictions_table(ds, res, best)
+    atomic_write_bytes(lay.reports / "ml_lopo_predictions.csv", csv_bytes(table, list(table[0])))
+    serial = {k: v for k, v in res.items() if k != "lopo_predictions"}
+    serial["ablation"] = abl
+    atomic_write_text(lay.reports / "ml_benchmark.json", json.dumps(serial, indent=2, ensure_ascii=False,
+                                                                    default=lambda o: o.tolist() if isinstance(o, np.ndarray) else str(o)) + "\n")
+    atomic_write_text(lay.reports / "ml_benchmark.md",
+                      render_markdown(res, abl, "figures/ml_parity_lopo.png" if fig else None))
+    for n in res["ranking_lopo_mae"]:
+        e = res["models"][n]["lopo"]
+        typer.echo(f"  {n:14s} LOPO MAE {e['mae_log10']:.3f} (x{e['mae_factor']:.2f})  R2 {e['r2']:.2f}  "
+                   f"within x2 {100 * e['within_factor_2']:.0f}%")
+    acc = res.get("acceptance", {})
+    typer.echo(f"acceptance: {'PASS' if acc.get('passed') else 'FAIL'} ({best} vs {res['best_baseline']})")
+    typer.echo("wrote reports/ml_benchmark.md, ml_benchmark.json, ml_lopo_predictions.csv"
+               + (", figures/ml_parity_lopo.png" if fig else ""))
+
+
 @app.command("new-paper")
 def new_paper(
     doi: str = typer.Option(..., help="DOI, e.g. 10.3390/polym12345678"),

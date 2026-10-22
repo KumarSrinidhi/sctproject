@@ -109,6 +109,10 @@ src/argus/
   physics/fit.py  per-series model fitting
   analysis/lmm.py   REML random-intercept mixed model (between/within df)
   analysis/bias.py  measurement-technique and direction bias analysis
+  ml/features.py    leakage-free feature matrix (27 columns, 10 groups)
+  ml/models.py      baselines + learners (grouped inner tuning, monotone boosting)
+  ml/benchmark.py   paper-grouped validation, conformal intervals, ablation
+  ml/report.py      Markdown report, prediction table, parity plot
   legacy.py     one-time migration from work/ + change-declaration check
   cli.py        `argus` commands
 tests/          pytest suite (unit, model identities, real-data invariants)
@@ -279,6 +283,32 @@ Results are in [`reports/method_bias.md`](../reports/method_bias.md) and summari
 [roadmap](ROADMAP.md#phase-4-measurement-bias-analysis--course-centrepiece). In short, same-sample anisotropy
 (median A = 6.7) implies up to 2.8× method-dependent differences. The between-paper method contrast is
 1.43× (CI 0.86–2.36), and no sample was measured by two techniques.
+
+## 8b. Machine learning
+
+`argus ml benchmark` (`src/argus/ml/`) asks whether composition, processing and method metadata predict k
+for a paper the model has never seen.
+
+- **Features** (`features.py`): 27 columns in 10 named groups. Every feature is a fixed row-wise function of
+  the enriched row, so building them cannot leak information between folds. Missing sizes use a fixed
+  constant plus an indicator, not a dataset median. The target is log₁₀(k/k_m).
+- **Models** (`models.py`): three baselines (median, calibrated Nan 1997, nearest neighbours) and four
+  learners:
+  - ridge, with alpha chosen by an inner split that also keeps papers together;
+  - calibrated physics plus a Gaussian process on the residuals;
+  - gradient boosting, constrained to be non-decreasing in every loading-derived feature;
+  - a random forest.
+- **Validation** (`benchmark.py`):
+  - Leave-one-paper-out is the headline, alongside repeated 5-fold by paper.
+  - Row-level 5-fold is reported only as a leakage contrast.
+  - A time split and leave-one-filler-family-out test extrapolation.
+  - Intervals are paper-grouped conformal: each held-out paper's interval comes from the other papers'
+    residuals.
+  - The ablation removes feature groups (and overlapping pairs) on identical splits, so the differences are
+    paired.
+
+Headline: ×1.66 typical error on an unseen paper (gradient boosting) against ×1.91 and ×2.14 for the best
+baselines. Calibrated 90% intervals are ×/÷3.4 wide. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md).
 
 ## 9. Testing
 
