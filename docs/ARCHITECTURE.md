@@ -71,6 +71,7 @@ flowchart LR
   end
   subgraph Analyse["Analyse"]
     PH[physics: EMT models + fits]
+    BI[measurement-bias analysis<br/>mixed model + same-sample pairs]
     ML[ML: grouped-CV models<br/>(roadmap phase 5)]
     UI[Explorer<br/>(roadmap phase 7)]
   end
@@ -79,7 +80,7 @@ flowchart LR
   R --> V --> B
   S --> B
   B --> C & E & P
-  E --> PH & ML & UI
+  E --> PH & BI & ML & UI
   C & E & P --> Q
 ```
 
@@ -106,6 +107,8 @@ src/argus/
   verify.py     read-only release checks → reports/verification.json
   physics/emt.py  effective-medium models
   physics/fit.py  per-series model fitting
+  analysis/lmm.py   REML random-intercept mixed model (between/within df)
+  analysis/bias.py  measurement-technique and direction bias analysis
   legacy.py     one-time migration from work/ + change-declaration check
   cli.py        `argus` commands
 tests/          pytest suite (unit, model identities, real-data invariants)
@@ -256,6 +259,26 @@ these are regression tests.
 
 Fitted parameters are **apparent**: they absorb voids, dispersion and measurement-direction effects. They
 are diagnostics for comparing papers, not interface physics.
+
+## 8a. Measurement-bias analysis
+
+`argus analyze bias` (`src/argus/analysis/`) asks how much the measurement technique and direction shift
+reported k. It weighs three kinds of evidence, strongest first:
+
+1. **Same-sample pairs**: rows identical in paper, composition, processing and loading but reported in two
+   directions or by two methods.
+2. **Anisotropy → method bias**: an isotropic-mode TPS/THB/hot-wire sensor reads about √(k_in·k_through),
+   i.e. √A times the laser-flash through-plane value.
+3. **Pooled between-paper model**: log₁₀(k/k_m) ~ φ + φ² + BNNS + in-plane + method group, with a random
+   intercept per paper.
+   - The mixed model (`lmm.py`) is a small REML implementation, tested against dense-matrix algebra.
+   - It uses between/within degrees of freedom: method is constant within a paper, so its interval is judged
+     against the number of papers, not rows.
+
+Results are in [`reports/method_bias.md`](../reports/method_bias.md) and summarised in the
+[roadmap](ROADMAP.md#phase-4-measurement-bias-analysis--course-centrepiece). In short, same-sample anisotropy
+(median A = 6.7) implies up to 2.8× method-dependent differences. The between-paper method contrast is
+1.43× (CI 0.86–2.36), and no sample was measured by two techniques.
 
 ## 9. Testing
 

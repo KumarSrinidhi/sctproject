@@ -1,0 +1,605 @@
+{
+  "question": "How much do measurement technique and direction shift reported k for BN/epoxy composites?",
+  "direction_pairs": [
+    {
+      "paper_id": "P031",
+      "doi": "10.1038/s41598-018-19945-3",
+      "filler": "BNNS",
+      "shape": "nanosheet",
+      "alignment": "",
+      "phi_vol_pct": 0.66,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 1.83,
+      "k_b": 0.26,
+      "ratio": 7.04
+    },
+    {
+      "paper_id": "P031",
+      "doi": "10.1038/s41598-018-19945-3",
+      "filler": "BNNS",
+      "shape": "nanosheet",
+      "alignment": "",
+      "phi_vol_pct": 1.993,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 2.22,
+      "k_b": 0.33,
+      "ratio": 6.73
+    },
+    {
+      "paper_id": "P031",
+      "doi": "10.1038/s41598-018-19945-3",
+      "filler": "BNNS",
+      "shape": "nanosheet",
+      "alignment": "",
+      "phi_vol_pct": 3.344,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 2.76,
+      "k_b": 0.36,
+      "ratio": 7.67
+    },
+    {
+      "paper_id": "P031",
+      "doi": "10.1038/s41598-018-19945-3",
+      "filler": "BNNS",
+      "shape": "nanosheet",
+      "alignment": "",
+      "phi_vol_pct": 4.715,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 2.95,
+      "k_b": 0.44,
+      "ratio": 6.7
+    },
+    {
+      "paper_id": "P078",
+      "doi": "10.1016/j.compscitech.2020.108304",
+      "filler": "AlN",
+      "shape": "honeycomb network",
+      "alignment": "",
+      "phi_vol_pct": 47.26,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 9.48,
+      "k_b": 4.45,
+      "ratio": 2.13
+    },
+    {
+      "paper_id": "P082",
+      "doi": "10.1016/j.compscitech.2020.108322",
+      "filler": "BNNS",
+      "shape": "nanosheet network",
+      "alignment": "",
+      "phi_vol_pct": 15.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 3.87,
+      "k_b": 4.02,
+      "ratio": 0.963
+    },
+    {
+      "paper_id": "P088",
+      "doi": "10.1002/pc.27985",
+      "filler": "BNNS/diamond hybrid",
+      "shape": "hybrid",
+      "alignment": "",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 3.824,
+      "k_b": 0.56,
+      "ratio": 6.83
+    }
+  ],
+  "anisotropy": {
+    "n_pairs": 7,
+    "papers": [
+      "P031",
+      "P078",
+      "P082",
+      "P088"
+    ],
+    "A_median": 6.73,
+    "A_min": 0.963,
+    "A_max": 7.67,
+    "implied_isotropic_sensor_over_through_plane": {
+      "at_A_median": 2.59,
+      "at_A_min": 0.981,
+      "at_A_max": 2.77,
+      "basis": "k_TPS ~ sqrt(k_in k_through) => k_TPS / k_through = sqrt(A)"
+    }
+  },
+  "method_pairs": [],
+  "pooled_models": {
+    "main": {
+      "spec": "main",
+      "description": "All single-filler BN-platelet rows with a loading",
+      "n": 190,
+      "papers": 65,
+      "response": "log10(k / k_matrix_effective)",
+      "reference": "laser flash (LFA), h-BN/BN, direction not in-plane",
+      "covariates": [
+        "intercept",
+        "phi",
+        "phi^2",
+        "BNNS",
+        "in_plane",
+        "method:MIXED",
+        "method:STEADY",
+        "method:OTHER",
+        "method:UNSPECIFIED"
+      ],
+      "rows_per_method_group": {
+        "MIXED": 82,
+        "LFA": 45,
+        "STEADY": 8,
+        "UNSPECIFIED": 51,
+        "OTHER": 4
+      },
+      "papers_per_method_group": {
+        "MIXED": 14,
+        "LFA": 15,
+        "STEADY": 3,
+        "UNSPECIFIED": 31,
+        "OTHER": 2
+      },
+      "effects": {
+        "BNNS": {
+          "factor": 1.39,
+          "ci95": [
+            1.09,
+            1.79
+          ],
+          "beta_log10": 0.1442,
+          "se_log10": 0.0543,
+          "df": 121.0,
+          "between_paper_contrast": false,
+          "papers": null,
+          "rows": null,
+          "naive_ols_factor": 1.16,
+          "naive_ols_ci95": [
+            0.916,
+            1.48
+          ]
+        },
+        "in_plane": {
+          "factor": 4.93,
+          "ci95": [
+            3.48,
+            6.98
+          ],
+          "beta_log10": 0.6927,
+          "se_log10": 0.0764,
+          "df": 121.0,
+          "between_paper_contrast": false,
+          "papers": null,
+          "rows": null,
+          "naive_ols_factor": 4.23,
+          "naive_ols_ci95": [
+            2.92,
+            6.11
+          ]
+        },
+        "method:MIXED": {
+          "factor": 1.43,
+          "ci95": [
+            0.861,
+            2.36
+          ],
+          "beta_log10": 0.1539,
+          "se_log10": 0.109,
+          "df": 60.0,
+          "between_paper_contrast": true,
+          "papers": 14,
+          "rows": 82,
+          "naive_ols_factor": 1.39,
+          "naive_ols_ci95": [
+            1.1,
+            1.75
+          ]
+        },
+        "method:STEADY": {
+          "factor": 0.634,
+          "ci95": [
+            0.266,
+            1.51
+          ],
+          "beta_log10": -0.198,
+          "se_log10": 0.188,
+          "df": 60.0,
+          "between_paper_contrast": true,
+          "papers": 3,
+          "rows": 8,
+          "naive_ols_factor": 0.81,
+          "naive_ols_ci95": [
+            0.498,
+            1.32
+          ]
+        },
+        "method:OTHER": {
+          "factor": 0.885,
+          "ci95": [
+            0.308,
+            2.55
+          ],
+          "beta_log10": -0.05315,
+          "se_log10": 0.229,
+          "df": 60.0,
+          "between_paper_contrast": true,
+          "papers": 2,
+          "rows": 4,
+          "naive_ols_factor": 0.946,
+          "naive_ols_ci95": [
+            0.478,
+            1.87
+          ]
+        },
+        "method:UNSPECIFIED": {
+          "factor": 1.66,
+          "ci95": [
+            1.07,
+            2.56
+          ],
+          "beta_log10": 0.2189,
+          "se_log10": 0.0944,
+          "df": 60.0,
+          "between_paper_contrast": true,
+          "papers": 31,
+          "rows": 51,
+          "naive_ols_factor": 1.62,
+          "naive_ols_ci95": [
+            1.25,
+            2.09
+          ]
+        }
+      },
+      "between_paper_sd_log10": 0.275,
+      "within_paper_sd_log10": 0.148,
+      "between_paper_factor_1sd": 1.88,
+      "icc": 0.775
+    },
+    "printed_only": {
+      "spec": "printed_only",
+      "description": "Excluding abstract-only and figure-digitized rows",
+      "n": 146,
+      "papers": 50,
+      "response": "log10(k / k_matrix_effective)",
+      "reference": "laser flash (LFA), h-BN/BN, direction not in-plane",
+      "covariates": [
+        "intercept",
+        "phi",
+        "phi^2",
+        "BNNS",
+        "in_plane",
+        "method:MIXED",
+        "method:STEADY",
+        "method:OTHER",
+        "method:UNSPECIFIED"
+      ],
+      "rows_per_method_group": {
+        "MIXED": 67,
+        "LFA": 32,
+        "STEADY": 8,
+        "UNSPECIFIED": 35,
+        "OTHER": 4
+      },
+      "papers_per_method_group": {
+        "MIXED": 13,
+        "LFA": 14,
+        "STEADY": 3,
+        "UNSPECIFIED": 18,
+        "OTHER": 2
+      },
+      "effects": {
+        "BNNS": {
+          "factor": 1.31,
+          "ci95": [
+            1.03,
+            1.67
+          ],
+          "beta_log10": 0.1184,
+          "se_log10": 0.0522,
+          "df": 92.0,
+          "between_paper_contrast": false,
+          "papers": null,
+          "rows": null,
+          "naive_ols_factor": 1.05,
+          "naive_ols_ci95": [
+            0.815,
+            1.36
+          ]
+        },
+        "in_plane": {
+          "factor": 6.38,
+          "ci95": [
+            4.51,
+            9.03
+          ],
+          "beta_log10": 0.8051,
+          "se_log10": 0.0759,
+          "df": 92.0,
+          "between_paper_contrast": false,
+          "papers": null,
+          "rows": null,
+          "naive_ols_factor": 3.95,
+          "naive_ols_ci95": [
+            2.57,
+            6.06
+          ]
+        },
+        "method:MIXED": {
+          "factor": 1.45,
+          "ci95": [
+            0.829,
+            2.55
+          ],
+          "beta_log10": 0.1622,
+          "se_log10": 0.121,
+          "df": 45.0,
+          "between_paper_contrast": true,
+          "papers": 13,
+          "rows": 67,
+          "naive_ols_factor": 1.66,
+          "naive_ols_ci95": [
+            1.26,
+            2.18
+          ]
+        },
+        "method:STEADY": {
+          "factor": 0.669,
+          "ci95": [
+            0.268,
+            1.67
+          ],
+          "beta_log10": -0.1746,
+          "se_log10": 0.198,
+          "df": 45.0,
+          "between_paper_contrast": true,
+          "papers": 3,
+          "rows": 8,
+          "naive_ols_factor": 0.901,
+          "naive_ols_ci95": [
+            0.555,
+            1.46
+          ]
+        },
+        "method:OTHER": {
+          "factor": 0.79,
+          "ci95": [
+            0.26,
+            2.4
+          ],
+          "beta_log10": -0.1023,
+          "se_log10": 0.239,
+          "df": 45.0,
+          "between_paper_contrast": true,
+          "papers": 2,
+          "rows": 4,
+          "naive_ols_factor": 1.06,
+          "naive_ols_ci95": [
+            0.534,
+            2.1
+          ]
+        },
+        "method:UNSPECIFIED": {
+          "factor": 1.37,
+          "ci95": [
+            0.814,
+            2.31
+          ],
+          "beta_log10": 0.1371,
+          "se_log10": 0.112,
+          "df": 45.0,
+          "between_paper_contrast": true,
+          "papers": 18,
+          "rows": 35,
+          "naive_ols_factor": 1.48,
+          "naive_ols_ci95": [
+            1.1,
+            1.99
+          ]
+        }
+      },
+      "between_paper_sd_log10": 0.294,
+      "within_paper_sd_log10": 0.128,
+      "between_paper_factor_1sd": 1.97,
+      "icc": 0.841
+    },
+    "reported_km": {
+      "spec": "reported_km",
+      "description": "Only rows whose paper reports the neat-matrix k",
+      "n": 93,
+      "papers": 32,
+      "response": "log10(k / k_matrix_effective)",
+      "reference": "laser flash (LFA), h-BN/BN, direction not in-plane",
+      "covariates": [
+        "intercept",
+        "phi",
+        "phi^2",
+        "BNNS",
+        "in_plane",
+        "method:MIXED",
+        "method:STEADY",
+        "method:OTHER",
+        "method:UNSPECIFIED"
+      ],
+      "rows_per_method_group": {
+        "MIXED": 37,
+        "LFA": 19,
+        "STEADY": 8,
+        "UNSPECIFIED": 26,
+        "OTHER": 3
+      },
+      "papers_per_method_group": {
+        "MIXED": 6,
+        "LFA": 8,
+        "STEADY": 3,
+        "UNSPECIFIED": 14,
+        "OTHER": 1
+      },
+      "effects": {
+        "BNNS": {
+          "factor": 1.36,
+          "ci95": [
+            1.13,
+            1.63
+          ],
+          "beta_log10": 0.1325,
+          "se_log10": 0.0404,
+          "df": 57.0,
+          "between_paper_contrast": false,
+          "papers": null,
+          "rows": null,
+          "naive_ols_factor": 1.04,
+          "naive_ols_ci95": [
+            0.828,
+            1.31
+          ]
+        },
+        "in_plane": {
+          "factor": 7.18,
+          "ci95": [
+            5.49,
+            9.4
+          ],
+          "beta_log10": 0.8564,
+          "se_log10": 0.0583,
+          "df": 57.0,
+          "between_paper_contrast": false,
+          "papers": null,
+          "rows": null,
+          "naive_ols_factor": 6.59,
+          "naive_ols_ci95": [
+            4.01,
+            10.8
+          ]
+        },
+        "method:MIXED": {
+          "factor": 1.15,
+          "ci95": [
+            0.579,
+            2.29
+          ],
+          "beta_log10": 0.06117,
+          "se_log10": 0.146,
+          "df": 27.0,
+          "between_paper_contrast": true,
+          "papers": 6,
+          "rows": 37,
+          "naive_ols_factor": 1.35,
+          "naive_ols_ci95": [
+            1.01,
+            1.8
+          ]
+        },
+        "method:STEADY": {
+          "factor": 0.593,
+          "ci95": [
+            0.252,
+            1.39
+          ],
+          "beta_log10": -0.2271,
+          "se_log10": 0.181,
+          "df": 27.0,
+          "between_paper_contrast": true,
+          "papers": 3,
+          "rows": 8,
+          "naive_ols_factor": 0.83,
+          "naive_ols_ci95": [
+            0.542,
+            1.27
+          ]
+        },
+        "method:OTHER": {
+          "factor": 0.48,
+          "ci95": [
+            0.126,
+            1.83
+          ],
+          "beta_log10": -0.3189,
+          "se_log10": 0.284,
+          "df": 27.0,
+          "between_paper_contrast": true,
+          "papers": 1,
+          "rows": 3,
+          "naive_ols_factor": 0.573,
+          "naive_ols_ci95": [
+            0.265,
+            1.24
+          ]
+        },
+        "method:UNSPECIFIED": {
+          "factor": 1.44,
+          "ci95": [
+            0.813,
+            2.54
+          ],
+          "beta_log10": 0.1573,
+          "se_log10": 0.121,
+          "df": 27.0,
+          "between_paper_contrast": true,
+          "papers": 14,
+          "rows": 26,
+          "naive_ols_factor": 1.54,
+          "naive_ols_ci95": [
+            1.13,
+            2.11
+          ]
+        }
+      },
+      "between_paper_sd_log10": 0.256,
+      "within_paper_sd_log10": 0.0931,
+      "between_paper_factor_1sd": 1.8,
+      "icc": 0.883
+    }
+  },
+  "uncertainty_budget": {
+    "rows": 258,
+    "median_rel_sigma_by_method": {
+      "HOT_WIRE": 0.06,
+      "IR_THERMO": 0.1,
+      "LFA": 0.08,
+      "PERIODIC": 0.08,
+      "SS_D5470": 0.1,
+      "SS_GHFM": 0.07,
+      "SS_UNSPECIFIED": 0.1,
+      "THB": 0.05,
+      "TPS": 0.05,
+      "UNSPECIFIED": 0.1
+    },
+    "figure_rows": 28,
+    "figure_digitization_rel_sigma_median": 0.00625,
+    "figure_digitization_rel_sigma_max": 0.0297,
+    "median_rel_sigma_all": 0.08,
+    "assumptions": "method sigma = judgement default per class (vocab.METHOD_CLASSES); digitization sigma = 1 px x axis resolution / k"
+  },
+  "scale_comparison": {
+    "instrument_rel_sigma_median": 0.08,
+    "between_paper_factor_1sd": 1.88,
+    "within_paper_sd_log10": 0.148
+  },
+  "literature": [
+    {
+      "comparison": "PMMA, 5-method interlaboratory study",
+      "difference": "spread about +/-10%; TPS about +6%",
+      "source": "Rides et al., Polym. Test. 2009"
+    },
+    {
+      "comparison": "BN-type compounds, Hot Disk vs laser flash",
+      "difference": "+15-20% (isotropic fillers), up to +50% (platelets)",
+      "source": "patent US10328620"
+    },
+    {
+      "comparison": "Filled TIMs, ASTM D5470 vs TPS",
+      "difference": "D5470 much higher, one > 2x",
+      "source": "ORNL/Delphi/GM, OSTI 1570138"
+    },
+    {
+      "comparison": "Vendor instrument accuracy",
+      "difference": "+/-3-5% (LFA diffusivity, TPS, THB)",
+      "source": "NETZSCH, Hot Disk, Linseis data sheets"
+    }
+  ]
+}

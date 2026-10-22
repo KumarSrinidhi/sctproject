@@ -121,6 +121,36 @@ def physics(root: Optional[Path] = RootOpt, min_points: int = typer.Option(3, he
     typer.echo(f"\nwrote reports/physics_fits.csv ({len(table)} series) and reports/physics_summary.json")
 
 
+analyze_app = typer.Typer(no_args_is_help=True, help="Dataset-level analyses (read-only).")
+app.add_typer(analyze_app, name="analyze")
+
+
+@analyze_app.command("bias")
+def analyze_bias(root: Optional[Path] = RootOpt):
+    """Measurement-technique and direction bias -> reports/method_bias.{md,json}."""
+    from .analysis.bias import analyze, render_markdown, uncertainty_rows
+    from .enrich import enrich_records
+    from .io import atomic_write_bytes, atomic_write_text, csv_bytes
+    from .records import load_records
+
+    lay = layout(root)
+    rows = enrich_records(load_records(lay).records)
+    res = analyze(rows)
+    lay.reports.mkdir(exist_ok=True)
+    atomic_write_text(lay.reports / "method_bias.json", json.dumps(res, indent=2, ensure_ascii=False) + "\n")
+    atomic_write_text(lay.reports / "method_bias.md", render_markdown(res))
+    u = uncertainty_rows(rows)
+    atomic_write_bytes(lay.reports / "uncertainty_budget.csv", csv_bytes(u, list(u[0])))
+    an, main = res["anisotropy"], res["pooled_models"]["main"]
+    typer.echo(f"same-sample direction pairs: {an.get('n_pairs', 0)} (median k_in/k_through {an.get('A_median')}); "
+               f"same-sample method pairs: {len(res['method_pairs'])}")
+    if "effects" in main and "method:MIXED" in main["effects"]:
+        e = main["effects"]["method:MIXED"]
+        typer.echo(f"isotropic-mode sensors vs laser flash (between papers): x{e['factor']} "
+                   f"(95% CI {e['ci95'][0]}-{e['ci95'][1]}), {main['n']} rows / {main['papers']} papers")
+    typer.echo("wrote reports/method_bias.md, reports/method_bias.json, reports/uncertainty_budget.csv")
+
+
 @app.command("new-paper")
 def new_paper(
     doi: str = typer.Option(..., help="DOI, e.g. 10.3390/polym12345678"),

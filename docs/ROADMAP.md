@@ -9,7 +9,7 @@ Status as of 2026-10-22. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Resea
 | 1 | Foundation: records, validation, build, verify, tests | ✅ done |
 | 2 | Normalisation and enrichment | ✅ core done, follow-ups open |
 | 3 | Physics models and fits | 🟡 started |
-| 4 | Measurement-bias analysis (course centrepiece) | ⏳ next |
+| 4 | Measurement-bias analysis (course centrepiece) | ✅ core done, follow-ups open |
 | 5 | Machine learning with honest validation | ⏳ |
 | 6 | Acquisition at scale | ⏳ |
 | 7 | Explorer, release and course report | ⏳ |
@@ -82,21 +82,36 @@ Next:
 Acceptance: `reports/physics_summary.json` includes orientation-aware Nan fits for every series with known
 alignment, and every fitted parameter carries its convention.
 
-## Phase 4: Measurement-bias analysis ⏳ (course centrepiece)
+## Phase 4: Measurement-bias analysis ✅ (course centrepiece)
 
 Question: how much does the characterisation technique change the reported k of BN/epoxy composites?
 
-1. **Matched comparisons**: find papers and series measured by two methods, or by in-plane and
-   through-plane LFA. The dataset has 19 in-plane and 45 through-plane reported rows.
-2. **Mixed-effects model** of log k on φ, filler, method class and direction, with a random effect per paper.
-   The method coefficients estimate the systematic bias. Compare with the research numbers: TPS vs LFA
-   +15–50% on platelets; D5470 vs TPS up to 2×.
-3. **Geometric-mean correction**: where a paper reports both directions, test whether TPS/THB values
-   ≈ √(k_in·k_through).
-4. **Uncertainty budget**: per-row σ from method class plus digitisation resolution for figure rows.
+Delivered:
+- `argus analyze bias` → [`reports/method_bias.md`](../reports/method_bias.md), `method_bias.json`, and
+  `uncertainty_budget.csv` (per-row σ).
+- A dependency-free REML mixed model (`src/argus/analysis/lmm.py`) with between/within degrees of freedom.
+  It is checked against dense-matrix REML and synthetic recovery tests.
 
-Acceptance: a short report (`reports/method_bias.md`) with effect sizes, confidence intervals and the
-matched-pair evidence, reproducible with `argus analyze bias`.
+Findings:
+- **Same-sample pairs.** 7 samples are reported both in-plane and through-plane, with k_in/k_through median
+  6.7 (films 6.7–7.7; 3D networks 0.96–2.1). By the √(k_in·k_through) rule, an isotropic-mode Hot Disk or
+  hot bridge would read up to **2.8×** the laser-flash through-plane value on those samples.
+- **No sample was measured by two techniques.** The direct method effect cannot be measured from this
+  literature.
+- **Between papers** (190 rows / 65 papers, BN platelets), isotropic-mode sensors read **1.43×** laser flash
+  (95% CI 0.86–2.36). That is the expected direction, but the interval includes 1. A naive regression that
+  ignores papers would wrongly claim 1.10–1.75.
+- **Paper-to-paper scatter** (factor 1.88 at 1 SD; ICC 0.78) dwarfs instrument precision (~5–10%).
+- **Abstract-only rows appear biased upward**: abstracts quote a paper's best result.
+
+Next:
+1. **Same-sample multi-method data** is the decisive missing evidence. Search specifically for papers that
+   report one sample by LFA *and* TPS (or TPS isotropic *and* anisotropic modes), or measure a few
+   BN/epoxy samples in the course lab.
+2. **Record the TPS mode** (isotropic / anisotropic / slab) and the LFA holder (standard / in-plane) as
+   record fields when the method section states them.
+3. **Feed the bias model into ML (Phase 5)**: method group and the abstract-only flag as covariates; weight by
+   `rel_sigma_total`.
 
 ## Phase 5: Machine learning ⏳
 
