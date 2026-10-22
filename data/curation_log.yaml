@@ -1,0 +1,102 @@
+# Pipeline-level log entries that are not about a single paper
+# (bulk remediation passes, multi-paper upgrades). `seq` is the position in
+# the chronological extraction log.
+entries:
+- seq: 71
+  candidate_id: PHASE2-REMEDIATION
+  doi: ''
+  paper_title: Phase 2 audit remediation (dataset-wide, no new source extraction)
+  date_processed: '2026-10-14'
+  access_result: n/a (metadata remediation from Phase 1 audit; no new source access)
+  files_inspected: work/audit_phase2_inputs.json; audit_phase1_report.md
+  tables_inspected: ''
+  figures_inspected: ''
+  candidate_measurements: 0
+  rows_appended: 0
+  unit_conversions: none
+  duplicate_checks: 9 intra-paper + 5 cross-paper duplicate rows removed
+  qc_findings: 'rows_removed=15 (9 intra-paper duplicate rows; 5 cross-paper duplicate rows; 1 out-of-scope literature-quote row 4a11b03c-151); loading corrections: 20 rows listed in audit_phase2_inputs.json, 17 applied to surviving rows, 3 skipped (row dropped as cross-paper duplicate); paper_title overwritten for 11 DOIs (dataset + inventory + this log); sample-label repairs: 3 (rows 036/147/180) + 4 hybrid-convention labels (095/152/153/188); non-numeric repairs: 2 numeric-column cells (094/130) + 7 text-column loading strings; dataset 188 -> 173 rows, 63 papers'
+  rows_rejected_at_append: []
+  rows_removed: 15
+  notes: 'Phase 2 remediation: 15 drops, 20 loading fixes (17 applied), 11 title overwrites, 3 sample-label repairs + 4 hybrid-convention labels, 9 non-numeric cell repairs; derived deliverables regenerated; reversible from work/backup_phase1/'
+- seq: 102
+  candidate_id: P4-UPG
+  doi: 10.1007/s10854-024-13657-3; 10.1063/5.0211580; 10.1177/09673911221110143
+  paper_title: Phase 4 full-text upgrades of Phase-3C abstract-only rows
+  date_processed: '2026-10-18'
+  access_result: Full text via browser (AIP OA, SAGE gold-OA) and Springer OA HTML
+  files_inspected: work/fulltext/10.1063_5.0211580.txt; work/fulltext/10.1177_09673911221110143.txt; work/fulltext/10.1007_s10854-024-13657-3.txt
+  tables_inspected: SAGE Table 1 (XPS composition; no k)
+  figures_inspected: captions only
+  candidate_measurements: 4
+  rows_appended: 0
+  unit_conversions: none (W/mK as printed)
+  duplicate_checks: in-place upgrade of existing row_ids; no new rows
+  qc_findings: 4 rows Medium->High; s10854 Results 0.881 vs Conclusions 0.879 noted; Ag-hybrid exclusion retained
+  rows_rejected_at_append: []
+- seq: 105
+  candidate_id: V1.1-AUDIT-FIXES
+  doi: ''
+  paper_title: Dataset v1.1 - close open Phase-1 audit items D7 and D10, hybrid labels, stale exclusions
+  date_processed: '2026-10-22'
+  access_result: n/a (re-read of local full texts work/fulltext/10.3390_ma18215011.txt, 10.3390_polym11101548.txt, 10.3390_polym15051214.txt, 10.3390_polym10030277.txt)
+  files_inspected: work/fulltext/10.3390_ma18215011.txt; work/fulltext/10.3390_polym11101548.txt; work/fulltext/10.3390_polym15051214.txt; work/fulltext/10.3390_polym10030277.txt
+  tables_inspected: ''
+  figures_inspected: ''
+  candidate_measurements: 0
+  rows_appended: 0
+  unit_conversions: none
+  duplicate_checks: none
+  qc_findings: 'D7: row b639a9c9-159 removed (derived value, not printed; tombstoned). Row b639a9c9-161 source_location replaced with the verbatim sentence (old text misattributed 25.2% to AlN). Hybrid convention: b639a9c9-160/161 BN -> h-BN/AlN hybrid, 7239d84d-165/166 h-BN -> h-BN/cBN hybrid. D10: polym11101548 and polym15051214 added to exclusions (relative-only k in text). Exclusion actions for polym10030277 and c8ra10645b updated to recovered (rows exist since Phase 3A). Dataset 260 -> 259 rows, 95 papers.'
+  rows_rejected_at_append: []
+  rows_removed:
+  - b639a9c9-159
+  rows_changed:
+  - b639a9c9-160
+  - b639a9c9-161
+  - 7239d84d-165
+  - 7239d84d-166
+- seq: 106
+  candidate_id: V1.1-LOADING-BASIS
+  doi: 10.3390/polym11071156
+  paper_title: Dataset v1.1 - wt% basis fix for the Phase-4 figure rows of P094 (audit D2 pattern)
+  date_processed: '2026-10-22'
+  access_result: n/a (re-read of local full text work/fulltext/10.3390_polym11071156.txt, Table 1)
+  files_inspected: work/fulltext/10.3390_polym11071156.txt
+  tables_inspected: Table 1 (composition by weight, parts epoxy/BN/thiol/LC-80)
+  figures_inspected: ''
+  candidate_measurements: 0
+  rows_appended: 0
+  unit_conversions: 'wt% recomputed as BN / (epoxy + BN + thiol + LC-80) from Table 1 parts: -30 -> 20.2, -50 -> 37.2, -60 -> 46.9, -70 -> 58.0 (previously the designation 30/50/60/70 = BN per epoxy+BN)'
+  duplicate_checks: none
+  qc_findings: 'Found by the enrichment density check (reports/enrichment_qa.json): stored wt% implied a BN/matrix density ratio of 2.89, physically impossible; corrected values give a constant 1.71 (BN ~2.1 / epoxy-thiol ~1.23), consistent with the printed vol%. Same defect class as audit D2 (fixed in Phase 2 for polym13060955). vol% and k unchanged.'
+  rows_rejected_at_append: []
+  rows_changed:
+  - c027d8f9-233
+  - c027d8f9-234
+  - c027d8f9-235
+  - c027d8f9-236
+  - c027d8f9-237
+  - c027d8f9-238
+  - c027d8f9-239
+  - c027d8f9-240
+  - c027d8f9-241
+  - c027d8f9-242
+  - c027d8f9-243
+- seq: 107
+  candidate_id: V1.1-MODEL-VALUE
+  doi: 10.3390/nano11081898
+  paper_title: Dataset v1.1 - remove a model-predicted in-plane value
+  date_processed: '2026-10-22'
+  access_result: n/a (re-read of local full text work/fulltext/10.3390_nano11081898.txt)
+  files_inspected: work/fulltext/10.3390_nano11081898.txt
+  tables_inspected: ''
+  figures_inspected: ''
+  candidate_measurements: 0
+  rows_appended: 0
+  unit_conversions: none
+  duplicate_checks: none
+  qc_findings: 'Row ce78048d-168 (in-plane 1.88 W/(m·K), sandwich 120-60) is the output of the paper''s modified parallel model ("the predicted IPTC of 120-60 is 1.88"), not a measurement; removed and tombstoned. A scan of all rows for predict/simulat/calculat/estimat/model found no other model-derived value. Dataset 259 -> 258 rows.'
+  rows_rejected_at_append: []
+  rows_removed:
+  - ce78048d-168

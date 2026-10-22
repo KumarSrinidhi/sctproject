@@ -1,0 +1,123 @@
+# Reference properties used for derived columns (vol% from wt%) and physics models.
+#
+# These are NOT measurements from the dataset. They are inputs with stated
+# uncertainty. `verified: true` means the value was traced to a primary or
+# peer-reviewed source during the 2026-10-22 research pass (see
+# docs/reports/BN epoxy thermal conductivity research.md); `false` means a
+# standard handbook value that still needs a citation before publication use.
+#
+# Units: density g/cm3, k W/(m K).
+
+fillers:
+  h-BN:
+    density: 2.16
+    density_range: [2.07, 2.28]
+    k_in_plane: 400
+    k_in_plane_range: [300, 585]
+    k_through_plane: 4.8
+    k_through_plane_range: [2, 30]
+    anisotropic: true
+    verified: true
+    source: >-
+      Density 2.07-2.16 (Kargar et al. 2018, arXiv 1807.03698); 2.28 theoretical.
+      k: natural bulk h-BN TDTR 420 +/- 46 in-plane, 4.8 +/- 0.6 through-plane
+      (Jiang et al., Phys. Rev. Materials 2, 064005, 2018); up to 585 for 10B-enriched.
+  BN:
+    # Unspecified morphology in the source; treated as hexagonal BN.
+    alias_of: h-BN
+  BNNS:
+    density: 2.16
+    density_range: [2.07, 2.28]
+    k_in_plane: 400
+    k_in_plane_range: [300, 750]
+    k_through_plane: 4.8
+    k_through_plane_range: [2, 30]
+    anisotropic: true
+    verified: false
+    source: Same lattice as h-BN; few-layer in-plane values up to ~750 are often cited but were not verified.
+  cBN:
+    density: 3.48
+    density_range: [3.45, 3.49]
+    k_in_plane: 740
+    k_in_plane_range: [300, 1600]
+    k_through_plane: 740
+    k_through_plane_range: [300, 1600]
+    anisotropic: false
+    verified: false
+    source: Handbook values (cubic, isotropic); not verified in the research pass.
+  AlN:
+    density: 3.26
+    density_range: [3.23, 3.26]
+    k_in_plane: 285
+    k_in_plane_range: [150, 320]
+    k_through_plane: 285
+    k_through_plane_range: [150, 320]
+    anisotropic: false
+    verified: true
+    source: >-
+      285 W/(m K) max measured single crystal at 300 K (Slack et al. 1987 via Ioffe NSM);
+      319-321 intrinsic/MOCVD; oxygen-containing powders lower. Density 3.26 handbook.
+  Al2O3:
+    density: 3.95
+    density_range: [3.90, 3.98]
+    k_in_plane: 30
+    k_in_plane_range: [20, 40]
+    k_through_plane: 30
+    k_through_plane_range: [20, 40]
+    anisotropic: false
+    verified: false
+    source: Handbook values for alpha-alumina; not verified in the research pass.
+  MgO:
+    density: 3.58
+    density_range: [3.55, 3.58]
+    k_in_plane: 45
+    k_in_plane_range: [30, 60]
+    k_through_plane: 45
+    k_through_plane_range: [30, 60]
+    anisotropic: false
+    verified: false
+    source: Handbook values; not verified in the research pass.
+
+matrices:
+  epoxy:
+    density: 1.17
+    density_range: [1.10, 1.25]
+    k: 0.20
+    k_range: [0.15, 0.25]
+    verified: true
+    source: Density 1.16-1.17 (Kargar et al. 2018); k range from neat-matrix values reported in this dataset.
+  silicone:
+    density: 1.05
+    density_range: [0.97, 1.20]
+    k: 0.17
+    k_range: [0.14, 0.25]
+    verified: false
+    source: Handbook values (PDMS ~0.97, filled silicone rubbers higher); not verified.
+  polyimide:
+    density: 1.42
+    density_range: [1.35, 1.45]
+    k: 0.18
+    k_range: [0.12, 0.25]
+    verified: false
+    source: Handbook values (Kapton-type PI 1.42); not verified.
+  PEG:
+    density: 1.13
+    density_range: [1.10, 1.21]
+    k: 0.30
+    k_range: [0.20, 0.35]
+    verified: false
+    source: Handbook values; not verified.
+  polystyrene:
+    density: 1.05
+    density_range: [1.04, 1.06]
+    k: 0.14
+    k_range: [0.10, 0.17]
+    verified: false
+    source: Handbook values; not verified.
+  polyurethane:
+    density: 1.15
+    density_range: [1.05, 1.25]
+    k: 0.20
+    k_range: [0.15, 0.30]
+    verified: false
+    source: Handbook values; not verified.

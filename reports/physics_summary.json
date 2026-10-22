@@ -1,0 +1,67 @@
+{
+  "series": 17,
+  "points": 73,
+  "papers": 9,
+  "by_filler": {
+    "h-BN": 7,
+    "BNNS": 6,
+    "BN": 4
+  },
+  "free_parameters": {
+    "maxwell_kf": 1,
+    "ln_A": 1,
+    "agari": 2,
+    "nan_rk": 1
+  },
+  "best_model_count": {
+    "agari": 13,
+    "ln_A": 2,
+    "nan_rk": 2
+  },
+  "note": "best_model compares RMSE only; agari has 2 free parameters vs 1 for the others, so with 3-5 points per series it is favoured by construction.",
+  "median_rmse_log10": {
+    "maxwell_kf": 0.303,
+    "ln_A": 0.04416,
+    "agari": 0.01928,
+    "nan_rk": 0.07787
+  },
+  "maxwell_ceiling": {
+    "rows_with_phi": 226,
+    "above_maxwell_ceiling": 222,
+    "share": 0.982
+  },
+  "parameters": {
+    "maxwell_kf_apparent": {
+      "n": 0,
+      "median": null,
+      "iqr": null,
+      "series_at_upper_bound": 17
+    },
+    "lewis_nielsen_A": {
+      "n": 15,
+      "median": 13.6,
+      "iqr": [
+        6.09,
+        21.9
+      ]
+    },
+    "agari_C2": {
+      "n": 17,
+      "median": 0.8507,
+      "iqr": [
+        0.637,
+        1.92
+      ]
+    },
+    "nan_R_K_m2K_W": {
+      "n": 11,
+      "median": 6.81e-07,
+      "iqr": [
+        2.51e-07,
+        1.05e-06
+      ],
+      "convention": "semi-axis (Nan 1997)",
+      "series_above_perfect_interface": 7
+    }
+  }
+}

@@ -1,0 +1,71 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P004
+paper:
+  doi: 10.3390/polym12020426
+  title: Synergistic Effects of Boron Nitride (BN) Nanosheets and Silver (Ag) Nanoparticles on Thermal Conductivity and Electrical Properties of Epoxy Nanocomposites
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12020426
+extraction_log:
+- seq: 4
+  candidate_id: P004
+  doi: 10.3390/polym12020426
+  paper_title: Synergistic Effects of Boron Nitride (BN) Nanosheets and Silver (Ag) Nanoparticles on Thermal Conductivity of Epoxy Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym12020426.txt
+  tables_inspected: Table 1 (thermal conductivity comparison incl. this-paper rows)
+  figures_inspected: Figure 3a referenced (k vs content curves; not digitized)
+  candidate_measurements: 2
+  unit_conversions: none (already W/mK family)
+  duplicate_checks: Table 1 literature rows excluded (not original measurements of this paper)
+  qc_findings: only this-paper rows extracted; Figure 3a curves not digitized
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 4935af7a-033
+  matrix_polymer: Epoxy E-51 (DGEBA)
+  curing_agent: 593 curing agent (adduct of diethylenetriamine and butyl glycidyl ether), epoxy/curing agent 4:1
+  filler_material: BNNS
+  filler_material_original: BNNSs (from h-BN, 1-2 um)
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_vol_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: vol%
+  functionalization: None (BNNS); AgNPs deposited on BNNS for hybrid filler
+  processing_method: Liquid-phase exfoliation of h-BN (1-2 um) in DMF, mixing with epoxy/593, curing
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 1.13
+  k_direction: unknown
+  measurement_method: Steady-state heat flow, DRL-III (ASTM D5470-2006)
+  k_original_value: 1.13
+  k_original_unit: W m-1 K-1
+  value_source: table
+  source_location: Table 1 row this paper (25vol% BNNSs)
+  confidence: High
+  notes: Neat epoxy k=0.18 W m-1 K-1 reported in text. BNNS 25 vol%.
+- row_id: 4935af7a-034
+  matrix_polymer: Epoxy E-51 (DGEBA)
+  curing_agent: 593 curing agent (adduct of diethylenetriamine and butyl glycidyl ether), epoxy/curing agent 4:1
+  filler_material: BNNS
+  filler_material_original: AgNPs-BNNSs hybrid
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_vol_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: vol%
+  functionalization: None (BNNS); AgNPs deposited on BNNS for hybrid filler
+  processing_method: Liquid-phase exfoliation of h-BN (1-2 um) in DMF, mixing with epoxy/593, curing
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 2.14
+  k_direction: unknown
+  measurement_method: Steady-state heat flow, DRL-III (ASTM D5470-2006)
+  k_original_value: 2.14
+  k_original_unit: W m-1 K-1
+  value_source: table
+  source_location: Table 1 row this paper (25vol% AgNPs-BNNSs); confirmed in text
+  confidence: High
+  notes: Ag nanoparticle decorated BNNS, 25 vol% total binary nanofiller. Fig 3a has full k vs content curves for EP-BN and EP-AgBN (0-25 vol%) not tabulated.

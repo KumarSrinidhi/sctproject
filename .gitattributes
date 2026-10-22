@@ -1,0 +1,6 @@
+# `argus verify` compares generated files byte-for-byte with a fresh build, so their
+# line endings must not depend on the platform or core.autocrlf.
+# CSVs are written by Python's csv module (CRLF); JSON/JSONL with LF.
+*.csv                     text eol=crlf
+data/processed/*.jsonl    text eol=lf
+datapackage.json          text eol=lf

@@ -1,0 +1,63 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P073
+paper:
+  doi: 10.1002/slct.202507155
+  title: Thermal Conductive, Dielectric, and Viscosity Properties of Multidimensional Hexagonal Boron Nitride/Aluminum Oxide/Epoxy Composites
+  year: 2026
+  source_url: https://doi.org/10.1002/slct.202507155
+extraction_log:
+- seq: 81
+  candidate_id: P073
+  doi: 10.1002/slct.202507155
+  paper_title: Thermal Conductive, Dielectric, and Viscosity Properties of Multidimensional Hexagonal Boron Nitride/Aluminum Oxide/Epoxy Composites
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 2
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 8629061f-205
+  matrix_polymer: Epoxy (EP)
+  filler_material: h-BN/Al2O3 hybrid
+  filler_material_original: multidimensional h-BN + spherical Al2O3 hybrid
+  filler_shape: hybrid
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: None stated
+  k_composite_W_mK: 0.827
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 0.827
+  k_original_unit: W/(m*K)
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "when the content of h-BN/Al2O3 was 20 wt%, the thermal conductivity reached 0.827 W/(m·K), which was 359.44% higher than that of pure EP"'
+  confidence: Medium
+  notes: 'Abstract-only. Implied neat EP ~0.18 W/(m·K) (not extracted as k_matrix; derived). Phase 4: value re-confirmed against publisher abstract page (work/phase4_browser/); Wiley abstract page; full text paywalled.'
+- row_id: 8629061f-206
+  matrix_polymer: Epoxy (EP) + 3 wt% benzyl glycidyl ether (BGE) reactive diluent
+  filler_material: h-BN/Al2O3 hybrid
+  filler_material_original: multidimensional h-BN + spherical Al2O3 hybrid
+  filler_shape: hybrid
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: None stated
+  k_composite_W_mK: 0.796
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 0.796
+  k_original_unit: W/(m*K)
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "When the usage of BGE was 3 wt%, the viscosity of 20 wt% h-BN/Al2O3/EP suspension decreased from 13677 to 5301 mP·s, while its thermal conductivity still maintained at 0.796 W/(m·K)"'
+  confidence: Medium
+  notes: 'Abstract-only; same filler system with BGE diluent. Phase 4: value re-confirmed against publisher abstract page (work/phase4_browser/); Wiley abstract page; full text paywalled.'

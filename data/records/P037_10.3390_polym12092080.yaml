@@ -1,0 +1,46 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P037
+paper:
+  doi: 10.3390/polym12092080
+  title: Dielectric and Thermal Conductivity Characteristics of Epoxy Resin-Impregnated H-BN/CNF-Modified Insulating Paper
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12092080
+extraction_log:
+- seq: 41
+  candidate_id: P037
+  doi: 10.3390/polym12092080
+  paper_title: Dielectric and Thermal Conductivity Characteristics of Epoxy Resin-Impregnated H-BN/CNF-Modified Insulating Paper
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym12092080.txt
+  tables_inspected: dielectric tables
+  figures_inspected: k figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 1 row; system is epoxy-impregnated paper (flagged in notes)
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 3e56126a-128
+  matrix_polymer: Epoxy resin-impregnated insulating paper (RIP)
+  filler_material: h-BN
+  filler_material_original: h-BN (10 wt%) + nano-CNF (0.1 wt%) on paper, epoxy impregnated
+  filler_shape: platelet
+  filler_loading_wt_pct: 10.1
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt% h-BN (+0.1 wt% CNF)
+  functionalization: CNF co-filler (0.1 wt%)
+  processing_method: h-BN+CNF coated on insulating paper, vacuum epoxy impregnation
+  k_composite_W_mK: 0.29
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; RIP samples)
+  k_original_value: 0.29
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Conclusions: 0.1 wt% CNFs + 10 wt% h-BN/RIP -> 0.29 W/m.K'
+  confidence: High
+  notes: 'Composite matrix = epoxy-impregnated paper (anisotropic system). 15-30 wt% h-BN variants: k not quoted in text (figure-only).'

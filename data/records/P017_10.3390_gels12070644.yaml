@@ -1,0 +1,103 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P017
+paper:
+  doi: 10.3390/gels12070644
+  title: Polydopamine-Modified Boron Nitride Reinforced Silicone Gel Composites with Enhanced Thermal Conductivity and Electrical Insulation Performance
+  year: 2026
+  source_url: https://doi.org/10.3390/gels12070644
+extraction_log:
+- seq: 19
+  candidate_id: P017
+  doi: 10.3390/gels12070644
+  paper_title: Polydopamine-Modified Boron Nitride Silicone Gel Composites with Enhanced Thermal Conductivity and Insulation
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_gels12070644.txt
+  tables_inspected: none with k (values in text)
+  figures_inspected: k curves referenced
+  candidate_measurements: 4
+  unit_conversions: none
+  duplicate_checks: neat SG 0.183 kept as k_matrix not row
+  qc_findings: 4 rows, optional silicone-gel matrix, method Hot Disk RT
+  rows_appended: 4
+  rows_rejected_at_append: []
+measurements:
+- row_id: 9dd3de7c-078
+  matrix_polymer: Silicone gel (SG)
+  filler_material: BNNS
+  filler_material_original: P-BN (polydopamine-modified h-BN nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 1.0
+  filler_loading_original_value: 1.0
+  filler_loading_original_unit: wt%
+  functionalization: Polydopamine (PDA)
+  k_matrix_W_mK: 0.183
+  k_composite_W_mK: 0.224
+  k_direction: unknown
+  measurement_method: Hot Disk TPS 2500S (thermal constants analyzer), room temperature
+  k_original_value: 0.224
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results text k section: SG/P-BN_k values at RT'
+  confidence: High
+  notes: 'SG/P-BN1 = 1 wt% P-BN. Optional matrix: silicone gel (encapsulation gel), not epoxy.'
+- row_id: 9dd3de7c-079
+  matrix_polymer: Silicone gel (SG)
+  filler_material: BNNS
+  filler_material_original: P-BN (polydopamine-modified h-BN nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 2.0
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt%
+  functionalization: Polydopamine (PDA)
+  k_matrix_W_mK: 0.183
+  k_composite_W_mK: 0.237
+  k_direction: unknown
+  measurement_method: Hot Disk TPS 2500S (thermal constants analyzer), room temperature
+  k_original_value: 0.237
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results text k section: SG/P-BN_k values at RT'
+  confidence: High
+  notes: 'SG/P-BN2 = 2 wt% P-BN. Optional matrix: silicone gel (encapsulation gel), not epoxy.'
+- row_id: 9dd3de7c-080
+  matrix_polymer: Silicone gel (SG)
+  filler_material: BNNS
+  filler_material_original: P-BN (polydopamine-modified h-BN nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 3.0
+  filler_loading_original_value: 3.0
+  filler_loading_original_unit: wt%
+  functionalization: Polydopamine (PDA)
+  k_matrix_W_mK: 0.183
+  k_composite_W_mK: 0.25
+  k_direction: unknown
+  measurement_method: Hot Disk TPS 2500S (thermal constants analyzer), room temperature
+  k_original_value: 0.25
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results text k section: SG/P-BN_k values at RT'
+  confidence: High
+  notes: 'SG/P-BN3 = 3 wt% P-BN. Optional matrix: silicone gel (encapsulation gel), not epoxy. Highest k among series.'
+- row_id: 9dd3de7c-081
+  matrix_polymer: Silicone gel (SG)
+  filler_material: BNNS
+  filler_material_original: P-BN (polydopamine-modified h-BN nanosheets)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 4.0
+  filler_loading_original_value: 4.0
+  filler_loading_original_unit: wt%
+  functionalization: Polydopamine (PDA)
+  k_matrix_W_mK: 0.183
+  k_composite_W_mK: 0.246
+  k_direction: unknown
+  measurement_method: Hot Disk TPS 2500S (thermal constants analyzer), room temperature
+  k_original_value: 0.246
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results text k section: SG/P-BN_k values at RT'
+  confidence: High
+  notes: 'SG/P-BN4 = 4 wt% P-BN. Optional matrix: silicone gel (encapsulation gel), not epoxy. Slight drop vs P-BN3 (agglomeration per authors).'

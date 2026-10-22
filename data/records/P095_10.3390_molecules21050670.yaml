@@ -1,0 +1,313 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P095
+paper:
+  doi: 10.3390/molecules21050670
+  title: Thermal Conductivity of Epoxy Resin Composites Filled with Combustion Synthesized h-BN Particles
+  year: 2016
+  source_url: https://doi.org/10.3390/molecules21050670
+extraction_log:
+- seq: 104
+  date_processed: '2026-10-18'
+  access_result: Europe PMC full text (OA, CC-BY) + figure image from PMC CDN (browser-fetched)
+  tables_inspected: Table 1 (composition)
+  unit_conversions: none (axis label W/mK)
+  duplicate_checks: new DOI; no prior rows
+  candidate_id: P4-FIG2
+  doi: 10.3390/molecules21050670
+  paper_title: Thermal Conductivity of Epoxy Resin Composites Filled with Combustion Synthesized h-BN Particles
+  files_inspected: work/fulltext/10.3390_molecules21050670.txt; work/figures/molecules-21-00670-g003.jpg
+  figures_inspected: Fig. 3 (treated series digitized; naked/open-marker series not digitized)
+  candidate_measurements: 13
+  qc_findings: Earlier visual digitization listed 3.6 um points at 10/20 vol% that do not exist in the figure; superseded by pixel digitization
+  rows_appended: 13
+  rows_rejected_at_append: []
+measurements:
+- row_id: 9db97377-248
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 0.58
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 0.58
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 10 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=10.02 (nominal 10 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-249
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 0.97
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 0.97
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 20 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=20.0 (nominal 20 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-250
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 1.94
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 1.94
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 30 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=29.97 (nominal 30 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm). Marker partly hidden; partially hidden; centre = visible top edge + median half-height (4.5 px) of unoccluded markers in this series.'
+- row_id: 9db97377-251
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 2.98
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 2.98
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 40 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=39.92 (nominal 40 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-252
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 6.78
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 6.78
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 50 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=50.0 (nominal 50 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-253
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 7.44
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 7.44
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 60 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=60.0 (nominal 60 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-254
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 6.72
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 6.72
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 70 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=69.92 (nominal 70 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-255
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 10.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 10.6
+  size_distribution: d50 = 10.6 μm
+  filler_loading_vol_pct: 80.0
+  filler_loading_original_value: 80.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 6.63
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 6.63
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 10.6um (filled green squares) at 80 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=79.92 (nominal 80 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-256
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 3.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 3.6
+  size_distribution: d50 = 3.6 μm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 1.8
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 1.8
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 3.6um (filled blue circles) at 30 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=29.94 (nominal 30 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm). Treated 3.6 μm series has no visible point at 40 vol% (not extracted).'
+- row_id: 9db97377-257
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 3.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 3.6
+  size_distribution: d50 = 3.6 μm
+  filler_loading_vol_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 2.79
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 2.79
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 3.6um (filled blue circles) at 50 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=49.96 (nominal 50 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-258
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 3.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 3.6
+  size_distribution: d50 = 3.6 μm
+  filler_loading_vol_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 2.73
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 2.73
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 3.6um (filled blue circles) at 60 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=59.96 (nominal 60 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-259
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 3.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 3.6
+  size_distribution: d50 = 3.6 μm
+  filler_loading_vol_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 2.14
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 2.14
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 3.6um (filled blue circles) at 70 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=69.97 (nominal 70 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'
+- row_id: 9db97377-260
+  matrix_polymer: Cresol novolac epoxy (CNE200EL)
+  curing_agent: Phenol novolac hardener (PF1120HH) + 1-benzyl-2-methylimidazole catalyst
+  filler_material: h-BN
+  filler_material_original: Combustion-synthesized h-BN, d50 = 3.6 μm, GPTMS-treated
+  filler_shape: particle
+  filler_mean_size_um: 3.6
+  size_distribution: d50 = 3.6 μm
+  filler_loading_vol_pct: 80.0
+  filler_loading_original_value: 80.0
+  filler_loading_original_unit: vol%
+  functionalization: GPTMS silane surface treatment
+  processing_method: Dry mixing (≤40 vol%) or acetone solvent mixing (>40 vol%); moulded 175 °C, 50 kg/cm², 5 min; post-cured 180 °C 6 h
+  k_composite_W_mK: 1.77
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA447); K = Cp·ρ·α
+  k_original_value: 1.77
+  k_original_unit: W/mK
+  value_source: figure
+  source_location: 'Figure 3, treated 3.6um (filled blue circles) at 80 vol%; pixel-digitized with work/phase4_digitize_v2.py (overlay: work/figures/overlay_molecules-21-00670-g003.png)'
+  confidence: Medium
+  notes: 'Figure-only value; digitized x=79.98 (nominal 80 vol%). Axis resolution ~0.0172 W/mK per px. Error bars in figure not captured. GPTMS optimum per Fig. 2: 2.4 wt% (10.6 μm) / 3.6 wt% (3.6 μm).'

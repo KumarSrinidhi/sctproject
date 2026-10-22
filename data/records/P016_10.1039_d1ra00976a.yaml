@@ -1,0 +1,87 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P016
+paper:
+  doi: 10.1039/d1ra00976a
+  title: Preparation of poly glycidyl methacrylate (PGMA) chain-grafted boron nitride/epoxy composites and their thermal conductivity properties
+  year: 2021
+  source_url: https://doi.org/10.1039/d1ra00976a
+extraction_log:
+- seq: 17
+  candidate_id: P016
+  doi: 10.1039/d1ra00976a
+  paper_title: Preparation of poly glycidyl methacrylate (PGMA) chain-grafted boron nitride/epoxy composites and study of their thermal conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1039_d1ra00976a.txt
+  tables_inspected: Table a (literature + this-work row)
+  figures_inspected: Fig 9 (k vs vol%)
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: this-work Table row (1.198) merged with text value (1.197) as one measurement; literature rows excluded
+  qc_findings: minor 1.197/1.198 text-table discrepancy documented
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 4036d33a-074
+  matrix_polymer: Epoxy resin (EP)
+  filler_material: BNNS
+  filler_material_original: h-BN nanosheets (BNNS)
+  filler_shape: nanosheet
+  filler_loading_vol_pct: 4.0
+  filler_loading_original_value: 4.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  processing_method: h-BN exfoliated; PGMA grafted via ATRP-like grafting from surface (h-BN-PGMA); blended with EP and cured
+  k_matrix_W_mK: 0.23
+  k_composite_W_mK: 0.279
+  k_direction: unknown
+  measurement_method: Hot disk (this-work table row); laser flash for some literature rows
+  k_original_value: 0.279
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results text Fig 9a discussion: EP/h-BN 4 vol% = 0.279'
+  confidence: High
+  notes: Untreated h-BN/epoxy. Neat EP reported as 0.23 W m-1 K-1 in text.
+- row_id: 4036d33a-075
+  matrix_polymer: Epoxy resin (EP)
+  filler_material: BNNS
+  filler_material_original: h-BN nanosheets (BNNS)
+  filler_shape: nanosheet
+  filler_loading_vol_pct: 16.0
+  filler_loading_original_value: 16.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  processing_method: h-BN exfoliated; PGMA grafted via ATRP-like grafting from surface (h-BN-PGMA); blended with EP and cured
+  k_matrix_W_mK: 0.23
+  k_composite_W_mK: 1.052
+  k_direction: unknown
+  measurement_method: Hot disk (this-work table row); laser flash for some literature rows
+  k_original_value: 1.052
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results text Fig 9a: EP/h-BN 16 vol% = 1.052 (also Table literature-like row 1.052 at 60wt% microBN is ref [3], not this)'
+  confidence: High
+  notes: 'Untreated h-BN/epoxy 16 vol%. Note Table a row 60wt% micro BN 1.052 is literature [3] - coincidence of value; verify not conflated: text explicitly says EP/h-BN 16 vol% -> 1.052 for this system.'
+- row_id: 4036d33a-076
+  matrix_polymer: Epoxy resin (EP)
+  filler_material: BNNS
+  filler_material_original: h-BN nanosheets (BNNS)
+  filler_shape: nanosheet
+  filler_loading_vol_pct: 16.0
+  filler_loading_original_value: 16.0
+  filler_loading_original_unit: vol%
+  functionalization: PGMA (poly(glycidyl methacrylate) graft)
+  processing_method: h-BN exfoliated; PGMA grafted via ATRP-like grafting from surface (h-BN-PGMA); blended with EP and cured
+  k_matrix_W_mK: 0.23
+  k_composite_W_mK: 1.197
+  k_direction: unknown
+  measurement_method: Hot disk (this-work table row); laser flash for some literature rows
+  k_original_value: 1.197
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Text: h-BN-PGMA 16 vol% -> 1.197 (Table a this-work row lists 1.198, hot disk)'
+  confidence: High
+  notes: EP/h-BN-PGMA 16 vol%. Table lists 1.198; text states 1.197; retained text value 1.197, both preserved in notes.

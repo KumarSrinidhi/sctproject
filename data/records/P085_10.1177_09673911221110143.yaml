@@ -1,0 +1,51 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P085
+paper:
+  doi: 10.1177/09673911221110143
+  title: Improved thermal conductivity of epoxy composites via linked boron nitride nanosheets with in-situ generated silver nanoparticles
+  year: 2022
+  source_url: https://doi.org/10.1177/09673911221110143
+extraction_log:
+- seq: 93
+  candidate_id: P085
+  doi: 10.1177/09673911221110143
+  paper_title: Improved thermal conductivity of epoxy composites via linked boron nitride nanosheets with in-situ generated silver
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: b1ee3c22-222
+  matrix_polymer: DGEBA epoxy (epoxy equivalent 185)
+  curing_agent: 2-ethyl-4-methylimidazole (2E4MI)
+  filler_material: BNNS
+  filler_material_original: BNNSs only (liquid-phase exfoliated; baseline in same paper; silver-linked hybrid excluded as metal-containing)
+  filler_shape: nanosheet
+  filler_aspect_ratio: 600.0
+  filler_mean_size_um: 3.0
+  size_distribution: lateral ~3 μm, thickness ~5 nm (AFM/TEM)
+  filler_loading_vol_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: vol%
+  functionalization: None (baseline)
+  processing_method: BNNS exfoliated in DMF (48 h sonication); mixed with DGEBA + 2E4MI; vacuum degassed at 80 °C; cured 150 °C, 8 h
+  k_matrix_W_mK: 0.21
+  k_composite_W_mK: 1.26
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA467 HyperFlash, ASTM E1461-13), room temperature
+  k_original_value: 1.26
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Full text (SAGE gold-OA HTML; work/fulltext/10.1177_09673911221110143.txt), Results (Thermal conductivity...): "The pure epoxy has a poor λ of 0.21 W/mK... When the Vf reaches up to 20%, the λ of the composites filled with BNNSs/[Ag (2E4MI)2]Ac hybrids reaches 2.35 W/mK, but that for BNNSs alone is only 1.26 W/mK."'
+  confidence: High
+  notes: 'Upgraded Phase 4 (full text). Silver-bridged hybrid value (2.35 W/mK) still NOT extracted: silver is a metal, outside ceramic-filler scope (Phase 3 decision retained). Aspect ratio 600 = L/H as stated in paper.'

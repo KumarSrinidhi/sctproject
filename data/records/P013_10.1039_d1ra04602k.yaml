@@ -1,0 +1,90 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P013
+paper:
+  doi: 10.1039/d1ra04602k
+  title: Epoxy composite with high thermal conductivity by constructing 3D-oriented carbon fiber and BN network structure
+  year: 2021
+  source_url: https://doi.org/10.1039/d1ra04602k
+extraction_log:
+- seq: 14
+  candidate_id: P013
+  doi: 10.1039/d1ra04602k
+  paper_title: Epoxy composite with high thermal conductivity by constructing 3D-oriented carbon fiber and BN hybrid structure
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.1039_d1ra04602k.txt
+  tables_inspected: Components table (BN/CF/EP)
+  figures_inspected: Fig 5 (K in-plane/cross-plane curves; values for 40 vol% BN from text)
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 3 in-plane rows at 25 C; other loadings figure-only
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 6cd2b119-063
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BN flakes on 3D-oriented carbon fiber (CF) network
+  filler_shape: platelet
+  filler_loading_vol_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  filler_alignment: aligned in-plane
+  processing_method: Airflow-network + needle-punched 3D CF mat (5 vol% CF), BN coating, vacuum liquid impregnation with epoxy
+  k_composite_W_mK: 2.4
+  k_direction: in-plane
+  measurement_method: Laser flash (NETZSCH LFA 457), in-plane and cross-plane at 25 C
+  measurement_temperature_C: 25.0
+  k_original_value: 2.4
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results text: K= of CF/40 vol% BN/EP up to (values) for 2 mm CF'
+  confidence: High
+  notes: CF length 2 mm (5 vol% CF constant), BN 40 vol%. CF is secondary hybrid component. Cross-plane K values only in Fig 5b (not digitized).
+- row_id: 6cd2b119-064
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BN flakes on 3D-oriented carbon fiber (CF) network
+  filler_shape: platelet
+  filler_loading_vol_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  filler_alignment: aligned in-plane
+  processing_method: Airflow-network + needle-punched 3D CF mat (5 vol% CF), BN coating, vacuum liquid impregnation with epoxy
+  k_composite_W_mK: 2.7
+  k_direction: in-plane
+  measurement_method: Laser flash (NETZSCH LFA 457), in-plane and cross-plane at 25 C
+  measurement_temperature_C: 25.0
+  k_original_value: 2.7
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results text: K= of CF/40 vol% BN/EP up to (values) for 5 mm CF'
+  confidence: High
+  notes: CF length 5 mm (5 vol% CF constant), BN 40 vol%. CF is secondary hybrid component. Cross-plane K values only in Fig 5b (not digitized).
+- row_id: 6cd2b119-065
+  matrix_polymer: Epoxy resin
+  filler_material: h-BN
+  filler_material_original: BN flakes on 3D-oriented carbon fiber (CF) network
+  filler_shape: platelet
+  filler_loading_vol_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  filler_alignment: aligned in-plane
+  processing_method: Airflow-network + needle-punched 3D CF mat (5 vol% CF), BN coating, vacuum liquid impregnation with epoxy
+  k_composite_W_mK: 3.1
+  k_direction: in-plane
+  measurement_method: Laser flash (NETZSCH LFA 457), in-plane and cross-plane at 25 C
+  measurement_temperature_C: 25.0
+  k_original_value: 3.1
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results text: K= of CF/40 vol% BN/EP up to (values) for 10 mm CF'
+  confidence: High
+  notes: CF length 10 mm (5 vol% CF constant), BN 40 vol%. CF is secondary hybrid component. Cross-plane K values only in Fig 5b (not digitized).

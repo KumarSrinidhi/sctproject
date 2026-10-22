@@ -1,0 +1,47 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P058
+paper:
+  doi: 10.3390/polym18050648
+  title: Tailoring Flame Retardance and Thermal Conductivity of Epoxy/Benzoxazine Mixtures via Aluminum Trihydrate and Ceramic Hybridization
+  year: 2026
+  source_url: https://doi.org/10.3390/polym18050648
+extraction_log:
+- seq: 63
+  candidate_id: P058
+  doi: 10.3390/polym18050648
+  paper_title: Tailoring Flame Retardance and Thermal Conductivity of Epoxy/Benzoxazine Mixtures via Aluminum Trihydrate and Ceramic Hybridization
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym18050648.txt
+  tables_inspected: TC tables
+  figures_inspected: k figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: Al2O3/MgO/ATH bimodal excluded (non-BN primary)
+  qc_findings: 1 row; trimodal Al2O3+BN hybrid in epoxy
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 544349ee-180
+  matrix_polymer: Epoxy
+  filler_material: Al2O3/BN hybrid
+  filler_material_original: 'Trimodal composite filler: Al2O3 + BN (total 40 wt%, BN fraction 7.5 wt%)'
+  filler_shape: hybrid
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt% total (7.5 wt% BN + Al2O3)
+  functionalization: None
+  processing_method: Trimodal ceramic filler (Al2O3 + BN) in epoxy/BZ matrix
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 1.64
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper)
+  k_original_value: 1.64
+  k_original_unit: W/m∙K
+  value_source: text
+  source_location: 'Results: trimodal Al2O3+BN at 40 wt% total, 7.5 wt% BN fraction -> highest TC 1.64 W/m∙K'
+  confidence: High
+  notes: Bimodal Al2O3 40 wt% -> 1.22; MgO 40 wt% -> 1.29; ATH 40 wt% -> 1.0. BN fraction optimized at 7.5 wt% of total.

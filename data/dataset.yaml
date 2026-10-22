@@ -1,0 +1,15 @@
+# Dataset-level metadata. Bump `version` (semver) with every data release and
+# add an entry to data/CHANGELOG.md.
+#   major: schema change that breaks readers
+#   minor: rows added/removed or values corrected
+#   patch: metadata/notes only
+name: argus-polymer-ceramic-thermal-conductivity
+title: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)
+version: 1.1.0
+released: '2026-10-22'
+description: >-
+  Experimental effective thermal conductivity of polymer-ceramic composites, primarily
+  epoxy filled with h-BN, BN nanosheets and AlN (thermal interface and packaging
+  materials). Every row is traceable to a table, figure or sentence of an open-access
+  source; no value is estimated or inferred.
+homepage: https://github.com/KumarSrinidhi/sctproject

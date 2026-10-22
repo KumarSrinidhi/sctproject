@@ -1,0 +1,219 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P001
+paper:
+  doi: 10.3390/polym10030340
+  title: Epoxy-Thiol Systems Filled with Boron Nitride for High Thermal Conductivity Applications
+  year: 2018
+  source_url: https://doi.org/10.3390/polym10030340
+extraction_log:
+- seq: 1
+  candidate_id: P001
+  doi: 10.3390/polym10030340
+  paper_title: Epoxy-Thiol Systems Filled with Boron Nitride for High Thermal Conductivity Applications
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym10030340.txt
+  tables_inspected: Table 1 (compositions), Table 4 (densities and thermal conductivities)
+  figures_inspected: ''
+  candidate_measurements: 9
+  unit_conversions: none (W/mK direct)
+  duplicate_checks: none needed
+  qc_findings: all 9 rows high confidence, table-sourced
+  rows_appended: 9
+  rows_rejected_at_append: []
+measurements:
+- row_id: b450fec2-001
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: other
+  filler_mean_size_um: 80.0
+  filler_loading_vol_pct: 13.4
+  filler_loading_wt_pct: 20.3
+  filler_loading_original_value: 13.4
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.8
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 0.8
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80-30
+  confidence: High
+  notes: Sample ETLBN80-30. Neat ETL k=0.20 W/mK from Table 4. spherical agglomerates of platelets (80 um BN). vol% measured by density (Archimedes).
+- row_id: b450fec2-002
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: other
+  filler_mean_size_um: 80.0
+  filler_loading_vol_pct: 26.7
+  filler_loading_wt_pct: 37.2
+  filler_loading_original_value: 26.7
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 2.21
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 2.21
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80-50
+  confidence: High
+  notes: Sample ETLBN80-50. Neat ETL k=0.20 W/mK from Table 4. spherical agglomerates of platelets (80 um BN). vol% measured by density (Archimedes).
+- row_id: b450fec2-003
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: other
+  filler_mean_size_um: 80.0
+  filler_loading_vol_pct: 35.0
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 35.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 3.4
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 3.4
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80-60
+  confidence: High
+  notes: Sample ETLBN80-60. Neat ETL k=0.20 W/mK from Table 4. spherical agglomerates of platelets (80 um BN). vol% measured by density (Archimedes).
+- row_id: b450fec2-004
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: platelet
+  filler_loading_vol_pct: 17.1
+  filler_loading_wt_pct: 25.3
+  filler_loading_original_value: 17.1
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.77
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 0.77
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/2-30
+  confidence: High
+  notes: 'Sample ETLBN80/2-30. Neat ETL k=0.20 W/mK from Table 4. hybrid: 80 um agglomerates + 2 um platelets; vol% is measured value; size not single-valued. vol% measured by density (Archimedes).'
+- row_id: b450fec2-005
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: platelet
+  filler_loading_vol_pct: 32.4
+  filler_loading_wt_pct: 44.2
+  filler_loading_original_value: 32.4
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 2.72
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 2.72
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/2-50
+  confidence: High
+  notes: 'Sample ETLBN80/2-50. Neat ETL k=0.20 W/mK from Table 4. hybrid: 80 um agglomerates + 2 um platelets; vol% measured; size not single-valued. vol% measured by density (Archimedes).'
+- row_id: b450fec2-006
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: platelet
+  filler_loading_vol_pct: 40.8
+  filler_loading_wt_pct: 54.2
+  filler_loading_original_value: 40.8
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 4.02
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 4.02
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/2-60
+  confidence: High
+  notes: 'Sample ETLBN80/2-60. Neat ETL k=0.20 W/mK from Table 4. hybrid: 80 um agglomerates + 2 um platelets; vol% measured; size not single-valued. vol% measured by density (Archimedes).'
+- row_id: b450fec2-007
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: platelet
+  filler_loading_vol_pct: 17.1
+  filler_loading_wt_pct: 25.3
+  filler_loading_original_value: 17.1
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.75
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 0.75
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/6-30
+  confidence: High
+  notes: 'Sample ETLBN80/6-30. Neat ETL k=0.20 W/mK from Table 4. hybrid: 80 um agglomerates + 6 um platelets; vol% measured; size not single-valued. vol% measured by density (Archimedes).'
+- row_id: b450fec2-008
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: platelet
+  filler_loading_vol_pct: 33.0
+  filler_loading_wt_pct: 44.2
+  filler_loading_original_value: 33.0
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 2.71
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 2.71
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/6-50
+  confidence: High
+  notes: 'Sample ETLBN80/6-50. Neat ETL k=0.20 W/mK from Table 4. hybrid: 80 um agglomerates + 6 um platelets; vol% measured; size not single-valued. vol% measured by density (Archimedes).'
+- row_id: b450fec2-009
+  matrix_polymer: Epoxy-thiol (DGEBA epoxy + thiol network)
+  curing_agent: Thiol hardener (LC-80), imidazole initiator
+  filler_material: h-BN
+  filler_material_original: boron nitride (BN)
+  filler_shape: platelet
+  filler_loading_vol_pct: 42.1
+  filler_loading_wt_pct: 54.2
+  filler_loading_original_value: 42.1
+  filler_loading_original_unit: vol%
+  functionalization: None
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 4.17
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 4.17
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 4 (k, measured vol%); Table 1 (wt%) sample ETLBN80/6-60
+  confidence: High
+  notes: 'Sample ETLBN80/6-60. Neat ETL k=0.20 W/mK from Table 4. hybrid: 80 um agglomerates + 6 um platelets; vol% measured; size not single-valued. vol% measured by density (Archimedes).'

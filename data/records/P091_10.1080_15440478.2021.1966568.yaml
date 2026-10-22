@@ -1,0 +1,45 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P091
+paper:
+  doi: 10.1080/15440478.2021.1966568
+  title: Thermal Conductivity of Boron Nitride/Banana Fiber Reinforced Epoxy Hybrid Composites
+  year: 2021
+  source_url: https://doi.org/10.1080/15440478.2021.1966568
+extraction_log:
+- seq: 99
+  candidate_id: P091
+  doi: 10.1080/15440478.2021.1966568
+  paper_title: Thermal Conductivity of Boron Nitride/Banana Fiber Reinforced Epoxy Hybrid Composites
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 42307ac2-230
+  matrix_polymer: Environment-friendly epoxy
+  filler_material: h-BN
+  filler_material_original: BN (5 um) + banana fiber (BF) hybrid
+  filler_shape: particle
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: None stated
+  k_composite_W_mK: 1.06741
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 1.06741
+  k_original_unit: W/m-K
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "Thermal conductivity of 1.06741 W/m-K is obtained for optimum combination of 5 wt.% of BN with particle size of 5 um and 1.2 wt.% of BF."'
+  confidence: Medium
+  notes: Abstract-only; RSM/Box-Behnken optimized composition (BN 5 wt% + banana fiber 1.2 wt%).

@@ -1,0 +1,63 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P043
+paper:
+  doi: 10.3390/nano8120997
+  title: Synergistic Effects of Functional CNTs and h-BN on Enhanced Thermal Conductivity of Epoxy/Cyanate Matrix Composites
+  year: 2018
+  source_url: https://doi.org/10.3390/nano8120997
+extraction_log:
+- seq: 48
+  candidate_id: P043
+  doi: 10.3390/nano8120997
+  paper_title: Synergistic Effects of Functional CNTs and h-BN on Enhanced Thermal Conductivity of Epoxy/Cyanate Matrix Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano8120997.txt
+  tables_inspected: property tables
+  figures_inspected: k figures
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: 0.54 quoted as previous-work value for 40 wt% h-BN — Medium confidence as secondary citation within same paper series
+  qc_findings: 3 rows; hybrid BN+CNT filler; matrix epoxy/cyanate ester blend
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 4a11b03c-152
+  matrix_polymer: Epoxy/cyanate ester blend
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: h-BN 40 wt% + functionalized CNTs 0.3 wt%
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt% h-BN (+ co-filler)
+  functionalization: f-CNTs (functionalized CNTs co-filler)
+  processing_method: h-BN + f-CNT in epoxy/cyanate ester
+  k_composite_W_mK: 0.648
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; Agari model also applied)
+  k_original_value: 0.648
+  k_original_unit: W/mk
+  value_source: text
+  source_location: 'Abstract/Results: h-BN 40 wt% + 0.3 wt% f-CNTs'
+  confidence: Medium
+  notes: Co-filler system (h-BN + functionalized CNT). 40 wt% h-BN fixed; CNT loading varies. Matrix is epoxy/cyanate ester blend.
+- row_id: 4a11b03c-153
+  matrix_polymer: Epoxy/cyanate ester blend
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: h-BN 40 wt% + functionalized CNTs 0.5 wt%
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt% h-BN (+ co-filler)
+  functionalization: f-CNTs (functionalized CNTs co-filler)
+  processing_method: h-BN + f-CNT in epoxy/cyanate ester
+  k_composite_W_mK: 0.745
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; Agari model also applied)
+  k_original_value: 0.745
+  k_original_unit: W/mk
+  value_source: text
+  source_location: 'Abstract/Results: h-BN 40 wt% + 0.5 wt% f-CNTs; 1.38x BN-only, +38%'
+  confidence: Medium
+  notes: Co-filler system (h-BN + functionalized CNT). 40 wt% h-BN fixed; CNT loading varies. Matrix is epoxy/cyanate ester blend.

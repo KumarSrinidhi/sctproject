@@ -1,0 +1,84 @@
+{
+  "rows": 258,
+  "method_class": {
+    "UNSPECIFIED": 83,
+    "LFA": 72,
+    "THB": 48,
+    "TPS": 28,
+    "HOT_WIRE": 12,
+    "SS_D5470": 8,
+    "PERIODIC": 4,
+    "SS_GHFM": 1,
+    "IR_THERMO": 1,
+    "SS_UNSPECIFIED": 1
+  },
+  "method_basis": {
+    "named": 163,
+    "none": 83,
+    "instrument": 11,
+    "generic": 1
+  },
+  "direction_reported": {
+    "unknown": 193,
+    "through-plane": 45,
+    "in-plane": 19,
+    "isotropic": 1
+  },
+  "direction_effective": {
+    "through-plane": 104,
+    "mixed": 82,
+    "unknown": 52,
+    "in-plane": 19,
+    "isotropic": 1
+  },
+  "direction_basis": {
+    "method-default": 141,
+    "reported": 65,
+    "none": 52
+  },
+  "phi_basis": {
+    "converted-from-wt": 123,
+    "reported": 103,
+    "unavailable-hybrid": 26,
+    "unavailable": 3,
+    "unavailable-prefilled-matrix": 3
+  },
+  "k_matrix_basis": {
+    "reference-default": 131,
+    "reported": 127
+  },
+  "matrix_family": {
+    "epoxy": 228,
+    "silicone": 16,
+    "polyimide": 9,
+    "PEG": 2,
+    "polystyrene": 2,
+    "polyurethane": 1
+  },
+  "filler_family": {
+    "BN": 194,
+    "hybrid": 34,
+    "AlN": 20,
+    "Al2O3": 6,
+    "none": 2,
+    "MgO": 2
+  },
+  "flags": {
+    "method_unspecified": 83,
+    "mixed_direction_anisotropic": 82,
+    "lfa_cp_rho_unreported": 68,
+    "abstract_only": 28,
+    "figure_digitized": 28,
+    "contact_resistance_included": 10,
+    "matrix_prefilled": 3,
+    "co_filler_ignored_in_conversion": 2,
+    "non_ambient_temperature": 2
+  },
+  "density_check": {
+    "n_rows": 37,
+    "median_abs_diff_vol_pct": 1.66,
+    "max_abs_diff_vol_pct": 3.04,
+    "within_2_vol_pct": 32,
+    "outliers_gt_5_vol_pct": []
+  }
+}

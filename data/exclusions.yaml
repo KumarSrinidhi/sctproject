@@ -1,0 +1,157 @@
+# Sources that were screened but contribute no rows, with the reason.
+# Compiled to unusable_sources.csv. Add an entry whenever a candidate is dropped
+# so that every exclusion is auditable (audit finding D10).
+exclusions:
+- doi: 10.1088/1361-6528/ac0470
+  reason: IOP Radware captcha (txt replacement, not PDF)
+  action: unusable
+- doi: 10.1088/1742-6596/1003/1/012082
+  reason: IOP Radware captcha
+  action: unusable
+- doi: 10.1088/1757-899x/274/1/012043
+  reason: IOP Radware captcha
+  action: unusable
+- doi: 10.1515/polyeng-2025-0193
+  reason: Wiley blocked (403), no EPMC route
+  action: unusable
+- doi: 10.1002/pc.71726
+  reason: Wiley blocked (403), no EPMC route
+  action: unusable
+- doi: 10.1002/pc.71558
+  reason: Wiley blocked (403), no EPMC route
+  action: unusable
+- doi: 10.1002/smll.75841
+  reason: Wiley blocked (403), no EPMC route; full text still blocked
+  action: abstract-recovered (Phase 3C, extract_027, Medium confidence)
+- doi: 10.1002/slct.202507155
+  reason: 'Wiley blocked (403); full text still blocked; Phase 4: publisher abstract page re-checked in browser, full text still paywalled'
+  action: abstract-recovered (Phase 3C, extract_027, Medium confidence)
+- doi: 10.1002/app.56949
+  reason: Wiley blocked (403)
+  action: unusable
+- doi: 10.1002/pat.70120
+  reason: Wiley blocked (403)
+  action: unusable
+- doi: 10.1002/inf2.70139
+  reason: Wiley blocked (403)
+  action: unusable
+- doi: 10.1002/pc.70149
+  reason: Wiley blocked (403); full text still blocked
+  action: abstract-recovered (Phase 3C, extract_027, Medium confidence)
+- doi: 10.1002/pc.28534
+  reason: Wiley blocked (403); recovered via non-Wiley OA mirror
+  action: recovered (Phase 3B direct OA fetch, Kobe Univ repository; extract_025)
+- doi: 10.1002/pc.70279
+  reason: Wiley blocked (403)
+  action: unusable
+- doi: 10.1016/j.compositesa.2026.110044
+  reason: Elsevier blocked (403), no EPMC route
+  action: unusable
+- doi: 10.1016/j.compositesb.2025.112764
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.cej.2026.180373
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.carbon.2026.121402
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.porgcoat.2025.109667
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.ceramint.2026.04.021
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.apsusc.2025.163268
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.eurpolymj.2024.113084
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.matlet.2025.139278
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1016/j.compstruct.2025.119723
+  reason: Elsevier blocked (403)
+  action: unusable
+- doi: 10.1088/1361-6463/ae6b9b
+  reason: 'IOP blocked (403/captcha); full text still blocked; Phase 4: publisher abstract page re-checked in browser, full text still paywalled'
+  action: abstract-recovered (Phase 3C, extract_027, Medium confidence)
+- doi: 10.1049/hve2.70112
+  reason: IET blocked
+  action: unusable
+- doi: 10.1007/s10853-026-12616-z
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1007/s10854-026-18087-x
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1007/s11837-025-07613-7
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1007/s13726-025-01550-7
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1007/s10965-024-04142-w
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1007/s10570-024-05737-8
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1007/s10443-023-10195-9
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1007/s00289-025-06054-1
+  reason: Springer blocked (403)
+  action: unusable
+- doi: 10.1063/5.0205196
+  reason: 'AIP blocked; full text still blocked; Phase 4: publisher abstract page re-checked in browser, full text still paywalled'
+  action: abstract-recovered (Phase 3C, extract_027, Medium confidence)
+- doi: 10.1021/acsapm.4c01099
+  reason: ACS blocked
+  action: unusable
+- doi: 10.1177/09540083251319488
+  reason: SAGE blocked
+  action: unusable
+- doi: 10.31248/ajps2025.124
+  reason: Modeling paper (Debye relaxation model), no experimental k values
+  action: excluded_modeling
+- doi: 10.3390/ma13163634
+  reason: Review article
+  action: excluded_review
+- doi: 10.3390/ma12091522
+  reason: Carbon fillers (out of BN/AlN scope)
+  action: excluded_scope
+- doi: 10.3390/polym11071156
+  reason: Figure-only k values (no text numeric)
+  action: recovered (Phase 4 pixel digitization of Fig. 11; value_source=figure, Medium confidence)
+- doi: 10.3390/molecules21050670
+  reason: Own data figure-only; text values are literature comparisons
+  action: recovered (Phase 4 pixel digitization of Fig. 3; value_source=figure, Medium confidence)
+- doi: 10.14314/polimery.2017.560
+  reason: Abstract only, no k values
+  action: excluded_no_data
+- doi: 10.3390/nano9101396
+  reason: Relative % increase only, no absolute k in text
+  action: excluded_no_absolute_k
+- doi: 10.3390/polym10030277
+  reason: No absolute k for own data in text (Phase 1 screen); Phase 3A re-grep found 0.97 and 1.75 W/K·m printed in Sec. 3.5 and Conclusions
+  action: recovered (Phase 3A local re-grep; rows 0aa28dc4-184..185, High)
+- doi: 10.1039/c8ra10645b
+  reason: No absolute k hits in text (Phase 1 screen); Phase 3A re-grep found Table 1 with absolute k for h-BN and MBN series
+  action: recovered (Phase 3A local re-grep of Table 1; rows 011e5815-174..183, High)
+- doi: 10.3390/molecules28093797
+  reason: PCM (paraffin/LA-ODE) matrix, out of epoxy/BN primary scope
+  action: excluded_scope
+- doi: 10.3390/polym13132161
+  reason: Al2O3/AlN literature values only; own data not BN/AlN primary
+  action: excluded_scope
+- doi: (policy)
+  reason: Sci-Hub deliberately NOT used for any blocked DOI in Phase 3 (copyright/piracy concerns)
+  action: excluded by project decision; see work/phase3_changes.json
+- doi: 10.3390/polym11101548
+  reason: 'Own k reported only relative to neat epoxy in text ("about 173% higher than that of pure epoxy resin"); absolute values only in Fig. 5 (CTBN series). Text k values are literature background (epoxy 0.2, BN 320 W/m·K). Screened in wave 2 but never logged (audit D10). Figure-digitization candidate.'
+  action: excluded_no_absolute_k
+- doi: 10.3390/polym15051214
+  reason: 'Own k reported only as a ratio in text ("increased by a factor of two" at 20% BN); absolute values only in Fig. 5 (3-300 K). Text k values are literature background (h-BN 420 / ~5 W/m·K). Screened in wave 2 but never logged (audit D10). Figure-digitization candidate.'
+  action: excluded_no_absolute_k

@@ -1,0 +1,46 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P052
+paper:
+  doi: 10.3390/polym14061252
+  title: Characteristic and Synthesis of High-Temperature Resistant Liquid Crystal Epoxy Resin Containing Boron Nitride with High Thermal Conductivity
+  year: 2022
+  source_url: https://doi.org/10.3390/polym14061252
+extraction_log:
+- seq: 57
+  candidate_id: P052
+  doi: 10.3390/polym14061252
+  paper_title: Characteristic and Synthesis of High-Temperature Resistant Liquid Crystal Epoxy Resin Containing Boron Nitride with High Thermal Conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym14061252.txt
+  tables_inspected: TC tables
+  figures_inspected: TC figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: TMBPE 6.77 excluded (loading not numeric)
+  qc_findings: 1 row; LC epoxy matrix (optional); s-BN 60% loading
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 500bb71e-171
+  matrix_polymer: Liquid crystal epoxy (SBPDAE)
+  filler_material: BN
+  filler_material_original: spherical BN (s-BN), 60% loading, SBPDAE matrix
+  filler_shape: sphere
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: LC epoxy resin (SBPDAE) + spherical BN, LC alignment enhances vertical k
+  k_composite_W_mK: 9.36
+  k_direction: through-plane (vertical)
+  measurement_method: Thermal conductivity measurement (vertical direction of LC-aligned composite)
+  k_original_value: 9.36
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract: SBPDAE/s-BN (60%) = 9.36 W/mK vertical'
+  confidence: High
+  notes: Liquid crystal epoxy matrix (optional polymer); LC alignment enables high vertical k with spherical BN.

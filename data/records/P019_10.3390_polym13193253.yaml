@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P019
+paper:
+  doi: 10.3390/polym13193253
+  title: Environmental Resistance and Fatigue Behaviors of Epoxy/Nano-Boron Nitride Thermally Conductive Structural Film Adhesive Toughened by Polyphenoxy
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13193253
+extraction_log:
+- seq: 21
+  candidate_id: P019
+  doi: 10.3390/polym13193253
+  paper_title: Thermally Conductive Epoxy Structural Film Adhesive with BN Nanosheets and Polyester Fabric Carrier
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym13193253.txt
+  tables_inspected: Table S1 in SI (not retrieved)
+  figures_inspected: Fig S3 referenced (SI)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: only max-loading row text-accessible; SI contains full series
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 699915b7-083
+  matrix_polymer: Epoxy (PHO-modified) / DDS hardener, polyester fabric carrier
+  curing_agent: DDS
+  filler_material: BNNS
+  filler_material_original: BN nanosheets (nano-BN)
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  processing_method: Double-roll milling; film cast at 70 C via three-roll mill; Ep/PHO30/nBN30 formulation
+  k_matrix_W_mK: 0.21
+  k_composite_W_mK: 0.65
+  k_direction: unknown
+  measurement_method: LFA (Netzsch LFA 457 Microflash)
+  k_original_value: 0.65
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract + text: Ep/PHO30/nBN30 -> 0.65 W/mK (Tg 215 C)'
+  confidence: High
+  notes: 30 wt% BNNS in PHO30 epoxy; unmodified adhesive (0 BN) = 0.21 W/mK. Intermediate loadings in Fig S3/Table S1 (SI, not accessible).

@@ -1,0 +1,69 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P033
+paper:
+  doi: 10.3390/mi16040413
+  title: The Influence of Microsecond Pulsed Electric Field and Direct Current Electric Field on the Orientation Angle of Boron Nitride Nanosheets and the Thermal Conductivity of Epoxy Resin Composites
+  year: 2025
+  source_url: https://doi.org/10.3390/mi16040413
+extraction_log:
+- seq: 37
+  candidate_id: P033
+  doi: 10.3390/mi16040413
+  paper_title: The Influence of Microsecond Pulsed Electric Field and Direct Current Electric Field on the Orientation Angle of Boron Nitride Nanosheets and the Thermal Conductivity of Epoxy Resin Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_mi16040413.txt
+  tables_inspected: none with k
+  figures_inspected: k vs field curves (values quoted in abstract/text)
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: lit values (0.588, 0.453, 1.148, 1.54) excluded
+  qc_findings: 2 rows; processing param = electric field orientation (pulsed vs DC pair)
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: e5a9c8bd-122
+  matrix_polymer: Epoxy resin (EP)
+  curing_agent: 8.5 g curing agent + 0.2 g accelerator
+  filler_material: BNNS
+  filler_material_original: BNNSs (10 wt%), electric-field oriented
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  filler_alignment: oriented by microsecond pulsed EF (50 Hz, 1.5 us, 8 kV/mm)
+  k_matrix_W_mK: 0.191
+  k_composite_W_mK: 0.352
+  k_direction: through-plane
+  measurement_method: LFA (Netzsch LAF467HT), through-thickness
+  k_original_value: 0.352
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract + Results: pulsed EF 8 kV/mm -> 0.352 W/(m·K), 1.84x pure EP (0.191)'
+  confidence: High
+  notes: Pulsed-field oriented BNNS 10 wt%.
+- row_id: e5a9c8bd-123
+  matrix_polymer: Epoxy resin (EP)
+  curing_agent: 8.5 g curing agent + 0.2 g accelerator
+  filler_material: BNNS
+  filler_material_original: BNNSs (10 wt%), electric-field oriented
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  filler_alignment: oriented by DC EF (70 V/mm)
+  k_matrix_W_mK: 0.191
+  k_composite_W_mK: 0.364
+  k_direction: through-plane
+  measurement_method: LFA (Netzsch LAF467HT), through-thickness
+  k_original_value: 0.364
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract: DC 70 V/mm -> 0.364 W/(m·K), 1.91x pure EP'
+  confidence: High
+  notes: DC-field oriented BNNS 10 wt%.

@@ -1,0 +1,89 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P014
+paper:
+  doi: 10.3390/polym13010147
+  title: Enhanced Thermal Conductivity of Epoxy Composites Filled with Al2O3/Boron Nitride Hybrids for Underfill Encapsulation Materials
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13010147
+extraction_log:
+- seq: 15
+  candidate_id: P014
+  doi: 10.3390/polym13010147
+  paper_title: Enhanced Thermal Conductivity of Epoxy Composites Filled with Al2O3/Boron Nitride Hybrids for Underfill Encapsulation Materials
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym13010147.txt
+  tables_inspected: Table 1 (matrix and filler properties)
+  figures_inspected: Fig 6a referenced
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: '3 rows: two alumina-only + one hybrid at 80 wt%'
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: 6a3c21ee-066
+  matrix_polymer: Epoxy (830LVP) with hardener KAYAHARD-AA (1:0.x)
+  curing_agent: KAYAHARD-AA
+  filler_material: Al2O3
+  filler_material_original: micro Al2O3 (m-Al2O3, spherical)
+  filler_shape: Sphere
+  filler_mean_size_um: 5.0
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.98
+  k_direction: unknown
+  measurement_method: Thermal conductivity via diffusivity (method per text/Fig 6)
+  k_original_value: 0.98
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results text Fig 6a discussion: m-Al2O3/EP 60 wt% = 0.98'
+  confidence: High
+  notes: 'Micro alumina 5 um (Table 1: k=29 W/mK). Optional comparison filler Al2O3.'
+- row_id: 6a3c21ee-067
+  matrix_polymer: Epoxy (830LVP) with hardener KAYAHARD-AA (1:0.x)
+  curing_agent: KAYAHARD-AA
+  filler_material: Al2O3
+  filler_material_original: nano Al2O3 (n-Al2O3, irregular)
+  filler_shape: irregular
+  filler_mean_size_um: 0.19
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.7
+  k_direction: unknown
+  measurement_method: Thermal conductivity via diffusivity (method per text/Fig 6)
+  k_original_value: 0.7
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results text Fig 6a discussion: n-Al2O3/EP 60 wt% = 0.70'
+  confidence: High
+  notes: Nano alumina 0.19 um. Optional comparison filler Al2O3.
+- row_id: 6a3c21ee-068
+  matrix_polymer: Epoxy (830LVP) with hardener KAYAHARD-AA (1:0.x)
+  curing_agent: KAYAHARD-AA
+  filler_material: Al2O3/BN hybrid
+  filler_material_original: m-Al2O3-BN hybrid (7:1 m-Al2O3:BN by mass)
+  filler_shape: other
+  filler_loading_wt_pct: 80.0
+  filler_loading_original_value: 80.0
+  filler_loading_original_unit: wt.%
+  functionalization: None
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 1.72
+  k_direction: unknown
+  measurement_method: Thermal conductivity via diffusivity (method per text/Fig 6)
+  k_original_value: 1.72
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Abstract + text: 80 wt.% hybrid Al2O3-BN -> 1.72 W m-1 K-1'
+  confidence: High
+  notes: Hybrid 7:1 m-Al2O3(sphere 5um):BN(flake 2.5um). BN is secondary component here. Other loadings figure-only.

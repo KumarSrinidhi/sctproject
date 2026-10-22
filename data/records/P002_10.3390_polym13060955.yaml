@@ -1,0 +1,401 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P002
+paper:
+  doi: 10.3390/polym13060955
+  title: Remarkable Thermal Conductivity of Epoxy Composites Filled with Boron Nitride and Cured under Pressure
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13060955
+extraction_log:
+- seq: 2
+  candidate_id: P002
+  doi: 10.3390/polym13060955
+  paper_title: Remarkable Thermal Conductivity of Epoxy Composites Filled with Boron Nitride and Cured under Pressure
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym13060955.txt
+  tables_inspected: Table 1 (compositions), Table 2 (densities and thermal conductivities vs cure pressure)
+  figures_inspected: ''
+  candidate_measurements: 19
+  unit_conversions: none
+  duplicate_checks: distinct cure-pressure conditions kept as separate rows per Section 6.4
+  qc_findings: 20 rows appended; vol% repeated across size grades as reported in Table 1
+  rows_appended: 20
+  rows_rejected_at_append: []
+measurements:
+- row_id: a9d63e6e-010
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 2.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured at ambient pressure
+  k_composite_W_mK: 1.28
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 1.28
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN2-60
+  confidence: High
+  notes: Sample ETLBN2-60 (Cured at ambient pressure). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-011
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 2.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 1.49
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 1.49
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN2-60
+  confidence: High
+  notes: Sample ETLBN2-60 (Cured under 175 kPa). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-012
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured at ambient pressure
+  k_composite_W_mK: 2.36
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 2.36
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN30-60
+  confidence: High
+  notes: Sample ETLBN30-60 (Cured at ambient pressure). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-013
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 4.44
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 4.44
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN30-60
+  confidence: High
+  notes: Sample ETLBN30-60 (Cured under 175 kPa). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-017
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured at ambient pressure
+  k_composite_W_mK: 3.02
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 3.02
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN180-60
+  confidence: High
+  notes: Sample ETLBN180-60 (Cured at ambient pressure). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-018
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 3.8
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 3.8
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN180-60
+  confidence: High
+  notes: Sample ETLBN180-60 (Cured under 175 kPa). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-019
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 44.7
+  filler_loading_wt_pct: 58.0
+  filler_loading_original_value: 58.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured at ambient pressure
+  k_composite_W_mK: 4.22
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 4.22
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN180-70
+  confidence: High
+  notes: Sample ETLBN180-70 (Cured at ambient pressure). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-020
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 44.7
+  filler_loading_wt_pct: 58.0
+  filler_loading_original_value: 58.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 5.38
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 5.38
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN180-70
+  confidence: High
+  notes: Sample ETLBN180-70 (Cured under 175 kPa). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-021
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 180.0
+  filler_loading_vol_pct: 44.7
+  filler_loading_wt_pct: 58.0
+  filler_loading_original_value: 58.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 2 MPa
+  k_composite_W_mK: 8.52
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 8.52
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN180-70
+  confidence: High
+  notes: Sample ETLBN180-70 (Cured under 2 MPa). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-022
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: other
+  filler_mean_size_um: 120.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured at ambient pressure
+  k_composite_W_mK: 3.42
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 3.42
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN120s-60
+  confidence: High
+  notes: Sample ETLBN120s-60 (Cured at ambient pressure). wt% from Table 1. 120 um = agglomerates of platelets (sample label suffix s) Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-023
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: other
+  filler_mean_size_um: 120.0
+  filler_loading_vol_pct: 34.2
+  filler_loading_wt_pct: 47.1
+  filler_loading_original_value: 47.1
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 5.34
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 5.34
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN120s-60
+  confidence: High
+  notes: Sample ETLBN120s-60 (Cured under 175 kPa). wt% from Table 1. 120 um = agglomerates of platelets Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-024
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: other
+  filler_mean_size_um: 120.0
+  filler_loading_vol_pct: 44.7
+  filler_loading_wt_pct: 58.0
+  filler_loading_original_value: 58.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 5.55
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 5.55
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN120s-70
+  confidence: High
+  notes: Sample ETLBN120s-70 (Cured under 175 kPa). wt% from Table 1. no ambient-pressure value reported; 120 um agglomerates Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-025
+  matrix_polymer: Epoxy-thiol (DGEBA + thiol)
+  curing_agent: Thiol hardener (LC-80)
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: other
+  filler_mean_size_um: 120.0
+  filler_loading_vol_pct: 44.7
+  filler_loading_wt_pct: 58.0
+  filler_loading_original_value: 58.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 2 MPa
+  k_composite_W_mK: 10.49
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 10.49
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample ETLBN120s-70
+  confidence: High
+  notes: Sample ETLBN120s-70 (Cured under 2 MPa). wt% from Table 1. 120 um agglomerates Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-026
+  matrix_polymer: Epoxy-diamine (DGEBA + Jeffamine D-230)
+  curing_agent: Jeffamine D-230
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 38.1
+  filler_loading_wt_pct: 53.0
+  filler_loading_original_value: 53.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured at ambient pressure
+  k_composite_W_mK: 1.87
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 1.87
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample EJBN30-60
+  confidence: High
+  notes: Sample EJBN30-60 (Cured at ambient pressure). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-027
+  matrix_polymer: Epoxy-diamine (DGEBA + Jeffamine D-230)
+  curing_agent: Jeffamine D-230
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 38.1
+  filler_loading_wt_pct: 53.0
+  filler_loading_original_value: 53.0
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 4.19
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 4.19
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample EJBN30-60
+  confidence: High
+  notes: Sample EJBN30-60 (Cured under 175 kPa). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-028
+  matrix_polymer: Epoxy-diamine (DGEBA + Jeffamine D-230)
+  curing_agent: Jeffamine D-230
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 43.3
+  filler_loading_wt_pct: 58.2
+  filler_loading_original_value: 58.2
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured at ambient pressure
+  k_composite_W_mK: 2.37
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 2.37
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample EJBN30-65
+  confidence: High
+  notes: Sample EJBN30-65 (Cured at ambient pressure). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).
+- row_id: a9d63e6e-029
+  matrix_polymer: Epoxy-diamine (DGEBA + Jeffamine D-230)
+  curing_agent: Jeffamine D-230
+  filler_material: h-BN
+  filler_material_original: hexagonal BN (Saint Gobain)
+  filler_shape: platelet
+  filler_mean_size_um: 30.0
+  filler_loading_vol_pct: 43.3
+  filler_loading_wt_pct: 58.2
+  filler_loading_original_value: 58.2
+  filler_loading_original_unit: wt%
+  functionalization: None
+  processing_method: Cured under 175 kPa
+  k_composite_W_mK: 4.32
+  k_direction: unknown
+  measurement_method: Transient hot bridge (Linseis THB-100)
+  k_original_value: 4.32
+  k_original_unit: W/mK
+  value_source: table
+  source_location: Table 2 sample EJBN30-65
+  confidence: High
+  notes: Sample EJBN30-65 (Cured under 175 kPa). wt% from Table 1. Loading corrected in Phase 2 audit (Table 1 weight composition).

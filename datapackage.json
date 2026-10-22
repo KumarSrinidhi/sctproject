@@ -1,0 +1,505 @@
+{
+  "profile": "tabular-data-package",
+  "name": "argus-polymer-ceramic-thermal-conductivity",
+  "title": "Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)",
+  "version": "1.1.0",
+  "created": "2026-10-22",
+  "description": "Experimental effective thermal conductivity of polymer-ceramic composites, primarily epoxy filled with h-BN, BN nanosheets and AlN (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred.",
+  "homepage": "https://github.com/KumarSrinidhi/sctproject",
+  "resources": [
+    {
+      "name": "measurements",
+      "path": "thermal_conductivity_dataset.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8-sig",
+      "description": "Published dataset, 258 rows: one measured k per row.",
+      "schema": {
+        "fields": [
+          {
+            "name": "row_id",
+            "type": "string",
+            "description": "Stable row identifier: md5(doi)[:8] + '-' + sequence number."
+          },
+          {
+            "name": "doi",
+            "type": "string",
+            "description": "DOI of the source paper (lower-case, no URL prefix)."
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "description": "Resolvable URL of the source paper."
+          },
+          {
+            "name": "paper_title",
+            "type": "string",
+            "description": "Title of the source paper (Crossref-verified where audited)."
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Publication year."
+          },
+          {
+            "name": "matrix_polymer",
+            "type": "string",
+            "description": "Matrix polymer as described by the source."
+          },
+          {
+            "name": "curing_agent",
+            "type": "string",
+            "description": "Hardener / curing agent, if stated."
+          },
+          {
+            "name": "filler_material",
+            "type": "string",
+            "description": "Normalized filler label (h-BN, BN, BNNS, AlN, cBN, '<a>/<b> hybrid', none)."
+          },
+          {
+            "name": "filler_material_original",
+            "type": "string",
+            "description": "Filler name verbatim from the source."
+          },
+          {
+            "name": "filler_shape",
+            "type": "string",
+            "description": "Filler morphology (platelet, nanosheet, particle, sphere, ...)."
+          },
+          {
+            "name": "filler_aspect_ratio",
+            "type": "number",
+            "description": "Filler aspect ratio, if stated."
+          },
+          {
+            "name": "filler_mean_size_um",
+            "type": "number",
+            "description": "Mean (lateral) filler size.",
+            "unit": "um"
+          },
+          {
+            "name": "size_distribution",
+            "type": "string",
+            "description": "Size distribution description, if stated."
+          },
+          {
+            "name": "filler_loading_vol_pct",
+            "type": "number",
+            "description": "Filler loading, volume percent, as reported.",
+            "unit": "vol%"
+          },
+          {
+            "name": "filler_loading_wt_pct",
+            "type": "number",
+            "description": "Filler loading, weight percent, as reported.",
+            "unit": "wt%"
+          },
+          {
+            "name": "filler_loading_original_value",
+            "type": "string",
+            "description": "Loading value as printed in the source (may be non-numeric, e.g. '44-45')."
+          },
+          {
+            "name": "filler_loading_original_unit",
+            "type": "string",
+            "description": "Unit / basis of the printed loading."
+          },
+          {
+            "name": "functionalization",
+            "type": "string",
+            "description": "Surface treatment of the filler."
+          },
+          {
+            "name": "filler_alignment",
+            "type": "string",
+            "description": "Filler orientation / network structure."
+          },
+          {
+            "name": "processing_method",
+            "type": "string",
+            "description": "Composite processing route."
+          },
+          {
+            "name": "k_matrix_W_mK",
+            "type": "number",
+            "description": "Thermal conductivity of the neat matrix.",
+            "unit": "W/(m K)"
+          },
+          {
+            "name": "k_composite_W_mK",
+            "type": "number",
+            "description": "Effective thermal conductivity of the composite (normalized).",
+            "unit": "W/(m K)"
+          },
+          {
+            "name": "k_direction",
+            "type": "string",
+            "description": "Direction measured (in-plane / through-plane / unknown) as reported."
+          },
+          {
+            "name": "measurement_method",
+            "type": "string",
+            "description": "Measurement technique / instrument as described by the source."
+          },
+          {
+            "name": "measurement_temperature_C",
+            "type": "number",
+            "description": "Measurement temperature; blank means ambient (~25 C).",
+            "unit": "C"
+          },
+          {
+            "name": "k_original_value",
+            "type": "number",
+            "description": "k value as printed in the source."
+          },
+          {
+            "name": "k_original_unit",
+            "type": "string",
+            "description": "Unit of k as printed in the source."
+          },
+          {
+            "name": "value_source",
+            "type": "string",
+            "description": "Where the value came from: text | table | figure."
+          },
+          {
+            "name": "source_location",
+            "type": "string",
+            "description": "Verbatim quote, table id or figure + digitizer reference."
+          },
+          {
+            "name": "confidence",
+            "type": "string",
+            "description": "High | Medium (| Low)."
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Caveats, sample labels, hybrid composition."
+          }
+        ],
+        "primaryKey": [
+          "row_id"
+        ]
+      }
+    },
+    {
+      "name": "measurements-enriched",
+      "path": "data/processed/measurements_enriched.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8-sig",
+      "description": "Analysis-ready table: published columns plus derived columns, each with a *_basis column separating reported values from conversions and defaults.",
+      "schema": {
+        "fields": [
+          {
+            "name": "row_id",
+            "type": "string",
+            "description": "Stable row identifier: md5(doi)[:8] + '-' + sequence number."
+          },
+          {
+            "name": "doi",
+            "type": "string",
+            "description": "DOI of the source paper (lower-case, no URL prefix)."
+          },
+          {
+            "name": "source_url",
+            "type": "string",
+            "description": "Resolvable URL of the source paper."
+          },
+          {
+            "name": "paper_title",
+            "type": "string",
+            "description": "Title of the source paper (Crossref-verified where audited)."
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": "Publication year."
+          },
+          {
+            "name": "matrix_polymer",
+            "type": "string",
+            "description": "Matrix polymer as described by the source."
+          },
+          {
+            "name": "curing_agent",
+            "type": "string",
+            "description": "Hardener / curing agent, if stated."
+          },
+          {
+            "name": "filler_material",
+            "type": "string",
+            "description": "Normalized filler label (h-BN, BN, BNNS, AlN, cBN, '<a>/<b> hybrid', none)."
+          },
+          {
+            "name": "filler_material_original",
+            "type": "string",
+            "description": "Filler name verbatim from the source."
+          },
+          {
+            "name": "filler_shape",
+            "type": "string",
+            "description": "Filler morphology (platelet, nanosheet, particle, sphere, ...)."
+          },
+          {
+            "name": "filler_aspect_ratio",
+            "type": "number",
+            "description": "Filler aspect ratio, if stated."
+          },
+          {
+            "name": "filler_mean_size_um",
+            "type": "number",
+            "description": "Mean (lateral) filler size.",
+            "unit": "um"
+          },
+          {
+            "name": "size_distribution",
+            "type": "string",
+            "description": "Size distribution description, if stated."
+          },
+          {
+            "name": "filler_loading_vol_pct",
+            "type": "number",
+            "description": "Filler loading, volume percent, as reported.",
+            "unit": "vol%"
+          },
+          {
+            "name": "filler_loading_wt_pct",
+            "type": "number",
+            "description": "Filler loading, weight percent, as reported.",
+            "unit": "wt%"
+          },
+          {
+            "name": "filler_loading_original_value",
+            "type": "string",
+            "description": "Loading value as printed in the source (may be non-numeric, e.g. '44-45')."
+          },
+          {
+            "name": "filler_loading_original_unit",
+            "type": "string",
+            "description": "Unit / basis of the printed loading."
+          },
+          {
+            "name": "functionalization",
+            "type": "string",
+            "description": "Surface treatment of the filler."
+          },
+          {
+            "name": "filler_alignment",
+            "type": "string",
+            "description": "Filler orientation / network structure."
+          },
+          {
+            "name": "processing_method",
+            "type": "string",
+            "description": "Composite processing route."
+          },
+          {
+            "name": "k_matrix_W_mK",
+            "type": "number",
+            "description": "Thermal conductivity of the neat matrix.",
+            "unit": "W/(m K)"
+          },
+          {
+            "name": "k_composite_W_mK",
+            "type": "number",
+            "description": "Effective thermal conductivity of the composite (normalized).",
+            "unit": "W/(m K)"
+          },
+          {
+            "name": "k_direction",
+            "type": "string",
+            "description": "Direction measured (in-plane / through-plane / unknown) as reported."
+          },
+          {
+            "name": "measurement_method",
+            "type": "string",
+            "description": "Measurement technique / instrument as described by the source."
+          },
+          {
+            "name": "measurement_temperature_C",
+            "type": "number",
+            "description": "Measurement temperature; blank means ambient (~25 C).",
+            "unit": "C"
+          },
+          {
+            "name": "k_original_value",
+            "type": "number",
+            "description": "k value as printed in the source."
+          },
+          {
+            "name": "k_original_unit",
+            "type": "string",
+            "description": "Unit of k as printed in the source."
+          },
+          {
+            "name": "value_source",
+            "type": "string",
+            "description": "Where the value came from: text | table | figure."
+          },
+          {
+            "name": "source_location",
+            "type": "string",
+            "description": "Verbatim quote, table id or figure + digitizer reference."
+          },
+          {
+            "name": "confidence",
+            "type": "string",
+            "description": "High | Medium (| Low)."
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Caveats, sample labels, hybrid composition."
+          },
+          {
+            "name": "paper_id",
+            "type": "string",
+            "description": "Record id (P###) of the source paper."
+          },
+          {
+            "name": "matrix_family",
+            "type": "string",
+            "description": "epoxy | silicone | polyimide | PEG | polystyrene | polyurethane | other."
+          },
+          {
+            "name": "filler_family",
+            "type": "string",
+            "description": "BN | AlN | Al2O3 | MgO | hybrid | none | other."
+          },
+          {
+            "name": "filler_base",
+            "type": "string",
+            "description": "Single-filler label (h-BN, BN, BNNS, cBN, AlN, ...); blank for hybrids."
+          },
+          {
+            "name": "is_hybrid",
+            "type": "boolean",
+            "description": "More than one filler material."
+          },
+          {
+            "name": "contains_bn",
+            "type": "boolean",
+            "description": "Any boron nitride component."
+          },
+          {
+            "name": "method_class",
+            "type": "string",
+            "description": "Measurement technique class (LFA, TPS, THB, HOT_WIRE, SS_D5470, ...)."
+          },
+          {
+            "name": "method_basis",
+            "type": "string",
+            "description": "named (technique named) | generic | instrument (inferred from model) | none."
+          },
+          {
+            "name": "method_family",
+            "type": "string",
+            "description": "transient | steady-state | periodic | optical | unspecified."
+          },
+          {
+            "name": "method_quantity",
+            "type": "string",
+            "description": "Primary measured quantity (diffusivity, conductivity, thermal resistance, ...)."
+          },
+          {
+            "name": "direction_reported",
+            "type": "string",
+            "description": "k_direction normalized to in-plane | through-plane | isotropic | unknown."
+          },
+          {
+            "name": "direction_effective",
+            "type": "string",
+            "description": "Best estimate of the direction sensed, incl. 'mixed' for isotropic-mode transient sensors."
+          },
+          {
+            "name": "direction_basis",
+            "type": "string",
+            "description": "reported | method-text | method-default | none."
+          },
+          {
+            "name": "phi_vol_pct",
+            "type": "number",
+            "description": "Filler volume percent: reported, or converted from wt% with reference densities.",
+            "unit": "vol%"
+          },
+          {
+            "name": "phi_basis",
+            "type": "string",
+            "description": "reported | converted-from-wt | unavailable-hybrid | unavailable-prefilled-matrix | unavailable."
+          },
+          {
+            "name": "wt_pct_effective",
+            "type": "number",
+            "description": "Filler weight percent: reported, or converted from vol%.",
+            "unit": "wt%"
+          },
+          {
+            "name": "wt_basis",
+            "type": "string",
+            "description": "reported | converted-from-vol | unavailable..."
+          },
+          {
+            "name": "rho_filler_used",
+            "type": "number",
+            "description": "Filler density used for a conversion.",
+            "unit": "g/cm3"
+          },
+          {
+            "name": "rho_matrix_used",
+            "type": "number",
+            "description": "Matrix density used for a conversion.",
+            "unit": "g/cm3"
+          },
+          {
+            "name": "k_matrix_effective",
+            "type": "number",
+            "description": "Neat-matrix k: reported, or the matrix-family reference default.",
+            "unit": "W/(m K)"
+          },
+          {
+            "name": "k_matrix_basis",
+            "type": "string",
+            "description": "reported | reference-default | unavailable."
+          },
+          {
+            "name": "k_enhancement",
+            "type": "number",
+            "description": "k_composite / k_matrix_effective."
+          },
+          {
+            "name": "log10_k",
+            "type": "number",
+            "description": "log10 of k_composite_W_mK."
+          },
+          {
+            "name": "k_rel_uncertainty",
+            "type": "number",
+            "description": "Judgement-based 1-sigma relative uncertainty from the method class (paper value not given)."
+          },
+          {
+            "name": "flags",
+            "type": "string",
+            "description": "Semicolon list of analysis caveats (see docs/ARCHITECTURE.md, 'Bias flags')."
+          }
+        ],
+        "primaryKey": [
+          "row_id"
+        ]
+      }
+    },
+    {
+      "name": "papers",
+      "path": "paper_inventory.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8-sig",
+      "description": "95 source papers with row counts and k ranges."
+    },
+    {
+      "name": "exclusions",
+      "path": "unusable_sources.csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "description": "Screened sources that contribute no rows, with the reason."
+    }
+  ]
+}

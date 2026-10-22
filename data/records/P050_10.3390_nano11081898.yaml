@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P050
+paper:
+  doi: 10.3390/nano11081898
+  title: Simultaneously Enhanced Thermal Conductivity and Dielectric Breakdown Strength in Sandwich AlN/Epoxy Composites
+  year: 2021
+  source_url: https://doi.org/10.3390/nano11081898
+extraction_log:
+- seq: 55
+  candidate_id: P050
+  doi: 10.3390/nano11081898
+  paper_title: Simultaneously Enhanced Thermal Conductivity and Dielectric Breakdown Strength in Sandwich AlN/Epoxy Composites
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_nano11081898.txt
+  tables_inspected: dielectric/TC tables
+  figures_inspected: SEM + TC figures
+  candidate_measurements: 3
+  unit_conversions: none
+  duplicate_checks: none needed
+  qc_findings: 3 rows; sandwich architecture; 35.6 vol% micro-AlN outer layers
+  rows_appended: 3
+  rows_rejected_at_append: []
+measurements:
+- row_id: ce78048d-167
+  matrix_polymer: Epoxy (DGEBA E-828)
+  curing_agent: methyl tetrahydrophthalic anhydride
+  filler_material: AlN
+  filler_material_original: Sandwich 120-60 (outer 120 um, middle 60 um), 35.6 vol% ANMP outer + 1.0 vol% ANNP middle
+  filler_shape: hybrid
+  filler_loading_vol_pct: 35.6
+  filler_loading_original_value: 35.6
+  filler_loading_original_unit: vol% ANMP outer layer (1.0 vol% ANNP middle)
+  functionalization: None
+  processing_method: Layer-by-layer hot-press casting (outer ANMP / middle ANNP / outer ANMP), cure 150 C
+  k_composite_W_mK: 0.754
+  k_direction: through-plane
+  measurement_method: Laser flash (LFA467 Netzsch), through-plane and in-plane
+  k_original_value: 0.754
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract: 120-60 through-plane TC = 0.754 W/(m·K) (4.1x epoxy)'
+  confidence: High
+  notes: Sandwich architecture; outer layers 35.6 vol% micro-AlN, middle 1.0 vol% nano-AlN. Pure epoxy 4.1x lower (0.18 W/(m·K) implied). Optimal dielectric breakdown 69.7 kV/mm.
+- row_id: ce78048d-169
+  matrix_polymer: Epoxy (DGEBA E-828)
+  curing_agent: methyl tetrahydrophthalic anhydride
+  filler_material: AlN
+  filler_material_original: Sandwich 130-60 (outer 130 um, middle 60 um)
+  filler_shape: hybrid
+  filler_loading_vol_pct: 35.6
+  filler_loading_original_value: 35.6
+  filler_loading_original_unit: vol% ANMP outer layer (1.0 vol% ANNP middle)
+  functionalization: None
+  processing_method: Layer-by-layer hot-press casting (outer ANMP / middle ANNP / outer ANMP), cure 150 C
+  k_composite_W_mK: 0.904
+  k_direction: through-plane
+  measurement_method: Laser flash (LFA467 Netzsch), through-plane and in-plane
+  k_original_value: 0.904
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results: TPTC of 130-60 reaches 0.904 W/(m·K)'
+  confidence: High
+  notes: Thicker outer layer (higher AlN) improves through-plane TC.

@@ -1,0 +1,47 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P086
+paper:
+  doi: 10.1016/j.cej.2018.04.196
+  title: Melamine foam-supported 3D interconnected boron nitride nanosheets network encapsulated in epoxy to achieve significantly enhanced thermal conductivity
+  year: 2018
+  source_url: https://doi.org/10.1016/j.cej.2018.04.196
+extraction_log:
+- seq: 94
+  candidate_id: P086
+  doi: 10.1016/j.cej.2018.04.196
+  paper_title: Melamine foam-supported 3D interconnected boron nitride nanosheets network encapsulated in epoxy to achieve significantly enhanced thermal conductivity
+  date_processed: '2026-10-14'
+  access_result: Abstract via Semantic Scholar API (full text blocked/unreachable); Phase 3C abstract harvest
+  files_inspected: work/phase3c_abstract_hits.json (abstract text); no local fulltext
+  tables_inspected: none (abstract only)
+  figures_inspected: none (abstract only)
+  candidate_measurements: 1
+  unit_conversions: as printed unit mapped to W/(m K)
+  duplicate_checks: DOI had zero rows before this run
+  qc_findings: Abstract-only extraction; confidence=Medium; method/matrix details incomplete where not in abstract
+  rows_appended: 1
+  rows_rejected_at_append:
+  - - 7374a33f-223
+    - non-numeric filler_loading_original_value
+measurements:
+- row_id: 7374a33f-223
+  matrix_polymer: Epoxy resin
+  filler_material: BNNS
+  filler_material_original: MF@BNNS (BNNS-wrapped melamine foam scaffold, layer-by-layer assembly)
+  filler_shape: nanosheet network
+  filler_loading_vol_pct: 1.1
+  filler_loading_original_value: ~1.1
+  filler_loading_original_unit: vol%
+  functionalization: L-B-L assembly on melamine foam
+  k_composite_W_mK: 0.6
+  k_direction: unknown
+  measurement_method: Not stated in abstract
+  k_original_value: 0.6
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract (Semantic Scholar indexed publisher abstract; full text inaccessible): "a relatively high thermal conductivity of 0.6 W m−1 K−1 was achieved at an ultralow BNNS loading of ~1.1 vol%, which is equivalent to a thermal conductivity enhancement of 233% compared to epoxy resin."'
+  confidence: Medium
+  notes: Abstract-only; loading approximate (~1.1 vol%).

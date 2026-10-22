@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P059
+paper:
+  doi: 10.1007/s40820-023-01163-w
+  title: Preparation of Highly Thermally Conductive and Anticorrosive Multifunctional Coatings for Heat-Conducting Protection
+  year: 2023
+  source_url: https://doi.org/10.1007/s40820-023-01163-w
+extraction_log:
+- seq: 64
+  candidate_id: P059
+  doi: 10.1007/s40820-023-01163-w
+  paper_title: Preparation of Highly Thermally Conductive and Anticorrosive Multifunctional Coatings for Heat-Conducting Protection
+  date_processed: '2026-10-13'
+  access_result: EPMC/Unpaywall (Springer OA)
+  files_inspected: work/fulltext/10.1007_s40820-023-01163-w.txt
+  tables_inspected: TC tables
+  figures_inspected: k figures
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: 20 wt% BN values (0.76-0.84) not extracted as separate rows
+  qc_findings: 1 row; coating matrix (optional polymer); surface-functionalized BN
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: 44f4c094-181
+  matrix_polymer: CEP (curing-agent-functionalized epoxy coating)
+  curing_agent: F-CB (curing agent + BN surface modifier)
+  filler_material: BN
+  filler_material_original: F-CB/CEP coating, 50 wt% BN (functionalized with curing agent)
+  filler_shape: platelet
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: 'F-CB (cation-pi interaction: curing agent as BN surface modifier)'
+  processing_method: F-CB (curing agent + BN modifier) in epoxy coating, corrosion-inhibitive
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 4.29
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per paper; coating TC)
+  k_original_value: 4.29
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract+Results: F-CB/CEP coating TC = 4.29 W m−1 K−1 at 50 wt% BN'
+  confidence: High
+  notes: Coating matrix (epoxy-based, corrosion-resistant). BN/DEP 50 wt% = 2.51; BN/CEP 50 wt% = 3.95 (comparators). Pure epoxy coating k = 0.22.

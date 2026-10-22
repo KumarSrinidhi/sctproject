@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P036
+paper:
+  doi: 10.3390/polym13020248
+  title: Enhanced the Thermal Conductivity of Polydimethylsiloxane via a Three-Dimensional Hybrid Boron Nitride@Silver Nanowires Thermal Network Filler
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13020248
+extraction_log:
+- seq: 40
+  candidate_id: P036
+  doi: 10.3390/polym13020248
+  paper_title: Enhanced the Thermal Conductivity of Polydimethylsiloxane via a Three-Dimensional Hybrid Boron Nitride@Silver Nanowires Thermal Network Filler
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML
+  files_inspected: work/fulltext/10.3390_polym13020248.txt
+  tables_inspected: formulation tables
+  figures_inspected: Fig 5 (k vs AgNW content)
+  candidate_measurements: 1
+  unit_conversions: none
+  duplicate_checks: 29.2 W/mK AgNW film value is literature [25] - excluded
+  qc_findings: 1 row, optional PDMS matrix
+  rows_appended: 1
+  rows_rejected_at_append: []
+measurements:
+- row_id: d3a7a8bf-127
+  matrix_polymer: PDMS
+  filler_material: BN
+  filler_material_original: BN@15AgNWs hybrid (h-BN decorated with Ag nanowires, 15 mg/mL), 3D network
+  filler_shape: other
+  filler_loading_vol_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: vol%
+  functionalization: AgNW in-situ growth on h-BN
+  filler_alignment: 3D hybrid network
+  processing_method: In-situ growth of AgNWs on BN, 3D network filler in PDMS
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.914
+  k_direction: unknown
+  measurement_method: Thermal conductivity measurement (per text; 5.05x pure PDMS 0.18 W/mK)
+  k_original_value: 0.914
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract: 20 vol% BN@15AgNWs/PDMS = 0.914 W/(m·K)'
+  confidence: High
+  notes: 'Optional matrix: PDMS (not epoxy). 23% higher than plain BN/PDMS at same loading (control value not numeric). AgNW secondary component.'

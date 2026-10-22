@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P027
+paper:
+  doi: 10.1186/1556-276x-9-643
+  title: Solvent-free fabrication of thermally conductive insulating epoxy composites with boron nitride nanoplatelets as fillers
+  year: 2014
+  source_url: https://doi.org/10.1186/1556-276x-9-643
+extraction_log:
+- seq: 30
+  candidate_id: P027
+  doi: 10.1186/1556-276x-9-643
+  paper_title: Fabrication of epoxy-boron nitride platelet composites with high filler fraction and thermal conductivity
+  date_processed: '2026-10-13'
+  access_result: EPMC fullTextXML (BMC)
+  files_inspected: work/fulltext/10.1186_1556-276x-9-643.txt
+  tables_inspected: composition tables
+  figures_inspected: k vs loading curves (values in text at 70 wt%)
+  candidate_measurements: 2
+  unit_conversions: none
+  duplicate_checks: lower loadings figure-only
+  qc_findings: 2 rows (silane vs plasma pair at 70 wt%)
+  rows_appended: 2
+  rows_rejected_at_append: []
+measurements:
+- row_id: 2cfda874-099
+  matrix_polymer: Epoxy resin
+  filler_material: BN
+  filler_material_original: BNNPs (boron nitride nanoplatelets), 70 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane coupling agent treated
+  processing_method: Near-zero-flow molding / high-fraction fabrication method
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 5.24
+  k_direction: through-plane (vertical)
+  measurement_method: DZDR-S thermal conductivity tester (transient plane source), vertical direction
+  k_original_value: 5.24
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract + Results: silane-treated sample max 5.24 W/mK at 70 wt%'
+  confidence: High
+  notes: Silane-treated BNNPs, 70 wt%. Pure epoxy reported 0.31 W/mK.
+- row_id: 2cfda874-100
+  matrix_polymer: Epoxy resin
+  filler_material: BN
+  filler_material_original: BNNPs (boron nitride nanoplatelets), 70 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: Plasma treatment
+  processing_method: Near-zero-flow molding / high-fraction fabrication method
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 4.61
+  k_direction: through-plane (vertical)
+  measurement_method: DZDR-S thermal conductivity tester (transient plane source), vertical direction
+  k_original_value: 4.61
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results: plasma-treated sample ~4.61 W/mK at 70 wt%'
+  confidence: High
+  notes: Plasma-treated BNNPs, 70 wt% (same loading pair for treatment comparison).
