@@ -44,6 +44,7 @@ Without installing, run from the repo root with `PYTHONPATH=src python -m argus 
 | `argus verify` | Read-only release checks → `reports/verification.json` |
 | `argus stats` | Headline numbers |
 | `argus physics` | Fits effective-medium models to every loading series → `reports/physics_*` |
+| `argus analyze bias` | How much measurement technique and direction shift k → `reports/method_bias.md` |
 | `argus new-paper --doi … --title … --year …` | Creates a record file for a new paper |
 
 **Adding or correcting data:** edit (or create) the paper's file in `data/records/`, then run `argus validate` and `argus build`. If you change existing rows, add an entry to `data/curation_log.yaml` listing the row ids under `rows_changed` / `rows_removed`; `argus verify` fails on undeclared changes. Removed row ids go in `data/tombstones.yaml`.
