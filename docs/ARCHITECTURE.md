@@ -116,7 +116,8 @@ src/argus/
   fingerprint.py    dataset hash stamped into every analysis output
   report/course.py  course report rendered from results (refuses stale outputs)
   report/figures.py report figures (validated palette, small multiples)
-  report/templates/ Jinja2 template of the course report
+  report/explorer.py interactive explorer: data payload + two page variants
+  report/templates/ Jinja2 templates (course report, explorer head/body) and explorer.js
   legacy.py     one-time migration from work/ + change-declaration check
   cli.py        `argus` commands
 tests/          pytest suite (unit, model identities, real-data invariants)

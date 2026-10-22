@@ -1,0 +1,63 @@
+<div class="page">
+  <header class="masthead">
+    <p class="eyebrow">ARGUS dataset <span class="raw">v{{ meta.version }}</span> · {{ meta.rows }} measurements · {{ meta.papers }} papers</p>
+    <h1>Thermal conductivity of BN- and AlN-filled polymers</h1>
+    <p class="lede">Every point is a measured value traced to a table, a sentence or a digitized figure in an open-access paper. Filter by filler, technique and direction, colour the points by what you want to compare, and select a point to see where it came from.</p>
+  </header>
+
+  <section class="card filters" id="filters" aria-label="Filters">
+    <div class="fsearch">
+      <label for="q">Search</label>
+      <input id="q" type="search" placeholder="Paper, DOI, matrix, filler or instrument" autocomplete="off">
+    </div>
+    <div class="fend"><button class="btn" id="reset" type="button">Reset filters</button></div>
+  </section>
+
+  <section class="summary" id="summary" aria-live="polite"></section>
+
+  <div class="main">
+    <section class="card chart-card" aria-labelledby="chart-title">
+      <div class="toolbar">
+        <h2 id="chart-title">k against filler loading</h2>
+        <div><span class="tlabel" id="colorby-label">Colour by</span><span class="seg" id="colorby" role="group" aria-labelledby="colorby-label"></span></div>
+        <div><span class="tlabel" id="ymode-label">Show</span><span class="seg" id="ymode" role="group" aria-labelledby="ymode-label"></span></div>
+        <label class="check" for="models"><input type="checkbox" id="models" checked> Physics references</label>
+      </div>
+      <svg id="chart" role="img" aria-labelledby="chart-desc"></svg>
+      <p id="chart-desc" hidden></p>
+      <p class="empty" id="chart-empty" hidden>No plotted measurements match these filters.</p>
+      <div class="tip" id="tip" hidden></div>
+      <div class="legend" id="legend"></div>
+      <p class="note" id="chart-note"></p>
+    </section>
+
+    <aside class="card detail" id="detail" aria-live="polite" aria-label="Selected measurement"></aside>
+  </div>
+
+  <section class="card table-card" aria-labelledby="table-title">
+    <div class="table-head">
+      <h2 id="table-title">Measurements</h2>
+      <div class="row-actions">
+        <span class="status" id="copy-status" role="status"></span>
+        <button class="btn" id="copy-csv" type="button">Copy table as CSV</button>
+      </div>
+    </div>
+    <textarea class="fallback" id="csv-fallback" readonly hidden aria-label="CSV of the filtered rows"></textarea>
+    <div class="table-wrap">
+      <table>
+        <thead><tr id="thead"></tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>ARGUS dataset v{{ meta.version }} ({{ meta.released }}), fingerprint <span class="mono">{{ meta.fingerprint }}</span>. Generated {{ meta.generated }} by <span class="mono">argus report explorer</span>.</p>
+    <p>Reference curves: Nan et al. (1997) for randomly oriented h-BN platelets (t/D = 0.05, {{ meta.size_ref_um|int }} µm, matrix k = {{ meta.km_ref }} W/m·K), with perfect interfaces and with the median fitted interfacial resistance; the Maxwell ceiling is the limit for isolated spheres of infinitely conductive filler.</p>
+    <p>Values are as printed in the cited sources (figure values are pixel-digitized; abstract-only values are lower confidence). Check the source before reusing a number.</p>
+  </footer>
+</div>
+<script type="application/json" id="argus-data"><!--ARGUS_DATA--></script>
+<script>
+/*ARGUS_SCRIPT*/
+</script>

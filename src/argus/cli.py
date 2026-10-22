@@ -229,6 +229,22 @@ def report_course(root: Optional[Path] = RootOpt):
     typer.echo(f"wrote {out.relative_to(lay.root)} and {len(list((out.parent / 'figures').glob('*.png')))} figures")
 
 
+@report_app.command("explorer")
+def report_explorer(root: Optional[Path] = RootOpt):
+    """Render the interactive explorer: docs/explorer/index.html (+ an artifact fragment)."""
+    from .fingerprint import StaleAnalysis
+    from .report.explorer import render
+
+    lay = layout(root)
+    try:
+        paths = render(lay)
+    except StaleAnalysis as e:
+        typer.echo(f"Cannot render: {e}")
+        raise typer.Exit(1)
+    for name, p in paths.items():
+        typer.echo(f"wrote {p.relative_to(lay.root)} ({p.stat().st_size // 1024} KB, {name})")
+
+
 @app.command("new-paper")
 def new_paper(
     doi: str = typer.Option(..., help="DOI, e.g. 10.3390/polym12345678"),
