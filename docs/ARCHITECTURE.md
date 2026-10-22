@@ -330,7 +330,7 @@ baselines. Calibrated 90% intervals are ×/÷3.4 wide. Details are in [`reports/
 Because `argus verify` compares generated files byte-for-byte, `.gitattributes` pins their line endings
 (CSV → CRLF, JSON/JSONL → LF). That way a fresh clone verifies on Windows and Linux regardless of
 `core.autocrlf`. CI (`.github/workflows/ci.yml`) runs `argus validate`, `pytest` and `argus verify` on
-every push and pull request.
+every pull request and every push to `main`.
 
 Commands:
 

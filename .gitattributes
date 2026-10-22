@@ -4,3 +4,4 @@
 *.csv                     text eol=crlf
 data/processed/*.jsonl    text eol=lf
 datapackage.json          text eol=lf
+CITATION.cff              text eol=lf

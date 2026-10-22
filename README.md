@@ -4,7 +4,7 @@
 
 All values are traceable to a specific paper, table, figure, or text location. No value is estimated, back-calculated or model-predicted; literature-comparison values are excluded. Figure-derived values are pixel-digitized with a reproducible script and flagged `value_source=figure`, `confidence=Medium`.
 
-**Dataset v1.1.0** (2026-10-22): **258 rows / 95 papers**. See [data/CHANGELOG.md](data/CHANGELOG.md) for what changed since v1.0 (260 rows).
+**Dataset v1.1.0** (released 2026-10-23, tag `data-v1.1`): **258 rows / 95 papers**. See [data/CHANGELOG.md](data/CHANGELOG.md) for what changed since v1.0 (260 rows).
 
 | Document | What it covers |
 |---|---|
@@ -150,6 +150,18 @@ See [docs/ROADMAP.md](docs/ROADMAP.md). In short:
 
 ---
 
-## License / provenance
+## Citation
 
-Values were extracted from open-access papers (CC-BY, CC-BY-SA, etc.). This dataset is for research use; verify values against the original sources before commercial or regulatory use. Sci-Hub was deliberately not used.
+> Kumar, A., & Reddy, R. K. S. (2026). ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN) (Version 1.1.0) [Data set]. https://github.com/KumarSrinidhi/sctproject
+
+`CITATION.cff` holds the machine-readable version (GitHub shows it under "Cite this repository"). When you reuse an individual value, also cite its source paper; the DOI is in every row.
+
+---
+
+## License
+
+- **Code:** [MIT](LICENSE). This covers `src/`, `tests/`, the Python scripts in `work/`, `pyproject.toml` and `.github/`.
+- **Data:** [CC BY 4.0](LICENSE-DATA.md). This covers everything else in the repository: the published tables, `data/`, `reports/`, the documents in `docs/`, the earlier reports and figures at the root, and the legacy logs and backups. `LICENSE-DATA.md` has the full list.
+- **Third-party papers** stored in `work/fulltext/`, `work/phase4_browser/` and `work/figures/` keep their publishers' licences; two are non-commercial (CC BY-NC). Work through the checklist in `LICENSE-DATA.md` before making the repository public.
+
+Values were extracted from open-access papers only; Sci-Hub was deliberately not used. Check a value against its source before commercial or regulatory use.

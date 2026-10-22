@@ -3,9 +3,37 @@
   "name": "argus-polymer-ceramic-thermal-conductivity",
   "title": "Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)",
   "version": "1.1.0",
-  "created": "2026-10-22",
+  "created": "2026-10-23T00:00:00Z",
   "description": "Experimental effective thermal conductivity of polymer-ceramic composites, primarily epoxy filled with h-BN, BN nanosheets and AlN (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred.",
   "homepage": "https://github.com/KumarSrinidhi/sctproject",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Aniket Kumar",
+      "role": "author"
+    },
+    {
+      "title": "Rao Kumar Srinidhi Reddy",
+      "role": "author"
+    }
+  ],
+  "keywords": [
+    "thermal conductivity",
+    "thermal interface materials",
+    "semiconductor packaging",
+    "boron nitride",
+    "aluminium nitride",
+    "epoxy composites",
+    "characterization techniques",
+    "laser flash analysis",
+    "transient plane source"
+  ],
   "resources": [
     {
       "name": "measurements",

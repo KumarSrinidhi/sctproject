@@ -2,7 +2,7 @@
 # Thermal conductivity of BN- and AlN-filled epoxy: what the measurement method does to the number
 
 **Course:** Semiconductor Characterization Techniques · **Project:** ARGUS source-verified dataset, v{{ meta.version }} ({{ meta.released }})
-**Authors:** _add team names_ · **Repository:** `KumarSrinidhi/sctproject` · **Data fingerprint:** `{{ fp.sha256 }}` · **Rendered:** {{ today }}
+**Authors:** {{ authors|join(" and ") }} · **Repository:** `KumarSrinidhi/sctproject` · **Data fingerprint:** `{{ fp.sha256 }}` · **Rendered:** {{ today }}
 
 ## Abstract
 
@@ -289,6 +289,12 @@ argus report course         # re-renders this file and its figures
 ```
 
 The report refuses to render if any analysis output was computed from different data (fingerprint `{{ fp.sha256 }}`) or from a quick run. The interactive explorer is generated with `argus report explorer` (`docs/explorer/index.html`).
+
+## Appendix B. Citation and licence
+
+> {{ citation }}
+
+The dataset, including this report, is licensed under CC BY 4.0 (`LICENSE-DATA.md`), and the `argus` code under MIT (`LICENSE`). The third-party papers stored in `work/` keep their publishers' licences. When reusing a value, cite its source paper as well; its DOI is in every row.
 
 ## References
 

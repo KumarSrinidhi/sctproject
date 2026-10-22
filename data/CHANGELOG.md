@@ -4,7 +4,7 @@ Versioning: `major.minor.patch` in `data/dataset.yaml`. Minor = rows added/remov
 Every row-level change is also declared in `data/curation_log.yaml` (`rows_changed` / `rows_removed`), and
 `argus verify` fails if a difference from v1.0 is not declared.
 
-## 1.1.0 (2026-10-22): close open audit items
+## 1.1.0 (2026-10-23): close open audit items
 
 **258 rows / 95 papers** (v1.0: 260 / 95). Confidence 194 High / 64 Medium. Value source 158 text /
 72 table / 28 figure. k range 0.17–47.03 W/(m·K), median 1.035.
@@ -33,6 +33,11 @@ Exclusions (`unusable_sources.csv`, 49 → 51 entries):
 
 Tooling: the dataset is now built by `argus build` from `data/records/` (see `docs/ARCHITECTURE.md`). The
 v1.0 deliverables were reproduced byte-for-byte before these changes were applied.
+
+Data corrections were made on 2026-10-22. Release (tag `data-v1.1`, 2026-10-23): added citation metadata (`CITATION.cff`, generated from
+`data/dataset.yaml`), the data licence (CC BY 4.0, `LICENSE-DATA.md`) and the code licence (MIT, `LICENSE`).
+Authors: Aniket Kumar and Rao Kumar Srinidhi Reddy. No data values changed, so the dataset fingerprint is
+still `12ef8fe97057dafc`.
 
 ## 1.0.0 (2026-10-18): Phase 4 final
 
