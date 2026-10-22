@@ -108,11 +108,15 @@ def physics(root: Optional[Path] = RootOpt, min_points: int = typer.Option(3, he
     from .physics.fit import build_series, fit_series, fits_table, summarize
     from .records import load_records
 
+    from .fingerprint import dataset_fingerprint
+
     lay = layout(root)
-    rows = enrich_records(load_records(lay).records)
+    records = load_records(lay).records
+    rows = enrich_records(records)
     fits = [fit_series(s) for s in build_series(rows, min_points=min_points)]
     table = fits_table(fits)
     summary = summarize(fits, rows)
+    summary["dataset"] = dataset_fingerprint(records)
     lay.reports.mkdir(exist_ok=True)
     if table:
         atomic_write_bytes(lay.reports / "physics_fits.csv", csv_bytes(table, list(table[0])))
@@ -133,9 +137,13 @@ def analyze_bias(root: Optional[Path] = RootOpt):
     from .io import atomic_write_bytes, atomic_write_text, csv_bytes
     from .records import load_records
 
+    from .fingerprint import dataset_fingerprint
+
     lay = layout(root)
-    rows = enrich_records(load_records(lay).records)
+    records = load_records(lay).records
+    rows = enrich_records(records)
     res = analyze(rows)
+    res["dataset"] = dataset_fingerprint(records)
     lay.reports.mkdir(exist_ok=True)
     atomic_write_text(lay.reports / "method_bias.json", json.dumps(res, indent=2, ensure_ascii=False) + "\n")
     atomic_write_text(lay.reports / "method_bias.md", render_markdown(res))
@@ -169,8 +177,11 @@ def ml_benchmark(root: Optional[Path] = RootOpt,
     from .ml.report import parity_plot, predictions_table, render_markdown
     from .records import load_records
 
+    from .fingerprint import dataset_fingerprint
+
     lay = layout(root)
-    ds = build_dataset(enrich_records(load_records(lay).records))
+    records = load_records(lay).records
+    ds = build_dataset(enrich_records(records))
     cfg = Config.fast() if quick else Config()
     typer.echo(f"{len(ds.y)} rows / {ds.n_papers} papers / {len(ds.names)} features; fitting models...")
     res = run_benchmark(ds, cfg)
@@ -183,6 +194,8 @@ def ml_benchmark(root: Optional[Path] = RootOpt,
     atomic_write_bytes(lay.reports / "ml_lopo_predictions.csv", csv_bytes(table, list(table[0])))
     serial = {k: v for k, v in res.items() if k != "lopo_predictions"}
     serial["ablation"] = abl
+    serial["dataset"] = dataset_fingerprint(records)
+    serial["config"] = {"quick": cfg.quick, "repeats": cfg.repeats, "ablation_repeats": cfg.ablation_repeats}
     atomic_write_text(lay.reports / "ml_benchmark.json", json.dumps(serial, indent=2, ensure_ascii=False,
                                                                     default=lambda o: o.tolist() if isinstance(o, np.ndarray) else str(o)) + "\n")
     atomic_write_text(lay.reports / "ml_benchmark.md",
@@ -195,6 +208,41 @@ def ml_benchmark(root: Optional[Path] = RootOpt,
     typer.echo(f"acceptance: {'PASS' if acc.get('passed') else 'FAIL'} ({best} vs {res['best_baseline']})")
     typer.echo("wrote reports/ml_benchmark.md, ml_benchmark.json, ml_lopo_predictions.csv"
                + (", figures/ml_parity_lopo.png" if fig else ""))
+
+
+report_app = typer.Typer(no_args_is_help=True, help="Course report generated from the analysis outputs.")
+app.add_typer(report_app, name="report")
+
+
+@report_app.command("course")
+def report_course(root: Optional[Path] = RootOpt):
+    """Render docs/course_report/COURSE_REPORT.md and its figures from current results."""
+    from .fingerprint import StaleAnalysis
+    from .report.course import render
+
+    lay = layout(root)
+    try:
+        out = render(lay)
+    except StaleAnalysis as e:
+        typer.echo(f"Cannot render: {e}")
+        raise typer.Exit(1)
+    typer.echo(f"wrote {out.relative_to(lay.root)} and {len(list((out.parent / 'figures').glob('*.png')))} figures")
+
+
+@report_app.command("explorer")
+def report_explorer(root: Optional[Path] = RootOpt):
+    """Render the interactive explorer: docs/explorer/index.html (+ an artifact fragment)."""
+    from .fingerprint import StaleAnalysis
+    from .report.explorer import render
+
+    lay = layout(root)
+    try:
+        paths = render(lay)
+    except StaleAnalysis as e:
+        typer.echo(f"Cannot render: {e}")
+        raise typer.Exit(1)
+    for name, p in paths.items():
+        typer.echo(f"wrote {p.relative_to(lay.root)} ({p.stat().st_size // 1024} KB, {name})")
 
 
 @app.command("new-paper")

@@ -742,5 +742,15 @@
         "clear": false
       }
     ]
+  },
+  "dataset": {
+    "rows": 258,
+    "papers": 95,
+    "sha256": "12ef8fe97057dafc"
+  },
+  "config": {
+    "quick": false,
+    "repeats": 5,
+    "ablation_repeats": 5
   }
 }
