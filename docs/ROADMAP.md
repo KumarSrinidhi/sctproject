@@ -10,7 +10,7 @@ Status as of 2026-10-22. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Resea
 | 2 | Normalisation and enrichment | ✅ core done, follow-ups open |
 | 3 | Physics models and fits | 🟡 started |
 | 4 | Measurement-bias analysis (course centrepiece) | ✅ core done, follow-ups open |
-| 5 | Machine learning with honest validation | ⏳ |
+| 5 | Machine learning with honest validation | ✅ core done, follow-ups open |
 | 6 | Acquisition at scale | ⏳ |
 | 7 | Explorer, release and course report | ⏳ |
 
@@ -113,24 +113,49 @@ Next:
 3. **Feed the bias model into ML (Phase 5)**: method group and the abstract-only flag as covariates; weight by
    `rel_sigma_total`.
 
-## Phase 5: Machine learning ⏳
+## Phase 5: Machine learning ✅
 
-The research report sets the bar: published R² of 0.95–0.99 come from random splits and collapse when
-whole papers are held out.
+The research report set the bar: published R² of 0.95–0.99 come from random splits and collapse when whole
+papers are held out.
 
-1. **Features**: φ (with basis), filler family/base, shape, size, functionalisation class, alignment,
-   `direction_effective`, `method_class`, k_m, and physics predictions (Nan R_K = 0, Lewis–Nielsen) as
-   features or offsets.
-2. **Target**: log₁₀ k or log₁₀(k/k_m).
-3. **Models**: regularised linear model on physics features; Gaussian process with an EMT mean;
-   monotone-constrained gradient boosting (xgboost is installed); random forest as baseline. Avoid deep
-   nets and SVR.
-4. **Validation**: GroupKFold and leave-one-paper-out by DOI, with all preprocessing inside the folds; also
-   leave-filler-family-out and a time split. Report the random-split score only to show the leakage gap.
-5. **Uncertainty**: group-aware conformal intervals; check calibration.
+Delivered:
+- `argus ml benchmark` writes [`reports/ml_benchmark.md`](../reports/ml_benchmark.md), the JSON results,
+  per-row leave-one-paper-out predictions with 90% intervals (`ml_lopo_predictions.csv`), and a parity
+  plot.
+- **Setup:** 27 features in 10 groups (loading, physics, filler, morphology, treatment, direction, method,
+  matrix, quality, year). The target is log₁₀(k/k_m). There are 218 single-filler rows from 80 papers.
+- **Models:** baselines (median; calibrated Nan 1997; 5-nearest-neighbours on loading + filler) against
+  ridge (alpha chosen by grouped inner CV), physics + Gaussian-process residual, gradient boosting
+  constrained to be non-decreasing in loading, and a random forest.
+- **Validation:**
+  - Leave-one-paper-out (headline) and repeated 5-fold by paper.
+  - Row-level 5-fold, shown only to expose leakage.
+  - A time split (train ≤ 2021) and leave-one-filler-family-out.
+  - Paper-grouped conformal intervals.
 
-Acceptance: beat both the physics-only baseline and a nearest-neighbour baseline on leave-one-paper-out MAE
-in log₁₀ k. A realistic target is 0.15–0.30, i.e. a factor of 1.4–2.
+Findings (acceptance **passed**):
+- **Accuracy on an unseen paper:** gradient boosting predicts k within a typical **factor of 1.66** (MAE
+  0.221 log₁₀, R² 0.59, 75% within ×2). The baselines reach ×1.91 (nearest neighbours) and ×2.14 (physics).
+  This sits inside the research report's realistic range (×1.4–2).
+- **Monotonicity trade-off:** constraining every loading-derived feature (φ, φ², physics, Maxwell ceiling)
+  costs about 0.02 in MAE against constraining φ and physics only (0.202). It is kept, because the looser
+  model can predict k falling as loading rises.
+- **Leakage:** row-level splits overstate accuracy by up to 0.09 log₁₀ (Gaussian process: 0.152 vs 0.242),
+  enough to turn an honest ×1.75 into an apparent ×1.42.
+- **Intervals:** paper-grouped 90% intervals are calibrated (90% coverage) but wide (×/÷3.4); 68% intervals
+  are about ×/÷1.9.
+- **Which information matters:**
+  - Loading + physics carry most of the information (removing both: +0.13).
+  - Measurement direction is the only other group that clearly helps (+0.03), echoing Phase 4.
+  - Morphology, treatment, matrix and year are not distinguishable from noise with 80 papers.
+- **Over time:** the newer-paper time split is harder (×1.86 for ridge, the best on it). Papers from 2022
+  on have more BNNS and aligned fillers and a lower median enhancement.
+
+Next:
+1. Per-component loading for the 34 hybrid rows, so they can enter the model.
+2. Add `tps_mode` and `lfa_holder` once recorded (Phase 4 follow-up). Direction is the most useful metadata
+   after loading.
+3. Re-run the benchmark after each data release, and track the LOPO MAE in `data/CHANGELOG.md`.
 
 ## Phase 6: Acquisition at scale ⏳
 
