@@ -1,0 +1,37 @@
+{
+  "upload_type": "dataset",
+  "title": "ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)",
+  "creators": [
+    {
+      "name": "Kumar, Aniket"
+    },
+    {
+      "name": "Reddy, Rao Kumar Srinidhi"
+    }
+  ],
+  "description": "Experimental effective thermal conductivity of polymer-ceramic composites, primarily epoxy filled with h-BN, BN nanosheets and AlN (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred.",
+  "version": "1.1.0",
+  "publication_date": "2026-10-23",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": [
+    "thermal conductivity",
+    "thermal interface materials",
+    "semiconductor packaging",
+    "boron nitride",
+    "aluminium nitride",
+    "epoxy composites",
+    "characterization techniques",
+    "laser flash analysis",
+    "transient plane source"
+  ],
+  "notes": "Data licensed CC-BY-4.0; the argus toolkit in the repository is licensed MIT. Third-party papers are not included; every row cites the DOI of its source.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/KumarSrinidhi/sctproject",
+      "relation": "isSupplementedBy",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ]
+}

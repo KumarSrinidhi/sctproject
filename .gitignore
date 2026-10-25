@@ -19,3 +19,5 @@ OPENALEX_API_KEY.txt
 .env
 # Third-party files kept locally but not redistributed (see LICENSE-DATA.md).
 local_archive/
+# Release bundles built by `argus release bundle`.
+dist/

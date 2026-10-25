@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T20:22:50",
+  "generated": "2026-10-25T20:27:28",
   "overall": "PASS",
   "checks": [
     {
@@ -18,7 +18,7 @@
       "id": "outputs_in_sync",
       "description": "Every generated file (CSVs, rows.jsonl, enriched table, datapackage.json) equals a fresh build",
       "ok": true,
-      "detail": "9 files in sync"
+      "detail": "10 files in sync"
     },
     {
       "id": "exclusions_consistent",
