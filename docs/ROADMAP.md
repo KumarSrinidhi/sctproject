@@ -218,24 +218,27 @@ Done:
   - **Chart:** k or k/k_m against vol% on a log axis, with Maxwell-ceiling and Nan 1997 reference curves.
   - **Provenance:** a hover tooltip, a pinned detail card with the verbatim source quote and DOI link, and
     a sortable table view with a CSV copy.
-  - **Publishing:** `explorer.artifact.html` is the same page as a fragment for a shareable link. The
-    repository is private, so GitHub Pages would need a paid plan.
+  - **Publishing:** `explorer.artifact.html` is the same page as a fragment for a shareable link.
+    GitHub Pages (free for a public repository) is not set up.
 
-- **Versioned release:** tag `data-v1.1` on `main`.
+- **Versioned releases:** tags `data-v1.1` and `data-v1.2` on `main`.
   - Authors are Aniket Kumar and Rao Kumar Srinidhi Reddy, and appear in the report and the explorer.
   - `CITATION.cff` is generated from `data/dataset.yaml` and checked by `argus verify`.
   - Licences: data under CC BY 4.0 (`LICENSE-DATA.md`), code under MIT (`LICENSE`).
 
 Next:
-1. **Zenodo DOI.** The repository is private, so the upload is manual. `argus release bundle` builds the
-   upload zip and `.zenodo.json` holds the form fields; follow [ZENODO.md](ZENODO.md). Then add the
-   reserved DOI to `data/dataset.yaml` (`doi`, `publisher: Zenodo`).
-2. **Before going public:**
+1. **Zenodo DOI.** The upload is manual, because the GitHub integration needs the repository owner's admin
+   rights. `argus release bundle` builds the upload zip, and `.zenodo.json` holds the form fields. Follow
+   [ZENODO.md](ZENODO.md), then add the reserved DOI to `data/dataset.yaml` (`doi`, `publisher: Zenodo`).
+2. **Git history (blocks publishing the Zenodo record):**
    - ✅ Done on 2026-10-25: third-party files without clear redistribution rights were moved out of git,
      including the captcha pages. Every stored file is now CC BY (`work/THIRD_PARTY.csv`).
-   - Still to do: those files remain in the git history, so publish from a fresh-history copy (see
-     `LICENSE-DATA.md`).
-3. **Report finishing:** a PDF/Word export if the course requires one.
+   - Still to do: the repository has been public since 2026-10-19, so those files are still reachable
+     through its history. Options are in `LICENSE-DATA.md`; all of them need the owner.
+3. **Known cosmetic issue for the next data release:** two `source_location` quotes in P116
+   (10.1038/s41467-024-47147-1) contain LaTeX residue from the Europe PMC rendering where the paper prints
+   κ_eff. Fixing them changes the data fingerprint, so it waits for a data release.
+4. **Report finishing:** a PDF/Word export if the course requires one.
 
 ---
 

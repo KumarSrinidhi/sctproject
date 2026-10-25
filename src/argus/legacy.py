@@ -37,7 +37,8 @@ CURATION_HEADER = (
     "# the chronological extraction log.\n"
 )
 EXCLUSIONS_HEADER = (
-    "# Sources that were screened but contribute no rows, with the reason.\n"
+    "# Sources excluded at screening or extraction, with the reason. An action of\n"
+    "# 'recovered' or 'abstract-recovered' means rows were later recovered after all.\n"
     "# Compiled to unusable_sources.csv. Add an entry whenever a candidate is dropped\n"
     "# so that every exclusion is auditable (audit finding D10).\n"
 )

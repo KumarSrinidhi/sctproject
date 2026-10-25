@@ -9,7 +9,7 @@
       "name": "Reddy, Rao Kumar Srinidhi"
     }
   ],
-  "description": "Experimental effective thermal conductivity of polymer composites filled with h-BN, BN nanosheets or AlN, alone or in hybrids, most often in epoxy (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred.",
+  "description": "Experimental effective thermal conductivity of polymer composites filled with h-BN, BN nanosheets or AlN, alone or in hybrids, most often in epoxy (thermal interface and packaging materials). Every row cites its source paper (DOI) and quotes the table, sentence or figure the value comes from, in an open-access full text or, for a few rows, a publicly available abstract. No value is back-calculated or model-predicted; values read from figures are pixel-digitized and, like abstract-only values, marked Medium confidence.",
   "version": "1.2.0",
   "publication_date": "2026-10-25",
   "license": "cc-by-4.0",

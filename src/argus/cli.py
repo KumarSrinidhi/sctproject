@@ -289,7 +289,7 @@ def release_bundle(root: Optional[Path] = RootOpt,
                    out: Path = typer.Option(Path("dist"), "--out", help="Output folder (relative to the project root)")):
     """Zip the dataset files (no code, no third-party papers) for a Zenodo upload -> dist/."""
     from .build import expected_outputs
-    from .release import bundle_members, build_bundle, dataset_meta
+    from .release import build_bundle, dataset_meta
 
     lay = layout(root)
     stale = [p.name for p, data in expected_outputs(lay).items() if not p.exists() or p.read_bytes() != data]
@@ -304,7 +304,11 @@ def release_bundle(root: Optional[Path] = RootOpt,
         raise typer.Exit(1)
     out_dir = out if out.is_absolute() else lay.root / out
     path, digest = build_bundle(lay, out_dir)
-    typer.echo(f"wrote {path} ({path.stat().st_size // 1024} KB, {len(bundle_members(lay)) + 2} files)")
+    import zipfile
+
+    with zipfile.ZipFile(path) as z:
+        n_files = len(z.namelist())
+    typer.echo(f"wrote {path} ({path.stat().st_size // 1024} KB, {n_files} files)")
     typer.echo(f"sha256 {digest}")
     typer.echo(f"Zenodo metadata: .zenodo.json (version {meta.get('version')}, licence {meta.get('license')})")
 

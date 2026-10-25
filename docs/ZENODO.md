@@ -1,8 +1,14 @@
 # Publishing the dataset on Zenodo (DOI)
 
-The repository is private, so Zenodo's GitHub integration (which needs a public repository and admin
-rights to install a webhook) cannot be used yet. Upload the dataset bundle by hand instead. It takes about
-ten minutes.
+Zenodo's GitHub integration installs a webhook, so it needs the repository owner's admin rights. Until the
+owner sets it up, upload the dataset bundle by hand instead. It takes about ten minutes.
+
+**Before you publish, settle the repository question.** The repository is public, and its git history still
+holds third-party files that may not be redistributed (see "Third-party files in the git history" in
+`LICENSE-DATA.md`). The bundle itself is clean. But its `README.txt` and `CITATION.cff`, and the *Related
+works* field below, point readers to the repository from a permanent record. Fix the history (or point
+`homepage` in `data/dataset.yaml` at a clean repository) before step 5. Reserving the DOI (steps 3–4) is
+safe now.
 
 ## 1. Build the bundle
 
@@ -17,9 +23,12 @@ argus release bundle
 This writes `dist/ARGUS-dataset-v<version>.zip` (for example `ARGUS-dataset-v1.2.0.zip`). It refuses to
 run if the data differ from the released tag of the same version, so a bundle can never carry the wrong
 version label. It holds the dataset files only:
-- the published CSVs, `datapackage.json`, `CITATION.cff` and `LICENSE-DATA.md`;
-- the per-paper records in `data/records/`;
-- a `README.txt` and `SHA256SUMS.txt`.
+- the published CSVs (`thermal_conductivity_dataset.csv`, `paper_inventory.csv`, `extraction_log.csv`,
+  `uncertain_measurements.csv`, `unusable_sources.csv`), `datapackage.json` and `CITATION.cff`;
+- from `data/`: `dataset.yaml`, `CHANGELOG.md`, `curation_log.yaml`, `exclusions.yaml`, `tombstones.yaml`,
+  `processed/measurements_enriched.csv` and the per-paper records in `records/`;
+- three generated files: `LICENSE.txt` (what the licence covers inside the archive), `README.txt` and
+  `SHA256SUMS.txt`.
 
 It contains no code and no third-party papers. Rebuilding it gives the same bytes on any machine, whatever
 the checkout's line endings: CSVs are stored with CRLF and every other text file with LF.
@@ -27,9 +36,6 @@ the checkout's line endings: CSVs are stored with CRLF and every other text file
 - The zip file itself is identical too, given the same zlib build.
 
 Every field you need for the form below is in `.zenodo.json`, generated from `data/dataset.yaml`.
-
-**v1.2.0:** `ARGUS-dataset-v1.2.0.zip`, built from tag `data-v1.2`, has sha256
-`b21eb0ce356845b767cf349256589941cbf0ddcc3ec72036fa04e176b2456119` (664 KB, 190 files).
 
 ## 2. Optional: a dry run on the sandbox
 
@@ -54,7 +60,7 @@ are not real. Do steps 3–5 there first if you want to see the form without con
    | Licenses | Creative Commons Attribution 4.0 International |
    | Keywords | the nine `keywords` in `.zenodo.json` |
    | Version | the `version` (1.2.0) |
-   | Related works | leave out while the GitHub repository is private (readers would get a 404). Once it is public, add: *Is supplemented by*, URL `https://github.com/KumarSrinidhi/sctproject`, resource type Software |
+   | Related works | the `related_identifiers` in `.zenodo.json`: *Is supplemented by*, URL `https://github.com/KumarSrinidhi/sctproject`, resource type Software. Add it only once the repository question above is settled. |
    | Visibility | Public |
 
 5. Click **Save draft**. Do **not** publish yet.
@@ -62,14 +68,18 @@ are not real. Do steps 3–5 there first if you want to see the form without con
 ## 4. Send the reserved DOI
 
 Send the reserved DOI (it looks like `10.5281/zenodo.1234567`). It is then added to `data/dataset.yaml`
-(`doi:` and `publisher: Zenodo`), so that:
+(`doi:` and `publisher: Zenodo`) and committed to `main`, so that:
 - `CITATION.cff`, `.zenodo.json`, the README, `LICENSE-DATA.md` and the course report cite it;
-- a rebuilt bundle carries it.
+- a rebuilt bundle carries it in `README.txt` and `CITATION.cff`.
+
+The data stay those of tag `data-v1.2`; only the metadata change. Check the rebuilt bundle again before
+uploading it: open the zip, read `README.txt`, and confirm the DOI appears there.
 
 ## 5. Replace the file and publish
 
 1. In the draft, delete the old zip and upload the rebuilt `dist/ARGUS-dataset-v1.2.0.zip`.
 2. Click **Publish**.
+3. Record the published file's sha256 (`argus release bundle` prints it) in `data/CHANGELOG.md`.
 
 Publishing is permanent: the files of a published version cannot be changed or deleted. A later dataset
 release becomes a **New version** of the same record, with its own DOI plus a DOI that always points to
@@ -77,6 +87,5 @@ the latest version.
 
 ## Later: switching to the GitHub integration
 
-Once the repository is public (see "Before making the repository public" in `LICENSE-DATA.md`), the
-repository owner can enable it at **zenodo.org → GitHub**. Every GitHub Release then becomes a new
-Zenodo version automatically, using `.zenodo.json` for the metadata.
+With a clean history, the repository owner can enable it at **zenodo.org → GitHub**. Every GitHub Release
+then becomes a new Zenodo version automatically, using `.zenodo.json` for the metadata.

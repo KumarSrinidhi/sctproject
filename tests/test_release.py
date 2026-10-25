@@ -193,3 +193,30 @@ def test_bundle_does_not_depend_on_checkout_line_endings(repo_layout, tmp_path):
         shutil.copy(repo_layout.root / "pyproject.toml", root / "pyproject.toml")
         hashes.append(build_bundle(Layout(root), tmp_path / f"out{i}")[1])
     assert hashes[0] == hashes[1]
+
+
+def test_bundle_carries_its_own_licence_not_the_repository_one(repo_layout, tmp_path):
+    import zipfile
+
+    from argus.release import build_bundle
+
+    path, _ = build_bundle(repo_layout, tmp_path)
+    z = zipfile.ZipFile(path)
+    top = z.namelist()[0].split("/")[0]
+    rel = [n.split("/", 1)[1] for n in z.namelist()]
+    assert "LICENSE.txt" in rel and "LICENSE-DATA.md" not in rel  # the repo file describes code, work/, ...
+    lic = z.read(f"{top}/LICENSE.txt").decode("utf-8")
+    meta = dataset_meta(repo_layout)
+    assert meta["license"] in lic and meta["version"] in lic
+    assert "Quoted passages" in lic and "qc_findings" in lic and "no code" in lic
+    readme = z.read(f"{top}/README.txt").decode("utf-8")
+    assert "(see LICENSE.txt)" in readme and "  LICENSE.txt" in readme
+
+
+def test_datapackage_declares_every_published_table(repo_layout):
+    from argus.release import BUNDLE_FILES
+
+    pkg = json.loads((repo_layout.root / "datapackage.json").read_text(encoding="utf-8"))
+    paths = {r["path"] for r in pkg["resources"]}
+    assert {f for f in BUNDLE_FILES if f.endswith(".csv")} <= paths
+    assert pkg["title"].startswith("ARGUS: ")

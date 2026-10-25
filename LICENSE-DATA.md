@@ -55,19 +55,28 @@ historical and superseded by this file.
   optional "other groups' data" layer: points from EVF (Anastasiou 2026) and from Sarikhani et al. 2022.
   Those points keep their sources' CC BY 4.0 licences, with the attribution given in the page footer and in
   `data/external/sources.yaml`. Only the ARGUS records in those pages are licensed by this file.
-- **Quoted excerpts.** The `source_location` and `notes` columns quote short passages from the source papers
-  to make every value traceable. Those passages remain the work of their original authors.
+- **Quoted excerpts.** Text fields of the tables and records quote short passages from the source papers to
+  make every value traceable: `source_location`, `notes`, and extraction-log fields such as
+  `tables_inspected` and `qc_findings`. Those passages remain the work of their original authors, under the
+  source papers' own licences, and this file does not relicense them.
   - The measured values themselves are facts reported by those papers.
   - When you reuse a value, cite its source paper (the DOI is in every row) as well as this dataset.
 
-## Before making the repository public
+The Zenodo archive (`argus release bundle`) carries its own `LICENSE.txt`, which states the same terms for
+the files inside it.
 
+## Third-party files in the git history
+
+The repository has been public since it was created (2026-10-19).
 1. ~~Remove third-party files whose licence does not allow redistribution.~~ Done on 2026-10-25: every
    remaining file is CC BY (`work/THIRD_PARTY.csv`, checked by `pytest`).
 2. ~~Delete the three saved captcha pages~~, which embedded the IP address of the machine that fetched
    them. Done on 2026-10-25.
-3. **Still to do:** the removed files are still in the git history. Publish from a fresh repository (a
-   single snapshot commit of `main`), or rewrite this repository's history, so they are really gone.
+3. **Still to do:** the removed files are still reachable through the git history, including older
+   branches, the tag `data-v1.1` and pull-request refs. Do one of the following:
+   - make the repository private;
+   - replace it with a fresh repository holding a single snapshot commit of `main`;
+   - rewrite the history and ask GitHub Support to purge cached views and pull-request refs.
 
 ## How to cite
 

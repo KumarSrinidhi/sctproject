@@ -10,8 +10,10 @@ released: '2026-10-25'
 description: >-
   Experimental effective thermal conductivity of polymer composites filled with h-BN,
   BN nanosheets or AlN, alone or in hybrids, most often in epoxy (thermal interface
-  and packaging materials). Every row is traceable to a table, figure or sentence of an open-access
-  source; no value is estimated or inferred.
+  and packaging materials). Every row cites its source paper (DOI) and quotes the table, sentence
+  or figure the value comes from, in an open-access full text or, for a few rows, a publicly
+  available abstract. No value is back-calculated or model-predicted; values read from figures are
+  pixel-digitized and, like abstract-only values, marked Medium confidence.
 homepage: https://github.com/KumarSrinidhi/sctproject
 # Citation and licensing. CITATION.cff and datapackage.json are generated from
 # these fields by `argus build`; edit here, never in the generated files.

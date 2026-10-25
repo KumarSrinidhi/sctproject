@@ -2,7 +2,7 @@
 # Thermal conductivity of BN- and AlN-filled polymers: what the measurement method does to the number
 
 **Course:** Semiconductor Characterization Techniques · **Project:** ARGUS source-verified dataset, v1.2.0 (2026-10-25)
-**Authors:** Aniket Kumar and Rao Kumar Srinidhi Reddy · **Repository:** `KumarSrinidhi/sctproject` · **Data fingerprint:** `893ecb8f094a61fb` · **Rendered:** 2026-10-25
+**Authors:** Aniket Kumar and Rao Kumar Srinidhi Reddy · **Repository:** `KumarSrinidhi/sctproject` · **Data fingerprint:** `893ecb8f094a61fb` · **Rendered:** 2026-10-26
 
 ## Abstract
 
@@ -345,7 +345,7 @@ These gaps limit every analysis above. We therefore suggest a minimum report for
 
 ### 5.3 Limitations
 
-- **Open-access scope.** The dataset is limited to open-access sources. About 200 publisher-blocked papers were logged but not used, which may bias the sample toward certain journals and groups.
+- **Open-access scope.** The dataset is limited to open-access full texts and, for a few rows, publicly available abstracts. About 200 publisher-blocked papers were logged but not used, which may bias the sample toward certain journals and groups.
 - **Figure-only values not yet digitized.** The 79 papers added in v1.2 also show 698 values only in figures. They were counted but not digitized, so those papers are represented by what they print in text and tables.
 - **Lower-confidence rows.** 87 rows are Medium confidence (abstract-only, digitized, or printed as approximate or as a bound). Abstract-only values appear biased upward, since abstracts quote a paper's best result.
 - **Between-paper method effects are associations.** Methods are confounded with everything else that differs between papers. The decisive experiment, one set of samples measured by several techniques, is not in the literature we could access.

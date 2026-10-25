@@ -90,7 +90,7 @@ flowchart LR
 data/
   records/P001_10.3390_polym10030340.yaml   ← source of truth, one per paper (95)
   curation_log.yaml     pipeline-level log entries (bulk fixes); each declares rows it touched
-  exclusions.yaml       screened sources that contribute no rows, with reasons
+  exclusions.yaml       excluded sources with reasons (some later recovered)
   tombstones.yaml       removed row ids (never reusable)
   dataset.yaml          dataset name, version, release date
   processed/            generated: rows.jsonl, measurements_enriched.csv
