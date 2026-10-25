@@ -86,6 +86,13 @@ def build_context(lay: Layout, fig_dir: Path, fig_rel: str) -> dict[str, Any]:
     check_fresh("reports/ml_benchmark.json", ml, fp, "argus ml benchmark")
     if (ml.get("config") or {}).get("quick"):
         raise StaleAnalysis("reports/ml_benchmark.json came from a --quick run; re-run `argus ml benchmark`")
+    ext = None
+    ext_path = lay.reports / "external_validation.json"
+    if ext_path.exists():
+        ext = _load(ext_path)
+        check_fresh("reports/external_validation.json", ext, fp, "argus external validate")
+        if (ext.get("config") or {}).get("quick"):
+            raise StaleAnalysis("reports/external_validation.json came from a --quick run; re-run `argus external validate`")
     pred_path = lay.reports / "ml_lopo_predictions.csv"
     pred_rows = read_csv(pred_path)
     if len(pred_rows) != ml["data"]["rows"]:
@@ -155,8 +162,95 @@ def build_context(lay: Layout, fig_dir: Path, fig_rel: str) -> dict[str, Any]:
         "leak": {"group5": M[leak_model]["group5"]["mae_log10"], "random5": M[leak_model]["random5"]["mae_log10"]},
         "abl": abl, "clear": clear, "time_best": time_best, "timed": timed,
         "ranking": ml["ranking_lopo_mae"],
+        "best_phrase": MODEL_PHRASE.get(best, best),
+        "ext": external_context(ext, figs_ext(lay, fig_dir, fig_rel)) if ext else None,
     }
     return ctx
+
+
+MODEL_PHRASE = {
+    "xgboost": "gradient boosting constrained so that predicted *k* never falls as loading rises",
+    "ensemble": "an equal-weight ensemble of calibrated physics with a Gaussian-process correction, ridge "
+                "regression and monotone gradient boosting",
+    "gp_residual": "calibrated physics with a Gaussian-process correction",
+    "random_forest": "a random forest",
+    "ridge": "ridge regression",
+}
+MODEL_LABEL = {"physics": "calibrated physics (baseline)", "gp_residual": "physics + Gaussian process",
+               "ensemble": "ensemble", "xgboost": "gradient boosting", "ridge": "ridge", "random_forest": "random forest",
+               "knn": "nearest neighbours (baseline)", "median": "median (baseline)"}
+
+
+def figs_ext(lay: Layout, fig_dir: Path, fig_rel: str) -> dict[str, str]:
+    """Copy the external-validation figures next to the report's own figures."""
+    import shutil
+
+    out = {}
+    transfer = "external_transfer_all.png"
+    if not (lay.reports / "figures" / transfer).exists():
+        transfer = "external_transfer_evf.png"
+    for name in (transfer, "external_bcc_models.png"):
+        src = lay.reports / "figures" / name
+        if src.exists():
+            fig_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(src, fig_dir / name)
+            out[name.removeprefix("external_").removesuffix(".png")] = f"{fig_rel}/{name}"
+    return out
+
+
+def _crosscheck_summary(ext: dict[str, Any]) -> dict[str, Any] | None:
+    cc = [c for c in (ext.get("crosscheck") or {}).values() if c["shared_papers"]]
+    if not cc:
+        return None
+    grades = Counter(p["grade"] for c in cc for p in c["pair_rows"])
+    review = (ext.get("crosscheck_review") or {}).get("papers") or {}
+    return {"papers": len({d for c in cc for d in c["shared_dois"]}),
+            "pairs": sum(c["pairs"] for c in cc), "agree": grades.get("agree", 0),
+            "minor": grades.get("minor", 0), "disagree": grades.get("disagree", 0),
+            "unmatched": sum(len(c["unmatched_external"]) for c in cc), "review": review}
+
+
+def external_context(ext: dict[str, Any], figs: dict[str, str]) -> dict[str, Any]:
+    """Pre-digested numbers for Section 4.5, so the template stays readable."""
+    pc = ext.get("physics_check", {})
+    compared = [(src, m, s) for src, chk in pc.items() for m, s in chk.items()
+                if isinstance(s, dict) and "n_exact" in s]
+    exact = [(src, m, s) for src, m, s in compared if s["n_exact"] == s["n"]]
+    key = "all" if "all" in ext["transfer"] else next(iter(ext["transfer"]), None)
+    t = ext["transfer"].get(key) if key else None
+    rows = []
+    if t:
+        for m in t["ranking_test_mae"]:
+            e = t["models"][m]
+            vs = e.get("vs_reference")
+            rows.append({"model": m, "label": MODEL_LABEL.get(m, m), "factor": e["test"]["mae_factor"],
+                         "mae": e["test"]["mae_log10"], "ci": e["test_mae_ci95"],
+                         "ci_factor": ((10 ** e["test_mae_ci95"][0], 10 ** e["test_mae_ci95"][1])
+                                       if e["test_mae_ci95"] else None),
+                         "vs": vs, "coverage": e["interval"]["coverage"], "lopo": e["train_lopo_mae"],
+                         "in": (e.get("in_domain") or {}).get("mae_log10"), "out": (e.get("out_of_domain") or {}).get("mae_log10")})
+    clearly_better = [r["label"] for r in rows if r["vs"] and r["vs"]["clear"] and r["vs"]["mae_diff"] < 0]
+    clearly_worse = [r["label"] for r in rows if r["vs"] and r["vs"]["clear"] and r["vs"]["mae_diff"] > 0
+                     and r["model"] not in ("median", "knn")]
+    pooled = (ext.get("pooled") or {}).get(key) or next(iter((ext.get("pooled") or {}).values()), None)
+    cc = {k: c for k, c in (ext.get("crosscheck") or {}).items() if c["shared_papers"]}
+    by_model = {r["model"]: r for r in rows}
+    return {
+        "sources": ext["sources"], "key": key, "test": t["test"] if t else None, "rows": rows, "by": by_model,
+        "domain": (t or {}).get("domain") or {"new_fillers": [], "new_matrices": [], "sources": []},
+        "code": {"n_models": len(compared), "n_exact": len(exact),
+                 "points": sum(s["n"] for _, _, s in compared),
+                 "points_exact": sum(s["n"] for _, _, s in exact), "sources": sorted(pc)},
+        "cc": _crosscheck_summary(ext),
+        "dem": pc.get("bcc", {}).get("bruggeman_dem"),
+        "bcc": ext.get("physics_on_bcc"), "pooled": pooled,
+        "pooled_clear": ([MODEL_LABEL.get(m, m) for m, e in pooled["models"].items()
+                          if e["train_rows"]["ci95"] and e["train_rows"]["ci95"][1] < 0] if pooled else []),
+        "pooled_max_abs": (max(abs(e["train_rows"]["diff"]) for e in pooled["models"].values()) if pooled else None),
+        "coverage_min": min((r["coverage"] for r in rows if r["model"] not in ("median", "knn")), default=None),
+        "clearly_better": clearly_better, "clearly_worse": clearly_worse,
+        "crosscheck": cc, "figs": figs,
+    }
 
 
 def render(lay: Layout, out: Path | None = None) -> Path:

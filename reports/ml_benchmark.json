@@ -631,9 +631,94 @@
         "interval_factor_median": 1.97
       },
       "leakage_gap_mae": 0.044
+    },
+    "ensemble": {
+      "description": "Mean of gp_residual, ridge, xgboost (chosen on ARGUS-only results; confirmed on the external EVF test set)",
+      "baseline": false,
+      "lopo": {
+        "n": 218,
+        "mae_log10": 0.2178,
+        "mae_factor": 1.651,
+        "rmse_log10": 0.3003,
+        "r2": 0.621,
+        "within_factor_2": 0.752,
+        "bias_log10": -0.0078
+      },
+      "group5": {
+        "mae_log10": 0.2202,
+        "rmse_log10": 0.3052,
+        "r2": 0.6086,
+        "within_factor_2": 0.7634,
+        "mae_log10_sd": 0.0066,
+        "mae_factor": 1.66,
+        "repeats": 5
+      },
+      "random5": {
+        "mae_log10": 0.1547,
+        "rmse_log10": 0.2196,
+        "r2": 0.7972,
+        "within_factor_2": 0.8714,
+        "mae_log10_sd": 0.004,
+        "mae_factor": 1.428,
+        "repeats": 5
+      },
+      "time_split": {
+        "n": 70,
+        "mae_log10": 0.282,
+        "mae_factor": 1.914,
+        "rmse_log10": 0.3754,
+        "r2": 0.45,
+        "within_factor_2": 0.614,
+        "bias_log10": -0.1173
+      },
+      "filler_out": {
+        "AlN": {
+          "n": 20,
+          "mae_log10": 0.3061,
+          "mae_factor": 2.023,
+          "rmse_log10": 0.4583,
+          "r2": -0.018,
+          "within_factor_2": 0.7,
+          "bias_log10": -0.2108
+        },
+        "BNNS": {
+          "n": 53,
+          "mae_log10": 0.2424,
+          "mae_factor": 1.747,
+          "rmse_log10": 0.2758,
+          "r2": 0.497,
+          "within_factor_2": 0.66,
+          "bias_log10": 0.099
+        },
+        "hBN": {
+          "n": 137,
+          "mae_log10": 0.2181,
+          "mae_factor": 1.652,
+          "rmse_log10": 0.3003,
+          "r2": 0.628,
+          "within_factor_2": 0.737,
+          "bias_log10": -0.0249
+        }
+      },
+      "conformal_90": {
+        "nominal": 0.9,
+        "row_coverage": 0.899,
+        "paper_coverage_mean": 0.828,
+        "half_width_log10_median": 0.462,
+        "interval_factor_median": 2.9
+      },
+      "conformal_68": {
+        "nominal": 0.68,
+        "row_coverage": 0.688,
+        "paper_coverage_mean": 0.638,
+        "half_width_log10_median": 0.25,
+        "interval_factor_median": 1.78
+      },
+      "leakage_gap_mae": 0.0655
     }
   },
   "ranking_lopo_mae": [
+    "ensemble",
     "xgboost",
     "random_forest",
     "ridge",
@@ -643,12 +728,12 @@
     "median"
   ],
   "best_baseline": "knn",
-  "best_model": "xgboost",
+  "best_model": "ensemble",
   "acceptance": {
     "criterion": "best learned model beats the best baseline (physics, kNN, median) on leave-one-paper-out MAE",
     "best_baseline_mae": 0.2811,
-    "best_model_mae": 0.2212,
-    "improvement_log10": 0.0599,
+    "best_model_mae": 0.2178,
+    "improvement_log10": 0.0633,
     "passed": true
   },
   "ablation": {

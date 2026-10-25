@@ -112,6 +112,19 @@ def verify(lay: Layout, write: bool = True) -> Report:
         rep.add("changes_declared", "Every difference from the legacy v1.0 rows is declared in a curation-log entry",
                 not und, "all declared" if not und else f"{len(und)} undeclared: {und[:5]}")
 
+    ext = lay.data / "external"
+    if (ext / "sources.yaml").exists():
+        from .external.manifest import check_files
+
+        files = check_files(ext)
+        bad = [f["path"] for f in files if f["present"] and not f["ok"]]
+        missing = [f["path"] for f in files if not f["present"] and f["committed"]]
+        rep.add("external_raw_checksums",
+                "External raw files are byte-identical to the download recorded in data/external/sources.yaml",
+                not bad and not missing,
+                f"{sum(f['ok'] for f in files)} of {len(files)} files verified"
+                + (f"; changed: {bad}" if bad else "") + (f"; missing: {missing}" if missing else ""))
+
     rep.stats = dataset_stats(rows)
     if write:
         lay.reports.mkdir(exist_ok=True)

@@ -81,4 +81,7 @@ def test_report_renders_from_current_outputs(repo_layout, tmp_path):
     text = out.read_text(encoding="utf-8")
     assert "## 4. Results" in text and "## References" in text
     assert "{{" not in text and "{%" not in text
-    assert len(list((tmp_path / "figures").glob("*.png"))) == 7
+    assert len(list((tmp_path / "figures").glob("fig*.png"))) == 7
+    if (repo_layout.reports / "external_validation.json").exists():
+        assert "### 4.5 Testing on data we did not curate" in text
+        assert len(list((tmp_path / "figures").glob("external_*.png"))) == 2
