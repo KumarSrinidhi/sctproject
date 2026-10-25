@@ -1,0 +1,70 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P141
+paper:
+  doi: 10.1039/d4ra02329c
+  title: High-yield synthesis of hydroxylated boron nitride nanosheets and their utilization in thermally conductive polymeric nanocomposites
+  year: 2024
+  source_url: https://doi.org/10.1039/d4ra02329c
+extraction_log:
+- seq: 153
+  candidate_id: P6-P141
+  doi: 10.1039/d4ra02329c
+  paper_title: High-yield synthesis of hydroxylated boron nitride nanosheets and their utilization in thermally conductive polymeric nanocomposites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc)
+  files_inspected: sources/text/10.1039_d4ra02329c.txt (cache, not committed)
+  tables_inspected: Table 1 (lateral sizes and yields of exfoliation methods; no k values)
+  figures_inspected: Fig. 10a (k of BNNSs/TPU and OH-BNNSs/TPU vs loading), Fig. 10b (improvement %); captions only
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 10 figure-only values not taken. Only the 30 wt% values for OH-BNNSs/TPU and BNNSs/TPU are printed. Neat TPU k is not printed. figure_only_skipped is an estimate (Fig. 10a: two series at loadings 5-30 wt%, minus the two printed points). Measurement direction not stated (Hot Disk). The 29.5%/85.2% improvements are derived figures, not extracted.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 3620792c-467
+  - 3620792c-468
+measurements:
+- row_id: 3620792c-467
+  matrix_polymer: Thermoplastic polyurethane (TPU), isocyanate-terminated, from PBA/MDI/BDO (200:52:9 by weight)
+  filler_material: BNNS
+  filler_material_original: OH-BNNSs (hydroxyl-functionalized BN nanosheets), sample OH-BNNSs/TPU 30 wt%
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.65
+  size_distribution: lateral size distribution from AFM over 50 sheets (Fig. 5d); 3-4 atomic layers on average
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: hydroxyl (-OH) functionalization by H2O2 hydrothermal treatment; -OH reacts covalently with TPU -NCO groups
+  processing_method: 'In situ polymerization: nanosheets dispersed in DMF added to TPU prepolymer/chain-extended liquid, stirred 2 h, cast in Teflon mould, solvent evaporated 80 °C 12 h, cured 120 °C 24 h'
+  k_composite_W_mK: 3.097
+  k_direction: unknown
+  measurement_method: Hot Disk thermal analyzer (Hot Disk AB, Uppsala, Sweden); average of at least three measurements per specimen
+  k_original_value: 3.097
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Thermal performance of the OH-BNNSs/TPU composites, paragraph 2: ''As shown in Fig. 10a, the thermal conductivity can reach up to 3.097 Wm−1 K−1 in OH-BNNSs/TPU composite with a 30 wt% loading, while the corresponding thermal conductivity of BNNSs/TPU composite is only 1.672 Wm−1 K−1.'''
+  confidence: Medium
+  notes: The 1.65 μm average lateral size refers to the OH-BNNSs. Other loadings (5-25 wt%) only in Fig. 10a. k printed as approximate or as a bound, so Medium confidence.
+- row_id: 3620792c-468
+  matrix_polymer: Thermoplastic polyurethane (TPU), isocyanate-terminated, from PBA/MDI/BDO (200:52:9 by weight)
+  filler_material: BNNS
+  filler_material_original: BNNSs (unfunctionalized, exfoliated by H2O2 decomposition in alkali), sample BNNSs/TPU 30 wt%
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (no -OH groups per FT-IR)
+  processing_method: 'In situ polymerization: nanosheets dispersed in DMF added to TPU prepolymer/chain-extended liquid, stirred 2 h, cast in Teflon mould, solvent evaporated 80 °C 12 h, cured 120 °C 24 h'
+  k_composite_W_mK: 1.672
+  k_direction: unknown
+  measurement_method: Hot Disk thermal analyzer (Hot Disk AB, Uppsala, Sweden); average of at least three measurements per specimen
+  k_original_value: 1.672
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Thermal performance of the OH-BNNSs/TPU composites, paragraph 2: ''As shown in Fig. 10a, the thermal conductivity can reach up to 3.097 Wm−1 K−1 in OH-BNNSs/TPU composite with a 30 wt% loading, while the corresponding thermal conductivity of BNNSs/TPU composite is only 1.672 Wm−1 K−1.'''
+  confidence: High
+  notes: Control composite with unfunctionalized BNNSs. Other loadings only in Fig. 10a.

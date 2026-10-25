@@ -1,0 +1,70 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P161
+paper:
+  doi: 10.3390/polym13193393
+  title: 'Boron Nitride-Filled Linear Low-Density Polyethylene for Enhanced Thermal Transport: Continuous Extrusion of Micro-Textured Films'
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13193393
+extraction_log:
+- seq: 173
+  candidate_id: P6-P161
+  doi: 10.3390/polym13193393
+  paper_title: 'Boron Nitride-Filled Linear Low-Density Polyethylene for Enhanced Thermal Transport: Continuous Extrusion of Micro-Textured Films'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym13193393.txt (cache, not committed)
+  tables_inspected: Table 1 (Cross-model rheology parameters; no thermal conductivity data).
+  figures_inspected: Figure 9 (through-thickness k of textured and non-textured films vs BN content, with a Lewis–Nielsen fit); the other figures are rheology and SEM only.
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 10 figure-only values not taken. Only two k values are printed: neat LLDPE (0.3) and the 30 vol% BN film (1.8). Figure 9 shows 12 points (0, 1, 5, 10, 20, 30 vol% for both textured and non-textured films). Ten of these are figure-only and were skipped (BN1–BN20 for both film types, plus the second film type at 0 and 30 vol% that the text does not separate). Cp and density for the LFA conversion are not described.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 5cb19298-586
+  - 5cb19298-587
+measurements:
+- row_id: 5cb19298-586
+  matrix_polymer: Linear low-density polyethylene (LLDPE), poly(ethylene-co-1-octene), Aspun 6835 (Dow)
+  filler_material: none
+  filler_material_original: pure LLDPE film (sample LLDPE)
+  filler_loading_vol_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: vol%
+  processing_method: Melt compounding in a DSM Xplore MC15HT twin-screw micro-extruder (210 °C, 60 rpm, 10 min), then film extrusion through a textured or flat die
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 0.3
+  k_direction: through-plane (through-thickness)
+  measurement_method: Laser flash, Netzsch LFA 447 Nanoflash, ASTM E1461-13, Cowan + pulse correction; 10 × 10 × 0.2 mm specimens, 3 specimens × 3 shots
+  k_original_value: 0.3
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''Through-thickness thermal conductivity of the pure polymer was measured to be 0.3 W/m·K and it increased more than five times for the composites containing 30 vol% BN, as shown in Figure 9.'''
+  confidence: High
+  notes: Neat LLDPE film; the text does not say whether it is textured or non-textured.
+- row_id: 5cb19298-587
+  matrix_polymer: Linear low-density polyethylene (LLDPE), poly(ethylene-co-1-octene), Aspun 6835 (Dow)
+  filler_material: h-BN
+  filler_material_original: hexagonal boron nitride micro-platelets (PT100, Momentive), sample BN30
+  filler_shape: platelet
+  filler_mean_size_um: 13.0
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: Platelets aligned parallel to the film/extrusion direction; partly circumferential inside the texture fins
+  processing_method: Melt compounding in a DSM Xplore MC15HT twin-screw micro-extruder (210 °C, 60 rpm, 10 min), then continuous film extrusion through a micro-textured (trapezoidal) die or a flat die
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 1.8
+  k_direction: through-plane (through-thickness)
+  measurement_method: Laser flash, Netzsch LFA 447 Nanoflash, ASTM E1461-13, Cowan + pulse correction; 10 × 10 × 0.2 mm specimens, 3 specimens × 3 shots; equivalent thickness used for textured films
+  k_original_value: 1.8
+  k_original_unit: W/m.K
+  value_source: text
+  source_location: 'Section 4 (Conclusions), paragraph 2: ''Through-thickness thermal conductivity was measured at 1.8 W/m.K for films containing 30 vol% BN, which is about a 500% enhancement as compared with the neat LLDPE.'''
+  confidence: High
+  notes: Sample BN30. The text does not say whether the value is for the textured or non-textured film; the paper reports that texturing caused no significant change in k. The paper names the filler both h-BN micro-platelets and 'BN nanoplatelets'; the 13 µm mean size is from Section 2.1.

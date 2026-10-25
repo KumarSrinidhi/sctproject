@@ -1,0 +1,68 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P172
+paper:
+  doi: 10.3390/molecules28083444
+  title: Novel Functionalized Boron Nitride Nanosheets Achieved by Radiation-Induced Oxygen Radicals and Their Enhancement for Polymer Nanocomposites
+  year: 2023
+  source_url: https://doi.org/10.3390/molecules28083444
+extraction_log:
+- seq: 184
+  candidate_id: P6-P172
+  doi: 10.3390/molecules28083444
+  paper_title: Novel Functionalized Boron Nitride Nanosheets Achieved by Radiation-Induced Oxygen Radicals and Their Enhancement for Polymer Nanocomposites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_molecules28083444.txt (cache, not committed)
+  tables_inspected: none (paper has no tables)
+  figures_inspected: Figures 1-10 captions; thermal conductivity of all PVA samples is in supplementary Figure S8 (not in the full text)
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 2 figure-only values not taken. Only two k values are printed in the text (neat PVA 0.178 and cPVA/BNNSs-OH 0.216 W m−1 K−1). The PVA/BNNSs and PVA/BNNSs-OH values (2 wt%) are only in supplementary Figure S8 and were skipped (counted as 2). No thermal-conductivity method or instrument is given in the Methods.
+  rows_rejected_at_append: []
+  rows_added:
+  - 2194af4d-655
+  - 2194af4d-656
+measurements:
+- row_id: 2194af4d-655
+  matrix_polymer: Polyvinyl alcohol (PVA), Tansoole
+  filler_material: none
+  filler_material_original: pristine PVA (neat matrix)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Solution casting from aqueous solution onto PTFE-coated quartz glass, dried at 50 °C for 12 h
+  k_matrix_W_mK: 0.178
+  k_composite_W_mK: 0.178
+  k_direction: unknown
+  k_original_value: 0.178
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2 (Results and Discussion), thermal conductivity paragraph: ''As shown in Figure S8, the pristine PVA showed a bad thermal conductivity level of 0.178 W m−1 K−1.'''
+  confidence: High
+  notes: Neat PVA film. Thermal conductivity measurement technique is not described anywhere in the paper.
+- row_id: 2194af4d-656
+  matrix_polymer: Polyvinyl alcohol (PVA), cross-linked (cPVA)
+  curing_agent: glutaraldehyde (GA, 50% aqueous) cross-linker with HCl catalyst; GA:PVA hydroxyl molar ratio 1:20, HCl:GA 1:5
+  filler_material: BNNS
+  filler_material_original: BNNSs-OH@500 (hydroxyl-functionalized boron nitride nanosheets), sample cPVA/BNNSs-OH
+  filler_shape: nanosheets (mono- and few-layer)
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 2.0
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt%
+  functionalization: 'surface hydroxylation: tert-butoxy radicals from di-tert-butylperoxide under 500 kGy electron-beam irradiation, then piranha (H2SO4:H2O2 3:1) hydrolysis'
+  processing_method: BNNSs exfoliated from h-BN in DMF by sonication; aqueous PVA and BNNSs-OH solutions mixed 1:1 with GA/HCl added, solution cast on PTFE-coated quartz, dried 50 °C 12 h
+  k_matrix_W_mK: 0.178
+  k_composite_W_mK: 0.216
+  k_direction: unknown
+  k_original_value: 0.216
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2 (Results and Discussion), thermal conductivity paragraph: ''and the cPVP/BNNSs-OH nanocomposite showed the highest value of 0.216 W m−1 K−1, which is 20% higher than that of pristine PVP.'''
+  confidence: High
+  notes: Paper writes 'cPVP' / 'PVP' as a typo for cPVA / PVA. Loading of 2 wt% stated in the next sentence ('the content of BNNSs in the nanocomposites was only 2 wt%'). Lateral size ~1 μm from SEM (Section 2). Measurement technique not described.

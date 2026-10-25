@@ -134,3 +134,24 @@ def test_importer_applies_verdicts_and_provenance_checks(tmp_project):
     assert ks == [0.2, 1.25]
     assert all(m.source_location.startswith("Table 1: '") for m in rec.measurements)
     assert any("independent verifier" in (m.notes or "") for m in rec.measurements)
+
+
+def test_approximate_values_are_flagged():
+    from argus.acquire.quotes import approximate_k
+
+    assert approximate_k(15, "reaches ~15 W m−1 K−1")
+    assert approximate_k(9, "a through-plane k over 9 W/mK")
+    assert not approximate_k(3.06, "reaches 3.06 W/m-K")
+    assert not approximate_k(3.06, "up to 25.1 vol %, k 3.06 W/m-K")  # the bound is on the loading
+
+
+def test_new_matrix_families_and_unit_spelling():
+    from argus.units import k_unit_factor
+    from argus.vocab import classify_matrix
+
+    assert classify_matrix("high-density polyethylene (HDPE)") == "polyethylene"
+    assert classify_matrix("PEG (polyethylene glycol)") == "PEG"  # earlier rule still wins
+    assert classify_matrix("PE-g-MAH compatibilizer in EVA") != "polyethylene"
+    assert classify_matrix("polyamide 6 (PA6)") == "polyamide" and classify_matrix("PVDF") == "PVDF"
+    assert classify_matrix("Polyimide (PI)") == "polyimide" and classify_matrix("DGEBA epoxy") == "epoxy"
+    assert k_unit_factor("W mK−1") == 1.0 and k_unit_factor("mW/K") is None

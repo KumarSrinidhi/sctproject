@@ -1,0 +1,68 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P142
+paper:
+  doi: 10.3390/polym18070837
+  title: Hybrid Network Structure of Hexagonal Boron Nitride-Silicon Carbide Whisker to Improve the Performance of the Polybenzoxazine with KH560-Boron Nitride
+  year: 2026
+  source_url: https://doi.org/10.3390/polym18070837
+extraction_log:
+- seq: 154
+  candidate_id: P6-P142
+  doi: 10.3390/polym18070837
+  paper_title: Hybrid Network Structure of Hexagonal Boron Nitride-Silicon Carbide Whisker to Improve the Performance of the Polybenzoxazine with KH560-Boron Nitride
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym18070837.txt (cache, not committed)
+  tables_inspected: Table 1 (literature comparison incl. this work; only the this-work row 1.41 repeats the text value); Table 2 (XRD intensities); Table 3 (thermal stability)
+  figures_inspected: Figure 6 (k vs filler content for KH560-BN/PBz and BN-MgO-SiCw/PBz); caption only
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 9 figure-only values not taken. Only the 50 wt% values are printed. The paper does not print its own neat PBz k (0.2531 W/mK in the Introduction is cited literature [5,6,7] and was skipped). Table 1 literature rows skipped. figure_only_skipped is an estimate (Figure 6: two series at ~10-50 wt% plus neat). The title says hexagonal BN, but the body calls the filler simply ''boron nitride (BN)'', so filler_material is BN.'
+  rows_rejected_at_append: []
+  rows_added:
+  - ef2c530c-469
+  - ef2c530c-470
+measurements:
+- row_id: ef2c530c-469
+  matrix_polymer: Polybenzoxazine (PBz), Shanghai Ruiyi Chemical
+  filler_material: BN/SiCw/MgO hybrid
+  filler_material_original: BN-MgO-SiCw hybrid filler, sample BN-MgO-SiCw/PBz, 50 wt%
+  filler_shape: BN platelets bridged by SiC whiskers (rod-like, ~5 μm long) via spherical NH2-MgO
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: KH560 (γ-glycidoxypropyltrimethoxysilane) on BN and SiCw; KH540 (aminosilane) on MgO; covalent amidation linkage
+  processing_method: Ball-milling-assisted solution mixing (in deionized water, 3 h), dried, ground and sieved, then hot-pressed at 12 MPa with stepwise cure 150/170/190/210 °C, 1 h each
+  k_composite_W_mK: 1.41
+  k_direction: through-plane (thermal conductivity tester with the direction of through-plane)
+  measurement_method: Guarded hot plate thermal conductivity tester, NETZSCH GHP 456, through-plane; average of at least five measurements
+  k_original_value: 1.41
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''At a filler loading of 50 wt%, the thermal conductivity of the BN-MgO-SiCw/PBz composite reaches 1.41 W/mK, which is approximately 5.2 times that of the neat PBz matrix.'''
+  confidence: High
+  notes: Hybrid filler made from 16 g KH560-BN + 4 g KH560-SiCw + 0.04 g NH2-MgO (BN:SiCw:MgO ≈ 80:20:0.2 by mass); loading is total hybrid filler wt%. BN supplied as 4-6 μm; SEM shows KH560-BN sheets ~24 μm. The same value also appears in Table 1 (this-work row) and the Abstract. The Conclusions say ~5.8x the neat matrix, against 5.2x here.
+- row_id: ef2c530c-470
+  matrix_polymer: Polybenzoxazine (PBz), Shanghai Ruiyi Chemical
+  filler_material: BN
+  filler_material_original: KH560-BN, sample KH560-BN/PBz, 50 wt%
+  filler_shape: sheet-like
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: KH560 (γ-glycidoxypropyltrimethoxysilane) silane coupling agent
+  processing_method: Ball-milling-assisted solution mixing (in deionized water, 3 h), dried, ground and sieved, then hot-pressed at 12 MPa with stepwise cure 150/170/190/210 °C, 1 h each
+  k_composite_W_mK: 0.91
+  k_direction: through-plane (thermal conductivity tester with the direction of through-plane)
+  measurement_method: Guarded hot plate thermal conductivity tester, NETZSCH GHP 456, through-plane; average of at least five measurements
+  k_original_value: 0.91
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''In comparison, the KH560-BN/PBz composite achieves a thermal conductivity of 0.91 W/mK, corresponding to 3.4 times that of the matrix.'''
+  confidence: High
+  notes: BN supplied as 4-6 μm (Shandong Yasai), but SEM shows KH560-BN sheets ~24 μm; size left null because the two disagree.

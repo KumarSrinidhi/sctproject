@@ -1,0 +1,91 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P108
+paper:
+  doi: 10.3390/nano9070938
+  title: Three-Dimensional Heterostructured Reduced Graphene Oxide-Hexagonal Boron Nitride-Stacking Material for Silicone Thermal Grease with Enhanced Thermally Conductive Properties
+  year: 2019
+  source_url: https://doi.org/10.3390/nano9070938
+extraction_log:
+- seq: 120
+  candidate_id: P6-P108
+  doi: 10.3390/nano9070938
+  paper_title: Three-Dimensional Heterostructured Reduced Graphene Oxide-Hexagonal Boron Nitride-Stacking Material for Silicone Thermal Grease with Enhanced Thermally Conductive Properties
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano9070938.txt (cache, not committed)
+  tables_inspected: none (paper has no tables)
+  figures_inspected: Figure 5a (k vs wt% for hBN/STG and RGO-hBN/STG) not digitized; Fig. 5b enhancement, Fig. 6 thermal resistance noted only
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 6 figure-only values not taken. Only two composite k values (RGO-hBN/STG 6 and 12 wt.%) and the base-grease value are printed. hBN/STG k values and the 3 and 9 wt.% RGO-hBN points appear only in Fig. 5a (6 points skipped; the exact intermediate loadings are not stated, the range is 3–12 wt.%). The 38% enhancement for 12 wt.% hBN/STG is a derived figure, not a printed k. The 'matrix' is a commercial grease that already contains ZnO and Al2O3.
+  rows_rejected_at_append: []
+  rows_added:
+  - ef78cbf9-315
+  - ef78cbf9-316
+  - ef78cbf9-317
+measurements:
+- row_id: ef78cbf9-315
+  matrix_polymer: 'Commercial silicone thermal grease (STG, HN-120, Zhongshan Huineng): dimethicone (500 mPa·s) already containing ZnO and Al2O3 fillers'
+  filler_material: none
+  filler_material_original: as-received STG (no RGO-hBN or hBN added)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt.%
+  processing_method: as-received commercial grease
+  k_matrix_W_mK: 1.21
+  k_composite_W_mK: 1.21
+  k_direction: isotropic (transient hot-wire in grease)
+  measurement_method: Transient hot-wire method, universal thermal conductivity meter TC3000 (Xiatech, Xi'an)
+  k_original_value: 1.21
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''Before adding RGO-hBN or hBN, the thermal conductivity of STG with dimethicone, ZnO and Al2O3 is about 1.21 W·m−1·K−1 at room temperature.'''
+  confidence: Medium
+  notes: Reference 'matrix' is a commercial grease that already contains ZnO and Al2O3 thermal fillers (loading not stated); value given as 'about 1.21' at room temperature. k printed as approximate or as a bound, so Medium confidence.
+- row_id: ef78cbf9-316
+  matrix_polymer: 'Commercial silicone thermal grease (STG, HN-120): dimethicone (500 mPa·s) containing ZnO and Al2O3 fillers'
+  filler_material: h-BN/RGO hybrid
+  filler_material_original: 3D heterostructured RGO-hBN stacking material (hBN nanosheets self-assembled on RGO with PVA binder, sintered 1200 °C Ar), sample RGO-hBN/STG at 6 wt.%
+  filler_shape: 3D stacked heterostructure particles (hBN nanosheet clusters on wrinkled RGO)
+  filler_mean_size_um: 11.0
+  filler_loading_wt_pct: 6.0
+  filler_loading_original_value: 6.0
+  filler_loading_original_unit: wt.%
+  functionalization: none (PVA binder removed by sintering at 1200 °C)
+  processing_method: In situ blending of RGO-hBN into 50 g STG on a three-roller mill at room temperature, milled 6–9 times
+  k_matrix_W_mK: 1.21
+  k_composite_W_mK: 1.43
+  k_direction: isotropic (transient hot-wire in grease)
+  measurement_method: Transient hot-wire method, universal thermal conductivity meter TC3000 (Xiatech, Xi'an), room temperature
+  k_original_value: 1.43
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''The thermal conductivity obviously increased from 1.43 to 2.04 W·m−1·K−1 (about a 18–68% enhancement) when the RGO-hBN content was increased from 6 to 12 wt.%.'''
+  confidence: High
+  notes: Hybrid filler made from 2 g hBN (500 nm lateral) + 100 mg RGO per batch (feed ratio ~95:5 by mass); loading is wt.% of RGO-hBN added to STG. RGO-hBN lateral size ~11 μm. Base grease also contains ZnO/Al2O3. Measured at room temperature.
+- row_id: ef78cbf9-317
+  matrix_polymer: 'Commercial silicone thermal grease (STG, HN-120): dimethicone (500 mPa·s) containing ZnO and Al2O3 fillers'
+  filler_material: h-BN/RGO hybrid
+  filler_material_original: 3D heterostructured RGO-hBN stacking material, sample RGO-hBN/STG at 12 wt.%
+  filler_shape: 3D stacked heterostructure particles (hBN nanosheet clusters on wrinkled RGO)
+  filler_mean_size_um: 11.0
+  filler_loading_wt_pct: 12.0
+  filler_loading_original_value: 12.0
+  filler_loading_original_unit: wt.%
+  functionalization: none (PVA binder removed by sintering at 1200 °C)
+  processing_method: In situ blending of RGO-hBN into 50 g STG on a three-roller mill at room temperature, milled 6–9 times
+  k_matrix_W_mK: 1.21
+  k_composite_W_mK: 2.04
+  k_direction: isotropic (transient hot-wire in grease)
+  measurement_method: Transient hot-wire method, universal thermal conductivity meter TC3000 (Xiatech, Xi'an), room temperature
+  k_original_value: 2.04
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''The thermal conductivity obviously increased from 1.43 to 2.04 W·m−1·K−1 (about a 18–68% enhancement) when the RGO-hBN content was increased from 6 to 12 wt.%.'''
+  confidence: High
+  notes: Hybrid filler from 2 g hBN + 100 mg RGO feed (~95:5 by mass). 68% enhancement over STG. hBN/STG at 12 wt.% is given only as 38% enhancement (k not printed; skipped). Base grease also contains ZnO/Al2O3.

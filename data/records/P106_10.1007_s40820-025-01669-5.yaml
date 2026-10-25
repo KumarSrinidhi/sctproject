@@ -1,0 +1,218 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P106
+paper:
+  doi: 10.1007/s40820-025-01669-5
+  title: Functionalized Aluminum Nitride for Improving Hydrolysis Resistances of Highly Thermally Conductive Polysiloxane Composites
+  year: 2025
+  source_url: https://doi.org/10.1007/s40820-025-01669-5
+extraction_log:
+- seq: 118
+  candidate_id: P6-P106
+  doi: 10.1007/s40820-025-01669-5
+  paper_title: Functionalized Aluminum Nitride for Improving Hydrolysis Resistances of Highly Thermally Conductive Polysiloxane Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1007_s40820-025-01669-5.txt (cache, not committed)
+  tables_inspected: none in the main text (Tables S1 and S2 are in the Supplementary Information, which was not available; S1 is a literature comparison)
+  figures_inspected: Fig. 4a–d (k vs molecular weight, grafting density and mass fraction) and Fig. 5f (k before and after aging); captions only
+  candidate_measurements: 10
+  rows_appended: 10
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. All values are from the Results text; the main text has no tables. Neither the k measurement method nor a neat-PMHS k is in the main text (the conclusions give only a +420% enhancement over pure PMHS); both are probably in the unavailable SI. The text gives no AlN particle size, and only the conclusions call the AlN 'spherical'. Volume fractions are not given. Fig. 4d also has the 55 and 65 wt% points for AlN/PMHS and AlN@PDVB-co-PACl/PMHS (the load
+  rows_rejected_at_append: []
+  rows_added:
+  - 4d11c566-299
+  - 4d11c566-300
+  - 4d11c566-301
+  - 4d11c566-302
+  - 4d11c566-303
+  - 4d11c566-304
+  - 4d11c566-305
+  - 4d11c566-306
+  - 4d11c566-307
+  - 4d11c566-308
+measurements:
+- row_id: 4d11c566-299
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: AlN@PDVB-co-PACl (PDVB-co-PACl-2, Mn 5100 g/mol, grafting density 0.8 wt%), AlN@PDVB-co-PACl/PMHS at 75 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: PDVB-co-PACl copolymer (divinylbenzene/acryloyl chloride, made by ATRP) grafted at 0.8 wt%, Mn 5100 g/mol; graft layer ~30.1 nm
+  processing_method: Blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 1.14
+  k_direction: unknown
+  k_original_value: 1.14
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 1: ''When the molecular weight and grafting density of PDVB-co-PACl are 5100 g mol−1 and 0.8 wt% and the mass fraction of AlN@PDVB-co-PACl is 75 wt%, respectively, the λ of AlN@PDVB-co-PACl/PMHS composites reached the maximum of 1.14 W m−1 K−1, and the corresponding ITR is 1.36 × 10–7 m2 K W−1.'''
+  confidence: High
+  notes: Optimal sample. The same value appears in the highlights, the Fig. 4c and 4d discussion and the conclusions. ITR = 1.36e-7 m2 K/W. The conclusions say it is 20% above blended AlN/PMHS and 420% above pure PMHS, but no neat-PMHS k is printed. The text gives no k measurement method (probably in the SI).
+- row_id: 4d11c566-300
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: AlN@PDVB-co-PACl (PDVB-co-PACl-1, Mn 2800 g/mol), AlN@PDVB-co-PACl/PMHS at 75 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: PDVB-co-PACl copolymer grafted, Mn 2800 g/mol (grafting density same as the series, apparently 0.8 wt%)
+  processing_method: Blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 1.08
+  k_direction: unknown
+  k_original_value: 1.08
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 1: ''Superior to the λ and ITR of AlN@PDVB-co-PACl/PMHS at the same mass fraction of AlN with PDVB-co-PACl molecular weight of 2800 g mol−1 (1.08 W m−1 K−1, 1.42 × 10–7 m2 K W−1) and PDVB-co-PACl molecular weight of 7900 g mol−1 (1.07 W m−1 K−1, 1.45 × 10–7 m2 K W−1).'''
+  confidence: High
+  notes: Molecular-weight series (Fig. 4a–b), described as 'under the same grafting density'; the grafting density is apparently 0.8 wt% but is not stated explicitly for this sample. ITR = 1.42e-7 m2 K/W.
+- row_id: 4d11c566-301
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: AlN@PDVB-co-PACl (PDVB-co-PACl-3, Mn 7900 g/mol), AlN@PDVB-co-PACl/PMHS at 75 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: PDVB-co-PACl copolymer grafted, Mn 7900 g/mol (grafting density same as the series, apparently 0.8 wt%)
+  processing_method: Blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 1.07
+  k_direction: unknown
+  k_original_value: 1.07
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 1: ''Superior to the λ and ITR of AlN@PDVB-co-PACl/PMHS at the same mass fraction of AlN with PDVB-co-PACl molecular weight of 2800 g mol−1 (1.08 W m−1 K−1, 1.42 × 10–7 m2 K W−1) and PDVB-co-PACl molecular weight of 7900 g mol−1 (1.07 W m−1 K−1, 1.45 × 10–7 m2 K W−1).'''
+  confidence: High
+  notes: Molecular-weight series (Fig. 4a–b); the grafting density is apparently 0.8 wt% but is not stated explicitly. ITR = 1.45e-7 m2 K/W.
+- row_id: 4d11c566-302
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: AlN@0.4 wt% PDVB-co-PACl (Mn 5100 g/mol), AlN@0.4 wt% PDVB-co-PACl/PMHS at 75 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: PDVB-co-PACl copolymer grafted at 0.4 wt% (Mn 5100 g/mol); graft layer ~14.8 nm, incomplete
+  processing_method: Blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 1.12
+  k_direction: unknown
+  k_original_value: 1.12
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 1: ''It is better than the λ and corresponding ITR (1.12 W m−1 K−1 and 1.40 × 10–7 2 K W−1) of AlN@0.4 wt% PDVB-co-PACl/PMHS as well as λ and corresponding ITR (1.10 W m−1 K−1 and 1.43 × 10–7 m2 K W−1) of AlN@1.2 wt% PDVB-co-PACl/PMHS.'''
+  confidence: High
+  notes: Grafting-density series (Fig. 4c) at 75 wt% filler and Mn 5100 g/mol (selected after the MW study). ITR = 1.40e-7 m2 K/W.
+- row_id: 4d11c566-303
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: AlN@1.2 wt% PDVB-co-PACl (Mn 5100 g/mol), AlN@1.2 wt% PDVB-co-PACl/PMHS at 75 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: PDVB-co-PACl copolymer grafted at 1.2 wt% (Mn 5100 g/mol); graft layer 47.0–65.9 nm, uneven
+  processing_method: Blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 1.1
+  k_direction: unknown
+  k_original_value: 1.1
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 1: ''It is better than the λ and corresponding ITR (1.12 W m−1 K−1 and 1.40 × 10–7 2 K W−1) of AlN@0.4 wt% PDVB-co-PACl/PMHS as well as λ and corresponding ITR (1.10 W m−1 K−1 and 1.43 × 10–7 m2 K W−1) of AlN@1.2 wt% PDVB-co-PACl/PMHS.'''
+  confidence: High
+  notes: Grafting-density series (Fig. 4c) at 75 wt% filler. Printed as 1.10. ITR = 1.43e-7 m2 K/W.
+- row_id: 4d11c566-304
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: unmodified AlN, AlN/PMHS at 75 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Physically blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 0.95
+  k_direction: unknown
+  k_original_value: 0.95
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 2: ''When the mass fraction of AlN@PDVB-co-PACl is 75 wt%, AlN@PDVB-co-PACl/PMHS composites have the best thermal conductivity, λ is 1.14 W m−1 K−1 and ITR is 1.36 × 10–7 m2 K W−1, which is better than that of λ and ITR for 75 wt% AlN/PMHS (0.95 W m−1 K−1 and 1.67 × 10–7 m2 K W−1).'''
+  confidence: High
+  notes: Unmodified-AlN control, before aging (the aging section repeats 0.95 as the pre-aging value). ITR = 1.67e-7 m2 K/W.
+- row_id: 4d11c566-305
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: AlN@PDVB-co-PACl (Mn 5100 g/mol, 0.8 wt% grafting assumed from the optimisation), AlN@PDVB-co-PACl/PMHS at 85 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 85.0
+  filler_loading_original_value: 85.0
+  filler_loading_original_unit: wt%
+  functionalization: 'PDVB-co-PACl copolymer grafted (optimised: Mn 5100 g/mol, 0.8 wt%)'
+  processing_method: Blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 1.89
+  k_direction: unknown
+  k_original_value: 1.89
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 2: ''When the mass fraction of AlN@PDVB-co-PACl is 85 wt%, AlN@PDVB-co-PACl/PMHS composites have the best thermal conductivity, λ is 1.89 W m−1 K−1, which is better than that of λ for AlN/PMHS (1.58 W m−1 K−1).'''
+  confidence: High
+  notes: Mass-fraction series (Fig. 4d), which used the optimised filler (Mn 5100 g/mol, 0.8 wt%) selected in the preceding paragraph; the text does not restate the grafting parameters for 85 wt%.
+- row_id: 4d11c566-306
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: unmodified AlN, AlN/PMHS at 85 wt%
+  filler_shape: spherical
+  filler_loading_wt_pct: 85.0
+  filler_loading_original_value: 85.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Physically blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h
+  k_composite_W_mK: 1.58
+  k_direction: unknown
+  k_original_value: 1.58
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal Conductivity of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 2: ''When the mass fraction of AlN@PDVB-co-PACl is 85 wt%, AlN@PDVB-co-PACl/PMHS composites have the best thermal conductivity, λ is 1.89 W m−1 K−1, which is better than that of λ for AlN/PMHS (1.58 W m−1 K−1).'''
+  confidence: High
+  notes: Unmodified-AlN control at 85 wt% (the loading is implied by the comparison in the same sentence).
+- row_id: 4d11c566-307
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: unmodified AlN, AlN/PMHS at 75 wt%, after aging test
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Physically blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h; then hydrothermally aged 80 h in 90 °C deionized water
+  k_composite_W_mK: 0.89
+  k_direction: unknown
+  k_original_value: 0.89
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Mechanical and Thermal Properties of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 3 (Fig. 5f): ''After the aging test, the λ of AlN/PMHS composites decreases from 0.95 W to 0.89 W m−1 K−1.'''
+  confidence: High
+  notes: 'Condition: after aging (80 h in 90 °C deionized water); 0.95 W/m K before aging, 93.7% retained. The aging temperature is not the measurement temperature, which is not stated.'
+- row_id: 4d11c566-308
+  matrix_polymer: Polymethylhydrosiloxane (PMHS), heat-cured
+  filler_material: AlN
+  filler_material_original: AlN@PDVB-co-PACl (Mn 5100 g/mol, 0.8 wt%), AlN@PDVB-co-PACl/PMHS at 75 wt%, after aging test
+  filler_shape: spherical
+  filler_loading_wt_pct: 75.0
+  filler_loading_original_value: 75.0
+  filler_loading_original_unit: wt%
+  functionalization: PDVB-co-PACl copolymer grafted at 0.8 wt%, Mn 5100 g/mol
+  processing_method: Blended with PMHS, poured into PTFE mold, vacuum defoamed, heat-cured 120 °C for 2 h; then hydrothermally aged 80 h in 90 °C deionized water
+  k_composite_W_mK: 1.13
+  k_direction: unknown
+  k_original_value: 1.13
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Mechanical and Thermal Properties of AlN@PDVB-co-PACl/PMHS Composites'', paragraph 3 (Fig. 5f): ''In contrast, the λ of AlN@PDVB-co-PACl/PMHS composites retain relatively constant of 1.13 compared to 1.14 W m−1 K−1 about retaining 99.1%, whereas the λ of the blended AlN/PMHS composites decreases sharply to 93.7%.'''
+  confidence: High
+  notes: 'Condition: after aging (80 h in 90 °C deionized water); 1.14 before aging, 99.1% retained. The measurement temperature is not stated.'

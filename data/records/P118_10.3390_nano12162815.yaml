@@ -1,0 +1,120 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P118
+paper:
+  doi: 10.3390/nano12162815
+  title: Fabrication, Thermal Conductivity, and Mechanical Properties of Hexagonal-Boron-Nitride-Pattern-Embedded Aluminum Oxide Composites
+  year: 2022
+  source_url: https://doi.org/10.3390/nano12162815
+extraction_log:
+- seq: 130
+  candidate_id: P6-P118
+  doi: 10.3390/nano12162815
+  paper_title: Fabrication, Thermal Conductivity, and Mechanical Properties of Hexagonal-Boron-Nitride-Pattern-Embedded Aluminum Oxide Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano12162815.txt (cache, not committed)
+  tables_inspected: Table 1 (compositions of Al50, Al/BN-54/58/62, Al80/85/90; no k); Table 2 (Al2O3 and h-BN wt% of Al/h-BN/Al-1/2/3; no k)
+  figures_inspected: Figure 3 (kx and kz of Al50, Al/BN, Al/h-BN/Al-1) by caption only; values used only where printed in text
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. Neat silicone k not printed. Figure 3 also shows kx/kz of Al/BN-54 and Al/BN-58 (4 BN-containing values, figure-only, skipped) and Al50 (Al2O3 only, no BN, not counted). Al/h-BN/Al-2 and -3 delaminated and were not measured. Introduction values (Ouyang, Yan et al.) are literature and were skipped.
+  rows_rejected_at_append: []
+  rows_added:
+  - e5c0b327-374
+  - e5c0b327-375
+  - e5c0b327-376
+  - e5c0b327-377
+measurements:
+- row_id: e5c0b327-374
+  matrix_polymer: Addition-cure silicone rubber (vinyl-terminated polysiloxane VP-1000 + hydride-terminated polysiloxane HPP-3036 + monohydroxy-terminated PDMS, Pt-catalysed)
+  curing_agent: Hydride-terminated polysiloxane (HPP-3036) crosslinker with platinum catalyst and inhibitor
+  filler_material: h-BN/Al2O3 hybrid
+  filler_material_original: h-BN mixture + Al2O3 mixture, sample Al/BN-62
+  filler_shape: h-BN platelets; Al2O3 spherical
+  size_distribution: 'Bimodal mixtures: h-BN 11 μm (1.5 g) + 31 μm (3.5 g) lateral size; Al2O3 5 μm (6.6 g) + 45 μm (15.4 g) mean diameter'
+  filler_loading_wt_pct: 62.0
+  filler_loading_original_value: 62.0
+  filler_loading_original_unit: wt% (total filler)
+  functionalization: none
+  filler_alignment: h-BN partially aligned in-plane by bar-coating
+  processing_method: Thinky mixer 5 min; bar-coated onto release film and cured 150 °C 30 min to 1 mm-thick samples
+  k_composite_W_mK: 1.62
+  k_direction: in-plane (kx)
+  measurement_method: Laser/light flash analysis (Netzsch LFA; xenon lamp pulse 10 J/s, 300 μs pulse for in-plane, 25 mm discs, graphite-coated); Cp by DSC (Netzsch DSC 214); k = α·ρ·Cp (density method not stated)
+  k_original_value: 1.62
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph 3: ''The kx and kz values of the Al/BN-62 composite reached 1.62 ± 0.04 Wm−1 K−1 and 0.86 ± 0.05 Wm−1 K−1, respectively.'''
+  confidence: High
+  notes: ±0.04. Total filler 62 wt% (Table 1); masses silicone resin 2.22 g / Al2O3 mixture 2.22 g / h-BN mixture 1.39 g (h-BN/Al2O3 split not printed as wt%).
+- row_id: e5c0b327-375
+  matrix_polymer: Addition-cure silicone rubber (vinyl-terminated polysiloxane VP-1000 + hydride-terminated polysiloxane HPP-3036 + monohydroxy-terminated PDMS, Pt-catalysed)
+  curing_agent: Hydride-terminated polysiloxane (HPP-3036) crosslinker with platinum catalyst and inhibitor
+  filler_material: h-BN/Al2O3 hybrid
+  filler_material_original: h-BN mixture + Al2O3 mixture, sample Al/BN-62
+  filler_shape: h-BN platelets; Al2O3 spherical
+  size_distribution: 'Bimodal mixtures: h-BN 11 μm (1.5 g) + 31 μm (3.5 g) lateral size; Al2O3 5 μm (6.6 g) + 45 μm (15.4 g) mean diameter'
+  filler_loading_wt_pct: 62.0
+  filler_loading_original_value: 62.0
+  filler_loading_original_unit: wt% (total filler)
+  functionalization: none
+  filler_alignment: h-BN partially aligned in-plane by bar-coating
+  processing_method: Thinky mixer 5 min; bar-coated onto release film and cured 150 °C 30 min to 1 mm-thick samples
+  k_composite_W_mK: 0.86
+  k_direction: through-plane (kz)
+  measurement_method: Laser/light flash analysis (Netzsch LFA; xenon lamp pulse 10 J/s, 180 μs pulse for through-plane, 10 mm × 10 mm squares, graphite-coated); Cp by DSC (Netzsch DSC 214); k = α·ρ·Cp (density method not stated)
+  k_original_value: 0.86
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph 3: ''The kx and kz values of the Al/BN-62 composite reached 1.62 ± 0.04 Wm−1 K−1 and 0.86 ± 0.05 Wm−1 K−1, respectively.'''
+  confidence: High
+  notes: ±0.05. Total filler 62 wt% (Table 1); masses silicone resin 2.22 g / Al2O3 mixture 2.22 g / h-BN mixture 1.39 g (h-BN/Al2O3 split not printed as wt%).
+- row_id: e5c0b327-376
+  matrix_polymer: Addition-cure silicone rubber (vinyl-terminated polysiloxane VP-1000 + hydride-terminated polysiloxane HPP-3036 + monohydroxy-terminated PDMS, Pt-catalysed)
+  curing_agent: Hydride-terminated polysiloxane (HPP-3036) crosslinker with platinum catalyst and inhibitor
+  filler_material: h-BN/Al2O3 hybrid
+  filler_material_original: h-BN pattern embedded in Al85 (85 wt% Al2O3) silicone composite, sample Al/h-BN/Al-1
+  filler_shape: h-BN platelets (3 mm × 3 mm square patterns, 130 μm thick); Al2O3 spherical
+  size_distribution: 'Bimodal mixtures: h-BN 11 μm (1.5 g) + 31 μm (3.5 g) lateral size; Al2O3 5 μm (6.6 g) + 45 μm (15.4 g) mean diameter'
+  filler_loading_wt_pct: 86.9
+  filler_loading_original_value: 74.1 wt% Al2O3 + 12.8 wt% h-BN
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: h-BN aligned parallel (in-plane) by hot pressing
+  processing_method: h-BN/MEK solution (50 wt% solids) knife-coated through metal mask (3 mm × 3 mm open areas) onto cured 220 μm Al85 layer, dried 150 °C 15 min, laminated with uncured Al85 film and hot-pressed 35 MPa, 130 °C, 30 min; 500 μm-thick sample
+  k_composite_W_mK: 4.99
+  k_direction: in-plane (kx)
+  measurement_method: Laser flash analysis (Netzsch LFA; xenon lamp pulse 10 J/s, 300 μs pulse for in-plane, graphite-coated; Al/h-BN/Al composite punched into a 10 mm × 10 mm square for the thermal conductivity measurement); Cp by DSC (Netzsch DSC 214); k = α·ρ·Cp (density method not stated)
+  k_original_value: 4.99
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph after Table 2: ''The kx and kz values of the Al/h-BN/Al-1 composite were determined as 4.99 ± 0.15 Wm−1 K−1 and 1.68 ± 0.2 Wm−1 K−1, respectively (Figure 3).'''
+  confidence: High
+  notes: '±0.15. Composition from Table 2: Al2O3 74.1 wt%, h-BN 12.8 wt%; 86.9 wt% total is the sum of the two printed values. Layered/patterned architecture, not a uniform dispersion. Same values repeated in abstract and conclusions. Corrected in verification: Value, sample, Table 2 composition and alignment are correct. But the method says ''25 mm discs''. Section 3 states that each Al/h-BN/Al composite was punched into a 10 mm × 10 mm square for the measurement, so the 25 mm disc geometry is not stated for this sample. The 86.9 wt% total is a sum of the two printed Table 2 values; this is acceptable for a hybrid and is explained in notes.'
+- row_id: e5c0b327-377
+  matrix_polymer: Addition-cure silicone rubber (vinyl-terminated polysiloxane VP-1000 + hydride-terminated polysiloxane HPP-3036 + monohydroxy-terminated PDMS, Pt-catalysed)
+  curing_agent: Hydride-terminated polysiloxane (HPP-3036) crosslinker with platinum catalyst and inhibitor
+  filler_material: h-BN/Al2O3 hybrid
+  filler_material_original: h-BN pattern embedded in Al85 (85 wt% Al2O3) silicone composite, sample Al/h-BN/Al-1
+  filler_shape: h-BN platelets (3 mm × 3 mm square patterns, 130 μm thick); Al2O3 spherical
+  size_distribution: 'Bimodal mixtures: h-BN 11 μm (1.5 g) + 31 μm (3.5 g) lateral size; Al2O3 5 μm (6.6 g) + 45 μm (15.4 g) mean diameter'
+  filler_loading_wt_pct: 86.9
+  filler_loading_original_value: 74.1 wt% Al2O3 + 12.8 wt% h-BN
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: h-BN aligned parallel (in-plane) by hot pressing
+  processing_method: h-BN/MEK solution (50 wt% solids) knife-coated through metal mask (3 mm × 3 mm open areas) onto cured 220 μm Al85 layer, dried 150 °C 15 min, laminated with uncured Al85 film and hot-pressed 35 MPa, 130 °C, 30 min; 500 μm-thick sample
+  k_composite_W_mK: 1.68
+  k_direction: through-plane (kz)
+  measurement_method: Laser/light flash analysis (Netzsch LFA; xenon lamp pulse 10 J/s, 180 μs pulse for through-plane, 10 mm × 10 mm squares, graphite-coated); Cp by DSC (Netzsch DSC 214); k = α·ρ·Cp (density method not stated)
+  k_original_value: 1.68
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph after Table 2: ''The kx and kz values of the Al/h-BN/Al-1 composite were determined as 4.99 ± 0.15 Wm−1 K−1 and 1.68 ± 0.2 Wm−1 K−1, respectively (Figure 3).'''
+  confidence: High
+  notes: '±0.2. Composition from Table 2: Al2O3 74.1 wt%, h-BN 12.8 wt%; 86.9 wt% total is the sum of the two printed values. Layered/patterned architecture, not a uniform dispersion.'

@@ -1,0 +1,182 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P175
+paper:
+  doi: 10.3390/nano10091652
+  title: 'Preparation of Boron Nitride Nanoplatelets via Amino Acid Assisted Ball Milling: Towards Thermal Conductivity Application'
+  year: 2020
+  source_url: https://doi.org/10.3390/nano10091652
+extraction_log:
+- seq: 187
+  candidate_id: P6-P175
+  doi: 10.3390/nano10091652
+  paper_title: 'Preparation of Boron Nitride Nanoplatelets via Amino Acid Assisted Ball Milling: Towards Thermal Conductivity Application'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano10091652.txt (cache, not committed)
+  tables_inspected: none (paper has no tables)
+  figures_inspected: Figure 5a (thermal conductivity vs filler content for pure PVA, h-BN/PVA, BNNP/PVA, Glu@BNNP/PVA, Lys@BNNP/PVA hydrogels); only caption available
+  candidate_measurements: 7
+  rows_appended: 7
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 8 figure-only values not taken. 7 printed values (neat PVA hydrogel + 6 BN composites) from Section 3.2 text. Figure 5a also shows lower loadings (1.8 and 5.2 wt% per filler, per SI figure captions) not printed: ~8 figure-only points skipped (estimate). Measurement temperature not stated (room temperature implied). Direction unknown (transient hot-wire bulk measurement). BNNP/AA@BNNP classed as BNNS (nanoplatelets).'
+  rows_rejected_at_append: []
+  rows_added:
+  - bf87a638-659
+  - bf87a638-660
+  - bf87a638-661
+  - bf87a638-662
+  - bf87a638-663
+  - bf87a638-664
+  - bf87a638-665
+measurements:
+- row_id: bf87a638-659
+  matrix_polymer: PVA (1799) hydrogel, borax-crosslinked
+  curing_agent: borax (0.06 M aqueous solution, crosslinker)
+  filler_material: none
+  filler_material_original: pure PVA hydrogel
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: 12.5 wt% PVA solution in hot water mixed with borax solution, ultrasonic stirring 1 h, pressed (~5 kg) in cylindrical mould
+  k_matrix_W_mK: 0.51
+  k_composite_W_mK: 0.51
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiatech); wire sandwiched between two identical hydrogel samples 6.5 × 3.5 × 0.3 cm
+  k_original_value: 0.51
+  k_original_unit: W m−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''Figure 5a shows that the thermal conductivities of the PVA hydrogel composites gradually increased with the increase of filler content, with respect to the pure PVA hydrogel (0.51 W m−1K−1).'''
+  confidence: High
+  notes: Neat-matrix reference (pure PVA hydrogel).
+- row_id: bf87a638-660
+  matrix_polymer: PVA (1799) hydrogel, borax-crosslinked
+  curing_agent: borax (0.06 M aqueous solution, crosslinker)
+  filler_material: BNNS
+  filler_material_original: Lys@BNNP (L-lysine-grafted BN nanoplatelets), sample Lys@BNNP/PVA 11.3 wt%
+  filler_shape: nanoplatelet
+  filler_loading_wt_pct: 11.3
+  filler_loading_original_value: 11.3
+  filler_loading_original_unit: wt%
+  functionalization: L-lysine grafted via ball milling (amino acid assisted exfoliation)
+  processing_method: h-BN (3–5 µm) ball-milled with L-lysine/NaOH 350 rpm 10 h; filler dispersed in PVA/borax solution by ultrasonic stirring 1 h, pressed 5.0 kg for 2 h in cylindrical mould
+  k_matrix_W_mK: 0.51
+  k_composite_W_mK: 0.91
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiatech); wire sandwiched between two identical hydrogel samples 6.5 × 3.5 × 0.3 cm
+  k_original_value: 0.91
+  k_original_unit: W m−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''It was found that with 11.3 wt% AA@BNNPs hybrids incorporated, the thermal conductivity of the Lys@BNNP/PVA hydrogel composite was up to 0.91 W m−1K−1, increased by 78% comparing to the neat PVA hydrogel, as well as Glu@BNNP/PVA with a result of 0.87 W m−1K−1.'''
+  confidence: Medium
+  notes: AA@BNNP thickness ~90 nm (SEM); raw h-BN lateral size 3–5 µm. wt% basis (of hydrogel) not specified. Figure 4 caption mentions 11.2 wt% for a Lys@BNNP strip; text value 11.3 used. k printed as approximate or as a bound, so Medium confidence.
+- row_id: bf87a638-661
+  matrix_polymer: PVA (1799) hydrogel, borax-crosslinked
+  curing_agent: borax (0.06 M aqueous solution, crosslinker)
+  filler_material: BNNS
+  filler_material_original: Glu@BNNP (L-glutamic acid-grafted BN nanoplatelets), sample Glu@BNNP/PVA 11.3 wt%
+  filler_shape: nanoplatelet
+  filler_loading_wt_pct: 11.3
+  filler_loading_original_value: 11.3
+  filler_loading_original_unit: wt%
+  functionalization: L-glutamic acid grafted via ball milling (amino acid assisted exfoliation)
+  processing_method: h-BN (3–5 µm) ball-milled with L-glutamic acid/NaOH 350 rpm 10 h; filler dispersed in PVA/borax solution by ultrasonic stirring 1 h, pressed 5.0 kg for 2 h in cylindrical mould
+  k_matrix_W_mK: 0.51
+  k_composite_W_mK: 0.87
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiatech); wire sandwiched between two identical hydrogel samples 6.5 × 3.5 × 0.3 cm
+  k_original_value: 0.87
+  k_original_unit: W m−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''It was found that with 11.3 wt% AA@BNNPs hybrids incorporated, the thermal conductivity of the Lys@BNNP/PVA hydrogel composite was up to 0.91 W m−1K−1, increased by 78% comparing to the neat PVA hydrogel, as well as Glu@BNNP/PVA with a result of 0.87 W m−1K−1.'''
+  confidence: High
+  notes: Glu@BNNP at 11.3 wt% (same sentence as Lys@BNNP value). wt% basis not specified.
+- row_id: bf87a638-662
+  matrix_polymer: PVA (1799) hydrogel, borax-crosslinked
+  curing_agent: borax (0.06 M aqueous solution, crosslinker)
+  filler_material: BNNS
+  filler_material_original: Lys@BNNP (L-lysine-grafted BN nanoplatelets), sample Lys@BNNP/PVA 8.3 wt%
+  filler_shape: nanoplatelet
+  filler_loading_wt_pct: 8.3
+  filler_loading_original_value: 8.3
+  filler_loading_original_unit: wt%
+  functionalization: L-lysine grafted via ball milling (amino acid assisted exfoliation)
+  processing_method: h-BN (3–5 µm) ball-milled with L-lysine/NaOH 350 rpm 10 h; filler dispersed in PVA/borax solution by ultrasonic stirring 1 h, pressed 5.0 kg for 2 h in cylindrical mould
+  k_matrix_W_mK: 0.51
+  k_composite_W_mK: 0.83
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiatech); wire sandwiched between two identical hydrogel samples 6.5 × 3.5 × 0.3 cm
+  k_original_value: 0.83
+  k_original_unit: W m−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''With a similar filling amount (8.3 wt%), Lys@BNNP/PVA (0.83 W m−1K−1) and Glu@BNNP/PVA (0.82 W m−1K−1) also exhibited a higher thermal conductivity than that of h-BN/PVA (0.76 W m−1K−1) and BNNP/PVA (0.77 W m−1K−1)'''
+  confidence: High
+  notes: 8.3 wt% comparison set.
+- row_id: bf87a638-663
+  matrix_polymer: PVA (1799) hydrogel, borax-crosslinked
+  curing_agent: borax (0.06 M aqueous solution, crosslinker)
+  filler_material: BNNS
+  filler_material_original: Glu@BNNP (L-glutamic acid-grafted BN nanoplatelets), sample Glu@BNNP/PVA 8.3 wt%
+  filler_shape: nanoplatelet
+  filler_loading_wt_pct: 8.3
+  filler_loading_original_value: 8.3
+  filler_loading_original_unit: wt%
+  functionalization: L-glutamic acid grafted via ball milling (amino acid assisted exfoliation)
+  processing_method: h-BN (3–5 µm) ball-milled with L-glutamic acid/NaOH 350 rpm 10 h; filler dispersed in PVA/borax solution by ultrasonic stirring 1 h, pressed 5.0 kg for 2 h in cylindrical mould
+  k_matrix_W_mK: 0.51
+  k_composite_W_mK: 0.82
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiatech); wire sandwiched between two identical hydrogel samples 6.5 × 3.5 × 0.3 cm
+  k_original_value: 0.82
+  k_original_unit: W m−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''With a similar filling amount (8.3 wt%), Lys@BNNP/PVA (0.83 W m−1K−1) and Glu@BNNP/PVA (0.82 W m−1K−1) also exhibited a higher thermal conductivity than that of h-BN/PVA (0.76 W m−1K−1) and BNNP/PVA (0.77 W m−1K−1)'''
+  confidence: High
+  notes: 8.3 wt% comparison set.
+- row_id: bf87a638-664
+  matrix_polymer: PVA (1799) hydrogel, borax-crosslinked
+  curing_agent: borax (0.06 M aqueous solution, crosslinker)
+  filler_material: h-BN
+  filler_material_original: raw h-BN (Shandong Qingzhou Matekechuang, lateral 3–5 µm), sample h-BN/PVA 8.3 wt%
+  filler_shape: platelet
+  size_distribution: lateral size 3–5 µm (supplier); layer thickness ~200–300 nm (SEM)
+  filler_loading_wt_pct: 8.3
+  filler_loading_original_value: 8.3
+  filler_loading_original_unit: wt%
+  functionalization: none (used as received)
+  processing_method: h-BN dispersed in PVA/borax solution by ultrasonic stirring 1 h, pressed 5.0 kg for 2 h in cylindrical mould
+  k_matrix_W_mK: 0.51
+  k_composite_W_mK: 0.76
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiatech); wire sandwiched between two identical hydrogel samples 6.5 × 3.5 × 0.3 cm
+  k_original_value: 0.76
+  k_original_unit: W m−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''With a similar filling amount (8.3 wt%), Lys@BNNP/PVA (0.83 W m−1K−1) and Glu@BNNP/PVA (0.82 W m−1K−1) also exhibited a higher thermal conductivity than that of h-BN/PVA (0.76 W m−1K−1) and BNNP/PVA (0.77 W m−1K−1)'''
+  confidence: High
+  notes: Unmodified h-BN; 8.3 wt% was its maximum loading (poor dispersion).
+- row_id: bf87a638-665
+  matrix_polymer: PVA (1799) hydrogel, borax-crosslinked
+  curing_agent: borax (0.06 M aqueous solution, crosslinker)
+  filler_material: BNNS
+  filler_material_original: BNNP (h-BN ball-milled with water), sample BNNP/PVA 8.3 wt%
+  filler_shape: nanoplatelet
+  filler_loading_wt_pct: 8.3
+  filler_loading_original_value: 8.3
+  filler_loading_original_unit: wt%
+  functionalization: hydroxyl groups from water-assisted ball milling (0.4% TGA mass loss); no amino acid
+  processing_method: h-BN ball-milled with H2O 350 rpm 10 h; filler dispersed in PVA/borax solution by ultrasonic stirring 1 h, pressed 5.0 kg for 2 h in cylindrical mould
+  k_matrix_W_mK: 0.51
+  k_composite_W_mK: 0.77
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiatech); wire sandwiched between two identical hydrogel samples 6.5 × 3.5 × 0.3 cm
+  k_original_value: 0.77
+  k_original_unit: W m−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''With a similar filling amount (8.3 wt%), Lys@BNNP/PVA (0.83 W m−1K−1) and Glu@BNNP/PVA (0.82 W m−1K−1) also exhibited a higher thermal conductivity than that of h-BN/PVA (0.76 W m−1K−1) and BNNP/PVA (0.77 W m−1K−1)'''
+  confidence: High
+  notes: Water-milled BNNP; 8.3 wt% was its maximum loading.

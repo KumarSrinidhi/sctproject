@@ -20,7 +20,7 @@ from ..paths import Layout
 from ..records import doi_slug, load_records, next_paper_id, save_record
 from ..schema import Measurement, PaperMeta, PaperRecord
 from ..validate import doi_hash
-from .quotes import number_in_quote, quote_in_source
+from .quotes import approximate_k, number_in_quote, quote_in_source
 
 MEASUREMENT_FIELDS = set(Measurement.model_fields) - {"row_id", "waivers"}
 
@@ -72,6 +72,9 @@ def build_measurement(row: dict[str, Any], row_id: str) -> Measurement:
         notes.append("Row found by the independent verifier (extractor had missed it); quote checked.")
     if row.get("_fixed"):
         notes.append(f"Corrected in verification: {row['_fixed']}")
+    if approximate_k(float(row["k_original_value"]), row["quote"]) and data.get("confidence") == "High":
+        data["confidence"] = "Medium"  # house rule: approximate or bounded values are never High
+        notes.append("k printed as approximate or as a bound, so Medium confidence.")
     data["notes"] = " ".join(n for n in notes if n).strip() or None
     return Measurement(row_id=row_id, **data)
 

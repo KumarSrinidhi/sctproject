@@ -1,0 +1,104 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P119
+paper:
+  doi: 10.1007/s40820-023-01257-5
+  title: Flexible and Robust Functionalized Boron Nitride/Poly(p-Phenylene Benzobisoxazole) Nanocomposite Paper with High Thermal Conductivity and Outstanding Electrical Insulation
+  year: 2023
+  source_url: https://doi.org/10.1007/s40820-023-01257-5
+extraction_log:
+- seq: 131
+  candidate_id: P6-P119
+  doi: 10.1007/s40820-023-01257-5
+  paper_title: Flexible and Robust Functionalized Boron Nitride/Poly(p-Phenylene Benzobisoxazole) Nanocomposite Paper with High Thermal Conductivity and Outstanding Electrical Insulation
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1007_s40820-023-01257-5.txt (cache, not committed)
+  tables_inspected: None in main text (Table S1 in supplementary is a literature comparison; not available/not used)
+  figures_inspected: Fig. 3a,b (λ∥, λ⊥ of BN/PNF and m-BN/PNF at room temperature) by caption only; Fig. S9/S10 referenced (supplementary, not available)
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 16 figure-only values not taken. Neat PNF paper k is not printed (only % enhancements 393%/494%); not back-calculated. Fig. 3a,b show λ∥ and λ⊥ for m-BN/PNF-10/20/30/40 and BN/PNF-10/20/30/40 (16 BN-containing figure-only values, skipped) plus PNF paper. Fig. S10 temperature dependence (20–200 °C) is supplementary only. Measurement technique, instrument and filler size are not given in the main text. Introduction values (Li, Zhao, Yu, Yang, Kim, Zhang et al.) are literature and we
+  rows_rejected_at_append: []
+  rows_added:
+  - de93ed76-378
+  - de93ed76-379
+  - de93ed76-380
+  - de93ed76-381
+measurements:
+- row_id: de93ed76-378
+  matrix_polymer: Poly(p-phenylene-2,6-benzobisoxazole) nanofiber (PNF) paper
+  filler_material: BN
+  filler_material_original: m-BN (benzidine-functionalized BN), sample m-BN/PNF-50
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: Benzidine grafting via high-temperature solid-phase NaOH/KOH hydroxylation (HO-BN) followed by diazonium salt decomposition
+  filler_alignment: m-BN oriented in-plane (nacre-mimetic layered structure)
+  processing_method: 'Sol–gel film transformation: m-BN + Na2SO4 in PNF/MSA-TFA dispersion → acid sol → acid gel (24 h) → hydrogel by water solvent exchange → compressed and dried'
+  k_composite_W_mK: 9.68
+  k_direction: in-plane (λ∥)
+  k_original_value: 9.68
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section ''Thermal Properties of m-BN/PNF Nanocomposite Paper'', paragraph 1: ''When the mass fraction of m-BN is 50 wt%, m-BN/PNF-50 nanocomposite paper presents the highest λ∥ and λ⊥ of 9.68 and 0.84 W m−1 K−1, respectively, increased by 393% and 494% compared with those of PNF paper, 25.4% and 18.3% higher than the λ∥ (7.72 W m−1 K−1) and λ⊥ (0.71 W m−1 K−1) of the BN/PNF nanocomposite paper with the same amount of BN.'''
+  confidence: High
+  notes: Room temperature per Fig. 3 caption. Measurement technique not described in main text (likely in supplementary). Same value in Highlights and Conclusions.
+- row_id: de93ed76-379
+  matrix_polymer: Poly(p-phenylene-2,6-benzobisoxazole) nanofiber (PNF) paper
+  filler_material: BN
+  filler_material_original: m-BN (benzidine-functionalized BN), sample m-BN/PNF-50
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: Benzidine grafting via high-temperature solid-phase NaOH/KOH hydroxylation (HO-BN) followed by diazonium salt decomposition
+  filler_alignment: m-BN oriented in-plane (nacre-mimetic layered structure)
+  processing_method: 'Sol–gel film transformation: m-BN + Na2SO4 in PNF/MSA-TFA dispersion → acid sol → acid gel (24 h) → hydrogel by water solvent exchange → compressed and dried'
+  k_composite_W_mK: 0.84
+  k_direction: through-plane (λ⊥)
+  k_original_value: 0.84
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section ''Thermal Properties of m-BN/PNF Nanocomposite Paper'', paragraph 1: ''When the mass fraction of m-BN is 50 wt%, m-BN/PNF-50 nanocomposite paper presents the highest λ∥ and λ⊥ of 9.68 and 0.84 W m−1 K−1, respectively, increased by 393% and 494% compared with those of PNF paper, 25.4% and 18.3% higher than the λ∥ (7.72 W m−1 K−1) and λ⊥ (0.71 W m−1 K−1) of the BN/PNF nanocomposite paper with the same amount of BN.'''
+  confidence: High
+  notes: Room temperature per Fig. 3 caption. Measurement technique not described in main text.
+- row_id: de93ed76-380
+  matrix_polymer: Poly(p-phenylene-2,6-benzobisoxazole) nanofiber (PNF) paper
+  filler_material: BN
+  filler_material_original: BN (unmodified), sample BN/PNF-50
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: BN partially agglomerated in PNF matrix (per paper)
+  processing_method: 'Sol–gel film transformation (same method as m-BN/PNF): acid sol → acid gel → hydrogel by solvent exchange → compressed and dried'
+  k_composite_W_mK: 7.72
+  k_direction: in-plane (λ∥)
+  k_original_value: 7.72
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section ''Thermal Properties of m-BN/PNF Nanocomposite Paper'', paragraph 1: ''When the mass fraction of m-BN is 50 wt%, m-BN/PNF-50 nanocomposite paper presents the highest λ∥ and λ⊥ of 9.68 and 0.84 W m−1 K−1, respectively, increased by 393% and 494% compared with those of PNF paper, 25.4% and 18.3% higher than the λ∥ (7.72 W m−1 K−1) and λ⊥ (0.71 W m−1 K−1) of the BN/PNF nanocomposite paper with the same amount of BN.'''
+  confidence: High
+  notes: Comparison sample with unfunctionalized BN at the same 50 wt% loading. Room temperature per Fig. 3 caption.
+- row_id: de93ed76-381
+  matrix_polymer: Poly(p-phenylene-2,6-benzobisoxazole) nanofiber (PNF) paper
+  filler_material: BN
+  filler_material_original: BN (unmodified), sample BN/PNF-50
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: BN partially agglomerated in PNF matrix (per paper)
+  processing_method: 'Sol–gel film transformation (same method as m-BN/PNF): acid sol → acid gel → hydrogel by solvent exchange → compressed and dried'
+  k_composite_W_mK: 0.71
+  k_direction: through-plane (λ⊥)
+  k_original_value: 0.71
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section ''Thermal Properties of m-BN/PNF Nanocomposite Paper'', paragraph 1: ''When the mass fraction of m-BN is 50 wt%, m-BN/PNF-50 nanocomposite paper presents the highest λ∥ and λ⊥ of 9.68 and 0.84 W m−1 K−1, respectively, increased by 393% and 494% compared with those of PNF paper, 25.4% and 18.3% higher than the λ∥ (7.72 W m−1 K−1) and λ⊥ (0.71 W m−1 K−1) of the BN/PNF nanocomposite paper with the same amount of BN.'''
+  confidence: High
+  notes: Comparison sample with unfunctionalized BN at the same 50 wt% loading. Room temperature per Fig. 3 caption.

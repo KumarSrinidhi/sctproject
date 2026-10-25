@@ -1,0 +1,117 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P155
+paper:
+  doi: 10.3390/nano12193473
+  title: Pre-Ball-Milled Boron Nitride for the Preparation of Boron Nitride/Polyetherimide Nanocomposite Film with Enhanced Breakdown Strength and Mechanical Properties for Thermal Management
+  year: 2022
+  source_url: https://doi.org/10.3390/nano12193473
+extraction_log:
+- seq: 167
+  candidate_id: P6-P155
+  doi: 10.3390/nano12193473
+  paper_title: Pre-Ball-Milled Boron Nitride for the Preparation of Boron Nitride/Polyetherimide Nanocomposite Film with Enhanced Breakdown Strength and Mechanical Properties for Thermal Management
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano12193473.txt (cache, not committed)
+  tables_inspected: none (paper has no tables)
+  figures_inspected: Figure 3a (in-plane k of PEI, BN/PEI and SABM-BN/PEI at 5–30 wt%), Figure 3b (through-plane k), Figure 6 (IR thermal images, no k)
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 13 figure-only values not taken. Only four k values are printed: 30 wt% BN/PEI in-plane 2.69, 30 wt% SABM-BN/PEI in-plane 2.31, pure PEI 0.205 (in-plane context) and 30 wt% SABM-BN/PEI through-plane 0.512. Figure-only (skipped, 13): in-plane at 5/10/20 wt% for both fillers (6), and through-plane at 5/10/20/30 wt% BN/PEI and 5/10/20 wt% SABM-BN/PEI (7). The through-plane neat-PEI value is also figure-only. Literature values in the Introduction are skipped. The paper names the Hot D'
+  rows_rejected_at_append: []
+  rows_added:
+  - 8c529691-545
+  - 8c529691-546
+  - 8c529691-547
+  - 8c529691-548
+measurements:
+- row_id: 8c529691-545
+  matrix_polymer: Polyetherimide (PEI, Ultem 1000, SABIC)
+  filler_material: BN
+  filler_material_original: BN platelets (~20 μm, Dandong Rijin), untreated; 30 wt% BN/PEI composite film
+  filler_shape: platelet
+  filler_mean_size_um: 20.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (untreated BN)
+  filler_alignment: platelets tend to align horizontally (in-plane) during hot pressing, more so at ≥20 wt%
+  processing_method: Filler ultrasonically dispersed in DMF, PEI dissolved (80 °C 4 h, sonicated), solution cast on glass and dried at 160 °C, film shredded and hot-pressed at 1 MPa, 270 °C, 10 min
+  k_matrix_W_mK: 0.205
+  k_composite_W_mK: 2.69
+  k_direction: in-plane (λ∥)
+  measurement_method: Transient plane source, Hot Disk TPS2500s thermal constant analyzer, room temperature
+  k_original_value: 2.69
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1: ''The λ∥ of the 30 wt% BN/PEI composite film is 2.69 W/mK.'''
+  confidence: High
+  notes: Untreated BN control. Also stated in the Abstract and Conclusions. filler_mean_size_um is the supplier's '~20 μm'.
+- row_id: 8c529691-546
+  matrix_polymer: Polyetherimide (PEI, Ultem 1000, SABIC)
+  filler_material: BN
+  filler_material_original: 'SABM-BN (sucrose-assisted ball-milled BN: BN nanosheets + BN thick sheets); 30 wt% SABM-BN/PEI composite film'
+  filler_shape: sheets (mixture of BNNS and BN thick sheets after ball milling)
+  size_distribution: 'bimodal: BNNS (~21% yield) + BN thick sheets (~76%), from ~20 μm starting BN'
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: sucrose-assisted ball milling introduces –OH groups
+  filler_alignment: platelets tend to align horizontally (in-plane) during hot pressing, more so at ≥20 wt%
+  processing_method: Filler ultrasonically dispersed in DMF, PEI dissolved (80 °C 4 h, sonicated), solution cast on glass and dried at 160 °C, film shredded and hot-pressed at 1 MPa, 270 °C, 10 min
+  k_matrix_W_mK: 0.205
+  k_composite_W_mK: 2.31
+  k_direction: in-plane (λ∥)
+  measurement_method: Transient plane source, Hot Disk TPS2500s thermal constant analyzer, room temperature
+  k_original_value: 2.31
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1: ''The λ∥ of the 30 wt% SABM-BN/PEI composite film is 2.31 W/mK, which is ~11 times that of the pure film (0.205 W/mK).'''
+  confidence: High
+  notes: SABM-BN is not separated after milling and contains both BNNS and BN thick sheets; classified as BN. Also stated in the Abstract and Conclusions.
+- row_id: 8c529691-547
+  matrix_polymer: Polyetherimide (PEI, Ultem 1000, SABIC)
+  filler_material: none
+  filler_material_original: Pure PEI film
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: PEI dissolved in DMF (80 °C 4 h), solution cast on glass and dried at 160 °C, film shredded and hot-pressed at 1 MPa, 270 °C, 10 min
+  k_matrix_W_mK: 0.205
+  k_composite_W_mK: 0.205
+  k_direction: in-plane (λ∥; stated in the in-plane comparison)
+  measurement_method: Transient plane source, Hot Disk TPS2500s thermal constant analyzer, room temperature
+  k_original_value: 0.205
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1: ''The λ∥ of the 30 wt% SABM-BN/PEI composite film is 2.31 W/mK, which is ~11 times that of the pure film (0.205 W/mK).'''
+  confidence: High
+  notes: Neat PEI film made by the same process. The value is the reference for the in-plane comparison ('~11 times that of the pure film').
+- row_id: 8c529691-548
+  matrix_polymer: Polyetherimide (PEI, Ultem 1000, SABIC)
+  filler_material: BN
+  filler_material_original: 'SABM-BN (sucrose-assisted ball-milled BN: BN nanosheets + BN thick sheets); 30 wt% SABM-BN/PEI composite film'
+  filler_shape: sheets (mixture of BNNS and BN thick sheets after ball milling)
+  size_distribution: 'bimodal: BNNS (~21% yield) + BN thick sheets (~76%), from ~20 μm starting BN'
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: sucrose-assisted ball milling introduces –OH groups
+  filler_alignment: platelets tend to align horizontally (in-plane) during hot pressing, more so at ≥20 wt%
+  processing_method: Filler ultrasonically dispersed in DMF, PEI dissolved (80 °C 4 h, sonicated), solution cast on glass and dried at 160 °C, film shredded and hot-pressed at 1 MPa, 270 °C, 10 min
+  k_matrix_W_mK: 0.205
+  k_composite_W_mK: 0.512
+  k_direction: through-plane (λ⊥)
+  measurement_method: Transient plane source, Hot Disk TPS2500s thermal constant analyzer, room temperature
+  k_original_value: 0.512
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1: ''At 30 wt% content, the λ⊥ is 0.512 W/mK, higher than that of the BN/PEI composite film.'''
+  confidence: High
+  notes: Through-plane value. The paper says it is higher than the 30 wt% BN/PEI film, whose value is only in Figure 3b. k_matrix_W_mK is the in-plane neat-PEI value; the through-plane neat value is only in the figure.

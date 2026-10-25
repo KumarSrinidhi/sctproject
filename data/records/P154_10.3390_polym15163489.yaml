@@ -1,0 +1,120 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P154
+paper:
+  doi: 10.3390/polym15163489
+  title: Controlling Shear Rate for Designable Thermal Conductivity in Direct Ink Printing of Polydimethylsiloxane/Boron Nitride Composites
+  year: 2023
+  source_url: https://doi.org/10.3390/polym15163489
+extraction_log:
+- seq: 166
+  candidate_id: P6-P154
+  doi: 10.3390/polym15163489
+  paper_title: Controlling Shear Rate for Designable Thermal Conductivity in Direct Ink Printing of Polydimethylsiloxane/Boron Nitride Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym15163489.txt (cache, not committed)
+  tables_inspected: Table 1 (Carreau–Yasuda rheology fit parameters; no k values)
+  figures_inspected: Figure 10 (IR images, surface temperature, in-plane k vs printing speed); Figure 7 (XRD orientation); others rheology/simulation/SEM
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. All four k values of Figure 10c (control, 10, 60, 120 mm/s; all 40 wt% BN) are printed in the text (Agari paragraph), so none is figure-only. The speed assignment of 0.624 and 0.554 is inferred from the list order (see row notes). Pure PDMS 0.185 W∙m−1∙K−1 is introduced as 'It was reported' and used as the literature Km in the Agari model, so it is not extracted as a measured neat-matrix value (k_matrix left null). The Introduction's 0.82 at 120 mm/
+  rows_rejected_at_append: []
+  rows_added:
+  - 3eb32d68-541
+  - 3eb32d68-542
+  - 3eb32d68-543
+  - 3eb32d68-544
+measurements:
+- row_id: 3eb32d68-541
+  matrix_polymer: PDMS (Sylgard 184, Dow Corning)
+  curing_agent: Sylgard 184 curing agent, mass ratio 10:1; cured 80 °C 2 h in forced-air oven
+  filler_material: BN
+  filler_material_original: BN platelets, molded control sample (PDMS/BN, 40 wt%)
+  filler_shape: platelet
+  size_distribution: average size 1–2 μm (Aladdin)
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ethanol-dispersed, filtered, dried, ball milled)
+  filler_alignment: random (orientation angle 78.3°, f ≈ 0)
+  processing_method: Slurry poured directly into custom mould (molding control), cured 80 °C 2 h
+  k_composite_W_mK: 0.454
+  k_direction: 'in-plane (paper: ''in-plane thermal conductivity'', Figure 10c; molded control)'
+  measurement_method: Transient plane source, Hot Disk TPS 2200; k = α·ρ·Cp with Cp by DSC (TA-DSC 25)
+  k_original_value: 0.454
+  k_original_unit: W∙m−1∙K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 2: ''One can see that with the addition of BN particles, the thermal conductivity of the control sample increased to approximately 0.454 W∙m−1∙K−1 at 40 wt% BN loading.'''
+  confidence: Medium
+  notes: Molded (non-printed) control at 40 wt% BN. Also listed as the 4th Kc value (0.454) in the Agari analysis paragraph and in the Conclusions. k printed as approximate or as a bound, so Medium confidence.
+- row_id: 3eb32d68-542
+  matrix_polymer: PDMS (Sylgard 184, Dow Corning)
+  curing_agent: Sylgard 184 curing agent, mass ratio 10:1; cured 80 °C 2 h in forced-air oven
+  filler_material: BN
+  filler_material_original: BN platelets, DIW-printed PDMS/BN 40 wt%, printing speed 120 mm/s
+  filler_shape: platelet
+  size_distribution: average size 1–2 μm (Aladdin)
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ethanol-dispersed, filtered, dried, ball milled)
+  filler_alignment: aligned along printing direction (orientation angle 35.7°, f = 0.79)
+  processing_method: Direct ink writing (self-made pneumatic DIW printer, 0.2 MPa), nozzle 0.4 mm, 100% infill, layer 0.3 mm, printing speed 120 mm/s; cured 80 °C 2 h
+  k_composite_W_mK: 0.849
+  k_direction: 'in-plane (along printing direction; paper: ''in-plane thermal conductivity'')'
+  measurement_method: Transient plane source, Hot Disk TPS 2200; k = α·ρ·Cp with Cp by DSC (TA-DSC 25)
+  k_original_value: 0.849
+  k_original_unit: W∙m−1∙K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 2: ''However, the thermal conductivity of the printed part increased continuously to 0.849 W∙m−1∙K−1 as the printing speed increased, an increase of 87%.'''
+  confidence: High
+  notes: Highest printing speed (120 mm/s). The Introduction instead quotes 0.82 W∙m−1∙K−1 at 120 mm/s; 0.849 is used because the Results, Abstract, Conclusions and Agari Kc list all give 0.849.
+- row_id: 3eb32d68-543
+  matrix_polymer: PDMS (Sylgard 184, Dow Corning)
+  curing_agent: Sylgard 184 curing agent, mass ratio 10:1; cured 80 °C 2 h in forced-air oven
+  filler_material: BN
+  filler_material_original: BN platelets, DIW-printed PDMS/BN 40 wt%, printing speed 60 mm/s
+  filler_shape: platelet
+  size_distribution: average size 1–2 μm (Aladdin)
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ethanol-dispersed, filtered, dried, ball milled)
+  filler_alignment: partially aligned along printing direction
+  processing_method: Direct ink writing (self-made pneumatic DIW printer, 0.2 MPa), nozzle 0.4 mm, 100% infill, layer 0.3 mm, printing speed 60 mm/s; cured 80 °C 2 h
+  k_composite_W_mK: 0.624
+  k_direction: 'in-plane (along printing direction; paper: ''in-plane thermal conductivity'')'
+  measurement_method: Transient plane source, Hot Disk TPS 2200; k = α·ρ·Cp with Cp by DSC (TA-DSC 25)
+  k_original_value: 0.624
+  k_original_unit: W∙m−1∙K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 3 (Agari equation analysis): ''where the Kc values of four samples were 0.849, 0.624, 0.554, and 0.454 W∙m−1∙K−1, as presented in Figure 10c.'''
+  confidence: High
+  notes: Assigned to 60 mm/s from the listed order (0.849, 0.624, 0.554, 0.454) and the statement that C2 increases with printing speed, where 0.849 = 120 mm/s and 0.454 = control; the paper does not label each value explicitly.
+- row_id: 3eb32d68-544
+  matrix_polymer: PDMS (Sylgard 184, Dow Corning)
+  curing_agent: Sylgard 184 curing agent, mass ratio 10:1; cured 80 °C 2 h in forced-air oven
+  filler_material: BN
+  filler_material_original: BN platelets, DIW-printed PDMS/BN 40 wt%, printing speed 10 mm/s
+  filler_shape: platelet
+  size_distribution: average size 1–2 μm (Aladdin)
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ethanol-dispersed, filtered, dried, ball milled)
+  filler_alignment: weakly aligned (orientation angle 61.7°)
+  processing_method: Direct ink writing (self-made pneumatic DIW printer, 0.2 MPa), nozzle 0.4 mm, 100% infill, layer 0.3 mm, printing speed 10 mm/s; cured 80 °C 2 h
+  k_composite_W_mK: 0.554
+  k_direction: 'in-plane (along printing direction; paper: ''in-plane thermal conductivity'')'
+  measurement_method: Transient plane source, Hot Disk TPS 2200; k = α·ρ·Cp with Cp by DSC (TA-DSC 25)
+  k_original_value: 0.554
+  k_original_unit: W∙m−1∙K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 3 (Agari equation analysis): ''where the Kc values of four samples were 0.849, 0.624, 0.554, and 0.454 W∙m−1∙K−1, as presented in Figure 10c.'''
+  confidence: High
+  notes: Assigned to 10 mm/s from the listed order and the C2 trend with printing speed; the paper does not label each value explicitly. Text says the 10 mm/s value is 'almost comparable' to the control (0.454).

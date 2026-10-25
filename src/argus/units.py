@@ -48,6 +48,7 @@ def _si_patterns() -> list[re.Pattern[str]]:
         rf"/{T}-?{L}",  # W/K.m
         rf"{L}-1{T}-1",  # W m-1 K-1
         rf"{T}-1{L}-1",  # W K-1 m-1
+        rf"{L}{T}-1",  # W mK-1: common typesetting of W m-1 K-1 (the -1 applies to "mK")
     ]
     return [re.compile(rf"^(?P<pow>[mkuμµ]?)w{f}$") for f in forms]
 

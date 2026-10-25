@@ -1,0 +1,92 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P158
+paper:
+  doi: 10.1039/c9ra04771a
+  title: Research on the thermal conductivity and dielectric properties of AlN and BN co-filled addition-cure liquid silicone rubber composites
+  year: 2019
+  source_url: https://doi.org/10.1039/c9ra04771a
+extraction_log:
+- seq: 170
+  candidate_id: P6-P158
+  doi: 10.1039/c9ra04771a
+  paper_title: Research on the thermal conductivity and dielectric properties of AlN and BN co-filled addition-cure liquid silicone rubber composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc)
+  files_inspected: sources/text/10.1039_c9ra04771a.txt (cache, not committed)
+  tables_inspected: 'Table 1 (TGA/DTG characteristic data): no thermal conductivity'
+  figures_inspected: Fig. 2 caption (thermal conductivity vs filler loading, 0-50 wt%). Image values not read.
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 3 figure-only values not taken. Samples are 0, 10, 20, 30, 40 and 50 wt% total AlN/BN (8:2 by weight). Only 0, 20 and 50 wt% have k printed in the text; 10, 30 and 40 wt% appear only in Fig. 2 (3 skipped). The values the introduction cites from refs 18-21 are literature and excluded. The text gives room temperature without a number, so measurement_temperature_C is null.
+  rows_rejected_at_append: []
+  rows_added:
+  - b4c4c431-574
+  - b4c4c431-575
+  - b4c4c431-576
+measurements:
+- row_id: b4c4c431-574
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (Vi-PDMS, 1000 cSt, 0.96 wt% vinyl)'
+  curing_agent: Poly-hydromethylsiloxane (PHMS) crosslinker, nSi-Vi:nSi-H = 1:1.2, Karstedt's Pt catalyst, 1-ethynyl-1-cyclohexanol inhibitor; cured at 120 °C for 120 min in a vacuum oven
+  filler_material: none
+  filler_material_original: pure ALSR
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Mechanical stirring at 700 rpm for 120 min, cast into stainless-steel moulds, degassed, cured at 120 °C for 120 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.16
+  k_direction: unknown
+  measurement_method: Laser flash, NETZSCH LFA467 (thermal diffusivity and specific heat capacity), cylindrical samples 12.7 mm diameter × 2 mm thick; density by Archimedes principle; λ = α × Cp × ρ; room temperature
+  k_original_value: 0.16
+  k_original_unit: W (m−1 K−1)
+  value_source: text
+  source_location: 'Results and discussion, ''Thermal conductivities of ALSR composites'', paragraph 2: ''The thermal conductivity of composites with 20 wt% AlN/BN loading is 0.237 W (m−1 K−1), which is only 1.48 times higher than that of pure ALSR (0.160 W (m−1 K−1)).'''
+  confidence: High
+  notes: Neat-matrix value printed as 0.160. Direction not stated; laser flash on 2 mm discs measures through the thickness.
+- row_id: b4c4c431-575
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (Vi-PDMS, 1000 cSt, 0.96 wt% vinyl)'
+  curing_agent: Poly-hydromethylsiloxane (PHMS) crosslinker, nSi-Vi:nSi-H = 1:1.2, Karstedt's Pt catalyst, 1-ethynyl-1-cyclohexanol inhibitor; cured at 120 °C for 120 min in a vacuum oven
+  filler_material: h-BN/AlN hybrid
+  filler_material_original: AlN + hexagonal boron nitride (h-BN), KH550-treated, sample 20 wt% AlN/BN/ALSR
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane coupling agent KH550 (3-aminopropyl triethoxysilane) surface treatment of both AlN and BN
+  filler_alignment: random (described as randomly dispersed at low loading)
+  processing_method: Mechanical stirring at 700 rpm for 120 min, cast into stainless-steel moulds, degassed, cured at 120 °C for 120 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.237
+  k_direction: unknown
+  measurement_method: Laser flash, NETZSCH LFA467 (thermal diffusivity and specific heat capacity), cylindrical samples 12.7 mm diameter × 2 mm thick; density by Archimedes principle; λ = α × Cp × ρ; room temperature
+  k_original_value: 0.237
+  k_original_unit: W (m−1 K−1)
+  value_source: text
+  source_location: 'Results and discussion, ''Thermal conductivities of ALSR composites'', paragraph 2: ''The thermal conductivity of composites with 20 wt% AlN/BN loading is 0.237 W (m−1 K−1), which is only 1.48 times higher than that of pure ALSR (0.160 W (m−1 K−1)).'''
+  confidence: High
+  notes: 'Hybrid with total filler 20 wt% and AlN:BN fixed at 8:2 by weight, i.e. 16 wt% AlN + 4 wt% h-BN. h-BN: average size 0.5 μm, 33 W/mK; AlN: average size 10 μm, 240 W/mK (Ke Gong Metallurgy). Direction not stated.'
+- row_id: b4c4c431-576
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (Vi-PDMS, 1000 cSt, 0.96 wt% vinyl)'
+  curing_agent: Poly-hydromethylsiloxane (PHMS) crosslinker, nSi-Vi:nSi-H = 1:1.2, Karstedt's Pt catalyst, 1-ethynyl-1-cyclohexanol inhibitor; cured at 120 °C for 120 min in a vacuum oven
+  filler_material: h-BN/AlN hybrid
+  filler_material_original: AlN + hexagonal boron nitride (h-BN), KH550-treated, sample 50 wt% AlN/BN/ALSR
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: Silane coupling agent KH550 (3-aminopropyl triethoxysilane) surface treatment of both AlN and BN
+  processing_method: Mechanical stirring at 700 rpm for 120 min, cast into stainless-steel moulds, degassed, cured at 120 °C for 120 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.554
+  k_direction: unknown
+  measurement_method: Laser flash, NETZSCH LFA467 (thermal diffusivity and specific heat capacity), cylindrical samples 12.7 mm diameter × 2 mm thick; density by Archimedes principle; λ = α × Cp × ρ; room temperature
+  k_original_value: 0.554
+  k_original_unit: W (m−1 K−1)
+  value_source: text
+  source_location: 'Results and discussion, ''Thermal conductivities of ALSR composites'', paragraph 2: ''The thermal conductivity of composites with 50 wt% AlN/BN loading is 0.554 W (m−1 K−1), which is 2.34 times higher than that of 20 wt% ALSR composites.'''
+  confidence: High
+  notes: Hybrid with total filler 50 wt% and AlN:BN fixed at 8:2 by weight, i.e. 40 wt% AlN + 10 wt% h-BN. The abstract reports the same 0.554 value but wrongly calls it '50 wt% hBN filler'; the methods confirm all samples are AlN/BN 8:2 hybrids. The paper says this is 3.4 times pure ALSR. Direction not stated.

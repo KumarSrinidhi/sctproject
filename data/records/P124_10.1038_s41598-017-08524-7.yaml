@@ -1,0 +1,106 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P124
+paper:
+  doi: 10.1038/s41598-017-08524-7
+  title: Self-sacrificed template synthesis of ribbon-like hexagonal boron nitride nano-architectures and their improvement on mechanical and thermal properties of PHA polymer
+  year: 2017
+  source_url: https://doi.org/10.1038/s41598-017-08524-7
+extraction_log:
+- seq: 136
+  candidate_id: P6-P124
+  doi: 10.1038/s41598-017-08524-7
+  paper_title: Self-sacrificed template synthesis of ribbon-like hexagonal boron nitride nano-architectures and their improvement on mechanical and thermal properties of PHA polymer
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1038_s41598-017-08524-7.txt (cache, not committed)
+  tables_inspected: Table 1 (elemental composition of RLBN; no k)
+  figures_inspected: Figure 5 caption (thermal conductivities of PHA and PHA@BN composites; the same four values are printed in text)
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. Four printed values (neat PHA + three 2 wt% BN composites), all in text. Measurement direction and temperature are not stated. The LW-9091IR instrument is named but the technique is not described. Xue et al. (ref 19, +27.3%) is a literature value and was skipped.
+  rows_rejected_at_append: []
+  rows_added:
+  - 883ff571-394
+  - 883ff571-395
+  - 883ff571-396
+  - 883ff571-397
+measurements:
+- row_id: 883ff571-394
+  matrix_polymer: Polyhydroxyalkanoates (PHA)
+  filler_material: none
+  filler_material_original: neat PHA
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  k_matrix_W_mK: 0.174
+  k_composite_W_mK: 0.174
+  k_direction: unknown
+  measurement_method: thermal measurement apparatus (LW-9091IR-Series)
+  k_original_value: 0.174
+  k_original_unit: W/°Cm
+  value_source: text
+  source_location: 'Results, ''Thermal properties of PHA@BN composites'', last paragraph: ''The thermal conductivity of PHA is about 0.174 W/°Cm, while this value increased by 46.0% when 2 wt% of RLBN added.'''
+  confidence: Medium
+  notes: 'Neat-matrix value printed as ''about 0.174''. Unit printed as W/°Cm, numerically identical to W/(m·K). Corrected in verification: The value 0.174 (printed as ''about 0.174'') is correct and comes from the text. The unit must be the one printed, ''W/°Cm'', not the reformatted ''W/(°C·m)''. The Methods describe the film procedure only for PHA@RLBN (2 g PHA + 0.04 g RLBN), not for a neat PHA film, so processing_method for the neat matrix is inferred and should be null, or else noted as an assumption. Direction ''unknown'', method LW-9091IR and temperature null are correct. k printed as approximate or as a bound, so Medium confidence.'
+- row_id: 883ff571-395
+  matrix_polymer: Polyhydroxyalkanoates (PHA)
+  filler_material: h-BN
+  filler_material_original: ribbon-like hexagonal boron nitride nano-architectures (RLBN), sample PHA@RLBN
+  filler_shape: ribbon-like nano-architecture made of BN nanosheets (width ~300-500 nm, thickness ~10 nm, length several to tens of µm)
+  filler_loading_wt_pct: 2.0
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt%
+  processing_method: solution blending in chloroform (stirring 2 h, ultrasonication 2 h in ice bath), cast and dried at ambient atmosphere 48 h (film)
+  k_matrix_W_mK: 0.174
+  k_composite_W_mK: 0.254
+  k_direction: unknown
+  measurement_method: thermal measurement apparatus (LW-9091IR-Series)
+  k_original_value: 0.254
+  k_original_unit: W/°Cm
+  value_source: text
+  source_location: 'Results, ''Thermal properties of PHA@BN composites'', last paragraph: ''Furthermore, the thermal conductivity of PHA@RLBN (0.254 W/°Cm) is higher than that of PHA@P-BN (0.206 W/°Cm) and PHA@BNNS (0.231 W/°Cm) at the same loading.'''
+  confidence: High
+  notes: 'RLBN synthesised in-house from boric acid + melamine by freeze-drying and pyrolysis at 1050 °C; contains 15.00 wt% O and 1.01 wt% C (Table 1). Paper states +46.0% vs neat PHA. 2 wt% = 0.04 g RLBN in 2 g PHA. Corrected in verification: 0.254 for PHA@RLBN at 2 wt% is correct and comes from the text. The unit as printed is ''W/°Cm''. The paper never says the RLBN is unfunctionalized, and FTIR shows B-OH/B-NH2 groups with 15 wt% O, so ''none'' is a guess and should be null. The other fields are correct: h-BN (the paper says hexagonal BN), the shape and dimensions, and the processing (2 h stirring, 2 h ultrasonication in an ice bath, 48 h drying).'
+- row_id: 883ff571-396
+  matrix_polymer: Polyhydroxyalkanoates (PHA)
+  filler_material: BN
+  filler_material_original: porous BN (P-BN), sample PHA@P-BN
+  filler_shape: porous BN
+  filler_loading_wt_pct: 2.0
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt%
+  processing_method: solution blending in chloroform with ultrasonication, cast and dried (film), same procedure as PHA@RLBN
+  k_matrix_W_mK: 0.174
+  k_composite_W_mK: 0.206
+  k_direction: unknown
+  measurement_method: thermal measurement apparatus (LW-9091IR-Series)
+  k_original_value: 0.206
+  k_original_unit: W/°Cm
+  value_source: text
+  source_location: 'Results, ''Thermal properties of PHA@BN composites'', last paragraph: ''Furthermore, the thermal conductivity of PHA@RLBN (0.254 W/°Cm) is higher than that of PHA@P-BN (0.206 W/°Cm) and PHA@BNNS (0.231 W/°Cm) at the same loading.'''
+  confidence: High
+  notes: 'P-BN is a porous BN comparison filler; its source and morphology are not described in the main text. ''at the same loading'' = 2 wt%. Corrected in verification: 0.206 for PHA@P-BN at 2 wt% (''at the same loading''; the mechanical section confirms 2 wt% of RLBN, P-BN and BNNS) is correct. The unit as printed is ''W/°Cm''. P-BN functionalization is not described, so it should be null, not ''none''.'
+- row_id: 883ff571-397
+  matrix_polymer: Polyhydroxyalkanoates (PHA)
+  filler_material: BNNS
+  filler_material_original: BN nanosheets (BNNS), sample PHA@BNNS
+  filler_shape: nanosheets
+  filler_loading_wt_pct: 2.0
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt%
+  processing_method: solution blending in chloroform with ultrasonication, cast and dried (film), same procedure as PHA@RLBN
+  k_matrix_W_mK: 0.174
+  k_composite_W_mK: 0.231
+  k_direction: unknown
+  measurement_method: thermal measurement apparatus (LW-9091IR-Series)
+  k_original_value: 0.231
+  k_original_unit: W/°Cm
+  value_source: text
+  source_location: 'Results, ''Thermal properties of PHA@BN composites'', last paragraph: ''Furthermore, the thermal conductivity of PHA@RLBN (0.254 W/°Cm) is higher than that of PHA@P-BN (0.206 W/°Cm) and PHA@BNNS (0.231 W/°Cm) at the same loading.'''
+  confidence: High
+  notes: 'BNNS comparison filler; its source and dimensions are not given in the main text. ''at the same loading'' = 2 wt%. Corrected in verification: 0.231 for PHA@BNNS at 2 wt% is correct. The unit as printed is ''W/°Cm''. BNNS functionalization is not described, so it should be null, not ''none''.'

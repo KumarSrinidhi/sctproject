@@ -1,0 +1,70 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P123
+paper:
+  doi: 10.1021/acsomega.4c10677
+  title: Enhancement of Thermal, Mechanical, and Oxidative Properties of Polypropylene Composites with Exfoliated Hexagonal Boron Nitride Nanosheets
+  year: 2025
+  source_url: https://doi.org/10.1021/acsomega.4c10677
+extraction_log:
+- seq: 135
+  candidate_id: P6-P123
+  doi: 10.1021/acsomega.4c10677
+  paper_title: Enhancement of Thermal, Mechanical, and Oxidative Properties of Polypropylene Composites with Exfoliated Hexagonal Boron Nitride Nanosheets
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc-nd)
+  files_inspected: sources/text/10.1021_acsomega.4c10677.txt (cache, not committed)
+  tables_inspected: Table 1 (nomenclature/composition), Table 2 (tensile), Table 3 (comparison with literature, including 'this work' rows with thermal conductivity)
+  figures_inspected: Figure 7 (k of neat HP, hBN-HP, e-hBN-HP), Figures 1-6, 8
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 1 figure-only values not taken. Only the 'this work' rows of Table 3 were extracted; the literature rows (entries 2-9) were skipped. Figure 7 shows k for neat HP, hBN-HP and e-hBN-HP; only HP (0.3) and one 5 wt% composite (0.7) are printed, so the other 5 wt% composite is figure-only (1 skipped). IP-series k values are not reported.
+  rows_rejected_at_append: []
+  rows_added:
+  - f94a9b5f-392
+  - f94a9b5f-393
+measurements:
+- row_id: f94a9b5f-392
+  matrix_polymer: Polypropylene homopolymer (HP, LyondellBasell)
+  filler_material: none
+  filler_material_original: none, sample HP (neat PP homopolymer)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Hot-pressed PP pellets (Carver compression molding, 6 metric tons)
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 0.3
+  k_direction: unknown
+  measurement_method: k = α·ρ·c; thermal diffusivity by MTPS method (Trident, Canada), density by density tester (MH-300A, Qunlong, China), heat capacity per ASTM E1269-11 (DSC section)
+  k_original_value: 0.3
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 3, entry 1 (''this work''): ''1 | HP | 30.42 | 20.1 | 4.6 | 163, 450 | 0.3 | this work'''
+  confidence: High
+  notes: 'Neat PP homopolymer. k values for the IP (impact copolymer) samples are not reported. Corrected in verification: The value 0.3 W/mK for neat HP in Table 3 (''this work'') is correct. The only change is to the method field: the paper writes ''MTPS method (Trident, Canada)'' and never prints ''C-Therm'', so the manufacturer name should not be added.'
+- row_id: f94a9b5f-393
+  matrix_polymer: Polypropylene homopolymer (HP, LyondellBasell)
+  filler_material: BNNS
+  filler_material_original: exfoliated h-BN nanosheets (e-hBN, Denka h-BN), labelled '5%hBN-HP' in Table 3 (= e-hBN-HP of Table 1, judging by its tensile values)
+  filler_shape: nanosheets
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: none (P4VP dispersant used in exfoliation; some residual P4VP per TGA)
+  filler_alignment: random
+  processing_method: h-BN liquid-phase exfoliated in NMP/P4VP (Silverson 5000 rpm 1 h, then M110P microfluidizer 190 MPa, 5 cycles), freeze-dried; coated onto PP pellets by resonant acoustic mixer (Resodyn LabRAM II); twin-screw melt extrusion (Haake Process 11); compression molded into sheets (Carver)
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 0.7
+  k_direction: unknown
+  measurement_method: k = α·ρ·c; thermal diffusivity by MTPS method (Trident, Canada), density by density tester (MH-300A, Qunlong, China), heat capacity per ASTM E1269-11 (DSC section)
+  k_original_value: 0.7
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 3, entry 1 (''this work''), second row: ''5%hBN-HP | 32.88 | 24.86 | 9.6 | 163, 440 | 0.7'''
+  confidence: Medium
+  notes: 'Table 3 label ''5%hBN-HP'' (this work). Assigned to e-hBN-HP (exfoliated): its TS 32.88 MPa and E 24.86% exactly match e-hBN-HP in Table 2. The parallel row ''5%hBN-IP'' (TS 19.6, E 334, OIT 34) also matches e-hBN-IP (Table 2 TS 19.6, E 333.94; OIT 34 min in the text). So Table 3''s ''5%hBN'' denotes the exfoliated samples, and the text says Table 3 compares e-hBN-HP. Only the OIT of 9.6 min is closer to hBN-HP (9.67) than to e-hBN-HP (13). The 5 wt% basis comes from Table 1. Corrected in verification: The value 0.7 W/mK and the BNNS/e-hBN assignment are supported. The 5%hBN-IP row matches e-hBN-IP as well, which further supports reading ''5%hBN'' in Table 3 as the exfoliated samples. I added that cross-check to notes and corrected the method field so it no longer names C-Therm, which the paper does not print.'

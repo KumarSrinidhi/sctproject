@@ -1,0 +1,49 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P176
+paper:
+  doi: 10.1002/advs.202403724
+  title: Natural Deep Eutectic Solvent‐Assisted Construction of Silk Nanofibrils/Boron Nitride Nanosheets Membranes with Enhanced Heat‐Dissipating Efficiency
+  year: 2024
+  source_url: https://doi.org/10.1002/advs.202403724
+extraction_log:
+- seq: 188
+  candidate_id: P6-P176
+  doi: 10.1002/advs.202403724
+  paper_title: Natural Deep Eutectic Solvent‐Assisted Construction of Silk Nanofibrils/Boron Nitride Nanosheets Membranes with Enhanced Heat‐Dissipating Efficiency
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1002_advs.202403724.txt (cache, not committed)
+  tables_inspected: none in main text (Tables S2, S5 are in Supporting Information, not available; S5 is a literature comparison)
+  figures_inspected: Figure 6a (in-plane and through-plane λ of SNFs/BNNSs membranes at 16.7–73.9% BNNS) caption only
+  candidate_measurements: 1
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. Only one k value printed (in-plane 3.84 for 59.3%). Figure 6a shows the other 4 in-plane loadings (and possibly through-plane values) – 4 in-plane points counted as figure-only skipped; through-plane points, if plotted, not counted. Experimental details (method/instrument) are in SI only.
+  rows_rejected_at_append: []
+  rows_added:
+  - 93954ccc-666
+measurements:
+- row_id: 93954ccc-666
+  matrix_polymer: silk nanofibrils (SNFs), DES-exfoliated (amino acid/D-sorbitol deep eutectic solvent)
+  filler_material: BNNS
+  filler_material_original: S-BNNSs (SNF-assisted exfoliated h-BN nanosheets), sample SNFs/BNNSs‐59.3%
+  filler_shape: nanosheet
+  size_distribution: thickness 1–2 nm, nanoscale lateral size
+  filler_loading_wt_pct: 59.3
+  filler_loading_original_value: 59.3
+  filler_loading_original_unit: '% (mass fraction)'
+  functionalization: non-covalent SNF adsorption (hydrophobic and hydrogen-bonding interactions) from SNF-assisted liquid-phase exfoliation
+  filler_alignment: in-plane aligned, lamellar layer-by-layer stacking
+  processing_method: vacuum filtration of SNF/BNNS hybrid dispersion into membrane
+  k_composite_W_mK: 3.84
+  k_direction: in-plane (in‐plane λ)
+  k_original_value: 3.84
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Results, thermal conductivity paragraph (after Figure 5); repeated in Conclusion: ''The in‐plane λ of the nanocomposites increased with the increase of the BNNSs content initially and then decreased (Figure 6a), and reached the highest value of 3.84 W·m−1·K−1 in the SNFs/BNNSs‐59.3%.'''
+  confidence: High
+  notes: Highest in-plane value among membranes with 16.7, 33.8, 59.3, 69.0, 73.9% BNNS; mass fraction based on net BNNS concentration in dispersions (Table S2). Measurement method only in Supporting Information (not available); Figure 6a caption says room temperature. Commercial silicone pad value (3 W·m−1·K−1) is not a BN sample and was skipped.

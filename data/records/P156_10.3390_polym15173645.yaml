@@ -1,0 +1,555 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P156
+paper:
+  doi: 10.3390/polym15173645
+  title: Optimization of Thermal Conductivity and Tensile Properties of High-Density Polyethylene by Addition of Expanded Graphite and Boron Nitride
+  year: 2023
+  source_url: https://doi.org/10.3390/polym15173645
+extraction_log:
+- seq: 168
+  candidate_id: P6-P156
+  doi: 10.3390/polym15173645
+  paper_title: Optimization of Thermal Conductivity and Tensile Properties of High-Density Polyethylene by Addition of Expanded Graphite and Boron Nitride
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym15173645.txt (cache, not committed)
+  tables_inspected: Tables 1–2 (compositions and measured k and tensile properties; all 22 runs + neat HDPE extracted); Tables 3–18 (ANOVA/model statistics, no k); Tables 19–22 (optimisation solutions, modelled k, skipped)
+  figures_inspected: Figures 1–2 (k per run and response surfaces; values duplicate Tables 1–2); Figures 3–10 (tensile and desirability)
+  candidate_measurements: 23
+  rows_appended: 22
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. HDPE + expanded graphite + hexagonal BN hybrids (micro BN 35 µm or nano BN 70 nm); all k values are in Tables 1–2 (22 runs + neat HDPE = 23 rows). Total additive wt% = EG + BN; the split is in filler_loading_original_value and notes. k_direction: the Discussion says through-plane conductivity was used. k values underlined (crossed out) in the JATS (Table 1 runs 4 and 8; Table 2 runs 1 and 9) are extracted but flagged as excluded by the authors. Tabl'
+  rows_rejected_at_append:
+  - - f9d05571-556
+    - 'post-import review: the authors excluded this run (underlined in Table 1, left out of their ANOVA); k 0.24 is below neat HDPE'
+  rows_added:
+  - f9d05571-549
+  - f9d05571-550
+  - f9d05571-551
+  - f9d05571-552
+  - f9d05571-553
+  - f9d05571-554
+  - f9d05571-555
+  - f9d05571-557
+  - f9d05571-558
+  - f9d05571-559
+  - f9d05571-560
+  - f9d05571-561
+  - f9d05571-562
+  - f9d05571-563
+  - f9d05571-564
+  - f9d05571-565
+  - f9d05571-566
+  - f9d05571-567
+  - f9d05571-568
+  - f9d05571-569
+  - f9d05571-570
+  - f9d05571-571
+measurements:
+- row_id: f9d05571-549
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG5/mBN15 (Table 1 run 1)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: EG 5 wt% + mBN 15 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.21
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.21
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 1: ''1 | 80 | 5 | 15 | 1.21 ± 0.01 | 18.84 ± 1.04 | 1072 ± 98 | 4.90 ± 1.13'''
+  confidence: High
+  notes: 'HDPE 80 wt%, EG 5 + mBN 15 wt% (total additives 20 wt%); k 1.21 ± 0.01 W/mK. PE-g-MAH 5 wt% added to each composite (not listed separately in the table). Through-plane per the Discussion (''For through plane conductivity, which was used in this research too''). Corrected in verification: T1 run1: k value, EG/BN wt% split, direction (Discussion: through-plane used) and THB method at 23 °C all verified. Only filler_shape is over-stated: ''hexagonal'' in the paper refers to the BN crystal structure, and ''worm-like'' EG comes from a generic Introduction statement, not a description of the fillers used.'
+- row_id: f9d05571-550
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG8/mBN22 (Table 1 run 2)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: EG 8 wt% + mBN 22 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.96
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.96
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 2: ''2 | 70 | 8 | 22 | 1.96 ± 0.14 | 19.65 ± 0.75 | 1601 ± 192 | 2.91 ± 0.40'''
+  confidence: High
+  notes: 'HDPE 70 wt%, EG 8 + mBN 22 wt% (total 30 wt%); k 1.96 ± 0.14 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run2: all other fields verified; filler_shape over-stated (hexagonal = BN crystal structure; worm-like EG is from a generic Introduction statement).'
+- row_id: f9d05571-551
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG15/mBN15 (Table 1 run 3)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: EG 15 wt% + mBN 15 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.96
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.96
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 3: ''3 | 70 | 15 | 15 | 1.96 ± 0.13 | 23.45 ± 0.48 | 1723 ± 244 | 4.94 ± 0.34'''
+  confidence: High
+  notes: 'HDPE 70 wt%, EG 15 + mBN 15 wt% (total 30 wt%); k 1.96 ± 0.13 W/mK. Centre point, one of three replicates (runs 3, 7, 10); the text''s 2.13 W/mK for 15 wt% mBN is their mean and is not extracted separately. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run3: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-552
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG25/mBN15 (Table 1 run 4)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: EG 25 wt% + mBN 15 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.26
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.26
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 4: ''4 | 60 | 25 | 15 | 1.26 ± 0.04 | 23.85 ± 0.99 | 1915 ± 324 | 2.65 ± 0.51'''
+  confidence: High
+  notes: 'HDPE 60 wt%, EG 25 + mBN 15 wt% (total 40 wt%); k 1.26 ± 0.04 W/mK. This k is underlined/crossed out in the table: the authors excluded it from the ANOVA because of high deviation from the model. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run4: underlined/excluded value confirmed in the XML; all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-553
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG15/mBN5 (Table 1 run 5)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: EG 15 wt% + mBN 5 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.69
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.69
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 5: ''5 | 20 | 15 | 5 | 1.69 ± 0.10 | 20.84 ± 1.01 | 1149 ± 181 | 5.92 ± 1.2'''
+  confidence: High
+  notes: 'EG 15 + mBN 5 wt% (total 20 wt%); k 1.69 ± 0.10 W/mK. The table prints HDPE 20 wt% for this run, which is inconsistent with 15 + 5 wt% additives (likely a typo for 80). PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run5: HDPE 20 typo correctly noted; all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-554
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG8/mBN8 (Table 1 run 6)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 16.0
+  filler_loading_original_value: EG 8 wt% + mBN 8 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.21
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.21
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 6: ''6 | 84 | 8 | 8 | 1.21 ± 0.06 | 19.58 ± 1.95 | 1164 ± 219 | 5.71 ± 1.51'''
+  confidence: High
+  notes: 'HDPE 84 wt%, EG 8 + mBN 8 wt% (total 16 wt%); k 1.21 ± 0.06 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run6: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-555
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG15/mBN15 (Table 1 run 7)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: EG 15 wt% + mBN 15 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 2.39
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 2.39
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 7: ''7 | 70 | 15 | 15 | 2.39 ± 0.17 | 20.13 ± 2.65 | 1548 ± 152 | 2.86 ± 0.95'''
+  confidence: High
+  notes: 'HDPE 70 wt%, EG 15 + mBN 15 wt% (total 30 wt%); k 2.39 ± 0.17 W/mK. Centre-point replicate (runs 3, 7, 10). PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run7: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-557
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG22/mBN22 (Table 1 run 9)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 44.0
+  filler_loading_original_value: EG 22 wt% + mBN 22 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 3.01
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 3.01
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 9: ''9 | 56 | 22 | 22 | 3.01 ± 0.08 | 23.06 ± 1.77 | 2087 ± 306 | 1.85 ± 0.23'''
+  confidence: High
+  notes: 'HDPE 56 wt%, EG 22 + mBN 22 wt% (total 44 wt%); k 3.01 ± 0.08 W/mK. The text quotes this composite as 3.00 W/mK (and 3 W/mK); the table value is used. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run9: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-558
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG15/mBN15 (Table 1 run 10)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: EG 15 wt% + mBN 15 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 2.03
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 2.03
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 10: ''10 | 70 | 15 | 15 | 2.03 ± 0.06 | 21.86 ± 1.16 | 1593 ± 154 | 3.63 ± 0.75'''
+  confidence: High
+  notes: 'HDPE 70 wt%, EG 15 + mBN 15 wt% (total 30 wt%); k 2.03 ± 0.06 W/mK. Centre-point replicate (runs 3, 7, 10). PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run10: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-559
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + micro-sized hexagonal BN, sample HDPE/EG22/mBN8 (Table 1 run 11)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 35.0
+  size_distribution: micro BN 35 µm (Henze HeBoFill); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: EG 22 wt% + mBN 8 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.91
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.91
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1, run 11: ''11 | 70 | 22 | 8 | 1.91 ± 0.07 | 22.55 ± 1.58 | 1687 ± 233 | 3.34 ± 0.4'''
+  confidence: High
+  notes: 'HDPE 70 wt%, EG 22 + mBN 8 wt% (total 30 wt%); k 1.91 ± 0.07 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T1 run11: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-560
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG22/nBN13.5 (Table 2 run 1)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 35.5
+  filler_loading_original_value: EG 22 wt% + nBN 13.5 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 2.79
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 2.79
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 1: ''1 | 64.5 | 22 | 13.5 | 2.79 ± 0.09 | 23.31 ± 1.85 | 1899 ± 189 | 2.32 ± 0.51'''
+  confidence: High
+  notes: 'HDPE 64.5 wt%, EG 22 + nBN 13.5 wt% (total 35.5 wt%); k 2.79 ± 0.09 W/mK. This k is underlined/crossed out in the table: the authors excluded it from the ANOVA. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run1: underlined/excluded value confirmed in the XML; all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-561
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG22/nBN6.5 (Table 2 run 2)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 28.5
+  filler_loading_original_value: EG 22 wt% + nBN 6.5 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 2.09
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 2.09
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 2: ''2 | 71.5 | 22 | 6.5 | 2.09 ± 0.07 | 23.06 ± 1.27 | 1985 ± 236 | 3.33 ± 2.99'''
+  confidence: High
+  notes: 'HDPE 71.5 wt%, EG 22 + nBN 6.5 wt% (total 28.5 wt%); k 2.09 ± 0.07 W/mK. Also quoted in the text and Conclusions as 2.09 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run2: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-562
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG15/nBN15 (Table 2 run 3)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: EG 15 wt% + nBN 15 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.95
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.95
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 3: ''3 | 70 | 15 | 15 | 1.95 ± 0.08 | 24.03 ± 2.86 | 2209 ± 293 | 3.66 ± 1.28'''
+  confidence: High
+  notes: 'HDPE 70 wt%, EG 15 + nBN 15 wt% (total 30 wt%); k 1.95 ± 0.08 W/mK (also quoted in the text). PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run3: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-563
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG15/nBN10 (Table 2 run 4)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: EG 15 wt% + nBN 10 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.88
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.88
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 4: ''4 | 75 | 15 | 10 | 1.88 ± 0.10 | 22.80 ± 2.26 | 1733 ± 101 | 3.94 ± 0.94'''
+  confidence: High
+  notes: 'HDPE 75 wt%, EG 15 + nBN 10 wt% (total 25 wt%); k 1.88 ± 0.10 W/mK. Centre-point replicate (runs 4, 5, 6). PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run4: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-564
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG15/nBN10 (Table 2 run 5)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: EG 15 wt% + nBN 10 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.61
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.61
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 5: ''5 | 75 | 15 | 10 | 1.61 ± 0.07 | 22.84 ± 2.32 | 1814 ± 212 | 4.01 ± 1.26'''
+  confidence: High
+  notes: 'HDPE 75 wt%, EG 15 + nBN 10 wt% (total 25 wt%); k 1.61 ± 0.07 W/mK. Centre-point replicate (runs 4, 5, 6). PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run5: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-565
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG15/nBN10 (Table 2 run 6)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: EG 15 wt% + nBN 10 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.44
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.44
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 6: ''6 | 75 | 15 | 10 | 1.44 ± 0.02 | 21.23 ± 2.07 | 1477 ± 101 | 3.86 ± 1.5'''
+  confidence: High
+  notes: 'HDPE 75 wt%, EG 15 + nBN 10 wt% (total 25 wt%); k 1.44 ± 0.02 W/mK. Centre-point replicate (runs 4, 5, 6). PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run6: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-566
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG15/nBN5 (Table 2 run 7)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: EG 15 wt% + nBN 5 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.55
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.55
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 7: ''7 | 80 | 15 | 5 | 1.55 ± 0.06 | 20.83 ± 2.06 | 1432 ± 227 | 4.43 ± 4.57'''
+  confidence: High
+  notes: 'HDPE 80 wt%, EG 15 + nBN 5 wt% (total 20 wt%); k 1.55 ± 0.06 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run7: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-567
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG8/nBN6.5 (Table 2 run 8)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 14.5
+  filler_loading_original_value: EG 8 wt% + nBN 6.5 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.11
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.11
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 8: ''8 | 85.5 | 8 | 6.5 | 1.11 ± 0.08 | 20.94 ± 1.17 | 1328 ± 310 | 6.61 ± 0.72'''
+  confidence: High
+  notes: 'HDPE 85.5 wt%, EG 8 + nBN 6.5 wt% (total 14.5 wt%); k 1.11 ± 0.08 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run8: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-568
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG25/nBN10 (Table 2 run 9)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 35.0
+  filler_loading_original_value: EG 25 wt% + nBN 10 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.48
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.48
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 9: ''9 | 65 | 25 | 10 | 1.48 ± 0.02 | 22.99 ± 1.93 | 2006 ± 241 | 2.24 ± 0.51'''
+  confidence: High
+  notes: 'HDPE 65 wt%, EG 25 + nBN 10 wt% (total 35 wt%); k 1.48 ± 0.02 W/mK. This k is underlined/crossed out in the table: the authors excluded it from the ANOVA. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run9: underlined/excluded value confirmed in the XML; all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-569
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG5/nBN10 (Table 2 run 10)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 15.0
+  filler_loading_original_value: EG 5 wt% + nBN 10 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 0.91
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 0.91
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 10: ''10 | 85 | 5 | 10 | 0.91 ± 0.04 | 21.59 ± 1.49 | 1144 ± 167 | 6.23 ± 1.23'''
+  confidence: High
+  notes: 'HDPE 85 wt%, EG 5 + nBN 10 wt% (total 15 wt%); k 0.91 ± 0.04 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run10: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-570
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100) with 5 wt% PE-g-MAH compatibilizer
+  filler_material: h-BN/EG hybrid
+  filler_material_original: Expanded graphite + nano-sized hexagonal BN, sample HDPE/EG8/nBN13.5 (Table 2 run 11)
+  filler_shape: not stated (BN particles with hexagonal crystal structure; EG supplied as powder)
+  filler_mean_size_um: 0.07
+  size_distribution: nano BN 70 nm (IoLiTec); EG average 75 µm (SGL Sigratherm GFG75)
+  filler_loading_wt_pct: 21.5
+  filler_loading_original_value: EG 8 wt% + nBN 13.5 wt%
+  filler_loading_original_unit: wt%
+  functionalization: none on fillers; PE-g-MAH compatibilizer (5 wt%) added to each composite
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 1.61
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 1.61
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2, run 11: ''11 | 78.5 | 8 | 13.5 | 1.61 ± 0.21 | 21.95 ± 2.02 | 1381 ± 168 | 5.21 ± 1.39'''
+  confidence: High
+  notes: 'HDPE 78.5 wt%, EG 8 + nBN 13.5 wt% (total 21.5 wt%); k 1.61 ± 0.21 W/mK. PE-g-MAH 5 wt% in each composite. Through-plane per the Discussion. Corrected in verification: T2 run11: all other fields verified; filler_shape over-stated.'
+- row_id: f9d05571-571
+  matrix_polymer: HDPE (SABIC Vestolen A 6060R, PE-100)
+  filler_material: none
+  filler_material_original: Pure HDPE (100 wt%), last row of Tables 1 and 2
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Melt mixing in Brabender MetaStation 4E twin-screw kneader (200 °C, 60 min−1, 20 min), milled to ~4 mm, compression molded 15 MPa, 180 °C, 10 min, cooled in closed mould
+  k_matrix_W_mK: 0.37
+  k_composite_W_mK: 0.37
+  k_direction: through-plane (stated in Discussion)
+  measurement_method: Transient hot bridge, ISO 22007-2:2022, Linseis THB Advanced with THBN1 sensor (0.056 A, 50 s), 23 °C; 2 specimens, 10 spots, mean ± SD
+  measurement_temperature_C: 23.0
+  k_original_value: 0.37
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 1 (last row; identical row repeated in Table 2): ''/ | 100 | / | / | 0.37 ± 0.003 | 25.58 ± 0.99 | 1104 ± 84 | 8.52 ± 0.83'''
+  confidence: High
+  notes: Neat HDPE, 0.37 ± 0.003 W/mK; the row is identical in Tables 1 and 2 and is reported once. The paper does not say whether the neat sample contains PE-g-MAH. The Abstract quotes 0.4 W/mK as a general value.

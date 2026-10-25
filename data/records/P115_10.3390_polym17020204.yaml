@@ -1,0 +1,328 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P115
+paper:
+  doi: 10.3390/polym17020204
+  title: Silicone Composites with Electrically Oriented Boron Nitride Platelets and Carbon Microfibers for Thermal Management of Electronics
+  year: 2025
+  source_url: https://doi.org/10.3390/polym17020204
+extraction_log:
+- seq: 127
+  candidate_id: P6-P115
+  doi: 10.3390/polym17020204
+  paper_title: Silicone Composites with Electrically Oriented Boron Nitride Platelets and Carbon Microfibers for Thermal Management of Electronics
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym17020204.txt (cache, not committed)
+  tables_inspected: Table 1 (recipes), Table 2 (mechanical), Table 3 (dielectric), Table 4 (thermal conductivity, all 12 rows extracted)
+  figures_inspected: Figures 19-20 (TC characteristics, uniform/oriented) and extended-analysis composition figures; values for the 12 recipes are all in Table 4
+  candidate_measurements: 12
+  rows_appended: 12
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. All 12 recipes (6 uniform/oriented pairs) from Table 4. Neat silicone k not printed. Loadings are wt% as printed in Table 1 (filler percentages given in weight); for hybrids the total BN+CF is given and the split explained in notes; KH550 not counted as filler. Literature values in Section 3.6 (e.g. 1.03 from ref. [58]) skipped. Extended-analysis composition maps not counted as figure-only measurements.
+  rows_rejected_at_append: []
+  rows_added:
+  - 58068064-356
+  - 58068064-357
+  - 58068064-358
+  - 58068064-359
+  - 58068064-360
+  - 58068064-361
+  - 58068064-362
+  - 58068064-363
+  - 58068064-364
+  - 58068064-365
+  - 58068064-366
+  - 58068064-367
+measurements:
+- row_id: 58068064-356
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN
+  filler_material_original: boron nitride platelets SP12 (12%), sample R1
+  filler_shape: platelets
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 12.0
+  filler_loading_original_value: 12.0
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2%)
+  filler_alignment: uniform (random) dispersion
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, IR curing; no field (uniform dispersion)
+  k_composite_W_mK: 0.49
+  k_direction: through-plane (LFA through 1 mm film; uniform dispersion)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.49
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R1 | 0.49 | 63.2%'''
+  confidence: High
+  notes: 'Recipe R1 (uniform): 12 wt% BN platelets; 2% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). The enhancement printed on this uniform row of Table 4 refers to its oriented counterpart. Direction inferred from LFA on 1 mm films (paper does not name the direction).'
+- row_id: 58068064-357
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN
+  filler_material_original: boron nitride platelets SP12 (12%), sample R2
+  filler_shape: platelets
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 12.0
+  filler_loading_original_value: 12.0
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2%)
+  filler_alignment: vertically aligned chains along the electric field (through-thickness)
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, DC + AC electric field alignment (1000 Vcc + 750 Vac/2.5 kHz, ~8 s, ~18 kV/m), IR curing
+  k_composite_W_mK: 0.8
+  k_direction: through-plane (LFA through 1 mm film; particles chained along thickness)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.8
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R2 | 0.80'''
+  confidence: High
+  notes: 'Recipe R2 (oriented): 12 wt% BN platelets; 2% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). Printed as 0.80. Direction inferred from LFA on 1 mm films (paper does not name the direction).'
+- row_id: 58068064-358
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN/carbon microfiber hybrid
+  filler_material_original: boron nitride platelets SP12 (10%) + Carbiso MCF carbon microfibers (2%), sample R3
+  filler_shape: BN platelets + carbon microfibers (length < 200 µm, diameter < 10 µm)
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 12.0
+  filler_loading_original_value: 12.0
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2%)
+  filler_alignment: uniform (random) dispersion
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, IR curing; no field (uniform dispersion)
+  k_composite_W_mK: 0.53
+  k_direction: through-plane (LFA through 1 mm film; uniform dispersion)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.53
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R3 | 0.53 | 66%'''
+  confidence: High
+  notes: 'Recipe R3 (uniform): 10 wt% BN platelets + 2 wt% carbon microfibers (length < 200 µm, diameter < 10 µm); total filler 12 wt%; 2% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). The enhancement printed on this uniform row of Table 4 refers to its oriented counterpart. Direction inferred from LFA on 1 mm films (paper does not name the direction). Corrected in verification: R3 uniform, 10% BN + 2% CF, total 12 wt%, k 0.53: correct. filler_shape ''platelets'' leaves out the fiber component of the hybrid.'
+- row_id: 58068064-359
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN/carbon microfiber hybrid
+  filler_material_original: boron nitride platelets SP12 (10%) + Carbiso MCF carbon microfibers (2%), sample R4
+  filler_shape: BN platelets + carbon microfibers (length < 200 µm, diameter < 10 µm)
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 12.0
+  filler_loading_original_value: 12.0
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2%)
+  filler_alignment: vertically aligned chains along the electric field (through-thickness)
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, DC + AC electric field alignment (1000 Vcc + 750 Vac/2.5 kHz, ~8 s, ~18 kV/m), IR curing
+  k_composite_W_mK: 0.88
+  k_direction: through-plane (LFA through 1 mm film; particles chained along thickness)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.88
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R4 | 0.88'''
+  confidence: High
+  notes: 'Recipe R4 (oriented): 10 wt% BN platelets + 2 wt% carbon microfibers (length < 200 µm, diameter < 10 µm); total filler 12 wt%; 2% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). Direction inferred from LFA on 1 mm films (paper does not name the direction). Corrected in verification: R4 oriented, k 0.88: correct. Same filler_shape fix as row 2.'
+- row_id: 58068064-360
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN/carbon microfiber hybrid
+  filler_material_original: boron nitride platelets SP12 (12.5%) + Carbiso MCF carbon microfibers (1%), sample R5
+  filler_shape: BN platelets + carbon microfibers (length < 200 µm, diameter < 10 µm)
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 13.5
+  filler_loading_original_value: 13.5
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2%)
+  filler_alignment: uniform (random) dispersion
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, IR curing; no field (uniform dispersion)
+  k_composite_W_mK: 0.64
+  k_direction: through-plane (LFA through 1 mm film; uniform dispersion)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.64
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R5 | 0.64 | 48.4%'''
+  confidence: High
+  notes: 'Recipe R5 (uniform): 12.5 wt% BN platelets + 1 wt% carbon microfibers (length < 200 µm, diameter < 10 µm); total filler 13.5 wt%; 2% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). The enhancement printed on this uniform row of Table 4 refers to its oriented counterpart. Direction inferred from LFA on 1 mm films (paper does not name the direction). Corrected in verification: R5 uniform, 12.5% BN + 1% CF, total 13.5 wt%, k 0.64: correct. Same filler_shape fix.'
+- row_id: 58068064-361
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN/carbon microfiber hybrid
+  filler_material_original: boron nitride platelets SP12 (12.5%) + Carbiso MCF carbon microfibers (1%), sample R6
+  filler_shape: BN platelets + carbon microfibers (length < 200 µm, diameter < 10 µm)
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 13.5
+  filler_loading_original_value: 13.5
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2%)
+  filler_alignment: vertically aligned chains along the electric field (through-thickness)
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, DC + AC electric field alignment (1000 Vcc + 750 Vac/2.5 kHz, ~8 s, ~18 kV/m), IR curing
+  k_composite_W_mK: 0.95
+  k_direction: through-plane (LFA through 1 mm film; particles chained along thickness)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.95
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R6 | 0.95'''
+  confidence: High
+  notes: 'Recipe R6 (oriented): 12.5 wt% BN platelets + 1 wt% carbon microfibers (length < 200 µm, diameter < 10 µm); total filler 13.5 wt%; 2% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). Direction inferred from LFA on 1 mm films (paper does not name the direction). Corrected in verification: R6 oriented, k 0.95: correct. Same filler_shape fix.'
+- row_id: 58068064-362
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN
+  filler_material_original: boron nitride platelets SP12 (15.5%), sample R7
+  filler_shape: platelets
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 15.5
+  filler_loading_original_value: 15.5
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2.5%)
+  filler_alignment: uniform (random) dispersion
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, IR curing; no field (uniform dispersion)
+  k_composite_W_mK: 0.63
+  k_direction: through-plane (LFA through 1 mm film; uniform dispersion)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.63
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R7 | 0.63 | 42.9%'''
+  confidence: High
+  notes: 'Recipe R7 (uniform): 15.5 wt% BN platelets; 2.5% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). The enhancement printed on this uniform row of Table 4 refers to its oriented counterpart. Direction inferred from LFA on 1 mm films (paper does not name the direction).'
+- row_id: 58068064-363
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN
+  filler_material_original: boron nitride platelets SP12 (15.5%), sample R8
+  filler_shape: platelets
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 15.5
+  filler_loading_original_value: 15.5
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2.5%)
+  filler_alignment: vertically aligned chains along the electric field (through-thickness)
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, DC + AC electric field alignment (1000 Vcc + 750 Vac/2.5 kHz, ~8 s, ~18 kV/m), IR curing
+  k_composite_W_mK: 0.9
+  k_direction: through-plane (LFA through 1 mm film; particles chained along thickness)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.9
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R8 | 0.90'''
+  confidence: High
+  notes: 'Recipe R8 (oriented): 15.5 wt% BN platelets; 2.5% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). Printed as 0.90. Direction inferred from LFA on 1 mm films (paper does not name the direction).'
+- row_id: 58068064-364
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN/carbon microfiber hybrid
+  filler_material_original: boron nitride platelets SP12 (15%) + Carbiso MCF carbon microfibers (0.5%), sample R9
+  filler_shape: BN platelets + carbon microfibers (length < 200 µm, diameter < 10 µm)
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 15.5
+  filler_loading_original_value: 15.5
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2.5%)
+  filler_alignment: uniform (random) dispersion
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, IR curing; no field (uniform dispersion)
+  k_composite_W_mK: 0.72
+  k_direction: through-plane (LFA through 1 mm film; uniform dispersion)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.72
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R9 | 0.72 | 40.3%'''
+  confidence: High
+  notes: 'Recipe R9 (uniform): 15 wt% BN platelets + 0.5 wt% carbon microfibers (length < 200 µm, diameter < 10 µm); total filler 15.5 wt%; 2.5% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). The enhancement printed on this uniform row of Table 4 refers to its oriented counterpart. Direction inferred from LFA on 1 mm films (paper does not name the direction). Corrected in verification: R9 uniform, 15% BN + 0.5% CF, total 15.5 wt%, k 0.72: correct. Same filler_shape fix.'
+- row_id: 58068064-365
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN/carbon microfiber hybrid
+  filler_material_original: boron nitride platelets SP12 (15%) + Carbiso MCF carbon microfibers (0.5%), sample R10
+  filler_shape: BN platelets + carbon microfibers (length < 200 µm, diameter < 10 µm)
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 15.5
+  filler_loading_original_value: 15.5
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2.5%)
+  filler_alignment: vertically aligned chains along the electric field (through-thickness)
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, DC + AC electric field alignment (1000 Vcc + 750 Vac/2.5 kHz, ~8 s, ~18 kV/m), IR curing
+  k_composite_W_mK: 1.01
+  k_direction: through-plane (LFA through 1 mm film; particles chained along thickness)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 1.01
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R10 | 1.01'''
+  confidence: High
+  notes: 'Recipe R10 (oriented): 15 wt% BN platelets + 0.5 wt% carbon microfibers (length < 200 µm, diameter < 10 µm); total filler 15.5 wt%; 2.5% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). Direction inferred from LFA on 1 mm films (paper does not name the direction). Corrected in verification: R10 oriented, k 1.01: correct. Same filler_shape fix.'
+- row_id: 58068064-366
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN
+  filler_material_original: boron nitride platelets SP12 (20%), sample R11
+  filler_shape: platelets
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2.5%)
+  filler_alignment: uniform (random) dispersion
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, IR curing; no field (uniform dispersion)
+  k_composite_W_mK: 0.84
+  k_direction: through-plane (LFA through 1 mm film; uniform dispersion)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.84
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R11 | 0.84 | 32.1%'''
+  confidence: High
+  notes: 'Recipe R11 (uniform): 20 wt% BN platelets; 2.5% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). The enhancement printed on this uniform row of Table 4 refers to its oriented counterpart. Direction inferred from LFA on 1 mm films (paper does not name the direction).'
+- row_id: 58068064-367
+  matrix_polymer: two-component RTV silicone rubber (ELASTOSIL RT 620 A/B, Wacker)
+  curing_agent: RTV-2 component B; cured by IR radiation (3 kW heater, ~4 s)
+  filler_material: BN
+  filler_material_original: boron nitride platelets SP12 (20%), sample R12
+  filler_shape: platelets
+  filler_mean_size_um: 12.0
+  size_distribution: tight particle size distribution, D50 = 12 µm (Saint-Gobain SP12)
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: KH550 silane coupling agent added during mixing (2.5%)
+  filler_alignment: vertically aligned chains along the electric field (through-thickness)
+  processing_method: Ultrasonic dispersion in liquid silicone, tape casting (ATC-71LC) of 1 mm film, DC + AC electric field alignment (1000 Vcc + 750 Vac/2.5 kHz, ~8 s, ~18 kV/m), IR curing
+  k_composite_W_mK: 1.11
+  k_direction: through-plane (LFA through 1 mm film; particles chained along thickness)
+  measurement_method: Laser flash analysis, NETZSCH LFA 457; 5 determinations per sample at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 1.11
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 4: ''R12 | 1.11'''
+  confidence: High
+  notes: 'Recipe R12 (oriented): 20 wt% BN platelets; 2.5% KH550. Recipe from Table 1 (uniform/oriented pairs share a recipe). Highest k in the paper (also stated in Section 3.6 text). Direction inferred from LFA on 1 mm films (paper does not name the direction).'

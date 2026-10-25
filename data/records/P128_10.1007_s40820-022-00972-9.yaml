@@ -1,0 +1,80 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P128
+paper:
+  doi: 10.1007/s40820-022-00972-9
+  title: Self-Modifying Nanointerface Driving Ultrahigh Bidirectional Thermal Conductivity Boron Nitride-Based Composite Flexible Films
+  year: 2022
+  source_url: https://doi.org/10.1007/s40820-022-00972-9
+extraction_log:
+- seq: 140
+  candidate_id: P6-P128
+  doi: 10.1007/s40820-022-00972-9
+  paper_title: Self-Modifying Nanointerface Driving Ultrahigh Bidirectional Thermal Conductivity Boron Nitride-Based Composite Flexible Films
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1007_s40820-022-00972-9.txt (cache, not committed)
+  tables_inspected: none in main text (Tables S1–S4 are in the Supplementary PDF, not available)
+  figures_inspected: Fig. 3 captions only (3a TC vs BN content, 3b literature comparison, 3c BNNC:h-BN ratio, 3d different fillers); Fig. 4 is NEMD/FEM simulation
+  candidate_measurements: 6
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 6 figure-only values not taken. There are no tables in the main text. Supplementary Tables S1–S4 were not available. The Fig. 3a loading series (other s-BN contents, both directions) and the Fig. 3c BNNC:h-BN ratio series are figure-only. figure_only_skipped=6 is a lower-bound estimate because the figures could not be viewed. Skipped: the 9.8 W/mK literature maximum, the specific thermal conductivity of 0.85, the intrinsic k of BNNCs (4.6) and GO (7.8), and the NEMD interfacial re'
+  rows_rejected_at_append:
+  - - 0b315d09-408
+    - 'post-import validation: loading of this comparison sample is not printed'
+  - - 0b315d09-409
+    - 'post-import validation: loading of this comparison sample is not printed'
+  - - 0b315d09-410
+    - 'post-import validation: loading of this comparison sample is not printed'
+  - - 0b315d09-411
+    - 'post-import validation: loading of this comparison sample is not printed'
+  rows_added:
+  - 0b315d09-406
+  - 0b315d09-407
+measurements:
+- row_id: 0b315d09-406
+  matrix_polymer: Sodium alginate (SA)/polyvinyl alcohol (PVA) blend, Ca2+-crosslinked (3 wt% CaCl2 ice), with 0.05 wt% citric acid
+  filler_material: h-BN
+  filler_material_original: s-BN (commercial h-BN self-modified with BN nanocrystals, BNNCs), polymer/s-BN composite film, 25 wt%
+  filler_shape: platelet
+  size_distribution: lateral size approximately 10–15 μm
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: 'BNNC self-modified nanointerface: BN nanocrystals (~100 nm diameter, 1–4 nm thick, OH/NH groups) anchored on h-BN; 0.02 g BNNCs per 1 g h-BN'
+  filler_alignment: lamellar BN at top and bottom surfaces with vertically connected BN chains inside (nano-CT)
+  processing_method: s-BN mixed into aqueous SA/PVA gel; gel dripped on substrate and pressed with Ca2+-containing monolith ice (ice-press assembly), solvent exchange in ethanol/acetone, dried at 60 °C; ~80 μm thick flexible film
+  k_composite_W_mK: 21.3
+  k_direction: through-plane
+  measurement_method: Calculated from thermal diffusivity and specific heat capacity (Fig. S6); instrument not named in the main text
+  k_original_value: 21.3
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Performance of Polymer/s-BN Composite Films'', paragraph 1: ''A point of inflection occurs at approximately 25 wt%, at which the through-plane thermal conductivity reaches the highest value of 21.3 W m−1 K−1, which is considerably higher than those of previously reported BN-based composites and more than twice the reported maximum (9.8 W m−1 K−1 at 50 wt% BN, Fig. 3b and Table S2) [28–40], at a simultaneously high in-plane thermal conductivity of 20.3 W m−1 K−1.'''
+  confidence: High
+  notes: Best sample, polymer/s-BN film at 25 wt%. Same values also appear in Introduction paragraph 3. The 9.8 W/mK in the same sentence is a literature value and was not extracted.
+- row_id: 0b315d09-407
+  matrix_polymer: Sodium alginate (SA)/polyvinyl alcohol (PVA) blend, Ca2+-crosslinked (3 wt% CaCl2 ice), with 0.05 wt% citric acid
+  filler_material: h-BN
+  filler_material_original: s-BN (commercial h-BN self-modified with BN nanocrystals, BNNCs), polymer/s-BN composite film, 25 wt%
+  filler_shape: platelet
+  size_distribution: lateral size approximately 10–15 μm
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: 'BNNC self-modified nanointerface: BN nanocrystals (~100 nm diameter, 1–4 nm thick, OH/NH groups) anchored on h-BN; 0.02 g BNNCs per 1 g h-BN'
+  filler_alignment: lamellar BN at top and bottom surfaces with vertically connected BN chains inside (nano-CT)
+  processing_method: s-BN mixed into aqueous SA/PVA gel; gel dripped on substrate and pressed with Ca2+-containing monolith ice (ice-press assembly), solvent exchange in ethanol/acetone, dried at 60 °C; ~80 μm thick flexible film
+  k_composite_W_mK: 20.3
+  k_direction: in-plane
+  measurement_method: Calculated from thermal diffusivity and specific heat capacity (Fig. S6); instrument not named in the main text
+  k_original_value: 20.3
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Performance of Polymer/s-BN Composite Films'', paragraph 1: ''A point of inflection occurs at approximately 25 wt%, at which the through-plane thermal conductivity reaches the highest value of 21.3 W m−1 K−1, which is considerably higher than those of previously reported BN-based composites and more than twice the reported maximum (9.8 W m−1 K−1 at 50 wt% BN, Fig. 3b and Table S2) [28–40], at a simultaneously high in-plane thermal conductivity of 20.3 W m−1 K−1.'''
+  confidence: High
+  notes: In-plane value of the 25 wt% polymer/s-BN film. Also stated in Introduction paragraph 3.
