@@ -1,0 +1,72 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P101
+paper:
+  doi: 10.3390/polym15081887
+  title: Significant Improvement of Thermal Conductivity of Polyamide 6/Boron Nitride Composites by Adding a Small Amount of Stearic Acid
+  year: 2023
+  source_url: https://doi.org/10.3390/polym15081887
+extraction_log:
+- seq: 113
+  candidate_id: P6-P101
+  doi: 10.3390/polym15081887
+  paper_title: Significant Improvement of Thermal Conductivity of Polyamide 6/Boron Nitride Composites by Adding a Small Amount of Stearic Acid
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym15081887.txt (cache, not committed)
+  tables_inspected: Table 1 (XRD I002/I100), Table 2 (DSC), Table 3 (mechanical); none has k values
+  figures_inspected: Figure 5a (k of composites), Figure 5b (literature comparison, excluded); captions only
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 6 figure-only values not taken. Figure 5a shows k for PA6/BN and PA6/BN/SA1 to SA6. Only SA5 (3.59) and pure PA6 (0.3) are printed. The other 6 composites (PA6/BN, SA1, SA2, SA3, SA4, SA6) are figure-only and were skipped. PA6/BN k can only be derived (3.59 − 2.23 = 1.36, or 3.59/2.6 ≈ 1.38), so it was not extracted. Figure 5b and the introduction values are literature data and were excluded. Filler mapped to h-BN because the introduction calls it hexagonal boron nitride (BN).
+  rows_rejected_at_append: []
+  rows_added:
+  - e61ca6ea-281
+  - e61ca6ea-282
+measurements:
+- row_id: e61ca6ea-281
+  matrix_polymer: PA6 (polyamide 6, IMNC101)
+  filler_material: h-BN
+  filler_material_original: BN microsheets (hexagonal boron nitride), sample PA6/BN/SA5
+  filler_shape: microsheets
+  size_distribution: diameter 3~5 μm; surface area 4~7 m2/g
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: '50:50'
+  filler_loading_original_unit: PA6:BN mass ratio
+  functionalization: stearic acid additive, 5 phr (compatibilizer added during melt blending, not a pre-treatment of the BN)
+  filler_alignment: partly oriented by shear (low XRD I002/I100 = 5.98)
+  processing_method: Melt blending in HAAKE mixer (225 °C, 100 rpm, 10 min) with 0.1 phr antioxidant 1010; the paper mentions orientation from shear during injection
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 3.59
+  k_direction: through-plane (laser flash across a 0.9 mm thick disc; the paper does not name the direction)
+  measurement_method: Laser flash, NETZSCH LFA 467 Nanoflash; disc 12.7 mm diameter x 0.9 mm thick
+  measurement_temperature_C: 25.0
+  k_original_value: 3.59
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''The thermal conductivity of the PA6/BN/SA5 composite is the highest, 3.59 W m−1 K−1, which is 12 times and 2.6 times that of pure PA6 and the PA6/BN composite, respectively.'''
+  confidence: High
+  notes: PA6/BN 50:50 by mass plus 5 phr stearic acid. Same value in abstract and conclusions. The conclusions say it is 2.23 W m−1 K−1 higher than PA6/BN (which implies ~1.36), but the PA6/BN value is not printed directly, so it was not extracted.
+- row_id: e61ca6ea-282
+  matrix_polymer: PA6 (polyamide 6, IMNC101)
+  filler_material: none
+  filler_material_original: pure PA6
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 0.3
+  k_direction: through-plane (laser flash across a 0.9 mm thick disc; the paper does not name the direction)
+  measurement_method: Laser flash, NETZSCH LFA 467 Nanoflash; disc 12.7 mm diameter x 0.9 mm thick
+  measurement_temperature_C: 25.0
+  k_original_value: 0.3
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''When BN is added, the thermal conductivity of the composite is significantly higher than that of pure PA6, 0.3 W m−1 K−1.'''
+  confidence: Medium
+  notes: Neat-matrix value printed in the results without a citation and used for the '12 times' ratio. The introduction gives the same 0.3 W m−1 K−1 citing ref. [3], so it may be a literature value rather than this paper's own measurement; hence Medium confidence.

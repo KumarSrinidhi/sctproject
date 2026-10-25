@@ -155,3 +155,12 @@ exclusions:
 - doi: 10.3390/polym15051214
   reason: 'Own k reported only as a ratio in text ("increased by a factor of two" at 20% BN); absolute values only in Fig. 5 (3-300 K). Text k values are literature background (h-BN 420 / ~5 W/m·K). Screened in wave 2 but never logged (audit D10). Figure-digitization candidate.'
   action: excluded_no_absolute_k
+- doi: 10.3390/nano14040331
+  reason: 'Phase 6 screening of full text: Review article: all k values (text, Table 1 matrix TCs, Tables 2 and 3 comparisons) are quoted from other papers; no original measurements.'
+  action: unusable
+- doi: 10.3390/polym11010148
+  reason: 'Phase 6 screening of full text: No k values printed in text or tables: k of neat PBS and the four 5 wt% PBS/AlN nanocomposites are shown only in Figure 7 (text gives only ''<0.2 W m−1 k−1'' for neat PBS and percentage enhancements; diffusivity/Cp in Supplementary Table S3, not available).'
+  action: unusable
+- doi: 10.3390/polym13132191
+  reason: 'Phase 6 screening of full text: No thermal conductivity values are printed in the text or tables; all k values (HDPE, HDPE + 35BN, HDPE + 55BN, reference and after the shape memory test) are shown only in Figure 5. The text gives only a relative figure (''161% enhancement'' at 35 wt.% BN).'
+  action: unusable

@@ -40,7 +40,7 @@
       "path": "thermal_conductivity_dataset.csv",
       "profile": "tabular-data-resource",
       "encoding": "utf-8-sig",
-      "description": "Published dataset, 258 rows: one measured k per row.",
+      "description": "Published dataset, 293 rows: one measured k per row.",
       "schema": {
         "fields": [
           {
@@ -520,7 +520,7 @@
       "path": "paper_inventory.csv",
       "profile": "tabular-data-resource",
       "encoding": "utf-8-sig",
-      "description": "95 source papers with row counts and k ranges."
+      "description": "104 source papers with row counts and k ranges."
     },
     {
       "name": "exclusions",

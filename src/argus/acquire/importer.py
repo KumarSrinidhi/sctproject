@@ -135,7 +135,9 @@ def import_batch(lay: Layout, papers: list[dict[str, Any]], verdicts: dict[str, 
                "qc_findings": (f"Extracted by one agent, every row checked against the source by an independent verifier; "
                                f"quotes verified verbatim; {p.get('figure_only_skipped', 0)} figure-only values not taken. "
                                + (p.get("extraction_notes") or ""))[:600],
-               "rows_rejected_at_append": [[f"{h}-candidate-{i}", why] for i, why in rejected]}
+               "rows_rejected_at_append": [[f"{h}-candidate-{i}", why] for i, why in rejected],
+               # declares the additions for `argus verify` (changes_declared)
+               "rows_added": [m_.row_id for m_ in ms]}
         log_seq += 1
         rec = PaperRecord(paper_id=pid, paper=PaperMeta(doi=doi, title=m.get("title") or p["title_as_printed"],
                                                        year=int(m.get("year") or p["year"]), source_url=f"https://doi.org/{doi}"),
