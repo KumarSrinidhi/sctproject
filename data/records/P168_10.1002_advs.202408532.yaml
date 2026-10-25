@@ -1,0 +1,184 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P168
+paper:
+  doi: 10.1002/advs.202408532
+  title: Halbach Array Induced Magnetic Field Alignment in Boron Nitride Nanocomposites
+  year: 2024
+  source_url: https://doi.org/10.1002/advs.202408532
+extraction_log:
+- seq: 180
+  candidate_id: P6-P168
+  doi: 10.1002/advs.202408532
+  paper_title: Halbach Array Induced Magnetic Field Alignment in Boron Nitride Nanocomposites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1002_advs.202408532.txt (cache, not committed)
+  tables_inspected: none (no tables in the article)
+  figures_inspected: 'Fig. 4d-f (k of P, R, H_S, H_R, V_S, V_R and % increases): every value in it is also printed in Section ''Thermal Properties'''
+  candidate_measurements: 6
+  rows_appended: 6
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. All 6 samples (P, R, H_S, H_R, V_S, V_R) have k printed in the text, all at 10 wt.% (4.11 vol.%) hBN(m) except neat PDMS. Direction: the Hot Disk mode is not stated. The paper says heat flow runs along the vertical (V) direction, perpendicular to the sample plane, so all rows are labelled through-plane. hBN nanosheets are labelled BNNS (paper: ''hexagonal boron nitride (hBN) nanosheets'', 300 nm × 3 nm). Fig. 4h is a comparison with the literature and'
+  rows_rejected_at_append: []
+  rows_added:
+  - 79148598-631
+  - 79148598-632
+  - 79148598-633
+  - 79148598-634
+  - 79148598-635
+  - 79148598-636
+measurements:
+- row_id: 79148598-631
+  matrix_polymer: PDMS (Dow Corning Sylgard 184 silicone elastomer)
+  curing_agent: Sylgard 184 curing agent (base:curing agent 10:1)
+  filler_material: none
+  filler_material_original: pure PDMS, sample P
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt.%
+  processing_method: Sylgard 184 base + curing agent 10:1, cast in mould, cured at RT for 24 h + 80 °C for 5 h
+  k_matrix_W_mK: 0.175
+  k_composite_W_mK: 0.175
+  k_direction: 'through-plane (same Hot Disk set-up as the composites; paper: V alignment is perpendicular to the sample plane and is the heat-flow direction)'
+  measurement_method: Transient plane source, Hot Disk TPS 2500S thermal analyzer (sensor radius 0.526, unit not given), room temperature
+  k_original_value: 0.175
+  k_original_unit: W mK−1
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Properties'', paragraph 2: ''Pure PDMS demonstrates a thermal conductivity of 0.175 W mK−1, consistent with values reported in the literature.'''
+  confidence: High
+  notes: Neat-matrix reference (sample P). Measured at room temperature (no number given).
+- row_id: 79148598-632
+  matrix_polymer: PDMS (Dow Corning Sylgard 184 silicone elastomer)
+  curing_agent: Sylgard 184 curing agent (base:curing agent 10:1)
+  filler_material: BNNS
+  filler_material_original: 'hBN(m): Fe3O4-doped hexagonal boron nitride (hBN) nanosheets (Nanografi), sample R (random, no magnetic field)'
+  filler_shape: nanosheet
+  filler_aspect_ratio: 100.0
+  filler_mean_size_um: 0.3
+  size_distribution: average diameter 300 nm, average thickness 3 nm (TEM)
+  filler_loading_vol_pct: 4.11
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: Fe3O4 nanoparticles (10–15 nm) attached by electrostatic adsorption of a cationic ferrofluid (EMG 605, Ferrotech), ferrofluid concentration 0.003%
+  filler_alignment: random (no magnetic field)
+  processing_method: hBN(m) added to Sylgard 184 (10:1), magnetic stirring 5 min, sonication 15 min, cast in mould, no field; cured at RT for 24 h + 80 °C for 5 h
+  k_matrix_W_mK: 0.175
+  k_composite_W_mK: 0.375
+  k_direction: 'through-plane (same Hot Disk set-up for all samples; paper: V alignment is perpendicular to the sample plane and is the heat-flow direction)'
+  measurement_method: Transient plane source, Hot Disk TPS 2500S thermal analyzer (sensor radius 0.526, unit not given), room temperature
+  k_original_value: 0.375
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Properties'', paragraph 2: ''Notably, the random sample (R), lacking magnetic field orientation, displays a significantly higher thermal conductivity of 0.375 W/mK, ≈114% greater than the pure PDMS sample (P), as shown in Figure 4d,e.'''
+  confidence: High
+  notes: 'Sample R (unaligned). Paper states 10 wt.% = 4.11 vol.%. Filler is Nanografi hBN nanosheets, 99.7% purity, density 2.5 g/cm3. Corrected in verification: Sample R is printed as 0.375 W/mK, and the unit is printed as W/mK here. The paper states 10 wt.% = 4.11 vol.%, and the 300 nm × 3 nm size with aspect ratio 100 is printed. BNNS fits ''hBN nanosheets''. The only problem is that the original-unit field should hold the unit alone. The 4.11 vol.% is already in filler_loading_vol_pct.'
+- row_id: 79148598-633
+  matrix_polymer: PDMS (Dow Corning Sylgard 184 silicone elastomer)
+  curing_agent: Sylgard 184 curing agent (base:curing agent 10:1)
+  filler_material: BNNS
+  filler_material_original: 'hBN(m): Fe3O4-doped hexagonal boron nitride (hBN) nanosheets (Nanografi), sample V_S (vertical, static field)'
+  filler_shape: nanosheet
+  filler_aspect_ratio: 100.0
+  filler_mean_size_um: 0.3
+  size_distribution: average diameter 300 nm, average thickness 3 nm (TEM)
+  filler_loading_vol_pct: 4.11
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: Fe3O4 nanoparticles (10–15 nm) attached by electrostatic adsorption of a cationic ferrofluid (EMG 605, Ferrotech), ferrofluid concentration 0.003%
+  filler_alignment: vertical (perpendicular to the sample plane), static 1 T Halbach-array magnetic field
+  processing_method: hBN(m) added to Sylgard 184 (10:1), magnetic stirring 5 min, sonication 15 min, cast in mould; placed in a 1 T Halbach array (static) for 10 min at the partially cured state (t = 8 h); cured at RT for 24 h + 80 °C for 5 h
+  k_matrix_W_mK: 0.175
+  k_composite_W_mK: 1.42
+  k_direction: 'through-plane (paper: for V samples the magnetic field aligns with the heat flow direction, perpendicular to the sample plane)'
+  measurement_method: Transient plane source, Hot Disk TPS 2500S thermal analyzer (sensor radius 0.526, unit not given), room temperature
+  k_original_value: 1.42
+  k_original_unit: W mK−1
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Properties'', paragraph 2: ''Vertically aligned (V S ) nanocomposites, where the magnetic field aligns with the heat flow direction, achieve a thermal conductivity of 1.42 W mK−1 an ≈710% improvement over pure PDMS (P), as shown in Figure 4e.'''
+  confidence: High
+  notes: 'Sample V_S (vertical alignment, static field). Corrected in verification: V_S at 1.42 W mK−1 is correct. The paper explicitly says the field aligns with the heat-flow direction, which supports through-plane. Only the unit field is cleaned up.'
+- row_id: 79148598-634
+  matrix_polymer: PDMS (Dow Corning Sylgard 184 silicone elastomer)
+  curing_agent: Sylgard 184 curing agent (base:curing agent 10:1)
+  filler_material: BNNS
+  filler_material_original: 'hBN(m): Fe3O4-doped hexagonal boron nitride (hBN) nanosheets (Nanografi), sample H_S (horizontal, static field)'
+  filler_shape: nanosheet
+  filler_aspect_ratio: 100.0
+  filler_mean_size_um: 0.3
+  size_distribution: average diameter 300 nm, average thickness 3 nm (TEM)
+  filler_loading_vol_pct: 4.11
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: Fe3O4 nanoparticles (10–15 nm) attached by electrostatic adsorption of a cationic ferrofluid (EMG 605, Ferrotech), ferrofluid concentration 0.003%
+  filler_alignment: horizontal (field lines in the sample plane), static 1 T Halbach-array magnetic field
+  processing_method: hBN(m) added to Sylgard 184 (10:1), magnetic stirring 5 min, sonication 15 min, cast in mould; placed in a 1 T Halbach array (static) for 10 min at the partially cured state (t = 8 h); cured at RT for 24 h + 80 °C for 5 h
+  k_matrix_W_mK: 0.175
+  k_composite_W_mK: 0.321
+  k_direction: through-plane (same Hot Disk set-up; heat flow perpendicular to the sample plane, i.e. perpendicular to the horizontal filler alignment)
+  measurement_method: Transient plane source, Hot Disk TPS 2500S thermal analyzer (sensor radius 0.526, unit not given), room temperature
+  k_original_value: 0.321
+  k_original_unit: W mK−1
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Properties'', paragraph 2: ''Conversely, horizontally aligned (H S ) nanocomposites demonstrate a more modest enhancement in thermal conductivity, with an increase to only 0.321 W mK−1, or ≈83% higher than pure PDMS (P).'''
+  confidence: High
+  notes: 'Sample H_S (horizontal alignment, static field). Corrected in verification: H_S at 0.321 W mK−1 is correct. Only the unit field is cleaned up.'
+- row_id: 79148598-635
+  matrix_polymer: PDMS (Dow Corning Sylgard 184 silicone elastomer)
+  curing_agent: Sylgard 184 curing agent (base:curing agent 10:1)
+  filler_material: BNNS
+  filler_material_original: 'hBN(m): Fe3O4-doped hexagonal boron nitride (hBN) nanosheets (Nanografi), sample V_R (vertical, rotating field)'
+  filler_shape: nanosheet
+  filler_aspect_ratio: 100.0
+  filler_mean_size_um: 0.3
+  size_distribution: average diameter 300 nm, average thickness 3 nm (TEM)
+  filler_loading_vol_pct: 4.11
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: Fe3O4 nanoparticles (10–15 nm) attached by electrostatic adsorption of a cationic ferrofluid (EMG 605, Ferrotech), ferrofluid concentration 0.003%
+  filler_alignment: vertical (perpendicular to the sample plane), rotating 1 T Halbach-array field (sample rotated at >600 rpm)
+  processing_method: hBN(m) added to Sylgard 184 (10:1), magnetic stirring 5 min, sonication 15 min, cast in mould; aligned in a 1 T Halbach array with the sample rotating (>600 rpm) at the partially cured state (t = 8 h); cured at RT for 24 h + 80 °C for 5 h
+  k_matrix_W_mK: 0.175
+  k_composite_W_mK: 3.584
+  k_direction: 'through-plane (paper: for vertically aligned samples the magnetic field and heat flow direction coincide)'
+  measurement_method: Transient plane source, Hot Disk TPS 2500S thermal analyzer (sensor radius 0.526, unit not given), room temperature
+  k_original_value: 3.584
+  k_original_unit: W mK−1
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Properties'', paragraph 3: ''Samples produced by rotating magnetic field, with vertical (V R ) and horizontal (H R ) alignment exhibit thermal conductivities of 3.584 and 0.216 W mK−1, respectively, representing enhancements of ≈ 1950% and 23%.'''
+  confidence: High
+  notes: 'Sample V_R (vertical alignment, rotating field). The same value is rounded to 3.58 W mK−1 in the abstract and in Perspectives. Alignment time is given as 10 min in Composite Fabrication but as 30 min of rotation in the SEM discussion. Corrected in verification: V_R at 3.584 W mK−1 is correct. The 3.58 in the abstract and Perspectives is the same value rounded, so this row is not a duplicate. Only the unit field is cleaned up.'
+- row_id: 79148598-636
+  matrix_polymer: PDMS (Dow Corning Sylgard 184 silicone elastomer)
+  curing_agent: Sylgard 184 curing agent (base:curing agent 10:1)
+  filler_material: BNNS
+  filler_material_original: 'hBN(m): Fe3O4-doped hexagonal boron nitride (hBN) nanosheets (Nanografi), sample H_R (horizontal, rotating field)'
+  filler_shape: nanosheet
+  filler_aspect_ratio: 100.0
+  filler_mean_size_um: 0.3
+  size_distribution: average diameter 300 nm, average thickness 3 nm (TEM)
+  filler_loading_vol_pct: 4.11
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: Fe3O4 nanoparticles (10–15 nm) attached by electrostatic adsorption of a cationic ferrofluid (EMG 605, Ferrotech), ferrofluid concentration 0.003%
+  filler_alignment: horizontal (planar, in the sample plane), rotating 1 T Halbach-array field (sample rotated at >600 rpm)
+  processing_method: hBN(m) added to Sylgard 184 (10:1), magnetic stirring 5 min, sonication 15 min, cast in mould; aligned in a 1 T Halbach array with the sample rotating (>600 rpm) at the partially cured state (t = 8 h); cured at RT for 24 h + 80 °C for 5 h
+  k_matrix_W_mK: 0.175
+  k_composite_W_mK: 0.216
+  k_direction: through-plane (same Hot Disk set-up; heat flow perpendicular to the sample plane, i.e. perpendicular to the in-plane filler alignment)
+  measurement_method: Transient plane source, Hot Disk TPS 2500S thermal analyzer (sensor radius 0.526, unit not given), room temperature
+  k_original_value: 0.216
+  k_original_unit: W mK−1
+  value_source: text
+  source_location: 'Results and Discussion, ''Thermal Properties'', paragraph 3: ''Samples produced by rotating magnetic field, with vertical (V R ) and horizontal (H R ) alignment exhibit thermal conductivities of 3.584 and 0.216 W mK−1, respectively, representing enhancements of ≈ 1950% and 23%.'''
+  confidence: High
+  notes: 'Sample H_R (horizontal alignment, rotating field). Corrected in verification: H_R at 0.216 W mK−1 is correct. Only the unit field is cleaned up.'

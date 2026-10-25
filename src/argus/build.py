@@ -94,7 +94,7 @@ def render_outputs(lay: Layout, records: list[PaperRecord]) -> dict[Path, bytes]
     """Every generated file and its exact bytes. Shared by build and verify."""
     from .enrich import expected_enriched_bytes
     from .package import descriptor_text
-    from .release import citation_cff, dataset_meta
+    from .release import citation_cff, dataset_meta, zenodo_json
 
     rows = compile_rows(records)
     curation, excl = load_side_files(lay)
@@ -110,8 +110,9 @@ def render_outputs(lay: Layout, records: list[PaperRecord]) -> dict[Path, bytes]
         lay.processed / "measurements_enriched.csv": expected_enriched_bytes(records),
         lay.root / "datapackage.json": descriptor_text(lay, {"rows": len(rows), "papers": len(inv)}).encode("utf-8"),
     }
-    if meta.get("authors"):  # release metadata present: publish the citation file
+    if meta.get("authors"):  # release metadata present: publish the citation files
         outputs[lay.root / "CITATION.cff"] = citation_cff(meta).encode("utf-8")
+        outputs[lay.root / ".zenodo.json"] = zenodo_json(meta).encode("utf-8")
     return outputs
 
 

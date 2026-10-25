@@ -1,0 +1,281 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P140
+paper:
+  doi: 10.3390/nano13030490
+  title: Silicone-Based Thermally Conductive Gel Fabrication via Hybridization of Low-Melting-Point Alloy–Hexagonal Boron Nitride–Graphene Oxide
+  year: 2023
+  source_url: https://doi.org/10.3390/nano13030490
+extraction_log:
+- seq: 152
+  candidate_id: P6-P140
+  doi: 10.3390/nano13030490
+  paper_title: Silicone-Based Thermally Conductive Gel Fabrication via Hybridization of Low-Melting-Point Alloy–Hexagonal Boron Nitride–Graphene Oxide
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano13030490.txt (cache, not committed)
+  tables_inspected: Table 1 (thermal conductivity of TCG, 4 series x 5 loadings); Table 2 (volume resistivity, no k)
+  figures_inspected: Figure 4a-d (TC and TCR curves of BN-LMPA/SG and BNG-LMPA/SG at ratios 4:1, 2:1, 1:1, 1:2; captions only, no data read)
+  candidate_measurements: 23
+  rows_appended: 11
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 28 figure-only values not taken. Silicone thermally conductive gel with h-BN, h-BN@GO (BNG) and their low-melting-point-alloy (LMPA, Sn/Bi/In) hybrids. Table 1 gives 20 values (BN/SG, BNG/SG, BN1LMPA2/SG, BNG1LMPA2/SG at 20-60 wt.%); its header prints the unit as '/(m·K)' without W (taken as W/(m·K)). Text adds neat gel (0.17), BN1LMPA1-60 (1.47) and BNG2LMPA1-60 (1.59). Text gives ~2.18 for BNG1LMPA2-60 but Table 1 gives 2.17; the table value is used and the mismatch noted. The B
+  rows_rejected_at_append:
+  - - 903b1053-447
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-448
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-451
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-452
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-455
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-456
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-459
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-460
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-463
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-464
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-465
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  - - 903b1053-466
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
+  rows_added:
+  - 903b1053-444
+  - 903b1053-445
+  - 903b1053-446
+  - 903b1053-449
+  - 903b1053-450
+  - 903b1053-453
+  - 903b1053-454
+  - 903b1053-457
+  - 903b1053-458
+  - 903b1053-461
+  - 903b1053-462
+measurements:
+- row_id: 903b1053-444
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: none
+  filler_material_original: pure gel matrix (SG)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt% (neat matrix, no filler)
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.17
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.17
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''When the filling amount of BN1LMPA1 was 60 wt.%, the thermal conductivity reached 1.47 W/(m·K), which was approximately 8.7 times that of the pure gel matrix (0.17 W/m·K).'''
+  confidence: High
+  notes: Neat silicone gel matrix value printed in text. Loading set to 0 because this is the neat matrix.
+- row_id: 903b1053-445
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN
+  filler_material_original: h-BN (200 nm), sample BN/SG, 20 wt.%
+  filler_mean_size_um: 0.2
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt.%
+  processing_method: h-BN added to pre-prepared silicone gel (SG) to form thermally conductive gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.29
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.29
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 20 wt.%, column BN/SG: ''20 | 0.29 | 0.53 | 0.63 | 0.67'''
+  confidence: High
+  notes: h-BN alone in silicone gel; the paper does not say explicitly whether this h-BN was HA-modified. Table header prints the unit as 'Thermal Conductivity/(m·K)' (W missing); taken as W/(m·K), consistent with text values. Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-446
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN/GO hybrid
+  filler_material_original: h-BN@GO (BNG; 95 wt.% h-BN, 5 wt.% GO), sample BNG/SG, 20 wt.%
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt.%
+  functionalization: humic acid (HA) surface modification of h-BN and GO
+  processing_method: HA-modified h-BN and GO (95:5 wt) co-dispersed in ethanol by ultrasonication 4 h, aged 24 h, filtered, washed, vacuum dried 80 °C (BNG); added to pre-prepared silicone gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.53
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.53
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 20 wt.%, column BNG/SG: ''20 | 0.29 | 0.53 | 0.63 | 0.67'''
+  confidence: High
+  notes: BNG = HA-modified h-BN and GO at 95:5 by mass, assembled into elliptical particles. Loading is total BNG wt.%. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-449
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN
+  filler_material_original: h-BN (200 nm), sample BN/SG, 30 wt.%
+  filler_mean_size_um: 0.2
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  processing_method: h-BN added to pre-prepared silicone gel (SG) to form thermally conductive gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.34
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.34
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 30 wt.%, column BN/SG: ''30 | 0.34 | 0.72 | 0.75 | 0.91'''
+  confidence: High
+  notes: h-BN alone in silicone gel; HA modification of this h-BN not stated explicitly. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-450
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN/GO hybrid
+  filler_material_original: h-BN@GO (BNG; 95 wt.% h-BN, 5 wt.% GO), sample BNG/SG, 30 wt.%
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt.%
+  functionalization: humic acid (HA) surface modification of h-BN and GO
+  processing_method: HA-modified h-BN and GO (95:5 wt) co-dispersed in ethanol by ultrasonication 4 h, aged 24 h, filtered, washed, vacuum dried 80 °C (BNG); added to pre-prepared silicone gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.72
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.72
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 30 wt.%, column BNG/SG: ''30 | 0.34 | 0.72 | 0.75 | 0.91'''
+  confidence: High
+  notes: BNG = h-BN:GO 95:5 by mass; loading is total BNG wt.%. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-453
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN
+  filler_material_original: h-BN (200 nm), sample BN/SG, 40 wt.%
+  filler_mean_size_um: 0.2
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt.%
+  processing_method: h-BN added to pre-prepared silicone gel (SG) to form thermally conductive gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.47
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.47
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 40 wt.%, column BN/SG: ''40 | 0.47 | 0.91 | 1.01 | 1.22'''
+  confidence: High
+  notes: h-BN alone in silicone gel; HA modification of this h-BN not stated explicitly. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-454
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN/GO hybrid
+  filler_material_original: h-BN@GO (BNG; 95 wt.% h-BN, 5 wt.% GO), sample BNG/SG, 40 wt.%
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt.%
+  functionalization: humic acid (HA) surface modification of h-BN and GO
+  processing_method: HA-modified h-BN and GO (95:5 wt) co-dispersed in ethanol by ultrasonication 4 h, aged 24 h, filtered, washed, vacuum dried 80 °C (BNG); added to pre-prepared silicone gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.91
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.91
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 40 wt.%, column BNG/SG: ''40 | 0.47 | 0.91 | 1.01 | 1.22'''
+  confidence: High
+  notes: BNG = h-BN:GO 95:5 by mass; loading is total BNG wt.%. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-457
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN
+  filler_material_original: h-BN (200 nm), sample BN/SG, 50 wt.%
+  filler_mean_size_um: 0.2
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt.%
+  processing_method: h-BN added to pre-prepared silicone gel (SG) to form thermally conductive gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.56
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.56
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 50 wt.%, column BN/SG: ''50 | 0.56 | 1.21 | 1.30 | 1.65'''
+  confidence: High
+  notes: h-BN alone in silicone gel; HA modification of this h-BN not stated explicitly. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-458
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN/GO hybrid
+  filler_material_original: h-BN@GO (BNG; 95 wt.% h-BN, 5 wt.% GO), sample BNG/SG, 50 wt.%
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt.%
+  functionalization: humic acid (HA) surface modification of h-BN and GO
+  processing_method: HA-modified h-BN and GO (95:5 wt) co-dispersed in ethanol by ultrasonication 4 h, aged 24 h, filtered, washed, vacuum dried 80 °C (BNG); added to pre-prepared silicone gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 1.21
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 1.21
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 50 wt.%, column BNG/SG: ''50 | 0.56 | 1.21 | 1.30 | 1.65'''
+  confidence: High
+  notes: BNG = h-BN:GO 95:5 by mass; loading is total BNG wt.%. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-461
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN
+  filler_material_original: h-BN (200 nm), sample BN/SG, 60 wt.%
+  filler_mean_size_um: 0.2
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt.%
+  processing_method: h-BN added to pre-prepared silicone gel (SG) to form thermally conductive gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.61
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 0.61
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 60 wt.%, column BN/SG: ''60 | 0.61 | 1.39 | 1.62 | 2.17'''
+  confidence: High
+  notes: h-BN alone in silicone gel; HA modification of this h-BN not stated explicitly. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).
+- row_id: 903b1053-462
+  matrix_polymer: Silicone gel (SG) from double-end vinyl silicone oil VS1000 crosslinked by a eugenol-synthesized crosslinker, Pt-catalysed
+  curing_agent: Eugenol-synthesized crosslinker + liquid Pt catalyst (5000 ppm)
+  filler_material: h-BN/GO hybrid
+  filler_material_original: h-BN@GO (BNG; 95 wt.% h-BN, 5 wt.% GO), sample BNG/SG, 60 wt.%
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt.%
+  functionalization: humic acid (HA) surface modification of h-BN and GO
+  processing_method: HA-modified h-BN and GO (95:5 wt) co-dispersed in ethanol by ultrasonication 4 h, aged 24 h, filtered, washed, vacuum dried 80 °C (BNG); added to pre-prepared silicone gel
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 1.39
+  k_direction: unknown
+  measurement_method: Transient short hot-wire technique, TC-3000 TC meter (Xiaxi Electronic Technology)
+  k_original_value: 1.39
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 1, row 60 wt.%, column BNG/SG: ''60 | 0.61 | 1.39 | 1.62 | 2.17'''
+  confidence: High
+  notes: BNG = h-BN:GO 95:5 by mass; loading is total BNG wt.%. Table header unit '/(m·K)' (W missing); taken as W/(m·K). Unit printed as '(m·K)' (the W is implied by the column); recorded as W/(m·K).

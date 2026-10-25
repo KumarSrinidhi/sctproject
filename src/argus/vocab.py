@@ -217,6 +217,17 @@ _MATRIX_RULES = [
     ("polyurethane", re.compile(r"polyurethane|\bPU\b", re.I)),
     ("epoxy", re.compile(r"epox|dgeba|\bEP\b|\bEMC\b|araldite|novolac|\bE-?51\b|\bE-?828\b|\bYD-?128\b|\bCEP\b|"
                          r"\bRIP\b|cyanate", re.I)),
+    # Thermoplastics added with Phase 6 (they come after every rule above, so no earlier row changes family).
+    ("polyethylene", re.compile(r"\b(?:HD|LD|LLD|UHMW)?PE\b(?!-g)|polyethylene(?!\s*(?:glycol|terephthalate|oxide|imine))",
+                                re.I)),
+    ("polypropylene", re.compile(r"polypropylene|\bPP\b", re.I)),
+    ("polyamide", re.compile(r"polyamide|nylon|polyphthalamide|\bPA\s?6{1,2}\b|\bPPA\b", re.I)),
+    ("PVDF", re.compile(r"\bPVDF\b|poly\s*\(?\s*vinylidene\s*fluoride", re.I)),
+    ("PVA", re.compile(r"\bc?PVA\b|poly\s*\(?\s*vinyl\s*alcohol", re.I)),
+    ("PPS", re.compile(r"\bPPS\b|poly\s*\(?\s*phenylene\s*sulfide", re.I)),
+    ("PEI", re.compile(r"polyetherimide|\bPEI\b", re.I)),
+    ("polycarbonate", re.compile(r"polycarbonate|\bPC\b", re.I)),
+    ("PMMA", re.compile(r"\bPMMA\b|poly\s*\(?\s*methyl\s*methacrylate", re.I)),
 ]
 _PREFILLED = re.compile(r"containing\s+\S+\s+(?:and\s+\S+\s+)?fillers|already\s+loaded", re.I)
 

@@ -1,0 +1,69 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P130
+paper:
+  doi: 10.3390/polym11122009
+  title: Preparation of Boron Nitride-Coated Carbon Fibers and Synergistic Improvement of Thermal Conductivity in Their Polypropylene-Matrix Composites
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11122009
+extraction_log:
+- seq: 142
+  candidate_id: P6-P130
+  doi: 10.3390/polym11122009
+  paper_title: Preparation of Boron Nitride-Coated Carbon Fibers and Synergistic Improvement of Thermal Conductivity in Their Polypropylene-Matrix Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym11122009.txt (cache, not committed)
+  tables_inspected: Table 1 (XPS elemental composition, no k), Table 2 (k and electrical resistivity of neat PP, CF20/GF20/PP, BN–CF20/GF20/PP), Table 3 (fibre resistivity, no k)
+  figures_inspected: Figures 1-9 captions (none show composite k; Fig. 2b is the R-vs-thickness method plot)
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. Only Table 2 prints k values. The uncoated CF20/GF20/PP row (0.47 W/mK) was excluded because it has no BN. The text percentages (30%/60%/316%) are derived and were not extracted.
+  rows_rejected_at_append: []
+  rows_added:
+  - cceb49d2-415
+  - cceb49d2-416
+measurements:
+- row_id: cceb49d2-415
+  matrix_polymer: Polypropylene (SJ 150, Lotte Chemical)
+  filler_material: none
+  filler_material_original: none, sample Neat PP
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: phr
+  processing_method: Internal mixer melt processing at 180 °C, compression-moulded into 20 × 20 × 1 mm samples at 200 bar (cooled 190→100 °C)
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.18
+  k_direction: through-plane (measured 'in the vertical direction')
+  measurement_method: Steady-state, ASTM D5470, vertical-type thermal conductivity measurement system (Hantech Co.); k from inverse slope of thermal resistance vs thickness for several thicknesses, samples polished, clamped ~0.5 kgf
+  k_original_value: 0.18
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''Neat PP | 0.18 | -'''
+  confidence: High
+  notes: Neat-matrix reference value.
+- row_id: cceb49d2-416
+  matrix_polymer: Polypropylene (SJ 150, Lotte Chemical)
+  filler_material: BN-coated CF/graphite hybrid
+  filler_material_original: BN–CF (boron nitride-coated PAN carbon fibre, Toray T-300 3K, chopped 1 inch) + graphite flake (GF), sample BN–CF20/GF20/PP
+  filler_shape: short fibre (BN-coated CF) + flake (graphite)
+  size_distribution: 'Graphite: +50 mesh particle size ≥ 80%; BN coating thickness roughly 0.5–0.6 µm'
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: phr
+  functionalization: BN microlayer coating on CF by boric acid/methanol dip-coating then nitriding at 1400 °C in N2 with NH3 (h-BN/t-BN by FTIR); graphite as received
+  processing_method: Internal mixer at 180 °C, 20 rpm, 30 min mixing of PP with BN–CF (20 phr) and GF (20 phr); compression-moulded into 20 × 20 × 1 mm samples at 200 bar (cooled 190→100 °C)
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.75
+  k_direction: through-plane (measured 'in the vertical direction')
+  measurement_method: Steady-state, ASTM D5470, vertical-type thermal conductivity measurement system (Hantech Co.); k from inverse slope of thermal resistance vs thickness for several thicknesses, samples polished, clamped ~0.5 kgf
+  k_original_value: 0.75
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''BN–CF20/GF20/PP | 0.75 | 37.84'''
+  confidence: High
+  notes: Hybrid total 40 phr = 20 phr BN-coated CF + 20 phr graphite flake. BN is present only as a thin coating on the CF, so BN content itself is not stated. Comparator CF20/GF20/PP (0.47 W/mK, uncoated CF, no BN) skipped as it contains no BN. Electrical resistivity 37.84 Ω·cm.

@@ -1,0 +1,154 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P171
+paper:
+  doi: 10.1039/d5na00373c
+  title: 'Stretchable heat-dissipation sheet based on insulating graphene and boron nitride composites: asymmetric elastomeric networks for stable thermal conductivity under repeated tensile strain'
+  year: 2025
+  source_url: https://doi.org/10.1039/d5na00373c
+extraction_log:
+- seq: 183
+  candidate_id: P6-P171
+  doi: 10.1039/d5na00373c
+  paper_title: 'Stretchable heat-dissipation sheet based on insulating graphene and boron nitride composites: asymmetric elastomeric networks for stable thermal conductivity under repeated tensile strain'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc)
+  files_inspected: sources/text/10.1039_d5na00373c.txt (cache, not committed)
+  tables_inspected: none (no tables in the article)
+  figures_inspected: Fig. 2b, 2c, 2e, 2f (TC0%/TC50%, 1st/2nd, vs composition); Fig. 3a–d (BN P:A ratio, thickness, cycling); Fig. 4e (TC vs elongation 0–400%)
+  candidate_measurements: 6
+  rows_appended: 6
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 100 figure-only values not taken. Almost all k data are figure-only (Fig. 2b/c/e/f, 3a–d, 4e). The figure_only_skipped count of 100 is a rough estimate, not a point count. Printed values: 2.75 (approximate), 3.0 (approximate), 1.69 (at 50% strain, after aging), 2 (TC0%, optimized), 2.08 (aged) and 2.03 (after 400% elongation). Skipped: the conclusion''s ''initial thermal conductivity was low at 1.6 W m−1 K−1'' for ''the CNT-based composite'', because its composition (BN-P and CNT conte'
+  rows_rejected_at_append: []
+  rows_added:
+  - e12342fc-649
+  - e12342fc-650
+  - e12342fc-651
+  - e12342fc-652
+  - e12342fc-653
+  - e12342fc-654
+measurements:
+- row_id: e12342fc-649
+  matrix_polymer: SEBS (styrene–(ethylene–butylene)–styrene, Kraton G1645 VO; polystyrene content 11.5–13.5%)
+  filler_material: h-BN/graphene hybrid
+  filler_material_original: I-Gr (insulating graphene, XCM) 20 wt% + BN-P (plate-like BN, 3M CFP006) 70 wt%, I-Gr–BN-P–SEBS
+  filler_shape: platelet (BN-P) + partially exfoliated graphene platelets (I-Gr)
+  size_distribution: BN-P d50 5–8 μm; I-Gr d50 3–5 μm, thickness 300–500 nm
+  filler_loading_original_value: I-Gr 20 wt% + BN-P 70 wt%
+  filler_loading_original_unit: wt% (basis not stated)
+  functionalization: I-Gr UV-ozone treated (30 min per side); BN none stated
+  filler_alignment: plate fillers aligned in-plane by hot pressing
+  processing_method: I-Gr dispersed in CPME by sonication; SEBS (20 wt% vs CPME) mixed in a paste mixer; BN-P added; cast 1 mm thick on glass, dried at RT then 90 °C for >12 h; hot-pressed at 170 °C, 400 kg cm−2, 5 min; sheets ~0.35 mm
+  k_composite_W_mK: 2.75
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500S, Kapton sensor 5465 F2 (3.2 mm diameter), in-plane mode, 20 mW, 10 s, average of 3 measurements
+  k_original_value: 2.75
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 2(b): ''At 20 wt%, the initial thermal conductivity showed a remarkable improvement of approximately 2.75 W m−1 K−1 because the 2D planar structure of graphene can efficiently form a heat-transfer path.'''
+  confidence: Medium
+  notes: Initial (0% strain, TC0%) value, printed as 'approximately'; the text does not say whether it is the 1st or 2nd measurement. The phrase is 'improvement of approximately 2.75', read here as the TC value. Loading basis is not stated. 90 wt% BN-P + 10 wt% I-Gr also exists, so the wt% values are apparently relative to SEBS, not fractions of the composite. They are therefore not summed into filler_loading_wt_pct. k printed as approximate or as a bound, so Medium confidence.
+- row_id: e12342fc-650
+  matrix_polymer: SEBS (styrene–(ethylene–butylene)–styrene, Kraton G1645 VO; polystyrene content 11.5–13.5%)
+  filler_material: h-BN/graphene hybrid
+  filler_material_original: I-Gr (insulating graphene) 10 wt% + BN-P (plate-like BN, 3M CFP006) 90 wt%, I-Gr–BN-P–SEBS
+  filler_shape: platelet (BN-P) + partially exfoliated graphene platelets (I-Gr)
+  size_distribution: BN-P d50 5–8 μm; I-Gr d50 3–5 μm, thickness 300–500 nm
+  filler_loading_original_value: I-Gr 10 wt% + BN-P 90 wt%
+  filler_loading_original_unit: wt% (basis not stated)
+  functionalization: I-Gr UV-ozone treated (30 min per side); BN none stated
+  filler_alignment: plate fillers aligned in-plane by hot pressing
+  processing_method: I-Gr dispersed in CPME by sonication; SEBS mixed in a paste mixer; BN-P added; cast on glass, dried at RT then 90 °C for >12 h; hot-pressed at 170 °C, 400 kg cm−2, 5 min; sheets ~0.35 mm
+  k_composite_W_mK: 3.0
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500S, Kapton sensor 5465 F2 (3.2 mm diameter), in-plane mode, 20 mW, 10 s, average of 3 measurements
+  k_original_value: 3.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 2(c): ''As the BN content increased, the TC0% increased, with a particularly high value of approximately 3.0 W m−1 K−1 at 90 wt% BN-P.'''
+  confidence: Medium
+  notes: TC0% (unstretched), printed as 'approximately 3.0'. Printed as 3.0, stored as 3. Loading basis not stated (apparently relative to SEBS). k printed as approximate or as a bound, so Medium confidence.
+- row_id: e12342fc-651
+  matrix_polymer: SEBS (styrene–(ethylene–butylene)–styrene, Kraton G1645 VO; polystyrene content 11.5–13.5%)
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: CNT (MR99) 5 wt% + BN-P (plate-like BN, 3M CFP006) 80 wt%, CNT–BN-P–SEBS
+  filler_shape: platelet (BN-P) + nanotube (CNT)
+  size_distribution: BN-P d50 5–8 μm; CNT d50 5–15 nm, aspect ratio >500
+  filler_loading_original_value: CNT 5 wt% + BN-P 80 wt%
+  filler_loading_original_unit: wt% (basis not stated)
+  functionalization: none stated
+  filler_alignment: plate fillers aligned in-plane by hot pressing
+  processing_method: Solution mixing in CPME with SEBS (paste mixer), cast on glass, dried at RT then 90 °C, hot-pressed at 170 °C, 400 kg cm−2, 5 min (same route as the I-Gr sheets)
+  k_composite_W_mK: 1.69
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500S, Kapton sensor 5465 F2 (3.2 mm diameter), in-plane mode, 20 mW, 10 s, average of 3 measurements; sensor mounted in a horizontal cyclic elongator (COAD 526) for measurement in the stretched state
+  k_original_value: 1.69
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 2(e): ''For the composite with 5 wt% CNTs, the TC0% was relatively low overall, and even when the BN content reached 80 wt%, the TC50% 2nd was limited to 1.69 W m−1 K−1, attributed to the 1D fiber-like structure of CNTs; therefore, the contact surface between the fillers is limited.'''
+  confidence: High
+  notes: 'Condition: measured under 50% tensile strain (TC50%), 2nd measurement, i.e. after aging for 40 min at RT in the elongated state. Not an unstretched value.'
+- row_id: e12342fc-652
+  matrix_polymer: SEBS (styrene–(ethylene–butylene)–styrene, Kraton G1645 VO; polystyrene content 11.5–13.5%)
+  filler_material: h-BN/graphene hybrid
+  filler_material_original: I-Gr 10 wt% + BN-P/BN-A (3M CFP006 platelets / CFA250S agglomerates, P:A = 1:2) 70 wt% total BN, I-Gr–BN-P/A–SEBS
+  filler_shape: platelet (BN-P) + aggregated spherical (BN-A) + graphene platelets (I-Gr)
+  size_distribution: BN-P d50 5–8 μm; BN-A d50 40–100 μm; I-Gr d50 3–5 μm, thickness 300–500 nm
+  filler_loading_original_value: I-Gr 10 wt% + BN (P:A 1:2) 70 wt%
+  filler_loading_original_unit: wt% (basis not stated)
+  functionalization: I-Gr UV-ozone treated (30 min per side); BN none stated
+  filler_alignment: plate fillers aligned in-plane by hot pressing
+  processing_method: I-Gr UV-ozone treated and sonicated in CPME; SEBS (20 wt% vs CPME) mixed in a paste mixer; BN-P and BN-A (1:2) added; cast 1 mm thick on glass, dried at RT then 90 °C for >12 h; hot-pressed at 170 °C, 400 kg cm−2, 5 min; sheets 0.35 mm
+  k_composite_W_mK: 2.0
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500S, Kapton sensor 5465 F2 (3.2 mm diameter), in-plane mode, 20 mW, 10 s, average of 3 measurements
+  k_original_value: 2.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 3(a): ''When the BN platelet : agglomerates (BN P : A) ratio was 1 : 2, the TC0% measured was 2 W m−1 K−1.'''
+  confidence: High
+  notes: Optimized composition, TC0% (unstretched). The abstract and conclusions say '2.0 W m−1 K−1 or higher'. BN split is BN-P:BN-A = 1:2 within the 70 wt% total. Loading basis not stated (apparently relative to SEBS).
+- row_id: e12342fc-653
+  matrix_polymer: SEBS (styrene–(ethylene–butylene)–styrene, Kraton G1645 VO; polystyrene content 11.5–13.5%)
+  filler_material: h-BN/graphene hybrid
+  filler_material_original: I-Gr 10 wt% + BN-P/BN-A (P:A = 1:2) 70 wt% total BN, optimized I-Gr–BN-P/A–SEBS sheet, after aging
+  filler_shape: platelet (BN-P) + aggregated spherical (BN-A) + graphene platelets (I-Gr)
+  size_distribution: BN-P d50 5–8 μm; BN-A d50 40–100 μm; I-Gr d50 3–5 μm, thickness 300–500 nm
+  filler_loading_original_value: I-Gr 10 wt% + BN (P:A 1:2) 70 wt%
+  filler_loading_original_unit: wt% (basis not stated)
+  functionalization: I-Gr UV-ozone treated (30 min per side); BN none stated
+  filler_alignment: plate fillers aligned in-plane by hot pressing
+  processing_method: 'As for the optimized sheet (solution mixing in CPME, casting, drying, hot pressing at 170 °C, 0.35 mm), then aged: stretched to 50% strain and left 40 min at RT'
+  k_composite_W_mK: 2.08
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500S, Kapton sensor 5465 F2 (3.2 mm diameter), in-plane mode, 20 mW, 10 s, average of 3 measurements
+  k_original_value: 2.08
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 3(d): ''The results indicate that the TC (2.08 W m−1 K−1) in the state where the thermal network was stabilized through aging and the TC (2.03 W m−1 K−1) in the state where the stress-induced change was experienced through high elongation were nearly recovered to the initial values'''
+  confidence: High
+  notes: 'Condition: after aging, before the 400% elongation cycling of Fig. 3(d).'
+- row_id: e12342fc-654
+  matrix_polymer: SEBS (styrene–(ethylene–butylene)–styrene, Kraton G1645 VO; polystyrene content 11.5–13.5%)
+  filler_material: h-BN/graphene hybrid
+  filler_material_original: I-Gr 10 wt% + BN-P/BN-A (P:A = 1:2) 70 wt% total BN, optimized I-Gr–BN-P/A–SEBS sheet, after 400% elongation and recovery
+  filler_shape: platelet (BN-P) + aggregated spherical (BN-A) + graphene platelets (I-Gr)
+  size_distribution: BN-P d50 5–8 μm; BN-A d50 40–100 μm; I-Gr d50 3–5 μm, thickness 300–500 nm
+  filler_loading_original_value: I-Gr 10 wt% + BN (P:A 1:2) 70 wt%
+  filler_loading_original_unit: wt% (basis not stated)
+  functionalization: I-Gr UV-ozone treated (30 min per side); BN none stated
+  filler_alignment: plate fillers aligned in-plane by hot pressing
+  processing_method: As for the optimized sheet, aged, then stretched to 400% elongation and returned to the original length (cyclic, up to 20 cycles)
+  k_composite_W_mK: 2.03
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500S, Kapton sensor 5465 F2 (3.2 mm diameter), in-plane mode, 20 mW, 10 s, average of 3 measurements
+  k_original_value: 2.03
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 3(d): ''The results indicate that the TC (2.08 W m−1 K−1) in the state where the thermal network was stabilized through aging and the TC (2.03 W m−1 K−1) in the state where the stress-induced change was experienced through high elongation were nearly recovered to the initial values'''
+  confidence: High
+  notes: 'Condition: after 400% elongation and recovery to the original length. The number of cycles for this value is not specified (20 cycles run in total).'

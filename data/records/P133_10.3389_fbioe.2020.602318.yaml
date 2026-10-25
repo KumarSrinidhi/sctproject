@@ -1,0 +1,97 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P133
+paper:
+  doi: 10.3389/fbioe.2020.602318
+  title: A Dual-Crosslinked and Anisotropic Regenerated Cellulose/Boron Nitride Nanosheets Film With High Thermal Conductivity, Mechanical Strength, and Toughness
+  year: 2020
+  source_url: https://doi.org/10.3389/fbioe.2020.602318
+extraction_log:
+- seq: 145
+  candidate_id: P6-P133
+  doi: 10.3389/fbioe.2020.602318
+  paper_title: A Dual-Crosslinked and Anisotropic Regenerated Cellulose/Boron Nitride Nanosheets Film With High Thermal Conductivity, Mechanical Strength, and Toughness
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3389_fbioe.2020.602318.txt (cache, not committed)
+  tables_inspected: No tables in the article (Table S1 holds supplementary FE parameters, not available)
+  figures_inspected: Figure 2i (k vs BNNS content 0–60 wt% at 300% pre-stretch), Figure 4A (k vs pre-stretch 100–400%), Figure 4B (literature comparison, excluded), Figure 5F (k of original, water-treated and sonication-treated films), Figure 4C–F (FE simulation, excluded)
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 8 figure-only values not taken. Only three k values are printed. The figure-only skip count (8) is an estimate: about 4 unprinted points in Fig. 2i (0, 10 and intermediate wt%), 2 in Fig. 4A (100% and 200% pre-stretch) and 2 in Fig. 5F (water- and sonication-treated films). The cited literature value (2.97 W/m K, Lao et al.), the Fig. 4B comparison and the FE simulation were excluded. No out-of-plane value is printed.'
+  rows_rejected_at_append: []
+  rows_added:
+  - d2da5b57-423
+  - d2da5b57-424
+  - d2da5b57-425
+measurements:
+- row_id: d2da5b57-423
+  matrix_polymer: Regenerated cellulose (cotton linter pulp dissolved in LiOH/urea aqueous solvent), dual-crosslinked
+  curing_agent: Epoxy chloropropane (epichlorohydrin, ECH, 0.23 g per 21.2 g cellulose solution) for chemical crosslinking + 5 wt% phytic acid bath for physical crosslinking
+  filler_material: BNNS
+  filler_material_original: BNNS (ball-milled/exfoliated from Sigma-Aldrich BN 99.9%, 12 µm), sample dual-crosslinked RC/BNNS film, 45 wt% BNNS, 300% pre-stretch
+  filler_shape: nanosheet
+  size_distribution: Lateral size 200–300 nm, thickness 1–2 nm
+  filler_loading_wt_pct: 45.0
+  filler_loading_original_value: 45.0
+  filler_loading_original_unit: wt%
+  functionalization: none (BNNS exfoliated by ball milling in LiOH/urea solvent)
+  filler_alignment: In-plane orientation induced by 300% uniaxial pre-stretching of the gel
+  processing_method: Cellulose solution mixed with BNNS in LiOH/urea, ECH added, gelled 30 h at 5 °C, pre-stretched 300%, phytic acid bath 30 min, washed in DI water 48 h, air-dried
+  k_composite_W_mK: 10.4
+  k_direction: 'in-plane (inferred: in-plane-oriented BNNS context of Fig. 2i; this value is not explicitly labelled)'
+  measurement_method: Laser flash, Netzsch LFA 467 (in-plane and out-of-plane diffusivity, 250 V, 300 µs pulse); TC = α × ρ × C (methods for ρ and C not stated)
+  k_original_value: 10.4
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results and Discussions, paragraph discussing Figure 2f–i: ''When the BNNS content increased from 45 to 60 wt%, the thermal conductivity was increasing not obviously from 10.4 to 11.0 W/m·K, corresponding to the beforehand establishment of the conductive path.'''
+  confidence: High
+  notes: BNNS-content series 'taking a stretching ratio of 300% as an example'. The paper describes the loading as both a BNNS/cellulose mass ratio and a 'BNNS content'. The magnitude is consistent only with in-plane.
+- row_id: d2da5b57-424
+  matrix_polymer: Regenerated cellulose (cotton linter pulp dissolved in LiOH/urea aqueous solvent), dual-crosslinked
+  curing_agent: Epoxy chloropropane (epichlorohydrin, ECH, 0.23 g per 21.2 g cellulose solution) for chemical crosslinking + 5 wt% phytic acid bath for physical crosslinking
+  filler_material: BNNS
+  filler_material_original: BNNS (ball-milled/exfoliated from Sigma-Aldrich BN 99.9%, 12 µm), sample dual-crosslinked RC/BNNS film, 60 wt% BNNS, 300% pre-stretch
+  filler_shape: nanosheet
+  size_distribution: Lateral size 200–300 nm, thickness 1–2 nm
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: none (BNNS exfoliated by ball milling in LiOH/urea solvent)
+  filler_alignment: In-plane orientation induced by 300% uniaxial pre-stretching of the gel
+  processing_method: Cellulose solution mixed with BNNS in LiOH/urea, ECH added, gelled 30 h at 5 °C, pre-stretched 300%, phytic acid bath 30 min, washed in DI water 48 h, air-dried
+  k_composite_W_mK: 11.0
+  k_direction: 'in-plane (inferred: in-plane-oriented BNNS context of Fig. 2i; this value is not explicitly labelled)'
+  measurement_method: Laser flash, Netzsch LFA 467 (in-plane and out-of-plane diffusivity, 250 V, 300 µs pulse); TC = α × ρ × C (methods for ρ and C not stated)
+  k_original_value: 11.0
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results and Discussions, paragraph discussing Figure 2f–i: ''When the BNNS content increased from 45 to 60 wt%, the thermal conductivity was increasing not obviously from 10.4 to 11.0 W/m·K, corresponding to the beforehand establishment of the conductive path.'''
+  confidence: High
+  notes: Printed as 11.0 W/m·K. BNNS-content series at 300% pre-stretch; this film shows structural defects (Figure S6).
+- row_id: d2da5b57-425
+  matrix_polymer: Regenerated cellulose (cotton linter pulp dissolved in LiOH/urea aqueous solvent), dual-crosslinked
+  curing_agent: Epoxy chloropropane (epichlorohydrin, ECH, 0.23 g per 21.2 g cellulose solution) for chemical crosslinking + 5 wt% phytic acid bath for physical crosslinking
+  filler_material: BNNS
+  filler_material_original: BNNS (ball-milled/exfoliated from Sigma-Aldrich BN 99.9%, 12 µm), sample dual-crosslinked RC/BNNS film, 45 wt% BNNS, 400% pre-stretch (optimised film)
+  filler_shape: nanosheet
+  size_distribution: Lateral size 200–300 nm, thickness 1–2 nm
+  filler_loading_wt_pct: 45.0
+  filler_loading_original_value: 45.0
+  filler_loading_original_unit: wt%
+  functionalization: none (BNNS exfoliated by ball milling in LiOH/urea solvent)
+  filler_alignment: Highly in-plane oriented by 400% uniaxial pre-stretching (I002/I100 = 226)
+  processing_method: Cellulose solution mixed with BNNS in LiOH/urea, ECH added, gelled 30 h at 5 °C, pre-stretched 400%, phytic acid bath 30 min, washed in DI water 48 h, air-dried
+  k_composite_W_mK: 15.2
+  k_direction: 'in-plane (abstract: ''in-plane thermal conductivity of 15.2 W/m·K'')'
+  measurement_method: Laser flash, Netzsch LFA 467 (in-plane and out-of-plane diffusivity, 250 V, 300 µs pulse); TC = α × ρ × C (methods for ρ and C not stated)
+  k_original_value: 15.2
+  k_original_unit: W/m·K
+  value_source: text
+  source_location: 'Results and Discussions, paragraph discussing Figure 4A: ''Note that the value of the film with 400% of pre-stretching reached to a high level of 15.2 W/m·K, which was almost 7.9 times higher than the pure RC film and 3.2 times higher than the film without pre-stretching.'''
+  confidence: High
+  notes: 45 wt% BNNS loading and in-plane direction come from the Abstract and Introduction, which give 15.2 W/m·K in-plane at 45 wt%; also restated in the Conclusions. Pure RC and unstretched-film values appear only as ratios (7.9×, 3.2×) and were not extracted.

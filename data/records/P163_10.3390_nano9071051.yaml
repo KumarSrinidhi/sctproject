@@ -1,0 +1,98 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P163
+paper:
+  doi: 10.3390/nano9071051
+  title: Aerogel Perfusion-Prepared h-BN/CNF Composite Film with Multiple Thermally Conductive Pathways and High Thermal Conductivity
+  year: 2019
+  source_url: https://doi.org/10.3390/nano9071051
+extraction_log:
+- seq: 175
+  candidate_id: P6-P163
+  doi: 10.3390/nano9071051
+  paper_title: Aerogel Perfusion-Prepared h-BN/CNF Composite Film with Multiple Thermally Conductive Pathways and High Thermal Conductivity
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano9071051.txt (cache, not committed)
+  tables_inspected: Table 1 (h-BN mass, wt% and vol% loadings of samples 1–7; no k values). Table S1 (Cp, density, diffusivity) is in the SI and not available.
+  figures_inspected: Figure 6a (thermal diffusivity vs loading), 6b (k vs loading, experiment and Agari model), 6c (increase in k).
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 10 figure-only values not taken. The matrix is cellulose nanofiber (a natural polymer) with PAE resin. Only the 23.08 wt% (9.51 vol%) values are printed for both preparation methods. Figure 6b shows k for 6 loadings (4.79–23.08 wt%) × 2 methods; 10 of these points are figure-only and were skipped. Agari-model predictions were excluded. Earlier BNNS dimensions (about 500 nm, 5 nm) refer to the authors' previous work, not this sample.
+  rows_rejected_at_append: []
+  rows_added:
+  - 398e1de7-592
+  - 398e1de7-593
+  - 398e1de7-594
+measurements:
+- row_id: 398e1de7-592
+  matrix_polymer: Cellulose nanofiber (CNF) film, TEMPO-oxidized softwood pulp, with PAE wet-strength resin
+  filler_material: h-BN
+  filler_material_original: micro-nano (liquid-phase exfoliated) h-BN, h-BN/CNF aerogel perfusion composite film, 23.08 wt% (Table 1 sample 7)
+  filler_shape: platelet (exfoliated few-layer sheets)
+  size_distribution: 'Exfoliated h-BN: length about 400~1000 nm, height 50~130 nm (AFM); starting powder 1~2 μm'
+  filler_loading_vol_pct: 9.51
+  filler_loading_wt_pct: 23.08
+  filler_loading_original_value: 23.08
+  filler_loading_original_unit: wt%
+  functionalization: none (sonication-assisted liquid-phase exfoliation in isopropanol/water)
+  filler_alignment: Vertical h-BN thermally conductive pathways in the CNF aerogel voids (cross-section SEM)
+  processing_method: CNF/PAE aerogel freeze-dried and cross-linked; ultrasonic-assisted perfusion of h-BN suspension into the aerogel; dried, compacted between PVDF membranes at 0.5 MPa and calendered at 1 MPa ×10
+  k_matrix_W_mK: 0.413
+  k_composite_W_mK: 1.488
+  k_direction: through-plane (at through plane)
+  measurement_method: Laser flash, Netzsch LFA 467 HT HyperFlash, diffusivity at 25 °C under N2; Cp by DSC 204 F1 Phoenix (Netzsch); density by true density meter (gas displacement); K = α·Cp·ρ
+  measurement_temperature_C: 25.0
+  k_original_value: 1.488
+  k_original_unit: W·m−1K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 3: ''When h-BN content was 23.08 wt%, the thermal conductivities of the blended composite film and aerogel perfusion film were 0.678 W·m−1K−1 and 1.488 W·m−1K−1 at 25 °C, respectively, 64.2% and 260.3% higher than that of pure CNF film.'''
+  confidence: High
+  notes: The abstract repeats this value as 1.488 W·m−1·K−1 'at through plane' at 9.51 vol %. The vol% is from Table 1 sample 7. The paper reports a 260.3% increase over pure CNF film.
+- row_id: 398e1de7-593
+  matrix_polymer: Cellulose nanofiber (CNF) film, TEMPO-oxidized softwood pulp
+  filler_material: h-BN
+  filler_material_original: micro-nano (liquid-phase exfoliated) h-BN, h-BN/CNF blended composite film, 23.08 wt% (Table 1 sample 7)
+  filler_shape: platelet (exfoliated few-layer sheets)
+  size_distribution: 'Exfoliated h-BN: length about 400~1000 nm, height 50~130 nm (AFM); starting powder 1~2 μm'
+  filler_loading_vol_pct: 9.51
+  filler_loading_wt_pct: 23.08
+  filler_loading_original_value: 23.08
+  filler_loading_original_unit: wt%
+  functionalization: none (sonication-assisted liquid-phase exfoliation in isopropanol/water)
+  processing_method: CNF and h-BN suspension blended (0.5 wt% solids), gelled at 25 °C, compacted between PVDF membranes at 0.5 MPa and calendered at 1 MPa ×10
+  k_matrix_W_mK: 0.413
+  k_composite_W_mK: 0.678
+  k_direction: through-plane (laser flash on film; direction stated in the abstract for the perfusion film)
+  measurement_method: Laser flash, Netzsch LFA 467 HT HyperFlash, diffusivity at 25 °C under N2; Cp by DSC 204 F1 Phoenix (Netzsch); density by true density meter (gas displacement); K = α·Cp·ρ
+  measurement_temperature_C: 25.0
+  k_original_value: 0.678
+  k_original_unit: W·m−1K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 3: ''When h-BN content was 23.08 wt%, the thermal conductivities of the blended composite film and aerogel perfusion film were 0.678 W·m−1K−1 and 1.488 W·m−1K−1 at 25 °C, respectively, 64.2% and 260.3% higher than that of pure CNF film.'''
+  confidence: High
+  notes: Comparison sample made by simple blending; the paper reports a 64.2% increase over pure CNF film. The direction is not stated explicitly for this film, but the same LFA through-film measurement was used. The vol% is from Table 1.
+- row_id: 398e1de7-594
+  matrix_polymer: Cellulose nanofiber (CNF) film, TEMPO-oxidized softwood pulp
+  filler_material: none
+  filler_material_original: pure CNF film (polymer substrate, Kp)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Film formed from CNF (aerogel/gel), compacted and calendered as for the composites
+  k_matrix_W_mK: 0.413
+  k_composite_W_mK: 0.413
+  k_direction: through-plane (laser flash on film)
+  measurement_method: Laser flash, Netzsch LFA 467 HT HyperFlash, diffusivity at 25 °C under N2; Cp by DSC 204 F1 Phoenix (Netzsch); density by true density meter (gas displacement); K = α·Cp·ρ
+  measurement_temperature_C: 25.0
+  k_original_value: 0.413
+  k_original_unit: W·m−1K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 3 (Agari model parameters): ''Kp and Kf are the thermal conductivities of polymer substrate and filler, here, they are 0.413 and 350 W·m−1K−1 [49], respectively.'''
+  confidence: Medium
+  notes: '0.413 is printed only as Kp, the polymer-substrate input to the Agari model (the sentence ends with citation [49], which may refer to the filler value of 350 or to both). The paper never states 0.413 as the measured pure CNF film k. It reproduces the stated enhancements exactly (1.488/0.413 = +260.3%; 0.678/0.413 = +64.2%), so it is very likely the measured pure CNF film. The paper says the neat-film diffusivity was 0.268 mm2·s−1 ''regardless of preparation method''. Corrected in verification: The quote is verbatim, but it prints 0.413 as a model parameter, not as an explicit measurement, and the attached citation makes its origin ambiguous. The row is kept because the numeric consistency is strong, but confidence is downgraded to Medium.'

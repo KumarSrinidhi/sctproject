@@ -1,0 +1,269 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P169
+paper:
+  doi: 10.3390/polym15102326
+  title: Thermal Conductivity and Phase-Change Properties of Boron Nitride–Lead Oxide Nanoparticle-Doped Polymer Nanocomposites
+  year: 2023
+  source_url: https://doi.org/10.3390/polym15102326
+extraction_log:
+- seq: 181
+  candidate_id: P6-P169
+  doi: 10.3390/polym15102326
+  paper_title: Thermal Conductivity and Phase-Change Properties of Boron Nitride–Lead Oxide Nanoparticle-Doped Polymer Nanocomposites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym15102326.txt (cache, not committed)
+  tables_inspected: Table 1 (compositions, used for loadings), Table 2 (TGA), Table 3 (DSC; also contains literature rows); none contain k
+  figures_inspected: Fig. 5A–C (λ of all samples)
+  candidate_measurements: 11
+  rows_appended: 11
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. Quality caveat: the reported values look physically implausible. The neat crosslinked copolymers give 5.65–5.77 W/(mK), and the PbO and BN composites give 11–25 W/(mK), from a basic steady-state set-up with a 35–90 °C inlet temperature. Values were extracted as printed. Consider flagging or excluding this paper. PbO-only samples (NCPSPb2–5, 7–10, 12–15, e.g. 22.91 and 24.90 W/(mK)) were excluded because they contain no BN. The BN-containing samples '
+  rows_rejected_at_append: []
+  rows_added:
+  - b18faedb-637
+  - b18faedb-638
+  - b18faedb-639
+  - b18faedb-640
+  - b18faedb-641
+  - b18faedb-642
+  - b18faedb-643
+  - b18faedb-644
+  - b18faedb-645
+  - b18faedb-646
+  - b18faedb-647
+measurements:
+- row_id: b18faedb-637
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer (polystyrene crosslinked with PEG dimethacrylate macrocrosslinker from PEG 1000 g/mol), PS-PEG (1000)
+  filler_material: none
+  filler_material_original: PS-PEG (1000) block copolymer, sample NCPS1
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Homogenized in an agate mortar and cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.77
+  k_composite_W_mK: 5.77
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 5.77
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ value of the NCPS1 block copolymer (PS-PEG (1000) was found to be 5.77 W/(mK)).'''
+  confidence: High
+  notes: Neat-matrix reference for the PS-PEG (1000) series. The value is implausibly high for a neat polymer. It is reported as printed and should be used with caution. Temperature range 35–90 °C (inlet); no single measurement temperature given.
+- row_id: b18faedb-638
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer (PEG dimethacrylate macrocrosslinker from PEG 1500 g/mol), PS-PEG (1500)
+  filler_material: none
+  filler_material_original: PS-PEG (1500) block copolymer, sample NCPS6
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Homogenized in an agate mortar and cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.7
+  k_composite_W_mK: 5.7
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 5.7
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ value of NCPS6 (PS-PEG (1500) block copolymer) was found to be 5.70 W/(mK).'''
+  confidence: High
+  notes: Neat-matrix reference for the PS-PEG (1500) series. The value is implausibly high for a neat polymer. It is reported as printed.
+- row_id: b18faedb-639
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer (PEG dimethacrylate macrocrosslinker from PEG 10,000 g/mol), PS-PEG (10,000)
+  filler_material: none
+  filler_material_original: PS-PEG (10,000) block copolymer, sample NCPS11
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Homogenized in an agate mortar and cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.65
+  k_composite_W_mK: 5.65
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 5.65
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ value of NCPS11 (PS-PEG (10,000) block copolymer) was 5.65 W/(mK).'''
+  confidence: High
+  notes: Neat-matrix reference for the PS-PEG (10,000) series. The value is implausibly high for a neat polymer. It is reported as printed.
+- row_id: b18faedb-640
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (1000)
+  filler_material: BN
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm), sample NCPSBN16
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: supplier size 1 µm; TEM mean diameter as small as 100 nm
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: BN and PS-PEG mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.77
+  k_composite_W_mK: 11.54
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 11.54
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ value of NCPSBN16 was calculated as 11.54 W/(mK).'''
+  confidence: High
+  notes: 'Composition from Table 1: PS-PEG (1000) 50 wt%, BN 50 wt%, PbO 0. k_matrix is NCPS1 (5.77). Absolute values are implausibly high for polymer composites; reported as printed.'
+- row_id: b18faedb-641
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (1000)
+  filler_material: BN/PbO hybrid
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm) + PbO nanoparticles (Merck), sample NCPSPbBN17
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: BN supplier size 1 µm (TEM mean diameter as small as 100 nm); PbO 2–15 nm (TEM)
+  filler_loading_wt_pct: 85.0
+  filler_loading_original_value: BN 15 / PbO 70
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: Powders mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.77
+  k_composite_W_mK: 15.71
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 15.71
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ graphs of NCPSPbBN17, NCPSPbBN18, and NCPSPbBN19 are presented in Figure 5A, and the λ values of these PCM nanocomposites are n 15.71 W/(mK), 16.9 W/(mK) and 18.87 W/(mK), respectively.'''
+  confidence: High
+  notes: 'Table 1: PS-PEG (1000) 15 wt%, BN 15 wt%, PbO 70 wt%. The total filler (85 wt%) is the sum of the BN and PbO shares. The value 15.71 Wm−1K−1 is repeated in the Introduction.'
+- row_id: b18faedb-642
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (1000)
+  filler_material: BN/PbO hybrid
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm) + PbO nanoparticles (Merck), sample NCPSPbBN18
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: BN supplier size 1 µm (TEM mean diameter as small as 100 nm); PbO 2–15 nm (TEM)
+  filler_loading_wt_pct: 95.0
+  filler_loading_original_value: BN 5 / PbO 90
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: Powders mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.77
+  k_composite_W_mK: 16.9
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 16.9
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ graphs of NCPSPbBN17, NCPSPbBN18, and NCPSPbBN19 are presented in Figure 5A, and the λ values of these PCM nanocomposites are n 15.71 W/(mK), 16.9 W/(mK) and 18.87 W/(mK), respectively.'''
+  confidence: High
+  notes: 'Table 1: PS-PEG (1000) 5 wt%, BN 5 wt%, PbO 90 wt%. The total filler (95 wt%) is the sum of the BN and PbO shares.'
+- row_id: b18faedb-643
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (1000)
+  filler_material: BN/PbO hybrid
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm) + PbO nanoparticles (Merck), sample NCPSPbBN19
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: BN supplier size 1 µm (TEM mean diameter as small as 100 nm); PbO 2–15 nm (TEM)
+  filler_loading_wt_pct: 73.9
+  filler_loading_original_value: BN 13 / PbO 60.9
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: Powders mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.77
+  k_composite_W_mK: 18.87
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 18.87
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ graphs of NCPSPbBN17, NCPSPbBN18, and NCPSPbBN19 are presented in Figure 5A, and the λ values of these PCM nanocomposites are n 15.71 W/(mK), 16.9 W/(mK) and 18.87 W/(mK), respectively.'''
+  confidence: High
+  notes: 'Table 1: PS-PEG (1000) 26.1 wt%, BN 13 wt%, PbO 60.9 wt%. The total filler (73.9 wt%) is the sum of the BN and PbO shares. The abstract gives the same sample (BN 13 wt%, PbO 60.90 wt%, PS-PEG 26.10 wt%) as 18.874 W/(mK).'
+- row_id: b18faedb-644
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (1500)
+  filler_material: BN/PbO hybrid
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm) + PbO nanoparticles (Merck), sample NCPSPbBN23
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: BN supplier size 1 µm (TEM mean diameter as small as 100 nm); PbO 2–15 nm (TEM)
+  filler_loading_wt_pct: 73.9
+  filler_loading_original_value: BN 13 / PbO 60.9
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: Powders mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.7
+  k_composite_W_mK: 17.44
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 17.44
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''It is the NCPSPbBN23 nanocomposite which has the highest thermal conductivity (17.44 W/(mK)) among NCPSPbBN21, NCPSPbBN22, and NCPSPbBN23.'''
+  confidence: High
+  notes: 'Table 1: PS-PEG (1500) 26.1 wt%, BN 13 wt%, PbO 60.9 wt%. The total filler (73.9 wt%) is the sum of the BN and PbO shares. k_matrix is NCPS6 (5.70).'
+- row_id: b18faedb-645
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (10,000)
+  filler_material: BN/PbO hybrid
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm) + PbO nanoparticles (Merck), sample NCPSPbBN25
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: BN supplier size 1 µm (TEM mean diameter as small as 100 nm); PbO 2–15 nm (TEM)
+  filler_loading_wt_pct: 85.0
+  filler_loading_original_value: BN 15 / PbO 70
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: Powders mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.65
+  k_composite_W_mK: 15.21
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 15.21
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ values of the NCPSPbBN25, NCPSPbBN26, and NCPSPbBN27 PCM nanocomposites were 15.21 W/(mK), 16.74 W/(mK), 17.87 W/(mK).'''
+  confidence: High
+  notes: 'Table 1: PS-PEG (10,000) 15 wt%, BN 15 wt%, PbO 70 wt%. The total filler (85 wt%) is the sum of the BN and PbO shares. k_matrix is NCPS11 (5.65).'
+- row_id: b18faedb-646
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (10,000)
+  filler_material: BN/PbO hybrid
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm) + PbO nanoparticles (Merck), sample NCPSPbBN26
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: BN supplier size 1 µm (TEM mean diameter as small as 100 nm); PbO 2–15 nm (TEM)
+  filler_loading_wt_pct: 95.0
+  filler_loading_original_value: BN 5 / PbO 90
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: Powders mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.65
+  k_composite_W_mK: 16.74
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 16.74
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ values of the NCPSPbBN25, NCPSPbBN26, and NCPSPbBN27 PCM nanocomposites were 15.21 W/(mK), 16.74 W/(mK), 17.87 W/(mK).'''
+  confidence: High
+  notes: 'Table 1: PS-PEG (10,000) 5 wt%, BN 5 wt%, PbO 90 wt%. The total filler (95 wt%) is the sum of the BN and PbO shares.'
+- row_id: b18faedb-647
+  matrix_polymer: Crosslinked PS-PEG DM block copolymer, PS-PEG (10,000)
+  filler_material: BN/PbO hybrid
+  filler_material_original: BN nanoparticles (Aldrich, 1 µm) + PbO nanoparticles (Merck), sample NCPSPbBN27
+  filler_shape: particle (described as nanoparticles)
+  filler_mean_size_um: 1.0
+  size_distribution: BN supplier size 1 µm (TEM mean diameter as small as 100 nm); PbO 2–15 nm (TEM)
+  filler_loading_wt_pct: 73.9
+  filler_loading_original_value: BN 13 / PbO 60.9
+  filler_loading_original_unit: wt%
+  functionalization: none stated
+  processing_method: Powders mixed and homogenized in an agate mortar, cold-pressed into tablets (10 MPa, 20 min, 22 °C); tablets 12 mm diameter, 0.8–5 mm thick
+  k_matrix_W_mK: 5.65
+  k_composite_W_mK: 17.87
+  k_direction: through-plane (one face heated by a resistor, temperature measured at the other end of the tablet)
+  measurement_method: 'Steady-state in-house set-up: one face heated by a resistor (up to 50 W at 12 V; 22.2 W applied), temperatures measured at both ends, λ = q(x2−x1)/(A(T2−T1)) (Fourier''s law, Eq. 2); inlet temperature 35–90 °C'
+  k_original_value: 17.87
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The λ values of the NCPSPbBN25, NCPSPbBN26, and NCPSPbBN27 PCM nanocomposites were 15.21 W/(mK), 16.74 W/(mK), 17.87 W/(mK).'''
+  confidence: High
+  notes: 'Table 1: PS-PEG (10,000) 26.1 wt%, BN 13 wt%, PbO 60.9 wt%. The total filler (73.9 wt%) is the sum of the BN and PbO shares.'

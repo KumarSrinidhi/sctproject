@@ -1,0 +1,49 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P138
+paper:
+  doi: 10.3390/ma16010356
+  title: Improvement of the Thermal Conductivity and Mechanical Properties of 3D-Printed Polyurethane Composites by Incorporating Hydroxylated Boron Nitride Functional Fillers
+  year: 2022
+  source_url: https://doi.org/10.3390/ma16010356
+extraction_log:
+- seq: 150
+  candidate_id: P6-P138
+  doi: 10.3390/ma16010356
+  paper_title: Improvement of the Thermal Conductivity and Mechanical Properties of 3D-Printed Polyurethane Composites by Incorporating Hydroxylated Boron Nitride Functional Fillers
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ma16010356.txt (cache, not committed)
+  tables_inspected: none (no tables in the paper)
+  figures_inspected: Fig. 9 (k of h-BN/TPU and OH-BN/TPU at 0, 5, 10 wt%, SV and FP print orientations)
+  candidate_measurements: 1
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 9 figure-only values not taken. Only one k value is printed in the text; the rest of Fig. 9 is figure-only (estimated 10 points: neat TPU SV/FP, h-BN and OH-BN at 5 and 10 wt% in SV and FP, minus the 1 printed). The ~600 and 2–30 W/mK h-BN intrinsic values are from the literature and were skipped. Hot Disk direction mode is not stated; the SV orientation is recorded in k_direction wording.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 0718dae7-440
+measurements:
+- row_id: 0718dae7-440
+  matrix_polymer: Thermoplastic polyurethane (TPU, BASF Elastollan S 85A)
+  filler_material: h-BN
+  filler_material_original: OH-BN (hydroxyl-functionalized, exfoliated h-BN), sample OH-BN/TPU (SV), 10 wt.%
+  size_distribution: raw h-BN powder 3–4 μm particle size (before functionalization/exfoliation)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: hydroxyl functionalization (5 M NaOH, 120 °C, 24 h) plus ultrasonic-assisted liquid-phase exfoliation
+  filler_alignment: aligned along the filament printing direction; stand-vertical (SV) print orientation, fillers parallel to heat-flow direction
+  processing_method: Twin-screw extrusion compounding (170 °C), single-screw filament extrusion (1.75 mm), FDM 3D printing (Tenlog TL-D3 Pro, nozzle 220 °C, bed 60 °C, 0.2 mm layers), SV specimen
+  k_composite_W_mK: 0.75
+  k_direction: unknown (SV-printed specimen; fillers oriented parallel to the heat flow direction)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 thermal constant analyzer, ISO 22007-2; average of at least 3 measurements
+  k_original_value: 0.75
+  k_original_unit: W∙m−1∙K−1
+  value_source: text
+  source_location: 'Section 3.7, paragraph 1: ''Furthermore, with a 10 wt.% filler concentration, the thermal conductivity of the OH-BN/TPU (SV) composite reached 0.75 W∙m−1∙K−1, approximately 2.5 times greater than that of the comparable h-BN/TPU (SV) sample.'''
+  confidence: High
+  notes: The only printed k value. The h-BN/TPU (SV) 10 wt% value is given only as a ratio (~2.5× lower) and was not extracted. Neat TPU k is figure-only.

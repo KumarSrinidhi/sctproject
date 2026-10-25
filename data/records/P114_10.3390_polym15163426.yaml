@@ -1,0 +1,534 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P114
+paper:
+  doi: 10.3390/polym15163426
+  title: Impact of the Processing-Induced Orientation of Hexagonal Boron Nitride and Graphite on the Thermal Conductivity of Polyethylene Composites
+  year: 2023
+  source_url: https://doi.org/10.3390/polym15163426
+extraction_log:
+- seq: 126
+  candidate_id: P6-P114
+  doi: 10.3390/polym15163426
+  paper_title: Impact of the Processing-Induced Orientation of Hexagonal Boron Nitride and Graphite on the Thermal Conductivity of Polyethylene Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym15163426.txt (cache, not committed)
+  tables_inspected: No tables in the paper
+  figures_inspected: Figure 4 (k vs sheet thickness, powdered 30 vol.%), Figure 5a,b (C-0.5/C-2 mm vs loading; removed skin layer), Figure 6a-d (shaped strands, R3 vs loading, LLDPE 22.5 vol.%, pellets/powder), Figure 8a,b (hBN vs Gr)
+  candidate_measurements: 22
+  rows_appended: 22
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 40 figure-only values not taken. All values are in running text (no tables). Neat HDPE/LLDPE k not printed. Skipped: modelled skin/core k (0.568, 3.59), approximate trend values (~1 at 0.5 mm, ~2.5 at 3 mm for powdered 30 vol.%), percentage-only comparisons (C-Pe, T-Pe, Sq-Pe, powdered), the unassigned abstract range 0.95-1.67, and all Gr/HDPE values (no BN, e.g. 11.8). Duplicate statements of the same sample (5.15/5.14/5.1 for 30 vol.% R3||; 2.72 for C-2 mm 39 vol.%) recorded onc'
+  rows_rejected_at_append: []
+  rows_added:
+  - 4da67f02-334
+  - 4da67f02-335
+  - 4da67f02-336
+  - 4da67f02-337
+  - 4da67f02-338
+  - 4da67f02-339
+  - 4da67f02-340
+  - 4da67f02-341
+  - 4da67f02-342
+  - 4da67f02-343
+  - 4da67f02-344
+  - 4da67f02-345
+  - 4da67f02-346
+  - 4da67f02-347
+  - 4da67f02-348
+  - 4da67f02-349
+  - 4da67f02-350
+  - 4da67f02-351
+  - 4da67f02-352
+  - 4da67f02-353
+  - 4da67f02-354
+  - 4da67f02-355
+measurements:
+- row_id: 4da67f02-334
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample C-0.5 mm (C-shaped strand pressed into 0.5 mm sheet), ~40 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 40.0
+  filler_loading_original_value: ~40
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: mostly perpendicular to heat flow (platelets in sheet plane)
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; C-shaped strand compression molded (Carver press, 180 °C, ~10 bar, 5 min) into 0.5 mm sheet
+  k_composite_W_mK: 1.43
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 1.43
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.1, paragraph 3 (Figure 5a): ''For example, at ~40 vol.%, κ of the C-0.5 mm and C-2 mm composites were 1.43 and 2.72 W m−1 K−1, respectively.'''
+  confidence: High
+  notes: Loading printed as ~40 vol.% (the same C-2 mm series is later called 39 vol.%).
+- row_id: 4da67f02-335
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample C-2 mm (C-shaped strand pressed into 2 mm sheet), ~40 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 40.0
+  filler_loading_original_value: ~40
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: perpendicular in skin layer, mixed/inclined orientations in core
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; C-shaped strand compression molded (Carver press, 180 °C, ~10 bar, 5 min) into 2 mm sheet
+  k_composite_W_mK: 2.72
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 2.72
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.1, paragraph 3 (Figure 5a): ''For example, at ~40 vol.%, κ of the C-0.5 mm and C-2 mm composites were 1.43 and 2.72 W m−1 K−1, respectively.'''
+  confidence: High
+  notes: Loading printed as ~40 vol.%; the same sample is called 39 vol.% hBN/HDPE in Section 3.1 paragraph 5 (2.72 with 0 mm skin removed).
+- row_id: 4da67f02-336
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample C-2 mm 39 vol.% hBN/HDPE after removing 0.74 mm of skin layer by polishing
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 39.0
+  filler_loading_original_value: 39.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: perpendicular skin layer partly removed; core with mixed orientations
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; C-shaped strand pressed into 2 mm sheet, then skin layer polished off (0.74 mm removed)
+  k_composite_W_mK: 3.44
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 3.44
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.1, paragraph 5 (Figure 5b): ''Notably, when the removed skin layer thickness increased from 0 to 0.74 mm, κ of the 39 vol.% hBN/HDPE increased from 2.72 to 3.44 W m−1 K−1.'''
+  confidence: High
+  notes: 'Condition: 0.74 mm of skin layer removed; further removal gave negligible increase. The 2.72 starting value is the same sample as the C-2 mm row.'
+- row_id: 4da67f02-337
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample R3P (R3 strand 1 x 10 mm pressed perpendicular to long side), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: hBN oriented parallel to strand long side; pressed perpendicular to it
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; rectangular R3 die strand, compression molded into 2 mm sheet
+  k_composite_W_mK: 0.945
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 0.945
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1 (Figure 6a): ''κ of the composites varied from 0.945 W m−1K−1 in the R3P composite to 1.74 W m−1 K−1 in the AE composite.'''
+  confidence: High
+  notes: Lowest of the shaped-strand composites; 30 vol.% stated in the Figure 6a context.
+- row_id: 4da67f02-338
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample AE (material collected directly from extruder barrel), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: not characterized (sample collected directly from the extruder barrel, no die shaping)
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; sample taken from extruder barrel, compression molded into 2 mm sheet
+  k_composite_W_mK: 1.74
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 1.74
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1 (Figure 6a): ''κ of the composites varied from 0.945 W m−1K−1 in the R3P composite to 1.74 W m−1 K−1 in the AE composite.'''
+  confidence: High
+  notes: 'Highest of the Figure 6a series. The abstract instead quotes a range of 0.95 to 1.67 for shaped extrudates (not assigned to a sample). Corrected in verification: The value 1.74 and the AE sample are correct. The extractor''s alignment wording ''no shaping-induced orientation (compression-molding orientation only)'' is an inference the paper does not state.'
+- row_id: 4da67f02-339
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample R1P (R1 strand 2 x 5 mm pressed perpendicular), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: pressed perpendicular to the strand long side
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; rectangular R1 die strand, compression molded into 2 mm sheet
+  k_composite_W_mK: 1.24
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 1.24
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2 (Figure 6a): ''κ of R1 and R2 composites was increased from 1.24 to 1.46 W m−1 K−1 and 0.97 to 1.61 W m−1 K−1, respectively, when their strands were pressed randomly instead of perpendicular.'''
+  confidence: High
+  notes: 30 vol.% from the Figure 6a context.
+- row_id: 4da67f02-340
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample R1r (R1 strand pressed randomly), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: pressed randomly relative to the strand long side
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; rectangular R1 die strand, compression molded into 2 mm sheet
+  k_composite_W_mK: 1.46
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 1.46
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2 (Figure 6a): ''κ of R1 and R2 composites was increased from 1.24 to 1.46 W m−1 K−1 and 0.97 to 1.61 W m−1 K−1, respectively, when their strands were pressed randomly instead of perpendicular.'''
+  confidence: High
+  notes: 30 vol.% from the Figure 6a context.
+- row_id: 4da67f02-341
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample R2P (R2 strand 2 x 10 mm pressed perpendicular), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: pressed perpendicular to the strand long side
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; rectangular R2 die strand, compression molded into 2 mm sheet
+  k_composite_W_mK: 0.97
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 0.97
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2 (Figure 6a): ''κ of R1 and R2 composites was increased from 1.24 to 1.46 W m−1 K−1 and 0.97 to 1.61 W m−1 K−1, respectively, when their strands were pressed randomly instead of perpendicular.'''
+  confidence: High
+  notes: 30 vol.% from the Figure 6a context.
+- row_id: 4da67f02-342
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample R2r (R2 strand pressed randomly), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: pressed randomly relative to the strand long side
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; rectangular R2 die strand, compression molded into 2 mm sheet
+  k_composite_W_mK: 1.61
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 1.61
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2 (Figure 6a): ''κ of R1 and R2 composites was increased from 1.24 to 1.46 W m−1 K−1 and 0.97 to 1.61 W m−1 K−1, respectively, when their strands were pressed randomly instead of perpendicular.'''
+  confidence: High
+  notes: 30 vol.% from the Figure 6a context.
+- row_id: 4da67f02-343
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, R3-based stacked bar, measured R3|| (parallel to longer side of original strands), 10 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: hBN aligned parallel to heat flow (R3|| direction)
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strands (1 x 10 mm) stacked into 1 x 1 x 4 cm bars
+  k_composite_W_mK: 2.3
+  k_direction: 'through-plane (R3||: heat flow parallel to longer side of original strands)'
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 2.3
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3 (Figure 6b): ''Remarkably, at 10 and 30 vol.% hBN contents, R3|| κ were 2.3 and 5.15 W m−1 K−1, respectively.'''
+  confidence: High
+  notes: Stacked R3 strand bar.
+- row_id: 4da67f02-344
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, R3-based stacked bar, measured R3|| (parallel to longer side of original strands), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: hBN aligned parallel to heat flow (R3|| direction); I(100)/I(002) = 1.83
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strands (1 x 10 mm) stacked into 1 x 1 x 4 cm bars
+  k_composite_W_mK: 5.15
+  k_direction: 'through-plane (R3||: heat flow parallel to longer side of original strands)'
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 5.15
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3 (Figure 6b): ''Remarkably, at 10 and 30 vol.% hBN contents, R3|| κ were 2.3 and 5.15 W m−1 K−1, respectively.'''
+  confidence: High
+  notes: Headline hBN value. The same 30 vol.% R3|| composite is quoted as 5.14 in Section 3.2 paragraph 7 (Figure 6d) and Conclusions, and as 5.1 in the abstract; recorded once here.
+- row_id: 4da67f02-345
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, R3-based stacked bar, measured R3⏊ (perpendicular to longer side of original strands), 10 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: hBN mostly perpendicular to heat flow (R3⏊ direction)
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strands (1 x 10 mm) stacked into 1 x 1 x 4 cm bars
+  k_composite_W_mK: 0.87
+  k_direction: 'through-plane (R3⏊: heat flow perpendicular to longer side of original strands)'
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 0.87
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3 (Figure 6b): ''Meanwhile, R3⏊ κ were ~0.87 and 1.44 W m−1 K−1, respectively.'''
+  confidence: Medium
+  notes: Printed as approximate (~0.87).
+- row_id: 4da67f02-346
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, R3-based stacked bar, measured R3⏊ (perpendicular to longer side of original strands), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: hBN mostly perpendicular to heat flow (R3⏊ direction); I(100)/I(002) = 0.0025
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strands (1 x 10 mm) stacked into 1 x 1 x 4 cm bars
+  k_composite_W_mK: 1.44
+  k_direction: 'through-plane (R3⏊: heat flow perpendicular to longer side of original strands)'
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 1.44
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3 (Figure 6b): ''Meanwhile, R3⏊ κ were ~0.87 and 1.44 W m−1 K−1, respectively.'''
+  confidence: High
+  notes: Stacked R3 strand bar.
+- row_id: 4da67f02-347
+  matrix_polymer: linear low-density polyethylene (LLDPE, Lotrene Q2018)
+  filler_material: h-BN
+  filler_material_original: hBN, sample C-0.5 mm hBN/LLDPE, 22.5 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 22.5
+  filler_loading_original_value: 22.5
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: perpendicular to heat flow
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; C-shaped strand pressed into 0.5 mm sheet
+  k_composite_W_mK: 0.56
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 0.56
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 5 (Figure 6c): ''For example, κ varied from 0.56 W m−1 K−1 in the C-0.5 mm to 3.9 W m−1 K−1 in the stacked, owing to their perpendicular and parallel hBN orientations, respectively.'''
+  confidence: High
+  notes: LLDPE matrix.
+- row_id: 4da67f02-348
+  matrix_polymer: linear low-density polyethylene (LLDPE, Lotrene Q2018)
+  filler_material: h-BN
+  filler_material_original: hBN, sample Stacked (modified Yang's multilayer sheet stacking and 90° rotation) hBN/LLDPE, 22.5 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 22.5
+  filler_loading_original_value: 22.5
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: parallel to heat flow
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; hBN/LLDPE sheets 0.3-0.5 mm thick stacked and rotated 90° (modified Yang's method)
+  k_composite_W_mK: 3.9
+  k_direction: through-plane (stacked sheets, platelets parallel to heat flow)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 3.9
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 5 (Figure 6c): ''For example, κ varied from 0.56 W m−1 K−1 in the C-0.5 mm to 3.9 W m−1 K−1 in the stacked, owing to their perpendicular and parallel hBN orientations, respectively.'''
+  confidence: High
+  notes: LLDPE matrix.
+- row_id: 4da67f02-349
+  matrix_polymer: linear low-density polyethylene (LLDPE, Lotrene Q2018)
+  filler_material: h-BN
+  filler_material_original: hBN, R3-based stacked bar hBN/LLDPE, measured R3⏊, 22.5 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 22.5
+  filler_loading_original_value: 22.5
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: mostly perpendicular to heat flow (R3⏊)
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strands stacked into bars
+  k_composite_W_mK: 0.96
+  k_direction: 'through-plane (R3⏊: heat flow perpendicular to longer side of original strands)'
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 0.96
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 6 (Figure 6c): ''Moreover, the R3⏊ κ of 0.96 W m−1 K−1 was slightly higher than that of the C-2 mm (0.80 W m−1 K−1), and the 2.93 W m−1 K−1 for R3|| κ was lower than that of the stacked (3.9 W m−1 K−1), suggesting that the hBN orientations were not completely perpendicular or parallel in the R3⏊ and R3|| directions, respectively.'''
+  confidence: High
+  notes: LLDPE matrix.
+- row_id: 4da67f02-350
+  matrix_polymer: linear low-density polyethylene (LLDPE, Lotrene Q2018)
+  filler_material: h-BN
+  filler_material_original: hBN, sample C-2 mm hBN/LLDPE, 22.5 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 22.5
+  filler_loading_original_value: 22.5
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: perpendicular skin layer, mixed core
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; C-shaped strand pressed into 2 mm sheet
+  k_composite_W_mK: 0.8
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 0.8
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 6 (Figure 6c): ''Moreover, the R3⏊ κ of 0.96 W m−1 K−1 was slightly higher than that of the C-2 mm (0.80 W m−1 K−1), and the 2.93 W m−1 K−1 for R3|| κ was lower than that of the stacked (3.9 W m−1 K−1), suggesting that the hBN orientations were not completely perpendicular or parallel in the R3⏊ and R3|| directions, respectively.'''
+  confidence: High
+  notes: LLDPE matrix; printed as 0.80.
+- row_id: 4da67f02-351
+  matrix_polymer: linear low-density polyethylene (LLDPE, Lotrene Q2018)
+  filler_material: h-BN
+  filler_material_original: hBN, R3-based stacked bar hBN/LLDPE, measured R3||, 22.5 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 22.5
+  filler_loading_original_value: 22.5
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: mostly parallel to heat flow (R3||)
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strands stacked into bars
+  k_composite_W_mK: 2.93
+  k_direction: 'through-plane (R3||: heat flow parallel to longer side of original strands)'
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 2.93
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 6 (Figure 6c): ''Moreover, the R3⏊ κ of 0.96 W m−1 K−1 was slightly higher than that of the C-2 mm (0.80 W m−1 K−1), and the 2.93 W m−1 K−1 for R3|| κ was lower than that of the stacked (3.9 W m−1 K−1), suggesting that the hBN orientations were not completely perpendicular or parallel in the R3⏊ and R3|| directions, respectively.'''
+  confidence: High
+  notes: LLDPE matrix.
+- row_id: 4da67f02-352
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, R3-based stacked bar HDPE-22.5% hBN, measured R3||
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 22.5
+  filler_loading_original_value: 22.5
+  filler_loading_original_unit: '% (printed ''HDPE-22.5% hBN''; vol.% inferred from the 22.5 vol.% comparison context)'
+  functionalization: none
+  filler_alignment: mostly parallel to heat flow (R3||)
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strands stacked into bars
+  k_composite_W_mK: 4.62
+  k_direction: 'through-plane (R3||: heat flow parallel to longer side of original strands)'
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 4.62
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 6: ''Owing to the better crystallinity and higher intrinsic κ of the HDPE polymer, R3|| κ of HDPE-22.5% hBN composite was 4.62 W m−1 K−1, much higher than that of the hBN/LLDPE composite (2.93 W m−1 K−1).'''
+  confidence: High
+  notes: 'Printed as "HDPE-22.5% hBN"; vol.% by context of the 22.5 vol.% comparison. Corrected in verification: The value 4.62 and the R3|| HDPE sample are correct. The paper prints only ''22.5%'' with no basis, so the original unit should not read ''vol%'' as if printed. Keeping filler_loading_vol_pct = 22.5 is acceptable given the notes.'
+- row_id: 4da67f02-353
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, sample R3–0.5 mm (R3 strand pressed into 0.5 mm sheet), 30 vol.%
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: almost perpendicular to heat flow
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; R3 strand compression molded into 0.5 mm sheet
+  k_composite_W_mK: 0.77
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 0.77
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 7 (Figure 6d): ''Comparing κ as a function of hBN orientations, it can be seen that κ increased from 0.77 W m−1 K−1 in the R3–0.5 mm composite, with almost perpendicular hBN orientation, to 5.14 W m−1 K−1 in the R3|| composite, with almost parallel hBN orientation.'''
+  confidence: High
+  notes: 30 vol.% from the Figure 6d context. The R3|| value in the same sentence (5.14) is the 30 vol.% R3|| sample already recorded as 5.15.
+- row_id: 4da67f02-354
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, powdered C-shaped extrudate pressed into 0.5 mm sheet, 30 vol.% hBN/HDPE
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: skin layer perpendicular to the compression direction, random core
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; C-shaped strand powdered in a kitchen grinder and compression molded (Carver press, 180 °C, ~10 bar, 5 min) into a 0.5 mm sheet
+  k_composite_W_mK: 1.0
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 1.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1 (Figure 4): ''In principle, κ increased from ~1 W m−1 K−1 at 0.5 mm to ~2.5 W m−1 K−1 at 3 mm.'''
+  confidence: Medium
+  notes: Printed as an approximate value (~1) for the 30 vol.% powdered composites at 0.5 mm sheet thickness. Include or drop consistently with the ~0.87 R3⏊ row (row 11). Row found by the independent verifier (extractor had missed it); quote checked.
+- row_id: 4da67f02-355
+  matrix_polymer: high-density polyethylene (HDPE, Lotrene Q3802)
+  filler_material: h-BN
+  filler_material_original: hBN, powdered C-shaped extrudate pressed into 3 mm sheet, 30 vol.% hBN/HDPE
+  filler_shape: multilayered platelets/sheets (10-50 µm by SEM)
+  filler_mean_size_um: 35.0
+  size_distribution: average 35 µm (supplier); SEM shows sheets of 10 to 50 µm
+  filler_loading_vol_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: skin layer perpendicular to the compression direction, random core
+  processing_method: Twin-screw micro-compounder (Xplore MC 15-HT) at 210 °C, 100 rpm, 10 min; C-shaped strand powdered in a kitchen grinder and compression molded into a 3 mm sheet
+  k_composite_W_mK: 2.5
+  k_direction: through-plane (laser flash across sheet thickness)
+  measurement_method: Laser flash thermal diffusivity, Linseis LFA 500, ½-inch disks 0.5-1.5 mm thick, room temperature (Cp and density determination not described)
+  k_original_value: 2.5
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1 (Figure 4): ''In principle, κ increased from ~1 W m−1 K−1 at 0.5 mm to ~2.5 W m−1 K−1 at 3 mm.'''
+  confidence: Medium
+  notes: Printed as an approximate value (~2.5) for the 30 vol.% powdered composites at 3 mm sheet thickness. The paper states disk thicknesses of 0.5-1.5 mm for LFA, so a 3 mm sheet is a mild inconsistency in the paper. Row found by the independent verifier (extractor had missed it); quote checked.

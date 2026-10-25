@@ -1,10 +1,10 @@
 {
   "profile": "tabular-data-package",
   "name": "argus-polymer-ceramic-thermal-conductivity",
-  "title": "Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)",
-  "version": "1.1.0",
-  "created": "2026-10-23T00:00:00Z",
-  "description": "Experimental effective thermal conductivity of polymer-ceramic composites, primarily epoxy filled with h-BN, BN nanosheets and AlN (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred.",
+  "title": "Source-verified thermal conductivity of BN- and AlN-filled polymer composites",
+  "version": "1.2.0",
+  "created": "2026-10-25T00:00:00Z",
+  "description": "Experimental effective thermal conductivity of polymer composites filled with h-BN, BN nanosheets or AlN, alone or in hybrids, most often in epoxy (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred.",
   "homepage": "https://github.com/KumarSrinidhi/sctproject",
   "licenses": [
     {
@@ -40,7 +40,7 @@
       "path": "thermal_conductivity_dataset.csv",
       "profile": "tabular-data-resource",
       "encoding": "utf-8-sig",
-      "description": "Published dataset, 258 rows: one measured k per row.",
+      "description": "Published dataset, 639 rows: one measured k per row.",
       "schema": {
         "fields": [
           {
@@ -387,7 +387,7 @@
           {
             "name": "matrix_family",
             "type": "string",
-            "description": "epoxy | silicone | polyimide | PEG | polystyrene | polyurethane | other."
+            "description": "epoxy | silicone | polyimide | PEG | polystyrene | polyurethane | polyethylene | polypropylene | polyamide | PVDF | PVA | PPS | PEI | polycarbonate | PMMA | other."
           },
           {
             "name": "filler_family",
@@ -520,7 +520,7 @@
       "path": "paper_inventory.csv",
       "profile": "tabular-data-resource",
       "encoding": "utf-8-sig",
-      "description": "95 source papers with row counts and k ranges."
+      "description": "174 source papers with row counts and k ranges."
     },
     {
       "name": "exclusions",

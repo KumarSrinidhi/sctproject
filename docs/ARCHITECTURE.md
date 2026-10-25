@@ -96,6 +96,8 @@ data/
   processed/            generated: rows.jsonl, measurements_enriched.csv
   external/             other groups' datasets used for testing (never merged): sources.yaml manifest,
                         raw files, series/block maps, crosscheck_review.yaml
+  acquisition/          Phase 6: queries.yaml, queries.jsonl (query log), candidates.csv (screening),
+                        extractions/ (extractor output + independent verdicts, the audit trail)
 src/argus/
   schema.py     31-column row schema + record model (pydantic)
   records.py    load / save / compile record files
@@ -117,6 +119,8 @@ src/argus/
   ml/report.py      Markdown report, prediction table, parity plot
   external/         tests against other groups' data: manifest, adapters (sources/), harmonize,
                     physics cross-check, transfer + pooled training, value cross-check, report
+  acquire/          Phase 6: OpenAlex discovery, screening, Europe PMC full text, quote checks, import
+  release.py        CITATION.cff, .zenodo.json, citation text, the Zenodo upload bundle
   fingerprint.py    dataset hash stamped into every analysis output
   report/course.py  course report rendered from results (refuses stale outputs)
   report/figures.py report figures (validated palette, small multiples)
@@ -311,7 +315,7 @@ for a paper the model has never seen.
   - a random forest;
   - an equal-weight ensemble of physics + GP, ridge and gradient boosting. It was chosen on ARGUS-only
     results, before any external test, by comparing combinations on the same leave-one-paper-out folds
-    that report it. Its small edge there (0.010 in log₁₀ over the best single model) is therefore not evidence
+    that report it. Its small edge there (about 0.01 in log₁₀ over the best single model) is therefore not evidence
     on its own; the out-of-sample confirmation is the external test (section 8c).
 - **Validation** (`benchmark.py`):
   - Leave-one-paper-out is the headline, alongside repeated 5-fold by paper.
@@ -322,9 +326,10 @@ for a paper the model has never seen.
   - The ablation removes feature groups (and overlapping pairs) on identical splits, so the differences are
     paired.
 
-Headline: ×1.67 typical error on an unseen paper (ensemble; ×1.71 for the best single model, a random
-forest), against ×1.91 and ×2.14 for the best baselines. The ensemble's calibrated 90% intervals are
-×/÷3.3 wide. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md);
+Headline (v1.2.0, 377 single-filler rows from 119 papers): ×1.72 typical error on an unseen paper
+(ensemble; ×1.77 for the best single model, gradient boosting), against ×2.06 and ×2.29 for the best
+baselines (calibrated physics, nearest neighbours). The ensemble's calibrated 90% intervals are
+×/÷3.4 wide. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md);
 the test on other groups' data is in [`reports/external_validation.md`](../reports/external_validation.md).
 
 ## 8c. External validation
@@ -360,6 +365,30 @@ curated. External data never enters `data/records/`; it lives in `data/external/
 - **Licences:** files whose licence forbids redistribution (CC BY-NC-ND) are not committed.
   `argus external fetch` downloads them and checks their checksums; only our own curation (block map,
   attributed facts) is in git.
+
+## 8d. Acquisition (Phase 6)
+
+`argus acquire search | fetch | import` (`src/argus/acquire/`) adds papers without lowering the
+provenance standard.
+
+- **Discovery** (`openalex.py`): the queries in `data/acquisition/queries.yaml` run on OpenAlex, open
+  access only.
+  - The API key comes from `OPENALEX_API_KEY` or the git-ignored `OPENALEX_API_KEY.txt`, and is redacted
+    from every log and error.
+  - Every query is appended to `data/acquisition/queries.jsonl` when it runs.
+- **Screening** (`screen.py`): explicit title/abstract rules give every candidate one decision and a
+  reason code. Results go to `data/acquisition/candidates.csv`. Papers already in ARGUS or already in
+  `exclusions.yaml` are skipped.
+- **Full text** (`europepmc.py`): Europe PMC JATS XML, found by DOI.
+  - The licence is recorded, and the text is cached in `sources/`, which git ignores.
+  - Tables are rendered as rows of cells joined by `|`, so a table row can be quoted verbatim.
+- **Extraction and checking:**
+  - One agent extracts the printed values, each with a verbatim quote; figure-only values are not taken.
+  - A second, independent agent checks every row against the source and looks for missed values.
+  - `argus acquire import` keeps a row only if its quote occurs verbatim in the source and contains the
+    printed k. Every record declares its new rows (`rows_added`), and papers without usable values become
+    exclusions with a reason.
+  - The extractor output and the verdicts are kept in `data/acquisition/extractions/` as the audit trail.
 
 ## 9. Testing
 

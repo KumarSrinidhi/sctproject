@@ -1,0 +1,72 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P144
+paper:
+  doi: 10.1002/advs.202516944
+  title: Plasma‐Modified Boron Nitride Nanosheets for High‐Performance Aramid‐Based Dielectric Films with Enhanced Multifunctionality
+  year: 2025
+  source_url: https://doi.org/10.1002/advs.202516944
+extraction_log:
+- seq: 156
+  candidate_id: P6-P144
+  doi: 10.1002/advs.202516944
+  paper_title: Plasma‐Modified Boron Nitride Nanosheets for High‐Performance Aramid‐Based Dielectric Films with Enhanced Multifunctionality
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1002_advs.202516944.txt (cache, not committed)
+  tables_inspected: No tables in main text (Tables S1, S2 are in the Supporting Information, which is not available)
+  figures_inspected: Figure 3a (λ vs BNNS‐NH2 content), Figure 3c (experimental vs MG-EMT/Bruggeman model), Figure S10b (ANF/SK/BNNS, SI, not available)
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. Only two k values are printed: the 40 wt% BNNS‐NH2 ternary film (13.89) and the ANF/SK reference film (4.52). All other loadings are figure-only (Figure 3a; at least 4 points: 5, 10, 15, 20 wt% mentioned in text; exact set of loadings not stated, so the skipped count is a lower-bound estimate). Rk values from MG-EMT/Bruggeman fits and finite-element results are modelled and were skipped. Measurement direction explicitly in-plane.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 4792732d-475
+  - 4792732d-476
+measurements:
+- row_id: 4792732d-475
+  matrix_polymer: aramid nanofiber (ANF, from Kevlar 29) / silk fibroin (SK, 7.5 wt%) film
+  filler_material: none
+  filler_material_original: ANF/SK film (no BNNS‐NH2)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Vacuum-assisted filtration of ANF/SK slurry on PTFE membrane, then hot pressing at 15 MPa and 100 °C for 5 min
+  k_matrix_W_mK: 4.52
+  k_composite_W_mK: 4.52
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 467 (in-plane thermal diffusivity at 25 °C); Cp by DSC sapphire method; density from mass/volume; λ = α·Cp·ρ
+  measurement_temperature_C: 25.0
+  k_original_value: 4.52
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Results and Discussion, paragraph on Figure 3a (thermal conductivity): ''In particular, the ANF/SK/BNNS‐NH2 films with 40 wt.% content achieved a high λ of 13.89 Wm−1K−1, which was 207.30 % higher than that of ANF/SK film (4.52 Wm−1K−1).'''
+  confidence: High
+  notes: Reference matrix for TCE is the ANF/SK binary film (SK 7.5 wt%, the composition adopted for ternary films); not pure ANF. 25 °C is the diffusivity measurement temperature stated in the Characterizations section.
+- row_id: 4792732d-476
+  matrix_polymer: aramid nanofiber (ANF, from Kevlar 29) / silk fibroin (SK, 7.5 wt%) film
+  filler_material: BNNS
+  filler_material_original: BNNS‐NH2 (plasma amino-functionalized boron nitride nanosheets), ANF/SK/BNNS‐NH2 film with 40 wt.% BNNS‐NH2
+  filler_shape: nanosheets (few-layer, ≈1.658 nm thick by AFM; exfoliated from h-BN 10–15 µm)
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt.%
+  functionalization: NH3 plasma amino functionalization (-NH2 grafting) after Ar plasma cleaning
+  filler_alignment: horizontally aligned BNNS‐NH2 in nacre-like brick-and-mortar layered structure
+  processing_method: Ion intercalation-assisted exfoliation of h-BN, RF plasma treatment; co-mixing BNNS‐NH2/DMSO with ANF/SK/DMSO dispersions, vacuum-assisted filtration self-assembly, hot pressing at 15 MPa and 100 °C for 5 min
+  k_matrix_W_mK: 4.52
+  k_composite_W_mK: 13.89
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 467 (in-plane thermal diffusivity at 25 °C); Cp by DSC sapphire method; density from mass/volume; λ = α·Cp·ρ
+  measurement_temperature_C: 25.0
+  k_original_value: 13.89
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Results and Discussion, paragraph on Figure 3a (thermal conductivity): ''In particular, the ANF/SK/BNNS‐NH2 films with 40 wt.% content achieved a high λ of 13.89 Wm−1K−1, which was 207.30 % higher than that of ANF/SK film (4.52 Wm−1K−1).'''
+  confidence: High
+  notes: Same value also printed in Abstract and Conclusion. 207.30% enhancement over ANF/SK film (4.52). Other BNNS‐NH2 loadings (e.g. 5, 10, 15, 20 wt%) and the untreated ANF/SK/BNNS films are shown only in Figure 3a / Figure S10b.

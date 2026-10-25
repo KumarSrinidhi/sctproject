@@ -1,0 +1,51 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P150
+paper:
+  doi: 10.1021/acsomega.4c05323
+  title: Protruding Boron Nitride Nanotubes on the Al2O3 Surface Enabled by Tannic Acid-Assisted Modification to Fabricate a Thermal Conductive Epoxy/Al2O3 Composite
+  year: 2024
+  source_url: https://doi.org/10.1021/acsomega.4c05323
+extraction_log:
+- seq: 162
+  candidate_id: P6-P150
+  doi: 10.1021/acsomega.4c05323
+  paper_title: Protruding Boron Nitride Nanotubes on the Al2O3 Surface Enabled by Tannic Acid-Assisted Modification to Fabricate a Thermal Conductive Epoxy/Al2O3 Composite
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc-nd)
+  files_inspected: sources/text/10.1021_acsomega.4c05323.txt (cache, not committed)
+  tables_inspected: No tables in the main text (Table S1 composition and Table S2 literature comparison are supplementary and not available)
+  figures_inspected: Figure 4a (k vs ODA:TA-BNNT ratio), Figure 4b (k vs wt% Al2O3@ODA-BNNT); Figures S5/S6 referenced (supplementary). Values only in figures; only the optimum 2 wt% value is printed (abstract).
+  candidate_measurements: 1
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 10 figure-only values not taken. Only one composite k value is printed (abstract). Neat epoxy, Al2O3-only and virgin-BNNT composite k values appear only in Figure 4 (and supplementary figures). Simulation input values skipped. figure_only_skipped is an estimate of the data points in Figure 4a/4b.
+  rows_rejected_at_append: []
+  rows_added:
+  - 89737d72-511
+measurements:
+- row_id: 89737d72-511
+  matrix_polymer: bisphenol A epoxy resin (171, Kukdo Chemicals)
+  curing_agent: hardener (resin:hardener 5:4 wt) plus NADIC methyl anhydride (NMA) cross-linker
+  filler_material: BNNT/Al2O3 hybrid
+  filler_material_original: Al2O3@ODA-BNNT (ODA-BNNT protruding on 5 μm Al2O3) plus 70 μm Al2O3, optimized 2 wt% ODA-BNNT composite
+  filler_shape: nanotube (BNNT) on spherical/particulate Al2O3 (5 μm carrier and 70 μm main filler)
+  size_distribution: BNNT diameter 30–50 nm; Al2O3 5 μm (carrier) and 70 μm (main filler)
+  filler_loading_original_value: 2.0
+  filler_loading_original_unit: wt% ODA-BNNT (BNNT 1.3 wt% + ODA 0.7 wt%); Al2O3 content not stated in main text
+  functionalization: tannic acid-assisted octadecylamine (ODA) functionalization of BNNT (TA:BNNT 1:1, ODA:TA-BNNT 2:1); ODA-BNNT deposited on Al2O3
+  filler_alignment: random (isotropic)
+  processing_method: Paste mixing of resin/hardener with Al2O3@ODA-BNNT, then 70 μm Al2O3, then NMA; cured in steel mold under pressure at 120 °C for 1 h and 150 °C for 3 h
+  k_composite_W_mK: 5.117
+  k_direction: isotropic (isotropic thermal conductivity, hot disk)
+  measurement_method: Transient plane source, Hot-Disk thermal analyzer TPS500S; average of 5 measurements
+  measurement_temperature_C: 25.0
+  k_original_value: 5.117
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Abstract: ''The fabricated epoxy composite by incorporating a 2 wt % (BNNT = 1.3 wt % and ODA = 0.7 wt %) ODA-BNNT exhibited 5.117 W/mK thermal conductivity and 7.43 MPa mechanical stress.'''
+  confidence: High
+  notes: Optimized epoxy/Al2O3@ODA-BNNT composite. Total filler loading (Al2O3 fraction) is only given in supplementary Table S1, so total wt% left null; 2 wt% refers to ODA-BNNT only. Paper states improvements of 2528%, 76.56% and 54.7% vs neat epoxy, composite without BNNT and virgin BNNT composite, but those reference k values are not printed. The 0.2/30/300 W/mK values in the ANSYS section are simulation inputs and were skipped.

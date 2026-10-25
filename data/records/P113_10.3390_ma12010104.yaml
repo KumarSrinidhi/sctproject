@@ -1,0 +1,69 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P113
+paper:
+  doi: 10.3390/ma12010104
+  title: Hexagonal Boron Nitride/Microfibril Cellulose/Poly(vinyl alcohol) Ternary Composite Film with Thermal Conductivity and Flexibility
+  year: 2018
+  source_url: https://doi.org/10.3390/ma12010104
+extraction_log:
+- seq: 125
+  candidate_id: P6-P113
+  doi: 10.3390/ma12010104
+  paper_title: Hexagonal Boron Nitride/Microfibril Cellulose/Poly(vinyl alcohol) Ternary Composite Film with Thermal Conductivity and Flexibility
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ma12010104.txt (cache, not committed)
+  tables_inspected: Table 1 (XPS, no k), Table 2 (contact angles, no k)
+  figures_inspected: Figure 5d (k vs mass fraction of pBN-MFC and pBN-PVA films); Figures 1-4 not k
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 5 figure-only values not taken. Only neat PVA (0.17) and the 30 wt% pBN-MFC-PVA film (4.61) are printed. Intermediate loadings (5-25 wt%) and the pBN-PVA comparison series appear only in Figure 5d; skipped count of 5 covers the 5-25 wt% pBN-MFC points and is a lower bound (pBN-PVA points not countable from text). Direction and technique of the TC 3000 not stated.
+  rows_rejected_at_append: []
+  rows_added:
+  - b202be58-332
+  - b202be58-333
+measurements:
+- row_id: b202be58-332
+  matrix_polymer: poly(vinyl alcohol) (PVA), solution-cast film
+  filler_material: none
+  filler_material_original: pure PVA film (Sample No. 1)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Solution casting of pBN-MFC/PVA slurry on glass, de-aired in vacuum at 40 °C
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 0.17
+  k_direction: unknown
+  measurement_method: Thermal conductivity coefficient analyzer TC 3000 (Xiatech Electronic Technology Co., Xi'an, China); technique not stated
+  k_original_value: 0.17
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 2: ''The thermal conductivity of the pure PVA film was poor at 0.17 W·m−1·K−1.'''
+  confidence: High
+  notes: Neat PVA film.
+- row_id: b202be58-333
+  matrix_polymer: poly(vinyl alcohol) (PVA), solution-cast film
+  filler_material: h-BN/MFC hybrid
+  filler_material_original: pBN-MFC hybrid powder (PDA@h-BN attached to pineapple-leaf microfibril cellulose), pBN-MFC-PVA film at 30 wt%
+  filler_shape: platelets (h-BN) attached to microfibril cellulose (MFC crystals 50 ± 10 µm long)
+  filler_mean_size_um: 10.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: polydopamine (PDA) coating on h-BN (~2.77% PDA), then bound to MFC
+  processing_method: Solution casting of pBN-MFC/PVA slurry on glass, de-aired in vacuum at 40 °C
+  k_matrix_W_mK: 0.17
+  k_composite_W_mK: 4.61
+  k_direction: unknown
+  measurement_method: Thermal conductivity coefficient analyzer TC 3000 (Xiatech Electronic Technology Co., Xi'an, China); technique not stated
+  k_original_value: 4.61
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 4 (Conclusions), paragraph 2: ''Significant thermal conductivity of 4.61 W·m−1·K−1 was obtained at 30 wt% pBN-MFC hybrid powder loading, which is 27 times higher than that of pure PVA (0.17 W·m−1·K−1)) and 68.9% more than that of pBN-PVA.'''
+  confidence: High
+  notes: 30 wt% is the total hybrid powder; hybrid prepared from 0.700 g pBN + 0.200 g MFC (pBN:MFC = 7:2 by mass), so the h-BN content of the film is lower than 30 wt% (not stated). h-BN starting size 10 µm (supplier). Also stated in Section 3.4 without the loading. The comparison pBN-PVA value (68.9% lower) is not printed.

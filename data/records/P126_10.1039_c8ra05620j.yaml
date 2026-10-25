@@ -1,0 +1,70 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P126
+paper:
+  doi: 10.1039/c8ra05620j
+  title: Fabrication of covalently linked exfoliated boron nitride nanosheet/multi-walled carbon nanotube hybrid particles for thermal conductive composite materials
+  year: 2018
+  source_url: https://doi.org/10.1039/c8ra05620j
+extraction_log:
+- seq: 138
+  candidate_id: P6-P126
+  doi: 10.1039/c8ra05620j
+  paper_title: Fabrication of covalently linked exfoliated boron nitride nanosheet/multi-walled carbon nanotube hybrid particles for thermal conductive composite materials
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1039_c8ra05620j.txt (cache, not committed)
+  tables_inspected: Table 1 ('Through-plane thermal conductivity of BNNS and hybrid filler composites'; literature comparison, only the 'This work' row extracted)
+  figures_inspected: Fig. 5(a) caption (k vs filler content for epoxy-type ETDS composites with BNNS, SP and VFSM hybrids, with and without added MWCNT-COOH), Fig. 7 caption (in-plane and through-plane k of PPS composites with BNNS and BNNS-MWCNT)
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 2 figure-only values not taken. Only the ''This work'' row of Table 1 is the paper''s own printed data (composite 4.18 and matrix 0.21 W m−1 K−1). The other 10 rows are literature values and were skipped. All loading series are figure-only: Fig. 5(a) for the epoxy/ETDS composites, and Fig. 7 for the PPS composites in-plane and through-plane. figure_only_skipped counts these 2 figures, because the number of data points cannot be read from the text.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 27d9c570-400
+  - 27d9c570-401
+measurements:
+- row_id: 27d9c570-400
+  matrix_polymer: epoxy-terminated dimethyl siloxane (ETDS, Shin-Etsu KF-105), listed as 'Epoxy' in Table 1
+  curing_agent: 4,4′-diaminodiphenylmethane (DDM)
+  filler_material: none
+  filler_material_original: neat matrix ('TC of matrix' column, 'This work' row)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: cast with doctor blade on Teflon mold; pre-cured 80 °C 3 h, post-cured 180 °C 5 h
+  k_matrix_W_mK: 0.21
+  k_composite_W_mK: 0.21
+  k_direction: through-plane (table title 'Through-plane thermal conductivity')
+  measurement_method: Laser flash, Netzsch Nanoflash LFA447; Cp by DSC (Perkin-Elmer DSC-7); density by Archimedes water displacement; at room temperature
+  k_original_value: 0.21
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 1, row ''This work'': ''BNNS-MWCNT | Epoxy | 0.21 | 4.18 | 70 wt% | Simple casting | This work'''
+  confidence: High
+  notes: Neat-matrix value from the 'TC of matrix' column of the paper's own 'This work' row. All other rows of Table 1 are literature values and were skipped. Measured 'at room temperature' (no number given).
+- row_id: 27d9c570-401
+  matrix_polymer: epoxy-terminated dimethyl siloxane (ETDS, Shin-Etsu KF-105), listed as 'Epoxy' in Table 1
+  curing_agent: 4,4′-diaminodiphenylmethane (DDM)
+  filler_material: BNNS/MWCNT hybrid
+  filler_material_original: covalently bonded BNNS-MWCNT hybrid particles (APTES-modified BNNS amide-linked to acid-treated MWCNT-COOH), 'BNNS-MWCNT', 70 wt%
+  filler_shape: nanosheets with attached nanotubes (hybrid particles)
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: 'BNNS: hydroxylation + APTES silane (amine); MWCNT: H2SO4/HNO3 carboxylation; covalent amide linkage via DCC'
+  processing_method: solution blending with minimal ethanol, doctor-blade casting on Teflon mold; pre-cured 80 °C 3 h, post-cured 180 °C 5 h
+  k_matrix_W_mK: 0.21
+  k_composite_W_mK: 4.18
+  k_direction: through-plane (table title 'Through-plane thermal conductivity')
+  measurement_method: Laser flash, Netzsch Nanoflash LFA447; Cp by DSC (Perkin-Elmer DSC-7); density by Archimedes water displacement; at room temperature
+  k_original_value: 4.18
+  k_original_unit: W m−1 K−1
+  value_source: table
+  source_location: 'Table 1, row ''This work'': ''BNNS-MWCNT | Epoxy | 0.21 | 4.18 | 70 wt% | Simple casting | This work'''
+  confidence: High
+  notes: The paper's own best value, from a literature comparison table. The 70 wt% loading is the total hybrid filler. The BNNS:MWCNT split is not printed for this row. TGA gives BNNS/MWCNT ratios of 10.9 and 6.7 for the two hybrid types (SP and VFSM, 'respectively'). The text implies the 70 wt% sample is the VFSM hybrid, because 70 wt% BNNS and SP+MWCNT composites could not be prepared, but the table does not say so.

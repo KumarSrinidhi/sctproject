@@ -1,0 +1,97 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P152
+paper:
+  doi: 10.3390/polym14020258
+  title: Thermal and Adhesion Properties of Fluorosilicone Adhesives Following Incorporation of Magnesium Oxide and Boron Nitride of Different Sizes and Shapes
+  year: 2022
+  source_url: https://doi.org/10.3390/polym14020258
+extraction_log:
+- seq: 164
+  candidate_id: P6-P152
+  doi: 10.3390/polym14020258
+  paper_title: Thermal and Adhesion Properties of Fluorosilicone Adhesives Following Incorporation of Magnesium Oxide and Boron Nitride of Different Sizes and Shapes
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym14020258.txt (cache, not committed)
+  tables_inspected: Table 1 (intrinsic filler properties, literature/handbook), Table 2 (bimodal/trimodal compositions, no k), Table 3 (swelling ratios)
+  figures_inspected: Figure 2a/2c (unimodal MgO and BN k), Figure 3a (k vs MgO content), Figure 4a/4c (bimodal MgO and MgO/BN k), Figure 5a–c (trimodal k)
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 12 figure-only values not taken. Only BN-containing samples with printed k extracted. MgO-only values (1.67, 0.73, 1.82, 1.40 W/mK etc.) skipped as they contain no BN/AlN. The BN range ''0.55~1.18 W/mK'' and ''below 1.0 W/mK'' for aggregated/flake BN cannot be assigned to individual samples; the trimodal MgO2/BN1 value ''near 1.5 W/mK'' is approximate and not per sample, so these were counted as figure-only. Skipped estimate: Fig 2c aggregated and flake BN (2), Fig 4c Bi-MgO/BN-1 to -3 '
+  rows_rejected_at_append: []
+  rows_added:
+  - d4dee13e-520
+  - d4dee13e-521
+  - d4dee13e-522
+measurements:
+- row_id: d4dee13e-520
+  matrix_polymer: fluorosilicone (vinyl fluorosilicone FS-8019-1000, TOPDA)
+  curing_agent: fluoro crosslinker FS-8016 (TOPDA) with platinum catalyst C1142A; cured 150 °C, 60 min
+  filler_material: BN
+  filler_material_original: platelet BN (Denka), high crystallinity, unimodal 60 vol%
+  filler_shape: platelet
+  size_distribution: platelet BNs of 5 μm and 4 μm average size used; which one is the high-crystallinity grade is not stated
+  filler_loading_vol_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random
+  processing_method: Three-roll mill dispersion into fluorosilicone resin, vacuum degassing at 100 rpm for 30 min, thermal cure at 150 °C for 60 min
+  k_composite_W_mK: 1.18
+  k_direction: unknown (bulk value by transient plane source)
+  measurement_method: Transient plane source (TPS 500S, HotDisk)
+  k_original_value: 1.18
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''Platelet BNs with different crystallinity revealed a similar thermal conductivity value of 1.18 W/mK for high crystallinity and 1.17 W/mK for low crystallinity, indicating that the effect of filler crystallinity on thermal conductivity was negligible.'''
+  confidence: High
+  notes: Unimodal BN adhesive at 60 vol%. The paper does not map 'high crystallinity' to the 5 μm or 4 μm platelet BN, so size left null.
+- row_id: d4dee13e-521
+  matrix_polymer: fluorosilicone (vinyl fluorosilicone FS-8019-1000, TOPDA)
+  curing_agent: fluoro crosslinker FS-8016 (TOPDA) with platinum catalyst C1142A; cured 150 °C, 60 min
+  filler_material: BN
+  filler_material_original: platelet BN (Denka), low crystallinity, unimodal 60 vol%
+  filler_shape: platelet
+  size_distribution: platelet BNs of 5 μm and 4 μm average size used; which one is the low-crystallinity grade is not stated
+  filler_loading_vol_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random
+  processing_method: Three-roll mill dispersion into fluorosilicone resin, vacuum degassing at 100 rpm for 30 min, thermal cure at 150 °C for 60 min
+  k_composite_W_mK: 1.17
+  k_direction: unknown (bulk value by transient plane source)
+  measurement_method: Transient plane source (TPS 500S, HotDisk)
+  k_original_value: 1.17
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''Platelet BNs with different crystallinity revealed a similar thermal conductivity value of 1.18 W/mK for high crystallinity and 1.17 W/mK for low crystallinity, indicating that the effect of filler crystallinity on thermal conductivity was negligible.'''
+  confidence: High
+  notes: Unimodal BN adhesive at 60 vol%. Size mapping (5 μm vs 4 μm) to crystallinity not stated.
+- row_id: d4dee13e-522
+  matrix_polymer: fluorosilicone (vinyl fluorosilicone FS-8019-1000, TOPDA)
+  curing_agent: fluoro crosslinker FS-8016 (TOPDA) with platinum catalyst C1142A; cured 150 °C, 60 min
+  filler_material: MgO/BN hybrid
+  filler_material_original: 'Bi-MgO/BN-4: 120 μm spherical MgO (45 vol%) + 280 μm BN flakes (15 vol%, 3M)'
+  filler_shape: spherical MgO + flake BN
+  size_distribution: 'bimodal: MgO 120 μm average (spherical), BN 280 μm average (flake)'
+  filler_loading_vol_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random
+  processing_method: Three-roll mill dispersion into fluorosilicone resin, vacuum degassing at 100 rpm for 30 min, thermal cure at 150 °C for 60 min
+  k_composite_W_mK: 1.6
+  k_direction: unknown (bulk value by transient plane source)
+  measurement_method: Transient plane source (TPS 500S, HotDisk)
+  k_original_value: 1.6
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''Bi-MgO/BN-4 containing 280 μm BN flakes exhibited the highest thermal conductivity value of 1.6 W/mK, followed by Bi-MgO/BN-3.'''
+  confidence: High
+  notes: Total filler 60 vol% = 45 vol% MgO (120 μm, sphere) + 15 vol% BN (280 μm, flake), per Table 2.

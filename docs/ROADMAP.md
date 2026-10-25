@@ -11,7 +11,7 @@ Status as of 2026-10-25. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Resea
 | 3 | Physics models and fits | 🟡 started |
 | 4 | Measurement-bias analysis (course centrepiece) | ✅ core done, follow-ups open |
 | 5 | Machine learning with honest validation | ✅ core done, follow-ups open |
-| 6 | Acquisition at scale | ⏳ |
+| 6 | Acquisition at scale | 🟡 639 rows / 174 papers |
 | 7 | Explorer, release and course report | ✅ done (Zenodo DOI needs your account) |
 | 8 | External validation against other groups' data | ✅ done |
 
@@ -105,6 +105,14 @@ Findings:
 - **Paper-to-paper scatter** (factor 1.88 at 1 SD; ICC 0.78) dwarfs instrument precision (~5–10%).
 - **Abstract-only rows appear biased upward**: abstracts quote a paper's best result.
 
+Update with v1.2.0 (639 rows, 2026-10-25):
+- **Same-sample pairs:** 34 samples from 15 papers, k_in/k_through median 4.1 (range 0.80–11.5).
+- **Still no sample measured by two techniques.**
+- **Between papers:** the isotropic-sensor association shrinks to **1.01×** (95% CI 0.70–1.48; 34 vs 24
+  papers). With more papers, the between-paper data no longer lean toward the expected direction, so the
+  same-sample route above is the only way to settle it.
+- **Paper scatter:** unchanged at a factor of 1.87 (1 SD).
+
 Next:
 1. **Same-sample multi-method data** is the decisive missing evidence. Search specifically for papers that
    report one sample by LFA *and* TPS (or TPS isotropic *and* anisotropic modes), or measure a few
@@ -152,32 +160,45 @@ Findings (acceptance **passed**):
 - **Over time:** the newer-paper time split is harder (×1.86 for ridge, the best on it). Papers from 2022
   on have more BNNS and aligned fillers and a lower median enhancement.
 
+Update with v1.2.0 (2026-10-25; 377 single-filler rows from 119 papers, 26 features after publication year
+was dropped):
+- **Accuracy on an unseen paper:** the ensemble (physics + GP, ridge, gradient boosting) reaches **×1.72**
+  (MAE 0.236, R² 0.52, 71% within ×2), against ×2.06 for calibrated physics. Acceptance still passes.
+  More, and more varied, papers make the task slightly harder than with 80 papers (×1.67).
+- **Intervals:** 90% paper-grouped intervals are still calibrated (90%) and ×/÷3.4 wide.
+- **Which information matters:** loading + physics still carry most of it (+0.12). Direction and method
+  clearly help together (+0.04) but neither does alone; surface treatment now clearly helps (+0.01).
+- **Over time:** papers from 2022 on have more aligned fillers (36% vs 16%) and a lower median enhancement.
+
 Next:
-1. Per-component loading for the 34 hybrid rows, so they can enter the model.
-2. Add `tps_mode` and `lfa_holder` once recorded (Phase 4 follow-up). Direction is the most useful metadata
+1. Per-component loading for the 141 hybrid rows, so they can enter the model.
+2. Add `tps_mode` and `lfa_holder` once recorded (Phase 4 follow-up). Direction and method together are the most useful metadata
    after loading.
 3. Re-run the benchmark after each data release, and track the LOPO MAE in `data/CHANGELOG.md`.
 
-## Phase 6: Acquisition at scale ⏳
+## Phase 6: Acquisition at scale 🟡
 
-Target: 500+ rows from 200+ papers without lowering the provenance standard.
+Target: 500+ rows from 200+ papers without lowering the provenance standard. **Reached for rows (639),
+not yet for papers (174).**
 
-1. **Discovery**: OpenAlex with an API key (required since Feb 2026; $1/day free; search $1 per 1,000
-   calls), Crossref with `mailto` (list queries 3 req/s), Europe PMC. Log every query contemporaneously.
-2. **Screening**: title/abstract screening with ASReview LAB 2. Every decision goes to `exclusions.yaml`
-   at screening time with a reason code.
-3. **Full text**: Europe PMC JATS first, then OpenAlex TEI, then the OA PDF via Docling (Marker/MinerU as a
-   cross-check). Gate every fetch on a recorded licence; cache under `sources/`.
-4. **Extraction assist**:
-   - A JATS table parser proposes candidate rows.
-   - LLM extraction returns schema-validated JSON plus a verbatim quote. A check confirms the quote is in
-     the source text, and ChatExtract-style follow-up questions run before acceptance.
-   - A human approves the candidates into a record file.
-   - The 258 current rows are the gold set; extractor precision and recall are scored in CI.
-5. **Figures**: generalise `work/phase4_digitize_v2.py` (tick calibration, colour masks), storing
-   resolution and occlusion notes. Priority candidates: polym11101548 and polym15051214 (Fig. 5),
-   ma18215011 (Fig. 5a), polym10030277.
-6. **Blocked sources**: about 200 publisher-blocked DOIs; pursue author manuscripts and repositories only.
+Done in v1.2.0 (2026-10-25; `argus acquire`, `data/acquisition/`, `docs/ARCHITECTURE.md` §8d):
+- **Discovery:** 6 OpenAlex queries (open access, articles, 2005 on), each logged in `queries.jsonl` with
+  the API key redacted. 663 DOIs.
+- **Screening:** title and abstract rules with a reason code per decision (`candidates.csv`): 251 in, 412 out.
+- **Full text:** Europe PMC JATS for 100 of the 251, cached under the git-ignored `sources/`.
+- **Extraction:** one agent extracted, a second checked every row against the source and looked for missed
+  values; the import re-checked every quote as verbatim and as containing the printed k. 406 candidate rows,
+  381 kept from 79 papers after the validation and scope review (25 tombstoned).
+
+Still to do:
+1. **151 screened-in papers with no Europe PMC full text.** Next sources: OpenAlex TEI, then the OA PDF via
+   Docling. Gate every fetch on a recorded licence.
+2. **Figure-only values:** 698 values in 64 of the 79 kept Phase 6 papers (731 across all 100 read) were counted but not digitized. Generalise
+   `work/phase4_digitize_v2.py` (tick calibration, colour masks), storing resolution and occlusion notes.
+   Older priority candidates: polym11101548 and polym15051214 (Fig. 5), ma18215011 (Fig. 5a), polym10030277.
+3. **Extractor scoring:** use the v1.1 rows as a gold set and score extractor precision and recall in CI.
+4. **Screening at scale:** ASReview LAB 2 once the candidate pool outgrows rule-based screening.
+5. **Blocked sources:** about 200 publisher-blocked DOIs; pursue author manuscripts and repositories only.
 
 ## Phase 7: Explorer, release and course report ✅
 
@@ -206,11 +227,14 @@ Done:
   - Licences: data under CC BY 4.0 (`LICENSE-DATA.md`), code under MIT (`LICENSE`).
 
 Next:
-1. **Zenodo DOI.** Connect the repository in Zenodo's GitHub integration (needs your Zenodo account), then
-   publish a GitHub Release from `data-v1.1` to mint a DOI. Add the DOI to `data/dataset.yaml`.
-2. **Before going public:** review the third-party papers in `work/fulltext/`, which keep their own licences
-   (two are non-commercial, CC BY-NC), and remove the three saved captcha pages, which embed the
-   fetching machine's IP address. See the checklist in `LICENSE-DATA.md`.
+1. **Zenodo DOI.** The repository is private, so the upload is manual. `argus release bundle` builds the
+   upload zip and `.zenodo.json` holds the form fields; follow [ZENODO.md](ZENODO.md). Then add the
+   reserved DOI to `data/dataset.yaml` (`doi`, `publisher: Zenodo`).
+2. **Before going public:**
+   - ✅ Done on 2026-10-25: third-party files without clear redistribution rights were moved out of git,
+     including the captcha pages. Every stored file is now CC BY (`work/THIRD_PARTY.csv`).
+   - Still to do: those files remain in the git history, so publish from a fresh-history copy (see
+     `LICENSE-DATA.md`).
 3. **Report finishing:** a PDF/Word export if the course requires one.
 
 ---
