@@ -1,0 +1,72 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P125
+paper:
+  doi: 10.3390/ma18122757
+  title: 'Oriented Boron Nitride in Calcium Alginate Matrix: A Sustainable Pathway to High-Efficiency Thermal Interface Materials'
+  year: 2025
+  source_url: https://doi.org/10.3390/ma18122757
+extraction_log:
+- seq: 137
+  candidate_id: P6-P125
+  doi: 10.3390/ma18122757
+  paper_title: 'Oriented Boron Nitride in Calcium Alginate Matrix: A Sustainable Pathway to High-Efficiency Thermal Interface Materials'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ma18122757.txt (cache, not committed)
+  tables_inspected: 'Table 1 (simulation input parameters: Ca-alginate 0.51 and BN 56.94 W·m−1·K−1; model inputs, skipped)'
+  figures_inspected: Figure 5 caption (thermal resistance vs thickness with calculated k; the k values are printed in text), Figures 3, 6
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. Two measured values, both in text. The neat calcium alginate k (0.51) appears only as a COMSOL simulation input in Table 1 and was skipped. The filler fraction is given only as a slurry recipe and was not converted.
+  rows_rejected_at_append: []
+  rows_added:
+  - 3aa2fbf0-398
+  - 3aa2fbf0-399
+measurements:
+- row_id: 3aa2fbf0-398
+  matrix_polymer: calcium alginate (sodium alginate ion-exchange crosslinked with Ca2+)
+  curing_agent: CaCl2 solution (3.85 wt.%), ion-exchange curing
+  filler_material: BN
+  filler_material_original: BN (Saint-Gobain SP55-C), sample r-BN&Ca-alginate
+  filler_shape: platelets (2-D layered flakes)
+  filler_mean_size_um: 60.0
+  filler_loading_original_value: 60 g BN + 1.5 g sodium alginate in 100 mL water
+  filler_loading_original_unit: mass of slurry components
+  functionalization: none
+  filler_alignment: random
+  processing_method: BN/sodium alginate aqueous slurry cast in 1.5 mm mold, immersed in CaCl2 solution 24 h, rinsed and dried
+  k_composite_W_mK: 1.11
+  k_direction: through-plane (ASTM D5470 thickness direction)
+  measurement_method: Steady-state ASTM D5470, LongWin LW9389 thermal resistance tester; k from slope of thermal resistance vs thickness for three thicknesses
+  k_original_value: 1.11
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3: ''Based on the fitted data, the thermal conductivity of the r-BN&Ca-alginate composite was calculated to be 1.11 W·m−1·K−1, whereas the o-BN&Ca-alginate composite achieved a significantly higher thermal conductivity of 7.87 W·m−1·K−1.'''
+  confidence: High
+  notes: 'Loading is not printed as wt% or vol%. The recipe is 60 g BN : 1.5 g sodium alginate (not converted). The paper says r- and o- samples have identical compositions. BN average lateral size ~60 µm.'
+- row_id: 3aa2fbf0-399
+  matrix_polymer: calcium alginate (sodium alginate ion-exchange crosslinked with Ca2+)
+  curing_agent: CaCl2 solution (3.85 wt.%), ion-exchange curing
+  filler_material: BN
+  filler_material_original: BN (Saint-Gobain SP55-C), sample o-BN&Ca-alginate
+  filler_shape: platelets (2-D layered flakes)
+  filler_mean_size_um: 60.0
+  filler_loading_original_value: 60 g BN + 1.5 g sodium alginate in 100 mL water
+  filler_loading_original_unit: mass of slurry components
+  functionalization: none
+  filler_alignment: vertically aligned (through-plane) via layer-by-layer brush coating, cutting into 1.5 mm strips, flipping and re-bonding
+  processing_method: layer-by-layer brush coating of BN/sodium alginate slurry with CaCl2 curing (60 min per layer), sheet cut into ~1.5 mm strips, strips flipped and bonded with 1.5 wt.% sodium alginate + CaCl2, rinsed and dried
+  k_composite_W_mK: 7.87
+  k_direction: 'through-plane (paper: ''through-plane thermal conductivity'')'
+  measurement_method: Steady-state ASTM D5470, LongWin LW9389 thermal resistance tester; k from slope of thermal resistance vs thickness for three thicknesses
+  k_original_value: 7.87
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3: ''Based on the fitted data, the thermal conductivity of the r-BN&Ca-alginate composite was calculated to be 1.11 W·m−1·K−1, whereas the o-BN&Ca-alginate composite achieved a significantly higher thermal conductivity of 7.87 W·m−1·K−1.'''
+  confidence: High
+  notes: Same composition as r-BN&Ca-alginate. The paper reports an ~610% through-plane enhancement over the random sample. The value is also repeated in the Abstract and Conclusions.

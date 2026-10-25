@@ -1,0 +1,124 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P098
+paper:
+  doi: 10.1371/journal.pone.0170523
+  title: Thermal Conductivity Performance of Polypropylene Composites Filled with Polydopamine-Functionalized Hexagonal Boron Nitride
+  year: 2017
+  source_url: https://doi.org/10.1371/journal.pone.0170523
+extraction_log:
+- seq: 110
+  candidate_id: P6-P098
+  doi: 10.1371/journal.pone.0170523
+  paper_title: Thermal Conductivity Performance of Polypropylene Composites Filled with Polydopamine-Functionalized Hexagonal Boron Nitride
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1371_journal.pone.0170523.txt (cache, not committed)
+  tables_inspected: none (no tables in the paper)
+  figures_inspected: Fig 7 (k vs filler loading, three series), Fig 9 (experiment vs models), S1 Fig (PP/PP-g-ma/BN, supplementary, not available)
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 12 figure-only values not taken. Each series was made at 5-25 wt%. Only the 25 wt% values and neat PP are printed; the remaining points (about 4 per series x 3 series) appear only in Fig 7, so figure_only_skipped=12 is an estimate. The PP/PP-g-ma/BN series is only in the supplementary S1 Fig. Excluded: the ~0.60 W/mK value from Cheewawuttipong et al., which comes from another paper; the ~0.48 W/mK value, which is a linear extrapolation; and the Maxwell-Eucken, Agari and Nielsen mo'
+  rows_rejected_at_append: []
+  rows_added:
+  - f68c1120-265
+  - f68c1120-266
+  - f68c1120-267
+  - f68c1120-268
+measurements:
+- row_id: f68c1120-265
+  matrix_polymer: Polypropylene (PP, Moplen RP344RK)
+  filler_material: none
+  filler_material_original: none, neat PP
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Twin-screw extrusion at 190 °C, then hot pressed at 200 °C and 16 MPa into films
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.22
+  k_direction: unknown
+  measurement_method: k = diffusivity x density x Cp; thermal diffusivity by laser flash (Netzsch LFA 447) at 30 °C; density by density tester (MH-300A, Qunlong) at 30 °C; Cp by DSC (Netzsch DSC 404 C) at 30 °C, sapphire reference
+  measurement_temperature_C: 30.0
+  k_original_value: 0.22
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results and Discussion, paragraph discussing Fig 7: ''For PP/BN composites, the TC achieves 0.47 W/mK when the filler content increases to 25 wt% (12 vol%), an enhancement of 2.14 times as compared with that of neat PP (0.22 W/mK).'''
+  confidence: High
+  notes: Neat PP reference.
+- row_id: f68c1120-266
+  matrix_polymer: Polypropylene (PP, Moplen RP344RK)
+  filler_material: h-BN
+  filler_material_original: pristine h-BN, PP/BN composite with 25 wt% filler
+  filler_shape: platelet
+  size_distribution: diameters 5~10 μm
+  filler_loading_vol_pct: 12.0
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: random
+  processing_method: Twin-screw extrusion at 190 °C, then hot pressed at 200 °C and 16 MPa into films
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.47
+  k_direction: unknown
+  measurement_method: k = diffusivity x density x Cp; thermal diffusivity by laser flash (Netzsch LFA 447) at 30 °C; density by density tester (MH-300A, Qunlong) at 30 °C; Cp by DSC (Netzsch DSC 404 C) at 30 °C, sapphire reference
+  measurement_temperature_C: 30.0
+  k_original_value: 0.47
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results and Discussion, paragraph discussing Fig 7: ''For PP/BN composites, the TC achieves 0.47 W/mK when the filler content increases to 25 wt% (12 vol%), an enhancement of 2.14 times as compared with that of neat PP (0.22 W/mK).'''
+  confidence: High
+  notes: wt% and vol% both printed. The paper gives the BN platelet aspect ratio as about 12~15. Alignment is described as random ('BN fillers are randomly oriented in the composites').
+- row_id: f68c1120-267
+  matrix_polymer: Polypropylene (PP, Moplen RP344RK) with 2.5 wt% maleic anhydride grafted PP (PP-g-ma) compatibilizer
+  filler_material: h-BN
+  filler_material_original: f-BN (polydopamine-functionalized h-BN), PP/PP-g-ma/f-BN composite with 25 wt% filler
+  filler_shape: platelet
+  size_distribution: diameters 5~10 μm (pristine h-BN)
+  filler_loading_vol_pct: 12.0
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: polydopamine coating (non-covalent, ~2 wt% polydopamine by TGA, 1.8 wt% by elemental analysis)
+  filler_alignment: random
+  processing_method: Twin-screw extrusion at 190 °C, then hot pressed at 200 °C and 16 MPa into films
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.58
+  k_direction: unknown
+  measurement_method: k = diffusivity x density x Cp; thermal diffusivity by laser flash (Netzsch LFA 447) at 30 °C; density by density tester (MH-300A, Qunlong) at 30 °C; Cp by DSC (Netzsch DSC 404 C) at 30 °C, sapphire reference
+  measurement_temperature_C: 30.0
+  k_original_value: 0.58
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results and Discussion, paragraph discussing Fig 7: ''With the addition of PP-g-ma and f-BN, PP/PP-g-ma/f-BN composites exhibit larger TC increase, with the highest TC of 0.58 W/mK achieved at the filler content of 25 wt%, an enhancement of 2.64 times compared to that of PP.'''
+  confidence: High
+  notes: The 12 vol% equivalence is printed in the Conclusions ('2.64 times at 25 wt% (12 vol%) filler loading'). 2.5 wt% PP-g-ma is added to the matrix.
+- row_id: f68c1120-268
+  matrix_polymer: Polypropylene (PP, Moplen RP344RK)
+  filler_material: h-BN
+  filler_material_original: f-BN (polydopamine-functionalized h-BN), PP/f-BN composite with 25 wt% filler
+  filler_shape: platelet
+  size_distribution: diameters 5~10 μm (pristine h-BN)
+  filler_loading_vol_pct: 12.0
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: polydopamine coating (non-covalent, ~2 wt% polydopamine by TGA, 1.8 wt% by elemental analysis)
+  filler_alignment: random
+  processing_method: Twin-screw extrusion at 190 °C, then hot pressed at 200 °C and 16 MPa into films
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.43
+  k_direction: unknown
+  measurement_method: k = diffusivity x density x Cp; thermal diffusivity by laser flash (Netzsch LFA 447) at 30 °C; density by density tester (MH-300A, Qunlong) at 30 °C; Cp by DSC (Netzsch DSC 404 C) at 30 °C, sapphire reference
+  measurement_temperature_C: 30.0
+  k_original_value: 0.43
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results and Discussion, paragraph discussing Fig 7: ''In comparison, for PP/f-BN composites, the TC improvement with the filler incorporation is not as significant, with the highest TC reaching 0.43 W/mK, only 1.95-time enhancement.'''
+  confidence: High
+  notes: The quoted sentence gives no loading. The Conclusions tie the 1.95-time enhancement to '25 wt% (12 vol%) f-BN alone', and the series maximum is 25 wt%. No PP-g-ma.

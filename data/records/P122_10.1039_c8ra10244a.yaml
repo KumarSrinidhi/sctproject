@@ -1,0 +1,118 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P122
+paper:
+  doi: 10.1039/c8ra10244a
+  title: Cyanate ester resin based composites with high toughness and thermal conductivity
+  year: 2019
+  source_url: https://doi.org/10.1039/c8ra10244a
+extraction_log:
+- seq: 134
+  candidate_id: P6-P122
+  doi: 10.1039/c8ra10244a
+  paper_title: Cyanate ester resin based composites with high toughness and thermal conductivity
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc)
+  files_inspected: sources/text/10.1039_c8ra10244a.txt (cache, not committed)
+  tables_inspected: none (paper has no tables)
+  figures_inspected: Fig. 10 (k vs BN content, h-BN and ABN series), Fig. 8, Fig. 11
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 5 figure-only values not taken. Loadings of 2, 4, 6 and 8 wt% for both h-BN and ABN. Only 4 values are printed in the text (neat, ABN 6 and 8 wt%, h-BN 6 wt%). Figure-only in Fig. 10: ABN 2 and 4 wt%, h-BN 2, 4 and 8 wt% (5 skipped). The 2.29x, 1.85x and 1.54x ratios match the printed values.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 5a3c674a-388
+  - 5a3c674a-389
+  - 5a3c674a-390
+  - 5a3c674a-391
+measurements:
+- row_id: 5a3c674a-388
+  matrix_polymer: Bisphenol A cyanate ester resin (BADCy), neat
+  curing_agent: Dibutyltin dilaurate catalyst; cured 180 °C 2 h, 200 °C 2 h, post-cured 220 °C 2 h
+  filler_material: none
+  filler_material_original: none, neat BADCy resin
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Casting and thermal cure
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.19
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiaxi), ASTM C1113-99 (2004); average of five measurements at room temperature
+  k_original_value: 0.19
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Improvement of thermal conductivity and electrical insulation properties'', paragraph 1: ''The thermal conductivity of the neat BADCy resin was determined as 0.190 W m−1 K−1.'''
+  confidence: High
+  notes: Printed as 0.190. Neat BADCy without PBMAM toughener. Measured at room temperature (no number given).
+- row_id: 5a3c674a-389
+  matrix_polymer: 'Bisphenol A cyanate ester resin (BADCy) + 5 wt% PBMAM core–shell toughener (95 g CE : 5 g PBMAM)'
+  curing_agent: Dibutyltin dilaurate catalyst (0.2 g); cured 180 °C 2 h, 200 °C 2 h, post-cured 220 °C 2 h
+  filler_material: h-BN
+  filler_material_original: ABN (AEAPS-silane-modified h-BN), BADCy/PBMAM/ABN with 8 wt% ABN
+  size_distribution: 3–5 µm (raw h-BN, supplier)
+  filler_loading_wt_pct: 8.0
+  filler_loading_original_value: 8.0
+  filler_loading_original_unit: wt%
+  functionalization: Hydroxylated in mixed acid (HNO3:H2SO4 3:1) then grafted with 3-(2-aminoethylamino)propyl silane (AEAPS)
+  filler_alignment: random
+  processing_method: BN dispersed in BADCy/PBMAM melt, catalyst added, stirred at 150 °C 1 h to 2000 mPa, degassed, cast in preheated foil mould and cured
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.4358
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiaxi), ASTM C1113-99 (2004); average of five measurements at room temperature
+  k_original_value: 0.4358
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Improvement of thermal conductivity and electrical insulation properties'', paragraph 1: ''The thermal conductivity of the BADCy/PBMAM/BN composite is 0.4358 W m−1 K−1 with addition of 8 wt% ABN, which is 2.29 times that of pure BADCy.'''
+  confidence: High
+  notes: The wt% basis is not stated (BN added to 95 g BADCy + 5 g PBMAM). The matrix contains the PBMAM toughener; k_matrix is neat BADCy without PBMAM.
+- row_id: 5a3c674a-390
+  matrix_polymer: 'Bisphenol A cyanate ester resin (BADCy) + 5 wt% PBMAM core–shell toughener (95 g CE : 5 g PBMAM)'
+  curing_agent: Dibutyltin dilaurate catalyst (0.2 g); cured 180 °C 2 h, 200 °C 2 h, post-cured 220 °C 2 h
+  filler_material: h-BN
+  filler_material_original: ABN (AEAPS-silane-modified h-BN), BADCy/PBMAM/ABN with 6 wt% ABN
+  size_distribution: 3–5 µm (raw h-BN, supplier)
+  filler_loading_wt_pct: 6.0
+  filler_loading_original_value: 6.0
+  filler_loading_original_unit: wt%
+  functionalization: Hydroxylated in mixed acid (HNO3:H2SO4 3:1) then grafted with 3-(2-aminoethylamino)propyl silane (AEAPS)
+  filler_alignment: random
+  processing_method: BN dispersed in BADCy/PBMAM melt, catalyst added, stirred at 150 °C 1 h to 2000 mPa, degassed, cast in preheated foil mould and cured
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.352
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiaxi), ASTM C1113-99 (2004); average of five measurements at room temperature
+  k_original_value: 0.352
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Improvement of thermal conductivity and electrical insulation properties'', paragraph 1: ''Therefore, the thermal conductivity of ABN-filled composite is 0.352 W m−1 K−1 with the addition of 6 wt% ABN, while that of the BADCy/PBMAM/h-BN composite is 0.294 W m−1 K−1.'''
+  confidence: High
+  notes: Optimum formulation (5 wt% PBMAM, 6 wt% ABN); 1.85x neat BADCy (+85%). The wt% basis is not stated.
+- row_id: 5a3c674a-391
+  matrix_polymer: 'Bisphenol A cyanate ester resin (BADCy) + 5 wt% PBMAM core–shell toughener (95 g CE : 5 g PBMAM)'
+  curing_agent: Dibutyltin dilaurate catalyst (0.2 g); cured 180 °C 2 h, 200 °C 2 h, post-cured 220 °C 2 h
+  filler_material: h-BN
+  filler_material_original: raw h-BN (unmodified), BADCy/PBMAM/h-BN with 6 wt% h-BN
+  size_distribution: 3–5 µm (supplier)
+  filler_loading_wt_pct: 6.0
+  filler_loading_original_value: 6.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: random
+  processing_method: BN dispersed in BADCy/PBMAM melt, catalyst added, stirred at 150 °C 1 h to 2000 mPa, degassed, cast in preheated foil mould and cured
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.294
+  k_direction: unknown
+  measurement_method: Transient hot-wire, TC 3000 Series Thermal Conductivity Apparatus (Xi'an Xiaxi), ASTM C1113-99 (2004); average of five measurements at room temperature
+  k_original_value: 0.294
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Improvement of thermal conductivity and electrical insulation properties'', paragraph 1: ''Therefore, the thermal conductivity of ABN-filled composite is 0.352 W m−1 K−1 with the addition of 6 wt% ABN, while that of the BADCy/PBMAM/h-BN composite is 0.294 W m−1 K−1.'''
+  confidence: High
+  notes: Unmodified h-BN comparison at the same 6 wt% loading (1.54x neat BADCy). The wt% basis is not stated.

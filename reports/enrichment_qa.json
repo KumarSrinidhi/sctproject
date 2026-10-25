@@ -1,84 +1,97 @@
 {
-  "rows": 258,
+  "rows": 639,
   "method_class": {
-    "UNSPECIFIED": 83,
-    "LFA": 72,
-    "THB": 48,
-    "TPS": 28,
-    "HOT_WIRE": 12,
-    "SS_D5470": 8,
-    "PERIODIC": 4,
+    "LFA": 198,
+    "TPS": 120,
+    "UNSPECIFIED": 116,
+    "THB": 70,
+    "HOT_WIRE": 54,
+    "SS_D5470": 38,
+    "PERIODIC": 21,
+    "SS_UNSPECIFIED": 14,
+    "SS_HFM_GHP": 4,
+    "MTPS": 2,
     "SS_GHFM": 1,
-    "IR_THERMO": 1,
-    "SS_UNSPECIFIED": 1
+    "IR_THERMO": 1
   },
   "method_basis": {
-    "named": 163,
-    "none": 83,
-    "instrument": 11,
-    "generic": 1
+    "named": 498,
+    "none": 116,
+    "generic": 14,
+    "instrument": 11
   },
   "direction_reported": {
-    "unknown": 193,
-    "through-plane": 45,
-    "in-plane": 19,
-    "isotropic": 1
+    "unknown": 297,
+    "through-plane": 212,
+    "in-plane": 113,
+    "isotropic": 17
   },
   "direction_effective": {
-    "through-plane": 104,
-    "mixed": 82,
-    "unknown": 52,
-    "in-plane": 19,
-    "isotropic": 1
+    "through-plane": 307,
+    "mixed": 133,
+    "in-plane": 113,
+    "unknown": 69,
+    "isotropic": 17
   },
   "direction_basis": {
-    "method-default": 141,
-    "reported": 65,
-    "none": 52
+    "reported": 342,
+    "method-default": 228,
+    "none": 69
   },
   "phi_basis": {
-    "converted-from-wt": 123,
-    "reported": 103,
-    "unavailable-hybrid": 26,
-    "unavailable": 3,
-    "unavailable-prefilled-matrix": 3
+    "converted-from-wt": 238,
+    "reported": 208,
+    "unavailable-hybrid": 108,
+    "unavailable": 81,
+    "unavailable-prefilled-matrix": 4
   },
   "k_matrix_basis": {
-    "reference-default": 131,
-    "reported": 127
+    "reported": 380,
+    "reference-default": 228,
+    "unavailable": 31
   },
   "matrix_family": {
-    "epoxy": 228,
-    "silicone": 16,
-    "polyimide": 9,
-    "PEG": 2,
-    "polystyrene": 2,
-    "polyurethane": 1
+    "epoxy": 271,
+    "silicone": 119,
+    "other": 77,
+    "polyethylene": 74,
+    "polyamide": 15,
+    "polyimide": 14,
+    "PVA": 14,
+    "PEG": 13,
+    "polyurethane": 8,
+    "polystyrene": 8,
+    "polypropylene": 8,
+    "PPS": 7,
+    "PVDF": 4,
+    "PEI": 4,
+    "polycarbonate": 2,
+    "PMMA": 1
   },
   "filler_family": {
-    "BN": 194,
-    "hybrid": 34,
-    "AlN": 20,
+    "BN": 389,
+    "hybrid": 141,
+    "none": 57,
+    "AlN": 44,
     "Al2O3": 6,
-    "none": 2,
     "MgO": 2
   },
   "flags": {
-    "method_unspecified": 83,
-    "mixed_direction_anisotropic": 82,
-    "lfa_cp_rho_unreported": 68,
+    "mixed_direction_anisotropic": 207,
+    "lfa_cp_rho_unreported": 135,
+    "method_unspecified": 116,
+    "contact_resistance_included": 53,
     "abstract_only": 28,
     "figure_digitized": 28,
-    "contact_resistance_included": 10,
-    "matrix_prefilled": 3,
+    "matrix_prefilled": 6,
     "co_filler_ignored_in_conversion": 2,
     "non_ambient_temperature": 2
   },
   "density_check": {
-    "n_rows": 37,
+    "n_rows": 49,
     "median_abs_diff_vol_pct": 1.66,
-    "max_abs_diff_vol_pct": 3.04,
-    "within_2_vol_pct": 32,
+    "max_abs_diff_vol_pct": 4.62,
+    "within_2_vol_pct": 42,
     "outliers_gt_5_vol_pct": []
   }
 }

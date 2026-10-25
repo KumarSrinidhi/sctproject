@@ -1,0 +1,73 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P111
+paper:
+  doi: 10.3390/nano11102544
+  title: Robust Biomimetic Nacreous Aramid Nanofiber Composite Films with Ultrahigh Thermal Conductivity by Introducing Graphene Oxide and Edge-Hydroxylated Boron Nitride Nanosheet
+  year: 2021
+  source_url: https://doi.org/10.3390/nano11102544
+extraction_log:
+- seq: 123
+  candidate_id: P6-P111
+  doi: 10.3390/nano11102544
+  paper_title: Robust Biomimetic Nacreous Aramid Nanofiber Composite Films with Ultrahigh Thermal Conductivity by Introducing Graphene Oxide and Edge-Hydroxylated Boron Nitride Nanosheet
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano11102544.txt (cache, not committed)
+  tables_inspected: Table 1 (literature comparison; only the 'This work' row is from this paper and duplicates the text value, so it was not used as a separate row)
+  figures_inspected: Figure 5b (in-plane k vs GO and BNNS-OH content) and 5c (enhancement) not digitized
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 14 figure-only values not taken. Only the ANF/GO-10/BNNS-50 composite and the neat ANF film have printed k. All other series appear only in Fig. 5b: ANF/BNNS-OH, ANF/GO-5/BNNS-X and ANF/GO-10/BNNS-X with X = 10–50, about 14 points (approximate count; the ANF/BNNS loadings are not listed in the text). The other Table 1 rows are literature values and were skipped. The nominal wt.% may be relative to ANF mass, not to the composite, so it should be read with care.'
+  rows_rejected_at_append: []
+  rows_added:
+  - baba3cc2-328
+  - baba3cc2-329
+measurements:
+- row_id: baba3cc2-328
+  matrix_polymer: Aramid nanofibers (ANFs, PPTA from Kevlar 29 yarn dissolved in KOH/DMSO)
+  filler_material: none
+  filler_material_original: pure ANF film
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt.%
+  processing_method: Vacuum-assisted filtration of ANF slurry, hot-pressed 150 °C 5 min, vacuum-dried 45 °C 48 h
+  k_matrix_W_mK: 1.55
+  k_composite_W_mK: 1.55
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 467 at 25 °C (thermal diffusivity); Cp by DSC (sapphire method); density ρ = m/v; λ = α·ρ·Cp
+  measurement_temperature_C: 25.0
+  k_original_value: 1.55
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Section 3, paragraph after Figure 5 (η discussion): ''As can be seen, with the increase of BNNS-OH loading, the λ of the ANF/GO/BNNS composite films show a dramatic increase and achieve an ultrahigh value of 33.4 Wm−1 K−1 for the ANF/GO-10/BNNS-50 composite film, which is 2080% higher than that of the ANF film (~1.55 Wm−1 K−1).'''
+  confidence: Medium
+  notes: Printed as approximately (~1.55). In-plane direction per Figure 5b and the surrounding text. k printed as approximate or as a bound, so Medium confidence.
+- row_id: baba3cc2-329
+  matrix_polymer: Aramid nanofibers (ANFs, PPTA from Kevlar 29 yarn dissolved in KOH/DMSO)
+  filler_material: BNNS/GO hybrid
+  filler_material_original: edge-hydroxylated BN nanosheets (BNNS-OH) + graphene oxide (GO), sample ANF/GO-10/BNNS-50
+  filler_shape: nanosheet (BNNS-OH few-layer, ~3 layers; GO single-layer sheets)
+  filler_mean_size_um: 0.5
+  size_distribution: BNNS-OH lateral size ~0.5 μm, thickness ~1 nm (AFM)
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 10 (GO) + 50 (BNNS-OH)
+  filler_loading_original_unit: wt.% (nominal; per the sample labels, mass relative to 100 mg ANF)
+  functionalization: 'BNNS-OH: edge hydroxylation (5 M NaOH hydrothermal, 180 °C 24 h) after LiCl-assisted liquid-phase exfoliation; GO as received'
+  filler_alignment: horizontally oriented, nacre-like 'brick-and-mortar' layered structure (in-plane)
+  processing_method: ANF/GO/BNNS-OH DMSO dispersion coagulated in water, sheared at 14,000 rpm, vacuum-assisted filtration on 0.2 μm PTFE membrane >8 h, hot-pressed 150 °C 5 min, vacuum-dried 45 °C 48 h
+  k_matrix_W_mK: 1.55
+  k_composite_W_mK: 33.4
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 467 at 25 °C (thermal diffusivity); Cp by DSC (sapphire method); density ρ = m/v; λ = α·ρ·Cp
+  measurement_temperature_C: 25.0
+  k_original_value: 33.4
+  k_original_unit: Wm−1 K−1
+  value_source: text
+  source_location: 'Section 3, paragraph after Figure 5 (η discussion); also Abstract, Conclusions and Table 1 ''This work'' row: ''As can be seen, with the increase of BNNS-OH loading, the λ of the ANF/GO/BNNS composite films show a dramatic increase and achieve an ultrahigh value of 33.4 Wm−1 K−1 for the ANF/GO-10/BNNS-50 composite film, which is 2080% higher than that of the ANF film (~1.55 Wm−1 K−1).'''
+  confidence: High
+  notes: The paper says '10 wt.% GO and 50 wt.% BNNS-OH' (Abstract); total 60 is the sum of the two printed values. Per Section 2.2 the labels are mg of filler per 100 mg ANF (GO-10/BNNS-10 = 10 mg GO + 10 mg BNNS-OH + 100 mg ANF), so the true mass fraction of the composite would be lower; it was not converted. Raw h-BN was 10 μm average before exfoliation. Tensile strength 93.3 MPa.

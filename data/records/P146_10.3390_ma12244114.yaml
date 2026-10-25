@@ -1,0 +1,289 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P146
+paper:
+  doi: 10.3390/ma12244114
+  title: Effect of Thermal Conductive Fillers on the Flame Retardancy, Thermal Conductivity, and Thermal Behavior of Flame-Retardant and Thermal Conductive Polyamide 6
+  year: 2019
+  source_url: https://doi.org/10.3390/ma12244114
+extraction_log:
+- seq: 158
+  candidate_id: P6-P146
+  doi: 10.3390/ma12244114
+  paper_title: Effect of Thermal Conductive Fillers on the Flame Retardancy, Thermal Conductivity, and Thermal Behavior of Flame-Retardant and Thermal Conductive Polyamide 6
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ma12244114.txt (cache, not committed)
+  tables_inspected: Table 1 (formulations), Table 2 (mechanical + k, AlN), Table 3 (mechanical + k, BN), Tables 4–8 (flame, TG, cone, DSC; no k)
+  figures_inspected: Figures 1–12 (SEM, char photos, TG/DTG, HRR, DSC; no k plots)
+  candidate_measurements: 12
+  rows_appended: 12
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. 12 rows: S0 reference (PA6/AlPi, no TC filler) plus 11 AlN or BN composites from Tables 2 and 3. Every composite contains 10 parts AlPi flame retardant along with the TC filler; the TC filler wt% is of the total composite (e.g. 90:10:42.86 gives 30 wt%). The literature comparison value (~0.5 W/mK, ref. 16) and the PA6/PA66/AlN value from ref. 20 in the Introduction were skipped. The method is ASTM D5470 steady state with heat flow perpendicular to t'
+  rows_rejected_at_append: []
+  rows_added:
+  - 70785426-479
+  - 70785426-480
+  - 70785426-481
+  - 70785426-482
+  - 70785426-483
+  - 70785426-484
+  - 70785426-485
+  - 70785426-486
+  - 70785426-487
+  - 70785426-488
+  - 70785426-489
+  - 70785426-490
+measurements:
+- row_id: 70785426-479
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with 10 parts aluminum diethylphosphinate (AlPi) flame retardant (PA6/AlPi 90:10)
+  filler_material: none
+  filler_material_original: S0 (PA6/AlPi 90:10, no TC filler)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.31
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.31
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''S0 | 61.16 ± 1.94 | 98.50 ± 4.67 | 2840 ± 73 | 8.99 ± 0.15 | 0.310'''
+  confidence: High
+  notes: Reference 'matrix' is flame-retarded PA6/AlPi (90:10), not neat PA6; contains no BN/AlN. Printed as 0.310.
+- row_id: 70785426-480
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: AlN
+  filler_material_original: AlN-550RFS (spherical), sample 10% AlN-550RFS
+  filler_shape: spherical
+  filler_mean_size_um: 55.0
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.365
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.365
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''10% AlN-550RFS | 55.61 ± 0.60 | 94.24 ± 3.07 | 3151 ± 68 | 7.42 ± 0.4 | 0.365'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:11.11 (TC filler 10 wt% of total). Composite also contains AlPi flame retardant.
+- row_id: 70785426-481
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: AlN
+  filler_material_original: AlN-550RFS (spherical), sample 20% AlN-550RFS
+  filler_shape: spherical
+  filler_mean_size_um: 55.0
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.404
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.404
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''20% AlN-550RFS | 49.85 ± 1.47 | 90.26 ± 0.47 | 3282 ± 77 | 7.03 ± 0.16 | 0.404'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:25 (TC filler 20 wt% of total). Composite also contains AlPi flame retardant.
+- row_id: 70785426-482
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: AlN
+  filler_material_original: AlN-550RFS (spherical), sample 30% AlN-550RFS
+  filler_shape: spherical
+  filler_mean_size_um: 55.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.468
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.468
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''30% AlN-550RFS | 46.04 ± 0.64 | 88.99 ± 2.90 | 3911 ± 151 | 6.77 ± 0.13 | 0.468'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:42.86 (TC filler 30 wt% of total). Value repeated in Section 3.1 text. Composite also contains AlPi flame retardant.
+- row_id: 70785426-483
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: AlN
+  filler_material_original: AlN-550RFS (spherical), sample 40% AlN-550RFS
+  filler_shape: spherical
+  filler_mean_size_um: 55.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.572
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.572
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''40% AlN-550RFS | 41.78 ± 1.38 | 85.93 ± 1.15 | 4438 ± 852 | 6.44 ± 0.3 | 0.572'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:66.67 (TC filler 40 wt% of total). Composite also contains AlPi flame retardant.
+- row_id: 70785426-484
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: AlN
+  filler_material_original: AlN-550RFS (spherical), sample 50% AlN-550RFS
+  filler_shape: spherical
+  filler_mean_size_um: 55.0
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.739
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.739
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''50% AlN-550RFS | 37.51 ± 0.89 | 63.84 ± 0.17 | 4513 ± 188 | 6.11 ± 0.09 | 0.739'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:100 (TC filler 50 wt% of total). Value repeated in Section 3.1 text (238% higher than S0). Composite also contains AlPi flame retardant.
+- row_id: 70785426-485
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: AlN
+  filler_material_original: AlN-300SFS (aspherical), sample 30% AlN-300SFS
+  filler_shape: aspherical / irregular
+  filler_mean_size_um: 10.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.505
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.505
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''30% AlN-300SFS | 40.54 ± 0.11 | 73.99 ± 1.98 | 3207 ± 135 | 7.01 ± 0.41 | 0.505'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:42.86 (TC filler 30 wt% of total). Composite also contains AlPi flame retardant.
+- row_id: 70785426-486
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: AlN
+  filler_material_original: AlN-300SFS (aspherical), sample 50% AlN-300SFS
+  filler_shape: aspherical / irregular
+  filler_mean_size_um: 10.0
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.799
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.799
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 2: ''50% AlN-300SFS | 33.50 ± 0.81 | 64.33 ± 1.03 | 4457 ± 279 | 5.31 ± 0.13 | 0.799'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:100 (TC filler 50 wt% of total). Composite also contains AlPi flame retardant.
+- row_id: 70785426-487
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: BN
+  filler_material_original: BN-SW08, sample 30% BN-SW08
+  filler_shape: circular flake-like
+  filler_mean_size_um: 6.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.567
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.567
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 3: ''30% BN-SW08 | 48.62 ± 0.97 | 92.17 ± 0.33 | 6065 ± 360 | 7.60 ± 0.34 | 0.567'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:42.86 (TC filler 30 wt% of total). Paper says 'boron nitride' only (not specified hexagonal). Composite also contains AlPi flame retardant.
+- row_id: 70785426-488
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: BN
+  filler_material_original: BN-SW08, sample 50% BN-SW08
+  filler_shape: circular flake-like
+  filler_mean_size_um: 6.0
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.93
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.93
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 3: ''50% BN-SW08 | 49.78 ± 1.08 | 101.88 ± 3.35 | 6567 ± 402 | No data* | 0.930'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:100 (TC filler 50 wt% of total). Printed 0.930 in Table 3 and 0.93 in Conclusions. Composite also contains AlPi flame retardant.
+- row_id: 70785426-489
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: BN
+  filler_material_original: BN-NW04, sample 30% BN-NW04
+  filler_shape: circular flake-like
+  filler_mean_size_um: 0.5
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.69
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.69
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 3: ''30% BN-NW04 | 58.65 ± 0.69 | 96.67 ± 1.24 | 5469 ± 137 | 4.79 ± 0.22 | 0.690'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:42.86 (TC filler 30 wt% of total). Printed 0.690. Composite also contains AlPi flame retardant.
+- row_id: 70785426-490
+  matrix_polymer: polyamide 6 (PA6, Ube 1013B) with AlPi flame retardant (PA6/AlPi 90:10)
+  filler_material: BN
+  filler_material_original: BN-NW04, sample 50% BN-NW04
+  filler_shape: circular flake-like
+  filler_mean_size_um: 0.5
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Twin-screw melt extrusion (220–240 °C) then injection molding (220–240 °C)
+  k_matrix_W_mK: 0.31
+  k_composite_W_mK: 0.91
+  k_direction: through-plane (steady-state heat flow perpendicular to the test surface)
+  measurement_method: Steady-state heat flow method per ASTM D5470-17, Longwin LW-9389; samples 27 × 27 × 5 mm
+  k_original_value: 0.91
+  k_original_unit: W/mK
+  value_source: table
+  source_location: 'Table 3: ''50% BN-NW04 | 51.14 ± 0.95 | 93.65 ± 0.54 | 8651 ± 570 | No data* | 0.910'''
+  confidence: High
+  notes: PA6/AlPi/TC filler = 90:10:100 (TC filler 50 wt% of total). Printed 0.910. Composite also contains AlPi flame retardant.

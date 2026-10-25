@@ -40,7 +40,8 @@ class Derived:
 
 DERIVED: tuple[Derived, ...] = (
     Derived("paper_id", "string", "Record id (P###) of the source paper."),
-    Derived("matrix_family", "string", "epoxy | silicone | polyimide | PEG | polystyrene | polyurethane | other."),
+    Derived("matrix_family", "string", "epoxy | silicone | polyimide | PEG | polystyrene | polyurethane | "
+            "polyethylene | polypropylene | polyamide | PVDF | PVA | PPS | PEI | polycarbonate | PMMA | other."),
     Derived("filler_family", "string", "BN | AlN | Al2O3 | MgO | hybrid | none | other."),
     Derived("filler_base", "string", "Single-filler label (h-BN, BN, BNNS, cBN, AlN, ...); blank for hybrids."),
     Derived("is_hybrid", "boolean", "More than one filler material."),

@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P170
+paper:
+  doi: 10.3390/polym12061410
+  title: Carbonization of Polydopamine-Coating Layers on Boron Nitride for Thermal Conductivity Enhancement in Hybrid Polyvinyl Alcohol (PVA) Composites
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12061410
+extraction_log:
+- seq: 182
+  candidate_id: P6-P170
+  doi: 10.3390/polym12061410
+  paper_title: Carbonization of Polydopamine-Coating Layers on Boron Nitride for Thermal Conductivity Enhancement in Hybrid Polyvinyl Alcohol (PVA) Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym12061410.txt (cache, not committed)
+  tables_inspected: Table 1 (XPS atomic %, no k)
+  figures_inspected: Fig. 7a (k of raw BN, BNPDA, BNPDA-400/-800/-1000 in PVA at 6, 14 and 21 wt%); Fig. 7b (k ratio after bending, not absolute k)
+  candidate_measurements: 1
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 14 figure-only values not taken. Only one k value is printed: BNPDA-800/PVA at 21 wt%, 1.05 W/mK. All other k values (5 filler types × 6/14/21 wt%, about 14 points) appear only in Fig. 7a. Neat PVA k is not printed. Direction is not stated for the LFA measurement on the films.'
+  rows_rejected_at_append: []
+  rows_added:
+  - ebecc34b-648
+measurements:
+- row_id: ebecc34b-648
+  matrix_polymer: PVA (polyvinyl alcohol, Sigma-Aldrich, Mw 31,000–50,000)
+  filler_material: h-BN
+  filler_material_original: BNPDA-800 (h-BN coated with polydopamine, annealed at 800 °C in Ar), sample BNPDA-800/PVA, 21 wt %
+  filler_mean_size_um: 12.0
+  filler_loading_wt_pct: 21.0
+  filler_loading_original_value: 21.0
+  filler_loading_original_unit: wt %
+  functionalization: polydopamine coating (~20.8 nm thick before annealing), carbonized at 800 °C for 1 h in Ar
+  processing_method: BNPDA dispersed in water by sonication (30 min), PVA dissolved at 90 °C for 2 h, cooled to 40 °C, cast in a PTFE mould with a doctor blade, dried at 40 °C for 12 h, hot-pressed at 90 °C
+  k_composite_W_mK: 1.05
+  k_direction: unknown (laser flash on film; direction not stated)
+  measurement_method: Laser flash thermal diffusivity (Netzsch NanoFlash LFA 447) at room temperature; k = diffusivity × density × specific heat capacity (methods for density and Cp not stated)
+  k_original_value: 1.05
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph discussing Figure 7a: ''Accordingly, with a filler fraction of 21 wt %, the TC of BNPDA-800/PVA was as high as 1.05 W/mK, which was 44.1% higher than that of raw BN/PVA.'''
+  confidence: High
+  notes: The only absolute k printed in the paper. Raw h-BN (12 μm, Momentive). The raw BN/PVA value at 21 wt% is given only as 44.1% lower and is not computed here. Measured at room temperature (no number given).

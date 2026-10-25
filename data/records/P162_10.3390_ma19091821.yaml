@@ -1,0 +1,115 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P162
+paper:
+  doi: 10.3390/ma19091821
+  title: Effect of Micro and Nano Boron Nitride on Thermal Conductivity and Electrical Properties of Mica Tape
+  year: 2026
+  source_url: https://doi.org/10.3390/ma19091821
+extraction_log:
+- seq: 174
+  candidate_id: P6-P162
+  doi: 10.3390/ma19091821
+  paper_title: Effect of Micro and Nano Boron Nitride on Thermal Conductivity and Electrical Properties of Mica Tape
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ma19091821.txt (cache, not committed)
+  tables_inspected: No tables in the paper (the JATS file has no table-wrap). Tables S1–S2 (Weibull parameters) are in the SI and not available.
+  figures_inspected: Figure 3 (λ of mica tape with five h-BN sizes at 10 wt%), Figure 4 (λ vs loading for 50 nm and 10 μm h-BN), Figure 7 (HT-S model vs experiment).
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 10 figure-only values not taken. The composite is a three-part mica-tape laminate (fiberglass cloth / h-BN-filled epoxy / mica paper), so the k values are for the whole tape. Loadings are h-BN mass fractions in the epoxy adhesive and were not converted. The measurement direction is not stated: the DRL-III heat-flux tester is typically through-thickness, but this was left as unknown. Measurement temperature is not given. About 10 figure-only values were skipped: four other sizes at'
+  rows_rejected_at_append: []
+  rows_added:
+  - f729b6ee-588
+  - f729b6ee-589
+  - f729b6ee-590
+  - f729b6ee-591
+measurements:
+- row_id: f729b6ee-588
+  matrix_polymer: 'Mica tape: epoxy resin adhesive WSR618 (E51) with mica paper (DMP-M160) and fiberglass cloth'
+  curing_agent: Methyl hexahydrophthalic anhydride (MHHPA) with DMP-30 accelerator
+  filler_material: none
+  filler_material_original: pure (unmodified) mica tape
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Mica paper placed between two epoxy-impregnated fiberglass cloths, hot-pressed on a flat-plate vulcanizer at 65 °C and 3 MPa for 20 min, then oven cured
+  k_matrix_W_mK: 0.199
+  k_composite_W_mK: 0.199
+  k_direction: unknown (heat flux method; direction not stated)
+  measurement_method: Steady-state heat flux method, DRL-III thermal conductivity tester; PT-M25 thermal grease applied to both sides
+  k_original_value: 0.199
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract: ''When the doping concentration reaches 20 wt.%, the λ of the two h-BN-doped mica tape (h-BN/MT) reaches a maximum of 0.382 W/(m·K), 0.4 W/(m·K), respectively, which enhances the λ of the contrasting pure mica tape (0.199 W/(m·K)) by 91.95% and 101.01%, respectively.'''
+  confidence: High
+  notes: The neat reference is the unmodified mica tape (epoxy/mica paper/fiberglass laminate), not neat epoxy.
+- row_id: f729b6ee-589
+  matrix_polymer: 'Mica tape: epoxy resin adhesive WSR618 (E51) with mica paper (DMP-M160) and fiberglass cloth'
+  curing_agent: Methyl hexahydrophthalic anhydride (MHHPA) with DMP-30 accelerator
+  filler_material: h-BN
+  filler_material_original: h-BN 50 nm, h-BN/MT (50 nm) at 20 wt.%
+  filler_mean_size_um: 0.05
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt.%
+  functionalization: none
+  processing_method: h-BN stirred into E51/MHHPA at 65 °C for 6 h; the h-BN/EP impregnates the fiberglass cloth; mica paper sandwiched and hot-pressed at 65 °C and 3 MPa for 20 min, then oven cured
+  k_matrix_W_mK: 0.199
+  k_composite_W_mK: 0.382
+  k_direction: unknown (heat flux method; direction not stated)
+  measurement_method: Steady-state heat flux method, DRL-III thermal conductivity tester; PT-M25 thermal grease applied to both sides
+  k_original_value: 0.382
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Abstract: ''When the doping concentration reaches 20 wt.%, the λ of the two h-BN-doped mica tape (h-BN/MT) reaches a maximum of 0.382 W/(m·K), 0.4 W/(m·K), respectively, which enhances the λ of the contrasting pure mica tape (0.199 W/(m·K)) by 91.95% and 101.01%, respectively.'''
+  confidence: High
+  notes: The order of 0.382 and 0.4 follows the paper's (50 nm, 10 μm) listing; Section 3.2 confirms 0.4 for 10 μm, so 0.382 is the 50 nm tape. The wt% is the h-BN mass fraction in the h-BN/epoxy adhesive (Section 2.2), not in the whole tape.
+- row_id: f729b6ee-590
+  matrix_polymer: 'Mica tape: epoxy resin adhesive WSR618 (E51) with mica paper (DMP-M160) and fiberglass cloth'
+  curing_agent: Methyl hexahydrophthalic anhydride (MHHPA) with DMP-30 accelerator
+  filler_material: h-BN
+  filler_material_original: h-BN 10 μm, h-BN/MT (10 μm) at 20 wt.%
+  filler_mean_size_um: 10.0
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt.%
+  functionalization: none
+  processing_method: h-BN stirred into E51/MHHPA at 65 °C for 6 h; the h-BN/EP impregnates the fiberglass cloth; mica paper sandwiched and hot-pressed at 65 °C and 3 MPa for 20 min, then oven cured
+  k_matrix_W_mK: 0.199
+  k_composite_W_mK: 0.4
+  k_direction: unknown (heat flux method; direction not stated)
+  measurement_method: Steady-state heat flux method, DRL-III thermal conductivity tester; PT-M25 thermal grease applied to both sides
+  k_original_value: 0.4
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3: ''Among them, the 10 μm size h-BN/MT has the highest λ (0.4 W/(m·K)) at a filler level of 20 wt.%, representing a 101.01% enhancement compared to unmodified mica tape.'''
+  confidence: High
+  notes: The same value appears in the abstract and the conclusions. The wt% is the h-BN mass fraction in the h-BN/epoxy adhesive.
+- row_id: f729b6ee-591
+  matrix_polymer: 'Mica tape: epoxy resin adhesive WSR618 (E51) with mica paper (DMP-M160) and fiberglass cloth'
+  curing_agent: Methyl hexahydrophthalic anhydride (MHHPA) with DMP-30 accelerator
+  filler_material: h-BN
+  filler_material_original: h-BN 5 μm, 5 μm grain-filled mica tape at 10 wt.% (size pre-screening)
+  filler_mean_size_um: 5.0
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: none
+  processing_method: h-BN stirred into E51/MHHPA at 65 °C for 6 h; the h-BN/EP impregnates the fiberglass cloth; mica paper sandwiched and hot-pressed at 65 °C and 3 MPa for 20 min, then oven cured
+  k_matrix_W_mK: 0.199
+  k_composite_W_mK: 0.31
+  k_direction: unknown (heat flux method; direction not stated)
+  measurement_method: Steady-state heat flux method, DRL-III thermal conductivity tester; PT-M25 thermal grease applied to both sides
+  k_original_value: 0.31
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''Among these, the 5 μm grain-filled mica tape exhibits the highest λ, reaching 0.31 W/(m·K).'''
+  confidence: High
+  notes: From the preliminary size screen at a fixed 10 wt.% (the preceding sentence gives the loading). It was the best of five sizes (50 nm, 500 nm, 1–3 μm, 5 μm, 10 μm). The paper states a 55.5% increase over unmodified mica tape.

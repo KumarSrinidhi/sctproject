@@ -1,0 +1,70 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P096
+paper:
+  doi: 10.3390/nano12142335
+  title: Thermally Conductive and Electrically Insulated Silicone Rubber Composites Incorporated with Boron Nitride−Multilayer Graphene Hybrid Nanofiller
+  year: 2022
+  source_url: https://doi.org/10.3390/nano12142335
+extraction_log:
+- seq: 108
+  candidate_id: P6-P096
+  doi: 10.3390/nano12142335
+  paper_title: Thermally Conductive and Electrically Insulated Silicone Rubber Composites Incorporated with Boron Nitride−Multilayer Graphene Hybrid Nanofiller
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano12142335.txt (cache, not committed)
+  tables_inspected: Table 1 (comparison with literature; only the 'This work' row is own data and duplicates the 0.69 text value, so not extracted separately; other rows are literature)
+  figures_inspected: Figure 10a (k vs loading for MG/SR and BN−MG/SR) via caption only
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. Only the 10 wt.% BN−MG/SR value and neat SR value are printed; 1, 3, 5, 7 wt.% BN−MG/SR values appear only in Figure 10a (counted as figure-only). MG/SR values (no BN) not extracted. Table 1 other rows are literature values.
+  rows_rejected_at_append: []
+  rows_added:
+  - 851f9635-261
+  - 851f9635-262
+measurements:
+- row_id: 851f9635-261
+  matrix_polymer: 'Silicone rubber (SR): vinyl silicone oil (1 wt% vinyl, 1000 cps) + hydroxy silicone oil (0.18 wt% H), Pt-catalysed addition cure'
+  curing_agent: Pt-based catalyst (5000 ppm Pt); cured 110 °C 5 h
+  filler_material: none
+  filler_material_original: pure SR (neat matrix)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt.%
+  processing_method: Solution blending in ethyl acetate, solvent evaporation, vacuum degassing, cast in PP mould, cured 110 °C for 5 h
+  k_matrix_W_mK: 0.12
+  k_composite_W_mK: 0.12
+  k_direction: through-plane (steady-state heat flow method across 1~3 mm disc thickness; direction not named in paper)
+  measurement_method: Steady-state heat flow method, automatic thermal conductivity tester DRL-III (Xiangtan Xiangyi Instrument); discs 3 cm diameter, 1~3 mm thick, 100 N applied pressure; average of at least three samples
+  k_original_value: 0.12
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3: ''For the pure SR, the thermal conductivity is only 0.12 W·m−1·K−1 and its thermal resistance is nearly 10.6 K·W−1.'''
+  confidence: High
+  notes: Neat silicone rubber reference; also stated in abstract and introduction.
+- row_id: 851f9635-262
+  matrix_polymer: 'Silicone rubber (SR): vinyl silicone oil (1 wt% vinyl, 1000 cps) + hydroxy silicone oil (0.18 wt% H), Pt-catalysed addition cure'
+  curing_agent: Pt-based catalyst (5000 ppm Pt); cured 110 °C 5 h
+  filler_material: h-BN/multilayer graphene hybrid
+  filler_material_original: BN−MG hybrid nanosheets (PDDA@BN electrostatically self-assembled on multilayer graphene), sample BN−MG/SR−10%
+  filler_shape: nanosheet (BN sheets ~1 μm lateral coating MG sheets 1~4 μm lateral)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt.%
+  functionalization: BN wrapped with PDDA (poly(dimethyldiallylammonium chloride)), then electrostatically assembled onto MG
+  processing_method: Solution blending in ethyl acetate, solvent evaporation, vacuum degassing, cast in PP mould, cured 110 °C for 5 h
+  k_matrix_W_mK: 0.12
+  k_composite_W_mK: 0.69
+  k_direction: through-plane (steady-state heat flow method across 1~3 mm disc thickness; direction not named in paper)
+  measurement_method: Steady-state heat flow method, automatic thermal conductivity tester DRL-III (Xiangtan Xiangyi Instrument); discs 3 cm diameter, 1~3 mm thick, 100 N applied pressure; average of at least three samples
+  k_original_value: 0.69
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 3: ''As for the BN−MG/SR composite with 10 wt.% nanofiller loading, it exhibits a very high thermal conductivity of 0.69 W·m−1·K−1 as well as a low thermal resistance of 3.0 K·W−1, which is nearly 475% higher and 72% less than the values of the pure SR, respectively.'''
+  confidence: High
+  notes: '10 wt.% total hybrid filler; BN:MG mass ratio 1:10 in the hybrid (BN ≈ 0.9 wt% and MG ≈ 9.1 wt% of the composite, by calculation, not printed). Hexagonal BN per Materials section. Same value repeated in abstract, conclusions and Table 1 ''This work'' row. MG/SR-10% (0.76) skipped: no BN.'

@@ -1,0 +1,115 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P167
+paper:
+  doi: 10.3390/nano14100847
+  title: Preparations and Thermal Properties of PDMS-AlN-Al2O3 Composites through the Incorporation of Poly(Catechol-Amine)-Modified Boron Nitride Nanotubes
+  year: 2024
+  source_url: https://doi.org/10.3390/nano14100847
+extraction_log:
+- seq: 179
+  candidate_id: P6-P167
+  doi: 10.3390/nano14100847
+  paper_title: Preparations and Thermal Properties of PDMS-AlN-Al2O3 Composites through the Incorporation of Poly(Catechol-Amine)-Modified Boron Nitride Nanotubes
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano14100847.txt (cache, not committed)
+  tables_inspected: No tables in main text (Table S1 in supplementary is a literature comparison, not available and not applicable)
+  figures_inspected: Figure 4c caption (isotropic k of neat, AlN/Al2O3, +BNNT-neat, +BNNT-CAPA; all four values printed in text); Figure 5 is ANSYS simulation (excluded)
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. 4 rows from Section 3.2 text: neat PDMS 0.19, PDMS/AlN/Al2O3 5.5, +1 wt% BNNT-neat 7.0, +1 wt% BNNT-CAPA 8.1 (Hot Disk TPS500S, isotropic). The paper gives one total filler level (87 wt%) and does not state the AlN:Al2O3 split or particle sizes. BNNT is not one of the listed filler categories, so the hybrids are named ''AlN/Al2O3/BNNT hybrid''. ANSYS simulation inputs and outputs (Figure 5) and the thermal-resistance values are excluded. The 33.76% pe'
+  rows_rejected_at_append: []
+  rows_added:
+  - eb659ba4-627
+  - eb659ba4-628
+  - eb659ba4-629
+  - eb659ba4-630
+measurements:
+- row_id: eb659ba4-627
+  matrix_polymer: PDMS (polydimethylsiloxane) resin (MQ Korea)
+  curing_agent: PDMS hardener, catalyst and curing agent (MQ Korea); retardant also added
+  filler_material: none
+  filler_material_original: none, sample PDMS-neat
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0
+  filler_loading_original_unit: wt% (neat matrix, no filler)
+  processing_method: 'Sequential vortex mixing with a paste mixer: BNNT (if any) pre-blended with IPA and PDMS resin, solvent evaporated, Al2O3 and AlN added in order to 87% filler, then hardener/catalyst/retardant mixed in; poured into metal mold and hot-press cured at 120 °C for 2 h'
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.19
+  k_direction: isotropic (isotropic thermal conductivity, ko)
+  measurement_method: Transient plane source, Hot Disk thermal analyzer TPS500S (isotropic thermal conductivity)
+  k_original_value: 0.19
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''Shown in Figure 4c is the isotropic thermal conductivity of the prepared samples; the neat PDMS projects the lowest thermal conductivity of 0.19 W/mK, which is analogous to its standard value.'''
+  confidence: High
+  notes: Neat cured PDMS. Loading set to 0 because this is the neat matrix.
+- row_id: eb659ba4-628
+  matrix_polymer: PDMS (polydimethylsiloxane) resin (MQ Korea)
+  curing_agent: PDMS hardener, catalyst and curing agent (MQ Korea); retardant also added
+  filler_material: AlN/Al2O3 hybrid
+  filler_material_original: AlN (Thrutek) + Al2O3 microparticles (Denka Korea), sample PDMS/AlN/Al2O3
+  filler_loading_wt_pct: 87.0
+  filler_loading_original_value: 87.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: 'Sequential vortex mixing with a paste mixer: BNNT (if any) pre-blended with IPA and PDMS resin, solvent evaporated, Al2O3 and AlN added in order to 87% filler, then hardener/catalyst/retardant mixed in; poured into metal mold and hot-press cured at 120 °C for 2 h'
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 5.5
+  k_direction: isotropic (isotropic thermal conductivity, ko)
+  measurement_method: Transient plane source, Hot Disk thermal analyzer TPS500S (isotropic thermal conductivity)
+  k_original_value: 5.5
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''A steep thermal conductivity increase was distinguished upon inorganic filler assimilation, obtaining a thermal conductivity value of 5.5 W/mK.'''
+  confidence: High
+  notes: 'Total inorganic filler 87 wt% (AlN + Al2O3; Section 2.3 and Figure 6 caption); AlN:Al2O3 split not stated. Abstract gives the same value as 5.50 W/mK. Corrected in verification: Value 5.5 W/mK is correct. The size_distribution cited a general Introduction statement that AlN is ''commonly used as the larger particle''. That is not a description of this paper''s particles; sizes are not stated, so it should be null.'
+- row_id: eb659ba4-629
+  matrix_polymer: PDMS (polydimethylsiloxane) resin (MQ Korea)
+  curing_agent: PDMS hardener, catalyst and curing agent (MQ Korea); retardant also added
+  filler_material: AlN/Al2O3/BNNT hybrid
+  filler_material_original: AlN + Al2O3 + 1 wt% pristine BNNT, sample PDMS/AlN/Al2O3/BNNT-neat
+  filler_shape: 'BNNT: nanotube'
+  size_distribution: BNNT diameter 30–50 nm, length ~10 μm, purity >80% (remainder h-BN nanoparticles and nanoflakes); AlN and Al2O3 particle sizes not stated
+  filler_loading_wt_pct: 87.0
+  filler_loading_original_value: 87.0
+  filler_loading_original_unit: wt%
+  functionalization: none (BNNT-neat)
+  processing_method: 'Sequential vortex mixing with a paste mixer: BNNT (if any) pre-blended with IPA and PDMS resin, solvent evaporated, Al2O3 and AlN added in order to 87% filler, then hardener/catalyst/retardant mixed in; poured into metal mold and hot-press cured at 120 °C for 2 h'
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 7.0
+  k_direction: isotropic (isotropic thermal conductivity, ko)
+  measurement_method: Transient plane source, Hot Disk thermal analyzer TPS500S (isotropic thermal conductivity)
+  k_original_value: 7.0
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''A certain amount of (1% wt.) BNNT-neat and BNNT-CAPA was then introduced into the composite system, and both composites demonstrated an improved thermal conductivity, with BNNT-neat obtaining 7.0 W/mK, while BNNT-CAPA attained 8.1 W/mK.'''
+  confidence: High
+  notes: 'Printed as 7.0 W/mK. Total filler 87 wt% (Figure 6 caption: concentration of all samples 87% wt). Section 2.3 says BNNT is pre-blended with the resin and the remaining filler (Al2O3 and AlN) is added to reach 87% filler composition, so the 1 wt% BNNT-neat is within the 87%. AlN:Al2O3 split not stated. BNNT purity >80%, the remainder h-BN nanoparticles/nanoflakes. Corrected in verification: Value 7.0 is correct. The notes wrongly said it is not explicit whether the 1 wt% BNNT is inside the 87%; Section 2.3 implies it is (BNNT plus ''remaining filler'' reach 87%).'
+- row_id: eb659ba4-630
+  matrix_polymer: PDMS (polydimethylsiloxane) resin (MQ Korea)
+  curing_agent: PDMS hardener, catalyst and curing agent (MQ Korea); retardant also added
+  filler_material: AlN/Al2O3/BNNT hybrid
+  filler_material_original: AlN + Al2O3 + 1 wt% BNNT-CAPA, sample PDMS/AlN/Al2O3/BNNT-CAPA
+  filler_shape: 'BNNT: nanotube'
+  size_distribution: BNNT diameter 30–50 nm, length ~10 μm, purity >80% (remainder h-BN nanoparticles and nanoflakes); AlN and Al2O3 particle sizes not stated
+  filler_loading_wt_pct: 87.0
+  filler_loading_original_value: 87.0
+  filler_loading_original_unit: wt%
+  functionalization: 'BNNT coated with catechol-polyamine (CAPA: catechol + tetraethylenepentamine, tannic-acid-assisted dispersion); coating ~3.4 nm thick, ~1 wt%'
+  processing_method: 'Sequential vortex mixing with a paste mixer: BNNT (if any) pre-blended with IPA and PDMS resin, solvent evaporated, Al2O3 and AlN added in order to 87% filler, then hardener/catalyst/retardant mixed in; poured into metal mold and hot-press cured at 120 °C for 2 h'
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 8.1
+  k_direction: isotropic (isotropic thermal conductivity, ko)
+  measurement_method: Transient plane source, Hot Disk thermal analyzer TPS500S (isotropic thermal conductivity)
+  k_original_value: 8.1
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''A certain amount of (1% wt.) BNNT-neat and BNNT-CAPA was then introduced into the composite system, and both composites demonstrated an improved thermal conductivity, with BNNT-neat obtaining 7.0 W/mK, while BNNT-CAPA attained 8.1 W/mK.'''
+  confidence: High
+  notes: 'Total filler 87 wt% (Figure 6 caption). Per Section 2.3, BNNT-CAPA is pre-blended and the remaining filler (Al2O3 and AlN) is added to reach 87% filler composition, so the 1 wt% BNNT-CAPA is within the 87%. AlN:Al2O3 split not stated. Abstract gives the same value as 8.10 W/mK (~47.27% over 5.50). Corrected in verification: Value 8.1 is correct. Same notes correction as row 2.'

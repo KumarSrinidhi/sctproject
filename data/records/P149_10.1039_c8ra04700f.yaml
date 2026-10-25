@@ -1,0 +1,381 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P149
+paper:
+  doi: 10.1039/c8ra04700f
+  title: Hot pressing-induced alignment of hexagonal boron nitride in SEBS elastomer for superior thermally conductive composites
+  year: 2018
+  source_url: https://doi.org/10.1039/c8ra04700f
+extraction_log:
+- seq: 161
+  candidate_id: P6-P149
+  doi: 10.1039/c8ra04700f
+  paper_title: Hot pressing-induced alignment of hexagonal boron nitride in SEBS elastomer for superior thermally conductive composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc)
+  files_inspected: sources/text/10.1039_c8ra04700f.txt (cache, not committed)
+  tables_inspected: Table 1 (TGA thermal data, no k), Table 2 (mechanical properties, no k), Table 3 (CPU stable temperatures, no k)
+  figures_inspected: Fig. 4a (in-plane k vs loading), Fig. 4b (comparison with literature, skipped), Fig. 4c (out-of-plane k vs loading), Fig. 4d/4e (k vs temperature 25–125 °C for 95 wt%), Fig. 5c (MD simulation, skipped)
+  candidate_measurements: 15
+  rows_appended: 15
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 1 figure-only values not taken. There are 15 rows: neat SEBS in-plane, 7 in-plane hBN loadings (20, 30, 40, 50, 60, 80, 95 wt%) and 7 out-of-plane loadings (20, 30, 40, 50, 60, 80, 95 wt%). All are from text, measured by LFA 447 at 25 °C. The out-of-plane 4.4 W m−1 K−1 value is printed as 95 wt% in the abstract and as 90 wt% in the Results; it was recorded as 95 wt% and flagged. Skipped: neat-SEBS out-of-plane point in Fig. 4c (figure only, counted as 1); k vs temperature 25–125 °'
+  rows_rejected_at_append: []
+  rows_added:
+  - cb7a2d33-496
+  - cb7a2d33-497
+  - cb7a2d33-498
+  - cb7a2d33-499
+  - cb7a2d33-500
+  - cb7a2d33-501
+  - cb7a2d33-502
+  - cb7a2d33-503
+  - cb7a2d33-504
+  - cb7a2d33-505
+  - cb7a2d33-506
+  - cb7a2d33-507
+  - cb7a2d33-508
+  - cb7a2d33-509
+  - cb7a2d33-510
+measurements:
+- row_id: cb7a2d33-496
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: none
+  filler_material_original: pure SEBS film
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Solution in THF, precipitation in ethanol, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.2
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.2
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a (in-plane thermal conductivity): ''This enhancement was significant compared to the pure SEBS film (0.2 W m−1 K−1).'''
+  confidence: High
+  notes: Given in the in-plane discussion. The out-of-plane value of neat SEBS is not printed.
+- row_id: cb7a2d33-497
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 20 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 4.4
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 4.4
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c: ''The thermal conductivity of the hBN/SEBS composite film increased to 4.4 W m−1 K−1 with 20 wt% hBN.'''
+  confidence: High
+  notes: hBN from Dandong Rijin, purity >99.5%.
+- row_id: cb7a2d33-498
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 30 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 5.2
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 5.2
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c: ''When the filler loadings were 30 wt% and 40 wt%, the hBN/SEBS composite films exhibited thermal conductivity of about 5.2 and 6.7 W m−1 K−1, respectively.'''
+  confidence: Medium
+  notes: Printed as 'about 5.2'. k printed as approximate or as a bound, so Medium confidence.
+- row_id: cb7a2d33-499
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 40 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 6.7
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 6.7
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c: ''When the filler loadings were 30 wt% and 40 wt%, the hBN/SEBS composite films exhibited thermal conductivity of about 5.2 and 6.7 W m−1 K−1, respectively.'''
+  confidence: High
+  notes: Printed as 'about 6.7'. The paper puts the in-plane percolation threshold at 40 wt%.
+- row_id: cb7a2d33-500
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 50 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 10.0
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 10.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c: ''However, the values were about 10 W m−1 K−1 and 15 W m−1 K−1 with 50 wt% and 60 wt% hBN, respectively.'''
+  confidence: Medium
+  notes: Printed as 'about 10', a rounded value. k printed as approximate or as a bound, so Medium confidence.
+- row_id: cb7a2d33-501
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 60 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 15.0
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 15.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c: ''However, the values were about 10 W m−1 K−1 and 15 W m−1 K−1 with 50 wt% and 60 wt% hBN, respectively.'''
+  confidence: High
+  notes: Printed as 'about 15', a rounded value.
+- row_id: cb7a2d33-502
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 80 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 80.0
+  filler_loading_original_value: 80.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 27.5
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 27.5
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c: ''The thermal conductivity of the hBN/SEBS composite reached 27.5 W m−1 K−1 and 45 W m−1 K−1 when 80 wt% and 95 wt% hBN were added.'''
+  confidence: High
+- row_id: cb7a2d33-503
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 95 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 95.0
+  filler_loading_original_value: 95.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing (tightly packed layered structure)
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 45.0
+  k_direction: in-plane
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 45.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c: ''The thermal conductivity of the hBN/SEBS composite reached 27.5 W m−1 K−1 and 45 W m−1 K−1 when 80 wt% and 95 wt% hBN were added.'''
+  confidence: High
+  notes: Same value in abstract and conclusions ('about 45'). TGA residue confirms about 95 wt%. Temperature dependence (25–125 °C) only in Fig. 4d/4e.
+- row_id: cb7a2d33-504
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 20 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.4
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.4
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c (out-of-plane part): ''The 20 wt% hBN/SEBS composite film exhibited a thermal conductivity of 0.4 W m−1 K−1.'''
+  confidence: High
+  notes: k_matrix 0.2 is the neat SEBS value printed in the in-plane discussion. No out-of-plane neat SEBS value is printed.
+- row_id: cb7a2d33-505
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 30 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.6
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.6
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c (out-of-plane part): ''The hBN/SEBS composite films showed thermal conductivities of 0.6 W m−1 K−1, 0.8 W m−1 K−1, and 0.94 W m−1 K−1 when the hBN loadings were 30 wt%, 40 wt%, and 50 wt%, respectively.'''
+  confidence: High
+- row_id: cb7a2d33-506
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 40 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.8
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.8
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c (out-of-plane part): ''The hBN/SEBS composite films showed thermal conductivities of 0.6 W m−1 K−1, 0.8 W m−1 K−1, and 0.94 W m−1 K−1 when the hBN loadings were 30 wt%, 40 wt%, and 50 wt%, respectively.'''
+  confidence: High
+- row_id: cb7a2d33-507
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 50 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.94
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 0.94
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c (out-of-plane part): ''The hBN/SEBS composite films showed thermal conductivities of 0.6 W m−1 K−1, 0.8 W m−1 K−1, and 0.94 W m−1 K−1 when the hBN loadings were 30 wt%, 40 wt%, and 50 wt%, respectively.'''
+  confidence: High
+- row_id: cb7a2d33-508
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 60 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.3
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 1.3
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c (out-of-plane part): ''However, with the further addition of hBN to 60 wt%, the thermal conductivity improved to 1.3 W m−1 K−1, while 80 wt% and 90 wt% hBN/SEBS composite films exhibited thermal conductivity of about 3 W m−1 K−1 and 4.4 W m−1 K−1, respectively.'''
+  confidence: High
+  notes: The paper puts the out-of-plane percolation threshold at about 60 wt%.
+- row_id: cb7a2d33-509
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 80 wt% hBN/SEBS
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 80.0
+  filler_loading_original_value: 80.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 3.0
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 3.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, paragraph on Fig. 4a/4c (out-of-plane part): ''However, with the further addition of hBN to 60 wt%, the thermal conductivity improved to 1.3 W m−1 K−1, while 80 wt% and 90 wt% hBN/SEBS composite films exhibited thermal conductivity of about 3 W m−1 K−1 and 4.4 W m−1 K−1, respectively.'''
+  confidence: Medium
+  notes: Printed as 'about 3', a rounded value. k printed as approximate or as a bound, so Medium confidence.
+- row_id: cb7a2d33-510
+  matrix_polymer: SEBS (styrene–ethylene–butylene–styrene), Kraton G1652
+  filler_material: h-BN
+  filler_material_original: hBN, sample 95 wt% hBN/SEBS (written '90 wt%' in the Results text)
+  filler_shape: platelet
+  size_distribution: supplier 10–30 μm; in composite 5–25 μm lateral, about 180–270 nm thick
+  filler_loading_wt_pct: 95.0
+  filler_loading_original_value: 95.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: aligned in-plane by hot pressing (tightly packed layered structure)
+  processing_method: Solution mixing in THF with ball milling (24 h, 400 rpm), coagulation in ethanol, vacuum drying, hot pressing to 0.1 mm film (150 °C, 10 MPa, 15 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 4.4
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, NETZSCH LFA 447 (12.7 mm discs, graphite coated); Cp by DSC (NETZSCH DSC 200 F3); density from weight and dimensions; all at 25 °C
+  measurement_temperature_C: 25.0
+  k_original_value: 4.4
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract: ''An ultrahigh in-plane thermal conductivity of 45 W m−1 K−1 was achievable in the SEBS composite film with 95 wt% hBN. The corresponding out-of-plane thermal conductivity was also as high as 4.4 W m−1 K−1.'''
+  confidence: High
+  notes: 'Loading conflict: the abstract ties out-of-plane 4.4 W m−1 K−1 to the 95 wt% film, but the Results text says 4.4 for ''80 wt% and 90 wt%'' films. Recorded as 95 wt% following the abstract. The paper''s sample series elsewhere (TGA, SEM, CTE, Table 2) has 95 wt% and no 90 wt%, so ''90'' is most likely a typo. Flag for review.'

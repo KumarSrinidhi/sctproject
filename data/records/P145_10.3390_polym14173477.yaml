@@ -1,0 +1,72 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P145
+paper:
+  doi: 10.3390/polym14173477
+  title: 'Improving Thermal Conductivity of Injection Molded Polycarbonate/Boron Nitride Composites by Incorporating Spherical Alumina Particles: The Influence of Alumina Particle Size'
+  year: 2022
+  source_url: https://doi.org/10.3390/polym14173477
+extraction_log:
+- seq: 157
+  candidate_id: P6-P145
+  doi: 10.3390/polym14173477
+  paper_title: 'Improving Thermal Conductivity of Injection Molded Polycarbonate/Boron Nitride Composites by Incorporating Spherical Alumina Particles: The Influence of Alumina Particle Size'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym14173477.txt (cache, not committed)
+  tables_inspected: Table 1 (formulations only, no k values)
+  figures_inspected: Figure 1 (PC/Al2O3 λ, no BN), Figure 3 (through-plane and in-plane λ of PC/BN and PC/Al2O3/BN)
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 14 figure-only values not taken. Only PC/AL40B20 has printed k values (in-plane 2.95, through-plane 1.78). The text gives % differences vs PC/AS40B20 (94.1%, 63.3%) and vs pure PC (1183%, 710%) but not their absolute values; those were not back-calculated. Figure-only BN-containing points skipped: PC/B5, PC/B20, PC/AL20B5, PC/AL20B20, PC/AL40B5, PC/AS40B5, PC/AS40B20 × 2 directions = 14 (pure PC and PC/Al2O3-only points in Figures 1 and 3 not counted as they contain no BN). Measur'
+  rows_rejected_at_append: []
+  rows_added:
+  - 8a9ef05c-477
+  - 8a9ef05c-478
+measurements:
+- row_id: 8a9ef05c-477
+  matrix_polymer: polycarbonate (PC, Teijin L-1225M)
+  filler_material: BN/Al2O3 hybrid
+  filler_material_original: BN (35 µm) + 50 μm spherical Al2O3 (AL), sample PC/AL40B20 (PC/50 μm-Al2O3 40 wt%/BN 20 wt%)
+  filler_shape: 'BN: two-dimensional flaky/planar; Al2O3: spherical'
+  filler_mean_size_um: 35.0
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: BN preferentially oriented along melt flow direction; BN near Al2O3 particles partially deflected
+  processing_method: Twin-screw extrusion (240–260 °C, 30 rpm) then injection molding (melt 280 °C, mold 100 °C, 150 mm/s)
+  k_composite_W_mK: 2.95
+  k_direction: in-plane (along the flow direction)
+  measurement_method: Laser flash, NETZSCH LFA467; samples 25 mm diameter, 0.2 mm thick; reports in-plane and through-plane λ; five replicates
+  k_original_value: 2.95
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''For example, the through-plane λ and in-plane λ of PC/AL40B20 composites reached as high as 1.78 and 2.95 W/(mK), which were 710% and 1183% higher than those of pure PC, respectively.'''
+  confidence: High
+  notes: 'Hybrid total 60 wt%: BN 20 wt% + 50 µm spherical Al2O3 40 wt% (PC 40 wt%). filler_mean_size_um refers to BN (35 µm); Al2O3 is 50 µm. Pure PC k not printed (only the % enhancement). Also stated in Abstract, Section 3.3 and Conclusions.'
+- row_id: 8a9ef05c-478
+  matrix_polymer: polycarbonate (PC, Teijin L-1225M)
+  filler_material: BN/Al2O3 hybrid
+  filler_material_original: BN (35 µm) + 50 μm spherical Al2O3 (AL), sample PC/AL40B20 (PC/50 μm-Al2O3 40 wt%/BN 20 wt%)
+  filler_shape: 'BN: two-dimensional flaky/planar; Al2O3: spherical'
+  filler_mean_size_um: 35.0
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: BN preferentially oriented along melt flow direction; BN near Al2O3 particles partially deflected
+  processing_method: Twin-screw extrusion (240–260 °C, 30 rpm) then injection molding (melt 280 °C, mold 100 °C, 150 mm/s)
+  k_composite_W_mK: 1.78
+  k_direction: through-plane (perpendicular to the flow direction)
+  measurement_method: Laser flash, NETZSCH LFA467; samples 25 mm diameter, 0.2 mm thick; reports in-plane and through-plane λ; five replicates
+  k_original_value: 1.78
+  k_original_unit: W/(mK)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''For example, the through-plane λ and in-plane λ of PC/AL40B20 composites reached as high as 1.78 and 2.95 W/(mK), which were 710% and 1183% higher than those of pure PC, respectively.'''
+  confidence: High
+  notes: 'Hybrid total 60 wt%: BN 20 wt% + 50 µm spherical Al2O3 40 wt% (PC 40 wt%). filler_mean_size_um refers to BN (35 µm); Al2O3 is 50 µm. Pure PC k not printed (only the % enhancement).'

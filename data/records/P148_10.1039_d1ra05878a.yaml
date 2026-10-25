@@ -1,0 +1,95 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P148
+paper:
+  doi: 10.1039/d1ra05878a
+  title: 'Preparation of boron nitride nanosheets via polyethyleneimine assisted sand milling: towards thermal conductivity and insulation applications'
+  year: 2021
+  source_url: https://doi.org/10.1039/d1ra05878a
+extraction_log:
+- seq: 160
+  candidate_id: P6-P148
+  doi: 10.1039/d1ra05878a
+  paper_title: 'Preparation of boron nitride nanosheets via polyethyleneimine assisted sand milling: towards thermal conductivity and insulation applications'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1039_d1ra05878a.txt (cache, not committed)
+  tables_inspected: None (the paper has no tables in the main text)
+  figures_inspected: Fig. 5a (in-plane k vs filler content, h-BN/TPU and PEI@BNNS/TPU at 0.1, 0.5, 1, 3, 5 wt%); Fig. 5b (models only)
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 8 figure-only values not taken. Only three k values are printed (neat TPU, 5 wt% h-BN, 5 wt% PEI@BNNS), all in-plane by transient hot wire. The other loadings (0.1, 0.5, 1, 3 wt% for each filler, about 8 points) appear only in Fig. 5a and were skipped. The Lewis–Nielsen, parallel and series model curves (Fig. 5b) were not extracted. No measurement temperature is stated.
+  rows_rejected_at_append: []
+  rows_added:
+  - 944ad4c3-493
+  - 944ad4c3-494
+  - 944ad4c3-495
+measurements:
+- row_id: 944ad4c3-493
+  matrix_polymer: Thermoplastic polyurethane (TPU), BASF 1180A10
+  filler_material: none
+  filler_material_original: pure TPU (control)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Solution blending in DMF, co-precipitation in ethanol, vacuum drying, hot pressing (180 °C, 8 min unpressurised, then 10 MPa for 10 min)
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.22
+  k_direction: in-plane
+  measurement_method: Transient hot wire, TC 3000 thermal conductivity meter (Xi'an Xiaxi Electronic Technology), reported as in-plane k
+  k_original_value: 0.22
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, Characterizations of TPU composites, paragraph 2: ''Besides, the k of pure TPU is only 0.22 W m−1 K−1, while the k of 5 wt% h-BN/TPU composite is 0.45 W m−1 K−1, and that of 5 wt% PEI@BNNS/TPU composites is 0.61 W m−1 K−1, which are 2 times and 3 times of pure TPU, respectively.'''
+  confidence: High
+  notes: Neat TPU prepared by the same route as the composites. Measurement temperature not stated.
+- row_id: 944ad4c3-494
+  matrix_polymer: Thermoplastic polyurethane (TPU), BASF 1180A10
+  filler_material: h-BN
+  filler_material_original: h-BN, sample 5 wt% h-BN/TPU
+  filler_shape: platelet
+  filler_mean_size_um: 5.0
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: partial in-plane orientation from hot pressing (XRD I002/I100 increases with content)
+  processing_method: Solution blending in DMF, co-precipitation in ethanol, vacuum drying, hot pressing (180 °C, 8 min unpressurised, then 10 MPa for 10 min)
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.45
+  k_direction: in-plane
+  measurement_method: Transient hot wire, TC 3000 thermal conductivity meter (Xi'an Xiaxi Electronic Technology), reported as in-plane k
+  k_original_value: 0.45
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, Characterizations of TPU composites, paragraph 2: ''Besides, the k of pure TPU is only 0.22 W m−1 K−1, while the k of 5 wt% h-BN/TPU composite is 0.45 W m−1 K−1, and that of 5 wt% PEI@BNNS/TPU composites is 0.61 W m−1 K−1, which are 2 times and 3 times of pure TPU, respectively.'''
+  confidence: High
+  notes: Pristine h-BN (Shandong Qingzhou, average particle size 5 μm, purity >99%) control composite. Lower loadings (0.1–3 wt%) only in Fig. 5a.
+- row_id: 944ad4c3-495
+  matrix_polymer: Thermoplastic polyurethane (TPU), BASF 1180A10
+  filler_material: BNNS
+  filler_material_original: PEI@BNNS (PEI-functionalized h-BN nanosheets), sample 5 wt% PEI@BNNS/TPU
+  filler_shape: nanosheet
+  filler_mean_size_um: 0.3
+  size_distribution: lateral size about 300 nm, thickness about 2.4 nm (AFM, 7–8 layers)
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: polyethyleneimine (PEI) grafting during sand-milling exfoliation (grafting rate 18.6% by TGA)
+  filler_alignment: in-plane orientation from hot pressing, higher than h-BN (XRD I002/I100)
+  processing_method: h-BN exfoliated by PEI-assisted sand milling (2000 rpm, 8 h); composite by solution blending in DMF, co-precipitation in ethanol, vacuum drying, hot pressing (180 °C, 8 min unpressurised, then 10 MPa for 10 min)
+  k_matrix_W_mK: 0.22
+  k_composite_W_mK: 0.61
+  k_direction: in-plane
+  measurement_method: Transient hot wire, TC 3000 thermal conductivity meter (Xi'an Xiaxi Electronic Technology), reported as in-plane k
+  k_original_value: 0.61
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results and discussion, Characterizations of TPU composites, paragraph 2: ''Besides, the k of pure TPU is only 0.22 W m−1 K−1, while the k of 5 wt% h-BN/TPU composite is 0.45 W m−1 K−1, and that of 5 wt% PEI@BNNS/TPU composites is 0.61 W m−1 K−1, which are 2 times and 3 times of pure TPU, respectively.'''
+  confidence: High
+  notes: Same value repeated in abstract and conclusion. Loading wt% includes the PEI coating. Lower loadings (0.1, 0.5, 1, 3 wt%) only in Fig. 5a.

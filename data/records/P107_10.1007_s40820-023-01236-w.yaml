@@ -1,0 +1,152 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P107
+paper:
+  doi: 10.1007/s40820-023-01236-w
+  title: Coaxial Wet Spinning of Boron Nitride Nanosheet-Based Composite Fibers with Enhanced Thermal Conductivity and Mechanical Strength
+  year: 2023
+  source_url: https://doi.org/10.1007/s40820-023-01236-w
+extraction_log:
+- seq: 119
+  candidate_id: P6-P107
+  doi: 10.1007/s40820-023-01236-w
+  paper_title: Coaxial Wet Spinning of Boron Nitride Nanosheet-Based Composite Fibers with Enhanced Thermal Conductivity and Mechanical Strength
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1007_s40820-023-01236-w.txt (cache, not committed)
+  tables_inspected: none in the main text (Tables S1 and S2 are in the SI, which was not available; S2 is a literature comparison)
+  figures_inspected: Fig. 4a (k of Co-0%, Co-12%, Uni-0% and Uni-12% at 50 wt%) and Fig. 4c (k vs BNNS loading compared with the literature); captions only. SI Figs. S17–S21 were not available.
+  candidate_measurements: 6
+  rows_appended: 6
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 14 figure-only values not taken. Six printed fiber k values. No neat-ANF fiber k is printed. Single fibers measured by TET give k along the fiber axis, recorded as ''in-plane (axial...)''. The text names no BNNS functionalization; exfoliation was done by shear mixing in TfOH with sodium cholate. The other loadings in Fig. 4c (dopes at 10–90 wt% for coaxial and uniaxial fibers, data in Figs. S17–S21) are figure-only: figure_only_skipped = 14 is an estimate (9 loadings × 2 fiber types'
+  rows_rejected_at_append: []
+  rows_added:
+  - 5500866a-309
+  - 5500866a-310
+  - 5500866a-311
+  - 5500866a-312
+  - 5500866a-313
+  - 5500866a-314
+measurements:
+- row_id: 5500866a-309
+  matrix_polymer: Aramid nanofibers (ANF, from Kevlar 1414), coaxial fiber with pure-ANF core and ANF/BNNSs sheath
+  filler_material: BNNS
+  filler_material_original: BNNSs (exfoliated from h-BN in TfOH), coaxial ANF/BNNSs fiber Co-0% (50 wt% BNNSs in sheath, 0% hot-drawing strain)
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt% (BNNSs in sheath dope)
+  filler_alignment: axially aligned in the sheath by wet-spinning flow; Herman orientation parameter 0.66 (no hot drawing)
+  processing_method: Coaxial wet spinning (22G core / 17G sheath needle; core 0.2 mL/min pure ANF-TfOH, sheath 0.4 mL/min ANF/BNNSs-TfOH) into water coagulation bath, washed, dried at 80 °C for 15 min at 0% tensile strain
+  k_composite_W_mK: 9.14
+  k_direction: in-plane (axial, along the fiber axis)
+  measurement_method: Transient electro-thermal (TET) technique; specific heat by DSC (TA DSC Q2000)
+  k_original_value: 9.14
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Enhanced Thermal Conductive and Mechanical Properties of Coaxial Fiber'', paragraph 1 (Fig. 4a): ''As depicted in Fig. 4a, the coaxial fibers prepared under a 12% tensile strain (Co-12%) in hot drawing exhibit a substantial improvement in thermal conductivity, with an increase of 48% from 9.14 to 13.5 W m−1 K−1.'''
+  confidence: High
+  notes: 9.14 is the starting value, i.e. sample Co-0% (Fig. 4a compares Co-0% and Co-12%). The 50 wt% loading is the BNNS content of the sheath dope; the whole-fiber BNNS wt% for this sample is not printed, so filler_loading_wt_pct is null. Lateral size given as ~1.0 μm. Heat flow is along the fiber axis (TET on single fibers); axial is mapped to 'in-plane'.
+- row_id: 5500866a-310
+  matrix_polymer: Aramid nanofibers (ANF, from Kevlar 1414), coaxial fiber with pure-ANF core and ANF/BNNSs sheath
+  filler_material: BNNS
+  filler_material_original: BNNSs (exfoliated from h-BN in TfOH), coaxial ANF/BNNSs fiber Co-12% (50 wt% BNNSs in sheath, 12% hot-drawing strain)
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt% (BNNSs in sheath dope)
+  filler_alignment: highly axially aligned and densely stacked across the sheath; Herman orientation parameter 0.81; fiber density 2.09 g/cm3
+  processing_method: Coaxial wet spinning (22G core / 17G sheath needle) into water coagulation bath, washed, hot drawn at 80 °C for 15 min with 12% tensile strain
+  k_composite_W_mK: 13.5
+  k_direction: in-plane (axial, along the fiber axis)
+  measurement_method: Transient electro-thermal (TET) technique; specific heat by DSC (TA DSC Q2000)
+  k_original_value: 13.5
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Enhanced Thermal Conductive and Mechanical Properties of Coaxial Fiber'', paragraph 1 (Fig. 4a): ''As depicted in Fig. 4a, the coaxial fibers prepared under a 12% tensile strain (Co-12%) in hot drawing exhibit a substantial improvement in thermal conductivity, with an increase of 48% from 9.14 to 13.5 W m−1 K−1.'''
+  confidence: High
+  notes: The text also states that Co-12% is 4.41 W/m K above Co-0%; this does not quite match 13.5 − 9.14 = 4.36, an inconsistency in the paper. The sheath-dope loading is 50 wt%; the whole-fiber wt% is not printed.
+- row_id: 5500866a-311
+  matrix_polymer: Aramid nanofibers (ANF, from Kevlar 1414), uniaxial fiber
+  filler_material: BNNS
+  filler_material_original: BNNSs (exfoliated from h-BN in TfOH), uniaxial ANF/BNNSs fiber Uni-0% (50 wt% BNNSs, 0% hot-drawing strain)
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  filler_alignment: partially axially aligned (flow-induced); Herman orientation parameter 0.57 (no hot drawing)
+  processing_method: Uniaxial wet spinning (17G needle) into water coagulation bath, washed, dried at 80 °C for 15 min at 0% tensile strain
+  k_composite_W_mK: 5.22
+  k_direction: in-plane (axial, along the fiber axis)
+  measurement_method: Transient electro-thermal (TET) technique; specific heat by DSC (TA DSC Q2000)
+  k_original_value: 5.22
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Enhanced Thermal Conductive and Mechanical Properties of Coaxial Fiber'', paragraph 1 (Fig. 4a): ''On the other hand, the uniaxial fibers prepared under the same tensile strain (denoted by Uni-12%) only experience a modest 18% rise in thermal conductivity, reaching 6.18 W m−1 K−1 from an initial value of 5.22 W m−1 K−1.'''
+  confidence: High
+  notes: 5.22 is the initial value, i.e. sample Uni-0%. A uniaxial fiber is a single ANF/BNNSs dope, so 50 wt% is the whole-fiber BNNS content.
+- row_id: 5500866a-312
+  matrix_polymer: Aramid nanofibers (ANF, from Kevlar 1414), uniaxial fiber
+  filler_material: BNNS
+  filler_material_original: BNNSs (exfoliated from h-BN in TfOH), uniaxial ANF/BNNSs fiber Uni-12% (50 wt% BNNSs, 12% hot-drawing strain)
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  filler_alignment: axially aligned mainly within ~15 μm of the surface, random in the core; Herman orientation parameter 0.65; fiber density 1.72 g/cm3
+  processing_method: Uniaxial wet spinning (17G needle) into water coagulation bath, washed, hot drawn at 80 °C for 15 min with 12% tensile strain
+  k_composite_W_mK: 6.18
+  k_direction: in-plane (axial, along the fiber axis)
+  measurement_method: Transient electro-thermal (TET) technique; specific heat by DSC (TA DSC Q2000)
+  k_original_value: 6.18
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Enhanced Thermal Conductive and Mechanical Properties of Coaxial Fiber'', paragraph 1 (Fig. 4a): ''On the other hand, the uniaxial fibers prepared under the same tensile strain (denoted by Uni-12%) only experience a modest 18% rise in thermal conductivity, reaching 6.18 W m−1 K−1 from an initial value of 5.22 W m−1 K−1.'''
+  confidence: High
+  notes: Sample Uni-12%. The introduction gives 6.6 W/m K for 'the uniaxial fibers' without naming a sample; that value was not extracted.
+- row_id: 5500866a-313
+  matrix_polymer: Aramid nanofibers (ANF, from Kevlar 1414), coaxial fiber with pure-ANF core and ANF/BNNSs sheath
+  filler_material: BNNS
+  filler_material_original: BNNSs (exfoliated from h-BN in TfOH), optimised coaxial ANF/BNNSs fiber with 70 wt% BNNSs in sheath (~60 wt% in whole fiber)
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt% (BNNSs in sheath)
+  filler_alignment: axially aligned in the sheath (the orientation parameter for this loading is not printed in the main text)
+  processing_method: Coaxial wet spinning (22G core / 17G sheath needle) into water coagulation bath, washed, hot drawn at 80 °C for 15 min (strain not restated; 12% was the selected optimum)
+  k_composite_W_mK: 17.2
+  k_direction: in-plane (axial, along the fiber axis)
+  measurement_method: Transient electro-thermal (TET) technique; specific heat by DSC (TA DSC Q2000)
+  k_original_value: 17.2
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Enhanced Thermal Conductive and Mechanical Properties of Coaxial Fiber'', paragraph 3 (Fig. 4c): ''The optimized thermal conductivity of the coaxial fibers (17.2 W m−1 K−1 BNNSs content 70 wt% at outer sheath) three times of the maximum thermal conductivity achieved by the uniaxial fibers (6.74 W m−1 K−1 at overall BNNSs content 70 wt%).'''
+  confidence: High
+  notes: Sheath loading 70 wt%. The paper says this corresponds to 'approximately' 60 wt% BNNSs in the whole coaxial fiber, which is the value in filler_loading_wt_pct. 17.2 is also printed in the highlights, introduction and conclusions. Tensile strength 192.5 MPa. The hot-drawing strain is not restated for this sample (presumably 12%).
+- row_id: 5500866a-314
+  matrix_polymer: Aramid nanofibers (ANF, from Kevlar 1414), uniaxial fiber
+  filler_material: BNNS
+  filler_material_original: BNNSs (exfoliated from h-BN in TfOH), uniaxial ANF/BNNSs fiber at 70 wt% overall BNNSs (maximum of uniaxial series)
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  filler_alignment: axially aligned mainly near the surface (the orientation parameter for this loading is not printed in the main text)
+  processing_method: Uniaxial wet spinning (17G needle) into water coagulation bath, washed, hot drawn at 80 °C for 15 min (strain not restated)
+  k_composite_W_mK: 6.74
+  k_direction: in-plane (axial, along the fiber axis)
+  measurement_method: Transient electro-thermal (TET) technique; specific heat by DSC (TA DSC Q2000)
+  k_original_value: 6.74
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Enhanced Thermal Conductive and Mechanical Properties of Coaxial Fiber'', paragraph 3 (Fig. 4c): ''The optimized thermal conductivity of the coaxial fibers (17.2 W m−1 K−1 BNNSs content 70 wt% at outer sheath) three times of the maximum thermal conductivity achieved by the uniaxial fibers (6.74 W m−1 K−1 at overall BNNSs content 70 wt%).'''
+  confidence: High
+  notes: Maximum k of the uniaxial series, at 70 wt% overall BNNS content.

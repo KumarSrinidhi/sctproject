@@ -1,11 +1,12 @@
 {
-  "series": 17,
-  "points": 73,
-  "papers": 9,
+  "series": 26,
+  "points": 118,
+  "papers": 16,
   "by_filler": {
-    "h-BN": 7,
-    "BNNS": 6,
-    "BN": 4
+    "h-BN": 11,
+    "BNNS": 8,
+    "BN": 5,
+    "AlN": 2
   },
   "free_parameters": {
     "maxwell_kf": 1,
@@ -14,59 +15,59 @@
     "nan_rk": 1
   },
   "best_model_count": {
-    "agari": 13,
-    "ln_A": 2,
-    "nan_rk": 2
+    "agari": 18,
+    "ln_A": 5,
+    "nan_rk": 3
   },
   "note": "best_model compares RMSE only; agari has 2 free parameters vs 1 for the others, so with 3-5 points per series it is favoured by construction.",
   "median_rmse_log10": {
-    "maxwell_kf": 0.303,
+    "maxwell_kf": 0.3575,
     "ln_A": 0.04416,
-    "agari": 0.01928,
-    "nan_rk": 0.07787
+    "agari": 0.0202,
+    "nan_rk": 0.08475
   },
   "maxwell_ceiling": {
-    "rows_with_phi": 226,
-    "above_maxwell_ceiling": 222,
-    "share": 0.982
+    "rows_with_phi": 410,
+    "above_maxwell_ceiling": 396,
+    "share": 0.966
   },
   "parameters": {
     "maxwell_kf_apparent": {
       "n": 0,
       "median": null,
       "iqr": null,
-      "series_at_upper_bound": 17
+      "series_at_upper_bound": 26
     },
     "lewis_nielsen_A": {
-      "n": 15,
+      "n": 23,
       "median": 13.6,
       "iqr": [
-        6.09,
-        21.9
+        5.67,
+        22.6
       ]
     },
     "agari_C2": {
-      "n": 17,
-      "median": 0.8507,
+      "n": 26,
+      "median": 0.7922,
       "iqr": [
-        0.637,
-        1.92
+        0.538,
+        1.99
       ]
     },
     "nan_R_K_m2K_W": {
-      "n": 11,
-      "median": 6.81e-07,
+      "n": 14,
+      "median": 6.24e-07,
       "iqr": [
-        2.51e-07,
-        1.05e-06
+        1.3e-07,
+        9.44e-07
       ],
       "convention": "semi-axis (Nan 1997)",
-      "series_above_perfect_interface": 7
+      "series_above_perfect_interface": 13
     }
   },
   "dataset": {
-    "rows": 258,
-    "papers": 95,
-    "sha256": "12ef8fe97057dafc"
+    "rows": 639,
+    "papers": 174,
+    "sha256": "893ecb8f094a61fb"
   }
 }

@@ -65,15 +65,44 @@ def test_licence_statement_counts_match_the_stored_full_texts(repo_layout):
     data = (repo_layout.root / "LICENSE-DATA.md").read_text(encoding="utf-8")
     assert f"Of the {len(lic)} stored full texts (`*.txt`), {len(by)} state a CC BY licence" in data
     assert f"The other {len(none)} do not state a licence" in data
-    assert all(stem in data for stem in nc) and len(nc) == 2
+    assert not nc, f"non-commercial full texts must not be stored in the repository: {nc}"
 
 
-def test_known_licences_are_detected(repo_layout):
-    lic = fulltext_licences(repo_layout)
-    if not lic:
-        pytest.skip("no stored full texts")
-    assert lic.get("10.3740_mrsk.2023.33.12.503") == ("NC", "3.0")  # URL split across a line break
-    assert lic.get("10.1177_09673911221110143") == ("NC", "4.0")
+def test_known_licences_are_detected(tmp_path):
+    from argus.paths import Layout
+
+    ft = tmp_path / "work" / "fulltext"
+    ft.mkdir(parents=True)
+    # wording as it appears in the papers that used to be stored here
+    (ft / "a.txt").write_text("distributed under the terms of the Creative Commons Attribution Non-Commercial "
+                              "License (http://creative-\ncommons.org/licenses/by-nc/3.0) which permits",
+                              encoding="utf-8")  # URL split across a line break (as in 10.3740/mrsk.2023.33.12.503)
+    (ft / "b.txt").write_text("Creative Commons Attribution-NonCommercial 4.0 License "
+                              "(https://creativecommons.org/licenses/by-nc/4.0/)", encoding="utf-8")
+    (ft / "c.txt").write_text("distributed under the Creative Commons Attribution (CC BY) license "
+                              "(https://creativecommons.org/licenses/by/4.0/)", encoding="utf-8")
+    (ft / "d.txt").write_text("All rights reserved.", encoding="utf-8")
+    lic = fulltext_licences(Layout(tmp_path))
+    assert lic == {"a": ("NC", "3.0"), "b": ("NC", "4.0"), "c": ("BY", "4.0"), "d": ("none", None)}
+
+
+def test_every_stored_third_party_file_is_cc_by_and_inventoried(repo_layout):
+    import csv
+    import subprocess
+
+    inv = {r["path"]: r for r in csv.DictReader(open(repo_layout.legacy / "THIRD_PARTY.csv", encoding="utf-8"))}
+    try:
+        tracked = subprocess.run(["git", "ls-files", "work/fulltext", "work/phase4_browser", "work/figures"],
+                                 cwd=repo_layout.root, capture_output=True, text=True, check=True,
+                                 stdin=subprocess.DEVNULL).stdout.split()  # pytest's stdin handle is invalid on Windows
+    except (OSError, subprocess.CalledProcessError) as e:
+        pytest.skip(f"not a git checkout ({type(e).__name__}: {getattr(e, 'stderr', '') or e})")
+    assert tracked, "expected tracked third-party files"
+    missing = [p for p in tracked if p not in inv]
+    assert not missing, f"third-party files without a licence entry in work/THIRD_PARTY.csv: {missing}"
+    assert all(inv[p]["licence"] == "CC BY" and inv[p]["evidence"] for p in tracked)
+    stale = [p for p in inv if p not in tracked]
+    assert not stale, f"work/THIRD_PARTY.csv lists files that are not in the repository: {stale}"
 
 
 def test_datapackage_carries_licence_and_authors(repo_layout):
@@ -85,3 +114,49 @@ def test_datapackage_carries_licence_and_authors(repo_layout):
 def test_toolkit_version_is_consistent(repo_layout):
     py = (repo_layout.root / "pyproject.toml").read_text(encoding="utf-8")
     assert f'version = "{__version__}"' in py
+
+
+def test_zenodo_metadata_matches_dataset_yaml(repo_layout):
+    from argus.release import zenodo_metadata
+
+    meta = dataset_meta(repo_layout)
+    z = zenodo_metadata(meta)
+    assert z["upload_type"] == "dataset" and z["license"] == "cc-by-4.0" and z["version"] == meta["version"]
+    assert [c["name"] for c in z["creators"]] == ["Kumar, Aniket", "Reddy, Rao Kumar Srinidhi"]
+    assert z["publication_date"] == str(meta["released"]) and z["keywords"] == meta["keywords"]
+    committed = json.loads((repo_layout.root / ".zenodo.json").read_text(encoding="utf-8"))
+    assert committed == z, "run `argus build` to regenerate .zenodo.json"
+
+
+def test_doi_flows_into_citation_files():
+    from argus.release import zenodo_metadata
+
+    meta = {"title": "T", "version": "1.2.0", "released": "2027-01-01", "license": "CC-BY-4.0",
+            "authors": [{"given-names": "Aniket", "family-names": "Kumar"}], "homepage": "https://example.org",
+            "doi": "10.5281/zenodo.123", "publisher": "Zenodo"}
+    assert citation_text(meta).endswith("[Data set]. Zenodo. https://doi.org/10.5281/zenodo.123")
+    assert 'doi: "10.5281/zenodo.123"' in citation_cff(meta)
+    assert zenodo_metadata(meta)["doi"] == "10.5281/zenodo.123"
+
+
+def test_bundle_is_reproducible_and_holds_only_dataset_files(repo_layout, tmp_path):
+    import hashlib
+    import zipfile
+
+    from argus.release import build_bundle
+
+    p1, h1 = build_bundle(repo_layout, tmp_path / "a")
+    p2, h2 = build_bundle(repo_layout, tmp_path / "b")
+    assert h1 == h2 and p1.read_bytes() == p2.read_bytes()
+    names = zipfile.ZipFile(p1).namelist()
+    top = names[0].split("/")[0]
+    rel = [n.split("/", 1)[1] for n in names]
+    assert top == f"ARGUS-dataset-v{dataset_meta(repo_layout)['version']}"
+    assert "thermal_conductivity_dataset.csv" in rel and "datapackage.json" in rel and "SHA256SUMS.txt" in rel
+    assert not any(r.startswith(("work/", "src/", "tests/", "local_archive/", "data/external/")) for r in rel)
+    assert not any("OPENALEX" in r or r.endswith((".py", ".pdf")) for r in rel)
+    z = zipfile.ZipFile(p1)
+    sums = dict(line.split("  ", 1)[::-1] for line in z.read(f"{top}/SHA256SUMS.txt").decode().splitlines())
+    for r in rel:
+        if r != "SHA256SUMS.txt":
+            assert hashlib.sha256(z.read(f"{top}/{r}")).hexdigest() == sums[r]

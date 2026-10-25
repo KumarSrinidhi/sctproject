@@ -91,23 +91,385 @@
       "k_a": 3.824,
       "k_b": 0.56,
       "ratio": 6.83
+    },
+    {
+      "paper_id": "P099",
+      "doi": "10.3390/polym13030459",
+      "filler": "h-BN",
+      "shape": "spherical assemblies of h-BN sheets",
+      "alignment": "none (hypergravity-induced settling/accumulation; near-isotropic k)",
+      "phi_vol_pct": 24.476,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 3.2,
+      "k_b": 4.0,
+      "ratio": 0.8
+    },
+    {
+      "paper_id": "P099",
+      "doi": "10.3390/polym13030459",
+      "filler": "h-BN",
+      "shape": "spherical assemblies of h-BN sheets",
+      "alignment": "none (isotropic k in middle position)",
+      "phi_vol_pct": 24.476,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 3.2,
+      "k_b": 3.2,
+      "ratio": 1.0
+    },
+    {
+      "paper_id": "P100",
+      "doi": "10.3390/polym18020291",
+      "filler": "BNNS",
+      "shape": "nanosheets / platelets",
+      "alignment": "aligned along injection flow direction (in-plane of disc)",
+      "phi_vol_pct": 8.388,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 1.26,
+      "k_b": 0.4,
+      "ratio": 3.15
+    },
+    {
+      "paper_id": "P100",
+      "doi": "10.3390/polym18020291",
+      "filler": "BNNS",
+      "shape": "nanosheets / platelets",
+      "alignment": "random (no orientation)",
+      "phi_vol_pct": 8.388,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 0.41,
+      "k_b": 0.42,
+      "ratio": 0.976
+    },
+    {
+      "paper_id": "P104",
+      "doi": "10.3390/polym14050852",
+      "filler": "none",
+      "shape": "",
+      "alignment": "",
+      "phi_vol_pct": 0.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 0.39,
+      "k_b": 0.4,
+      "ratio": 0.975
+    },
+    {
+      "paper_id": "P118",
+      "doi": "10.3390/nano12162815",
+      "filler": "h-BN/Al2O3 hybrid",
+      "shape": "h-BN platelets; Al2O3 spherical",
+      "alignment": "h-BN partially aligned in-plane by bar-coating",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 1.62,
+      "k_b": 0.86,
+      "ratio": 1.88
+    },
+    {
+      "paper_id": "P118",
+      "doi": "10.3390/nano12162815",
+      "filler": "h-BN/Al2O3 hybrid",
+      "shape": "h-BN platelets (3 mm × 3 mm square patterns, 130 μm thick); Al2O3 spherical",
+      "alignment": "h-BN aligned parallel (in-plane) by hot pressing",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 4.99,
+      "k_b": 1.68,
+      "ratio": 2.97
+    },
+    {
+      "paper_id": "P119",
+      "doi": "10.1007/s40820-023-01257-5",
+      "filler": "BN",
+      "shape": "",
+      "alignment": "m-BN oriented in-plane (nacre-mimetic layered structure)",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 9.68,
+      "k_b": 0.84,
+      "ratio": 11.5
+    },
+    {
+      "paper_id": "P119",
+      "doi": "10.1007/s40820-023-01257-5",
+      "filler": "BN",
+      "shape": "",
+      "alignment": "BN partially agglomerated in PNF matrix (per paper)",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 7.72,
+      "k_b": 0.71,
+      "ratio": 10.9
+    },
+    {
+      "paper_id": "P128",
+      "doi": "10.1007/s40820-022-00972-9",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "lamellar BN at top and bottom surfaces with vertically connected BN chains inside (nano-CT)",
+      "phi_vol_pct": 16.387,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 20.3,
+      "k_b": 21.3,
+      "ratio": 0.953
+    },
+    {
+      "paper_id": "P134",
+      "doi": "10.3390/polym11101638",
+      "filler": "BNNS",
+      "shape": "nanosheet",
+      "alignment": "layer-aligned in-plane by hot pressing (<cos2θ> ≈ 0.83)",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 4.65,
+      "k_b": 1.94,
+      "ratio": 2.4
+    },
+    {
+      "paper_id": "P145",
+      "doi": "10.3390/polym14173477",
+      "filler": "BN/Al2O3 hybrid",
+      "shape": "BN: two-dimensional flaky/planar; Al2O3: spherical",
+      "alignment": "BN preferentially oriented along melt flow direction; BN near Al2O3 particles partially deflected",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 2.95,
+      "k_b": 1.78,
+      "ratio": 1.66
+    },
+    {
+      "paper_id": "P149",
+      "doi": "10.1039/c8ra04700f",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "aligned in-plane by hot pressing",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 4.4,
+      "k_b": 0.4,
+      "ratio": 11.0
+    },
+    {
+      "paper_id": "P149",
+      "doi": "10.1039/c8ra04700f",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "aligned in-plane by hot pressing",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 5.2,
+      "k_b": 0.6,
+      "ratio": 8.67
+    },
+    {
+      "paper_id": "P149",
+      "doi": "10.1039/c8ra04700f",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "aligned in-plane by hot pressing",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 6.7,
+      "k_b": 0.8,
+      "ratio": 8.38
+    },
+    {
+      "paper_id": "P149",
+      "doi": "10.1039/c8ra04700f",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "aligned in-plane by hot pressing",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 10.0,
+      "k_b": 0.94,
+      "ratio": 10.6
+    },
+    {
+      "paper_id": "P149",
+      "doi": "10.1039/c8ra04700f",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "aligned in-plane by hot pressing",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 15.0,
+      "k_b": 1.3,
+      "ratio": 11.5
+    },
+    {
+      "paper_id": "P149",
+      "doi": "10.1039/c8ra04700f",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "aligned in-plane by hot pressing",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 27.5,
+      "k_b": 3.0,
+      "ratio": 9.17
+    },
+    {
+      "paper_id": "P149",
+      "doi": "10.1039/c8ra04700f",
+      "filler": "h-BN",
+      "shape": "platelet",
+      "alignment": "aligned in-plane by hot pressing (tightly packed layered structure)",
+      "phi_vol_pct": null,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 45.0,
+      "k_b": 4.4,
+      "ratio": 10.2
+    },
+    {
+      "paper_id": "P153",
+      "doi": "10.3390/polym17192580",
+      "filler": "h-BN",
+      "shape": "platelet (flakes, lateral size ~5–10 μm by SEM)",
+      "alignment": "h-BN platelets aligned in-plane during processing (as described by the authors)",
+      "phi_vol_pct": 30.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 2.45,
+      "k_b": 0.96,
+      "ratio": 2.55
+    },
+    {
+      "paper_id": "P153",
+      "doi": "10.3390/polym17192580",
+      "filler": "h-BN/SiC hybrid",
+      "shape": "h-BN platelets with SiC nanoparticles (quasi-spherical) anchored on surface/edges",
+      "alignment": "h-BN platelets aligned in-plane during processing (as described by the authors)",
+      "phi_vol_pct": 70.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 3.32,
+      "k_b": 1.16,
+      "ratio": 2.86
+    },
+    {
+      "paper_id": "P153",
+      "doi": "10.3390/polym17192580",
+      "filler": "h-BN/SiC hybrid",
+      "shape": "h-BN platelets with SiC nanoparticles (quasi-spherical) anchored on surface/edges",
+      "alignment": "h-BN platelets aligned in-plane during processing (as described by the authors)",
+      "phi_vol_pct": 70.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 4.59,
+      "k_b": 1.61,
+      "ratio": 2.85
+    },
+    {
+      "paper_id": "P153",
+      "doi": "10.3390/polym17192580",
+      "filler": "h-BN/SiC hybrid",
+      "shape": "h-BN platelets with SiC nanoparticles (quasi-spherical) anchored on surface/edges",
+      "alignment": "h-BN platelets aligned in-plane during processing (as described by the authors)",
+      "phi_vol_pct": 70.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 4.72,
+      "k_b": 1.42,
+      "ratio": 3.32
+    },
+    {
+      "paper_id": "P153",
+      "doi": "10.3390/polym17192580",
+      "filler": "h-BN/SiC hybrid",
+      "shape": "h-BN platelets with SiC nanoparticles (quasi-spherical) anchored on surface/edges",
+      "alignment": "h-BN platelets aligned in-plane during processing (as described by the authors)",
+      "phi_vol_pct": 70.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 4.85,
+      "k_b": 1.27,
+      "ratio": 3.82
+    },
+    {
+      "paper_id": "P153",
+      "doi": "10.3390/polym17192580",
+      "filler": "h-BN/SiC hybrid",
+      "shape": "h-BN platelets with SiC nanoparticles (quasi-spherical) anchored on surface/edges",
+      "alignment": "h-BN platelets aligned in-plane during processing (as described by the authors)",
+      "phi_vol_pct": 70.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 4.93,
+      "k_b": 1.14,
+      "ratio": 4.32
+    },
+    {
+      "paper_id": "P153",
+      "doi": "10.3390/polym17192580",
+      "filler": "h-BN/SiC hybrid",
+      "shape": "h-BN platelets with SiC nanoparticles (quasi-spherical) anchored on surface/edges",
+      "alignment": "h-BN platelets aligned in-plane during processing (as described by the authors)",
+      "phi_vol_pct": 70.0,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 5.12,
+      "k_b": 1.09,
+      "ratio": 4.7
+    },
+    {
+      "paper_id": "P155",
+      "doi": "10.3390/nano12193473",
+      "filler": "BN",
+      "shape": "sheets (mixture of BNNS and BN thick sheets after ball milling)",
+      "alignment": "platelets tend to align horizontally (in-plane) during hot pressing, more so at ≥20 wt%",
+      "phi_vol_pct": 20.127,
+      "a_label": "in-plane",
+      "b_label": "through-plane",
+      "k_a": 2.31,
+      "k_b": 0.512,
+      "ratio": 4.51
     }
   ],
   "anisotropy": {
-    "n_pairs": 7,
+    "n_pairs": 34,
     "papers": [
       "P031",
       "P078",
       "P082",
-      "P088"
+      "P088",
+      "P099",
+      "P100",
+      "P104",
+      "P118",
+      "P119",
+      "P128",
+      "P134",
+      "P145",
+      "P149",
+      "P153",
+      "P155"
     ],
-    "A_median": 6.73,
-    "A_min": 0.963,
-    "A_max": 7.67,
+    "A_median": 4.07,
+    "A_min": 0.8,
+    "A_max": 11.5,
     "implied_isotropic_sensor_over_through_plane": {
-      "at_A_median": 2.59,
-      "at_A_min": 0.981,
-      "at_A_max": 2.77,
+      "at_A_median": 2.02,
+      "at_A_min": 0.894,
+      "at_A_max": 3.4,
       "basis": "k_TPS ~ sqrt(k_in k_through) => k_TPS / k_through = sqrt(A)"
     }
   },
@@ -116,8 +478,8 @@
     "main": {
       "spec": "main",
       "description": "All single-filler BN-platelet rows with a loading",
-      "n": 190,
-      "papers": 65,
+      "n": 327,
+      "papers": 102,
       "response": "log10(k / k_matrix_effective)",
       "reference": "laser flash (LFA), h-BN/BN, direction not in-plane",
       "covariates": [
@@ -132,139 +494,139 @@
         "method:UNSPECIFIED"
       ],
       "rows_per_method_group": {
-        "MIXED": 82,
-        "LFA": 45,
-        "STEADY": 8,
-        "UNSPECIFIED": 51,
-        "OTHER": 4
+        "MIXED": 139,
+        "LFA": 89,
+        "STEADY": 23,
+        "UNSPECIFIED": 56,
+        "OTHER": 20
       },
       "papers_per_method_group": {
-        "MIXED": 14,
-        "LFA": 15,
-        "STEADY": 3,
-        "UNSPECIFIED": 31,
-        "OTHER": 2
+        "MIXED": 34,
+        "LFA": 24,
+        "STEADY": 7,
+        "UNSPECIFIED": 34,
+        "OTHER": 3
       },
       "effects": {
         "BNNS": {
-          "factor": 1.39,
+          "factor": 1.4,
           "ci95": [
-            1.09,
-            1.79
+            1.12,
+            1.76
           ],
-          "beta_log10": 0.1442,
-          "se_log10": 0.0543,
-          "df": 121.0,
+          "beta_log10": 0.1469,
+          "se_log10": 0.0502,
+          "df": 221.0,
           "between_paper_contrast": false,
           "papers": null,
           "rows": null,
-          "naive_ols_factor": 1.16,
+          "naive_ols_factor": 1.21,
           "naive_ols_ci95": [
-            0.916,
-            1.48
+            0.989,
+            1.49
           ]
         },
         "in_plane": {
-          "factor": 4.93,
+          "factor": 2.22,
           "ci95": [
-            3.48,
-            6.98
+            1.69,
+            2.92
           ],
-          "beta_log10": 0.6927,
-          "se_log10": 0.0764,
-          "df": 121.0,
+          "beta_log10": 0.347,
+          "se_log10": 0.0599,
+          "df": 221.0,
           "between_paper_contrast": false,
           "papers": null,
           "rows": null,
-          "naive_ols_factor": 4.23,
+          "naive_ols_factor": 2.03,
           "naive_ols_ci95": [
-            2.92,
-            6.11
+            1.57,
+            2.62
           ]
         },
         "method:MIXED": {
-          "factor": 1.43,
+          "factor": 1.01,
           "ci95": [
-            0.861,
-            2.36
+            0.696,
+            1.48
           ],
-          "beta_log10": 0.1539,
-          "se_log10": 0.109,
-          "df": 60.0,
+          "beta_log10": 0.006246,
+          "se_log10": 0.0823,
+          "df": 97.0,
           "between_paper_contrast": true,
-          "papers": 14,
-          "rows": 82,
-          "naive_ols_factor": 1.39,
+          "papers": 34,
+          "rows": 139,
+          "naive_ols_factor": 1.13,
           "naive_ols_ci95": [
-            1.1,
-            1.75
+            0.927,
+            1.37
           ]
         },
         "method:STEADY": {
-          "factor": 0.634,
+          "factor": 0.647,
           "ci95": [
-            0.266,
-            1.51
+            0.355,
+            1.18
           ],
-          "beta_log10": -0.198,
-          "se_log10": 0.188,
-          "df": 60.0,
+          "beta_log10": -0.1893,
+          "se_log10": 0.131,
+          "df": 97.0,
           "between_paper_contrast": true,
-          "papers": 3,
-          "rows": 8,
-          "naive_ols_factor": 0.81,
+          "papers": 7,
+          "rows": 23,
+          "naive_ols_factor": 0.92,
           "naive_ols_ci95": [
-            0.498,
-            1.32
+            0.658,
+            1.29
           ]
         },
         "method:OTHER": {
-          "factor": 0.885,
+          "factor": 1.63,
           "ci95": [
-            0.308,
-            2.55
+            0.682,
+            3.9
           ],
-          "beta_log10": -0.05315,
-          "se_log10": 0.229,
-          "df": 60.0,
+          "beta_log10": 0.2123,
+          "se_log10": 0.191,
+          "df": 97.0,
           "between_paper_contrast": true,
-          "papers": 2,
-          "rows": 4,
-          "naive_ols_factor": 0.946,
+          "papers": 3,
+          "rows": 20,
+          "naive_ols_factor": 2.94,
           "naive_ols_ci95": [
-            0.478,
-            1.87
+            1.9,
+            4.55
           ]
         },
         "method:UNSPECIFIED": {
-          "factor": 1.66,
+          "factor": 1.65,
           "ci95": [
-            1.07,
-            2.56
+            1.12,
+            2.42
           ],
-          "beta_log10": 0.2189,
-          "se_log10": 0.0944,
-          "df": 60.0,
+          "beta_log10": 0.2169,
+          "se_log10": 0.0844,
+          "df": 97.0,
           "between_paper_contrast": true,
-          "papers": 31,
-          "rows": 51,
-          "naive_ols_factor": 1.62,
+          "papers": 34,
+          "rows": 56,
+          "naive_ols_factor": 1.85,
           "naive_ols_ci95": [
-            1.25,
-            2.09
+            1.44,
+            2.37
           ]
         }
       },
-      "between_paper_sd_log10": 0.275,
-      "within_paper_sd_log10": 0.148,
-      "between_paper_factor_1sd": 1.88,
-      "icc": 0.775
+      "between_paper_sd_log10": 0.273,
+      "within_paper_sd_log10": 0.202,
+      "between_paper_factor_1sd": 1.87,
+      "icc": 0.646
     },
     "printed_only": {
       "spec": "printed_only",
       "description": "Excluding abstract-only and figure-digitized rows",
-      "n": 146,
-      "papers": 50,
+      "n": 283,
+      "papers": 87,
       "response": "log10(k / k_matrix_effective)",
       "reference": "laser flash (LFA), h-BN/BN, direction not in-plane",
       "covariates": [
@@ -279,139 +641,139 @@
         "method:UNSPECIFIED"
       ],
       "rows_per_method_group": {
-        "MIXED": 67,
-        "LFA": 32,
-        "STEADY": 8,
-        "UNSPECIFIED": 35,
-        "OTHER": 4
+        "MIXED": 124,
+        "LFA": 76,
+        "STEADY": 23,
+        "UNSPECIFIED": 40,
+        "OTHER": 20
       },
       "papers_per_method_group": {
-        "MIXED": 13,
-        "LFA": 14,
-        "STEADY": 3,
-        "UNSPECIFIED": 18,
-        "OTHER": 2
+        "MIXED": 33,
+        "LFA": 23,
+        "STEADY": 7,
+        "UNSPECIFIED": 21,
+        "OTHER": 3
       },
       "effects": {
         "BNNS": {
-          "factor": 1.31,
+          "factor": 1.33,
           "ci95": [
-            1.03,
-            1.67
+            1.05,
+            1.69
           ],
-          "beta_log10": 0.1184,
-          "se_log10": 0.0522,
-          "df": 92.0,
+          "beta_log10": 0.1243,
+          "se_log10": 0.0526,
+          "df": 192.0,
           "between_paper_contrast": false,
           "papers": null,
           "rows": null,
-          "naive_ols_factor": 1.05,
+          "naive_ols_factor": 1.14,
           "naive_ols_ci95": [
-            0.815,
-            1.36
+            0.925,
+            1.42
           ]
         },
         "in_plane": {
-          "factor": 6.38,
+          "factor": 2.16,
           "ci95": [
-            4.51,
-            9.03
+            1.62,
+            2.87
           ],
-          "beta_log10": 0.8051,
-          "se_log10": 0.0759,
-          "df": 92.0,
+          "beta_log10": 0.3335,
+          "se_log10": 0.0632,
+          "df": 192.0,
           "between_paper_contrast": false,
           "papers": null,
           "rows": null,
-          "naive_ols_factor": 3.95,
+          "naive_ols_factor": 1.86,
           "naive_ols_ci95": [
-            2.57,
-            6.06
+            1.41,
+            2.44
           ]
         },
         "method:MIXED": {
-          "factor": 1.45,
+          "factor": 1.06,
           "ci95": [
-            0.829,
-            2.55
+            0.723,
+            1.56
           ],
-          "beta_log10": 0.1622,
-          "se_log10": 0.121,
-          "df": 45.0,
+          "beta_log10": 0.02604,
+          "se_log10": 0.084,
+          "df": 82.0,
           "between_paper_contrast": true,
-          "papers": 13,
-          "rows": 67,
-          "naive_ols_factor": 1.66,
+          "papers": 33,
+          "rows": 124,
+          "naive_ols_factor": 1.25,
           "naive_ols_ci95": [
-            1.26,
-            2.18
+            1.0,
+            1.55
           ]
         },
         "method:STEADY": {
-          "factor": 0.669,
+          "factor": 0.672,
           "ci95": [
-            0.268,
-            1.67
+            0.37,
+            1.22
           ],
-          "beta_log10": -0.1746,
-          "se_log10": 0.198,
-          "df": 45.0,
+          "beta_log10": -0.1723,
+          "se_log10": 0.13,
+          "df": 82.0,
           "between_paper_contrast": true,
-          "papers": 3,
-          "rows": 8,
-          "naive_ols_factor": 0.901,
+          "papers": 7,
+          "rows": 23,
+          "naive_ols_factor": 0.988,
           "naive_ols_ci95": [
-            0.555,
-            1.46
+            0.702,
+            1.39
           ]
         },
         "method:OTHER": {
-          "factor": 0.79,
+          "factor": 1.67,
           "ci95": [
-            0.26,
-            2.4
+            0.704,
+            3.98
           ],
-          "beta_log10": -0.1023,
-          "se_log10": 0.239,
-          "df": 45.0,
+          "beta_log10": 0.2238,
+          "se_log10": 0.189,
+          "df": 82.0,
           "between_paper_contrast": true,
-          "papers": 2,
-          "rows": 4,
-          "naive_ols_factor": 1.06,
+          "papers": 3,
+          "rows": 20,
+          "naive_ols_factor": 3.38,
           "naive_ols_ci95": [
-            0.534,
-            2.1
+            2.16,
+            5.28
           ]
         },
         "method:UNSPECIFIED": {
-          "factor": 1.37,
+          "factor": 1.43,
           "ci95": [
-            0.814,
-            2.31
+            0.93,
+            2.2
           ],
-          "beta_log10": 0.1371,
-          "se_log10": 0.112,
-          "df": 45.0,
+          "beta_log10": 0.1558,
+          "se_log10": 0.0943,
+          "df": 82.0,
           "between_paper_contrast": true,
-          "papers": 18,
-          "rows": 35,
-          "naive_ols_factor": 1.48,
+          "papers": 21,
+          "rows": 40,
+          "naive_ols_factor": 1.66,
           "naive_ols_ci95": [
-            1.1,
-            1.99
+            1.25,
+            2.21
           ]
         }
       },
-      "between_paper_sd_log10": 0.294,
-      "within_paper_sd_log10": 0.128,
-      "between_paper_factor_1sd": 1.97,
-      "icc": 0.841
+      "between_paper_sd_log10": 0.266,
+      "within_paper_sd_log10": 0.206,
+      "between_paper_factor_1sd": 1.85,
+      "icc": 0.626
     },
     "reported_km": {
       "spec": "reported_km",
       "description": "Only rows whose paper reports the neat-matrix k",
-      "n": 93,
-      "papers": 32,
+      "n": 182,
+      "papers": 58,
       "response": "log10(k / k_matrix_effective)",
       "reference": "laser flash (LFA), h-BN/BN, direction not in-plane",
       "covariates": [
@@ -426,144 +788,146 @@
         "method:UNSPECIFIED"
       ],
       "rows_per_method_group": {
-        "MIXED": 37,
-        "LFA": 19,
-        "STEADY": 8,
-        "UNSPECIFIED": 26,
-        "OTHER": 3
+        "MIXED": 77,
+        "LFA": 34,
+        "STEADY": 23,
+        "UNSPECIFIED": 29,
+        "OTHER": 19
       },
       "papers_per_method_group": {
-        "MIXED": 6,
-        "LFA": 8,
-        "STEADY": 3,
-        "UNSPECIFIED": 14,
-        "OTHER": 1
+        "MIXED": 19,
+        "LFA": 14,
+        "STEADY": 7,
+        "UNSPECIFIED": 16,
+        "OTHER": 2
       },
       "effects": {
         "BNNS": {
-          "factor": 1.36,
+          "factor": 1.42,
           "ci95": [
-            1.13,
-            1.63
+            1.12,
+            1.79
           ],
-          "beta_log10": 0.1325,
-          "se_log10": 0.0404,
-          "df": 57.0,
+          "beta_log10": 0.1516,
+          "se_log10": 0.0509,
+          "df": 120.0,
           "between_paper_contrast": false,
           "papers": null,
           "rows": null,
-          "naive_ols_factor": 1.04,
+          "naive_ols_factor": 1.22,
           "naive_ols_ci95": [
-            0.828,
-            1.31
+            0.992,
+            1.5
           ]
         },
         "in_plane": {
-          "factor": 7.18,
+          "factor": 2.42,
           "ci95": [
-            5.49,
-            9.4
+            1.75,
+            3.35
           ],
-          "beta_log10": 0.8564,
-          "se_log10": 0.0583,
-          "df": 57.0,
+          "beta_log10": 0.3832,
+          "se_log10": 0.0714,
+          "df": 120.0,
           "between_paper_contrast": false,
           "papers": null,
           "rows": null,
-          "naive_ols_factor": 6.59,
+          "naive_ols_factor": 2.34,
           "naive_ols_ci95": [
-            4.01,
-            10.8
+            1.71,
+            3.2
           ]
         },
         "method:MIXED": {
-          "factor": 1.15,
+          "factor": 0.917,
           "ci95": [
-            0.579,
-            2.29
+            0.607,
+            1.38
           ],
-          "beta_log10": 0.06117,
-          "se_log10": 0.146,
-          "df": 27.0,
+          "beta_log10": -0.03782,
+          "se_log10": 0.0892,
+          "df": 53.0,
           "between_paper_contrast": true,
-          "papers": 6,
-          "rows": 37,
-          "naive_ols_factor": 1.35,
+          "papers": 19,
+          "rows": 77,
+          "naive_ols_factor": 0.987,
           "naive_ols_ci95": [
-            1.01,
-            1.8
+            0.759,
+            1.28
           ]
         },
         "method:STEADY": {
-          "factor": 0.593,
+          "factor": 0.696,
           "ci95": [
-            0.252,
-            1.39
+            0.412,
+            1.18
           ],
-          "beta_log10": -0.2271,
-          "se_log10": 0.181,
-          "df": 27.0,
+          "beta_log10": -0.1573,
+          "se_log10": 0.114,
+          "df": 53.0,
           "between_paper_contrast": true,
-          "papers": 3,
-          "rows": 8,
-          "naive_ols_factor": 0.83,
+          "papers": 7,
+          "rows": 23,
+          "naive_ols_factor": 0.902,
           "naive_ols_ci95": [
-            0.542,
-            1.27
+            0.643,
+            1.26
           ]
         },
         "method:OTHER": {
-          "factor": 0.48,
+          "factor": 1.94,
           "ci95": [
-            0.126,
-            1.83
+            0.825,
+            4.55
           ],
-          "beta_log10": -0.3189,
-          "se_log10": 0.284,
-          "df": 27.0,
+          "beta_log10": 0.2871,
+          "se_log10": 0.185,
+          "df": 53.0,
           "between_paper_contrast": true,
-          "papers": 1,
-          "rows": 3,
-          "naive_ols_factor": 0.573,
+          "papers": 2,
+          "rows": 19,
+          "naive_ols_factor": 2.6,
           "naive_ols_ci95": [
-            0.265,
-            1.24
+            1.61,
+            4.2
           ]
         },
         "method:UNSPECIFIED": {
-          "factor": 1.44,
+          "factor": 1.43,
           "ci95": [
-            0.813,
-            2.54
+            0.921,
+            2.21
           ],
-          "beta_log10": 0.1573,
-          "se_log10": 0.121,
-          "df": 27.0,
+          "beta_log10": 0.1541,
+          "se_log10": 0.0947,
+          "df": 53.0,
           "between_paper_contrast": true,
-          "papers": 14,
-          "rows": 26,
-          "naive_ols_factor": 1.54,
+          "papers": 16,
+          "rows": 29,
+          "naive_ols_factor": 1.52,
           "naive_ols_ci95": [
-            1.13,
-            2.11
+            1.11,
+            2.09
           ]
         }
       },
-      "between_paper_sd_log10": 0.256,
-      "within_paper_sd_log10": 0.0931,
-      "between_paper_factor_1sd": 1.8,
-      "icc": 0.883
+      "between_paper_sd_log10": 0.203,
+      "within_paper_sd_log10": 0.197,
+      "between_paper_factor_1sd": 1.6,
+      "icc": 0.514
     }
   },
   "uncertainty_budget": {
-    "rows": 258,
+    "rows": 639,
     "median_rel_sigma_by_method": {
       "HOT_WIRE": 0.06,
       "IR_THERMO": 0.1,
       "LFA": 0.08,
+      "MTPS": 0.06,
       "PERIODIC": 0.08,
       "SS_D5470": 0.1,
       "SS_GHFM": 0.07,
+      "SS_HFM_GHP": 0.05,
       "SS_UNSPECIFIED": 0.1,
       "THB": 0.05,
       "TPS": 0.05,
@@ -577,8 +941,8 @@
   },
   "scale_comparison": {
     "instrument_rel_sigma_median": 0.08,
-    "between_paper_factor_1sd": 1.88,
-    "within_paper_sd_log10": 0.148
+    "between_paper_factor_1sd": 1.87,
+    "within_paper_sd_log10": 0.202
   },
   "literature": [
     {
@@ -603,8 +967,8 @@
     }
   ],
   "dataset": {
-    "rows": 258,
-    "papers": 95,
-    "sha256": "12ef8fe97057dafc"
+    "rows": 639,
+    "papers": 174,
+    "sha256": "893ecb8f094a61fb"
   }
 }

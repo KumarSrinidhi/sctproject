@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-tc"
-version = "0.4.0"
+version = "0.5.0"
 description = "ARGUS: source-verified thermal conductivity dataset and toolkit for polymer-ceramic composites (epoxy + BN/AlN)"
 readme = "README.md"
 requires-python = ">=3.10"

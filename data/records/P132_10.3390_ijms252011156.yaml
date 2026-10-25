@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P132
+paper:
+  doi: 10.3390/ijms252011156
+  title: Bio-Inspired Thermal Conductive Fibers by Boron Nitride Nanosheet/Boron Nitride Hybrid
+  year: 2024
+  source_url: https://doi.org/10.3390/ijms252011156
+extraction_log:
+- seq: 144
+  candidate_id: P6-P132
+  doi: 10.3390/ijms252011156
+  paper_title: Bio-Inspired Thermal Conductive Fibers by Boron Nitride Nanosheet/Boron Nitride Hybrid
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ijms252011156.txt (cache, not committed)
+  tables_inspected: No tables in the article
+  figures_inspected: Figure 4a (TC of RTF and BTF; only the BTF value is printed in text), Figure 4e (literature comparison, excluded), Figure 5 (surface temperatures, not k)
+  candidate_measurements: 1
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 1 figure-only values not taken. Only the BTF value is printed. The RTF k appears only in Figure 4a (the text gives just its 97.08% TCE), so it is counted as figure-only. The pure-PU k is not printed. The PU value in the Introduction (0.018~0.024 W/(m·K), cited) and the Figure 4e literature comparison were excluded.
+  rows_rejected_at_append: []
+  rows_added:
+  - 0721d08d-422
+measurements:
+- row_id: 0721d08d-422
+  matrix_polymer: Polyurethane (PU, BASF), wet-spun composite fibre
+  filler_material: BN/BNNS hybrid
+  filler_material_original: BN@TM (TMSPMA-modified BN, Macklin) in fibre core + BNNS@TMS (TMSPMA-modified ultrasonically exfoliated BN nanosheets) grafted on surface, sample BTF (bio-inspired thermal conductive fiber)
+  filler_shape: platelet (BN) + nanosheet (BNNS)
+  filler_loading_original_value: '3:2'
+  filler_loading_original_unit: BN@TM:PU mass ratio in spinning solution (core); BNNS coating amount not stated
+  functionalization: 3-(trimethoxysilyl)propyl methacrylate (TMSPMA) modification of both BN and BNNS
+  filler_alignment: BN aligned along fibre axis by draw during wet spinning; BNNS on surface arranged horizontally along the fibre axis after hot pressing
+  processing_method: Wet spinning of BN@TM:PU (3:2) in DMF:TO (1:1) into DI-water coagulation bath, dried 80 °C, hot-pressed (100 °C, 5 MPa, 3 min) to give RTF; RTF immersed in BNNS@TMS 4 h, washed with IPA, hot-pressed again to give BTF
+  k_composite_W_mK: 0.47
+  k_direction: unknown
+  measurement_method: Transient plane source, Hot Disk TPS 2200 thermal constant analyzer, ISO/CD 22007-2
+  k_original_value: 0.47
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 2.2, paragraph 4: ''The TCE of BTF (0.47 W/(m·K)) reached 176.47% with the hybrid structure, exhibiting good TC shown in Figure 4a.'''
+  confidence: High
+  notes: Also stated in the Conclusions ('can approach 0.47 W/(m·K)'). TCE of 176.47% is relative to pure PU, but the pure-PU k is not printed; it would only be implied (~0.17 W/(m·K)), so k_matrix is left null. The paper does not describe sample geometry (fibre vs textile) for the Hot Disk test. BN@TM:PU 3:2 by mass would mean 60 wt% BN in the fibre core, but this was not converted.

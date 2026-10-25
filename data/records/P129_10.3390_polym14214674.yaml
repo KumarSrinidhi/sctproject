@@ -1,0 +1,91 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P129
+paper:
+  doi: 10.3390/polym14214674
+  title: Amino Acid-Assisted Sand-Milling Exfoliation of Boron Nitride Nanosheets for High Thermally Conductive Thermoplastic Polyurethane Composites
+  year: 2022
+  source_url: https://doi.org/10.3390/polym14214674
+extraction_log:
+- seq: 141
+  candidate_id: P6-P129
+  doi: 10.3390/polym14214674
+  paper_title: Amino Acid-Assisted Sand-Milling Exfoliation of Boron Nitride Nanosheets for High Thermally Conductive Thermoplastic Polyurethane Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym14214674.txt (cache, not committed)
+  tables_inspected: Table 1 (literature comparison; only the 'this work' row is from this paper and duplicates the text value 0.52 W/mK)
+  figures_inspected: Figure 5a caption (TC vs filler content for h-BN/TPU and Lys@BNNS/TPU)
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 8 figure-only values not taken. Printed k values: neat TPU, 5 wt% h-BN/TPU and 5 wt% Lys@BNNS/TPU. The other loadings (0.1, 0.5, 1 and 3 wt%, for both h-BN and Lys@BNNSs, 8 points) appear only in Figure 5a. The 3 wt% Lys@BNNS result is given only as ''90% higher than pure TPU'' (no printed k), so it was skipped. All other Table 1 rows are literature values and were excluded. Measurement temperature and direction are not stated.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 38ead6d7-412
+  - 38ead6d7-413
+  - 38ead6d7-414
+measurements:
+- row_id: 38ead6d7-412
+  matrix_polymer: TPU (BASF 1180A10)
+  filler_material: none
+  filler_material_original: pure TPU (neat matrix)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Solution processed in DMF, precipitated in ethanol, dried; hot pressed at 180 °C (8 min unpressurized, then 10 MPa for 10 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.2
+  k_direction: unknown
+  measurement_method: Transient hot wire method, TC 3000 (Xi'an Xiaxi Electronic Technology), line heat source between two flat samples
+  k_original_value: 0.2
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''The results show that the λ of pure TPU is only 0.20 ± 0.006 W m−1 K−1, and the λ of the TPU composite is 0.49 ± 0.001 W m−1 K−1 when filled with 5 wt% h-BN, which is 125% higher than that of pure TPU.'''
+  confidence: High
+  notes: Neat TPU, 0.20 ± 0.006 W m−1 K−1. Processing route is assumed to match the composites, since neat TPU is not described separately.
+- row_id: 38ead6d7-413
+  matrix_polymer: TPU (BASF 1180A10)
+  filler_material: h-BN
+  filler_material_original: h-BN (pristine bulk), sample 5 wt% h-BN/TPU
+  filler_shape: platelet
+  filler_mean_size_um: 5.0
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Solution mixing in DMF at 80 °C for 8 h, precipitated in ethanol, vacuum dried 50 °C; hot pressed at 180 °C (8 min unpressurized, then 10 MPa for 10 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.49
+  k_direction: unknown
+  measurement_method: Transient hot wire method, TC 3000 (Xi'an Xiaxi Electronic Technology), line heat source between two flat samples
+  k_original_value: 0.49
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''The results show that the λ of pure TPU is only 0.20 ± 0.006 W m−1 K−1, and the λ of the TPU composite is 0.49 ± 0.001 W m−1 K−1 when filled with 5 wt% h-BN, which is 125% higher than that of pure TPU.'''
+  confidence: High
+  notes: 0.49 ± 0.001 W m−1 K−1. h-BN lateral dimension 5 μm (supplier). The stated '125% higher' does not match 0.49/0.20 (which is +145%); the printed k value is used as given.
+- row_id: 38ead6d7-414
+  matrix_polymer: TPU (BASF 1180A10)
+  filler_material: BNNS
+  filler_material_original: Lys@BNNSs (L-lysine-functionalized BN nanosheets), sample 5 wt% Lys@BNNS/TPU
+  filler_shape: nanosheet
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: L-lysine grafted via Lewis acid–base interaction during aqueous sand-milling exfoliation (~5.2% Lys by TGA)
+  processing_method: BNNSs exfoliated from h-BN by sand-milling in 2 wt% aqueous lysine (2000 rpm, 8 h, ZrO2 balls), centrifuged; solution mixing in DMF at 80 °C for 8 h, precipitated in ethanol, vacuum dried 50 °C; hot pressed at 180 °C (8 min unpressurized, then 10 MPa for 10 min)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.52
+  k_direction: unknown
+  measurement_method: Transient hot wire method, TC 3000 (Xi'an Xiaxi Electronic Technology), line heat source between two flat samples
+  k_original_value: 0.52
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''When TPU is filled with 5 wt% Lys@BNNSs, the λ of composites can reach 0.52 ± 0.006 W m−1 K−1, 160% higher than that of pure TPU.'''
+  confidence: High
+  notes: 0.52 ± 0.006 W m−1 K−1. The same value appears in the Table 1 'this work' row (Lys@BNNSs | TPU | 5 wt% | 0.52), so it is not duplicated.

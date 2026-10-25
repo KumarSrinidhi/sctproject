@@ -1,6 +1,6 @@
 # Dataset licence
 
-**ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)**, version 1.1.0
+**ARGUS: Source-verified thermal conductivity of BN- and AlN-filled polymer composites**, version 1.2.0
 © 2026 Aniket Kumar and Rao Kumar Srinidhi Reddy
 
 The dataset is licensed under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)**.
@@ -31,12 +31,19 @@ historical and superseded by this file.
 
 - **Third-party papers.** `work/fulltext/`, `work/phase4_browser/` and `work/figures/` contain copies or
   excerpts of the source papers and their figures, kept for reproducibility. They remain under their
-  publishers' licences.
-  - Of the 83 stored full texts (`*.txt`), 36 state a CC BY licence: 35 give version 4.0 and one MDPI paper
+  publishers' licences, all of them CC BY; `work/THIRD_PARTY.csv` lists each file with its evidence.
+  - Of the 70 stored full texts (`*.txt`), 36 state a CC BY licence: 35 give version 4.0 and one MDPI paper
     gives no version.
-  - Two state **non-commercial** licences: `10.1177_09673911221110143` (CC BY-NC 4.0) and
-    `10.3740_mrsk.2023.33.12.503` (CC BY-NC 3.0).
-  - The other 45 do not state a licence in the extracted text.
+  - The other 34 do not state a licence in the extracted text. Crossref records a CC BY licence for each
+    of them.
+  - On 2026-10-25, 22 files without clear redistribution rights were taken out of the repository:
+    - 8 non-commercial (CC BY-NC);
+    - 11 with no open licence found in the text or on Crossref;
+    - 3 saved captcha pages.
+
+    They are kept only in the git-ignored `local_archive/` folder of the working copy, with
+    `local_archive/third_party/MOVED.csv` listing each one and why. No dataset value depends on them,
+    because every row cites its DOI and quotes its source.
 - **External datasets.** `data/external/` holds other groups' datasets used to test ARGUS. They keep their
   own licences, listed in `data/external/sources.yaml` and `data/external/README.md`: EVF (CC BY 4.0),
   the BCC source data (MIT), and our transcriptions from Sarikhani et al. 2022 (CC BY 4.0). Two sources
@@ -55,21 +62,16 @@ historical and superseded by this file.
 
 ## Before making the repository public
 
-1. Review `work/fulltext/`, `work/phase4_browser/` and `work/figures/`.
-   - Remove anything whose licence does not allow redistribution, starting with the two non-commercial
-     papers and the 45 with no stated licence.
-2. Delete the three saved captcha pages:
-   - `work/fulltext/10.1088_1361-6528_ac0470.pdf`
-   - `work/fulltext/10.1088_1742-6596_1003_1_012082.pdf`
-   - `work/fulltext/10.1088_1757-899x_274_1_012043.pdf`
-
-   They are HTML bot-check pages, not papers, and they embed the IP address of the machine that fetched them.
-3. Deleting files does not remove them from git history. Publish from a fresh repository, or rewrite the
-   history, so that the removed files are really gone.
+1. ~~Remove third-party files whose licence does not allow redistribution.~~ Done on 2026-10-25: every
+   remaining file is CC BY (`work/THIRD_PARTY.csv`, checked by `pytest`).
+2. ~~Delete the three saved captcha pages~~, which embedded the IP address of the machine that fetched
+   them. Done on 2026-10-25.
+3. **Still to do:** the removed files are still in the git history. Publish from a fresh repository (a
+   single snapshot commit of `main`), or rewrite this repository's history, so they are really gone.
 
 ## How to cite
 
-> Kumar, A., & Reddy, R. K. S. (2026). ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN) (Version 1.1.0) [Data set]. https://github.com/KumarSrinidhi/sctproject
+> Kumar, A., & Reddy, R. K. S. (2026). ARGUS: Source-verified thermal conductivity of BN- and AlN-filled polymer composites (Version 1.2.0) [Data set]. https://github.com/KumarSrinidhi/sctproject
 
 Machine-readable citation metadata is in `CITATION.cff`; GitHub shows it under "Cite this repository".
 

@@ -1,0 +1,114 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P127
+paper:
+  doi: 10.3390/polym16020268
+  title: Enhanced Thermal Conductivity of High-Density Polyethylene Composites with Hybrid Fillers of Flaky and Spherical Boron Nitride Particles
+  year: 2024
+  source_url: https://doi.org/10.3390/polym16020268
+extraction_log:
+- seq: 139
+  candidate_id: P6-P127
+  doi: 10.3390/polym16020268
+  paper_title: Enhanced Thermal Conductivity of High-Density Polyethylene Composites with Hybrid Fillers of Flaky and Spherical Boron Nitride Particles
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym16020268.txt (cache, not committed)
+  tables_inspected: Table 1 (sample naming, no k); Table 2 (TGA/DSC/WAXD parameters, no k)
+  figures_inspected: Figure 4 (TC and enhancement factor vs mass ratio) caption only; Figure 5 is FEM simulation (skipped)
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. All composites are 30 wt% total BN in HDPE/HDPE-g-MAH. Printed k values: neat HDPE, S3/F30 1:0, 1:4 and 0:1. The four other ratios (4:1, 2:1, 1:1, 1:2) appear only in Figure 4a and are counted as figure-only. The FEM heat-conduction simulation (Figure 5) was skipped. Introduction values from other papers (e.g. Jung et al., Xiao et al.) were excluded. Measurement temperature is not stated.'
+  rows_rejected_at_append: []
+  rows_added:
+  - bb48ac7f-402
+  - bb48ac7f-403
+  - bb48ac7f-404
+  - bb48ac7f-405
+measurements:
+- row_id: bb48ac7f-402
+  matrix_polymer: HDPE (HDPE 2911, Fushun Petrochemical)
+  filler_material: none
+  filler_material_original: pure HDPE (neat matrix)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Compression molded at 180 °C, 10 MPa, 10 min
+  k_matrix_W_mK: 0.431
+  k_composite_W_mK: 0.431
+  k_direction: through-plane (in the direction of thickness)
+  measurement_method: Transient plane source, Hot Disk TPS 2500S (Hot Disk AB); probe and sample surfaces cleaned with ethanol
+  k_original_value: 0.431
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph discussing Figure 4: ''For example, when the mass ratio of S3/F30 changes from 1:0 to 1:4, the TCs of the composites increase from 0.736 Wm−1K−1 to 1.648 Wm−1K−1, which is 282.27% higher than that of pure HDPE (0.431 Wm−1K−1).'''
+  confidence: High
+  notes: Neat-matrix reference. Paper does not state whether 'pure HDPE' contains the 5 wt% HDPE-g-MAH compatibilizer used in the composites.
+- row_id: bb48ac7f-403
+  matrix_polymer: HDPE (HDPE 2911) with HDPE-g-MAH compatibilizer (65 wt% HDPE + 5 wt% HDPE-g-MAH of total composite)
+  filler_material: BN
+  filler_material_original: spherical BN (3 μm), sample S3/F30 1:0
+  filler_shape: spherical
+  filler_mean_size_um: 3.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (HDPE-g-MAH compatibilizer in matrix)
+  processing_method: Melt blending in internal mixer (Haake Minilab) at 180 °C, 30 rpm (3 min matrix + 7 min with BN), then compression molded at 180 °C, 10 MPa, 10 min
+  k_matrix_W_mK: 0.431
+  k_composite_W_mK: 0.736
+  k_direction: through-plane (in the direction of thickness)
+  measurement_method: Transient plane source, Hot Disk TPS 2500S (Hot Disk AB); probe and sample surfaces cleaned with ethanol
+  k_original_value: 0.736
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph discussing Figure 4: ''For example, when the mass ratio of S3/F30 changes from 1:0 to 1:4, the TCs of the composites increase from 0.736 Wm−1K−1 to 1.648 Wm−1K−1, which is 282.27% higher than that of pure HDPE (0.431 Wm−1K−1).'''
+  confidence: High
+  notes: 'Sample S3/F30 1:0: all 30 wt% BN is spherical 3 μm BN. Lowest TC of the series.'
+- row_id: bb48ac7f-404
+  matrix_polymer: HDPE (HDPE 2911) with HDPE-g-MAH compatibilizer (65 wt% HDPE + 5 wt% HDPE-g-MAH of total composite)
+  filler_material: BN
+  filler_material_original: spherical BN (3 μm) + flaky BN (30 μm), mass ratio 1:4, sample S3/F30 1:4
+  filler_shape: spherical + flaky (two-shape BN hybrid)
+  size_distribution: 'bimodal: spherical 3 μm and flaky 30 μm'
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (HDPE-g-MAH compatibilizer in matrix)
+  processing_method: Melt blending in internal mixer (Haake Minilab) at 180 °C, 30 rpm (3 min matrix + 7 min with BN), then compression molded at 180 °C, 10 MPa, 10 min
+  k_matrix_W_mK: 0.431
+  k_composite_W_mK: 1.648
+  k_direction: through-plane (in the direction of thickness)
+  measurement_method: Transient plane source, Hot Disk TPS 2500S (Hot Disk AB); probe and sample surfaces cleaned with ethanol
+  k_original_value: 1.648
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph discussing Figure 4: ''For example, when the mass ratio of S3/F30 changes from 1:0 to 1:4, the TCs of the composites increase from 0.736 Wm−1K−1 to 1.648 Wm−1K−1, which is 282.27% higher than that of pure HDPE (0.431 Wm−1K−1).'''
+  confidence: High
+  notes: 'Hybrid of two BN morphologies (same material): total 30 wt% BN = 6 wt% spherical 3 μm + 24 wt% flaky 30 μm (split stated in simulation paragraph). Best sample. Paper''s enhancement percentages (282.27% in text, 282.37% in Conclusions) are slightly inconsistent with each other.'
+- row_id: bb48ac7f-405
+  matrix_polymer: HDPE (HDPE 2911) with HDPE-g-MAH compatibilizer (65 wt% HDPE + 5 wt% HDPE-g-MAH of total composite)
+  filler_material: BN
+  filler_material_original: flaky BN (30 μm), sample S3/F30 0:1
+  filler_shape: flaky
+  filler_mean_size_um: 30.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (HDPE-g-MAH compatibilizer in matrix)
+  processing_method: Melt blending in internal mixer (Haake Minilab) at 180 °C, 30 rpm (3 min matrix + 7 min with BN), then compression molded at 180 °C, 10 MPa, 10 min
+  k_matrix_W_mK: 0.431
+  k_composite_W_mK: 1.479
+  k_direction: through-plane (in the direction of thickness)
+  measurement_method: Transient plane source, Hot Disk TPS 2500S (Hot Disk AB); probe and sample surfaces cleaned with ethanol
+  k_original_value: 1.479
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph discussing Figure 4: ''However, when all the fillers in the composite are flaky BN, the TC of the composite decreases to 1.479 Wm−1K−1.'''
+  confidence: High
+  notes: 'Sample S3/F30 0:1: all 30 wt% BN is flaky 30 μm BN.'

@@ -1,0 +1,138 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P104
+paper:
+  doi: 10.3390/polym14050852
+  title: Lightweight Polyethylene/Hexagonal Boron Nitride Hybrid Thermal Conductor Fabricated by Melt Compounding Plus Salt Leaching
+  year: 2022
+  source_url: https://doi.org/10.3390/polym14050852
+extraction_log:
+- seq: 116
+  candidate_id: P6-P104
+  doi: 10.3390/polym14050852
+  paper_title: Lightweight Polyethylene/Hexagonal Boron Nitride Hybrid Thermal Conductor Fabricated by Melt Compounding Plus Salt Leaching
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym14050852.txt (cache, not committed)
+  tables_inspected: Table 1 (sample code, composition, apparent hBN volume fraction, apparent density); no k in tables
+  figures_inspected: Figure 5A (in-plane k) and 5B (through-plane k). In-plane values for BN5/BN10/BN15 and both bulk-PE values are printed in the text; the composites' through-plane values are only described as 'around 0.4 W/mk' and were skipped as figure-only. Figure 6 (specific k) and Figure 7 (literature comparison) are not k values.
+  candidate_measurements: 5
+  rows_appended: 5
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 3 figure-only values not taken. Each row is one sample and one direction. The composites' through-plane k (3 values) is only in Figure 5B ('around 0.4 W/mk'), so those were skipped. They could be back-calculated from the printed anisotropy indices, but I did not do that because it would be a derived value. The wt% loadings (5/10/15) are the sample designations and the Figure 2 caption, i.e. hBN in PE+hBN. vol% is the paper's apparent volume fraction including pores. Measurement te
+  rows_rejected_at_append: []
+  rows_added:
+  - 437b810a-291
+  - 437b810a-292
+  - 437b810a-293
+  - 437b810a-294
+  - 437b810a-295
+measurements:
+- row_id: 437b810a-291
+  matrix_polymer: Polyethylene (Mitsui 7000F powder, MFI 0.04 g/10 min, density 0.95 g/cm3), bulk
+  filler_material: none
+  filler_material_original: bulk PE (virgin PE reference)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  k_matrix_W_mK: 0.39
+  k_composite_W_mK: 0.39
+  k_direction: in-plane (λ∥)
+  measurement_method: Transient plane source, Hot Disk TPS2500 (anisotropic mode, Kapton sensor, 0.03 W for 20 s)
+  k_original_value: 0.39
+  k_original_unit: W/mk
+  value_source: text
+  source_location: 'Section 3, paragraph 8 (thermal conductivity discussion): ''Among all tested samples, the bulk PE displayed an isotropic thermal conductive behavior with λ∥ and λ⊥ of 0.39 W/mk and 0.40 W/mk, respectively, which is in agreement with previous literatures [35,36,37].'''
+  confidence: High
+  notes: Neat bulk (non-porous) PE reference. How it was processed is not stated separately.
+- row_id: 437b810a-292
+  matrix_polymer: Polyethylene (Mitsui 7000F powder, MFI 0.04 g/10 min, density 0.95 g/cm3), bulk
+  filler_material: none
+  filler_material_original: bulk PE (virgin PE reference)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  k_matrix_W_mK: 0.4
+  k_composite_W_mK: 0.4
+  k_direction: through-plane (λ⊥)
+  measurement_method: Transient plane source, Hot Disk TPS2500 (anisotropic mode, Kapton sensor, 0.03 W for 20 s)
+  k_original_value: 0.4
+  k_original_unit: W/mk
+  value_source: text
+  source_location: 'Section 3, paragraph 8 (thermal conductivity discussion): ''Among all tested samples, the bulk PE displayed an isotropic thermal conductive behavior with λ∥ and λ⊥ of 0.39 W/mk and 0.40 W/mk, respectively, which is in agreement with previous literatures [35,36,37].'''
+  confidence: High
+  notes: Neat bulk (non-porous) PE reference; printed as 0.40.
+- row_id: 437b810a-293
+  matrix_polymer: Polyethylene (Mitsui 7000F powder, MFI 0.04 g/10 min, density 0.95 g/cm3), open-cell porous after salt leaching
+  filler_material: h-BN
+  filler_material_original: hBN (Suzhou Nutpool, avg diameter 20 µm, ≥98.5%), sample BN5 (code 5–50)
+  filler_shape: sheet
+  filler_mean_size_um: 20.0
+  filler_loading_vol_pct: 1.5
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt% (hBN relative to PE+hBN)
+  functionalization: none
+  filler_alignment: in-plane alignment of hBN from compression moulding (XRD δ ≈ 3.3%)
+  processing_method: Two-step melt compounding in Brabender mixer (PE+hBN, then +50 wt% NaCl; 195 °C, 60 rpm, 6 min), compression moulded into 1 mm sheets (195 °C, 15 MPa, 240 s), salt leached in 60 °C water for 48 h
+  k_matrix_W_mK: 0.39
+  k_composite_W_mK: 0.48
+  k_direction: in-plane (λ∥)
+  measurement_method: Transient plane source, Hot Disk TPS2500 (anisotropic mode, Kapton sensor, 0.03 W for 20 s)
+  k_original_value: 0.48
+  k_original_unit: W/mk
+  value_source: text
+  source_location: 'Section 3, paragraph 8 (thermal conductivity discussion): ''Practically, the λ∥ increased from 0.48 W/mk for BN5 to 0.56 W/mk for sample BN10, which is up to 46.2% higher than the virgin PE.'''
+  confidence: High
+  notes: Porous open-cell sample. Table 1 composition of C2 before leaching is PE 47.5 / hBN 2.5 / NaCl 50 wt%. vol% = 1.5 is Table 1's 'apparent volume fraction of hBN in PTCs' (pores included). Residual NaCl about 6.7 wt%. Apparent density 0.71 g/cm3. Through-plane k only in Figure 5B ('around 0.4 W/mk'); anisotropy index 1.13.
+- row_id: 437b810a-294
+  matrix_polymer: Polyethylene (Mitsui 7000F powder, MFI 0.04 g/10 min, density 0.95 g/cm3), open-cell porous after salt leaching
+  filler_material: h-BN
+  filler_material_original: hBN (Suzhou Nutpool, avg diameter 20 µm, ≥98.5%), sample BN10 (code 10–50)
+  filler_shape: sheet
+  filler_mean_size_um: 20.0
+  filler_loading_vol_pct: 3.1
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt% (hBN relative to PE+hBN)
+  functionalization: none
+  filler_alignment: in-plane alignment of hBN from compression moulding (XRD δ ≈ 3.3%)
+  processing_method: Two-step melt compounding in Brabender mixer (PE+hBN, then +50 wt% NaCl; 195 °C, 60 rpm, 6 min), compression moulded into 1 mm sheets (195 °C, 15 MPa, 240 s), salt leached in 60 °C water for 48 h
+  k_matrix_W_mK: 0.39
+  k_composite_W_mK: 0.56
+  k_direction: in-plane (λ∥)
+  measurement_method: Transient plane source, Hot Disk TPS2500 (anisotropic mode, Kapton sensor, 0.03 W for 20 s)
+  k_original_value: 0.56
+  k_original_unit: W/mk
+  value_source: text
+  source_location: 'Section 3, paragraph 8 (thermal conductivity discussion): ''Practically, the λ∥ increased from 0.48 W/mk for BN5 to 0.56 W/mk for sample BN10, which is up to 46.2% higher than the virgin PE.'''
+  confidence: High
+  notes: Porous open-cell sample. Table 1 composition of C2 before leaching is PE 45 / hBN 5 / NaCl 50 wt%. vol% = 3.1 is the apparent volume fraction in the PTC. Residual NaCl about 6.4 wt%. Apparent density 0.75 g/cm3. Specific k is 0.75 (W/mk)/(g/cm3). Through-plane k only in the figure; anisotropy index 1.40.
+- row_id: 437b810a-295
+  matrix_polymer: Polyethylene (Mitsui 7000F powder, MFI 0.04 g/10 min, density 0.95 g/cm3), open-cell porous after salt leaching
+  filler_material: h-BN
+  filler_material_original: hBN (Suzhou Nutpool, avg diameter 20 µm, ≥98.5%), sample BN15 (code 15–50)
+  filler_shape: sheet
+  filler_mean_size_um: 20.0
+  filler_loading_vol_pct: 4.7
+  filler_loading_wt_pct: 15.0
+  filler_loading_original_value: 15.0
+  filler_loading_original_unit: wt% (hBN relative to PE+hBN)
+  functionalization: none
+  filler_alignment: in-plane alignment of hBN from compression moulding (XRD δ ≈ 3.3%)
+  processing_method: Two-step melt compounding in Brabender mixer (PE+hBN, then +50 wt% NaCl; 195 °C, 60 rpm, 6 min), compression moulded into 1 mm sheets (195 °C, 15 MPa, 240 s), salt leached in 60 °C water for 48 h
+  k_matrix_W_mK: 0.39
+  k_composite_W_mK: 0.57
+  k_direction: in-plane (λ∥)
+  measurement_method: Transient plane source, Hot Disk TPS2500 (anisotropic mode, Kapton sensor, 0.03 W for 20 s)
+  k_original_value: 0.57
+  k_original_unit: W/mk
+  value_source: text
+  source_location: 'Section 3, paragraph 8 (thermal conductivity discussion): ''The upward trend becomes gentle when including more hBN, since BN15 shows barely increased λ∥ of 0.57 W/mk.'''
+  confidence: High
+  notes: Porous open-cell sample. Table 1 composition of C2 before leaching is PE 42.5 / hBN 7.5 / NaCl 50 wt%. vol% = 4.7 is the apparent volume fraction in the PTC. Residual NaCl about 5.6 wt%. Apparent density 0.78 g/cm3. Through-plane k only in the figure; anisotropy index 1.33.

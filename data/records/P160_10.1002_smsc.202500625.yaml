@@ -1,0 +1,202 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P160
+paper:
+  doi: 10.1002/smsc.202500625
+  title: Naphthalene‐Modified Cationic Initiators for Superior Polymerization Stability and Thermal Conductivity in Epoxy Thermosets
+  year: 2026
+  source_url: https://doi.org/10.1002/smsc.202500625
+extraction_log:
+- seq: 172
+  candidate_id: P6-P160
+  doi: 10.1002/smsc.202500625
+  paper_title: Naphthalene‐Modified Cationic Initiators for Superior Polymerization Stability and Thermal Conductivity in Epoxy Thermosets
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1002_smsc.202500625.txt (cache, not committed)
+  tables_inspected: No tables in the paper (the JATS file has no table-wrap). The full text, figure captions and Supporting Information captions (S1–S7) were read.
+  figures_inspected: Figures 2, 4, 9 and 10 (thermal conductivity), checked against their captions and the text. Every h-BN composite value in Figure 10a/10d is printed in the text. Figure 2c (neat DGEBA with each initiator) has no BN and is not printed.
+  candidate_measurements: 8
+  rows_appended: 8
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. Experimental section is in the SI only, so no Cp or density details are given. The Hot Disk TPS 2500 anisotropic-mode method comes from the Figure 2 caption, and the 80 mW/10 s settings from Section 2.3. Filler size and supplier are not stated in the main text. The aspect ratio p = 50 is a Lewis–Nielsen fitted parameter, not a measurement, so it was not recorded. Not extracted: Al2O3 composites (no BN; 2.08–4.69 W m−1 K−1 in IE, 2.11 in DGEBA); othe'
+  rows_rejected_at_append: []
+  rows_added:
+  - a9a2a1a1-578
+  - a9a2a1a1-579
+  - a9a2a1a1-580
+  - a9a2a1a1-581
+  - a9a2a1a1-582
+  - a9a2a1a1-583
+  - a9a2a1a1-584
+  - a9a2a1a1-585
+measurements:
+- row_id: a9a2a1a1-578
+  matrix_polymer: Imine-functionalized liquid crystalline epoxy (IE)
+  curing_agent: N-TFSI naphthalene-modified pyrazinium cationic initiator (3 PHR) with 2E4MZ imidazole catalyst (3 PHR)
+  filler_material: h-BN
+  filler_material_original: hexagonal boron nitride (h-BN), IE/h-BN composite, 60 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Solvent-free dry blending of IE epoxy powder, initiator and h-BN, then direct molding and in-situ curing at 125 °C (inside the LC window)
+  k_matrix_W_mK: 0.86
+  k_composite_W_mK: 12.47
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode
+  k_original_value: 12.47
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.8 (Superior Thermal Conductivity of Filler-Reinforced Epoxy Composites), paragraph 3; loadings assigned from the Supporting Fig. S7 caption: ''The measured thermal conductivities were 12.47 ± 1.15, 12.52 ± 0.55, 24.04 ± 1.75, 25.08 ± 0.79, and 12.22 ± 1.41 W m−1 K−1, respectively (n = 4) (Figure 10a).'''
+  confidence: High
+  notes: 'Value is mean ± 1.15 (n = 4). The sentence lists values for 60–90 wt%. The Supporting Fig. S7 caption pairs them explicitly: 60, 70, 80, 85, 90 wt% → 12.47, 12.52, 24.04, 25.08, 12.22. k_matrix 0.86 is neat IE cured with N-TFSI (two-step, 24 h pre-cure at 120 °C, no 2E4MZ), so its cure differs from the composite matrix.'
+- row_id: a9a2a1a1-579
+  matrix_polymer: Imine-functionalized liquid crystalline epoxy (IE)
+  curing_agent: N-TFSI naphthalene-modified pyrazinium cationic initiator (3 PHR) with 2E4MZ imidazole catalyst (3 PHR)
+  filler_material: h-BN
+  filler_material_original: hexagonal boron nitride (h-BN), IE/h-BN composite, 70 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Solvent-free dry blending of IE epoxy powder, initiator and h-BN, then direct molding and in-situ curing at 125 °C (inside the LC window)
+  k_matrix_W_mK: 0.86
+  k_composite_W_mK: 12.52
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode
+  k_original_value: 12.52
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.8 (Superior Thermal Conductivity of Filler-Reinforced Epoxy Composites), paragraph 3; loadings assigned from the Supporting Fig. S7 caption: ''The measured thermal conductivities were 12.47 ± 1.15, 12.52 ± 0.55, 24.04 ± 1.75, 25.08 ± 0.79, and 12.22 ± 1.41 W m−1 K−1, respectively (n = 4) (Figure 10a).'''
+  confidence: High
+  notes: Value is mean ± 0.55 (n = 4). The 70 wt% assignment comes from the Supporting Fig. S7 caption. The k_matrix caveat is the same as for the 60 wt% row.
+- row_id: a9a2a1a1-580
+  matrix_polymer: Imine-functionalized liquid crystalline epoxy (IE)
+  curing_agent: N-TFSI naphthalene-modified pyrazinium cationic initiator (3 PHR) with 2E4MZ imidazole catalyst (3 PHR)
+  filler_material: h-BN
+  filler_material_original: hexagonal boron nitride (h-BN), IE/h-BN composite, 80 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 80.0
+  filler_loading_original_value: 80.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Solvent-free dry blending of IE epoxy powder, initiator and h-BN, then direct molding and in-situ curing at 125 °C (inside the LC window)
+  k_matrix_W_mK: 0.86
+  k_composite_W_mK: 24.04
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode
+  k_original_value: 24.04
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.8 (Superior Thermal Conductivity of Filler-Reinforced Epoxy Composites), paragraph 3; loadings assigned from the Supporting Fig. S7 caption: ''The measured thermal conductivities were 12.47 ± 1.15, 12.52 ± 0.55, 24.04 ± 1.75, 25.08 ± 0.79, and 12.22 ± 1.41 W m−1 K−1, respectively (n = 4) (Figure 10a).'''
+  confidence: High
+  notes: Value is mean ± 1.75 (n = 4). The 80 wt% assignment comes from the Supporting Fig. S7 caption. The k_matrix caveat is the same as for the 60 wt% row.
+- row_id: a9a2a1a1-581
+  matrix_polymer: Imine-functionalized liquid crystalline epoxy (IE)
+  curing_agent: N-TFSI naphthalene-modified pyrazinium cationic initiator (3 PHR) with 2E4MZ imidazole catalyst (3 PHR)
+  filler_material: h-BN
+  filler_material_original: hexagonal boron nitride (h-BN), IE/h-BN composite, 85 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 85.0
+  filler_loading_original_value: 85.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Solvent-free dry blending of IE epoxy powder, initiator and h-BN, then direct molding and in-situ curing at 125 °C (inside the LC window)
+  k_matrix_W_mK: 0.86
+  k_composite_W_mK: 25.08
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode
+  k_original_value: 25.08
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.8 (Superior Thermal Conductivity of Filler-Reinforced Epoxy Composites), paragraph 3: ''The measured thermal conductivities were 12.47 ± 1.15, 12.52 ± 0.55, 24.04 ± 1.75, 25.08 ± 0.79, and 12.22 ± 1.41 W m−1 K−1, respectively (n = 4) (Figure 10a).'''
+  confidence: High
+  notes: 'Value is mean ± 0.79 (n = 4). This is the paper''s headline value: the next sentence and the abstract confirm 25.08 W m−1 K−1 at 85 wt% h-BN. The k_matrix caveat is the same as for the 60 wt% row.'
+- row_id: a9a2a1a1-582
+  matrix_polymer: Imine-functionalized liquid crystalline epoxy (IE)
+  curing_agent: N-TFSI naphthalene-modified pyrazinium cationic initiator (3 PHR) with 2E4MZ imidazole catalyst (3 PHR)
+  filler_material: h-BN
+  filler_material_original: hexagonal boron nitride (h-BN), IE/h-BN composite, 90 wt%
+  filler_shape: platelet
+  filler_loading_wt_pct: 90.0
+  filler_loading_original_value: 90.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Solvent-free dry blending of IE epoxy powder, initiator and h-BN, then direct molding and in-situ curing at 125 °C (inside the LC window)
+  k_matrix_W_mK: 0.86
+  k_composite_W_mK: 12.22
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode
+  k_original_value: 12.22
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.8 (Superior Thermal Conductivity of Filler-Reinforced Epoxy Composites), paragraph 3: ''The measured thermal conductivities were 12.47 ± 1.15, 12.52 ± 0.55, 24.04 ± 1.75, 25.08 ± 0.79, and 12.22 ± 1.41 W m−1 K−1, respectively (n = 4) (Figure 10a).'''
+  confidence: High
+  notes: Value is mean ± 1.41 (n = 4). The next paragraph confirms 12.22 W m−1 K−1 at 90 wt%. The sample was brittle with partial structural collapse, attributed to insufficient epoxy infiltration. The k_matrix caveat is the same as for the 60 wt% row.
+- row_id: a9a2a1a1-583
+  matrix_polymer: Diglycidyl ether of bisphenol A (DGEBA) epoxy
+  curing_agent: N-TFSI naphthalene-modified cationic initiator (same protocol as the IE composites, i.e. with 2E4MZ catalyst)
+  filler_material: h-BN
+  filler_material_original: h-BN, DGEBA composite with 85 wt% h-BN
+  filler_shape: platelet
+  filler_loading_wt_pct: 85.0
+  filler_loading_original_value: 85.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Same experimental protocol as the IE composites (filler fixed at 85 wt%)
+  k_matrix_W_mK: 0.23
+  k_composite_W_mK: 20.05
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode
+  k_original_value: 20.05
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.8, last paragraph: ''The DGEBA composite with 85 wt% h‐BN exhibited a thermal conductivity of 20.05 ± 0.93 W m−1 K−1, whereas the composite with 85 wt% alumina showed only 2.11 ± 0.03 W m−1 K−1 (n = 4) (Figure 10d).'''
+  confidence: High
+  notes: Value is mean ± 0.93 (n = 4). The paper says DGEBA followed 'the same experimental protocol' as IE, so the curing-agent and processing fields are inferred from that sentence. k_matrix 0.23 is neat DGEBA as quoted in Section 2.6. The 85 wt% alumina value (2.11) was skipped because it has no BN.
+- row_id: a9a2a1a1-584
+  matrix_polymer: Imine-functionalized liquid crystalline epoxy (IE)
+  curing_agent: N-TFSI naphthalene-modified pyrazinium cationic initiator
+  filler_material: none
+  filler_material_original: neat IE (LCE) cured with N-TFSI
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: 'Two-step cure: pre-cure at 120 °C for 24 h (LC phase), then post-cure at 190 °C'
+  k_matrix_W_mK: 0.86
+  k_composite_W_mK: 0.86
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode, 80 mW for 10 s
+  k_original_value: 0.86
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.6, paragraph 1: ''As shown in Figure 8a, the intrinsic thermal conductivity of the LCE cured with the N‐TFSI initiator reaches 0.86 W m−1 K−1, which is nearly four times higher than that of the DGEBA counterpart (0.23 W m−1 K−1).'''
+  confidence: High
+  notes: Neat-matrix reference for the IE/h-BN composites. Section 2.3 reports 0.86 ± 0.02 (n = 4) after the 24 h pre-cure. This cure has no 2E4MZ catalyst and differs from the composite cure (125 °C with 2E4MZ).
+- row_id: a9a2a1a1-585
+  matrix_polymer: Diglycidyl ether of bisphenol A (DGEBA) epoxy
+  curing_agent: Naphthalene-modified cationic initiator; the paper does not name which one for this value (only 'DGEBA counterpart' of the N-TFSI-cured LCE in Section 2.6 / Figure 8a)
+  filler_material: none
+  filler_material_original: neat DGEBA (DGEBA counterpart of the N-TFSI-cured LCE)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Cured isothermally at 180 °C
+  k_matrix_W_mK: 0.23
+  k_composite_W_mK: 0.23
+  k_direction: in-plane (In-plane thermal conductivity, Hot Disk anisotropic mode)
+  measurement_method: Transient plane source, Hot Disk TPS 2500 (ThermTest Inc.), anisotropic mode
+  k_original_value: 0.23
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 2.6, paragraph 1: ''As shown in Figure 8a, the intrinsic thermal conductivity of the LCE cured with the N‐TFSI initiator reaches 0.86 W m−1 K−1, which is nearly four times higher than that of the DGEBA counterpart (0.23 W m−1 K−1).'''
+  confidence: High
+  notes: 'Neat-matrix reference for the DGEBA/h-BN 85 wt% composite. The paper does not say which initiator gave 0.23 W m−1 K−1. It is consistent with the cationic-cured DGEBA values in Figure 2c (not printed), which are ~20% above DGEBA/MeTHPA (0.1940, Fig. S3a). The 180 °C isothermal cure comes from the DGEBA initiator study in Section 2.2. The composite matrix was cured under the IE composite protocol (with 2E4MZ), so the cures may differ. Corrected in verification: The value, quote, direction and method are correct. The curing agent ''N-TFSI'' is an inference: the text only says ''the DGEBA counterpart'' and never names the initiator. The fix records that uncertainty and does not guess.'

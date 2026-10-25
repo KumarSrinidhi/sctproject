@@ -2,9 +2,9 @@
 cff-version: 1.2.0
 message: "If you use this dataset or the argus toolkit, please cite it as below. The data are licensed CC-BY-4.0; the code is licensed MIT (see LICENSE)."
 type: dataset
-title: "ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)"
-version: "1.1.0"
-date-released: "2026-10-23"
+title: "ARGUS: Source-verified thermal conductivity of BN- and AlN-filled polymer composites"
+version: "1.2.0"
+date-released: "2026-10-25"
 authors:
   - family-names: "Kumar"
     given-names: "Aniket"
@@ -13,7 +13,7 @@ authors:
 license: CC-BY-4.0
 repository-code: "https://github.com/KumarSrinidhi/sctproject"
 url: "https://github.com/KumarSrinidhi/sctproject"
-abstract: "Experimental effective thermal conductivity of polymer-ceramic composites, primarily epoxy filled with h-BN, BN nanosheets and AlN (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred."
+abstract: "Experimental effective thermal conductivity of polymer composites filled with h-BN, BN nanosheets or AlN, alone or in hybrids, most often in epoxy (thermal interface and packaging materials). Every row is traceable to a table, figure or sentence of an open-access source; no value is estimated or inferred."
 keywords:
   - "thermal conductivity"
   - "thermal interface materials"

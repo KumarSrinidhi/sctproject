@@ -89,9 +89,10 @@ def render_markdown(res: dict[str, Any], abl: dict[str, Any] | None, figure: str
                  f"never seen (leave-one-paper-out MAE {m['mae_log10']:.3f} in log10; R² {m['r2']:.2f}; "
                  f"{100 * m['within_factor_2']:.0f}% of rows within a factor of 2).")
         verdict = "passes" if acc.get("passed") else "fails"
+        phys = (f"; the physics-only baseline reaches ×{M['physics']['lopo']['mae_factor']:.2f}"
+                if "physics" in M and base != "physics" else "")
         L.append(f"- **Acceptance {verdict}:** the best baseline ({base}) reaches ×{b['mae_factor']:.2f} "
-                 f"(MAE {b['mae_log10']:.3f}); the physics-only baseline reaches ×{M['physics']['lopo']['mae_factor']:.2f}."
-                 if "physics" in M else f"- Acceptance {verdict}.")
+                 f"(MAE {b['mae_log10']:.3f}){phys}.")
     if best == "ensemble":
         singles = [n for n in res["ranking_lopo_mae"] if n not in ("ensemble",) and not M[n]["baseline"]]
         if singles:
@@ -178,11 +179,17 @@ def render_markdown(res: dict[str, Any], abl: dict[str, Any] | None, figure: str
     ts = d.get("time_split")
     if ts:
         tr, te = ts["train"], ts["test"]
-        L.append(f"- The time split is harder than leave-one-paper-out. Papers from 2022 on differ from older ones: "
-                 f"BNNS {100 * te['share_BNNS']:.0f}% vs {100 * tr['share_BNNS']:.0f}% of rows, aligned fillers "
-                 f"{100 * te['share_aligned']:.0f}% vs {100 * tr['share_aligned']:.0f}%, and a lower median "
-                 f"enhancement ({te['median_target_log10']:.2f} vs {tr['median_target_log10']:.2f} log10). "
-                 "A model trained on older papers meets a shifted population.")
+        diffs = [f"{label} {100 * te[key]:.0f}% vs {100 * tr[key]:.0f}% of rows"
+                 for key, label in (("share_BNNS", "BNNS"), ("share_aligned", "aligned fillers"))
+                 if round(100 * te[key]) != round(100 * tr[key])]
+        dm = te["median_target_log10"] - tr["median_target_log10"]
+        if abs(dm) >= 0.005:
+            diffs.append(f"a {'lower' if dm < 0 else 'higher'} median enhancement "
+                         f"({te['median_target_log10']:.2f} vs {tr['median_target_log10']:.2f} log10)")
+        shift = (f" Papers from 2022 on differ from older ones: {', '.join(diffs[:-1])}"
+                 f"{' and ' if len(diffs) > 1 else ''}{diffs[-1]}. A model trained on older papers meets a "
+                 "shifted population.") if diffs else ""
+        L.append(f"- The time split is harder than leave-one-paper-out.{shift}")
         timed = {n: e["time_split"]["mae_log10"] for n, e in M.items() if e.get("time_split")}
         if timed:
             bt = min(timed, key=timed.get)

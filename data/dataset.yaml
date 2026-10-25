@@ -4,13 +4,13 @@
 #   minor: rows added/removed or values corrected
 #   patch: metadata/notes only
 name: argus-polymer-ceramic-thermal-conductivity
-title: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)
-version: 1.1.0
-released: '2026-10-23'
+title: Source-verified thermal conductivity of BN- and AlN-filled polymer composites
+version: 1.2.0
+released: '2026-10-25'
 description: >-
-  Experimental effective thermal conductivity of polymer-ceramic composites, primarily
-  epoxy filled with h-BN, BN nanosheets and AlN (thermal interface and packaging
-  materials). Every row is traceable to a table, figure or sentence of an open-access
+  Experimental effective thermal conductivity of polymer composites filled with h-BN,
+  BN nanosheets or AlN, alone or in hybrids, most often in epoxy (thermal interface
+  and packaging materials). Every row is traceable to a table, figure or sentence of an open-access
   source; no value is estimated or inferred.
 homepage: https://github.com/KumarSrinidhi/sctproject
 # Citation and licensing. CITATION.cff and datapackage.json are generated from

@@ -1,0 +1,72 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P112
+paper:
+  doi: 10.3390/polym17121604
+  title: Controllable Preparation of Oriented Boron Nitride Nanosheets/Polyacrylate Pressure-Sensitive Adhesive Composites with Enhanced Thermal Conductivity
+  year: 2025
+  source_url: https://doi.org/10.3390/polym17121604
+extraction_log:
+- seq: 124
+  candidate_id: P6-P112
+  doi: 10.3390/polym17121604
+  paper_title: Controllable Preparation of Oriented Boron Nitride Nanosheets/Polyacrylate Pressure-Sensitive Adhesive Composites with Enhanced Thermal Conductivity
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym17121604.txt (cache, not committed)
+  tables_inspected: Table 1 (viscoelastic parameters, no k), Table 2 (TGA data, no k)
+  figures_inspected: Figure 2 (k vs filler content for 1-5 coating layers; only the two 25 wt% values for 3 and 5 layers are printed in text); Figures 3-11 not k
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 24 figure-only values not taken. Only two k values are printed (25 wt%, 3 and 5 layers). Neat PSA k and the 5/10/15/20 wt% and 1/2/4-layer values appear only in Figure 2 (5 loadings x 5 layer counts + neat = ~26 points, 24 skipped; count estimated from the figure description). Neat-PSA k could be back-calculated from the % increases but is not printed, so no neat row. Measurement direction not stated (hot-wire).
+  rows_rejected_at_append: []
+  rows_added:
+  - 3c1b0a84-330
+  - 3c1b0a84-331
+measurements:
+- row_id: 3c1b0a84-330
+  matrix_polymer: UV-cured polyacrylate pressure-sensitive adhesive (BA/HEA/AA prepolymer, UV bulk polymerization)
+  curing_agent: TPO photoinitiator + HDDA cross-linker, UV curing
+  filler_material: BNNS
+  filler_material_original: m-BNNSs (KH560-modified BNNSs), sample m-BNNSs/PSAs-Ori-3L, 25 wt%
+  filler_shape: nanosheets (liquid-phase ultrasonically exfoliated from h-BN)
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: KH560 silane coupling agent (γ-(2,3-epoxypropoxy)propyl trimethoxysilane)
+  filler_alignment: oriented in-plane by 3-layer coating/calendering (XRD ordering degree I002/I100 increases with coating number; reported sequence 24.77, 30.22, 73.57, 85.78, 98.96 for 1-5 layers)
+  processing_method: UV bulk polymerization of prepolymer, mixing with m-BNNSs, multilayer roller coating/calendering on PET film (total adhesive thickness 150 µm), UV curing
+  k_composite_W_mK: 0.8347
+  k_direction: unknown (transient hot-wire; m-BNNSs oriented in-plane)
+  measurement_method: Transient hot-wire method, TC3000E thermal conductivity meter (Summer Creek Electronic Technology, Shenzhen); room temperature; average of several measurements
+  k_original_value: 0.8347
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1: ''The TC of the composites coated with three layers at a filler amount of 25 wt% amounted to 0.8347 W/(m·K), which was a 474% increase over the pure PSAs, and that of the pressure-sensitive adhesive coated with five layers reached 0.9552 W/(m·K), which was a 543% increase over the pure PSAs.'''
+  confidence: High
+  notes: Three-layer coated composite. Paper states it is 474% higher than pure PSAs (neat PSA k not printed). Loading printed as 25 wt%; methods describe it as 25 g m-BNNSs per 100 g prepolymer. Also restated in Conclusions. Measured at room temperature.
+- row_id: 3c1b0a84-331
+  matrix_polymer: UV-cured polyacrylate pressure-sensitive adhesive (BA/HEA/AA prepolymer, UV bulk polymerization)
+  curing_agent: TPO photoinitiator + HDDA cross-linker, UV curing
+  filler_material: BNNS
+  filler_material_original: m-BNNSs (KH560-modified BNNSs), sample m-BNNSs/PSAs-Ori-5L, 25 wt%
+  filler_shape: nanosheets (liquid-phase ultrasonically exfoliated from h-BN)
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: KH560 silane coupling agent (γ-(2,3-epoxypropoxy)propyl trimethoxysilane)
+  filler_alignment: oriented in-plane by 5-layer coating/calendering (highest XRD ordering degree, I002/I100 = 98.96 per the 1-5 layer sequence)
+  processing_method: UV bulk polymerization of prepolymer, mixing with m-BNNSs, multilayer roller coating/calendering on PET film (total adhesive thickness 150 µm), UV curing
+  k_composite_W_mK: 0.9552
+  k_direction: unknown (transient hot-wire; m-BNNSs oriented in-plane)
+  measurement_method: Transient hot-wire method, TC3000E thermal conductivity meter (Summer Creek Electronic Technology, Shenzhen); room temperature; average of several measurements
+  k_original_value: 0.9552
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.1, paragraph 1: ''The TC of the composites coated with three layers at a filler amount of 25 wt% amounted to 0.8347 W/(m·K), which was a 474% increase over the pure PSAs, and that of the pressure-sensitive adhesive coated with five layers reached 0.9552 W/(m·K), which was a 543% increase over the pure PSAs.'''
+  confidence: High
+  notes: Five-layer coated composite; headline value (abstract, introduction, conclusions). 543% higher than pure PSAs (neat PSA k not printed). Loading printed as 25 wt%; methods describe it as 25 g per 100 g prepolymer. Measured at room temperature.

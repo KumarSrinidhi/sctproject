@@ -1,0 +1,70 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P157
+paper:
+  doi: 10.3390/nano13152154
+  title: Improved Through-Plane Thermal Conductivity of Poly(dimethylsiloxane)Composites through the Formation of 3D Filler Foam Using Freeze-Casting and Annealing Processes
+  year: 2023
+  source_url: https://doi.org/10.3390/nano13152154
+extraction_log:
+- seq: 169
+  candidate_id: P6-P157
+  doi: 10.3390/nano13152154
+  paper_title: Improved Through-Plane Thermal Conductivity of Poly(dimethylsiloxane)Composites through the Formation of 3D Filler Foam Using Freeze-Casting and Annealing Processes
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano13152154.txt (cache, not committed)
+  tables_inspected: None (the paper has no tables; the JATS XML contains no table-wrap)
+  figures_inspected: 'Figure 6 caption (a: through-plane k vs filler loading; b: TCE for different manufacturing methods at 50 wt%; c: comparison with literature). Image values not read.'
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 2 figure-only values not taken. Only two k values are printed: pure PDMS 0.19 and the freeze-dried 50 wt% AlN/rGO/PDMS 1.43 W/mK, both repeated in the abstract and conclusions. Values for other filler loadings (Fig. 6a) and for the randomly dispersed composite (Fig. 6b) appear only in figures. figure_only_skipped=2 is a lower bound (at least one other loading plus the random-dispersion sample), because the figure images were not inspected. Fig. 6c compares with literature and is e'
+  rows_rejected_at_append: []
+  rows_added:
+  - e5804756-572
+  - e5804756-573
+measurements:
+- row_id: e5804756-572
+  matrix_polymer: PDMS (SYLGARD 184 silicone elastomer, Dow)
+  curing_agent: SYLGARD 184 curing agent, 10:1 base:curing agent by weight
+  filler_material: none
+  filler_material_original: pure PDMS
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.19
+  k_direction: through-plane (Figure 6 reports through-plane thermal conductivity; the sentence does not say so explicitly for pure PDMS)
+  measurement_method: Laser flash (LFA, NETZSCH NanoFlash 467) for thermal diffusivity at room temperature, 25 mm diameter samples; λ = α·Cp·ρ (how Cp and ρ were obtained is not stated)
+  k_original_value: 0.19
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.5, paragraph 1: ''The pure PDMS thermal conductivity is only (0.19) W m−1 K−1, but the AlN/rGO/PMDS composite (filler content 50 wt.%) has improved through-plane thermal conductivity to achieve 1.43 W m−1 K−1.'''
+  confidence: High
+  notes: Neat-matrix reference. Measured at 'room temperature' (no number given).
+- row_id: e5804756-573
+  matrix_polymer: PDMS (SYLGARD 184 silicone elastomer, Dow)
+  curing_agent: SYLGARD 184 curing agent, 10:1 base:curing agent by weight
+  filler_material: AlN/rGO hybrid
+  filler_material_original: AlN/rGO hybrid filler foam (freeze-dried, annealed), sample AlN/rGO/PDMS, filler content 50 wt.%
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none stated; PVA binder removed and GO reduced to rGO by annealing at 450 °C for 2 h
+  filler_alignment: 3D interconnected filler foam network from freeze-casting; the paper describes the pathway as oriented in the through-plane direction
+  processing_method: GO (250 mg) + PVA (31.25 mg) sonicated in water, AlN (1.25 g) added, stirred 12 h, poured into a mould and freeze-dried for 48 h; foam annealed at 450 °C for 2 h (PVA removed, GO reduced); PDMS + curing agent infiltrated into the foam under vacuum and cured
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 1.43
+  k_direction: through-plane
+  measurement_method: Laser flash (LFA, NETZSCH NanoFlash 467) for thermal diffusivity at room temperature, 25 mm diameter samples; λ = α·Cp·ρ (how Cp and ρ were obtained is not stated)
+  k_original_value: 1.43
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.5, paragraph 1: ''The AlN/rGO/PDMS composite shows improved through-plane thermal conductivity with 50 wt.% of hybrid filler loading (1.43 W m−1 K−1).'''
+  confidence: High
+  notes: 'Hybrid AlN + rGO, 50 wt% total. Foam batch: AlN 1.25 g (Alfa Aesar, average diameter 4 μm, density 3.3 g/cm3) with GO 250 mg before reduction, so AlN:GO ≈ 5:1 by mass; the AlN:rGO split in the final composite is not stated. The paper says this is a 752% improvement over pure PDMS (1.43/0.19 ≈ 7.5-fold). The randomly dispersed 50 wt% composite is described only relatively (the freeze-dried one is 137% higher) and its k is not printed.'
