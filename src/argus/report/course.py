@@ -203,11 +203,15 @@ def _crosscheck_summary(ext: dict[str, Any]) -> dict[str, Any] | None:
     if not cc:
         return None
     grades = Counter(p["grade"] for c in cc for p in c["pair_rows"])
-    review = (ext.get("crosscheck_review") or {}).get("papers") or {}
+    rv = ext.get("crosscheck_review") or {}
+    review = rv.get("papers") or {}
     return {"papers": len({d for c in cc for d in c["shared_dois"]}),
             "pairs": sum(c["pairs"] for c in cc), "agree": grades.get("agree", 0),
             "minor": grades.get("minor", 0), "disagree": grades.get("disagree", 0),
-            "unmatched": sum(len(c["unmatched_external"]) for c in cc), "review": review}
+            "unmatched": sum(len(c["unmatched_external"]) for c in cc), "review": review,
+            "unreviewed": rv.get("unreviewed") or [],
+            "no_change": bool(review) and all(str(v.get("action", "")).strip().lower().startswith("none")
+                                              for v in review.values())}
 
 
 def external_context(ext: dict[str, Any], figs: dict[str, str]) -> dict[str, Any]:
@@ -233,8 +237,21 @@ def external_context(ext: dict[str, Any], figs: dict[str, str]) -> dict[str, Any
     clearly_worse = [r["label"] for r in rows if r["vs"] and r["vs"]["clear"] and r["vs"]["mae_diff"] > 0
                      and r["model"] not in ("median", "knn")]
     pooled = (ext.get("pooled") or {}).get(key) or next(iter((ext.get("pooled") or {}).values()), None)
+    clear_pooled = [m for m, e in (pooled or {}).get("models", {}).items()
+                    if e["train_rows"]["ci95"] and e["train_rows"]["ci95"][1] < 0]
     cc = {k: c for k, c in (ext.get("crosscheck") or {}).items() if c["shared_papers"]}
     by_model = {r["model"]: r for r in rows}
+    learned = [r for r in rows if r["model"] not in ("median", "physics", "knn")]
+    top = learned[0] if learned else None
+    cov_ok = [r for r in learned if r["coverage"] >= 0.9]
+    under = [r for r in learned if r["coverage"] < 0.9]
+    pooled_detail = []
+    for m in clear_pooled:
+        e = pooled["models"][m]["train_rows"]
+        pooled_detail.append({"label": MODEL_LABEL.get(m, m), "alone": e["alone_lopo"], "pooled": e["pooled_lopo"],
+                              "ci": e["ci95"]})
+    pooled_ext_clear = [MODEL_LABEL.get(m, m) for m, e in (pooled or {}).get("models", {}).items()
+                        if e["external_rows"]["ci95"] and e["external_rows"]["ci95"][1] < 0]
     return {
         "sources": ext["sources"], "key": key, "test": t["test"] if t else None, "rows": rows, "by": by_model,
         "domain": (t or {}).get("domain") or {"new_fillers": [], "new_matrices": [], "sources": []},
@@ -244,9 +261,17 @@ def external_context(ext: dict[str, Any], figs: dict[str, str]) -> dict[str, Any
         "cc": _crosscheck_summary(ext),
         "dem": pc.get("bcc", {}).get("bruggeman_dem"),
         "bcc": ext.get("physics_on_bcc"), "pooled": pooled,
-        "pooled_clear": ([MODEL_LABEL.get(m, m) for m, e in pooled["models"].items()
-                          if e["train_rows"]["ci95"] and e["train_rows"]["ci95"][1] < 0] if pooled else []),
-        "pooled_max_abs": (max(abs(e["train_rows"]["diff"]) for e in pooled["models"].values()) if pooled else None),
+        "pooled_clear": [MODEL_LABEL.get(m, m) for m in clear_pooled],
+        # largest change among the models whose change is NOT clearly non-zero
+        "pooled_max_abs": (max((abs(e["train_rows"]["diff"]) for m, e in pooled["models"].items() if m not in clear_pooled),
+                               default=0.0) if pooled else None),
+        "tested": {k: v["test"] for k, v in (ext.get("transfer") or {}).items() if k != "all"},
+        "top": top, "phys": by_model.get("physics"),
+        "cov_ok": [r["label"] for r in cov_ok],
+        "cov_ok_min": min((r["coverage"] for r in cov_ok), default=None),
+        "cov_ok_max": max((r["coverage"] for r in cov_ok), default=None),
+        "under_cover": [{"label": r["label"], "coverage": r["coverage"]} for r in under],
+        "pooled_detail": pooled_detail, "pooled_ext_clear": pooled_ext_clear,
         "coverage_min": min((r["coverage"] for r in rows if r["model"] not in ("median", "knn")), default=None),
         "clearly_better": clearly_better, "clearly_worse": clearly_worse,
         "crosscheck": cc, "figs": figs,

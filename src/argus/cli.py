@@ -253,13 +253,18 @@ app.add_typer(external_app, name="external")
 def external_fetch(source: Optional[str] = typer.Argument(None, help="Source key (default: all)"),
                    root: Optional[Path] = RootOpt):
     """Download missing raw files listed in data/external/sources.yaml (sha256-checked)."""
-    from .external.manifest import fetch
+    from .external.manifest import UnknownSource, fetch
 
     lay = layout(root)
+    try:
+        results = fetch(lay.data / "external", only=source)
+    except UnknownSource as e:
+        typer.echo(str(e.args[0]))
+        raise typer.Exit(2)
     bad = 0
-    for r in fetch(lay.data / "external", only=source):
-        bad += r["action"] == "checksum-mismatch"
-        typer.echo(f"{r['action']:18s} {r['source']:8s} {r['path']}")
+    for r in results:
+        bad += r["action"] in ("checksum-mismatch", "download-failed")
+        typer.echo(f"{r['action']:18s} {r['source']:8s} {r['path']}" + (f"  ({r['error']})" if r.get("error") else ""))
     raise typer.Exit(1 if bad else 0)
 
 

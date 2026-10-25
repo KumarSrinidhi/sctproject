@@ -27,6 +27,7 @@ TABLE = "tagp_thermal_datasets.csv"
 DIRECTION = {"DS03": "", "DS04": "in-plane"}
 SHAPE = {"DS03": "flake", "DS04": "nanosheet"}
 ALIGNMENT = {"DS03": "random (high-shear mixing)", "DS04": "nacre-mimetic 3D network (aerogel infiltration)"}
+YEAR = {"DS03": 2018, "DS04": 2019}  # source papers (Crossref)
 
 
 def records(folder: Path) -> Iterator[ExternalRecord]:
@@ -42,7 +43,8 @@ def records(folder: Path) -> Iterator[ExternalRecord]:
             filler=r["filler"], matrix=r["matrix"], doi=r["source_doi"], vol_pct=vol,
             wt_pct=float(r["wt_pct"]) if r["wt_pct"] else None, k_matrix=km.get(ds),
             direction=DIRECTION.get(ds, ""), shape=SHAPE.get(ds, ""), alignment=ALIGNMENT.get(ds, ""),
-            processing=r["fabrication"], title=r["source_title"],
+            processing=r["fabrication"], title=r["source_title"], year=YEAR.get(ds),
+            value_source="figure",  # digitized from the source paper's figure
             notes=f"Digitized by Sarikhani et al. (2022), dataset {ds}, from {r['selected_figure']}.",
             extra={"dataset": ds},
         )

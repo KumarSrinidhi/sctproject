@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25T15:25:21",
+  "generated": "2026-10-25T17:23:01",
   "overall": "PASS",
   "checks": [
     {
@@ -54,7 +54,7 @@
       "id": "external_raw_checksums",
       "description": "External raw files are byte-identical to the download recorded in data/external/sources.yaml",
       "ok": true,
-      "detail": "5 of 6 files verified"
+      "detail": "7 of 8 files verified"
     }
   ],
   "stats": {

@@ -7,9 +7,12 @@ All values are traceable to a specific paper, table, figure, or text location. N
 **Dataset v1.1.0** (released 2026-10-23, tag `data-v1.1`): **258 rows / 95 papers**. See [data/CHANGELOG.md](data/CHANGELOG.md) for what changed since v1.0 (260 rows).
 
 **Tested on other groups' data** (`argus external validate`, [report](reports/external_validation.md)):
-- Our effective-medium code reproduces two independent implementations exactly.
-- Models trained only on ARGUS predict 280 measurements from 37 papers they have never seen to a typical
-  ×1.35, and their 90% intervals do not under-cover.
+- Our effective-medium code reproduces 6 of 7 published model columns of two independent implementations
+  exactly. Where the seventh (asymmetric Bruggeman) differs, the published values fail the model's own
+  equation.
+- The best model trained only on ARGUS predicts 274 measurements from 34 papers it has never seen to a
+  typical ×1.39, against ×1.48 for calibrated physics; with 34 test papers that gap is not yet
+  distinguishable from zero. Its 90% intervals cover 98% of the rows.
 - Of the 4 values that independent extractions of the same papers let us compare, 3 match exactly. The
   fourth differs because a review quotes the 20 vol% value at 15 vol%.
 

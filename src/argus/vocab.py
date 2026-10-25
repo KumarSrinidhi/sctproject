@@ -70,15 +70,23 @@ _NAMED: list[tuple[str, str]] = [
     ("LFA", r"laser\s*flash|light\s*flash|xenon\s*flash|\bLFA\b|LFA[\s-]?\d|LAF\s?\d|nano\s?flash|hyper\s?flash|"
             r"micro\s?flash|sinku|DXF-?\d|e1461|22007-4"),
     ("PERIODIC", r"laser[\s-]?pit|periodic\s*heating|temperature[\s-]wave|thermowave|ångström|angstrom|22007-3"),
-    ("TPS", r"hot\s*disk|transient\s*plane|\bTPS\b|TPS\s?\d|22007-2|DZDR|DRE-?\d|transient\s*plate"),
+    ("TPS", r"hot\s*disk|transient\s*plane|TPS\s?\d|22007-2|DZDR|DRE-?\d|transient\s*plate"),
     ("THB", r"hot\s*bridge|\bTHB\b"),
     ("MTPS", r"c-therm|\bTCi\b|trident|modified\s*transient"),
-    ("HOT_WIRE", r"hot[\s-]*wire|\bTHW\b|needle\s*probe|line\s*source|xiaxi|xiatech"),
+    ("HOT_WIRE", r"hot[\s-]*wire|needle\s*probe|line\s*source|xiaxi|xiatech"),
     ("SS_D5470", r"d5470|DRL-?I|plane\s*heat\s*flow"),
     ("SS_GHFM", r"e1530|DTC-?\d|guarded\s*heat\s*flow|unitherm"),
-    ("SS_HFM_GHP", r"c518|c177|guarded\s*hot\s*plate|\bGHP\b|\bHFM\b|HFM\s?\d|8302"),
+    ("SS_HFM_GHP", r"c518|c177|guarded\s*hot\s*plate|HFM\s?\d|8302"),
     ("THIN_FILM", r"3\s?ω|3[\s-]?omega|thermoreflectance|TDTR|FDTR"),
     ("IR_THERMO", r"thermo[\s-]?camera|ir\s*camera|infrared\s*therm|lock-?in\s*therm"),
+]
+# Tier 1b: bare abbreviations ("TPS, 2500S", "THW, ASTM C1113", "GHP", "HFM"). They count
+# only when no tier-1 name, standard or instrument is present, so "GHP, DRL-III" stays
+# a D5470-type rig.
+_ABBREV: list[tuple[str, str]] = [
+    ("TPS", r"\bTPS\b"),
+    ("HOT_WIRE", r"\bTHW\b"),
+    ("SS_HFM_GHP", r"\bGHP\b|\bHFM\b"),
 ]
 # Tier 2: only the family is named.
 _GENERIC: list[tuple[str, str]] = [("SS_UNSPECIFIED", r"steady[\s-]*state")]
@@ -97,7 +105,8 @@ def _compile(rules: list[tuple[str, str]]) -> list[tuple[str, re.Pattern[str]]]:
     return [(cls, re.compile(rx, re.IGNORECASE)) for cls, rx in rules]
 
 
-_NAMED_RX, _GENERIC_RX, _INSTRUMENT_RX = _compile(_NAMED), _compile(_GENERIC), _compile(_INSTRUMENT)
+_NAMED_RX, _ABBREV_RX = _compile(_NAMED), _compile(_ABBREV)
+_GENERIC_RX, _INSTRUMENT_RX = _compile(_GENERIC), _compile(_INSTRUMENT)
 
 
 @dataclass(frozen=True)
@@ -109,10 +118,11 @@ class MethodLabel:
 
 def classify_method(text: str | None) -> MethodLabel:
     t = text or ""
-    hits = [(m.start(), cls) for cls, rx in _NAMED_RX if (m := rx.search(t))]
-    if hits:
-        cls = min(hits)[1]
-        return MethodLabel(cls, "named", METHOD_CLASSES[cls])
+    for tier in (_NAMED_RX, _ABBREV_RX):
+        hits = [(m.start(), cls) for cls, rx in tier if (m := rx.search(t))]
+        if hits:
+            cls = min(hits)[1]
+            return MethodLabel(cls, "named", METHOD_CLASSES[cls])
     for tier, basis in ((_GENERIC_RX, "generic"), (_INSTRUMENT_RX, "instrument")):
         for cls, rx in tier:
             if rx.search(t):

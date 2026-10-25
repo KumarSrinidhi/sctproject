@@ -102,6 +102,7 @@ def records(folder: Path) -> Iterator[ExternalRecord]:
         if vf is None or k is None or vf <= 0:
             continue
         temp = spec.get("temperature_C", _f(p.raw.get("Temperature_C")))
+        fig = str(p.raw.get("Figure/Table") or "").lower()
         yield ExternalRecord(
             source=KEY,
             ext_id=f"{p.series}#{p.index}",
@@ -120,6 +121,9 @@ def records(folder: Path) -> Iterator[ExternalRecord]:
             alignment=spec.get("alignment", ""),
             processing=spec.get("processing", ""),
             temperature_C=temp,
+            year=spec.get("year"),
+            # every included series cites a figure of its source (digitized by EVF)
+            value_source="figure" if "fig" in fig else "table" if "table" in fig else "",
             title=str(p.raw.get("Citation") or ""),
             notes=f"EVF series {p.series}. {spec.get('notes', '')}".strip(),
             extra={"series": p.series, "k_filler_evf": _f(p.raw.get("k_filler_WmK")),

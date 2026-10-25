@@ -111,7 +111,7 @@ src/argus/
   physics/fit.py  per-series model fitting
   analysis/lmm.py   REML random-intercept mixed model (between/within df)
   analysis/bias.py  measurement-technique and direction bias analysis
-  ml/features.py    leakage-free feature matrix (27 columns, 10 groups)
+  ml/features.py    leakage-free feature matrix (26 columns, 9 groups)
   ml/models.py      baselines + learners (grouped inner tuning, monotone boosting)
   ml/benchmark.py   paper-grouped validation, conformal intervals, ablation
   ml/report.py      Markdown report, prediction table, parity plot
@@ -298,7 +298,9 @@ Results are in [`reports/method_bias.md`](../reports/method_bias.md) and summari
 `argus ml benchmark` (`src/argus/ml/`) asks whether composition, processing and method metadata predict k
 for a paper the model has never seen.
 
-- **Features** (`features.py`): 27 columns in 10 named groups. Every feature is a fixed row-wise function of
+- **Features** (`features.py`): 26 columns in 9 named groups. Publication year is deliberately not one:
+  it carried no clear information inside ARGUS, and on other groups' older papers it acted as a
+  paper-identity proxy that tree models extrapolated badly (section 8c). Every feature is a fixed row-wise function of
   the enriched row, so building them cannot leak information between folds. Missing sizes use a fixed
   constant plus an indicator, not a dataset median. The target is log₁₀(k/k_m).
 - **Models** (`models.py`): three baselines (median, calibrated Nan 1997, nearest neighbours) and four
@@ -308,7 +310,9 @@ for a paper the model has never seen.
   - gradient boosting, constrained to be non-decreasing in every loading-derived feature;
   - a random forest;
   - an equal-weight ensemble of physics + GP, ridge and gradient boosting. It was chosen on ARGUS-only
-    results, before any external test, and then confirmed on external data (section 8c).
+    results, before any external test, by comparing combinations on the same leave-one-paper-out folds
+    that report it. Its small edge there (0.010 in log₁₀ over the best single model) is therefore not evidence
+    on its own; the out-of-sample confirmation is the external test (section 8c).
 - **Validation** (`benchmark.py`):
   - Leave-one-paper-out is the headline, alongside repeated 5-fold by paper.
   - Row-level 5-fold is reported only as a leakage contrast.
@@ -318,9 +322,9 @@ for a paper the model has never seen.
   - The ablation removes feature groups (and overlapping pairs) on identical splits, so the differences are
     paired.
 
-Headline: ×1.65 typical error on an unseen paper (ensemble; ×1.66 for gradient boosting alone), against
-×1.91 and ×2.14 for the best baselines. The ensemble's calibrated 90% intervals are ×/÷2.9 wide, against
-×/÷3.35 for gradient boosting alone. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md);
+Headline: ×1.67 typical error on an unseen paper (ensemble; ×1.71 for the best single model, a random
+forest), against ×1.91 and ×2.14 for the best baselines. The ensemble's calibrated 90% intervals are
+×/÷3.3 wide. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md);
 the test on other groups' data is in [`reports/external_validation.md`](../reports/external_validation.md).
 
 ## 8c. External validation

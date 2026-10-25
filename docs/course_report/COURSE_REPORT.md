@@ -12,7 +12,7 @@ Epoxies filled with hexagonal boron nitride (h-BN), BN nanosheets (BNNS) or alum
 
 **Do effective-medium models explain the data?** 98% of rows exceed the ceiling of any isolated-sphere (Maxwell) model, and the Nan 1997 platelet model needs an apparent interfacial resistance of 6.8×10⁻⁷ m²K/W (median), inside the range of published fits.
 
-**Can *k* be predicted for a paper that was never seen?** With validation that holds out whole papers, an equal-weight ensemble of calibrated physics with a Gaussian-process correction, ridge regression and monotone gradient boosting reaches a typical error of ×1.65, against ×1.91 for the best baseline and ×2.14 for calibrated physics. Splitting by row instead overstates accuracy. Tested on 280 measurements from 37 papers curated by others, models trained here keep a typical error of ×1.35 and intervals that do not under-cover, and our effective-medium code reproduces two independent implementations exactly.
+**Can *k* be predicted for a paper that was never seen?** With validation that holds out whole papers, an equal-weight ensemble of calibrated physics with a Gaussian-process correction, ridge regression and monotone gradient boosting reaches a typical error of ×1.67, against ×1.91 for the best baseline and ×2.14 for calibrated physics. Splitting by row instead overstates accuracy. Tested on 274 measurements from 34 papers curated by others, the best model trained here (ensemble) reaches ×1.39 against ×1.48 for calibrated physics, a gap still within the uncertainty of 34 test papers. Our effective-medium code reproduces 6 of 7 published model columns of two independent implementations exactly (where the last one differs, the published values fail the model's own equation).
 We close with a reporting checklist for *k* measurements on composite thermal interface materials, based on what the source papers most often left out.
 
 ---
@@ -118,7 +118,7 @@ with a random intercept per paper, fitted by REML. Method is constant within mos
 
 **Physical models.** The core is Nan et al. (1997) for spheroids with an orientation average and interfacial (Kapitza) resistance *R<sub>K</sub>* [13]. It reduces exactly to Maxwell–Garnett for spheres without interface resistance and to Hasselman–Johnson with it. The project's tests enforce both limits. Lewis–Nielsen and Agari–Uno are fitted for comparison, with one free parameter per model fitted to each loading series on log *k*.
 
-**Prediction.** Twenty-seven features were built row by row: loading, a physics estimate, filler, morphology, treatment, direction, method, matrix, data quality and year. Models were scored by **leave-one-paper-out** cross-validation, so no paper ever appears on both sides of a split. Hyperparameters were tuned with an inner split that also holds out whole papers. Row-level random splits are reported only to show how much they leak.
+**Prediction.** 26 features were built row by row: loading, a physics estimate, filler, morphology, treatment, direction, method, matrix and data quality. Publication year is deliberately not a feature: inside ARGUS it carried no clear information, and on other groups' older papers it made the models extrapolate badly (Section 4.5). Models were scored by **leave-one-paper-out** cross-validation, so no paper ever appears on both sides of a split. Hyperparameters were tuned with an inner split that also holds out whole papers. Row-level random splits are reported only to show how much they leak.
 
 ## 4. Results
 
@@ -192,18 +192,18 @@ The model attributes 78% of the residual variance to differences between papers 
 
 | Model | Role | Typical error (LOPO) | R² | Within ×2 | 5-fold by paper | 5-fold by row (leaky) |
 |---|---|---|---|---|---|---|
-| ensemble | learned | ×1.65 | 0.62 | 75% | 0.22 ± 0.01 | 0.15 |
-| xgboost | learned | ×1.66 | 0.59 | 75% | 0.23 ± 0.01 | 0.16 |
-| random_forest | learned | ×1.71 | 0.59 | 71% | 0.24 ± 0.01 | 0.20 |
-| ridge | learned | ×1.74 | 0.59 | 69% | 0.24 ± 0.01 | 0.20 |
-| gp_residual | learned | ×1.75 | 0.55 | 72% | 0.24 ± 0.01 | 0.15 |
+| ensemble | learned | ×1.67 | 0.60 | 72% | 0.23 ± 0.01 | 0.16 |
+| random_forest | learned | ×1.71 | 0.60 | 70% | 0.24 ± 0.01 | 0.20 |
+| xgboost | learned | ×1.72 | 0.54 | 72% | 0.24 ± 0.01 | 0.17 |
+| ridge | learned | ×1.73 | 0.58 | 69% | 0.25 ± 0.02 | 0.21 |
+| gp_residual | learned | ×1.74 | 0.55 | 72% | 0.24 ± 0.00 | 0.15 |
 | knn | baseline | ×1.91 | 0.43 | 62% | 0.29 ± 0.01 | 0.26 |
 | physics | baseline | ×2.14 | 0.26 | 51% | 0.33 ± 0.00 | 0.32 |
 | median | baseline | ×2.64 | -0.08 | 37% | 0.42 ± 0.01 | 0.41 |
 
 *The last two columns give MAE in log<sub>10</sub>(k).*
 
-An equal-weight ensemble of calibrated physics with a Gaussian-process correction, ridge regression and monotone gradient boosting reaches a typical error of **×1.65** on unseen papers, with 75% of rows within a factor of 2. That beats the best baseline (knn, ×1.91) and calibrated physics (×2.14).
+An equal-weight ensemble of calibrated physics with a Gaussian-process correction, ridge regression and monotone gradient boosting reaches a typical error of **×1.67** on unseen papers, with 72% of rows within a factor of 2. That beats the best baseline (knn, ×1.91) and calibrated physics (×2.14).
 
 The validation design matters as much as the model. For gp_residual, row-level splitting gives an MAE of 0.15 against 0.24 when papers are kept together, because rows from the same paper share hidden conditions. Published random-split R² values of 0.95–0.99 are not comparable for this reason. In the closest comparable study that held out whole sources, R² fell from 0.46 to about 0.05 [17].
 
@@ -212,8 +212,8 @@ The validation design matters as much as the model. For gp_residual, row-level s
 *Figure 6. Honest (dark) and leaky (light) error for each model.*
 
 **Uncertainty.** Prediction intervals built from other papers' errors are calibrated:
-- 90% intervals cover 90% of rows, but span ×/÷2.9;
-- 68% intervals span ×/÷1.78.
+- 90% intervals cover 90% of rows, but span ×/÷3.31;
+- 68% intervals span ×/÷1.88.
 
 Composition alone does not pin down *k*, consistent with the between-paper variance found in Section 4.2.
 
@@ -221,45 +221,47 @@ Composition alone does not pin down *k*, consistent with the between-paper varia
 
 *Figure 7. Increase in error when each feature group is removed (paired repeats; ±2 SD).*
 
-**Which information helps.** Loading + physics (+0.13), direction + method (+0.04), direction (+0.03) clearly reduce the error on unseen papers. Loading and the physics estimate carry overlapping information, so each looks unimportant alone while the pair matters most. **Measurement direction is the only metadata, beyond composition, that clearly helps prediction**, which is consistent with the direct evidence of Section 4.2. Morphology, surface treatment, matrix and year are not distinguishable from noise with 80 papers.
+**Which information helps.** Loading + physics (+0.16), direction + method (+0.04), direction (+0.03) clearly reduce the error on unseen papers. Loading and the physics estimate carry overlapping information, so each looks unimportant alone while the pair matters most. **Measurement direction is the only metadata, beyond composition, that clearly helps prediction**, which is consistent with the direct evidence of Section 4.2. Morphology, surface treatment and matrix are not distinguishable from noise with 80 papers.
 
-**Extrapolation in time.** We trained on papers up to 2021 and tested on 2022 onward. The later papers are harder to predict: BNNS makes up 34% of their rows against 20% earlier, aligned fillers 20% against 9%, and their median enhancement is lower. The best model on this split is ridge (MAE 0.27).
+**Extrapolation in time.** We trained on papers up to 2021 and tested on 2022 onward. The later papers are harder to predict: BNNS makes up 34% of their rows against 20% earlier, aligned fillers 20% against 9%, and their median enhancement is lower. The best model on this split is random_forest (MAE 0.27).
 
 ### 4.5 Testing on data we did not curate
 
 Leave-one-paper-out validation still scores the models on papers that we chose and transcribed. To test them, and the physics code, on data curated by other groups, we used the openly licensed datasets below. None of them enters the ARGUS records; they are read from `data/external/` with their raw files checksummed (`argus external validate`).
 
-| External source | Licence | Used for | Rows used | Papers |
+| External source | Licence | Used for | Rows (papers) loaded | Test rows (papers), papers in ARGUS removed |
 |---|---|---|---|---|
-| EVF_Thermal_Conductivity_Dataset | CC-BY-4.0 | independent test set | 137 | 14 |
-| Supplementary Data 1 of He, Wu & Fu, Nat. Commun. 2025 | CC-BY-NC-ND-4.0 | independent test set | 138 | 23 |
-| Digitized percolation datasets of Sarikhani et al. 2022 (S10) | CC-BY-4.0 | independent test set | 21 | 2 |
-| Mumtaz et al. 2024, Heliyon 10, e25381, Table 1 | CC-BY-NC-ND-4.0 | value cross-check | 4 | 2 |
-| He, Wu & Fu, source data of [20] | MIT | physics checks only (no material names per row) | 242 | – |
+| EVF_Thermal_Conductivity_Dataset | CC-BY-4.0 | independent test set | 137 (14) | 137 (14) |
+| Supplementary Data 1 of He, Wu & Fu, Nat. Commun. 2025 | CC-BY-NC-ND-4.0 | independent test set | 132 (20) | 125 (19) |
+| Digitized percolation datasets of Sarikhani et al. 2022 (S10) | CC-BY-4.0 | independent test set | 21 (2) | 12 (1) |
+| Mumtaz et al. 2024, Heliyon 10, e25381, Table 1 | CC-BY-NC-ND-4.0 | value cross-check | 4 (2) | – |
+| He, Wu & Fu, source data of [20] | MIT | physics checks only (no material names per row) | 242 (–) | – |
 
-**The physics code.** Both workbooks publish their authors' own model predictions next to each point. Given the same inputs, `argus.physics` reproduces **6 of 7** published model columns to within 10⁻⁹ (1032 point-by-point comparisons: Maxwell–Garnett, symmetric Bruggeman, Hasselman–Johnson and the Voigt–Reuss mean). For the asymmetric Bruggeman model, 171 of 242 points agree to 10⁻⁴; at the other 71, our root satisfies the model's defining equation to 7.8×10⁻¹⁴ while the published value misses it by at least 1.7×10⁻⁵, so the difference lies in the workbook's numerical solution.
+**The physics code.** Both workbooks publish their authors' own model predictions next to each point. Given the same inputs, `argus.physics` reproduces **6 of 7** published model columns to within 10⁻⁹ (1032 point-by-point comparisons: Maxwell–Garnett, symmetric Bruggeman, Hasselman–Johnson and the Voigt–Reuss mean). For the asymmetric Bruggeman model, 171 of 242 points agree to 10⁻⁴; at the other 71, our root satisfies the model's defining equation to 7.8×10⁻¹⁴ while the published value misses it by at least 1.7×10⁻⁵, so the differences lie in the workbook's values: 51 are below 1% (solver tolerance), and the 20 larger ones include a few rows whose values appear shifted within one series.
 **Effective-medium models at high loading.** On 150 polymer-matrix composites compiled by He et al. [20] (up to 70 vol%), the interface-free asymmetric Bruggeman model is the most accurate simple model (typical error ×1.35, bias -0.03 in log₁₀). Maxwell–Garnett under-predicts (×1.48, bias -0.15), and the symmetric Bruggeman model, whose built-in percolation threshold sits at φ = 1/3, is off by ×12.3 above 40 vol%. **81% of these points lie above the isolated-sphere ceiling** (in ARGUS, with its platelets and networks, 98%): contacts between particles matter in other groups' data too, even for near-spherical fillers.
 
 ![Effective-medium models by loading](figures/external_bcc_models.png)
 
 *Figure 8. Typical error of interface-free models on the polymer composites of [20], by loading band.*
 
-**Prediction for literature the models have never seen.** Every model was fitted on all of ARGUS and asked to predict 280 measurements from 37 papers in the external test sets [19–21]. Rows from papers that ARGUS also contains were removed first, so no test paper was seen in training. 168 of the rows have a filler and a matrix family that ARGUS contains; the rest bring fillers (Si3N4, SiC, SiO2, ZnO, cBN, glass) or matrices (Bacterial cellulose, Gutta percha, LDPE, PTFE, PVDF, Polyamide, Unsaturated polyester (UPE)) that it does not. The 95% intervals below resample whole test papers.
+**Prediction for literature the models have never seen.** Every model was fitted on all of ARGUS and asked to predict 274 measurements from 34 papers in the external test sets [19–21]. Rows from papers that ARGUS also contains were removed first, so no test paper was seen in training. 163 of the rows have a filler and a matrix family that ARGUS contains; the rest bring fillers (Si3N4, SiC, SiO2, ZnO, cBN, glass) or matrices (Bacterial cellulose, Gutta percha, LDPE, PTFE, PVDF, Polyamide, Unsaturated polyester (UPE)) that it does not. The 95% intervals below resample whole test papers.
 
 | Model | Typical error (95% CI) | vs calibrated physics, MAE (95% CI) | ARGUS domain / new filler or matrix (MAE) | 90% interval coverage | ARGUS LOPO MAE |
 |---|---|---|---|---|---|
-| ensemble | ×1.35 (1.28–1.44) | -0.042 (-0.063 to -0.021) **clear** | 0.125 / 0.140 | 99% | 0.22 |
-| physics + Gaussian process | ×1.39 (1.32–1.46) | -0.030 (-0.044 to -0.019) **clear** | 0.136 / 0.153 | 100% | 0.24 |
-| gradient boosting | ×1.40 (1.31–1.51) | -0.026 (-0.052 to +0.002) | 0.136 / 0.164 | 99% | 0.22 |
-| ridge | ×1.49 (1.36–1.62) | -0.001 (-0.038 to +0.035) | 0.171 / 0.174 | 97% | 0.24 |
-| calibrated physics (baseline) | ×1.49 (1.42–1.56) | reference | 0.175 / 0.169 | 100% | 0.33 |
-| nearest neighbours (baseline) | ×1.85 (1.66–2.08) | +0.094 (+0.060 to +0.136) **clear** | 0.274 / 0.256 | 92% | 0.28 |
-| random forest | ×1.92 (1.77–2.09) | +0.111 (+0.075 to +0.144) **clear** | 0.244 / 0.344 | 91% | 0.23 |
-| median (baseline) | ×2.48 (2.25–2.79) | +0.221 (+0.181 to +0.268) **clear** | 0.377 / 0.418 | 98% | 0.42 |
+| ensemble | ×1.39 (1.30–1.51) | -0.027 (-0.057 to +0.008) | 0.142 / 0.145 | 98% | 0.22 |
+| physics + Gaussian process | ×1.43 (1.36–1.52) | -0.015 (-0.028 to +0.003) | 0.159 / 0.152 | 100% | 0.24 |
+| calibrated physics (baseline) | ×1.48 (1.41–1.55) | reference | 0.173 / 0.166 | 100% | 0.33 |
+| ridge | ×1.50 (1.36–1.65) | +0.005 (-0.033 to +0.047) | 0.177 / 0.174 | 98% | 0.24 |
+| gradient boosting | ×1.51 (1.36–1.71) | +0.009 (-0.038 to +0.061) | 0.169 / 0.195 | 95% | 0.24 |
+| nearest neighbours (baseline) | ×1.83 (1.65–2.07) | +0.093 (+0.057 to +0.135) **clear** | 0.273 / 0.250 | 92% | 0.28 |
+| random forest | ×1.99 (1.82–2.16) | +0.128 (+0.092 to +0.164) **clear** | 0.258 / 0.358 | 89% | 0.23 |
+| median (baseline) | ×2.45 (2.23–2.75) | +0.219 (+0.179 to +0.263) **clear** | 0.372 / 0.415 | 98% | 0.42 |
 
-Ensemble and physics + Gaussian process clearly beat calibrated physics on literature they have never seen. The ranking from leave-one-paper-out does not fully carry over: random forest, competitive inside ARGUS, is clearly *worse* than physics here, because trees cannot extrapolate beyond the fillers and enhancements they were trained on, while models anchored on a physics estimate can. Intervals built from ARGUS residuals do not under-cover on the external rows: every learned model's 90% interval contains at least 91% of them. They are conservative here, because the external compilations scatter less between papers than ARGUS does (their typical errors are smaller than ARGUS's own leave-one-paper-out errors). Leave-one-paper-out is therefore necessary but not sufficient evidence of how a model will do on someone else's data.
+No learned model is clearly better than calibrated physics on the combined test set: the best, the ensemble, reaches ×1.39 against ×1.48, but with 34 test papers the 95% interval of the difference (-0.057 to +0.008) includes zero. The ranking from leave-one-paper-out does not fully carry over: random forest, competitive inside ARGUS, is clearly *worse* than physics here, because trees cannot extrapolate beyond the fillers and enhancements they were trained on, while models anchored on a physics estimate can. Intervals built from ARGUS residuals mostly hold on the external rows: the 90% intervals of ensemble, physics + Gaussian process, ridge, gradient boosting contain 95%–100% of them, while random forest (89%) under-covers, in line with its larger errors. Where they over-cover, it is because the external compilations scatter less between papers than ARGUS does (their typical errors are smaller than ARGUS's own leave-one-paper-out errors). Leave-one-paper-out is therefore necessary but not sufficient evidence of how a model will do on someone else's data.
 
-**Would more data help?** We added the external rows to training and repeated leave-one-paper-out over the pooled papers, scoring ARGUS papers and external papers separately. On ARGUS papers, ensemble improves clearly (ensemble: 0.22 → 0.20 MAE, 95% CI of the change -0.029 to -0.005); the other changes are within noise (at most 0.018 in log₁₀). More curated data from other groups is worth having even for BN/AlN epoxy. Pooling also repairs models that cannot extrapolate: the random forest's error on the external papers falls from 0.28 to 0.10 (MAE, log₁₀) once similar systems are in training.
+**A feature that did not transfer.** Publication year was a model feature in the first version of this test. Inside ARGUS it looked harmless, but external papers go back to 1993, and the tree models then extrapolated badly: they had learned year as a proxy for paper identity, not for anything physical. Removing it costs little inside ARGUS (the paired ablation put its effect within noise), and every number above is without it.
+
+**Would more data help?** We added the external rows to training and repeated leave-one-paper-out over the pooled papers, scoring ARGUS papers and external papers separately. On ARGUS papers, gradient boosting improves clearly (0.24 → 0.22 MAE, 95% CI of the change -0.035 to -0.002); the other models change by at most 0.014 in log₁₀, within noise. On the external papers themselves, pooling clearly lowers the error of calibrated physics (baseline), ridge, gradient boosting, random forest, ensemble, as expected once similar systems are in training. Pooling repairs most of all the models that cannot extrapolate: the random forest's error on the external papers falls from 0.30 to 0.11 (MAE, log₁₀) once similar systems are in training.
 
 **Same paper, independent extraction.** 3 ARGUS papers also appear in an external source. Of the 4 values that can be paired (same filler, matching loading, compatible direction), 3 agree within 5% and 1 differs by 5–15%. Each shared paper was then checked by hand against its source (`data/external/crosscheck_review.yaml`):
 - `10.1002/adfm.201900412`: ARGUS value confirmed by an independent extraction; the review's 6.54 belongs to 20 vol%.
@@ -310,7 +312,7 @@ These gaps limit every analysis above. We therefore suggest a minimum report for
 - **Open-access scope.** The dataset is limited to open-access sources. About 200 publisher-blocked papers were logged but not used, which may bias the sample toward certain journals and groups.
 - **Lower-confidence rows.** 64 rows are Medium confidence (abstract-only or digitized). Abstract-only values appear biased upward, since abstracts quote a paper's best result.
 - **Between-paper method effects are associations.** Methods are confounded with everything else that differs between papers. The decisive experiment, one set of samples measured by several techniques, is not in the literature we could access.
-- **External tests are small in papers.** The external test set has 37 papers, so differences between models of a few hundredths in log₁₀ are within its paper-level uncertainty; only the differences marked *clear* in Section 4.5 are.
+- **External tests are small in papers.** The external test set has 34 papers, so differences between models of a few hundredths in log₁₀ are within its paper-level uncertainty; only the differences marked *clear* in Section 4.5 are.
 - **Physical-model inputs.** Filler geometry and intrinsic properties are assumed where not reported, so fitted *R<sub>K</sub>* values are diagnostics rather than interface physics.
 
 ## 6. Conclusions
@@ -320,8 +322,8 @@ These gaps limit every analysis above. We therefore suggest a minimum report for
   - an isotropic transient sensor would differ from a laser-flash disc by up to ×2.77;
   - paper-to-paper scatter (×1.88 at 1 SD) dwarfs instrument uncertainty.
 - 98% of measurements exceed the isolated-sphere ceiling. Plate-like fillers and contacts are essential. The apparent interfacial resistances needed to explain the data (6.8×10⁻⁷ m²K/W median) match published fits, not ideal-interface simulations.
-- Holding out whole papers, an equal-weight ensemble of calibrated physics with a Gaussian-process correction, ridge regression and monotone gradient boosting predicts *k* to a typical ×1.65. Random row splits would have overstated this. Measurement direction is the most useful metadata after composition.
-- On literature curated by others (280 measurements, 37 papers), ensemble and physics + Gaussian process clearly beat calibrated physics, and 90% intervals from ARGUS residuals still cover 99% of rows. Models anchored on physics extrapolate to new fillers and matrices; unconstrained trees do not.
+- Holding out whole papers, an equal-weight ensemble of calibrated physics with a Gaussian-process correction, ridge regression and monotone gradient boosting predicts *k* to a typical ×1.67. Random row splits would have overstated this. Measurement direction is the most useful metadata after composition.
+- On literature curated by others (274 measurements, 34 papers), the ensemble predicts *k* to ×1.39 against ×1.48 for calibrated physics; with 34 test papers that gap is not yet distinguishable from zero, and its 90% intervals cover 98% of rows. Unconstrained trees (random forest) are clearly worse than physics alone. Publication year, a proxy for paper identity, had to be dropped as a feature for predictions to transfer.
 - The single most valuable addition to this literature would be the same samples measured by laser flash, Hot Disk (both modes) and multi-thickness D5470, reported with the checklist in Section 5.2.
 
 ## Appendix A. Reproducing this report
