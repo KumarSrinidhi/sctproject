@@ -37,6 +37,17 @@ historical and superseded by this file.
   - Two state **non-commercial** licences: `10.1177_09673911221110143` (CC BY-NC 4.0) and
     `10.3740_mrsk.2023.33.12.503` (CC BY-NC 3.0).
   - The other 45 do not state a licence in the extracted text.
+- **External datasets.** `data/external/` holds other groups' datasets used to test ARGUS. They keep their
+  own licences, listed in `data/external/sources.yaml` and `data/external/README.md`: EVF (CC BY 4.0),
+  the BCC source data (MIT), and our transcriptions from Sarikhani et al. 2022 (CC BY 4.0). Two sources
+  are CC BY-NC-ND 4.0 (He et al. 2025 Supplementary Data 1, Mumtaz et al. 2024): their files are not
+  redistributed here. `argus external fetch` downloads them, and only our own curation (block map,
+  two rows of facts with attribution) is committed. Our mapping files in `data/external/` are CC BY 4.0
+  like the rest of the dataset.
+- **Explorer pages.** `docs/explorer/index.html` and `docs/explorer/explorer.artifact.html` embed an
+  optional "other groups' data" layer: points from EVF (Anastasiou 2026) and from Sarikhani et al. 2022.
+  Those points keep their sources' CC BY 4.0 licences, with the attribution given in the page footer and in
+  `data/external/sources.yaml`. Only the ARGUS records in those pages are licensed by this file.
 - **Quoted excerpts.** The `source_location` and `notes` columns quote short passages from the source papers
   to make every value traceable. Those passages remain the work of their original authors.
   - The measured values themselves are facts reported by those papers.

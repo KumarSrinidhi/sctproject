@@ -25,10 +25,15 @@ from ..physics.fit import ASPECT_P  # assumed t/D per filler, shared with the ph
 from ..vocab import filler_props
 
 FILLER_GROUP = {"h-BN": "hBN", "BN": "hBN", "BNNS": "BNNS", "cBN": "other", "AlN": "AlN",
-                "Al2O3": "oxide", "MgO": "oxide"}
+                "Al2O3": "oxide", "MgO": "oxide",
+                # only in the external test sets
+                "SiO2": "oxide", "glass": "oxide", "ZnO": "oxide", "Si3N4": "other", "SiC": "other"}
 DEFAULT_LOG_SIZE = 1.0  # log10(10 um), a fixed constant (not a data statistic) for missing sizes
-YEAR_CENTER = 2020
 
+# Publication year is deliberately NOT a feature. Inside ARGUS it carried no clear
+# information (ablation: +0.007 +/- 0.008 MAE), and on other groups' older papers it
+# made tree models extrapolate badly (reports/external_validation.md), because it
+# acts as a proxy for paper identity rather than for anything physical.
 # column name -> feature group
 COLUMNS: dict[str, str] = {
     "phi": "loading", "phi2": "loading",
@@ -41,7 +46,6 @@ COLUMNS: dict[str, str] = {
     "m_MIXED": "method", "m_STEADY": "method", "m_OTHER": "method", "m_UNSPECIFIED": "method",
     "matrix_epoxy": "matrix", "log_km": "matrix", "km_reported": "matrix",
     "abstract_only": "quality", "figure_digitized": "quality",
-    "year_c": "year",
 }
 NAMES = list(COLUMNS)
 
@@ -127,7 +131,6 @@ def feature_row(r: dict[str, Any]) -> list[float]:
     size = _f(r["filler_mean_size_um"])
     mg = METHOD_GROUP[r["method_class"]]
     flags = set(str(r["flags"]).split(";"))
-    year = _f(r["year"])
     vals = {
         "phi": phi, "phi2": phi * phi,
         "phys_nan": physics_log_enhancement(base, phi, km),
@@ -143,7 +146,6 @@ def feature_row(r: dict[str, Any]) -> list[float]:
         "matrix_epoxy": r["matrix_family"] == "epoxy", "log_km": math.log10(km),
         "km_reported": r["k_matrix_basis"] == "reported",
         "abstract_only": "abstract_only" in flags, "figure_digitized": "figure_digitized" in flags,
-        "year_c": (year - YEAR_CENTER) if year is not None else 0.0,
     }
     return [float(vals[n]) for n in NAMES]
 

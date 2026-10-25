@@ -8,3 +8,7 @@ dist/
 venv/
 # atomic-write temp files
 .*.tmp
+
+# External raw files whose licence forbids redistribution, or that are large; `argus external fetch` gets them.
+data/external/ncomms/raw/
+data/external/tagp/raw/

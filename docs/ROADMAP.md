@@ -1,6 +1,6 @@
 # ARGUS roadmap
 
-Status as of 2026-10-23. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Research basis:
+Status as of 2026-10-25. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Research basis:
 [research report](reports/BN%20epoxy%20thermal%20conductivity%20research.md).
 
 | Phase | Goal | Status |
@@ -13,6 +13,7 @@ Status as of 2026-10-23. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Resea
 | 5 | Machine learning with honest validation | ✅ core done, follow-ups open |
 | 6 | Acquisition at scale | ⏳ |
 | 7 | Explorer, release and course report | ✅ done (Zenodo DOI needs your account) |
+| 8 | External validation against other groups' data | ✅ done |
 
 ---
 
@@ -211,6 +212,82 @@ Next:
    (two are non-commercial, CC BY-NC), and remove the three saved captcha pages, which embed the
    fetching machine's IP address. See the checklist in `LICENSE-DATA.md`.
 3. **Report finishing:** a PDF/Word export if the course requires one.
+
+---
+
+## Phase 8: External validation ✅
+
+Goal: test the physics code, the models and the extracted values against data that other groups curated.
+Design: [ARCHITECTURE.md §8c](ARCHITECTURE.md#8c-external-validation). Results:
+[reports/external_validation.md](../reports/external_validation.md) and Section 4.5 of the course report.
+
+Search: a parallel sweep of data repositories, code hubs, paper supplements and materials databases, with
+independent verification of each candidate's licence, access and contents. Kept (`data/external/README.md`):
+- **EVF** (Anastasiou 2026, CC BY 4.0): 137 polymer + ceramic points from 14 papers, none in ARGUS.
+- **He, Wu & Fu 2025** (*Nat. Commun.*): the MIT source data for physics checks, and Supplementary Data 1
+  (CC BY-NC-ND, fetched on demand) with 131 test points from 22 papers.
+- **Sarikhani et al. 2022** (CC BY 4.0): two transcribed BN datasets, one test set and one cross-check.
+- **Mumtaz et al. 2024** (CC BY-NC-ND): two rows used for a value cross-check.
+
+Rejected: simulated datasets (lattice Boltzmann, FEM), datasets with no released data (several ML papers),
+registration-only or no-redistribution databases (PoLyInfo, NIMS CompoTherm, MaterialsMine), and
+low-provenance compilations.
+
+Done:
+- **Physics code verified.**
+  - Maxwell–Garnett, symmetric Bruggeman, Hasselman–Johnson and the Voigt–Reuss mean reproduce both
+    workbooks' published predictions to ≤10⁻⁹ (1,032 point-by-point comparisons).
+  - Asymmetric Bruggeman agrees at 171 of 242 points. At the rest, the published values fail the model's
+    equation while ours solve it to 10⁻¹³. Most gaps are below 1% (solver tolerance); 20 are larger,
+    including a few rows that appear shifted within one series.
+- **Transfer.** Trained only on ARGUS, predicting 274 measurements from 34 unseen papers:
+  - the best model, the ensemble, reaches ×1.39 against ×1.48 for calibrated physics. With 34 test
+    papers the gap is not yet distinguishable from zero (95% CI of the MAE difference −0.057 to +0.008);
+  - on EVF alone, physics + Gaussian process is clearly better than physics;
+  - the ensemble's 90% intervals cover 98% of rows;
+  - the random forest, competitive inside ARGUS (second among single models), is clearly worse than
+    physics on unseen literature, and its intervals under-cover (89%).
+- **Pooled training.** Adding the external papers clearly improves gradient boosting on ARGUS's own
+  papers (MAE 0.236 → 0.219); the other models change within noise. On the external papers themselves
+  pooling clearly helps most models, the random forest above all (0.30 → 0.11).
+- **Value cross-check.**
+  - 3 shared papers, 4 paired values: 3 exact matches. The one difference traces to a review that pairs
+    the 20 vol% value with 15 vol%.
+  - A compilation lists loadings above the source paper's stated maximum.
+  - No ARGUS value changed. See `data/external/crosscheck_review.yaml`.
+- **Improvements adopted:**
+  - **Ensemble model:** best leave-one-paper-out MAE inside ARGUS (×1.67) and best on external data
+    (×1.39), with ×/÷3.3 intervals.
+    - It was chosen on ARGUS only, comparing combinations on the same folds that report it, so its edge
+      inside ARGUS (0.010 in log₁₀ over the random forest) is not evidence by itself.
+    - On external data it is the best model, but not clearly better than physics alone.
+  - **Publication year dropped as a feature.**
+    - Inside ARGUS its ablation effect was within noise (+0.007 ± 0.008).
+    - With the external rows' real years, gradient-boosting error on external data rose from 0.147 to
+      0.250, and the ensemble's from 0.132 to 0.179: year acted as a proxy for paper identity.
+    - Without it, leave-one-paper-out MAE inside ARGUS rises slightly (ensemble 0.218 → 0.223, gradient
+      boosting 0.221 → 0.236).
+  - **Vocabulary:** THW, GHP, HFM and "TPS, …" abbreviations are now classified.
+  - **Reference properties:** SiO₂, glass, Si₃N₄, SiC and ZnO.
+  - **Explorer:** an optional layer showing other groups' data (CC BY only).
+- **Independent code review** (5 reviewers, every finding re-checked by a skeptic): 23 confirmed
+  findings fixed. They include:
+  - Tian 2023 split into two "papers";
+  - external rows lacking their publication year and figure provenance;
+  - two blocks whose matrices are not epoxy thermosets, and one row with a pre-filled matrix (all excluded);
+  - "GHP, DRL-III" misclassified;
+  - report wording that overstated the results.
+  The numbers above are after these fixes.
+- **Tried and rejected:** a differential-effective-medium (asymmetric Bruggeman) feature.
+  - Unconstrained, it lowered gradient-boosting error on ARGUS (LOPO 0.221 → 0.208).
+  - The gain vanished once the feature was constrained to be monotone in loading, as every
+    loading-derived feature is. It therefore relied on unphysical behaviour.
+
+Next:
+1. If the full text of P081 (Han et al. 2019) becomes accessible, add its in-plane Fig. 1(d) series. Two
+   secondary sources agree on it.
+2. Re-run `argus external validate` whenever a dataset version changes. It is fingerprinted like every
+   other analysis.
 
 ---
 

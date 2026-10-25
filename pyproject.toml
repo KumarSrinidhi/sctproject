@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "argus-tc"
-version = "0.3.0"
+version = "0.4.0"
 description = "ARGUS: source-verified thermal conductivity dataset and toolkit for polymer-ceramic composites (epoxy + BN/AlN)"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -25,6 +25,8 @@ plots = ["matplotlib>=3.7"]
 # GroupKFold(shuffle=True) needs scikit-learn >= 1.6
 ml = ["scikit-learn>=1.6", "xgboost>=2.0", "matplotlib>=3.7"]
 report = ["jinja2>=3.1", "matplotlib>=3.7"]
+# reading the external workbooks (data/external/)
+external = ["openpyxl>=3.1"]
 
 [project.scripts]
 argus = "argus.cli:app"
