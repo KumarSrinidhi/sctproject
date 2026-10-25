@@ -1,0 +1,11 @@
+# Phase 6 discovery queries (OpenAlex full-text search). `argus acquire search` runs every
+# query, logs it to queries.jsonl at the time it runs, merges the results by DOI and screens them.
+filters: is_oa:true,type:article,from_publication_date:2005-01-01
+max_results_per_query: 200
+queries:
+  - boron nitride epoxy thermal conductivity
+  - hexagonal boron nitride polymer composite thermal conductivity
+  - boron nitride nanosheets composite thermal conductivity
+  - aluminum nitride epoxy thermal conductivity
+  - aluminum nitride polymer composite thermal conductivity
+  - boron nitride silicone thermal conductivity

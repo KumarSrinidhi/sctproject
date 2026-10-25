@@ -21,3 +21,6 @@ OPENALEX_API_KEY.txt
 local_archive/
 # Release bundles built by `argus release bundle`.
 dist/
+
+# Full-text cache of acquisition (licences vary; never committed).
+sources/
