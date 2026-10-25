@@ -160,3 +160,36 @@ def test_bundle_is_reproducible_and_holds_only_dataset_files(repo_layout, tmp_pa
     for r in rel:
         if r != "SHA256SUMS.txt":
             assert hashlib.sha256(z.read(f"{top}/{r}")).hexdigest() == sums[r]
+
+
+def test_canonical_bytes_pins_line_endings():
+    from argus.release import canonical_bytes
+
+    assert canonical_bytes("a.csv", b"x,y\nz,w\r\n") == b"x,y\r\nz,w\r\n"
+    assert canonical_bytes("data/records/P1.yaml", b"a: 1\r\nb: 2\n") == b"a: 1\nb: 2\n"
+    assert canonical_bytes("LICENSE-DATA.md", b"t\r\n") == b"t\n"
+    assert canonical_bytes("img.png", b"\x89PNG\r\n") == b"\x89PNG\r\n"  # binary untouched
+
+
+def test_bundle_does_not_depend_on_checkout_line_endings(repo_layout, tmp_path):
+    """A Windows checkout (core.autocrlf=true) mixes CRLF files from git with LF files written
+    by the toolkit; the bundle must come out byte-identical to an LF checkout's."""
+    import shutil
+
+    from argus.paths import Layout
+    from argus.release import build_bundle, bundle_members
+
+    members = bundle_members(repo_layout)
+    hashes = []
+    for i, eol in enumerate((b"\n", b"\r\n")):
+        root = tmp_path / f"checkout{i}"
+        for j, m in enumerate(members):
+            dst = root / m
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            raw = (repo_layout.root / m).read_bytes().replace(b"\r\n", b"\n")
+            # every other file flips to the other convention, like a partly rewritten checkout
+            mixed = eol if j % 2 else (b"\r\n" if eol == b"\n" else b"\n")
+            dst.write_bytes(raw.replace(b"\n", mixed))
+        shutil.copy(repo_layout.root / "pyproject.toml", root / "pyproject.toml")
+        hashes.append(build_bundle(Layout(root), tmp_path / f"out{i}")[1])
+    assert hashes[0] == hashes[1]

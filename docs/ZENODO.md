@@ -21,8 +21,15 @@ version label. It holds the dataset files only:
 - the per-paper records in `data/records/`;
 - a `README.txt` and `SHA256SUMS.txt`.
 
-It contains no code and no third-party papers, and rebuilding it gives the same bytes. Every field you
-need for the form below is in `.zenodo.json`, generated from `data/dataset.yaml`.
+It contains no code and no third-party papers. Rebuilding it gives the same bytes on any machine, whatever
+the checkout's line endings: CSVs are stored with CRLF and every other text file with LF.
+- `SHA256SUMS.txt` is identical everywhere.
+- The zip file itself is identical too, given the same zlib build.
+
+Every field you need for the form below is in `.zenodo.json`, generated from `data/dataset.yaml`.
+
+**v1.2.0:** `ARGUS-dataset-v1.2.0.zip`, built from tag `data-v1.2`, has sha256
+`b21eb0ce356845b767cf349256589941cbf0ddcc3ec72036fa04e176b2456119` (664 KB, 190 files).
 
 ## 2. Optional: a dry run on the sandbox
 
