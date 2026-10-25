@@ -215,3 +215,6 @@ exclusions:
 - doi: 10.3390/ma19030455
   reason: 'Phase 6: the only printed values use the unit mW/K, which is not a thermal conductivity; no usable row'
   action: unusable
+- doi: 10.3390/molecules24101883
+  reason: 'Phase 6 scope review: every row is out of scope (metal hybrid filler or paraffin-type PCM matrix)'
+  action: unusable

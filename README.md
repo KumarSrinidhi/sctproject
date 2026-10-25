@@ -1,18 +1,19 @@
 # Polymer–Ceramic Thermal Conductivity Dataset (ARGUS)
 
-**Source-verified experimental measurements of effective thermal conductivity (k) for polymer–ceramic composites, with primary focus on epoxy + h-BN/BNNS/AlN** — the electrically insulating, thermally conductive materials used for semiconductor packaging and thermal interface materials.
+**Source-verified experimental measurements of effective thermal conductivity (k) for polymers filled with h-BN, BN nanosheets or AlN (alone or in hybrids), most often epoxy** — the electrically insulating, thermally conductive materials used for semiconductor packaging and thermal interface materials.
 
 All values are traceable to a specific paper, table, figure, or text location. No value is estimated, back-calculated or model-predicted; literature-comparison values are excluded. Figure-derived values are pixel-digitized with a reproducible script and flagged `value_source=figure`, `confidence=Medium`.
 
-**Dataset v1.1.0** (released 2026-10-23, tag `data-v1.1`): **258 rows / 95 papers**. See [data/CHANGELOG.md](data/CHANGELOG.md) for what changed since v1.0 (260 rows).
+**Dataset v1.2.0** (2026-10-25): **639 rows / 174 papers**, up from 258 / 95 in v1.1 (tag `data-v1.1`). The 381 new rows come from 79 open-access papers found and checked with the Phase 6 acquisition tools. See [data/CHANGELOG.md](data/CHANGELOG.md).
 
 **Tested on other groups' data** (`argus external validate`, [report](reports/external_validation.md)):
 - Our effective-medium code reproduces 6 of 7 published model columns of two independent implementations
   exactly. Where the seventh (asymmetric Bruggeman) differs, the published values fail the model's own
   equation.
 - The best model trained only on ARGUS predicts 274 measurements from 34 papers it has never seen to a
-  typical ×1.39, against ×1.48 for calibrated physics; with 34 test papers that gap is not yet
-  distinguishable from zero. Its 90% intervals cover 98% of the rows.
+  typical ×1.37, against ×1.45 for calibrated physics; with 34 test papers that gap is not yet
+  distinguishable from zero. Its 90% intervals cover all of the rows: they are conservative here,
+  because they come from ARGUS's own, harder leave-one-paper-out errors.
 - Of the 4 values that independent extractions of the same papers let us compare, 3 match exactly. The
   fourth differs because a review quotes the 20 vol% value at 15 vol%.
 
@@ -71,13 +72,14 @@ Without installing, run from the repo root with `PYTHONPATH=src python -m argus 
 
 | File | Contents |
 |---|---|
-| `thermal_conductivity_dataset.csv` | 258 rows / 95 papers, 31 columns (full schema below) |
+| `thermal_conductivity_dataset.csv` | 639 rows / 174 papers, 31 columns (full schema below) |
 | `data/processed/measurements_enriched.csv` | Same rows + 25 derived columns (method class, effective direction, vol% from wt%, bias flags), each with a `*_basis` column |
 | `datapackage.json` | Frictionless Data Package descriptor (types, units, descriptions) |
-| `paper_inventory.csv` | 95 papers with row counts, fillers, matrices, k ranges |
-| `extraction_log.csv` | Per-paper and per-pass audit trail (107 entries) |
-| `uncertain_measurements.csv` | 64 Medium-confidence rows (28 abstract-only + 28 figure-digitized + 8 earlier) |
-| `unusable_sources.csv` | 51 screened sources that contribute no rows, with reasons (incl. the Sci-Hub policy note) |
+| `paper_inventory.csv` | 174 papers with row counts, fillers, matrices, k ranges |
+| `extraction_log.csv` | Per-paper and per-pass audit trail (186 entries) |
+| `uncertain_measurements.csv` | 87 Medium-confidence rows (abstract-only, figure-digitized, approximate or uncertain values) |
+| `unusable_sources.csv` | 72 screened sources that contribute no rows, with reasons (incl. the Sci-Hub policy note) |
+| `data/acquisition/` | Phase 6: discovery queries and their log, screening decisions, extraction + verification audit trail |
 | `data/records/` | **Source of truth**: one YAML file per paper |
 | `reports/` | Verification, enrichment QA and physics-fit reports (generated) |
 | `data/external/` | Other groups' datasets used only for testing, with licences and checksums ([README](data/external/README.md)) |
@@ -106,9 +108,9 @@ Key columns (types, units and descriptions for every column are in `datapackage.
 
 ## Scope
 
-**Primary (epoxy + BN/AlN):** 228 epoxy-based rows; h-BN (85) + BN (54) + BNNS (53) + AlN (20) = 212 single-filler BN/AlN rows.
+**Fillers:** h-BN (179), BNNS (116), BN (92) and AlN (44) as single fillers, 141 hybrid rows containing BN or AlN, and 57 neat-matrix references.
 
-**Optional matrices:** silicone incl. PDMS (16), polyimide (9), PEG PCM (2), polystyrene (2), polyurethane (1).
+**Matrices:** epoxy (271), silicone incl. PDMS (119), polyethylene (74), polyamide (15), polyimide (14), PVA (14), PEG (13), and smaller groups (polypropylene, polystyrene, polyurethane, PPS, PVDF, PEI, polycarbonate, PMMA), with 77 rows on other polymers (aramid nanofibre, cellulose, SEBS and others).
 
 **Hybrid fillers retained:** Al2O3/BN, h-BN/AlN, h-BN/cBN, BN/graphene, BN+CNT, BNNS/MWCNTs@mSiO2, 3D BN/PA66 scaffold, etc. `filler_material` contains "hybrid"; composition detail is in `notes`.
 
@@ -166,7 +168,7 @@ See [docs/ROADMAP.md](docs/ROADMAP.md). In short:
 
 ## Citation
 
-> Kumar, A., & Reddy, R. K. S. (2026). ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN) (Version 1.1.0) [Data set]. https://github.com/KumarSrinidhi/sctproject
+> Kumar, A., & Reddy, R. K. S. (2026). ARGUS: Source-verified thermal conductivity of BN- and AlN-filled polymer composites (Version 1.2.0) [Data set]. https://github.com/KumarSrinidhi/sctproject
 
 `CITATION.cff` holds the machine-readable version (GitHub shows it under "Cite this repository"). When you reuse an individual value, also cite its source paper; the DOI is in every row.
 

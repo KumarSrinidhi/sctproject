@@ -14,7 +14,9 @@ argus build
 argus release bundle
 ```
 
-This writes `dist/ARGUS-dataset-v1.1.0.zip`. It holds the dataset files only:
+This writes `dist/ARGUS-dataset-v<version>.zip` (for example `ARGUS-dataset-v1.2.0.zip`). It refuses to
+run if the data differ from the released tag of the same version, so a bundle can never carry the wrong
+version label. It holds the dataset files only:
 - the published CSVs, `datapackage.json`, `CITATION.cff` and `LICENSE-DATA.md`;
 - the per-paper records in `data/records/`;
 - a `README.txt` and `SHA256SUMS.txt`.
@@ -30,7 +32,7 @@ are not real. Do steps 3–5 there first if you want to see the form without con
 ## 3. Create the upload (zenodo.org)
 
 1. Log in at [zenodo.org](https://zenodo.org) and click **New upload**.
-2. **Files:** drag in `dist/ARGUS-dataset-v1.1.0.zip`.
+2. **Files:** drag in `dist/ARGUS-dataset-v1.2.0.zip`.
 3. **Digital Object Identifier:** answer *No* to "Do you already have a DOI?" and click **Get a DOI now!**.
    This reserves the DOI without publishing.
 4. Fill in the form from `.zenodo.json`:
@@ -38,13 +40,13 @@ are not real. Do steps 3–5 there first if you want to see the form without con
    | Field | Value |
    |---|---|
    | Resource type | Dataset |
-   | Title | ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN) |
-   | Publication date | 2026-10-23 |
+   | Title | the `title` in `.zenodo.json` (v1.2.0: ARGUS: Source-verified thermal conductivity of BN- and AlN-filled polymer composites) |
+   | Publication date | the `publication_date` (v1.2.0: 2026-10-25) |
    | Creators | Kumar, Aniket; Reddy, Rao Kumar Srinidhi (type: Person; add ORCID iDs and affiliations if you have them) |
    | Description | the `description` in `.zenodo.json`, then the `notes` sentence |
    | Licenses | Creative Commons Attribution 4.0 International |
    | Keywords | the nine `keywords` in `.zenodo.json` |
-   | Version | 1.1.0 |
+   | Version | the `version` (1.2.0) |
    | Related works | leave out while the GitHub repository is private (readers would get a 404). Once it is public, add: *Is supplemented by*, URL `https://github.com/KumarSrinidhi/sctproject`, resource type Software |
    | Visibility | Public |
 
@@ -59,7 +61,7 @@ Send the reserved DOI (it looks like `10.5281/zenodo.1234567`). It is then added
 
 ## 5. Replace the file and publish
 
-1. In the draft, delete the old zip and upload the rebuilt `dist/ARGUS-dataset-v1.1.0.zip`.
+1. In the draft, delete the old zip and upload the rebuilt `dist/ARGUS-dataset-v1.2.0.zip`.
 2. Click **Publish**.
 
 Publishing is permanent: the files of a published version cannot be changed or deleted. A later dataset

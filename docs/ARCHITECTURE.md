@@ -315,7 +315,7 @@ for a paper the model has never seen.
   - a random forest;
   - an equal-weight ensemble of physics + GP, ridge and gradient boosting. It was chosen on ARGUS-only
     results, before any external test, by comparing combinations on the same leave-one-paper-out folds
-    that report it. Its small edge there (0.010 in log₁₀ over the best single model) is therefore not evidence
+    that report it. Its small edge there (about 0.01 in log₁₀ over the best single model) is therefore not evidence
     on its own; the out-of-sample confirmation is the external test (section 8c).
 - **Validation** (`benchmark.py`):
   - Leave-one-paper-out is the headline, alongside repeated 5-fold by paper.
@@ -326,9 +326,10 @@ for a paper the model has never seen.
   - The ablation removes feature groups (and overlapping pairs) on identical splits, so the differences are
     paired.
 
-Headline: ×1.67 typical error on an unseen paper (ensemble; ×1.71 for the best single model, a random
-forest), against ×1.91 and ×2.14 for the best baselines. The ensemble's calibrated 90% intervals are
-×/÷3.3 wide. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md);
+Headline (v1.2.0, 377 single-filler rows from 119 papers): ×1.72 typical error on an unseen paper
+(ensemble; ×1.77 for the best single model, gradient boosting), against ×2.06 and ×2.29 for the best
+baselines (calibrated physics, nearest neighbours). The ensemble's calibrated 90% intervals are
+×/÷3.4 wide. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md);
 the test on other groups' data is in [`reports/external_validation.md`](../reports/external_validation.md).
 
 ## 8c. External validation
