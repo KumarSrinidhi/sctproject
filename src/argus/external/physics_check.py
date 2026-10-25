@@ -98,6 +98,7 @@ def check_bcc(folder: Path) -> dict[str, Any]:
         "hasselman_johnson": _summary(hj),
         "bruggeman_dem": {**_summary(dem),
                           "disagreements": len(dem_bad),
+                          "disagreements_over_1pct": sum(abs(b["k_ours"] / b["k_theirs"] - 1) > 0.01 for b in dem_bad),
                           "max_abs_residual_ours": max(res_ours) if res_ours else None,
                           "min_abs_residual_theirs": min(res_theirs) if res_theirs else None,
                           "rows": dem_bad},

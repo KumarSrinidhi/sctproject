@@ -238,24 +238,46 @@ Done:
   - Maxwell–Garnett, symmetric Bruggeman, Hasselman–Johnson and the Voigt–Reuss mean reproduce both
     workbooks' published predictions to ≤10⁻⁹ (1,032 point-by-point comparisons).
   - Asymmetric Bruggeman agrees at 171 of 242 points. At the rest, the published values fail the model's
-    equation while ours solve it to 10⁻¹³.
-- **Transfer.** Trained only on ARGUS, predicting 280 measurements from 37 unseen papers:
-  - the ensemble's typical error is ×1.35, and it clearly beats calibrated physics (×1.49);
-  - 90% intervals cover 99% of rows;
-  - the random forest, second inside ARGUS, is clearly worse than physics on unseen literature.
-- **Pooled training.** Adding the external papers clearly improves the ensemble on ARGUS's own papers
-  (MAE 0.218 → 0.201).
+    equation while ours solve it to 10⁻¹³. Most gaps are below 1% (solver tolerance); 20 are larger,
+    including a few rows that appear shifted within one series.
+- **Transfer.** Trained only on ARGUS, predicting 274 measurements from 34 unseen papers:
+  - the best model, the ensemble, reaches ×1.39 against ×1.48 for calibrated physics. With 34 test
+    papers the gap is not yet distinguishable from zero (95% CI of the MAE difference −0.057 to +0.008);
+  - on EVF alone, physics + Gaussian process is clearly better than physics;
+  - the ensemble's 90% intervals cover 98% of rows;
+  - the random forest, competitive inside ARGUS (second among single models), is clearly worse than
+    physics on unseen literature, and its intervals under-cover (89%).
+- **Pooled training.** Adding the external papers clearly improves gradient boosting on ARGUS's own
+  papers (MAE 0.236 → 0.219); the other models change within noise. On the external papers themselves
+  pooling clearly helps most models, the random forest above all (0.30 → 0.11).
 - **Value cross-check.**
-  - 4 shared papers: 3 exact matches. The one difference traces to a review that pairs the 20 vol% value
-    with 15 vol%.
+  - 3 shared papers, 4 paired values: 3 exact matches. The one difference traces to a review that pairs
+    the 20 vol% value with 15 vol%.
   - A compilation lists loadings above the source paper's stated maximum.
   - No ARGUS value changed. See `data/external/crosscheck_review.yaml`.
 - **Improvements adopted:**
-  - **Ensemble model:** best leave-one-paper-out MAE, ×1.65, with 90% intervals narrowed from ×/÷3.35 to
-    ×/÷2.9. It was chosen on ARGUS only and confirmed externally.
+  - **Ensemble model:** best leave-one-paper-out MAE inside ARGUS (×1.67) and best on external data
+    (×1.39), with ×/÷3.3 intervals.
+    - It was chosen on ARGUS only, comparing combinations on the same folds that report it, so its edge
+      inside ARGUS (0.010 in log₁₀ over the random forest) is not evidence by itself.
+    - On external data it is the best model, but not clearly better than physics alone.
+  - **Publication year dropped as a feature.**
+    - Inside ARGUS its ablation effect was within noise (+0.007 ± 0.008).
+    - With the external rows' real years, gradient-boosting error on external data rose from 0.147 to
+      0.250, and the ensemble's from 0.132 to 0.179: year acted as a proxy for paper identity.
+    - Without it, leave-one-paper-out MAE inside ARGUS rises slightly (ensemble 0.218 → 0.223, gradient
+      boosting 0.221 → 0.236).
   - **Vocabulary:** THW, GHP, HFM and "TPS, …" abbreviations are now classified.
   - **Reference properties:** SiO₂, glass, Si₃N₄, SiC and ZnO.
   - **Explorer:** an optional layer showing other groups' data (CC BY only).
+- **Independent code review** (5 reviewers, every finding re-checked by a skeptic): 23 confirmed
+  findings fixed. They include:
+  - Tian 2023 split into two "papers";
+  - external rows lacking their publication year and figure provenance;
+  - two blocks whose matrices are not epoxy thermosets, and one row with a pre-filled matrix (all excluded);
+  - "GHP, DRL-III" misclassified;
+  - report wording that overstated the results.
+  The numbers above are after these fixes.
 - **Tried and rejected:** a differential-effective-medium (asymmetric Bruggeman) feature.
   - Unconstrained, it lowered gradient-boosting error on ARGUS (LOPO 0.221 → 0.208).
   - The gain vanished once the feature was constrained to be monotone in loading, as every

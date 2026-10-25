@@ -75,7 +75,10 @@ def records(folder: Path) -> Iterator[ExternalRecord]:
     for n, b in sorted(blocks.items()):
         if b["use"] != "test":
             continue
+        skip = {int(k) for k in (b.get("exclude_rows") or {})}
         for i in range(b["rows"][0], b["rows"][1] + 1):
+            if i in skip:
+                continue
             r = rows[i]
             ka, vf, wf, d, km = (_f(r[c]) for c in ("ka", "vf", "wf", "diameter_m", "km"))
             if ka is None or vf is None or vf <= 0:
@@ -85,6 +88,8 @@ def records(folder: Path) -> Iterator[ExternalRecord]:
                 doi=b["doi"], group=b.get("paper", ""), vol_pct=round(vf * 100, 6),
                 wt_pct=round(wf * 100, 6) if wf is not None else None, k_matrix=km,
                 method=b["method"], size_um=d * 1e6 if d else None, shape=b.get("shape", ""),
+                treatment=b.get("treatment", ""), alignment=b.get("alignment", ""), year=b.get("year"),
+                value_source="",  # the compilation does not say whether values came from tables or figures
                 title=b["label"], notes=f"Nat. Commun. 2025 Supplementary Data 1, block {n} ({b['label']}).",
                 extra={"block": n, "own_work": bool(b.get("own_work"))},
             )

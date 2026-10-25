@@ -44,6 +44,10 @@ historical and superseded by this file.
   redistributed here. `argus external fetch` downloads them, and only our own curation (block map,
   two rows of facts with attribution) is committed. Our mapping files in `data/external/` are CC BY 4.0
   like the rest of the dataset.
+- **Explorer pages.** `docs/explorer/index.html` and `docs/explorer/explorer.artifact.html` embed an
+  optional "other groups' data" layer: points from EVF (Anastasiou 2026) and from Sarikhani et al. 2022.
+  Those points keep their sources' CC BY 4.0 licences, with the attribution given in the page footer and in
+  `data/external/sources.yaml`. Only the ARGUS records in those pages are licensed by this file.
 - **Quoted excerpts.** The `source_location` and `notes` columns quote short passages from the source papers
   to make every value traceable. Those passages remain the work of their original authors.
   - The measured values themselves are facts reported by those papers.

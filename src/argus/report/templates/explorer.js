@@ -489,7 +489,8 @@
     }
     if (s.citation) paper.appendChild(el("span", null, "Dataset: " + s.citation));
     box.appendChild(paper);
-    if (BY_ID[state.pinned]) {
+    // offer the way back only to the ARGUS row that was pinned, and only while it is still shown
+    if (BY_ID[state.pinned] && lastVisible.includes(BY_ID[state.pinned])) {
       const actions = el("div", { class: "row-actions" });
       const back = el("button", { class: "btn", type: "button" }, "Back to the ARGUS measurement");
       back.addEventListener("click", () => pin(state.pinned));
@@ -689,7 +690,10 @@
 
   function render() {
     lastVisible = visibleRows();
-    if (state.pinned && !lastVisible.includes(BY_ID[state.pinned])) state.pinned = lastVisible.length ? sorted(lastVisible)[0].id : null;
+    // while an external point holds the detail card, keep the ARGUS pin as it was (Back returns to it)
+    if (!state.extPin && state.pinned && !lastVisible.includes(BY_ID[state.pinned])) {
+      state.pinned = lastVisible.length ? sorted(lastVisible)[0].id : null;
+    }
     const plotted = renderChart(lastVisible);
     renderSummary(lastVisible, plotted);
     renderTable(lastVisible);

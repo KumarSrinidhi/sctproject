@@ -7,3 +7,5 @@ datapackage.json          text eol=lf
 CITATION.cff              text eol=lf
 # External raw files are kept byte-identical to the download (their sha256 is checked).
 data/external/*/raw/**    -text
+# Curated external tables are checksummed in data/external/sources.yaml: keep them byte-stable.
+data/external/*/*.csv      -text

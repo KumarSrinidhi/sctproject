@@ -36,6 +36,11 @@ papers that ARGUS shares with an external source. No measured value was altered.
 **Rules the code enforces**
 
 - A raw file whose sha256 differs from `sources.yaml` fails `argus external check` and `argus verify`.
+  The two committed transcriptions (`tagp/tagp_thermal_datasets.csv`, `heliyon/shared_rows.csv`) are pinned
+  the same way.
+- One DOI is one paper: a DOI may be split into several paper groups only when every record of it carries
+  an explicit group (a declared compilation, such as the Machrafi 2016 series in EVF). Anything else is an
+  error, because it would put one paper on both sides of a leave-one-paper-out split.
 - Every EVF series and every Nature Communications block must be listed as included or excluded (with a
   reason); an unmapped series or a block map that does not tile the workbook is an error.
 - External rows from a paper that ARGUS also contains are never test rows (the leakage guard moves them

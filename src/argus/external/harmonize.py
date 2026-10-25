@@ -19,7 +19,7 @@ from ..schema import COLUMN_NAMES
 # raw filler wording -> ARGUS filler label (order matters: specific before generic)
 _FILLER_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("BNNS", re.compile(r"\bBNNS\b|BN\s*nano\s*sheets?|boron\s*nitride\s*nano\s*sheets?|\bBNNSs\b|exfoliated\s*(?:h-?)?BN", re.I)),
-    ("cBN", re.compile(r"\bc-?BN\b|cubic\s*boron\s*nitride", re.I)),
+    ("cBN", re.compile(r"\bc-?BN\b|cubic\s*(?:BN|boron\s*nitride)", re.I)),
     ("h-BN", re.compile(r"\bh-?BN\b|hexagonal\s*boron\s*nitride", re.I)),
     ("BN", re.compile(r"\bBN\b|boron\s*nitride", re.I)),
     ("AlN", re.compile(r"\bAlN\b|alumin(?:i)?um\s*nitride", re.I)),
@@ -35,9 +35,10 @@ _FILLER_RULES: list[tuple[str, re.Pattern[str]]] = [
     ("CNT", re.compile(r"\bCNTs?\b|\bMWCNTs?\b|\bSWCNTs?\b|carbon\s*nano\s*tubes?", re.I)),
     ("graphite", re.compile(r"graphite", re.I)),
     ("carbon fiber", re.compile(r"carbon\s*fib(?:er|re)", re.I)),
+    ("ATH", re.compile(r"alumin(?:i)?um\s*(?:tri)?hydr(?:oxide|ate)|Al\(OH\)3|\bATH\b", re.I)),
     ("Cu", re.compile(r"\bCu\b|copper", re.I)),
     ("Ag", re.compile(r"\bAg\b|silver", re.I)),
-    ("Al", re.compile(r"\bAl\b|alumin(?:i)?um(?!\s*(?:nitride|oxide))", re.I)),
+    ("Al", re.compile(r"\bAl\b(?!\s*\()|alumin(?:i)?um(?!\s*(?:nitride|oxide|hydroxide|trihydr|hydrate))", re.I)),
 ]
 _SPLIT = re.compile(r"\s*(?:\+|/|&|,|;|\band\b)\s*", re.I)
 CARBON = frozenset({"graphene", "CNT", "graphite", "carbon fiber"})
@@ -65,7 +66,7 @@ def normalize_filler(raw: str | None) -> str:
 
 def normalize_doi(doi: str | None) -> str:
     d = (doi or "").strip().lower()
-    d = re.sub(r"^(?:https?://)?(?:dx\.)?doi\.org/|^doi:\s*", "", d)
+    d = re.sub(r"^(?:https?://)?(?:www\.|dx\.)?doi\.org/|^doi:\s*", "", d)
     return d.rstrip(".")
 
 
@@ -103,6 +104,7 @@ class ExternalRecord:
     title: str = ""
     notes: str = ""
     group: str = ""       # paper grouping key when the DOI is a compilation of several papers
+    value_source: str = "table"  # text | table | figure as in ARGUS ('figure' sets the figure_digitized flag); '' unknown
     extra: dict[str, Any] = field(default_factory=dict)
 
     @property
@@ -148,7 +150,7 @@ def to_row(rec: ExternalRecord) -> dict[str, Any]:
         measurement_temperature_C=_num(rec.temperature_C) if _num(rec.temperature_C) is not None else "",
         k_original_value=float(rec.k),
         k_original_unit="W/(m K)",
-        value_source="external",
+        value_source=rec.value_source,
         source_location=f"external dataset {rec.source}, row {rec.ext_id}",
         confidence="External",
         notes=rec.notes,
@@ -156,8 +158,31 @@ def to_row(rec: ExternalRecord) -> dict[str, Any]:
     return row
 
 
+class PaperKeyConflict(ValueError):
+    pass
+
+
+def check_paper_keys(records: list[ExternalRecord]) -> None:
+    """One DOI must be one paper. A DOI may carry several groups only when EVERY
+    record of it has a group: that is a declared compilation of several papers."""
+    keys: dict[str, set[str]] = {}
+    ungrouped: set[str] = set()
+    for rec in records:
+        d = normalize_doi(rec.doi)
+        if not d:
+            continue
+        keys.setdefault(d, set()).add(rec.paper_key)
+        if not rec.group:
+            ungrouped.add(d)
+    bad = sorted(d for d, k in keys.items() if len(k) > 1 and d in ungrouped)
+    if bad:
+        raise PaperKeyConflict(f"DOIs split into several paper groups without being a declared compilation: {bad}")
+
+
 def enrich_external(records: Iterable[ExternalRecord]) -> list[dict[str, Any]]:
     """Enriched ARGUS-style rows (same derived columns) plus `ext_source` and `paper_key`."""
+    records = list(records)
+    check_paper_keys(records)
     out = []
     for rec in records:
         r = enrich_row(to_row(rec), paper_id(rec))

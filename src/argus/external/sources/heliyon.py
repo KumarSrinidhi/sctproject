@@ -23,6 +23,7 @@ def records(folder: Path) -> Iterator[ExternalRecord]:
         yield ExternalRecord(
             source=KEY, ext_id=f"row{r['table_row']}-{r['direction']}", k=float(r["k_W_mK"]),
             filler=r["filler"], matrix=r["matrix"], doi=r["ref_doi"], vol_pct=float(r["vol_pct"]),
-            direction=r["direction"], processing=r["technique"],
+            direction=r["direction"], processing=r["technique"], year=int(r["year"]) if r.get("year") else None,
+            value_source="table",
             notes=f"Mumtaz et al. 2024, Table 1 row {r['table_row']} ({r['loading_text']}), ref. {r['ref_number']}.",
         )

@@ -81,10 +81,13 @@ def run(lay: Layout, quick: bool = False, n_boot: int = N_BOOT) -> dict[str, Any
         out["sources"][key] = {
             "title": m.get("title", key), "license": m.get("license", ""), "doi": m.get("doi", ""),
             "role": reg[key][0], "rows": len(rows), "papers": len({r["paper_key"] for r in rows}),
-            "files_ok": all(f["ok"] for f in files if f["source"] == key),
+            "files": manifest.source_state(files, key),
             "fillers": dict(Counter(r["filler_material"] for r in rows).most_common()),
             "matrices": dict(Counter(r["matrix_family"] for r in rows).most_common()),
         }
+    if "bcc" in meta and (ext / "bcc").exists():
+        out["physics_source"] = {"title": meta["bcc"].get("title", "bcc"), "license": meta["bcc"].get("license", ""),
+                                 "files": manifest.source_state(files, "bcc")}
 
     # 1-2. physics
     out["physics_check"] = {}
@@ -109,12 +112,15 @@ def run(lay: Layout, quick: bool = False, n_boot: int = N_BOOT) -> dict[str, Any
                                 "dropped_papers": sorted({r["doi"] for r in src_rows[k] if r.get("doi") in argus_dois})}
                             for k in test_keys}
     seen_papers: set[str] = set()
+    seen_dois: set[str] = set()
     combined, dup = [], {}
     for k in test_keys:
         papers = {r["paper_key"] for r in test_rows[k]}
-        dup[k] = sorted(papers & seen_papers)
-        combined += [r for r in test_rows[k] if r["paper_key"] not in seen_papers]
+        dois = {r["doi"] for r in test_rows[k] if r.get("doi")}
+        dup[k] = sorted((papers & seen_papers) | (dois & seen_dois))
+        combined += [r for r in test_rows[k] if r["paper_key"] not in seen_papers and r.get("doi") not in seen_dois]
         seen_papers |= papers
+        seen_dois |= dois
     out["combined_duplicates"] = {k: v for k, v in dup.items() if v}
     predictions: dict[str, Any] = {}
     for key in test_keys + (["all"] if len(test_keys) > 1 else []):
@@ -244,15 +250,19 @@ def render_markdown(res: dict[str, Any], figs: dict[str, str]) -> str:
       + (" **Quick mode: not for reporting.**" if res["config"]["quick"] else "") + "\n")
 
     a("## Sources\n")
-    a("| Source | Licence | Role | Rows used | Papers | Raw files |")
+    a("| Source | Licence | Role | Rows (papers) loaded | Test rows (papers) after the leakage guard | Raw files |")
     a("|---|---|---|---|---|---|")
     for key, s in res["sources"].items():
-        a(f"| {s['title']} ({key}) | {s['license']} | {s['role']} | {s['rows']} | {s['papers']} | "
-          f"{'checksum ok' if s['files_ok'] else 'CHECK FAILED'} |")
+        t = (res.get("transfer") or {}).get(key, {}).get("test")
+        tested = f"{t['rows']} ({t['papers']})" if t and s["role"] == "test" else "–"
+        a(f"| {s['title']} ({key}) | {s['license']} | {s['role']} | {s['rows']} ({s['papers']}) | {tested} | "
+          f"{s['files']} |")
     for key, why in res.get("skipped", {}).items():
         a(f"| {key} | | skipped | | | {why} |")
-    if res.get("physics_on_bcc"):
-        a(f"| He, Wu & Fu source data (bcc) | MIT | physics checks only | {res['physics_check']['bcc']['maxwell_garnett']['n']} | – | checksum ok |")
+    ps = res.get("physics_source")
+    if ps and res.get("physics_on_bcc"):
+        a(f"| {ps['title']} (bcc) | {ps['license']} | physics checks only | "
+          f"{res['physics_check']['bcc']['maxwell_garnett']['n']} (–) | – | {ps['files']} |")
     a("")
     lg = {k: v for k, v in (res.get("leakage_guard") or {}).items() if v["dropped_rows"]}
     if lg:
@@ -279,7 +289,10 @@ def render_markdown(res: dict[str, Any], figs: dict[str, str]) -> str:
             a(f"\nFor the asymmetric Bruggeman model {dem['n_close']} of {dem['n']} BCC points agree within 1e-4. "
               f"At the other {dem['disagreements']}, our root satisfies the model's defining equation to "
               f"{dem['max_abs_residual_ours']:.0e} while the published value misses it by at least "
-              f"{dem['min_abs_residual_theirs']:.0e}: the difference comes from the workbook's numerical solution, not our code.")
+              f"{dem['min_abs_residual_theirs']:.0e}, so the differences lie in the workbook's values, not in our code. "
+              f"{dem['disagreements'] - dem.get('disagreements_over_1pct', 0)} of them are below 1% (solver tolerance); "
+              f"the {dem.get('disagreements_over_1pct', 0)} larger ones include a few rows whose values appear shifted "
+              "within one series.")
         a("")
 
     pb = res.get("physics_on_bcc")

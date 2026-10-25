@@ -18,6 +18,7 @@ include:
     filler: SiO2
     matrix: Epoxy
     doi: 10.1016/j.compscitech.2012.02.016
+    year: 2012
     shape: sphere
     size_um: 20
     alignment: random
@@ -27,6 +28,7 @@ include:
     filler: SiO2
     matrix: Epoxy
     doi: 10.1016/j.compscitech.2012.02.016
+    year: 2012
     shape: sphere
     size_um: 0.02
     alignment: random
@@ -36,15 +38,18 @@ include:
     filler: h-BN
     matrix: Epoxy resin
     doi: 10.1016/j.ijheatmasstransfer.2015.11.045
+    year: 2016
     shape: platelet
     size_um: 5
     alignment: random (no field applied)
+    treatment: magnetic iron-oxide decoration (mhBN)
     direction: through-plane
     notes: Yuan et al. 2016, Fig. 7a (digitized); platelet D ~5 um, t ~250 nm.
   hBN_Epoxy_M_mag:
     filler: h-BN
     matrix: Epoxy resin
     doi: 10.1016/j.ijheatmasstransfer.2015.11.045
+    year: 2016
     shape: platelet
     size_um: 5
     alignment: partially aligned vertically (magnetic field)
@@ -55,6 +60,7 @@ include:
     filler: h-BN
     matrix: Epoxy resin
     doi: 10.1016/j.ijheatmasstransfer.2015.11.045
+    year: 2016
     shape: platelet
     size_um: 5
     alignment: highly aligned vertically (magnetic field + vibration)
@@ -65,6 +71,7 @@ include:
     filler: Si3N4
     matrix: Epoxy (liquid route)
     doi: 10.1007/s10853-006-1480-y
+    year: 2007
     shape: rod-like particle
     size_um: 7.5
     alignment: random
@@ -74,6 +81,7 @@ include:
     filler: Si3N4
     matrix: Epoxy (solid route)
     doi: 10.1007/s10853-006-1480-y
+    year: 2007
     shape: rod-like particle
     size_um: 7.5
     alignment: random
@@ -83,6 +91,7 @@ include:
     filler: BN
     matrix: Epoxy
     doi: 10.1111/j.1151-2916.2002.tb00183.x
+    year: 2002
     shape: platelet
     alignment: platelets preferentially lying in the disk plane
     direction: through-plane
@@ -91,6 +100,7 @@ include:
     filler: Al2O3
     matrix: Epoxy
     doi: 10.1016/j.compositesa.2009.02.024
+    year: 2009
     shape: sphere
     size_um: 6.75
     alignment: random
@@ -100,6 +110,7 @@ include:
     filler: Al2O3
     matrix: Epoxy
     doi: 10.1016/j.compositesa.2009.02.024
+    year: 2009
     shape: sphere
     size_um: 27
     alignment: random
@@ -109,6 +120,7 @@ include:
     filler: SiO2
     matrix: Epoxy
     doi: 10.1002/(sici)1097-4628(19991227)74:14<3396::aid-app13>3.0.co;2-3
+    year: 1999
     shape: sphere
     size_um: 13.5
     alignment: random
@@ -120,6 +132,7 @@ include:
     filler: Al2O3
     matrix: Epoxy
     doi: 10.1002/(sici)1097-4628(19991227)74:14<3396::aid-app13>3.0.co;2-3
+    year: 1999
     shape: particle
     size_um: 13.5
     alignment: random
@@ -131,6 +144,7 @@ include:
     filler: AlN
     matrix: Epoxy
     doi: 10.1002/(sici)1097-4628(19991227)74:14<3396::aid-app13>3.0.co;2-3
+    year: 1999
     shape: irregular particle
     size_um: 13.5
     alignment: random
@@ -143,6 +157,7 @@ include:
     filler: Si3N4
     matrix: Polystyrene (PS)
     doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
     shape: rod-like particle
     alignment: segregated network around 3 mm PS particles
     direction: isotropic
@@ -151,6 +166,7 @@ include:
     filler: Si3N4
     matrix: Polystyrene (PS)
     doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
     shape: rod-like particle
     alignment: segregated network around 0.5 mm PS particles
     direction: isotropic
@@ -159,6 +175,7 @@ include:
     filler: Si3N4
     matrix: Polystyrene (PS)
     doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
     shape: rod-like particle
     alignment: segregated network around 0.1 mm PS particles
     direction: isotropic
@@ -167,6 +184,7 @@ include:
     filler: Si3N4
     matrix: Polystyrene (PS)
     doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
     shape: rod-like particle
     alignment: segregated network around 3 mm PS particles
     treatment: silane coupling agent
@@ -176,6 +194,7 @@ include:
     filler: Al2O3
     matrix: Polystyrene (PS)
     doi: 10.1002/app.1993.070490914
+    year: 1993
     shape: particle
     alignment: random
     direction: isotropic
@@ -184,6 +203,7 @@ include:
     filler: glass
     matrix: Polystyrene (PS)
     doi: 10.1002/app.1993.070490914
+    year: 1993
     shape: sphere
     alignment: random
     direction: isotropic
@@ -192,6 +212,7 @@ include:
     filler: BNNS
     matrix: Epoxy
     doi: 10.1002/smll.201502173
+    year: 2015
     shape: nanosheet
     size_um: 0.35
     alignment: random
@@ -201,6 +222,7 @@ include:
     filler: BNNS
     matrix: Epoxy
     doi: 10.1002/smll.201502173
+    year: 2015
     shape: nanosheet
     size_um: 0.35
     alignment: ice-templated 3D network, measured parallel to the ice-growth direction
@@ -210,6 +232,7 @@ include:
     filler: BNNS
     matrix: Epoxy
     doi: 10.1002/smll.201502173
+    year: 2015
     shape: nanosheet
     size_um: 0.35
     alignment: ice-templated 3D network, measured perpendicular to the ice-growth direction
@@ -219,6 +242,7 @@ include:
     filler: SiC
     matrix: Polystyrene (PS)
     doi: 10.1080/03602559.2010.512326
+    year: 2010
     shape: particle
     alignment: random
     direction: isotropic
@@ -227,6 +251,7 @@ include:
     filler: SiC
     matrix: Polystyrene (PS)
     doi: 10.1080/03602559.2010.512326
+    year: 2010
     shape: whisker
     alignment: random
     direction: isotropic
@@ -235,6 +260,7 @@ include:
     filler: Al2O3
     matrix: Unsaturated polyester (UPE)
     doi: 10.1002/app.40528
+    year: 2014
     shape: particle
     alignment: random
     direction: isotropic
@@ -243,6 +269,7 @@ include:
     filler: Al2O3
     matrix: Unsaturated polyester (UPE)
     doi: 10.1002/app.40528
+    year: 2014
     shape: particle
     alignment: random
     processing: thermal treatment
@@ -253,6 +280,7 @@ include:
     matrix: Epoxy
     doi: 10.1016/j.compscitech.2016.05.003
     paper: kochetov-2011-via-machrafi-2016
+    year: 2011
     shape: nanoparticle
     size_um: 0.05
     alignment: random
@@ -263,6 +291,7 @@ include:
     matrix: Epoxy
     doi: 10.1016/j.compscitech.2016.05.003
     paper: kochetov-2011-via-machrafi-2016
+    year: 2011
     shape: nanoparticle
     size_um: 0.05
     alignment: random
@@ -273,6 +302,7 @@ include:
     matrix: Epoxy
     doi: 10.1016/j.compscitech.2016.05.003
     paper: choudhury-2012-via-machrafi-2016
+    year: 2012
     shape: nanoparticle
     size_um: 0.05
     alignment: random
@@ -283,6 +313,7 @@ include:
     matrix: Epoxy
     doi: 10.1016/j.compscitech.2016.05.003
     paper: kochetov-2009-via-machrafi-2016
+    year: 2009
     shape: nanoparticle
     size_um: 0.05
     alignment: random

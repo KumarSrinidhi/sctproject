@@ -121,7 +121,7 @@ def _synthetic_ds(papers=30, rows=6, seed=3):
     paper, grouped CV cannot."""
     rng = np.random.default_rng(seed)
     X, y, g = [], [], []
-    yc = NAMES.index("year_c")
+    yc = NAMES.index("log_size")  # any free column can carry a paper id
     for p in range(papers):
         u = rng.normal(0, 0.4)
         for _ in range(rows):

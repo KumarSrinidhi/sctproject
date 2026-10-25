@@ -15,7 +15,7 @@ sources:
       Anastasiou, D. (2026). EVF_Thermal_Conductivity_Dataset [Data set]. figshare.
       https://doi.org/10.6084/m9.figshare.31408854.v1
     role: >-
-      Independent test set: 293 literature points (56 series) with matrix k reported for every
+      Independent test set: 293 literature points (52 series in Sheet1; the README says 56) with matrix k reported for every
       series. The polymer + ceramic series are mapped in evf/series_map.yaml.
     files:
       - path: evf/raw/EVF_Thermal_Conductivity_Dataset.xlsx
@@ -36,7 +36,7 @@ sources:
       He, L., Wu, K., & Fu, Q. (2025). Data Supporting "Thermal Conductivity Modeling Beyond the
       Dilute Limit" [Data set]. figshare. https://doi.org/10.6084/m9.figshare.30426895.v1
     role: >-
-      Physics test set: 243 points with km, kf, particle diameter and loading (no material names
+      Physics test set: 242 points (the paper says 243) with km, kf, particle diameter and loading (no material names
       per row), plus the authors' own model predictions, used to cross-check our implementations.
     files:
       - path: bcc/raw/Source data NCOMMS-25-36881A.xlsx
@@ -87,6 +87,9 @@ sources:
         url: https://arxiv.org/pdf/2209.07635
         sha256: 7106baff2d1a731c3eba5bbd3834db41779c3521398df06fe87ee4a7afa711a5
         committed: false
+      - path: tagp/tagp_thermal_datasets.csv
+        url: ""
+        sha256: 2f4c80d39c1690370818e40e5ea51742197802b1394e2ae792ec75477a4357ec
   heliyon:
     title: Mumtaz et al. 2024, Heliyon 10, e25381, Table 1
     authors: [Mumtaz, et al.]
@@ -102,4 +105,7 @@ sources:
     role: >-
       Value cross-check only. Of its 21-row summary table we keep, as facts with attribution, the two
       rows whose source papers are in ARGUS (heliyon/shared_rows.csv); the table itself is not copied.
-    files: []
+    files:
+      - path: heliyon/shared_rows.csv
+        url: ""
+        sha256: fdfb88541ec489433a618e70126ab9f742388b980fd92036f3bf4272680b8b15

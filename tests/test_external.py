@@ -16,6 +16,7 @@ from argus.schema import COLUMN_NAMES
     ("alumina", "Al2O3"), ("Al2O3", "Al2O3"), ("magnesium oxide", "MgO"), ("silicon carbide", "SiC"),
     ("BN + Al2O3", "BN/Al2O3 hybrid"), ("graphene nanoplatelets", "graphene"), ("neat", "none"),
     ("aluminium", "Al"), ("mystery filler", "mystery filler"),
+    ("aluminium hydroxide", "ATH"), ("Al(OH)3", "ATH"), ("cubic BN", "cBN"), ("aluminum nitride", "AlN"),
 ])
 def test_normalize_filler(raw, label):
     assert normalize_filler(raw) == label
@@ -31,6 +32,7 @@ def test_filler_class():
 def test_normalize_doi():
     assert normalize_doi("https://doi.org/10.1016/J.X.2020.1.") == "10.1016/j.x.2020.1"
     assert normalize_doi("doi: 10.3390/POLYM1") == "10.3390/polym1"
+    assert normalize_doi("https://www.doi.org/10.1/AB") == "10.1/ab"
 
 
 def _rec(**kw):
@@ -213,7 +215,12 @@ def test_ncomms_block_map_tiles_the_workbook():
     from argus.ml.features import eligible
 
     rows = enrich_external(ncomms.records(NC))  # check_map raises on any gap or label mismatch
-    assert len(rows) == 138 and all(eligible(r) for r in rows)
+    # blocks 3 and 21 excluded (not epoxy thermosets), block 27 row 145 dropped (pre-filled matrix)
+    assert len(rows) == 132 and all(eligible(r) for r in rows)
+    assert not any(r["row_id"].endswith("#row145") for r in rows)
+    assert all(r["year"] for r in rows)
+    # one DOI is one paper (blocks 24 and 25 are the same study)
+    assert len({r["paper_key"] for r in rows if r["doi"] == "10.1016/j.polymertesting.2023.107940"}) == 1
     assert "UNSPECIFIED" not in {r["method_class"] for r in rows}
 
 
@@ -223,5 +230,84 @@ def test_new_method_abbreviations_classified():
     assert classify_method("THW, ASTM C1113").method_class == "HOT_WIRE"
     assert classify_method("TPS, 2500S").method_class == "TPS"
     assert classify_method("HFM, ASTM C518").method_class == "SS_HFM_GHP"
-    assert classify_method("GHP, DRL-III").method_class == "SS_HFM_GHP"
+    assert classify_method("GHP, DRL-III").method_class == "SS_D5470"  # the DRL rig wins over the abbreviation
+    assert classify_method("GHP").method_class == "SS_HFM_GHP"
+    assert classify_method("THW, TC7000").method_class == "HOT_WIRE"
     assert classify_method("MTPS sensor").method_class != "TPS"
+
+
+def test_one_doi_is_one_paper_unless_declared_compilation():
+    from argus.external.harmonize import PaperKeyConflict
+
+    a = _rec(ext_id="1", doi="10.1/x")
+    b = _rec(ext_id="2", doi="10.1/x", group="half-b")
+    with pytest.raises(PaperKeyConflict):
+        enrich_external([a, b])
+    # every record grouped: a declared compilation of several papers
+    ok = enrich_external([_rec(ext_id="1", doi="10.1/x", group="p1"), _rec(ext_id="2", doi="10.1/x", group="p2")])
+    assert len({r["paper_key"] for r in ok}) == 2
+
+
+def test_figure_values_set_the_digitized_flag_and_year_feature():
+    (r,) = enrich_external([_rec(value_source="figure", year=2015)])
+    assert "figure_digitized" in r["flags"] and r["year"] == 2015
+    (t,) = enrich_external([_rec()])
+    assert "figure_digitized" not in t["flags"]
+
+
+def test_all_external_test_rows_carry_a_year():
+    pytest.importorskip("openpyxl")
+    from argus.external.sources import evf, tagp
+
+    rows = enrich_external(evf.records(EVF)) + enrich_external(tagp.records(ROOT / "data" / "external" / "tagp"))
+    assert all(r["year"] for r in rows)
+    assert all("figure_digitized" in r["flags"] for r in rows)  # every EVF series and TAGP set is digitized
+
+
+def test_source_state_matches_external_check():
+    from argus.external.manifest import source_state
+
+    files = [{"source": "a", "present": True, "ok": True, "committed": True},
+             {"source": "b", "present": False, "ok": False, "committed": False},
+             {"source": "c", "present": True, "ok": False, "committed": True},
+             {"source": "d", "present": False, "ok": False, "committed": True}]
+    assert source_state(files, "a") == "ok"
+    assert source_state(files, "b").startswith("ok (on-demand")
+    assert source_state(files, "c") == "CHANGED"
+    assert source_state(files, "d") == "MISSING"
+    assert source_state(files, "e") == "no raw files"
+
+
+def test_fetch_rejects_unknown_source(tmp_path):
+    from argus.external.manifest import UnknownSource, fetch
+
+    (tmp_path / "sources.yaml").write_text("sources:\n  evf: {files: []}\n", encoding="utf-8")
+    with pytest.raises(UnknownSource):
+        fetch(tmp_path, only="nope")
+    assert fetch(tmp_path, only="evf") == []
+
+
+def test_mean_ensemble_refits_members_and_passes_groups():
+    pytest.importorskip("sklearn")
+    from argus.ml.models import GroupRidge, MeanEnsemble, Median, fit_model
+
+    seen = {}
+
+    class Spy(GroupRidge):
+        def fit(self, X, y, groups=None):
+            seen["groups"] = groups
+            return super().fit(X, y, groups=groups)
+
+    rng = np.random.default_rng(1)
+    X, y = rng.normal(size=(40, 3)), rng.normal(size=40)
+    g = np.array([f"P{i % 8}" for i in range(40)])
+    ens = MeanEnsemble(factories=(lambda names: Spy(), lambda names: Median()), names=("a", "b", "c"))
+    fit_model(ens, X, y, g)
+    assert seen["groups"] is g
+    m1 = fit_model(Spy(), X, y, g).predict(X)
+    m2 = np.full(40, np.median(y))
+    assert np.allclose(ens.predict(X), (m1 + m2) / 2)
+    # a second fit builds fresh members (folds never share fitted state)
+    first = ens.members_[0]
+    fit_model(ens, X[:20], y[:20], g[:20])
+    assert ens.members_[0] is not first
