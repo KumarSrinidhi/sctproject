@@ -1,0 +1,464 @@
+# Supplementary Data 1 of He, Wu & Fu, Nat. Commun. (2025), doi 10.1038/s41467-025-67013-y.
+# The xlsx (CC BY-NC-ND 4.0) is NOT committed: `argus external fetch ncomms` downloads it, sha256-checked.
+# This map is our own curation: one entry per block of rows sharing a 'Systems' label, the source
+# paper from Supplementary Table S3 (SI reference n = article reference 40 + n, n >= 2; SI 1 = ref 79),
+# and whether the block is used. Block boundaries, labels and the mapping were checked by a second,
+# independent reading of the xlsx and of Table S3 (2026-10-25).
+#   rows       first and last sheet row (1-based, header rows 1-2)
+#   doi        source paper; blocks marked own_work are the article's own measurements
+#   use        test (independent test set) | exclude (with reason)
+#   year       publication year of the source (Crossref 'issued'), used as the year feature
+#   exclude_rows  {sheet row: reason} for single rows of a test block that are not usable
+#   treatment, alignment, shape   details from the source title where it states them
+# Blocks 3 and 21 were excluded and block 27 row 145 dropped after the 2026-10-25 code review
+# (matrix not an epoxy thermoset; pre-filled matrix).
+blocks:
+  1:
+    rows:
+    - 3
+    - 7
+    label: AlN-PTFE | (LFA447)
+    use: test
+    filler: AlN
+    matrix: PTFE
+    method: LFA447
+    doi: 10.1016/j.compositesb.2018.07.019
+    year: 2018
+  2:
+    rows:
+    - 8
+    - 10
+    label: AlN-LDPE | (THW-ASTM C1113)
+    use: test
+    filler: AlN
+    matrix: LDPE
+    method: THW-ASTM C1113
+    doi: 10.1016/j.compositesa.2005.07.006
+    year: 2006
+  3:
+    rows:
+    - 11
+    - 13
+    label: Al2O3-Epoxy | (GHP, DRL-III)
+    use: exclude
+    reason: matrix is epoxidized natural rubber, not an epoxy thermoset (source title)
+    doi: 10.1016/j.apsusc.2022.154335
+  4:
+    rows:
+    - 14
+    - 18
+    label: Al2O3-Epoxy | (THW, ASTM C1113)
+    use: test
+    filler: Al2O3
+    matrix: Epoxy
+    method: THW, ASTM C1113
+    doi: 10.1039/c7ta02934a
+    year: 2017
+  5:
+    rows:
+    - 19
+    - 22
+    label: Cu-PVP | (TPS, ASTM D7984)
+    use: exclude
+    reason: Cu filler in PVP (metal filler; the source describes a nanofluid)
+    doi: 10.1021/acsami.7b03339
+  6:
+    rows:
+    - 23
+    - 24
+    label: AlN-PVDF | (LFA427)
+    use: test
+    filler: AlN
+    matrix: PVDF
+    method: LFA427
+    doi: 10.1016/j.compositesb.2017.02.008
+    year: 2017
+  7:
+    rows:
+    - 25
+    - 30
+    label: AlN-Epoxy | (LFA447)
+    use: test
+    filler: AlN
+    matrix: Epoxy
+    method: LFA447
+    doi: 10.1016/j.compositesb.2013.03.002
+    year: 2013
+  8:
+    rows:
+    - 31
+    - 37
+    label: AlN-Epoxy | (TPS, 2500S)
+    use: test
+    filler: AlN
+    matrix: Epoxy
+    method: TPS, 2500S
+    doi: 10.3390/polym14142950
+    year: 2022
+  9:
+    rows:
+    - 38
+    - 44
+    label: Aluminum-PVDF | (TPS, 2500S)
+    use: exclude
+    reason: aluminium (metal) filler
+    doi: 10.1016/j.compositesa.2015.01.024
+  10:
+    rows:
+    - 45
+    - 47
+    label: Aluminum-PDMS | (TTR, T3Ster)
+    use: exclude
+    reason: aluminium (metal) filler
+    doi: 10.1039/d2ta05781f
+  11:
+    rows:
+    - 48
+    - 50
+    label: Aluminum-Polythiocticacid | (TTR, T3Ster)
+    use: exclude
+    reason: aluminium (metal) filler
+    doi: 10.1039/d2ta05781f
+  12:
+    rows:
+    - 51
+    - 63
+    label: ZnO-Gutta percha | (GHFM, ASTM E1530)
+    use: test
+    filler: ZnO
+    matrix: Gutta percha
+    method: GHFM, ASTM E1530
+    doi: 10.1016/j.compositesb.2019.106903
+    year: 2019
+  13:
+    rows:
+    - 64
+    - 67
+    label: AlN-Polyurethane | (TPS, 2500S)
+    use: test
+    filler: AlN
+    matrix: Polyurethane
+    method: TPS, 2500S
+    doi: 10.1016/j.ceramint.2017.05.271
+    treatment: PEDOT:PSS-coated AlN (source title)
+    year: 2017
+  14:
+    rows:
+    - 68
+    - 73
+    label: AlN-Methylphenyl silicone | (LFA600)
+    use: test
+    filler: AlN
+    matrix: Methylphenyl silicone
+    method: LFA600
+    doi: 10.1016/j.jcis.2024.01.186
+    year: 2024
+  15:
+    rows:
+    - 74
+    - 79
+    label: AlN-Epoxy | (THW, XIATECH TC3000E)
+    use: test
+    filler: AlN
+    matrix: Epoxy
+    method: THW, XIATECH TC3000E
+    doi: 10.1016/j.jallcom.2023.171244
+    alignment: oriented AlN skeleton (source title)
+    year: 2023
+  16:
+    rows:
+    - 80
+    - 84
+    label: AlN-Lithium aluminosilicate | (LFA447)
+    use: exclude
+    reason: ceramic matrix (lithium aluminosilicate)
+    doi: 10.1016/j.ceramint.2020.08.026
+  17:
+    rows:
+    - 85
+    - 94
+    label: AlN-Borosilicate glass | (LFA427)
+    use: exclude
+    reason: glass matrix (borosilicate)
+    doi: 10.1016/j.jeurceramsoc.2012.09.030
+  18:
+    rows:
+    - 95
+    - 98
+    label: AlN-Epoxy | (LFA600)
+    use: test
+    filler: AlN
+    matrix: Epoxy
+    method: LFA600
+    doi: 10.1016/j.compositesb.2016.02.052
+    alignment: magnetically aligned AlN (source title)
+    year: 2016
+  19:
+    rows:
+    - 99
+    - 105
+    label: AlN-Polyimide | (HFM, ASTM C518)
+    use: test
+    filler: AlN
+    matrix: Polyimide
+    method: HFM, ASTM C518
+    doi: 10.1016/j.compscitech.2003.11.007
+    year: 2004
+  20:
+    rows:
+    - 106
+    - 108
+    label: Al2O3-Epoxy | (GHP, DRL-II)
+    use: test
+    filler: Al2O3
+    matrix: Epoxy
+    method: GHP, DRL-II
+    doi: 10.1016/j.compscitech.2018.10.002
+    year: 2018
+  21:
+    rows:
+    - 109
+    - 110
+    label: Al2O3-Epoxy | (GHP, DRL-II)
+    use: exclude
+    reason: matrix is epoxy-terminated PDMS and the filler includes Al2O3-doped MWCNTs (source title)
+    doi: 10.1016/j.carbon.2011.04.049
+  22:
+    rows:
+    - 111
+    - 118
+    label: Al2O3-Liquid crystalline epoxy | (THW, TC3000)
+    use: test
+    filler: Al2O3
+    matrix: Liquid crystalline epoxy
+    method: THW, TC3000
+    doi: 10.1002/app.49143
+    year: 2020
+  23:
+    rows:
+    - 119
+    - 124
+    label: Al2O3-Liquid crystalline epoxy | (LFA467)
+    use: test
+    filler: Al2O3
+    matrix: Liquid crystalline epoxy
+    method: LFA467
+    doi: 10.1007/s11664-016-4704-1
+    year: 2016
+  24:
+    rows:
+    - 125
+    - 129
+    label: Al2O3-Liquid crystalline epoxy-irregular | (TPS, 2500S)
+    use: test
+    filler: Al2O3
+    matrix: Liquid crystalline epoxy
+    method: TPS, 2500S
+    doi: 10.1016/j.polymertesting.2023.107940
+    shape: irregular particle
+    year: 2023
+  25:
+    rows:
+    - 130
+    - 139
+    label: Al2O3-Liquid crystalline epoxy-spherical | (TPS, 2500S)
+    use: test
+    filler: Al2O3
+    matrix: Liquid crystalline epoxy
+    method: TPS, 2500S
+    doi: 10.1016/j.polymertesting.2023.107940
+    shape: sphere
+    year: 2023
+  26:
+    rows:
+    - 140
+    - 142
+    label: Al2O3-Polyamide | (THW, TC7000)
+    use: test
+    filler: Al2O3
+    matrix: Polyamide
+    method: THW, TC7000
+    doi: 10.1016/j.ceramint.2015.04.088
+    year: 2015
+  27:
+    rows:
+    - 143
+    - 145
+    label: Al2O3-Bacterial cellulose | (LFA467)
+    use: test
+    filler: Al2O3
+    matrix: Bacterial cellulose
+    method: LFA467
+    doi: 10.1016/j.cej.2019.123784
+    exclude_rows: {145: 'km 7.51 W/(m K): a pre-filled conductive paper, not neat bacterial cellulose'}
+    year: 2020
+  28:
+    rows:
+    - 146
+    - 149
+    label: Liquid metal-Aramid nanofibers | (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1002/smll.202406574
+  29:
+    rows:
+    - 150
+    - 155
+    label: Diamond/ Al(H2PO4)3 | (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1002/smll.202403490
+  30:
+    rows:
+    - 156
+    - 171
+    label: AlN-Liquid metal | (TIM SS, ASTM D5470)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1038/s41565-024-01793-0
+  31:
+    rows:
+    - 172
+    - 176
+    label: Diamond-Liquid metal | (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1007/s12598-023-02331-y
+  32:
+    rows:
+    - 177
+    - 179
+    label: Cu- Liquid metal | (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1002/adma.202103104
+  33:
+    rows:
+    - 180
+    - 181
+    label: Cu@Cl-Liquid metal (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1002/adma.202103104
+  34:
+    rows:
+    - 182
+    - 186
+    label: Diamond-Liquid metal | (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1021/acsnano.5c03918
+  35:
+    rows:
+    - 187
+    - 190
+    label: Diamond-Liquid metal | (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1016/j.compositesb.2022.109902
+  36:
+    rows:
+    - 191
+    - 197
+    label: Tungsten-Liquid metal | (TPS, 2500S)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1002/adma.201904309
+  37:
+    rows:
+    - 198
+    - 201
+    label: Cu-Liquid metal | (LFA467)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1002/inf2.12466
+  38:
+    rows:
+    - 202
+    - 207
+    label: Cu-Liquid metal | (TIM SS, ASTM D5470)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1016/j.ijheatmasstransfer.2021.121012
+  39:
+    rows:
+    - 208
+    - 214
+    label: Cu- Liquid metal | (TIM SS, ASTM D5470)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+  40:
+    rows:
+    - 215
+    - 217
+    label: Diamond-Cu | (ACC, ULVAC–Riko Laser PIT)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1016/j.carbon.2019.03.051
+  41:
+    rows:
+    - 218
+    - 222
+    label: Diamond-Cu | (LFA447)
+    use: exclude
+    reason: liquid-metal or copper matrix / metal or diamond filler
+    doi: 10.1016/j.jmst.2021.03.018
+  42:
+    rows:
+    - 223
+    - 227
+    label: Al2O3-PTFE | (TIM SS, ASTM D5470)
+    use: test
+    filler: Al2O3
+    matrix: PTFE
+    method: TIM SS, ASTM D5470
+    doi: 10.1016/j.compscitech.2024.110592
+    year: 2024
+  43:
+    rows:
+    - 228
+    - 232
+    label: CBN-PTFE | (TIM SS, ASTM D5470)
+    use: test
+    filler: cBN
+    matrix: PTFE
+    method: TIM SS, ASTM D5470
+    doi: 10.1038/s41467-025-67013-y
+    own_work: true
+    year: 2025
+  44:
+    rows:
+    - 233
+    - 237
+    label: Si3N4-PTFE | (TIM SS, ASTM D5470)
+    use: test
+    filler: Si3N4
+    matrix: PTFE
+    method: TIM SS, ASTM D5470
+    doi: 10.1038/s41467-025-67013-y
+    own_work: true
+    year: 2025
+  45:
+    rows:
+    - 238
+    - 243
+    label: Al2O3-PDMS | (LFA467)
+    use: test
+    filler: Al2O3
+    matrix: PDMS
+    method: LFA467
+    doi: 10.1038/s41467-025-67013-y
+    own_work: true
+    year: 2025
+  46:
+    rows:
+    - 244
+    - 249
+    label: Al2O3-PEG | (LFA467)
+    use: test
+    filler: Al2O3
+    matrix: PEG
+    method: LFA467
+    doi: 10.1038/s41467-025-67013-y
+    own_work: true
+    year: 2025

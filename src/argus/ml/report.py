@@ -92,6 +92,14 @@ def render_markdown(res: dict[str, Any], abl: dict[str, Any] | None, figure: str
         L.append(f"- **Acceptance {verdict}:** the best baseline ({base}) reaches ×{b['mae_factor']:.2f} "
                  f"(MAE {b['mae_log10']:.3f}); the physics-only baseline reaches ×{M['physics']['lopo']['mae_factor']:.2f}."
                  if "physics" in M else f"- Acceptance {verdict}.")
+    if best == "ensemble":
+        singles = [n for n in res["ranking_lopo_mae"] if n not in ("ensemble",) and not M[n]["baseline"]]
+        if singles:
+            s1 = singles[0]
+            gap = M[s1]["lopo"]["mae_log10"] - M[best]["lopo"]["mae_log10"]
+            L.append(f"- **The ensemble's members were chosen by comparing combinations on these same folds**, so its "
+                     f"edge over the best single model ({s1}, MAE {gap:.3f} lower) is not evidence on its own. Its "
+                     "out-of-sample confirmation is the test on other groups' data (reports/external_validation.md).")
     gaps = {n: e["leakage_gap_mae"] for n, e in M.items()}
     worst = max(gaps, key=gaps.get)
     L.append(f"- **Row-level random splits overstate accuracy.** For {worst}, random 5-fold MAE is "

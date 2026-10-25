@@ -81,4 +81,23 @@ def test_report_renders_from_current_outputs(repo_layout, tmp_path):
     text = out.read_text(encoding="utf-8")
     assert "## 4. Results" in text and "## References" in text
     assert "{{" not in text and "{%" not in text
-    assert len(list((tmp_path / "figures").glob("*.png"))) == 7
+    assert len(list((tmp_path / "figures").glob("fig*.png"))) == 7
+    if (repo_layout.reports / "external_validation.json").exists():
+        assert "### 4.5 Testing on data we did not curate" in text
+        assert len(list((tmp_path / "figures").glob("external_*.png"))) == 2
+
+
+def test_report_renders_without_external_figures(repo_layout, tmp_path, monkeypatch):
+    pytest.importorskip("matplotlib")
+    pytest.importorskip("jinja2")
+    import argus.report.course as course
+
+    try:
+        course.build_context(repo_layout, tmp_path / "figs", "figs")
+    except StaleAnalysis as e:
+        pytest.skip(f"analysis outputs are stale in this checkout: {e}")
+    if not (repo_layout.reports / "external_validation.json").exists():
+        pytest.skip("no external validation output")
+    monkeypatch.setattr(course, "figs_ext", lambda lay, fig_dir, fig_rel: {})
+    text = course.render(repo_layout, out=tmp_path / "COURSE_REPORT.md").read_text(encoding="utf-8")
+    assert "### 4.5" in text and "external_transfer" not in text

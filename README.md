@@ -6,6 +6,16 @@ All values are traceable to a specific paper, table, figure, or text location. N
 
 **Dataset v1.1.0** (released 2026-10-23, tag `data-v1.1`): **258 rows / 95 papers**. See [data/CHANGELOG.md](data/CHANGELOG.md) for what changed since v1.0 (260 rows).
 
+**Tested on other groups' data** (`argus external validate`, [report](reports/external_validation.md)):
+- Our effective-medium code reproduces 6 of 7 published model columns of two independent implementations
+  exactly. Where the seventh (asymmetric Bruggeman) differs, the published values fail the model's own
+  equation.
+- The best model trained only on ARGUS predicts 274 measurements from 34 papers it has never seen to a
+  typical ×1.39, against ×1.48 for calibrated physics; with 34 test papers that gap is not yet
+  distinguishable from zero. Its 90% intervals cover 98% of the rows.
+- Of the 4 values that independent extractions of the same papers let us compare, 3 match exactly. The
+  fourth differs because a review quotes the 20 vol% value at 15 vol%.
+
 | Document | What it covers |
 |---|---|
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | How the dataset and toolkit are built: data model, validation, measurement-method vocabulary, physics models |
@@ -46,6 +56,8 @@ Without installing, run from the repo root with `PYTHONPATH=src python -m argus 
 | `argus physics` | Fits effective-medium models to every loading series → `reports/physics_*` |
 | `argus analyze bias` | How much measurement technique and direction shift k → `reports/method_bias.md` |
 | `argus ml benchmark` | Predict k for unseen papers; baselines vs models, honest validation → `reports/ml_benchmark.md` (needs the `ml` extra: `pip install -e ".[ml]"`) |
+| `argus external fetch` / `check` | Download the external test datasets that are not in git, and verify every external raw file's sha256 (needs the `external` extra) |
+| `argus external validate` | Test ARGUS against other groups' data: physics-code cross-check, models trained on ARGUS predicting external literature, pooled training, value cross-check of shared papers → `reports/external_validation.md` |
 | `argus report course` | Render the course report [docs/course_report/COURSE_REPORT.md](docs/course_report/COURSE_REPORT.md) and its figures from current results (needs the `report` extra; refuses stale analysis outputs) |
 | `argus report explorer` | Render the interactive data explorer `docs/explorer/index.html`, a self-contained page you can open in any browser, plus a variant for publishing as a shared link |
 | `argus new-paper --doi … --title … --year …` | Creates a record file for a new paper |
@@ -67,6 +79,7 @@ Without installing, run from the repo root with `PYTHONPATH=src python -m argus 
 | `unusable_sources.csv` | 51 screened sources that contribute no rows, with reasons (incl. the Sci-Hub policy note) |
 | `data/records/` | **Source of truth**: one YAML file per paper |
 | `reports/` | Verification, enrichment QA and physics-fit reports (generated) |
+| `data/external/` | Other groups' datasets used only for testing, with licences and checksums ([README](data/external/README.md)) |
 | `quality_control_report.md`, `FINAL_REPORT.md`, `figures/` | v1.0 QC report, presentation report and charts (historical) |
 
 ---

@@ -22,6 +22,9 @@
         <div><span class="tlabel" id="colorby-label">Colour by</span><span class="seg" id="colorby" role="group" aria-labelledby="colorby-label"></span></div>
         <div><span class="tlabel" id="ymode-label">Show</span><span class="seg" id="ymode" role="group" aria-labelledby="ymode-label"></span></div>
         <label class="check" for="models"><input type="checkbox" id="models" checked> Physics references</label>
+{%- if n_external %}
+        <label class="check" for="external" title="Hollow grey points from datasets curated by other groups; not part of ARGUS"><input type="checkbox" id="external" autocomplete="off"> Other groups’ data</label>
+{%- endif %}
       </div>
       <svg id="chart" role="img" aria-labelledby="chart-desc"></svg>
       <p id="chart-desc" hidden></p>
@@ -56,6 +59,12 @@
     <p>Reference curves: Nan et al. (1997) for randomly oriented h-BN platelets (t/D = 0.05, {{ meta.size_ref_um|int }} µm, matrix k = {{ meta.km_ref }} W/m·K), with perfect interfaces and with the median fitted interfacial resistance; the Maxwell ceiling is the limit for isolated spheres of infinitely conductive filler.</p>
     <p>Values are as printed in the cited sources (figure values are pixel-digitized; abstract-only values are lower confidence). Check the source before reusing a number.</p>
     <p>Data licensed <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>. Cite as: {{ meta.citation }}</p>
+{%- if n_external %}
+    <p>Other groups’ data (the hollow grey points, off by default) is not part of the ARGUS dataset: it is shown only for comparison, as each group curated it, and is not counted in the tiles, the table or the CSV. Papers that ARGUS contains are left out. Changes made: series selected, filler and matrix names normalized, source DOIs resolved; no measured value was changed.</p>
+{%- for s in external_sources.values() %}
+    <p>{% if s.url %}<a href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %} ({{ s.points }} points), licensed {% if s.license_url %}<a href="{{ s.license_url }}" target="_blank" rel="noopener noreferrer">{{ s.license_label }}</a>{% else %}{{ s.license_label }}{% endif %}. Cite as: {{ s.citation }}</p>
+{%- endfor %}
+{%- endif %}
   </footer>
 </div>
 <script type="application/json" id="argus-data"><!--ARGUS_DATA--></script>

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T02:10:09",
+  "generated": "2026-10-25T17:23:01",
   "overall": "PASS",
   "checks": [
     {
@@ -49,6 +49,12 @@
       "description": "Every difference from the legacy v1.0 rows is declared in a curation-log entry",
       "ok": true,
       "detail": "all declared"
+    },
+    {
+      "id": "external_raw_checksums",
+      "description": "External raw files are byte-identical to the download recorded in data/external/sources.yaml",
+      "ok": true,
+      "detail": "7 of 8 files verified"
     }
   ],
   "stats": {

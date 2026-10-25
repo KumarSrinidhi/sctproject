@@ -186,7 +186,7 @@ def ml_benchmark(root: Optional[Path] = RootOpt,
     typer.echo(f"{len(ds.y)} rows / {ds.n_papers} papers / {len(ds.names)} features; fitting models...")
     res = run_benchmark(ds, cfg)
     best = res["best_model"]
-    abl = ablation(ds, best if best not in ("gp_residual",) else "xgboost", cfg) if ablate and best else None
+    abl = ablation(ds, best if best not in ("gp_residual", "ensemble") else "xgboost", cfg) if ablate and best else None
     lay.reports.mkdir(exist_ok=True)
     fig = parity_plot(ds, res, [m for m in ("physics", "knn", best) if m in res["models"]],
                       lay.reports / "figures" / "ml_parity_lopo.png")
@@ -243,6 +243,70 @@ def report_explorer(root: Optional[Path] = RootOpt):
         raise typer.Exit(1)
     for name, p in paths.items():
         typer.echo(f"wrote {p.relative_to(lay.root)} ({p.stat().st_size // 1024} KB, {name})")
+
+
+external_app = typer.Typer(no_args_is_help=True, help="External datasets: fetch, check, and test ARGUS against them.")
+app.add_typer(external_app, name="external")
+
+
+@external_app.command("fetch")
+def external_fetch(source: Optional[str] = typer.Argument(None, help="Source key (default: all)"),
+                   root: Optional[Path] = RootOpt):
+    """Download missing raw files listed in data/external/sources.yaml (sha256-checked)."""
+    from .external.manifest import UnknownSource, fetch
+
+    lay = layout(root)
+    try:
+        results = fetch(lay.data / "external", only=source)
+    except UnknownSource as e:
+        typer.echo(str(e.args[0]))
+        raise typer.Exit(2)
+    bad = 0
+    for r in results:
+        bad += r["action"] in ("checksum-mismatch", "download-failed")
+        typer.echo(f"{r['action']:18s} {r['source']:8s} {r['path']}" + (f"  ({r['error']})" if r.get("error") else ""))
+    raise typer.Exit(1 if bad else 0)
+
+
+@external_app.command("check")
+def external_check(root: Optional[Path] = RootOpt):
+    """Verify every external raw file against its recorded sha256."""
+    from .external.manifest import check_files
+
+    lay = layout(root)
+    files = check_files(lay.data / "external")
+    for f in files:
+        state = "ok" if f["ok"] else ("MISSING" if not f["present"] else "CHANGED")
+        if not f["present"] and not f["committed"]:
+            state = "not fetched (run `argus external fetch`)"
+        typer.echo(f"{state:12s} {f['source']:8s} {f['path']}")
+    raise typer.Exit(0 if all(f["ok"] or (not f["present"] and not f["committed"]) for f in files) else 1)
+
+
+@external_app.command("validate")
+def external_validate(root: Optional[Path] = RootOpt,
+                      quick: bool = typer.Option(False, "--quick", help="Fewer trees and bootstrap draws (smoke tests)")):
+    """Physics cross-check, transfer, pooled training and value cross-check -> reports/external_validation.{md,json}."""
+    import warnings
+
+    from .external.report import run, write
+
+    warnings.filterwarnings("ignore", category=UserWarning)
+    lay = layout(root)
+    res = run(lay, quick=quick, n_boot=200 if quick else 2000)
+    for key, why in res.get("skipped", {}).items():
+        typer.echo(f"skipped {key}: {why}")
+    for key, t in res["transfer"].items():
+        best = t["ranking_test_mae"][0]
+        e = t["models"][best]
+        typer.echo(f"transfer to {key}: {t['test']['rows']} rows / {t['test']['papers']} papers; best {best} "
+                   f"MAE {e['test']['mae_log10']:.3f} (x{e['test']['mae_factor']:.2f}); physics "
+                   f"{t['models']['physics']['test']['mae_log10']:.3f}")
+    for key, c in res["crosscheck"].items():
+        if c["shared_papers"]:
+            typer.echo(f"cross-check {key}: {c['shared_papers']} shared papers, {c['pairs']} pairs {c['grades']}")
+    paths = write(lay, res)
+    typer.echo("wrote " + ", ".join(str(p.relative_to(lay.root)) for p in paths))
 
 
 @app.command("new-paper")

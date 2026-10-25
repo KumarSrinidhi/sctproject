@@ -120,6 +120,25 @@ class ResidualGP(BaseEstimator, RegressorMixin):
         return self.base_.predict(X) + self.gp_.predict(self.scaler_.transform(X))
 
 
+class MeanEnsemble(BaseEstimator, RegressorMixin):
+    """Unweighted mean of member models. Members are given as factories so each
+    fold refits fresh copies; `groups` is passed on to members that accept it."""
+
+    def __init__(self, factories: tuple = (), names: tuple[str, ...] = ()):
+        self.factories = factories
+        self.names = names
+
+    def fit(self, X, y, groups=None):
+        self.members_ = [fit_model(f(list(self.names)), X, y, groups) for f in self.factories]
+        return self
+
+    def predict(self, X):
+        return np.mean([m.predict(X) for m in self.members_], axis=0)
+
+
+ENSEMBLE_MEMBERS = ("gp_residual", "ridge", "xgboost")
+
+
 def _xgb(names: list[str], quick: bool):
     from xgboost import XGBRegressor
 
@@ -139,7 +158,7 @@ def zoo(quick: bool = False) -> dict[str, tuple[str, ModelFactory]]:
     def idx(names: list[str], wanted: list[str]) -> tuple[int, ...]:
         return tuple(names.index(w) for w in wanted if w in names)
 
-    return {
+    models = {
         "median": ("Baseline: training median (no information)", lambda names: Median()),
         "physics": ("Baseline: Nan 1997 random platelets, calibrated a + b*log enhancement",
                     lambda names: PhysicsCalibrated(col=names.index("phys_nan"))),
@@ -154,6 +173,11 @@ def zoo(quick: bool = False) -> dict[str, tuple[str, ModelFactory]]:
                           lambda names: RandomForestRegressor(n_estimators=150 if quick else 500, min_samples_leaf=3,
                                                               max_features=0.5, random_state=SEED, n_jobs=-1)),
     }
+    members = tuple(models[m][1] for m in ENSEMBLE_MEMBERS)
+    models["ensemble"] = ("Mean of " + ", ".join(ENSEMBLE_MEMBERS) + " (chosen on ARGUS-only results; "
+                          "confirmed on the external EVF test set)",
+                          lambda names: MeanEnsemble(factories=members, names=tuple(names)))
+    return models
 
 
 BASELINES = ("median", "physics", "knn")

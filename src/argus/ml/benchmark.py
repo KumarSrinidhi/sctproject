@@ -220,7 +220,7 @@ def ablation(ds: Dataset, model: str, cfg: Config | None = None) -> dict[str, An
     for combo in singles + list(ABLATION_COMBOS):
         g = " + ".join(combo)
         cols = ds.columns(drop=set(combo))
-        if model in ("physics", "gp_residual") and "physics" in combo:
+        if model in ("physics", "gp_residual", "ensemble") and "physics" in combo:
             continue
         without = [m["mae_log10"] for m in _runs(factory, ds, "group5", cfg.ablation_repeats, cols)]
         deltas = [w - f for w, f in zip(without, full)]  # paired: same split in each repeat

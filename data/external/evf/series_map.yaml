@@ -1,0 +1,345 @@
+# How each EVF series maps onto ARGUS (curated by hand from the workbook's own
+# columns; nothing here changes a measured value).
+#
+#   filler / matrix   ARGUS labels (filler normalized, matrix as a free-text description)
+#   doi               source paper, resolved from the EVF citation via Crossref (2026-10-25)
+#   paper             grouping key for paper-level validation when the DOI is a compilation
+#   direction         ARGUS vocabulary (in-plane | through-plane | isotropic | unknown)
+#   shape, size_um, alignment, treatment, processing   as stated in the workbook
+#   notes             caveats carried into every row
+#
+# Points at Vf = 0 (neat matrix) are never test points; they are only used to check
+# that the series' k_matrix matches its own zero-loading point.
+#
+# Excluded series keep their reason so the selection can be audited.
+
+include:
+  SiO2_Epoxy_20um:
+    filler: SiO2
+    matrix: Epoxy
+    doi: 10.1016/j.compscitech.2012.02.016
+    year: 2012
+    shape: sphere
+    size_um: 20
+    alignment: random
+    direction: isotropic
+    notes: Data as compiled by Ordonez-Miranda & Alvarado-Gil (2012), Fig. 3; method not specified.
+  SiO2_Epoxy_20nm:
+    filler: SiO2
+    matrix: Epoxy
+    doi: 10.1016/j.compscitech.2012.02.016
+    year: 2012
+    shape: sphere
+    size_um: 0.02
+    alignment: random
+    direction: isotropic
+    notes: Data as compiled by Ordonez-Miranda & Alvarado-Gil (2012), Fig. 3; method not specified.
+  hBN_Epoxy_R_random:
+    filler: h-BN
+    matrix: Epoxy resin
+    doi: 10.1016/j.ijheatmasstransfer.2015.11.045
+    year: 2016
+    shape: platelet
+    size_um: 5
+    alignment: random (no field applied)
+    treatment: magnetic iron-oxide decoration (mhBN)
+    direction: through-plane
+    notes: Yuan et al. 2016, Fig. 7a (digitized); platelet D ~5 um, t ~250 nm.
+  hBN_Epoxy_M_mag:
+    filler: h-BN
+    matrix: Epoxy resin
+    doi: 10.1016/j.ijheatmasstransfer.2015.11.045
+    year: 2016
+    shape: platelet
+    size_um: 5
+    alignment: partially aligned vertically (magnetic field)
+    treatment: magnetic iron-oxide decoration (mhBN)
+    direction: through-plane
+    notes: Yuan et al. 2016, Fig. 7a (digitized); platelets aligned along the heat-flow axis.
+  hBN_Epoxy_MM_mag_mech:
+    filler: h-BN
+    matrix: Epoxy resin
+    doi: 10.1016/j.ijheatmasstransfer.2015.11.045
+    year: 2016
+    shape: platelet
+    size_um: 5
+    alignment: highly aligned vertically (magnetic field + vibration)
+    treatment: magnetic iron-oxide decoration (mhBN)
+    direction: through-plane
+    notes: Yuan et al. 2016, Fig. 7a (digitized); platelets aligned along the heat-flow axis.
+  Si3N4_epoxy_liquid:
+    filler: Si3N4
+    matrix: Epoxy (liquid route)
+    doi: 10.1007/s10853-006-1480-y
+    year: 2007
+    shape: rod-like particle
+    size_um: 7.5
+    alignment: random
+    direction: isotropic
+    notes: He et al. 2007, Fig. 1(a) (digitized); particles 5-10 um.
+  Si3N4_epoxy_solid:
+    filler: Si3N4
+    matrix: Epoxy (solid route)
+    doi: 10.1007/s10853-006-1480-y
+    year: 2007
+    shape: rod-like particle
+    size_um: 7.5
+    alignment: random
+    direction: isotropic
+    notes: He et al. 2007, Fig. 1(b) (digitized); particles 5-10 um; matrix k 0.45 as given by EVF.
+  Epoxy_BN_platelets:
+    filler: BN
+    matrix: Epoxy
+    doi: 10.1111/j.1151-2916.2002.tb00183.x
+    year: 2002
+    shape: platelet
+    alignment: platelets preferentially lying in the disk plane
+    direction: through-plane
+    notes: Hill & Supancic 2002, Fig. 7; k back-calculated by EVF from plotted Kc/Kp ratios x 0.21.
+  Epoxy_DAW05_DAW10:
+    filler: Al2O3
+    matrix: Epoxy
+    doi: 10.1016/j.compositesa.2009.02.024
+    year: 2009
+    shape: sphere
+    size_um: 6.75
+    alignment: random
+    direction: isotropic
+    notes: Sanada et al. 2009, Fig. 7; bimodal spheres 4.5 + 9 um (size is their mean).
+  Epoxy_DAW10_DAW45:
+    filler: Al2O3
+    matrix: Epoxy
+    doi: 10.1016/j.compositesa.2009.02.024
+    year: 2009
+    shape: sphere
+    size_um: 27
+    alignment: random
+    direction: isotropic
+    notes: Sanada et al. 2009, Fig. 7; bimodal spheres 9 + 45 um (size is their mean).
+  Epoxy_Silica_70C_Wong1999:
+    filler: SiO2
+    matrix: Epoxy
+    doi: 10.1002/(sici)1097-4628(19991227)74:14<3396::aid-app13>3.0.co;2-3
+    year: 1999
+    shape: sphere
+    size_um: 13.5
+    alignment: random
+    direction: isotropic
+    method: Guarded heat flow meter (ASTM E1530)
+    temperature_C: 70
+    notes: Wong & Bollampally 1999, Fig. 4; measured at 70 C.
+  Epoxy_Alumina_70C_Wong1999:
+    filler: Al2O3
+    matrix: Epoxy
+    doi: 10.1002/(sici)1097-4628(19991227)74:14<3396::aid-app13>3.0.co;2-3
+    year: 1999
+    shape: particle
+    size_um: 13.5
+    alignment: random
+    direction: isotropic
+    method: Guarded heat flow meter (ASTM E1530)
+    temperature_C: 70
+    notes: Wong & Bollampally 1999, Fig. 4; measured at 70 C.
+  Epoxy_SCAN_70C_Wong1999:
+    filler: AlN
+    matrix: Epoxy
+    doi: 10.1002/(sici)1097-4628(19991227)74:14<3396::aid-app13>3.0.co;2-3
+    year: 1999
+    shape: irregular particle
+    size_um: 13.5
+    alignment: random
+    treatment: silica coating (SCAN)
+    direction: isotropic
+    method: Guarded heat flow meter (ASTM E1530)
+    temperature_C: 70
+    notes: Wong & Bollampally 1999, Fig. 4; silica-coated AlN, measured at 70 C.
+  PS_Si3N4_3mm_asReceived:
+    filler: Si3N4
+    matrix: Polystyrene (PS)
+    doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
+    shape: rod-like particle
+    alignment: segregated network around 3 mm PS particles
+    direction: isotropic
+    notes: He et al. 2007 (Si3N4/PS), Fig. 3; powder-mixed segregated structure.
+  PS_Si3N4_0.5mm_asReceived:
+    filler: Si3N4
+    matrix: Polystyrene (PS)
+    doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
+    shape: rod-like particle
+    alignment: segregated network around 0.5 mm PS particles
+    direction: isotropic
+    notes: He et al. 2007 (Si3N4/PS), Fig. 3; powder-mixed segregated structure.
+  PS_Si3N4_0.1mm_asReceived:
+    filler: Si3N4
+    matrix: Polystyrene (PS)
+    doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
+    shape: rod-like particle
+    alignment: segregated network around 0.1 mm PS particles
+    direction: isotropic
+    notes: He et al. 2007 (Si3N4/PS), Fig. 3; powder-mixed segregated structure.
+  PS_Si3N4_3mm_silane:
+    filler: Si3N4
+    matrix: Polystyrene (PS)
+    doi: 10.1016/j.compscitech.2006.12.014
+    year: 2007
+    shape: rod-like particle
+    alignment: segregated network around 3 mm PS particles
+    treatment: silane coupling agent
+    direction: isotropic
+    notes: He et al. 2007 (Si3N4/PS), Fig. 4; powder-mixed segregated structure.
+  PS_Al2O3_Agari1993:
+    filler: Al2O3
+    matrix: Polystyrene (PS)
+    doi: 10.1002/app.1993.070490914
+    year: 1993
+    shape: particle
+    alignment: random
+    direction: isotropic
+    notes: Agari et al. 1993, Fig. 3 (digitized).
+  PS_Glass_Agari1993:
+    filler: glass
+    matrix: Polystyrene (PS)
+    doi: 10.1002/app.1993.070490914
+    year: 1993
+    shape: sphere
+    alignment: random
+    direction: isotropic
+    notes: Agari et al. 1993, Fig. 3 (digitized); glass beads.
+  Zeng2015_RD_BNNS_Epoxy:
+    filler: BNNS
+    matrix: Epoxy
+    doi: 10.1002/smll.201502173
+    year: 2015
+    shape: nanosheet
+    size_um: 0.35
+    alignment: random
+    direction: unknown
+    notes: Zeng et al. 2015, Fig. 4a; randomly dispersed BNNS (200-500 nm); EVF lists it as isotropic.
+  Zeng2015_3D_BNNS_Parallel:
+    filler: BNNS
+    matrix: Epoxy
+    doi: 10.1002/smll.201502173
+    year: 2015
+    shape: nanosheet
+    size_um: 0.35
+    alignment: ice-templated 3D network, measured parallel to the ice-growth direction
+    direction: unknown
+    notes: Zeng et al. 2015, Fig. 4a; heat flow along the templated network.
+  Zeng2015_3D_BNNS_Perpendicular:
+    filler: BNNS
+    matrix: Epoxy
+    doi: 10.1002/smll.201502173
+    year: 2015
+    shape: nanosheet
+    size_um: 0.35
+    alignment: ice-templated 3D network, measured perpendicular to the ice-growth direction
+    direction: unknown
+    notes: Zeng et al. 2015, Fig. 4a; heat flow across the templated network.
+  Gu2010_PS_SiCp:
+    filler: SiC
+    matrix: Polystyrene (PS)
+    doi: 10.1080/03602559.2010.512326
+    year: 2010
+    shape: particle
+    alignment: random
+    direction: isotropic
+    notes: Gu et al. 2010, Fig. 1; beta-SiC particles.
+  Gu2010_PS_SiCw:
+    filler: SiC
+    matrix: Polystyrene (PS)
+    doi: 10.1080/03602559.2010.512326
+    year: 2010
+    shape: whisker
+    alignment: random
+    direction: isotropic
+    notes: Gu et al. 2010, Fig. 1; beta-SiC whiskers.
+  Wu2014_UPE_Al2O3_noTT_25C:
+    filler: Al2O3
+    matrix: Unsaturated polyester (UPE)
+    doi: 10.1002/app.40528
+    year: 2014
+    shape: particle
+    alignment: random
+    direction: isotropic
+    notes: Wu et al. 2014, Fig. 14; loading converted by EVF from phr with assumed densities.
+  Wu2014_UPE_Al2O3_TT_25C:
+    filler: Al2O3
+    matrix: Unsaturated polyester (UPE)
+    doi: 10.1002/app.40528
+    year: 2014
+    shape: particle
+    alignment: random
+    processing: thermal treatment
+    direction: isotropic
+    notes: Wu et al. 2014, Fig. 16; loading converted by EVF from phr with assumed densities.
+  AlN_Epoxy_Kochetov2011:
+    filler: AlN
+    matrix: Epoxy
+    doi: 10.1016/j.compscitech.2016.05.003
+    paper: kochetov-2011-via-machrafi-2016
+    year: 2011
+    shape: nanoparticle
+    size_um: 0.05
+    alignment: random
+    direction: unknown
+    notes: Second-hand - digitized by EVF from markers in Machrafi et al. 2016, Fig. 7-8; AlN nanoparticles.
+  MgO_Epoxy_Kochetov2011:
+    filler: MgO
+    matrix: Epoxy
+    doi: 10.1016/j.compscitech.2016.05.003
+    paper: kochetov-2011-via-machrafi-2016
+    year: 2011
+    shape: nanoparticle
+    size_um: 0.05
+    alignment: random
+    direction: unknown
+    notes: Second-hand - digitized by EVF from markers in Machrafi et al. 2016, Fig. 7-8; MgO nanoparticles.
+  AlN_Epoxy_Choudhury2012:
+    filler: AlN
+    matrix: Epoxy
+    doi: 10.1016/j.compscitech.2016.05.003
+    paper: choudhury-2012-via-machrafi-2016
+    year: 2012
+    shape: nanoparticle
+    size_um: 0.05
+    alignment: random
+    direction: unknown
+    notes: Second-hand - digitized by EVF from markers in Machrafi et al. 2016, Fig. 7-8; AlN nanoparticles.
+  AlN_Epoxy_Kochetov2009:
+    filler: AlN
+    matrix: Epoxy
+    doi: 10.1016/j.compscitech.2016.05.003
+    paper: kochetov-2009-via-machrafi-2016
+    year: 2009
+    shape: nanoparticle
+    size_um: 0.05
+    alignment: random
+    direction: unknown
+    notes: Second-hand - digitized by EVF from markers in Machrafi et al. 2016, Fig. 7-8; AlN nanoparticles.
+
+exclude:
+  UO2_SiC_vfStudy_size1um: ceramic matrix (UO2), not a polymer composite
+  Al2O3_ZrO2_fullSweep: ceramic-ceramic composite
+  Hemp_acrylic_transverse_random: natural-fibre filler, outside polymer + ceramic scope
+  Hemp_acrylic_inplane_oriented: natural-fibre filler, outside polymer + ceramic scope
+  Hemp_acrylic_inplane_random: natural-fibre filler, outside polymer + ceramic scope
+  Epoxy_GNP800_compiled_Fig6: carbon filler, second-hand from a review figure
+  Epoxy_SWNTs_compiled_Fig6: carbon filler, second-hand from a review figure
+  Epoxy_CB_compiled_Fig6: carbon filler, second-hand from a review figure
+  Epoxy_GMP_compiled_Fig6: carbon filler, second-hand from a review figure
+  HDPE_Tin_38C: metal filler
+  HDPE_Tin_38C_Kumlutas2006: metal filler
+  PMMA_Cu_Agari1993: metal filler
+  Epoxy_rigid_platelets_compiled: one curve for three different fillers (Al2O3, SiC, TiB2)
+  Epoxy_DAW05_DAW10_MWNT_VNscan: alumina + MWNT hybrid; loading axis is the MWNT fraction
+  LiPeterson2006_Al2O3_Water_27.5C: nanofluid (water matrix)
+  LiPeterson2006_Al2O3_Water_32.5C: nanofluid (water matrix)
+  LiPeterson2006_Al2O3_Water_34.7C: nanofluid (water matrix)
+  LiPeterson2006_CuO_Water_28.9C: nanofluid (water matrix)
+  LiPeterson2006_CuO_Water_31.3C: nanofluid (water matrix)
+  LiPeterson2006_CuO_Water_33.4C: nanofluid (water matrix)
+  Kim2003_Concrete_AG_Wet20C: cementitious composite
+  Kim2003_Concrete_AG_Dry20C: cementitious composite
