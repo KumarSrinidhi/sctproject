@@ -1,0 +1,139 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P109
+paper:
+  doi: 10.1021/acsomega.2c06013
+  title: Angular-Shaped Boron Nitride Nanosheets with a High Aspect Ratio to Improve the Out-of-Plane Thermal Conductivity of Polyimide Composite Films
+  year: 2022
+  source_url: https://doi.org/10.1021/acsomega.2c06013
+extraction_log:
+- seq: 121
+  candidate_id: P6-P109
+  doi: 10.1021/acsomega.2c06013
+  paper_title: Angular-Shaped Boron Nitride Nanosheets with a High Aspect Ratio to Improve the Out-of-Plane Thermal Conductivity of Polyimide Composite Films
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc-nd)
+  files_inspected: sources/text/10.1021_acsomega.2c06013.txt (cache, not committed)
+  tables_inspected: none (paper has no tables)
+  figures_inspected: Figure 7a,b (out-of-plane TD and TC vs loading) not digitized; Figure 8 (photos/IR) noted
+  candidate_measurements: 5
+  rows_appended: 5
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 4 figure-only values not taken. The paper defines loadings as '10, 20, 30, and 40% relative to the mass fraction of PI', i.e. filler mass relative to PI, so wt% of the composite is left null. The 20% and 30% points for both BNNS-t and BNNS-b appear only in Fig. 7b (4 skipped). The text gives a 0.09 W/mK difference at 40%, which matches 0.67 vs 0.58. Measurement temperature not stated. The 0.2 W/mK for PI in the Introduction is a literature value and was not used.
+  rows_rejected_at_append: []
+  rows_added:
+  - 96a00c38-318
+  - 96a00c38-319
+  - 96a00c38-320
+  - 96a00c38-321
+  - 96a00c38-322
+measurements:
+- row_id: 96a00c38-318
+  matrix_polymer: Polyimide (PMDA-ODA, thermally imidized from PAA in DMAc)
+  filler_material: none
+  filler_material_original: neat PI film
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: '%'
+  processing_method: PAA solution blade coated, dried 100 °C 1 h, thermally imidized 150/250/350 °C 1 h each
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.19
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, Netzsch LFA 447 (thermal diffusivity); Cp by DSC (Netzsch DSC200F3); density by density balance; k = α·ρ·Cp
+  k_original_value: 0.19
+  k_original_unit: W m–1 K–1
+  value_source: text
+  source_location: 'Results and Discussion, Characterization of PI/BNNS Composite Films, paragraph after Figure 7: ''The composite films used for the out-of-plane thermal conductivity measurement are shown in Figure 8a, in which the out-of-plane thermal conductivities of PI, 40-PI/BNNS-b, and 40-PI/BNNS-t are 0.19, 0.58, and 0.67 W m–1 K–1, respectively.'''
+  confidence: High
+  notes: Neat PI film reference.
+- row_id: 96a00c38-319
+  matrix_polymer: Polyimide (PMDA-ODA, thermally imidized from PAA in DMAc)
+  filler_material: BNNS
+  filler_material_original: BNNS-t (NaCl-template-synthesized BN nanosheets), sample 10-BNNS-t / PI/BNNS-t at 10%
+  filler_shape: nanosheet (square sheets, some angular-shaped)
+  filler_mean_size_um: 2.97
+  size_distribution: lateral size distribution from 120 sheets, mean 2.97 μm; thickness tens of nm
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: '% relative to the mass of PI'
+  functionalization: none (no additional functional groups by FT-IR)
+  filler_alignment: more random distribution than BNNS-b (I002/I100 = 89.58 measured for 40% film)
+  processing_method: BNNS-t sonicated and mixed into PAA/DMAc solution 10 h, vacuum defoamed, blade coated, dried 100 °C, thermally imidized 150/250/350 °C
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.42
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, Netzsch LFA 447 (thermal diffusivity); Cp by DSC (Netzsch DSC200F3); density by density balance; k = α·ρ·Cp
+  k_original_value: 0.42
+  k_original_unit: W m–1 K–1
+  value_source: text
+  source_location: 'Results and Discussion, Characterization of PI/BNNS Composite Films, paragraph on Figure 7: ''When the filling loading is 10%, the thermal conductivities of PI/BNNS-t and PI/BNNS-b are both 0.42 W m–1 K–1.'''
+  confidence: High
+  notes: Loading defined as '10% relative to the mass fraction of PI' (filler mass relative to PI), so not entered as wt% of composite. Out-of-plane direction stated in the surrounding paragraph.
+- row_id: 96a00c38-320
+  matrix_polymer: Polyimide (PMDA-ODA, thermally imidized from PAA in DMAc)
+  filler_material: BNNS
+  filler_material_original: BNNS-b (ball-milled BN nanosheets, reference), sample 10-PI/BNNS-b
+  filler_shape: nanosheet (sheets of varied forms)
+  filler_mean_size_um: 2.01
+  size_distribution: lateral size distribution from 120 sheets, mean 2.01 μm
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: '% relative to the mass of PI'
+  functionalization: none stated (h-BN ball-milled in aqueous NaOH, 8 h at 400 rpm)
+  filler_alignment: tiled in-plane orientation (I002/I100 = 1249.73 measured for 40% film)
+  processing_method: BNNS-b sonicated and mixed into PAA/DMAc solution 10 h, vacuum defoamed, blade coated, dried 100 °C, thermally imidized 150/250/350 °C
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.42
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, Netzsch LFA 447 (thermal diffusivity); Cp by DSC (Netzsch DSC200F3); density by density balance; k = α·ρ·Cp
+  k_original_value: 0.42
+  k_original_unit: W m–1 K–1
+  value_source: text
+  source_location: 'Results and Discussion, Characterization of PI/BNNS Composite Films, paragraph on Figure 7: ''When the filling loading is 10%, the thermal conductivities of PI/BNNS-t and PI/BNNS-b are both 0.42 W m–1 K–1.'''
+  confidence: High
+  notes: Loading defined relative to PI mass. FT-IR shows a 3449.66 cm−1 band for BNNS-b attributed to adsorbed water or edge hydroxyls.
+- row_id: 96a00c38-321
+  matrix_polymer: Polyimide (PMDA-ODA, thermally imidized from PAA in DMAc)
+  filler_material: BNNS
+  filler_material_original: BNNS-b (ball-milled BN nanosheets, reference), sample 40-PI/BNNS-b
+  filler_shape: nanosheet (sheets of varied forms)
+  filler_mean_size_um: 2.01
+  size_distribution: lateral size distribution from 120 sheets, mean 2.01 μm
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: '% relative to the mass of PI'
+  functionalization: none stated (h-BN ball-milled in aqueous NaOH, 8 h at 400 rpm)
+  filler_alignment: tiled in-plane orientation, I002/I100 = 1249.73
+  processing_method: BNNS-b sonicated and mixed into PAA/DMAc solution 10 h, vacuum defoamed, blade coated, dried 100 °C, thermally imidized 150/250/350 °C
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.58
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, Netzsch LFA 447 (thermal diffusivity); Cp by DSC (Netzsch DSC200F3); density by density balance; k = α·ρ·Cp
+  k_original_value: 0.58
+  k_original_unit: W m–1 K–1
+  value_source: text
+  source_location: 'Results and Discussion, Characterization of PI/BNNS Composite Films, paragraph after Figure 7: ''The composite films used for the out-of-plane thermal conductivity measurement are shown in Figure 8a, in which the out-of-plane thermal conductivities of PI, 40-PI/BNNS-b, and 40-PI/BNNS-t are 0.19, 0.58, and 0.67 W m–1 K–1, respectively.'''
+  confidence: High
+  notes: Consistent with the text statement that 40-PI/BNNS-t is 0.09 W/mK higher than PI/BNNS-b at 40%. Loading defined relative to PI mass.
+- row_id: 96a00c38-322
+  matrix_polymer: Polyimide (PMDA-ODA, thermally imidized from PAA in DMAc)
+  filler_material: BNNS
+  filler_material_original: BNNS-t (NaCl-template-synthesized BN nanosheets), sample 40-PI/BNNS-t
+  filler_shape: nanosheet (square sheets, some angular-shaped)
+  filler_mean_size_um: 2.97
+  size_distribution: lateral size distribution from 120 sheets, mean 2.97 μm; thickness tens of nm
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: '% relative to the mass of PI'
+  functionalization: none (no additional functional groups by FT-IR)
+  filler_alignment: more random distribution, I002/I100 = 89.58
+  processing_method: BNNS-t sonicated and mixed into PAA/DMAc solution 10 h, vacuum defoamed, blade coated, dried 100 °C, thermally imidized 150/250/350 °C
+  k_matrix_W_mK: 0.19
+  k_composite_W_mK: 0.67
+  k_direction: through-plane (out-of-plane)
+  measurement_method: Laser flash, Netzsch LFA 447 (thermal diffusivity); Cp by DSC (Netzsch DSC200F3); density by density balance; k = α·ρ·Cp
+  k_original_value: 0.67
+  k_original_unit: W m–1 K–1
+  value_source: text
+  source_location: 'Results and Discussion, Characterization of PI/BNNS Composite Films, paragraph after Figure 7: ''The composite films used for the out-of-plane thermal conductivity measurement are shown in Figure 8a, in which the out-of-plane thermal conductivities of PI, 40-PI/BNNS-b, and 40-PI/BNNS-t are 0.19, 0.58, and 0.67 W m–1 K–1, respectively.'''
+  confidence: High
+  notes: The same value (0.67 at 40% loading, ~3.5x PI) is repeated in the Abstract and Conclusions. Loading defined relative to PI mass.

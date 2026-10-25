@@ -1,0 +1,193 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P137
+paper:
+  doi: 10.3390/nano12193543
+  title: Optimized Properties in Multifunctional Polyphenylene Sulfide Composites via Graphene Nanosheets/Boron Nitride Nanosheets Dual Segregated Structure under High Pressure
+  year: 2022
+  source_url: https://doi.org/10.3390/nano12193543
+extraction_log:
+- seq: 149
+  candidate_id: P6-P137
+  doi: 10.3390/nano12193543
+  paper_title: Optimized Properties in Multifunctional Polyphenylene Sulfide Composites via Graphene Nanosheets/Boron Nitride Nanosheets Dual Segregated Structure under High Pressure
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano12193543.txt (cache, not committed)
+  tables_inspected: none (no tables in the main text; Tables S1/S2 are supplementary literature comparisons, not available)
+  figures_inspected: Fig. 4a (k vs processing pressure for neat PPS, BN40/PPS, BN30/GNP10/PPS, BN20/GNP20/PPS, BN10/GNP30/PPS, GNP40/PPS, BN10/GNP30/PPS-UM at 0.1/200/600/1000 MPa), Fig. 4b (k vs GNP:BN ratio at 600 MPa), Fig. 8a (literature comparison)
+  candidate_measurements: 7
+  rows_appended: 7
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 14 figure-only values not taken. All values are from text; the main paper has no tables. The paper calls the filler ''boron nitride nanosheet (BN)'' in the abstract, so BNNS is used, although it is the commercial BBN-30 with ~26 μm average size. Hot Disk direction/mode is not stated, so direction is unknown. Skipped: ''approximately 4 Wm−1K−1'' for BN10/GNP30/PPS-UM (generic, pressure unspecified, superseded by the specific 4.1/4.8 values); the 0.2 increment for UM at 1000 MPa; GNP40/'
+  rows_rejected_at_append: []
+  rows_added:
+  - 3d701db0-433
+  - 3d701db0-434
+  - 3d701db0-435
+  - 3d701db0-436
+  - 3d701db0-437
+  - 3d701db0-438
+  - 3d701db0-439
+measurements:
+- row_id: 3d701db0-433
+  matrix_polymer: Polyphenylene sulfide (PPS), Mw 4.8 × 10^4 g/mol (Sichuan Deyang)
+  filler_material: none
+  filler_material_original: neat PPS
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Compression molded at 350 °C for 480 min at 0.1–1000 MPa
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 0.3
+  k_direction: unknown
+  measurement_method: Hot Disk transient plane source (TPS2200), discs 25.4 mm diameter × 3 mm
+  measurement_temperature_C: 25.0
+  k_original_value: 0.3
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''As shown in Figure 4a, neat PPS shows very low TCs, ~0.3 Wm−1K−1, regardless of the processing pressures.'''
+  confidence: Medium
+  notes: Approximate value ('~0.3'), stated to hold for all processing pressures (0.1–1000 MPa). k printed as approximate or as a bound, so Medium confidence.
+- row_id: 3d701db0-434
+  matrix_polymer: Polyphenylene sulfide (PPS), Mw 4.8 × 10^4 g/mol (Sichuan Deyang)
+  filler_material: BNNS/GNP hybrid
+  filler_material_original: BN (BBN-30, called 'boron nitride nanosheet (BN)') + GNP (KNG-182), sample BN10/GNP30/PPS, 600 MPa
+  filler_shape: nanosheet
+  filler_mean_size_um: 26.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: dual-segregated structure (GNP layer on PPS particles, encapsulated by BN shell)
+  processing_method: Two-step solid-state high-speed mechanical mixing (GNP coated on ethanol-wetted PPS particles, then BN), hot compression molded at 350 °C, 480 min, 600 MPa
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 6.4
+  k_direction: unknown
+  measurement_method: Hot Disk transient plane source (TPS2200), discs 25.4 mm diameter × 3 mm
+  measurement_temperature_C: 25.0
+  k_original_value: 6.4
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1 (also Abstract): ''Take 600 MPa as an example, the TC of BN10/GNP30/PPS is as high as 6.4 Wm−1K−1, which is significantly higher than the randomly distributed counterparts (4.8 Wm−1K−1).'''
+  confidence: High
+  notes: 'Hybrid total 40 wt%: BN 10 wt% + GNP 30 wt%. BN mean size ~26 μm, GNP ~35 μm. Processing pressure 600 MPa. Neat PPS k given as approximate (~0.3).'
+- row_id: 3d701db0-435
+  matrix_polymer: Polyphenylene sulfide (PPS), Mw 4.8 × 10^4 g/mol (Sichuan Deyang)
+  filler_material: BNNS/GNP hybrid
+  filler_material_original: BN (BBN-30) + GNP (KNG-182), uniformly mixed sample BN10/GNP30/PPS-UM, 600 MPa
+  filler_shape: nanosheet
+  filler_mean_size_um: 26.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: random (uniformly mixed)
+  processing_method: Melt blending in an internal mixer, then compression molded at 350 °C, 480 min, 600 MPa
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 4.8
+  k_direction: unknown
+  measurement_method: Hot Disk transient plane source (TPS2200), discs 25.4 mm diameter × 3 mm
+  measurement_temperature_C: 25.0
+  k_original_value: 4.8
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''Take 600 MPa as an example, the TC of BN10/GNP30/PPS is as high as 6.4 Wm−1K−1, which is significantly higher than the randomly distributed counterparts (4.8 Wm−1K−1).'''
+  confidence: High
+  notes: 'The ''randomly distributed counterpart'' is BN10/GNP30/PPS-UM at 600 MPa. Hybrid total 40 wt%: BN 10 + GNP 30 wt%.'
+- row_id: 3d701db0-436
+  matrix_polymer: Polyphenylene sulfide (PPS), Mw 4.8 × 10^4 g/mol (Sichuan Deyang)
+  filler_material: BNNS/GNP hybrid
+  filler_material_original: BN (BBN-30) + GNP (KNG-182), sample BN10/GNP30/PPS, 0.1 MPa
+  filler_shape: nanosheet
+  filler_mean_size_um: 26.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: dual-segregated structure
+  processing_method: Two-step solid-state mechanical mixing, hot compression molded at 350 °C, 480 min, 0.1 MPa
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 4.2
+  k_direction: unknown
+  measurement_method: Hot Disk transient plane source (TPS2200), discs 25.4 mm diameter × 3 mm
+  measurement_temperature_C: 25.0
+  k_original_value: 4.2
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''Take BN10/GNP30/PPS and BN10/GNP30/PPS-UM as examples, the TCs of BN10/GNP30/PPS and BN10/GNP30/PPS-UM are comparable under 0.1 MPa (4.2 Wm−1K−1 for BN10/GNP30/PPS, 4.1 Wm−1K−1 for BN10/GNP30/PPS-UM), with the pressure increasing to 1000 MPa, the TC of BN10/GNP30/PPS sharply increased to 8.5 Wm−1K−1, while only a small enhancement of 0.2 Wm−1K−1 is achieved in BN10/GNP30/PPS-UM.'''
+  confidence: High
+  notes: 'Segregated sample, processing pressure 0.1 MPa. Hybrid total 40 wt%: BN 10 + GNP 30 wt%.'
+- row_id: 3d701db0-437
+  matrix_polymer: Polyphenylene sulfide (PPS), Mw 4.8 × 10^4 g/mol (Sichuan Deyang)
+  filler_material: BNNS/GNP hybrid
+  filler_material_original: BN (BBN-30) + GNP (KNG-182), sample BN10/GNP30/PPS-UM, 0.1 MPa
+  filler_shape: nanosheet
+  filler_mean_size_um: 26.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: random (uniformly mixed)
+  processing_method: Melt blending in an internal mixer, then compression molded at 350 °C, 480 min, 0.1 MPa
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 4.1
+  k_direction: unknown
+  measurement_method: Hot Disk transient plane source (TPS2200), discs 25.4 mm diameter × 3 mm
+  measurement_temperature_C: 25.0
+  k_original_value: 4.1
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''Take BN10/GNP30/PPS and BN10/GNP30/PPS-UM as examples, the TCs of BN10/GNP30/PPS and BN10/GNP30/PPS-UM are comparable under 0.1 MPa (4.2 Wm−1K−1 for BN10/GNP30/PPS, 4.1 Wm−1K−1 for BN10/GNP30/PPS-UM), with the pressure increasing to 1000 MPa, the TC of BN10/GNP30/PPS sharply increased to 8.5 Wm−1K−1, while only a small enhancement of 0.2 Wm−1K−1 is achieved in BN10/GNP30/PPS-UM.'''
+  confidence: High
+  notes: Uniformly mixed sample, 0.1 MPa. The 1000 MPa UM value is given only as a +0.2 increment (not as a printed absolute value), so it was not extracted.
+- row_id: 3d701db0-438
+  matrix_polymer: Polyphenylene sulfide (PPS), Mw 4.8 × 10^4 g/mol (Sichuan Deyang)
+  filler_material: BNNS/GNP hybrid
+  filler_material_original: BN (BBN-30) + GNP (KNG-182), sample BN10/GNP30/PPS, 1000 MPa
+  filler_shape: nanosheet
+  filler_mean_size_um: 26.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: dual-segregated structure
+  processing_method: Two-step solid-state mechanical mixing, hot compression molded at 350 °C, 480 min, 1000 MPa
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 8.5
+  k_direction: unknown
+  measurement_method: Hot Disk transient plane source (TPS2200), discs 25.4 mm diameter × 3 mm
+  measurement_temperature_C: 25.0
+  k_original_value: 8.5
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2 (also Conclusions, 8.5 W/m/K): ''Take BN10/GNP30/PPS and BN10/GNP30/PPS-UM as examples, the TCs of BN10/GNP30/PPS and BN10/GNP30/PPS-UM are comparable under 0.1 MPa (4.2 Wm−1K−1 for BN10/GNP30/PPS, 4.1 Wm−1K−1 for BN10/GNP30/PPS-UM), with the pressure increasing to 1000 MPa, the TC of BN10/GNP30/PPS sharply increased to 8.5 Wm−1K−1, while only a small enhancement of 0.2 Wm−1K−1 is achieved in BN10/GNP30/PPS-UM.'''
+  confidence: High
+  notes: 'Highest k in the paper; segregated, 1000 MPa. Hybrid total 40 wt%: BN 10 + GNP 30 wt%. The paper says it is 25% and 136% above GNP40/PPS and BN40/PPS at 1000 MPa; those absolute values are not printed.'
+- row_id: 3d701db0-439
+  matrix_polymer: Polyphenylene sulfide (PPS), Mw 4.8 × 10^4 g/mol (Sichuan Deyang)
+  filler_material: BNNS
+  filler_material_original: BN (BBN-30, 'boron nitride nanosheet'), sample BN40/PPS, 600 MPa
+  filler_shape: nanosheet
+  filler_mean_size_um: 26.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: segregated structure (BN at PPS particle interfaces)
+  processing_method: Solid-state high-speed mechanical mixing with PPS particles, hot compression molded at 350 °C, 480 min, 600 MPa
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 3.5
+  k_direction: unknown
+  measurement_method: Hot Disk transient plane source (TPS2200), discs 25.4 mm diameter × 3 mm
+  measurement_temperature_C: 25.0
+  k_original_value: 3.5
+  k_original_unit: Wm−1K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''Keeping the total filler content fixed at 40 wt%, the TCs for composites under 600 MPa continuously climb up from 3.5 Wm−1K−1 to 6.8 Wm−1K−1 with the increased GNP content.'''
+  confidence: High
+  notes: The 3.5 value is the lowest-GNP end of the 40 wt% series at 600 MPa, i.e. BN40/PPS (0 wt% GNP). The sentence does not name the sample, so this is inferred from the series definition (BN:GNP ratios 1:0 to 0:1). The 6.8 end is GNP40/PPS (no BN) and was skipped.

@@ -1,0 +1,94 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P135
+paper:
+  doi: 10.3390/molecules24101883
+  title: Epoxy–PCM Composites with Nanocarbons or Multidimensional Boron Nitride as Heat Flow Enhancers
+  year: 2019
+  source_url: https://doi.org/10.3390/molecules24101883
+extraction_log:
+- seq: 147
+  candidate_id: P6-P135
+  doi: 10.3390/molecules24101883
+  paper_title: Epoxy–PCM Composites with Nanocarbons or Multidimensional Boron Nitride as Heat Flow Enhancers
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_molecules24101883.txt (cache, not committed)
+  tables_inspected: Table 1 (DSC, no k); Table 2 (k comparison with literature; only the 'This work' row is the authors' own, ~0.415, the same value as in the text); Table 3 (sample compositions)
+  figures_inspected: Figure 5 (k of bare epoxy, EC-PCM40, EC-PCM40-CNF2, EC-PCM40-BN10; all four values are printed in the text)
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. k was measured on only 4 samples: bare epoxy, EC-PCM40, EC-PCM40-CNF2 (no BN, skipped) and EC-PCM40-BN10. All four values are printed in the text, so none is figure-only. The other Table 2 rows are literature values and were skipped. Every quote passed quote_in_source.'
+  rows_rejected_at_append: []
+  rows_added:
+  - a70a9991-429
+  - a70a9991-430
+  - a70a9991-431
+measurements:
+- row_id: a70a9991-429
+  matrix_polymer: Epofix epoxy (Struers; bisphenol-A diglycidylether), bare cured resin
+  curing_agent: Epofix Part B (triethylenetetramine)
+  filler_material: none
+  filler_material_original: bare epoxy (cured Epofix resin), sample 'Bare epoxy'
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Mixed with a dual asymmetric speed mixer, cast in flexiform molds, cured at room temperature
+  k_matrix_W_mK: 0.273
+  k_composite_W_mK: 0.273
+  k_direction: unknown
+  measurement_method: Modified transient plane source (MTPS), C-Therm TCi Thermal Conductivity Analyzer (contracted to Thermal Analysis Labs)
+  k_original_value: 0.273
+  k_original_unit: W∙mK−1
+  value_source: text
+  source_location: 'Section 2.3, paragraph 1: ''The EC-PCM40-BN10 formulation showed the highest κ with a value of 0.415 W∙mK−1, followed by EC-PCM40-CNF2, EC-PCM40, and bare epoxy with values of 0.303 W∙mK−1, 0.293 W∙mK−1, and 0.273 W∙mK−1.'''
+  confidence: High
+  notes: Pure epoxy (100 wt% resin + hardener, Table 3). Measured at room temperature (no number given). The unit is printed as W∙mK−1, meaning W/(m·K).
+- row_id: a70a9991-430
+  matrix_polymer: 'Epoxy–carbopol–paraffin blend: Epofix epoxy (55 wt%) + carbopol thickener (5 wt%) + n-nonadecane PCM (40 wt%)'
+  curing_agent: Epofix Part B (triethylenetetramine)
+  filler_material: none
+  filler_material_original: sample EC-PCM40 (no filler)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Molten PCM mixed with Part A (dual asymmetric speed mixer), carbopol added, then Part B; cast in flexiform molds, cured at room temperature
+  k_matrix_W_mK: 0.293
+  k_composite_W_mK: 0.293
+  k_direction: unknown
+  measurement_method: Modified transient plane source (MTPS), C-Therm TCi Thermal Conductivity Analyzer (contracted to Thermal Analysis Labs)
+  k_original_value: 0.293
+  k_original_unit: W∙mK−1
+  value_source: text
+  source_location: 'Section 2.3, paragraph 1: ''The EC-PCM40-BN10 formulation showed the highest κ with a value of 0.415 W∙mK−1, followed by EC-PCM40-CNF2, EC-PCM40, and bare epoxy with values of 0.303 W∙mK−1, 0.293 W∙mK−1, and 0.273 W∙mK−1.'''
+  confidence: High
+  notes: Unfilled epoxy–carbopol–PCM matrix of the BN composites (composition from Table 3). Reported as a 'none' row because it is the direct matrix of EC-PCM40-BN10. Measured at room temperature.
+- row_id: a70a9991-431
+  matrix_polymer: 'Epoxy–carbopol–paraffin blend: Epofix epoxy (45 wt%) + carbopol thickener (5 wt%) + n-nonadecane PCM (40 wt%)'
+  curing_agent: Epofix Part B (triethylenetetramine)
+  filler_material: BN
+  filler_material_original: boron nitride particles (~1 μm, 98%, Sigma-Aldrich), sample EC-PCM40-BN10
+  filler_shape: particle
+  filler_mean_size_um: 0.15
+  size_distribution: 40–530 nm by SEM, average ~150 nm (supplier nominal ~1 μm)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Molten PCM mixed with Part A (dual asymmetric speed mixer), carbopol then BN added, then Part B; cast in flexiform molds, cured at room temperature
+  k_matrix_W_mK: 0.293
+  k_composite_W_mK: 0.415
+  k_direction: unknown
+  measurement_method: Modified transient plane source (MTPS), C-Therm TCi Thermal Conductivity Analyzer (contracted to Thermal Analysis Labs)
+  k_original_value: 0.415
+  k_original_unit: W∙mK−1
+  value_source: text
+  source_location: 'Section 2.3, paragraph 1 (also Table 2, ''This work'' row, ~0.415): ''The EC-PCM40-BN10 formulation showed the highest κ with a value of 0.415 W∙mK−1, followed by EC-PCM40-CNF2, EC-PCM40, and bare epoxy with values of 0.303 W∙mK−1, 0.293 W∙mK−1, and 0.273 W∙mK−1.'''
+  confidence: High
+  notes: 10 wt% BN in the whole formulation (epoxy 45 / carbopol 5 / PCM 40 / BN 10 wt%, Table 3). k_matrix is the EC-PCM40 matrix (0.293); bare epoxy is 0.273. Mean size is the SEM average of ~150 nm; the supplier nominal size is ~1 μm. Measured at room temperature. BN05, BN20 and BNNT01 were not measured for k.

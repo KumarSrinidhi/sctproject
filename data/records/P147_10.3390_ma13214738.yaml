@@ -1,0 +1,69 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P147
+paper:
+  doi: 10.3390/ma13214738
+  title: Enhanced Thermal Conductivity and Dielectric Properties of h-BN/LDPE Composites
+  year: 2020
+  source_url: https://doi.org/10.3390/ma13214738
+extraction_log:
+- seq: 159
+  candidate_id: P6-P147
+  doi: 10.3390/ma13214738
+  paper_title: Enhanced Thermal Conductivity and Dielectric Properties of h-BN/LDPE Composites
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ma13214738.txt (cache, not committed)
+  tables_inspected: Table 1 (breakdown strength/Weibull parameters; no k)
+  figures_inspected: Figure 4 (thermal conductivity of LDPE and composites, 0/1/3/5/10 phr)
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 3 figure-only values not taken. Only the 10 phr composite (0.51) and pure LDPE (0.32) are printed. The 1, 3 and 5 phr values appear only in Figure 4 (3 skipped). The 600 W/(m·K) intrinsic h-BN value in the Introduction is a literature value and was skipped. Loadings are in phr and were not converted. Direction and measurement temperature are not stated.
+  rows_rejected_at_append: []
+  rows_added:
+  - 83bd088d-491
+  - 83bd088d-492
+measurements:
+- row_id: 83bd088d-491
+  matrix_polymer: low-density polyethylene (LDPE, Sinopec LD200BW)
+  filler_material: none
+  filler_material_original: pure LDPE
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: phr
+  processing_method: Melt blending in torque rheometer at 120 °C, then hot pressing (plate vulcanizing machine) at 5/15/25 MPa, 120 °C
+  k_matrix_W_mK: 0.32
+  k_composite_W_mK: 0.32
+  k_direction: unknown
+  measurement_method: Laser flash, NETZSCH LFA 447; discs 10 mm diameter × 0.95 mm thick, graphite-coated on both sides
+  k_original_value: 0.32
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''When the h-BN filler content is 10 phr, the thermal conductivity of h-BN/LDPE composites is up to 0.51 W/(m·K)—57% higher than that of LDPE (0.32 W/(m·K)).'''
+  confidence: High
+  notes: Direction not stated; the laser flash was run on thin discs, so it is probably through-thickness, but the paper does not say so. The instrument range is given as 25–300 °C, but no measurement temperature is stated.
+- row_id: 83bd088d-492
+  matrix_polymer: low-density polyethylene (LDPE, Sinopec LD200BW)
+  filler_material: h-BN
+  filler_material_original: micron-sized hexagonal boron nitride (h-BN), sample 10 phr h-BN/LDPE
+  filler_shape: particles (micron-sized)
+  size_distribution: 1~2 μm
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: phr
+  functionalization: none
+  processing_method: Melt blending in torque rheometer at 120 °C, then hot pressing (plate vulcanizing machine) at 5/15/25 MPa, 120 °C
+  k_matrix_W_mK: 0.32
+  k_composite_W_mK: 0.51
+  k_direction: unknown
+  measurement_method: Laser flash, NETZSCH LFA 447; discs 10 mm diameter × 0.95 mm thick, graphite-coated on both sides
+  k_original_value: 0.51
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''When the h-BN filler content is 10 phr, the thermal conductivity of h-BN/LDPE composites is up to 0.51 W/(m·K)—57% higher than that of LDPE (0.32 W/(m·K)).'''
+  confidence: Medium
+  notes: 10 phr = 10 g h-BN per 100 g LDPE (not converted to wt%). h-BN is 1~2 μm, purity > 99.5%, density 2.29 g/cm3; LDPE density 0.920 g/cm3. Agglomeration seen at 5 and 10 phr. The value is repeated in the Abstract. Direction not stated. k printed as approximate or as a bound, so Medium confidence.

@@ -52,3 +52,27 @@ tombstones:
 - row_id: ce78048d-168
   removed: 2026-10-22 (v1.1 audit fixes)
   reason: 'Model prediction, not a measurement. 10.3390/nano11081898 states "the predicted IPTC of 120-60 is 1.88 W/((m·K))" from its modified parallel (layer) model, Eq. (4); the paper measured only the through-plane value. The row also claimed an in-plane laser-flash measurement. Violates the no-inference policy (README: modeling values excluded).'
+- row_id: e8a17f87-373
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: loading of the highest-k sample is not printed'
+- row_id: d8aa03a7-386
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: the text gives the series maximum without naming the sample, so its loading is not printed'
+- row_id: 0b315d09-408
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: loading of this comparison sample is not printed'
+- row_id: 0b315d09-409
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: loading of this comparison sample is not printed'
+- row_id: 0b315d09-410
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: loading of this comparison sample is not printed'
+- row_id: 0b315d09-411
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: loading of this comparison sample is not printed'
+- row_id: 8faf1040-657
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: printed unit ''mW/K'' is not a thermal conductivity unit'
+- row_id: f9d05571-556
+  removed: 2026-10-25 (Phase 6 import)
+  reason: 'Dropped before release: the authors excluded this run (underlined in Table 1, not used in their ANOVA)'

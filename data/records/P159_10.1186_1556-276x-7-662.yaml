@@ -1,0 +1,48 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P159
+paper:
+  doi: 10.1186/1556-276x-7-662
+  title: Large-surface-area BN nanosheets and their utilization in polymeric composites with improved thermal and dielectric properties
+  year: 2012
+  source_url: https://doi.org/10.1186/1556-276x-7-662
+extraction_log:
+- seq: 171
+  candidate_id: P6-P159
+  doi: 10.1186/1556-276x-7-662
+  paper_title: Large-surface-area BN nanosheets and their utilization in polymeric composites with improved thermal and dielectric properties
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1186_1556-276x-7-662.txt (cache, not committed)
+  tables_inspected: None (the paper has no tables; the JATS XML contains no table-wrap)
+  figures_inspected: 'Figure 4 caption (b: dielectric constant and thermal conductivity vs BN fraction with Agari-model and parallel-model curves). Image values not read.'
+  candidate_measurements: 1
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 5 figure-only values not taken. Composites contain 4, 10, 15, 18 and 23 wt% BN (Fig. 3a). Only the 23 wt% k (2.6 W/mK) is printed. Blank PMMA and the 4, 10, 15 and 18 wt% samples appear only in Fig. 4b (5 figure-only values, assuming Fig. 4b plots the same samples as Fig. 3a). The Agari-model fit (C1 = 0.94, C2 = 3.9) and the parallel-model upper limit are modelled values and excluded.
+  rows_rejected_at_append: []
+  rows_added:
+  - 9abd0dee-577
+measurements:
+- row_id: 9abd0dee-577
+  matrix_polymer: PMMA (polymethyl methacrylate)
+  filler_material: BNNS
+  filler_material_original: few-layered BN nanosheets from chemical blowing of ammonia borane (annealed at 1,300 °C), sample PMMA/BN 23 wt.%
+  filler_shape: nanosheet (few-layered, lateral size up to 100 μm; tens of μm when dispersed in solution)
+  filler_loading_wt_pct: 23.0
+  filler_loading_original_value: 23.0
+  filler_loading_original_unit: wt.%
+  functionalization: none
+  processing_method: 'Solution casting: BN dispersed in PMMA/chloroform solution, spread on a glass plate, solvent evaporated naturally, residual solvent removed by drying at 50 °C'
+  k_composite_W_mK: 2.6
+  k_direction: unknown
+  measurement_method: Hot disk method, thermal constant analyzer (Kyoto Electronics Manufacturing Co., Ltd.)
+  k_original_value: 2.6
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Results and discussion, paragraph after Figure 4: ''The highest thermal conductivity is 2.6 W/mK for a PMMA with 23 wt.% BN, thus displaying a 17-fold increase with respect to the blank PMMA.'''
+  confidence: High
+  notes: Highest-loading sample. The blank PMMA k is not printed (only the 17-fold enhancement), so k_matrix is null. BNNS SSA 140 m2/g (BET), about 3-6 atomic layers (1.5 nm thick nanosheet in AFM). Measurement temperature not stated. The text calls the filler 'BN nanosheets'.

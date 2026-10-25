@@ -1,0 +1,94 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P134
+paper:
+  doi: 10.3390/polym11101638
+  title: Anisotropic Thermally Conductive Perfluoroalkoxy Composite with Low Dielectric Constant Fabricated by Aligning Boron Nitride Nanosheets via Hot Pressing
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11101638
+extraction_log:
+- seq: 146
+  candidate_id: P6-P134
+  doi: 10.3390/polym11101638
+  paper_title: Anisotropic Thermally Conductive Perfluoroalkoxy Composite with Low Dielectric Constant Fabricated by Aligning Boron Nitride Nanosheets via Hot Pressing
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym11101638.txt (cache, not committed)
+  tables_inspected: None in main text (Tables S1, S2 are supplementary, not in the source file)
+  figures_inspected: Figure 5a (in-plane and through-plane TC vs BNNs content, caption only, values not printed except those in the text); Figure 5b (EMT model, simulated, skipped)
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 12 figure-only values not taken. Only the neat PFA and the 30 wt% sample (both directions) are printed. The other 6 loadings × 2 directions = 12 values are figure-only (Fig. 5a). Literature values in the Introduction and the EMT-simulated λ‖ were skipped. Measurement temperature not stated. No vol% given.
+  rows_rejected_at_append: []
+  rows_added:
+  - 4349c7a7-426
+  - 4349c7a7-427
+  - 4349c7a7-428
+measurements:
+- row_id: 4349c7a7-426
+  matrix_polymer: Perfluoroalkoxy (PFA), DuPont powder
+  filler_material: none
+  filler_material_original: pure PFA
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Melted in mold at 400 °C for 1 h, hot-pressed at 380 °C under 15 MPa for 15 min, cooled to RT at ambient pressure (bulk)
+  k_matrix_W_mK: 0.26
+  k_composite_W_mK: 0.26
+  k_direction: unknown
+  measurement_method: Laser flash (Netzsch LFA 427) for thermal diffusivity and cp; density from weight and dimensions; k = α·cp·ρ
+  k_original_value: 0.26
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 1: ''The results indicated that pure PFA had a low TC of 0.26 W m−1 K−1, consistent with the previous study [3].'''
+  confidence: High
+  notes: Neat matrix; direction not stated for pure PFA (Fig. 5a plots both directions). The 0.27 W m−1 K−1 in the Introduction is a literature value and was not extracted.
+- row_id: 4349c7a7-427
+  matrix_polymer: Perfluoroalkoxy (PFA), DuPont powder
+  filler_material: BNNS
+  filler_material_original: boron nitride nanosheets (BNNs), sample 30 wt % BNNs–PFA composite
+  filler_shape: nanosheet
+  size_distribution: lateral size about 1–2 μm (SEM), thickness approx. 5.6 nm (TEM)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: layer-aligned in-plane by hot pressing (<cos2θ> ≈ 0.83)
+  processing_method: BNNs by liquid-phase exfoliation (shear mixing + tip sonication in ethanol-water, centrifugation); solvent-assisted blending with PFA powder in ethanol, vacuum-dried, melted at 400 °C for 1 h, hot-pressed at 380 °C under 15 MPa for 15 min (bulk)
+  k_matrix_W_mK: 0.26
+  k_composite_W_mK: 4.65
+  k_direction: in-plane (λ‖)
+  measurement_method: Laser flash (Netzsch LFA 427) for thermal diffusivity and cp; density from weight and dimensions; k = α·cp·ρ
+  k_original_value: 4.65
+  k_original_unit: W·m−1 K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 1 (also Abstract and Conclusions): ''In particular, when the BNNs content was 30 wt %, the λ‖ and λ⊥ of BNNs–PFA composite was 4.65 and 1.94 W·m−1 K−1, respectively.'''
+  confidence: High
+  notes: In-plane value of the 30 wt% sample. The 1, 5, 10, 15, 20 and 25 wt% values appear only in Fig. 5a.
+- row_id: 4349c7a7-428
+  matrix_polymer: Perfluoroalkoxy (PFA), DuPont powder
+  filler_material: BNNS
+  filler_material_original: boron nitride nanosheets (BNNs), sample 30 wt % BNNs–PFA composite
+  filler_shape: nanosheet
+  size_distribution: lateral size about 1–2 μm (SEM), thickness approx. 5.6 nm (TEM)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: layer-aligned in-plane by hot pressing (<cos2θ> ≈ 0.83)
+  processing_method: BNNs by liquid-phase exfoliation (shear mixing + tip sonication in ethanol-water, centrifugation); solvent-assisted blending with PFA powder in ethanol, vacuum-dried, melted at 400 °C for 1 h, hot-pressed at 380 °C under 15 MPa for 15 min (bulk)
+  k_matrix_W_mK: 0.26
+  k_composite_W_mK: 1.94
+  k_direction: through-plane (λ⊥)
+  measurement_method: Laser flash (Netzsch LFA 427) for thermal diffusivity and cp; density from weight and dimensions; k = α·cp·ρ
+  k_original_value: 1.94
+  k_original_unit: W·m−1 K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 1 (also Abstract and Conclusions): ''In particular, when the BNNs content was 30 wt %, the λ‖ and λ⊥ of BNNs–PFA composite was 4.65 and 1.94 W·m−1 K−1, respectively.'''
+  confidence: High
+  notes: Through-plane value of the same 30 wt% sample.

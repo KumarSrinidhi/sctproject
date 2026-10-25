@@ -1,0 +1,138 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P131
+paper:
+  doi: 10.3390/polym16050646
+  title: Modulating Thermal Conductivity and Flame Retardancy of Polyolefin Composites via Distributed Structures of Magnesium Hydroxide and Hexagonal Boron Nitride
+  year: 2024
+  source_url: https://doi.org/10.3390/polym16050646
+extraction_log:
+- seq: 143
+  candidate_id: P6-P131
+  doi: 10.3390/polym16050646
+  paper_title: Modulating Thermal Conductivity and Flame Retardancy of Polyolefin Composites via Distributed Structures of Magnesium Hydroxide and Hexagonal Boron Nitride
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym16050646.txt (cache, not committed)
+  tables_inspected: No tables in the main text (Tables S1-S4 are supplementary and not available)
+  figures_inspected: Figure 4a (k bar chart). Every bar value is also printed in Section 3.3 text; other figures are morphology/fire data
+  candidate_measurements: 5
+  rows_appended: 5
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. All k values come from Section 3.3. EVA/POE/MH (0.55 W/(m·K), no BN) was excluded. Literature values in the Introduction (9.99, 0.514, 13.2) were excluded. The paper states no measurement direction; LFA on 1 mm discs is normally through-thickness, so the direction is flagged as inferred. Table S1 compositions are not available, so loadings are taken from the Section 2.2 text.
+  rows_rejected_at_append: []
+  rows_added:
+  - 3f45ef34-417
+  - 3f45ef34-418
+  - 3f45ef34-419
+  - 3f45ef34-420
+  - 3f45ef34-421
+measurements:
+- row_id: 3f45ef34-417
+  matrix_polymer: EVA/POE blend, 1/1 by mass (EVA 7470M, Ningbo Formosa; POE DF740, Mitsui)
+  filler_material: none
+  filler_material_original: none, sample EVA/POE
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Melt blending in torque rheometer at 130 °C, 30 rpm; pressed with flatbed vulcanizing machine at 130 °C, 10 MPa, 15 min
+  k_matrix_W_mK: 0.24
+  k_composite_W_mK: 0.24
+  k_direction: 'through-plane (inferred: LFA447 on 12.6 mm diameter × 1 mm discs; paper names no direction)'
+  measurement_method: Laser flash, Netzsch LFA447 (graphite-coated discs, 12.6 mm × 1 mm); λ = α·ρ·Cp (methods for ρ and Cp not stated)
+  measurement_temperature_C: 25.0
+  k_original_value: 0.24
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''EVA/POE at a mass ratio of 1/1 shows a low thermal conductivity of 0.24 W/(m·K).'''
+  confidence: High
+  notes: Neat EVA/POE blend reference.
+- row_id: 3f45ef34-418
+  matrix_polymer: EVA/POE blend, 1/1 by mass (EVA 7470M, Ningbo Formosa; POE DF740, Mitsui)
+  filler_material: h-BN
+  filler_material_original: hexagonal boron nitride (hBN, 1 µm, Aladdin; abbreviated BN), sample EVA/POE/BN
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: BN selectively located in POE phase, which forms a co-continuous network with EVA
+  processing_method: Melt blending in torque rheometer at 130 °C, 30 rpm; pressed at 130 °C, 10 MPa, 15 min
+  k_matrix_W_mK: 0.24
+  k_composite_W_mK: 0.72
+  k_direction: 'through-plane (inferred: LFA447 on 12.6 mm diameter × 1 mm discs; paper names no direction)'
+  measurement_method: Laser flash, Netzsch LFA447 (graphite-coated discs, 12.6 mm × 1 mm); λ = α·ρ·Cp (methods for ρ and Cp not stated)
+  measurement_temperature_C: 25.0
+  k_original_value: 0.72
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''With a filler content of 50 wt.%, EVA/POE/MH and EVA/POE/BN present thermal conductivities of 0.55 W/(m·K) and 0.72 W/(m·K), respectively.'''
+  confidence: High
+  notes: BN-only composite at 50 wt% total filler (also restated in Conclusions). EVA/POE/MH (0.55, no BN) skipped.
+- row_id: 3f45ef34-419
+  matrix_polymer: EVA/POE blend, 1/1 by mass (EVA 7470M, Ningbo Formosa; POE DF740, Mitsui)
+  filler_material: h-BN/Mg(OH)2 hybrid
+  filler_material_original: hBN (1 µm) + magnesium hydroxide (MH, KISUMA 5-C), sample C1 (EVA/POE/MH/BN, Scheme I)
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: Random distribution of BN and MH in the filled POE phase
+  processing_method: 'Scheme I: all components melt-blended together in torque rheometer for 10 min at 130 °C, 30 rpm; pressed at 130 °C, 10 MPa, 15 min'
+  k_matrix_W_mK: 0.24
+  k_composite_W_mK: 0.56
+  k_direction: 'through-plane (inferred: LFA447 on 12.6 mm diameter × 1 mm discs; paper names no direction)'
+  measurement_method: Laser flash, Netzsch LFA447 (graphite-coated discs, 12.6 mm × 1 mm); λ = α·ρ·Cp (methods for ρ and Cp not stated)
+  measurement_temperature_C: 25.0
+  k_original_value: 0.56
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''C1 shows a thermal conductivity of 0.56 W/(m·K), which is similar to EVA/POE/MH.'''
+  confidence: High
+  notes: Composition 25 wt% EVA, 25 wt% POE, 25 wt% MH, 25 wt% BN (total filler 50 wt%; BN 25 wt%).
+- row_id: 3f45ef34-420
+  matrix_polymer: EVA/POE blend, 1/1 by mass (EVA 7470M, Ningbo Formosa; POE DF740, Mitsui)
+  filler_material: h-BN/Mg(OH)2 hybrid
+  filler_material_original: hBN (1 µm) + magnesium hydroxide (MH, KISUMA 5-C), sample C2 ((EVA/MH)/(POE/BN), Scheme II)
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: 'Segregated structure in the filled POE phase: BN-rich centre, MH-rich edge'
+  processing_method: 'Scheme II: EVA/MH and POE/BN premixed separately (10 min each), then blended together at 1/1 mass ratio for 10 min in torque rheometer at 130 °C, 30 rpm; pressed at 130 °C, 10 MPa, 15 min'
+  k_matrix_W_mK: 0.24
+  k_composite_W_mK: 0.7
+  k_direction: 'through-plane (inferred: LFA447 on 12.6 mm diameter × 1 mm discs; paper names no direction)'
+  measurement_method: Laser flash, Netzsch LFA447 (graphite-coated discs, 12.6 mm × 1 mm); λ = α·ρ·Cp (methods for ρ and Cp not stated)
+  measurement_temperature_C: 25.0
+  k_original_value: 0.7
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''C2 and C3 show thermal conductivities of 0.70 W/(m·K) and 0.66 W/(m·K), respectively, which are similar to EVA/POE/BN.'''
+  confidence: High
+  notes: Composition 25 wt% EVA, 25 wt% POE, 25 wt% MH, 25 wt% BN (total filler 50 wt%; BN 25 wt%). Printed as 0.70 W/(m·K), and the same value is restated in the Abstract and Conclusions.
+- row_id: 3f45ef34-421
+  matrix_polymer: EVA/POE blend, 1/1 by mass (EVA 7470M, Ningbo Formosa; POE DF740, Mitsui)
+  filler_material: h-BN/Mg(OH)2 hybrid
+  filler_material_original: hBN (1 µm) + magnesium hydroxide (MH, KISUMA 5-C), sample C3 ((EVA/BN)/(POE/MH), Scheme III)
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: 'Segregated structure in the filled POE phase: MH-rich centre, BN-rich edge'
+  processing_method: 'Scheme III: EVA/BN and POE/MH premixed separately (10 min each), then blended together at 1/1 mass ratio for 10 min in torque rheometer at 130 °C, 30 rpm; pressed at 130 °C, 10 MPa, 15 min'
+  k_matrix_W_mK: 0.24
+  k_composite_W_mK: 0.66
+  k_direction: 'through-plane (inferred: LFA447 on 12.6 mm diameter × 1 mm discs; paper names no direction)'
+  measurement_method: Laser flash, Netzsch LFA447 (graphite-coated discs, 12.6 mm × 1 mm); λ = α·ρ·Cp (methods for ρ and Cp not stated)
+  measurement_temperature_C: 25.0
+  k_original_value: 0.66
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''C2 and C3 show thermal conductivities of 0.70 W/(m·K) and 0.66 W/(m·K), respectively, which are similar to EVA/POE/BN.'''
+  confidence: High
+  notes: Composition 25 wt% EVA, 25 wt% POE, 25 wt% MH, 25 wt% BN (total filler 50 wt%; BN 25 wt%).

@@ -96,6 +96,8 @@ data/
   processed/            generated: rows.jsonl, measurements_enriched.csv
   external/             other groups' datasets used for testing (never merged): sources.yaml manifest,
                         raw files, series/block maps, crosscheck_review.yaml
+  acquisition/          Phase 6: queries.yaml, queries.jsonl (query log), candidates.csv (screening),
+                        extractions/ (extractor output + independent verdicts, the audit trail)
 src/argus/
   schema.py     31-column row schema + record model (pydantic)
   records.py    load / save / compile record files
@@ -117,6 +119,8 @@ src/argus/
   ml/report.py      Markdown report, prediction table, parity plot
   external/         tests against other groups' data: manifest, adapters (sources/), harmonize,
                     physics cross-check, transfer + pooled training, value cross-check, report
+  acquire/          Phase 6: OpenAlex discovery, screening, Europe PMC full text, quote checks, import
+  release.py        CITATION.cff, .zenodo.json, citation text, the Zenodo upload bundle
   fingerprint.py    dataset hash stamped into every analysis output
   report/course.py  course report rendered from results (refuses stale outputs)
   report/figures.py report figures (validated palette, small multiples)
@@ -360,6 +364,30 @@ curated. External data never enters `data/records/`; it lives in `data/external/
 - **Licences:** files whose licence forbids redistribution (CC BY-NC-ND) are not committed.
   `argus external fetch` downloads them and checks their checksums; only our own curation (block map,
   attributed facts) is in git.
+
+## 8d. Acquisition (Phase 6)
+
+`argus acquire search | fetch | import` (`src/argus/acquire/`) adds papers without lowering the
+provenance standard.
+
+- **Discovery** (`openalex.py`): the queries in `data/acquisition/queries.yaml` run on OpenAlex, open
+  access only.
+  - The API key comes from `OPENALEX_API_KEY` or the git-ignored `OPENALEX_API_KEY.txt`, and is redacted
+    from every log and error.
+  - Every query is appended to `data/acquisition/queries.jsonl` when it runs.
+- **Screening** (`screen.py`): explicit title/abstract rules give every candidate one decision and a
+  reason code. Results go to `data/acquisition/candidates.csv`. Papers already in ARGUS or already in
+  `exclusions.yaml` are skipped.
+- **Full text** (`europepmc.py`): Europe PMC JATS XML, found by DOI.
+  - The licence is recorded, and the text is cached in `sources/`, which git ignores.
+  - Tables are rendered as rows of cells joined by `|`, so a table row can be quoted verbatim.
+- **Extraction and checking:**
+  - One agent extracts the printed values, each with a verbatim quote; figure-only values are not taken.
+  - A second, independent agent checks every row against the source and looks for missed values.
+  - `argus acquire import` keeps a row only if its quote occurs verbatim in the source and contains the
+    printed k. Every record declares its new rows (`rows_added`), and papers without usable values become
+    exclusions with a reason.
+  - The extractor output and the verdicts are kept in `data/acquisition/extractions/` as the audit trail.
 
 ## 9. Testing
 

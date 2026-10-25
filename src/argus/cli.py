@@ -269,6 +269,21 @@ release_app = typer.Typer(no_args_is_help=True, help="Release artefacts (Zenodo 
 app.add_typer(release_app, name="release")
 
 
+def _data_differs_from_tag(lay, tag: str) -> str | None:
+    """The tag name if git has `tag` and its published table differs from the working copy, else None."""
+    import subprocess
+
+    try:
+        r = subprocess.run(["git", "show", f"{tag}:thermal_conductivity_dataset.csv"], cwd=lay.root,
+                           capture_output=True, stdin=subprocess.DEVNULL)
+    except OSError:
+        return None
+    if r.returncode != 0:  # no such tag (an unreleased version) or not a git checkout
+        return None
+    norm = lambda b: b.replace(b"\r\n", b"\n")  # noqa: E731  (checkout line endings may differ)
+    return tag if norm(r.stdout) != norm(lay.dataset_csv.read_bytes()) else None
+
+
 @release_app.command("bundle")
 def release_bundle(root: Optional[Path] = RootOpt,
                    out: Path = typer.Option(Path("dist"), "--out", help="Output folder (relative to the project root)")):
@@ -281,9 +296,14 @@ def release_bundle(root: Optional[Path] = RootOpt,
     if stale:
         typer.echo(f"Published files are out of date ({stale}); run `argus build` first.")
         raise typer.Exit(1)
+    meta = dataset_meta(lay)
+    changed = _data_differs_from_tag(lay, f"data-v{'.'.join(str(meta.get('version', '')).split('.')[:2])}")
+    if changed:
+        typer.echo(f"The dataset differs from the released tag {changed} but data/dataset.yaml still says version "
+                   f"{meta.get('version')}. Bump the version (and CHANGELOG) before bundling, or bundle from that tag.")
+        raise typer.Exit(1)
     out_dir = out if out.is_absolute() else lay.root / out
     path, digest = build_bundle(lay, out_dir)
-    meta = dataset_meta(lay)
     typer.echo(f"wrote {path} ({path.stat().st_size // 1024} KB, {len(bundle_members(lay)) + 2} files)")
     typer.echo(f"sha256 {digest}")
     typer.echo(f"Zenodo metadata: .zenodo.json (version {meta.get('version')}, licence {meta.get('license')})")

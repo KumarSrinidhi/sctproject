@@ -1,0 +1,47 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P136
+paper:
+  doi: 10.3390/polym12112553
+  title: Thermal Properties of Binary Filler Hybrid Composite with Graphene Oxide and Pyrolyzed Silicon-Coated Boron Nitride
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12112553
+extraction_log:
+- seq: 148
+  candidate_id: P6-P136
+  doi: 10.3390/polym12112553
+  paper_title: Thermal Properties of Binary Filler Hybrid Composite with Graphene Oxide and Pyrolyzed Silicon-Coated Boron Nitride
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym12112553.txt (cache, not committed)
+  tables_inspected: none (no tables in the paper; the JATS XML has no table-wrap)
+  figures_inspected: Fig. 4a (GO/R-BN/epoxy k vs GO wt fraction), Fig. 4b (GO/epoxy, no BN), Fig. 4c (k of all fabricated composites vs filler fraction), Fig. 6a/b (Agari-Uno fits and model comparison); captions only, no values digitized
+  candidate_measurements: 1
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 3 figure-only values not taken. Only one composite k value is printed in the text; all other k data (Fig. 4a, 4c, 6) are figure-only. figure_only_skipped counts figure panels with BN-composite k data (4a, 4c, 6b), because the number of points cannot be found from the text. There is no measurement-method description in the paper. GO intrinsic k (0.5–1.0) is quoted from the literature and was skipped.
+  rows_rejected_at_append: []
+  rows_added:
+  - 4a0b52fb-432
+measurements:
+- row_id: 4a0b52fb-432
+  matrix_polymer: Epoxy-terminated dimethylsiloxane (ETDS) epoxy resin (Shin-Etsu KF105)
+  curing_agent: 4,4′-diaminodiphenylmethane (ETDS:curing agent weight ratio 5:1)
+  filler_material: BN/graphene oxide hybrid
+  filler_material_original: P-BN (polysilazane-coated, pyrolyzed BN, LG Innotek) + GO, sample GO/P-BN/epoxy
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: 'BN: polysilazane (KiON HTT 1800) coating, crosslinked at 433 K and pyrolyzed at 1273 K under Ar (siloxane-rich surface); GO: improved Hummers'' method'
+  processing_method: GO dispersed in ethanol, mixed with ETDS/curing agent at 403 K, P-BN added, solvent removed, poured on Teflon, degassed 353 K 30 min, doctor-bladed film, cured 453 K 1 h
+  k_composite_W_mK: 0.4517
+  k_direction: unknown
+  k_original_value: 0.4517
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 1 (Introduction), last paragraph; loading from Abstract: ''Due to the heat transfer route provided by the enhanced dispersion and interfacial adhesion between the filler and the matrix, the obtained GO/P-BN/epoxy composite exhibited an improved thermal conductivity of 0.4517W/m−1·K−1, which is a 253% enhancement over that of the neat epoxy.'''
+  confidence: High
+  notes: The 40 wt% filler fraction comes from the abstract ('improved by 253% ... at a filler fraction of 40 wt %'); the paper does not say whether 40 wt% is BN only or BN+GO. Optimum BN:GO ratio reported as 40:1 (Section 3). Unit printed with a typo ('W/m−1·K−1'), read as W/(m·K). The neat-epoxy k is not printed (only implied by the 253% enhancement). The paper does not describe the k measurement technique. Unit printed as 'W/m−1·K−1' (typographical variant of W m−1 K−1); recorded as W/(m·K).

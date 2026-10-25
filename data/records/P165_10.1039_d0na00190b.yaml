@@ -1,0 +1,411 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P165
+paper:
+  doi: 10.1039/d0na00190b
+  title: Dispersion of high-quality boron nitride nanosheets in polyethylene for nanocomposites of superior thermal transport properties
+  year: 2020
+  source_url: https://doi.org/10.1039/d0na00190b
+extraction_log:
+- seq: 177
+  candidate_id: P6-P165
+  doi: 10.1039/d0na00190b
+  paper_title: Dispersion of high-quality boron nitride nanosheets in polyethylene for nanocomposites of superior thermal transport properties
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc)
+  files_inspected: sources/text/10.1039_d0na00190b.txt (cache, not committed)
+  tables_inspected: Table 1 (thermal transport properties of PE/h-BN, PE/BNNs, crosslinked PE/BNNs films; TD and TC by wt%); checked against JATS XML for column alignment of empty cells
+  figures_inspected: Fig. 5 caption (same TC values as Table 1 plus literature comparison, not extracted)
+  candidate_measurements: 17
+  rows_appended: 17
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. 17 rows from Table 1: neat PE (0.46), PE/BNNs at 8 loadings, PE/h-BN at 3 loadings, crosslinked PE/BNNs at 5 loadings. Column alignment of the empty cells was checked against the JATS XML. TC is derived from in-plane TD (modified Angstrom, Ulvac LaserPIT) times density and Cp from a mixing rule, not measured directly. The table quote for each loading row is shared by up to three series (PE/h-BN, PE/BNNs, crosslinked); the series is named in notes. F'
+  rows_rejected_at_append: []
+  rows_added:
+  - f795cd40-603
+  - f795cd40-604
+  - f795cd40-605
+  - f795cd40-606
+  - f795cd40-607
+  - f795cd40-608
+  - f795cd40-609
+  - f795cd40-610
+  - f795cd40-611
+  - f795cd40-612
+  - f795cd40-613
+  - f795cd40-614
+  - f795cd40-615
+  - f795cd40-616
+  - f795cd40-617
+  - f795cd40-618
+  - f795cd40-619
+measurements:
+- row_id: f795cd40-603
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: none
+  filler_material_original: none (neat PE blank film)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: 'Solution casting of neat PE: PE (70 mg) stirred in decalin at 95 °C overnight, solution concentrated, cast on preheated (95 °C) etched glass slide, free-standing blank film peeled off and vacuum dried at ~60 °C; films 30–50 μm thick'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 0.46
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 0.46
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''0 |  |  | 0.2 | 0.46 |  | '''
+  confidence: High
+  notes: 'Neat PE film; 0 wt% row, value in the PE/BNNs TC column of Table 1; TD 0.2 mm2/s. Corrected in verification: Value 0.46 (TD 0.2) is correct; the JATS XML confirms it sits in the PE/BNNs TC column. The processing text described mixing with a filler dispersion, which does not apply to the neat blank film; the paper gives a separate neat-PE procedure.'
+- row_id: f795cd40-604
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 5 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 5.0
+  filler_loading_original_value: 5.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 1.2
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 1.2
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''5 |  |  | 0.5 | 1.2 |  | '''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 0.5 mm2/s. Corrected in verification: Value 1.2 at 5 wt% is correct per the XML. The alignment field cited XRD showing preferential orientation, but the paper''s (002) statement is about preferential exfoliation of the nanosheets, not filler orientation in the film.'
+- row_id: f795cd40-605
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 7.5 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 7.5
+  filler_loading_original_value: 7.5
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 3.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 3.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''7.5 |  |  | 1.3 | 3 |  | '''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 1.3 mm2/s. Corrected in verification: Value 3 at 7.5 wt% is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-606
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 10 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 4.1
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 4.1
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''10 | 1.2 | 2.8 | 1.8 | 4.1 | 2.8 | 6.4'''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 1.8 mm2/s. Corrected in verification: Value 4.1 at 10 wt% is correct (PE/BNNs column). Same alignment-field correction as row 1.'
+- row_id: f795cd40-607
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 15 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 15.0
+  filler_loading_original_value: 15.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 5.8
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 5.8
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''15 |  |  | 2.5 | 5.8 | 4 | 9.2'''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 2.5 mm2/s. Corrected in verification: Value 5.8 at 15 wt% is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-608
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 20 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 8.3
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 8.3
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''20 | 2.3 | 5.3 | 3.6 | 8.3 | 8.7 | 20'''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 3.6 mm2/s. Corrected in verification: Value 8.3 at 20 wt% is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-609
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 25 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 13.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 13.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''25 |  |  | 5.8 | 13 | 7.5 | 17'''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 5.8 mm2/s. Corrected in verification: Value 13 at 25 wt% is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-610
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 30 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 25.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 25.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''30 | 4.5 | 10 | 11 | 25 | 13 | 30'''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 11 mm2/s. Corrected in verification: Value 25 at 30 wt% is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-611
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: BNNS
+  filler_material_original: BNNs (boron nitride nanosheets), PE/BNNs film, 40 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 41.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 41.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''40 |  |  | 18 | 41 |  | '''
+  confidence: High
+  notes: 'PE/BNNs (non-crosslinked) column of Table 1; TD 18 mm2/s (text also cites TD 18 mm2/s at 40 wt%). Corrected in verification: Value 41 at 40 wt% is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-612
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: h-BN
+  filler_material_original: as-supplied h-BN (Alfa Aesar, 99.5%), PE/h-BN film, 10 wt%
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: none (as-supplied, not exfoliated)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 2.8
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 2.8
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''10 | 1.2 | 2.8 | 1.8 | 4.1 | 2.8 | 6.4'''
+  confidence: High
+  notes: PE/h-BN column of Table 1; TD 1.2 mm2/s. Same film protocol as PE/BNNs. h-BN particle size not stated.
+- row_id: f795cd40-613
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: h-BN
+  filler_material_original: as-supplied h-BN (Alfa Aesar, 99.5%), PE/h-BN film, 20 wt%
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: none (as-supplied, not exfoliated)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 5.3
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 5.3
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''20 | 2.3 | 5.3 | 3.6 | 8.3 | 8.7 | 20'''
+  confidence: High
+  notes: PE/h-BN column of Table 1; TD 2.3 mm2/s. Same film protocol as PE/BNNs. h-BN particle size not stated.
+- row_id: f795cd40-614
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  filler_material: h-BN
+  filler_material_original: as-supplied h-BN (Alfa Aesar, 99.5%), PE/h-BN film, 30 wt%
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (as-supplied, not exfoliated)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 10.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 10.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''30 | 4.5 | 10 | 11 | 25 | 13 | 30'''
+  confidence: High
+  notes: PE/h-BN column of Table 1; TD 4.5 mm2/s. Same film protocol as PE/BNNs. h-BN particle size not stated.
+- row_id: f795cd40-615
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  curing_agent: Benzil photo-initiator (3.5 mg per film), UV crosslinked 5 h
+  filler_material: BNNS
+  filler_material_original: BNNs, crosslinked PE/BNNs film, 10 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C; benzil (3.5 mg per film) added before concentration, free-standing film UV-cured/crosslinked 5 h (Spectroline lamp), then vacuum dried 60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 6.4
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 6.4
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''10 | 1.2 | 2.8 | 1.8 | 4.1 | 2.8 | 6.4'''
+  confidence: High
+  notes: 'Crosslinked PE/BNNs column of Table 1; TD 2.8 mm2/s. No crosslinked neat-PE value printed; k_matrix is the non-crosslinked neat PE film. Corrected in verification: Crosslinked 10 wt% = 6.4 is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-616
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  curing_agent: Benzil photo-initiator (3.5 mg per film), UV crosslinked 5 h
+  filler_material: BNNS
+  filler_material_original: BNNs, crosslinked PE/BNNs film, 15 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 15.0
+  filler_loading_original_value: 15.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C; benzil (3.5 mg per film) added before concentration, free-standing film UV-cured/crosslinked 5 h (Spectroline lamp), then vacuum dried 60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 9.2
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 9.2
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''15 |  |  | 2.5 | 5.8 | 4 | 9.2'''
+  confidence: High
+  notes: 'Crosslinked PE/BNNs column of Table 1; TD 4 mm2/s. No crosslinked neat-PE value printed; k_matrix is the non-crosslinked neat PE film. Corrected in verification: Crosslinked 15 wt% = 9.2 is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-617
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  curing_agent: Benzil photo-initiator (3.5 mg per film), UV crosslinked 5 h
+  filler_material: BNNS
+  filler_material_original: BNNs, crosslinked PE/BNNs film, 20 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C; benzil (3.5 mg per film) added before concentration, free-standing film UV-cured/crosslinked 5 h (Spectroline lamp), then vacuum dried 60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 20.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 20.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''20 | 2.3 | 5.3 | 3.6 | 8.3 | 8.7 | 20'''
+  confidence: High
+  notes: 'Crosslinked PE/BNNs column of Table 1; TD 8.7 mm2/s. Printed TC (20) is higher than the 25 wt% crosslinked value (17); reported as printed. No crosslinked neat-PE value printed; k_matrix is the non-crosslinked neat PE film. Corrected in verification: Crosslinked 20 wt% = 20 is correct and consistent with TD 8.7 (TC/TD ≈ 2.3, as in every row), so it is not a typo. Same alignment-field correction as row 1.'
+- row_id: f795cd40-618
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  curing_agent: Benzil photo-initiator (3.5 mg per film), UV crosslinked 5 h
+  filler_material: BNNS
+  filler_material_original: BNNs, crosslinked PE/BNNs film, 25 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs protruding from fractured edges observed aligned parallel to the film surface (SEM, Fig. 6, crosslinked 30 wt% PE/BNN film)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C; benzil (3.5 mg per film) added before concentration, free-standing film UV-cured/crosslinked 5 h (Spectroline lamp), then vacuum dried 60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 17.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 17.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''25 |  |  | 5.8 | 13 | 7.5 | 17'''
+  confidence: High
+  notes: 'Crosslinked PE/BNNs column of Table 1; TD 7.5 mm2/s. No crosslinked neat-PE value printed; k_matrix is the non-crosslinked neat PE film. Corrected in verification: Crosslinked 25 wt% = 17 is correct. Same alignment-field correction as row 1.'
+- row_id: f795cd40-619
+  matrix_polymer: Polyethylene (PE, from commercial sandwich bags, S. C. Johnson & Son)
+  curing_agent: Benzil photo-initiator (3.5 mg per film), UV crosslinked 5 h
+  filler_material: BNNS
+  filler_material_original: BNNs, crosslinked PE/BNNs film, 30 wt%
+  filler_shape: nanosheet
+  size_distribution: thickness 8.3 ± 2.8 nm (TEM, ~40 nanosheets); ~10 ± 0.4 nm by Scherrer; lateral dimensions in the micron range (SEM)
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none (ammonia-assisted exfoliation in aqueous ammonia/isopropanol, 48 h sonication)
+  filler_alignment: BNNs aligned parallel to the film surface observed by SEM in this crosslinked 30 wt% film (fractured edges, Fig. 6)
+  processing_method: 'Solution casting: PE dissolved in decalin at 95 °C, mixed with filler dispersion in isopropanol (stirred and sonicated at 65 °C), concentrated, cast on preheated (95 °C) etched glass slide; free-standing films 30–50 μm thick, vacuum dried ~60 °C; benzil (3.5 mg per film) added before concentration, free-standing film UV-cured/crosslinked 5 h (Spectroline lamp), then vacuum dried 60 °C'
+  k_matrix_W_mK: 0.46
+  k_composite_W_mK: 30.0
+  k_direction: in-plane
+  measurement_method: In-plane thermal diffusivity by modified Angstrom's method, Ulvac LaserPIT, room temperature, vacuum 0.01 Pa, ~30 mm x 5 mm film specimens graphite-coated on one side; TC = TD x density x Cp with density and Cp estimated by weight-fraction mixing rule
+  k_original_value: 30.0
+  k_original_unit: W mK−1
+  value_source: table
+  source_location: 'Table 1: ''30 | 4.5 | 10 | 11 | 25 | 13 | 30'''
+  confidence: High
+  notes: 'Crosslinked PE/BNNs column of Table 1; TD 13 mm2/s. No crosslinked neat-PE value printed; k_matrix is the non-crosslinked neat PE film. Corrected in verification: Crosslinked 30 wt% = 30 is correct. Same alignment-field correction as row 1; this is the sample actually imaged.'

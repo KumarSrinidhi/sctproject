@@ -1,0 +1,122 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P116
+paper:
+  doi: 10.1038/s41467-024-47147-1
+  title: Low thermal contact resistance boron nitride nanosheets composites enabled by interfacial arc-like phonon bridge
+  year: 2024
+  source_url: https://doi.org/10.1038/s41467-024-47147-1
+extraction_log:
+- seq: 128
+  candidate_id: P6-P116
+  doi: 10.1038/s41467-024-47147-1
+  paper_title: Low thermal contact resistance boron nitride nanosheets composites enabled by interfacial arc-like phonon bridge
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1038_s41467-024-47147-1.txt (cache, not committed)
+  tables_inspected: No tables in the main text. Tables S1–S5 are supplementary and not in the source text, so they were not used. Table S2 holds the LFA data.
+  figures_inspected: Fig. 1 (SEM/XRD), Fig. 2 (mechanical/FEM), Fig. 3A (through-film k for 50–90 wt% next to literature values), Fig. 3B (total thermal resistance Rt), Fig. 3C (effective k under different pressures), Fig. 4 (Ri/Rm, NEMD), Fig. 5 (cooling demo). Supplementary Fig. S4 (in-plane k of the films, keff at all loadings) is not available.
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 3 figure-only values not taken. The matrix is an unnamed low-molecular-weight acrylate polymer, and no neat-matrix k is printed. Skipped: introduction values (graphene ~1500, BNNS film ~70, 10–70 W/mK), which come from the literature; commercial TIM values (<5); the bound ''κeff over 6'' for 50–70 wt%; NEMD interfacial conductances, which are simulated; and thermal resistances, which are not k. figure_only_skipped=3 counts the LFA through-film k at 60, 70 and 80 wt% that appear only'
+  rows_rejected_at_append: []
+  rows_added:
+  - c2ebd9a1-368
+  - c2ebd9a1-369
+  - c2ebd9a1-370
+  - c2ebd9a1-371
+measurements:
+- row_id: c2ebd9a1-368
+  matrix_polymer: low-molecular-weight acrylate polymer (M = 384.5, Tg = −20 °C)
+  filler_material: BNNS
+  filler_material_original: BNNSs (ball-milled from h-BN PT110, Momentive), BNNS-TIM at 50 wt%
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  size_distribution: thickness ~2 nm, lateral size ~1 μm
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt%
+  functionalization: none (non-covalent interaction with the polymer)
+  filler_alignment: perpendicular (through-film) alignment from stacking-cutting; arc-like rotated layer beneath the cut surfaces at 50 wt%
+  processing_method: BNNS dispersion blended with acrylate in a vacuum mixer, blade-coated into ~50 μm films, hundreds of layers stacked and hot-pressed (20 MPa, 80 °C, 20 min), then sliced with a precision cutting machine
+  k_composite_W_mK: 15.0
+  k_direction: through-plane (through-film)
+  measurement_method: Laser flash, Netzsch LFA 467, ASTM E1461; Cp by DSC (TA Q1000); density by Archimedes
+  measurement_temperature_C: 25.0
+  k_original_value: 15.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal properties of the BNNS-TIMs'', paragraph 1: ''It showed a significant increase from ~15 W m−1 K−1 at 50 wt% loading to ~50 W m−1 K−1 at 90 wt.% loading.'''
+  confidence: Medium
+  notes: 'The value is printed as approximate (~15). Exact values are in supplementary Table S2, which is not available. Corrected in verification: The value (~15 W m−1 K−1, 50 wt% BNNS), the through-film direction, the LFA 467 / ASTM E1461 method at 25 °C, Cp by DSC Q1000, density by Archimedes, the matrix and the filler description all match the text. The value is printed and the sample is unambiguous; the ''~'' belongs in notes. House style asks for confidence ''High'', so I changed it from Medium. k printed as approximate or as a bound, so Medium confidence.'
+- row_id: c2ebd9a1-369
+  matrix_polymer: low-molecular-weight acrylate polymer (M = 384.5, Tg = −20 °C)
+  filler_material: BNNS
+  filler_material_original: BNNSs (ball-milled from h-BN PT110, Momentive), BNNS-TIM at 90 wt%
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  size_distribution: thickness ~2 nm, lateral size ~1 μm
+  filler_loading_wt_pct: 90.0
+  filler_loading_original_value: 90.0
+  filler_loading_original_unit: wt%
+  functionalization: none (non-covalent interaction with the polymer)
+  filler_alignment: perpendicular (through-film) alignment from stacking-cutting; thin horizontal surface layer, rotation nearly absent at 90 wt%
+  processing_method: BNNS dispersion blended with acrylate in a vacuum mixer, blade-coated into ~50 μm films, hundreds of layers stacked and hot-pressed (20 MPa, 80 °C, 20 min), then sliced with a precision cutting machine
+  k_composite_W_mK: 50.0
+  k_direction: through-plane (through-film)
+  measurement_method: Laser flash, Netzsch LFA 467, ASTM E1461; Cp by DSC (TA Q1000); density by Archimedes
+  measurement_temperature_C: 25.0
+  k_original_value: 50.0
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal properties of the BNNS-TIMs'', paragraph 1: ''It showed a significant increase from ~15 W m−1 K−1 at 50 wt% loading to ~50 W m−1 K−1 at 90 wt.% loading.'''
+  confidence: Medium
+  notes: 'The value is printed as approximate (~50). Exact values are in supplementary Table S2, which is not available. Corrected in verification: The value (~50 W m−1 K−1, 90 wt%), direction and method match the text. The ''~'' is already in notes. I changed confidence from Medium to ''High'' per house style. k printed as approximate or as a bound, so Medium confidence.'
+- row_id: c2ebd9a1-370
+  matrix_polymer: low-molecular-weight acrylate polymer (M = 384.5, Tg = −20 °C)
+  filler_material: BNNS
+  filler_material_original: BNNSs, BNNS-TIM at 70 wt%
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  size_distribution: thickness ~2 nm, lateral size ~1 μm
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: none (non-covalent interaction with the polymer)
+  filler_alignment: perpendicular (through-film) alignment with an arc-like rotated layer near the cut surfaces
+  processing_method: BNNS dispersion blended with acrylate in a vacuum mixer, blade-coated into ~50 μm films, hundreds of layers stacked and hot-pressed (20 MPa, 80 °C, 20 min), then sliced with a precision cutting machine
+  k_composite_W_mK: 9.4
+  k_direction: through-plane (effective through-film thermal conductivity κeff = d/Rt)
+  measurement_method: Total thermal resistance by steady-state guarded hot plate, ASTM D5470 (TIM tester LW9389, Longwin), copper plates; κeff = thickness/Rt
+  k_original_value: 9.4
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal properties of the BNNS-TIMs'', paragraph 2: ''It was found that the BNNS-TIMs with a 70 wt% content have high \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\kappa }_{{{\mbox{eff}}}}$$\end{document}κeff values of 9.4 and 12.9 W m−1 K−1 at 50 and 100 psi pressure, respectively'''
+  confidence: High
+  notes: 'Condition: 50 psi packaging pressure. This is an effective k that includes the TIM–copper contact resistance, not the intrinsic LFA k. The sample is 1 mm thick per Fig. 3B.'
+- row_id: c2ebd9a1-371
+  matrix_polymer: low-molecular-weight acrylate polymer (M = 384.5, Tg = −20 °C)
+  filler_material: BNNS
+  filler_material_original: BNNSs, BNNS-TIM at 70 wt%
+  filler_shape: nanosheet
+  filler_mean_size_um: 1.0
+  size_distribution: thickness ~2 nm, lateral size ~1 μm
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: none (non-covalent interaction with the polymer)
+  filler_alignment: perpendicular (through-film) alignment with an arc-like rotated layer near the cut surfaces
+  processing_method: BNNS dispersion blended with acrylate in a vacuum mixer, blade-coated into ~50 μm films, hundreds of layers stacked and hot-pressed (20 MPa, 80 °C, 20 min), then sliced with a precision cutting machine
+  k_composite_W_mK: 12.9
+  k_direction: through-plane (effective through-film thermal conductivity κeff = d/Rt)
+  measurement_method: Total thermal resistance by steady-state guarded hot plate, ASTM D5470 (TIM tester LW9389, Longwin), copper plates; κeff = thickness/Rt
+  k_original_value: 12.9
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, ''Thermal properties of the BNNS-TIMs'', paragraph 2: ''It was found that the BNNS-TIMs with a 70 wt% content have high \documentclass[12pt]{minimal} \usepackage{amsmath} \usepackage{wasysym} \usepackage{amsfonts} \usepackage{amssymb} \usepackage{amsbsy} \usepackage{mathrsfs} \usepackage{upgreek} \setlength{\oddsidemargin}{-69pt} \begin{document}$${\kappa }_{{{\mbox{eff}}}}$$\end{document}κeff values of 9.4 and 12.9 W m−1 K−1 at 50 and 100 psi pressure, respectively'''
+  confidence: High
+  notes: 'Condition: 100 psi packaging pressure. This is an effective k that includes the TIM–copper contact resistance, not the intrinsic LFA k.'

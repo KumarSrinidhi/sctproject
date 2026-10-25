@@ -1,0 +1,115 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P143
+paper:
+  doi: 10.3390/polym13132028
+  title: Ultra-Robust Thermoconductive Films Made from Aramid Nanofiber and Boron Nitride Nanosheet for Thermal Management Application
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13132028
+extraction_log:
+- seq: 155
+  candidate_id: P6-P143
+  doi: 10.3390/polym13132028
+  paper_title: Ultra-Robust Thermoconductive Films Made from Aramid Nanofiber and Boron Nitride Nanosheet for Thermal Management Application
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym13132028.txt (cache, not committed)
+  tables_inspected: No tables in main text (Supplementary Table S1 with k values is referenced but is not in the source file)
+  figures_inspected: Figure 4a (in-plane k vs filler content, 3 series), Figure 4b (enhancement factor); captions only
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 9 figure-only values not taken. The main text prints only the 40 wt.% values of the three composite films and the neat ANF value. Values at 10-30 wt.% are in Figure 4a and Supplementary Table S1 (not available here). FEA values in Section 3.6 are simulation inputs and were skipped. figure_only_skipped estimate: 3 series x 3 other loadings.'
+  rows_rejected_at_append: []
+  rows_added:
+  - 4658a7ea-471
+  - 4658a7ea-472
+  - 4658a7ea-473
+  - 4658a7ea-474
+measurements:
+- row_id: 4658a7ea-471
+  matrix_polymer: Aramid nanofiber (ANF) film from deprotonated Kevlar 29 (KOH/DMSO)
+  filler_material: none
+  filler_material_original: pure ANF film
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0
+  filler_loading_original_unit: wt% (neat matrix, no filler)
+  processing_method: Vacuum-assisted filtration of filler/ANF aqueous dispersion (high-shear mixed 13,000 rpm, 6 h), hot pressed 100 °C 10 min, vacuum dried 45 °C 12 h
+  k_matrix_W_mK: 3.45
+  k_composite_W_mK: 3.45
+  k_direction: in-plane
+  measurement_method: Laser flash (in-plane thermal diffusivity), NETZSCH LFA 467; Cp by DSC (TA 2100, sapphire method); density from weight/volume; λ = αCpρ
+  k_original_value: 3.45
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Abstract: ''Therefore, the in-plane thermal conductivity of ANF/BNNS@Ag composites was as high as 11.51 W m−1 K−1, which was 233.27% higher than that of pure ANF (3.45 W m−1 K−1).'''
+  confidence: High
+  notes: Neat ANF film. Section 3.6 quotes 3.4528 W m−1 K−1 from Supplementary Table S1 (used as an FEA input). Loading set to 0 because this is the neat matrix.
+- row_id: 4658a7ea-472
+  matrix_polymer: Aramid nanofiber (ANF) film from deprotonated Kevlar 29 (KOH/DMSO)
+  filler_material: h-BN
+  filler_material_original: raw h-BN flakes, sample ANF/h-BN 40 wt.%
+  filler_shape: flake
+  filler_mean_size_um: 10.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt.%
+  filler_alignment: in-plane orientation, layered 'brick-and-mortar' structure from vacuum filtration
+  processing_method: Vacuum-assisted filtration of filler/ANF aqueous dispersion (high-shear mixed 13,000 rpm, 6 h), hot pressed 100 °C 10 min, vacuum dried 45 °C 12 h
+  k_matrix_W_mK: 3.45
+  k_composite_W_mK: 7.61
+  k_direction: in-plane
+  measurement_method: Laser flash (in-plane thermal diffusivity), NETZSCH LFA 467; Cp by DSC (TA 2100, sapphire method); density from weight/volume; λ = αCpρ
+  k_original_value: 7.61
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''The thermal conductivity of ANF/h-BN, ANF/BNNS, and ANF/BNNS@Ag films with filler content of 40 wt.% were 7.61 W m−1 K−1, 9.73 W m−1 K−1, and 11.51 W m−1 K−1, respectively, which were increased by 120.49%, 181.85%, and 233.27% compared with pure the ANF film, respectively.'''
+  confidence: High
+  notes: 'Unexfoliated raw h-BN flakes (average 10 μm, 99.5%). Surface treatment for this filler is not stated; Section 3.1 says the h-BN used (for exfoliation) had a NaOH surface pretreatment. Other loadings (10-30 wt.%) only in Figure 4a / Supplementary Table S1. Corrected in verification: Value 7.61 at 40 wt.% is correct. ''none'' asserts something the paper does not say, and Section 3.1 states the h-BN used had a NaOH surface pretreatment, so functionalization should be null with a caveat.'
+- row_id: 4658a7ea-473
+  matrix_polymer: Aramid nanofiber (ANF) film from deprotonated Kevlar 29 (KOH/DMSO)
+  filler_material: BNNS
+  filler_material_original: BNNS (ion-assisted liquid-phase exfoliated), sample ANF/BNNS 40 wt.%
+  filler_shape: nanosheet
+  size_distribution: 0.2-0.8 μm lateral size by SEM; fewer than 10 layers
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt.%
+  functionalization: none
+  filler_alignment: in-plane orientation, layered 'brick-and-mortar' structure from vacuum filtration
+  processing_method: Vacuum-assisted filtration of filler/ANF aqueous dispersion (high-shear mixed 13,000 rpm, 6 h), hot pressed 100 °C 10 min, vacuum dried 45 °C 12 h
+  k_matrix_W_mK: 3.45
+  k_composite_W_mK: 9.73
+  k_direction: in-plane
+  measurement_method: Laser flash (in-plane thermal diffusivity), NETZSCH LFA 467; Cp by DSC (TA 2100, sapphire method); density from weight/volume; λ = αCpρ
+  k_original_value: 9.73
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''The thermal conductivity of ANF/h-BN, ANF/BNNS, and ANF/BNNS@Ag films with filler content of 40 wt.% were 7.61 W m−1 K−1, 9.73 W m−1 K−1, and 11.51 W m−1 K−1, respectively, which were increased by 120.49%, 181.85%, and 233.27% compared with pure the ANF film, respectively.'''
+  confidence: High
+  notes: BNNS exfoliated in H2O:IPA with trisodium citrate. Other loadings only in Figure 4a / Supplementary Table S1.
+- row_id: 4658a7ea-474
+  matrix_polymer: Aramid nanofiber (ANF) film from deprotonated Kevlar 29 (KOH/DMSO)
+  filler_material: BNNS/Ag hybrid
+  filler_material_original: BNNS@Ag (AgNP-decorated BNNS), sample ANF/BNNS@Ag 40 wt.%
+  filler_shape: nanosheet
+  size_distribution: BNNS 0.2-0.8 μm lateral size; AgNP 20-60 nm
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt.%
+  functionalization: silver nanoparticle (AgNP) decoration by in situ citrate reduction of AgNO3
+  filler_alignment: in-plane orientation, layered 'brick-and-mortar' structure from vacuum filtration
+  processing_method: Vacuum-assisted filtration of filler/ANF aqueous dispersion (high-shear mixed 13,000 rpm, 6 h), hot pressed 100 °C 10 min, vacuum dried 45 °C 12 h
+  k_matrix_W_mK: 3.45
+  k_composite_W_mK: 11.51
+  k_direction: in-plane
+  measurement_method: Laser flash (in-plane thermal diffusivity), NETZSCH LFA 467; Cp by DSC (TA 2100, sapphire method); density from weight/volume; λ = αCpρ
+  k_original_value: 11.51
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''The thermal conductivity of ANF/h-BN, ANF/BNNS, and ANF/BNNS@Ag films with filler content of 40 wt.% were 7.61 W m−1 K−1, 9.73 W m−1 K−1, and 11.51 W m−1 K−1, respectively, which were increased by 120.49%, 181.85%, and 233.27% compared with pure the ANF film, respectively.'''
+  confidence: High
+  notes: 'Ag-decorated BNNS (contains metal); loading is the BNNS@Ag mass fraction. The same value is in the Abstract and Conclusions. Other loadings (10-30 wt.%) only in Figure 4a / Supplementary Table S1. Corrected in verification: Value 11.51 at 40 wt.% is correct. But BNNS@Ag carries a separate metallic Ag nanoparticle phase (20-60 nm, a deliberate thermal ''bridge'', modelled as its own phase in the FEA). Under the house rule for several fillers, and for consistency with LMPA and GO being labelled hybrids in other papers, it should be ''BNNS/Ag hybrid''. Keep the functionalization text.'

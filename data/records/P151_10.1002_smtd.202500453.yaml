@@ -1,0 +1,219 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P151
+paper:
+  doi: 10.1002/smtd.202500453
+  title: 'Nano‐Interconnected 1D/2D Boron Nitride Hybrid Networks: Unlocking Superior Thermal Conductivity in Electrically Insulating Thermal Interface Nanocomposites Based on Hybrid Thermal Percolation Model'
+  year: 2025
+  source_url: https://doi.org/10.1002/smtd.202500453
+extraction_log:
+- seq: 163
+  candidate_id: P6-P151
+  doi: 10.1002/smtd.202500453
+  paper_title: 'Nano‐Interconnected 1D/2D Boron Nitride Hybrid Networks: Unlocking Superior Thermal Conductivity in Electrically Insulating Thermal Interface Nanocomposites Based on Hybrid Thermal Percolation Model'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by-nc)
+  files_inspected: sources/text/10.1002_smtd.202500453.txt (cache, not committed)
+  tables_inspected: No tables in the main text (Tables S1–S8 are supplementary and not available)
+  figures_inspected: Figure 4a–f (k vs h-BN volume fraction, vs BNNT ratio φ, comparisons, functionalized h-BN); Figures S4, S6, S7 referenced. Most data points are only in Figure 4.
+  candidate_measurements: 8
+  rows_appended: 8
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 20 figure-only values not taken. All printed experimental k values extracted (neat epoxy, the h-BN-only optimum, three hybrid optima, three over-BNNT hybrids). Model parameters (TC of h-BN/BNNT 300 W m−1·K, TC_pre etc.) and model curves skipped. Functionalized h-BN (–OH, APTES) composites, BNNT-only composites and the rest of the h-BN and hybrid series are only in Figures 4 and S4/S6/S7; figure_only_skipped is an estimate. Measurement temperature not stated.
+  rows_rejected_at_append: []
+  rows_added:
+  - 31a43192-512
+  - 31a43192-513
+  - 31a43192-514
+  - 31a43192-515
+  - 31a43192-516
+  - 31a43192-517
+  - 31a43192-518
+  - 31a43192-519
+measurements:
+- row_id: 31a43192-512
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: none
+  filler_material_original: pure epoxy matrix
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: vol%
+  processing_method: Thinky mixer premix at 2000 rpm 2 min; hot pressed in 25 × 25 × 2 mm3 metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 0.65
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 0.65
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results and Discussion, Theoretical Approaches, Nan''s Model: ''where TC matrix is the TC of the epoxy matrix (0.65 W m−1·K) and ϕ BN is the volume fraction of h‐BN or BNNT.'''
+  confidence: High
+  notes: Printed as the epoxy-matrix TC used in Nan's model; it is consistent with the printed experimental enhancements (10.93 = +1582%, 6.55 = +908% over pure epoxy), so it is taken as the measured neat-epoxy value. Unit printed as 'W m−1·K'. Unit printed as 'W m−1·K' (typographical variant of W m−1 K−1); recorded as W/(m·K).
+- row_id: 31a43192-513
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: h-BN
+  filler_material_original: raw h-BN, 60 wt% (49.45 vol%) h-BN composite
+  filler_shape: platelet (2D)
+  filler_mean_size_um: 3.0
+  size_distribution: mean particle size 3 μm, mean thickness 20 nm
+  filler_loading_vol_pct: 49.45
+  filler_loading_wt_pct: 60.0
+  filler_loading_original_value: 60.0
+  filler_loading_original_unit: wt% (49.45 vol%)
+  functionalization: none
+  filler_alignment: random (isotropic)
+  processing_method: Thinky mixer (2000 rpm, 2 min) of fillers into epoxy/hardener premix; hot pressed in metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 5.01
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 5.01
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results and Discussion, TC of h-BN Composites, paragraph 1: ''As the h‐BN content increased from 30 (21.85) to 40 wt% (30.30 vol%), the TC improved significantly, reaching 5.01 W m−1∙K at a filler content of 60 wt% (49.45 vol%).'''
+  confidence: High
+  notes: Optimized h-BN-only network; the hybrid 10.93 value is stated as +118% over this composite. k values at 30 and 40 wt% h-BN are only in Figure 4a. Unit printed as 'W m−1∙K' (typographical variant of W m−1 K−1); recorded as W/(m·K).
+- row_id: 31a43192-514
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: h-BN/BNNT hybrid
+  filler_material_original: h-BN/BNNT hybrid, 30.88 vol% total, φ max = 0.124
+  filler_shape: h-BN platelets (2D) + BN nanotubes (1D)
+  size_distribution: h-BN mean size 3 μm, thickness 20 nm; BNNT mean length 7 μm, diameter 40 nm
+  filler_loading_vol_pct: 30.88
+  filler_loading_original_value: 30.88
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random (isotropic)
+  processing_method: Thinky mixer (2000 rpm, 2 min) of fillers into epoxy/hardener premix; hot pressed in metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 6.55
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 6.55
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results and Discussion, TC of h-BN/BNNT Hybrid Composites, paragraph 2: ''The TCs of the composites increased to 6.55 (≈ 908% improvement over pure epoxy resin, φ max = 0.124), 8.70 (≈ 1238% improvement, φ max = 0.063) and 10.93 W m−1·K (≈ 1582% improvement, φ max = 0.013) at filler contents of 30.88, 39.80, and 49.52 vol%, respectively.'''
+  confidence: High
+  notes: Total BN 30.88 vol%; φ = BNNT volume fraction / total filler volume fraction = 0.124 (optimum at this loading), i.e. roughly 3.8 vol% BNNT + 27.1 vol% h-BN (split derived, not printed; Table S8 in SI). Unit printed as 'W m−1·K' (typographical variant of W m−1 K−1); recorded as W/(m·K).
+- row_id: 31a43192-515
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: h-BN/BNNT hybrid
+  filler_material_original: h-BN/BNNT hybrid, 39.80 vol% total, φ max = 0.063
+  filler_shape: h-BN platelets (2D) + BN nanotubes (1D)
+  size_distribution: h-BN mean size 3 μm, thickness 20 nm; BNNT mean length 7 μm, diameter 40 nm
+  filler_loading_vol_pct: 39.8
+  filler_loading_original_value: 39.8
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random (isotropic)
+  processing_method: Thinky mixer (2000 rpm, 2 min) of fillers into epoxy/hardener premix; hot pressed in metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 8.7
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 8.7
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results and Discussion, TC of h-BN/BNNT Hybrid Composites, paragraph 2: ''The TCs of the composites increased to 6.55 (≈ 908% improvement over pure epoxy resin, φ max = 0.124), 8.70 (≈ 1238% improvement, φ max = 0.063) and 10.93 W m−1·K (≈ 1582% improvement, φ max = 0.013) at filler contents of 30.88, 39.80, and 49.52 vol%, respectively.'''
+  confidence: High
+  notes: Total BN 39.80 vol%; φ (BNNT fraction of total filler volume) = 0.063, the optimum at this loading. Printed as 8.70. Unit printed as 'W m−1·K' (typographical variant of W m−1 K−1); recorded as W/(m·K).
+- row_id: 31a43192-516
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: h-BN/BNNT hybrid
+  filler_material_original: h-BN/BNNT hybrid, 48.90 vol% h-BN + 0.63 vol% BNNT (49.52 vol% total), φ max = 0.013
+  filler_shape: h-BN platelets (2D) + BN nanotubes (1D)
+  size_distribution: h-BN mean size 3 μm, thickness 20 nm; BNNT mean length 7 μm, diameter 40 nm
+  filler_loading_vol_pct: 49.52
+  filler_loading_original_value: 49.52
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random (isotropic)
+  processing_method: Thinky mixer (2000 rpm, 2 min) of fillers into epoxy/hardener premix; hot pressed in metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 10.93
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 10.93
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Conclusion (also Abstract and Results, TC of h-BN/BNNT Hybrid Composites, paragraph 2): ''The epoxy composites with 48.90 vol%/0.63 vol% h‐BN/BNNT exhibited the highest TC of 10.93 W m−1·K, representing an increase in TC of 118% and 1582%, respectively, compared to the epoxy composite containing 49.45 vol% h‐BN and pure epoxy resin.'''
+  confidence: High
+  notes: Highest TC of the paper; total 49.52 vol% = 48.90 vol% h-BN + 0.63 vol% BNNT, φ = 0.013 (optimum). Unit printed as 'W m−1·K' (typographical variant of W m−1 K−1); recorded as W/(m·K).
+- row_id: 31a43192-517
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: h-BN/BNNT hybrid
+  filler_material_original: h-BN/BNNT hybrid, 30.88 vol% total, φ = 0.242 (beyond optimum)
+  filler_shape: h-BN platelets (2D) + BN nanotubes (1D)
+  size_distribution: h-BN mean size 3 μm, thickness 20 nm; BNNT mean length 7 μm, diameter 40 nm
+  filler_loading_vol_pct: 30.88
+  filler_loading_original_value: 30.88
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random (isotropic)
+  processing_method: Thinky mixer (2000 rpm, 2 min) of fillers into epoxy/hardener premix; hot pressed in metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 4.72
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 4.72
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results and Discussion, TC of h-BN/BNNT Hybrid Composites, paragraph 3: ''The TCs of composites with 30.88, 39.80, and 49.52 vol% BN contents were reduced to 4.72, 6.25, and 5.90 at φ = 0.242, 0.160, and 0.063, respectively.'''
+  confidence: High
+  notes: Reduced synergistic effect at excess BNNT ratio φ = 0.242 (BNNT fraction of total filler volume). Unit not printed in this sentence; taken from the paper's TC unit W m−1·K. Unit printed as 'W m−1·K' (typographical variant of W m−1 K−1); recorded as W/(m·K).
+- row_id: 31a43192-518
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: h-BN/BNNT hybrid
+  filler_material_original: h-BN/BNNT hybrid, 39.80 vol% total, φ = 0.160 (beyond optimum)
+  filler_shape: h-BN platelets (2D) + BN nanotubes (1D)
+  size_distribution: h-BN mean size 3 μm, thickness 20 nm; BNNT mean length 7 μm, diameter 40 nm
+  filler_loading_vol_pct: 39.8
+  filler_loading_original_value: 39.8
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random (isotropic)
+  processing_method: Thinky mixer (2000 rpm, 2 min) of fillers into epoxy/hardener premix; hot pressed in metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 6.25
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 6.25
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results and Discussion, TC of h-BN/BNNT Hybrid Composites, paragraph 3: ''The TCs of composites with 30.88, 39.80, and 49.52 vol% BN contents were reduced to 4.72, 6.25, and 5.90 at φ = 0.242, 0.160, and 0.063, respectively.'''
+  confidence: High
+  notes: Reduced synergistic effect at excess BNNT ratio φ = 0.160. Unit not printed in this sentence; taken from the paper's TC unit W m−1·K. Unit printed as 'W m−1·K' (typographical variant of W m−1 K−1); recorded as W/(m·K).
+- row_id: 31a43192-519
+  matrix_polymer: epoxy resin
+  curing_agent: hardener (hardener:epoxy 9:100 by weight; identity in SI only)
+  filler_material: h-BN/BNNT hybrid
+  filler_material_original: h-BN/BNNT hybrid, 49.52 vol% total, φ = 0.063 (beyond optimum)
+  filler_shape: h-BN platelets (2D) + BN nanotubes (1D)
+  size_distribution: h-BN mean size 3 μm, thickness 20 nm; BNNT mean length 7 μm, diameter 40 nm
+  filler_loading_vol_pct: 49.52
+  filler_loading_original_value: 49.52
+  filler_loading_original_unit: vol%
+  functionalization: none
+  filler_alignment: random (isotropic)
+  processing_method: Thinky mixer (2000 rpm, 2 min) of fillers into epoxy/hardener premix; hot pressed in metal mold at 80 °C and 15 MPa for 1 h
+  k_matrix_W_mK: 0.65
+  k_composite_W_mK: 5.9
+  k_direction: isotropic (isotropic TC)
+  measurement_method: TC analyzer based on ISO 22007-2 (transient plane source); isotropic TC
+  k_original_value: 5.9
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Results and Discussion, TC of h-BN/BNNT Hybrid Composites, paragraph 3: ''The TCs of composites with 30.88, 39.80, and 49.52 vol% BN contents were reduced to 4.72, 6.25, and 5.90 at φ = 0.242, 0.160, and 0.063, respectively.'''
+  confidence: High
+  notes: Reduced synergistic effect at excess BNNT ratio φ = 0.063 (optimum at this loading is 0.013). Printed as 5.90; unit taken from the paper's TC unit W m−1·K. Unit printed as 'W m−1·K' (typographical variant of W m−1 K−1); recorded as W/(m·K).

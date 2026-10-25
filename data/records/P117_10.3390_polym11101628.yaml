@@ -1,0 +1,50 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P117
+paper:
+  doi: 10.3390/polym11101628
+  title: Facile Liquid-Exfoliation Process of Boron Nitride Nanosheets for Thermal Conductive Polyphthalamide Composite
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11101628
+extraction_log:
+- seq: 129
+  candidate_id: P6-P117
+  doi: 10.3390/polym11101628
+  paper_title: Facile Liquid-Exfoliation Process of Boron Nitride Nanosheets for Thermal Conductive Polyphthalamide Composite
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym11101628.txt (cache, not committed)
+  tables_inspected: No tables in the paper.
+  figures_inspected: Figure 7a (through-plane k) and 7b (in-plane k) from LFA for raw PPA and PPA with raw BN, BN–OH and BNNs–A/B/C/D at 10–40 wt%. Figures 1–6, 8, 9 are FT-IR, XPS, SEM, TEM, AFM, DMA and cross-sections.
+  candidate_measurements: 2
+  rows_appended: 1
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 47 figure-only values not taken. Almost all k data are only in Figure 7a/7b. figure_only_skipped=47 is an estimate: 6 filler types (raw BN, BN–OH, BNNs–A/B/C/D) × 4 loadings (10–40 wt%) × 2 directions, plus the neat-PPA in-plane value, minus the printed 2.89. The ''44%'' and ''2.31-fold'' ratios are relative statements, not k values, so they are not extracted. MWCNT, graphene and other theoretical values in the Introduction come from the literature and were skipped.'
+  rows_rejected_at_append:
+  - - e8a17f87-373
+    - 'post-import validation: loading of the highest-k sample is not printed'
+  rows_added:
+  - e8a17f87-372
+measurements:
+- row_id: e8a17f87-372
+  matrix_polymer: polyphthalamide (PPA, SK chemicals)
+  filler_material: none
+  filler_material_original: raw PPA (neat matrix)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: twin-screw extruder melt mixing (BA-11, L/D 40; 170–220 °C, 100 g/min, 80 rpm) then compression molding at 12 MPa
+  k_matrix_W_mK: 0.18
+  k_composite_W_mK: 0.18
+  k_direction: through-plane
+  measurement_method: Laser flash analysis, Netzsch LFA 467 nanoflash; k = α·ρ·Cp
+  k_original_value: 0.18
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3 Results, paragraph after Figure 6 (discussion of Figure 7): ''As for through-plane thermal conductivity, the thermal conductivity of the raw PPA was approximately 0.18 W/(m·K), and the through-plane thermal conductivity of the BNNs-A composites increased from 2.89 W/(m·K), which was 44% that of PPA/raw–BN.'''
+  confidence: Medium
+  notes: Printed as 'approximately 0.18'. The Introduction also gives ≈0.18 W m−1K−1 as a general value for most PPAs. k printed as approximate or as a bound, so Medium confidence.

@@ -1,0 +1,172 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P166
+paper:
+  doi: 10.3390/polym12102331
+  title: Achieving a 3D Thermally Conductive while Electrically Insulating Network in Polybenzoxazine with a Novel Hybrid Filler Composed of Boron Nitride and Carbon Nanotubes
+  year: 2020
+  source_url: https://doi.org/10.3390/polym12102331
+extraction_log:
+- seq: 178
+  candidate_id: P6-P166
+  doi: 10.3390/polym12102331
+  paper_title: Achieving a 3D Thermally Conductive while Electrically Insulating Network in Polybenzoxazine with a Novel Hybrid Filler Composed of Boron Nitride and Carbon Nanotubes
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym12102331.txt (cache, not committed)
+  tables_inspected: Table 1 (BN@xCNT formula), Table 2 (CNT content by TGA), Table 3 (TGA data), Table 4 (EMA/Foygel fit parameters); none contain measured k values
+  figures_inspected: Captions of Figure 6 (k at 15/25 wt% BN@xCNT), Figure 8 (k vs loading of BN@15CNT, BN/CNTs, BN), Figure 9 (BN/BN@15CNT/PBz), Figure 13 (model fits)
+  candidate_measurements: 7
+  rows_appended: 7
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 6 figure-only values not taken. 7 rows from text (Sections 3.2–3.4). Neat PBz k is not printed (only % enhancements: 270/249/235%), so k_matrix is null. The 25 wt% BN/PBz composite is printed as 0.762 in Section 3.2 and as 0.765 in Section 3.3. Both are kept and flagged as a possible duplicate for the curator to resolve. figure_only_skipped=6 counts only the definite Figure 6 unprinted points (BN@5CNT, BN@10CNT, BN@20CNT at 15 and 25 wt%). Figure 8a (other loadings of BN, BN@15CNT'
+  rows_rejected_at_append: []
+  rows_added:
+  - 44378c35-620
+  - 44378c35-621
+  - 44378c35-622
+  - 44378c35-623
+  - 44378c35-624
+  - 44378c35-625
+  - 44378c35-626
+measurements:
+- row_id: 44378c35-620
+  matrix_polymer: Polybenzoxazine (PBz), from benzoxazine resin AIBZ682 (Ruiyi Chemical; density 1.20 g/cm3), thermally cured
+  filler_material: h-BN
+  filler_material_original: pristine h-BN (50 μm), sample 15 wt% BN/PBz
+  filler_shape: platelet
+  filler_mean_size_um: 50.0
+  filler_loading_wt_pct: 15.0
+  filler_loading_original_value: 15.0
+  filler_loading_original_unit: wt%
+  functionalization: none (pristine h-BN)
+  processing_method: Powder blending of filler and benzoxazine resin by ball milling (170 rpm, 2 h), hot pressing at 12 MPa with 160 °C/1 h + 180 °C/1 h + 200 °C/1 h + 220 °C/1 h; TC specimens 60 mm x 40 mm x 2 mm
+  k_composite_W_mK: 0.459
+  k_direction: unknown
+  measurement_method: Thermal conductivity instrument TC3000E (Xi'an Xiaxi Electronic Technology); specimens 60 mm x 40 mm x 2 mm
+  k_original_value: 0.459
+  k_original_unit: W· m−1· K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''The corresponding λ values of PBz composites were improved from 0.459 W· m−1· K−1 and 0.762 W· m−1· K−1 to 0.564 W· m−1· K−1 and 0.794 W· m−1· K−1, respectively, comparing with pristine BN.'''
+  confidence: High
+  notes: BN/PBz reference composite at 15 wt% (Figure 6 comparison). Neat PBz k not printed.
+- row_id: 44378c35-621
+  matrix_polymer: Polybenzoxazine (PBz), from benzoxazine resin AIBZ682 (Ruiyi Chemical; density 1.20 g/cm3), thermally cured
+  filler_material: h-BN
+  filler_material_original: pristine h-BN (50 μm), sample 25 wt% BN/PBz
+  filler_shape: platelet
+  filler_mean_size_um: 50.0
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: none (pristine h-BN)
+  processing_method: Powder blending of filler and benzoxazine resin by ball milling (170 rpm, 2 h), hot pressing at 12 MPa with 160 °C/1 h + 180 °C/1 h + 200 °C/1 h + 220 °C/1 h; TC specimens 60 mm x 40 mm x 2 mm
+  k_composite_W_mK: 0.762
+  k_direction: unknown
+  measurement_method: Thermal conductivity instrument TC3000E (Xi'an Xiaxi Electronic Technology); specimens 60 mm x 40 mm x 2 mm
+  k_original_value: 0.762
+  k_original_unit: W· m−1· K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''The corresponding λ values of PBz composites were improved from 0.459 W· m−1· K−1 and 0.762 W· m−1· K−1 to 0.564 W· m−1· K−1 and 0.794 W· m−1· K−1, respectively, comparing with pristine BN.'''
+  confidence: High
+  notes: BN/PBz at 25 wt% as printed in Section 3.2 (Figure 6 comparison). Section 3.3 prints 0.765 for the nominally same 25 wt% BN/PBz composite (Figure 8a series); the paper does not explain the 0.003 difference - possible duplicate, curator should choose one.
+- row_id: 44378c35-622
+  matrix_polymer: Polybenzoxazine (PBz), from benzoxazine resin AIBZ682 (Ruiyi Chemical; density 1.20 g/cm3), thermally cured
+  filler_material: h-BN
+  filler_material_original: pristine h-BN (50 μm), sample 25 wt% BN/PBz
+  filler_shape: platelet
+  filler_mean_size_um: 50.0
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: none (pristine h-BN)
+  processing_method: Powder blending of filler and benzoxazine resin by ball milling (170 rpm, 2 h), hot pressing at 12 MPa with 160 °C/1 h + 180 °C/1 h + 200 °C/1 h + 220 °C/1 h; TC specimens 60 mm x 40 mm x 2 mm
+  k_composite_W_mK: 0.765
+  k_direction: unknown
+  measurement_method: Thermal conductivity instrument TC3000E (Xi'an Xiaxi Electronic Technology); specimens 60 mm x 40 mm x 2 mm
+  k_original_value: 0.765
+  k_original_unit: W· m−1· K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''However, when the filler loading reached 25 wt%, the λ value of BN/CNTs/PBz composite reached 0.844 W· m−1· K−1, while that of BN@15CNT/PBz composites and BN/PBz composites was 0.794 W· m−1· K−1 and 0.765 W· m−1· K−1, respectively.'''
+  confidence: High
+  notes: BN/PBz at 25 wt% as printed in Section 3.3 (Figure 8a series); stated enhancement 235% over neat PBz. Section 3.2 prints 0.762 for the nominally same composite - possible duplicate, curator should choose one.
+- row_id: 44378c35-623
+  matrix_polymer: Polybenzoxazine (PBz), from benzoxazine resin AIBZ682 (Ruiyi Chemical; density 1.20 g/cm3), thermally cured
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: BN@15CNT hybrid filler (f-BN grafted with a-CNTs), sample 15 wt% BN@15CNT/PBz
+  filler_shape: h-BN platelets with attached CNTs ("line-plane" hierarchical structure)
+  size_distribution: h-BN 50 μm (supplier); CNT diameter 30~50 nm, length 10 μm
+  filler_loading_wt_pct: 15.0
+  filler_loading_original_value: 15.0
+  filler_loading_original_unit: wt%
+  functionalization: h-BN hydroxylated (5 M NaOH, 120 °C, 24 h) and silanized with APTES (f-BN), covalently bonded via amide bonds (DIC condensation) to acid-treated carboxylated CNTs (a-CNT, H2SO4/HNO3)
+  processing_method: Powder blending of filler and benzoxazine resin by ball milling (170 rpm, 2 h), hot pressing at 12 MPa with 160 °C/1 h + 180 °C/1 h + 200 °C/1 h + 220 °C/1 h; TC specimens 60 mm x 40 mm x 2 mm
+  k_composite_W_mK: 0.564
+  k_direction: unknown
+  measurement_method: Thermal conductivity instrument TC3000E (Xi'an Xiaxi Electronic Technology); specimens 60 mm x 40 mm x 2 mm
+  k_original_value: 0.564
+  k_original_unit: W· m−1· K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 2: ''The corresponding λ values of PBz composites were improved from 0.459 W· m−1· K−1 and 0.762 W· m−1· K−1 to 0.564 W· m−1· K−1 and 0.794 W· m−1· K−1, respectively, comparing with pristine BN.'''
+  confidence: High
+  notes: 15 wt% total BN@15CNT hybrid. BN@15CNT feed ratio BN:CNT = 10 g:1.5 g (Table 1); CNT content of the hybrid by TGA 9.430% (Table 2).
+- row_id: 44378c35-624
+  matrix_polymer: Polybenzoxazine (PBz), from benzoxazine resin AIBZ682 (Ruiyi Chemical; density 1.20 g/cm3), thermally cured
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: BN@15CNT hybrid filler (f-BN grafted with a-CNTs), sample 25 wt% BN@15CNT/PBz
+  filler_shape: h-BN platelets with attached CNTs ("line-plane" hierarchical structure)
+  size_distribution: h-BN 50 μm (supplier); CNT diameter 30~50 nm, length 10 μm
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: h-BN hydroxylated (5 M NaOH, 120 °C, 24 h) and silanized with APTES (f-BN), covalently bonded via amide bonds (DIC condensation) to acid-treated carboxylated CNTs (a-CNT, H2SO4/HNO3)
+  processing_method: Powder blending of filler and benzoxazine resin by ball milling (170 rpm, 2 h), hot pressing at 12 MPa with 160 °C/1 h + 180 °C/1 h + 200 °C/1 h + 220 °C/1 h; TC specimens 60 mm x 40 mm x 2 mm
+  k_composite_W_mK: 0.794
+  k_direction: unknown
+  measurement_method: Thermal conductivity instrument TC3000E (Xi'an Xiaxi Electronic Technology); specimens 60 mm x 40 mm x 2 mm
+  k_original_value: 0.794
+  k_original_unit: W· m−1· K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1 (also Section 3.2, abstract and conclusions): ''However, when the filler loading reached 25 wt%, the λ value of BN/CNTs/PBz composite reached 0.844 W· m−1· K−1, while that of BN@15CNT/PBz composites and BN/PBz composites was 0.794 W· m−1· K−1 and 0.765 W· m−1· K−1, respectively.'''
+  confidence: High
+  notes: 25 wt% total BN@15CNT hybrid; stated enhancement 249% over neat PBz. Same value printed in Section 3.2, abstract and conclusions. BN@15CNT feed ratio BN:CNT = 10 g:1.5 g (Table 1); CNT content of the hybrid by TGA 9.430% (Table 2).
+- row_id: 44378c35-625
+  matrix_polymer: Polybenzoxazine (PBz), from benzoxazine resin AIBZ682 (Ruiyi Chemical; density 1.20 g/cm3), thermally cured
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: BN/CNTs simple physical blend (same BN:CNT mass ratio as BN@15CNT), sample 25 wt% BN/CNTs/PBz
+  size_distribution: h-BN 50 μm (supplier); CNT diameter 30~50 nm, length 10 μm
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  processing_method: Powder blending of filler and benzoxazine resin by ball milling (170 rpm, 2 h), hot pressing at 12 MPa with 160 °C/1 h + 180 °C/1 h + 200 °C/1 h + 220 °C/1 h; TC specimens 60 mm x 40 mm x 2 mm
+  k_composite_W_mK: 0.844
+  k_direction: unknown
+  measurement_method: Thermal conductivity instrument TC3000E (Xi'an Xiaxi Electronic Technology); specimens 60 mm x 40 mm x 2 mm
+  k_original_value: 0.844
+  k_original_unit: W· m−1· K−1
+  value_source: text
+  source_location: 'Section 3.3, paragraph 1: ''However, when the filler loading reached 25 wt%, the λ value of BN/CNTs/PBz composite reached 0.844 W· m−1· K−1, while that of BN@15CNT/PBz composites and BN/PBz composites was 0.794 W· m−1· K−1 and 0.765 W· m−1· K−1, respectively.'''
+  confidence: High
+  notes: 25 wt% total of simply blended BN and CNTs at the BN@15CNT mass ratio (feed 10:1.5); the paper does not state whether pristine or treated BN/CNTs were used in the blend. Stated enhancement 270% over neat PBz.
+- row_id: 44378c35-626
+  matrix_polymer: Polybenzoxazine (PBz), from benzoxazine resin AIBZ682 (Ruiyi Chemical; density 1.20 g/cm3), thermally cured
+  filler_material: h-BN/CNT hybrid
+  filler_material_original: BN@15CNT hybrid filler + pristine h-BN, sample 15 wt% BN@15CNT + 10 wt% BN in PBz
+  size_distribution: h-BN 50 μm (supplier); CNT diameter 30~50 nm, length 10 μm
+  filler_loading_wt_pct: 25.0
+  filler_loading_original_value: 25.0
+  filler_loading_original_unit: wt%
+  functionalization: 'BN@15CNT component: h-BN hydroxylated (5 M NaOH, 120 °C, 24 h) and silanized with APTES (f-BN), covalently bonded via amide bonds (DIC condensation) to acid-treated carboxylated CNTs (a-CNT, H2SO4/HNO3); added h-BN pristine'
+  processing_method: Powder blending of filler and benzoxazine resin by ball milling (170 rpm, 2 h), hot pressing at 12 MPa with 160 °C/1 h + 180 °C/1 h + 200 °C/1 h + 220 °C/1 h; TC specimens 60 mm x 40 mm x 2 mm
+  k_composite_W_mK: 0.865
+  k_direction: unknown
+  measurement_method: Thermal conductivity instrument TC3000E (Xi'an Xiaxi Electronic Technology); specimens 60 mm x 40 mm x 2 mm
+  k_original_value: 0.865
+  k_original_unit: W· m−1· K−1
+  value_source: text
+  source_location: 'Section 3.4, paragraph 1 (also abstract and conclusions): ''With 15 wt% of BN@15CNT and 10 wt% of BN, the PBz composite’s λ value reached 0.865 W· m−1· K−1.'''
+  confidence: High
+  notes: Total filler 25 wt% = 15 wt% BN@15CNT hybrid + 10 wt% pristine h-BN. BN@15CNT feed ratio BN:CNT = 10 g:1.5 g (Table 1); CNT content of the hybrid by TGA 9.430% (Table 2).

@@ -1,0 +1,93 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P139
+paper:
+  doi: 10.3390/nano13071210
+  title: Dopamine-Mediated Graphene Bridging Hexagonal Boron Nitride for Large-Scale Composite Films with Enhanced Thermal Conductivity and Electrical Insulation
+  year: 2023
+  source_url: https://doi.org/10.3390/nano13071210
+extraction_log:
+- seq: 151
+  candidate_id: P6-P139
+  doi: 10.3390/nano13071210
+  paper_title: Dopamine-Mediated Graphene Bridging Hexagonal Boron Nitride for Large-Scale Composite Films with Enhanced Thermal Conductivity and Electrical Insulation
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_nano13071210.txt (cache, not committed)
+  tables_inspected: none in the main text (Table S1, the supplementary diffusivity/density/Cp table, is not available; only its kp value is quoted in the text)
+  figures_inspected: Fig. 3a (in-plane k, BC/BNPDA and BC/BNPDA/GNSPDA-5 vs filler content), Fig. 3b (through-plane k, same series), Fig. 3c (in-plane k of 70 wt% films vs GNSPDA ratio 0–10 wt%), Fig. 3e (simulation), Fig. 3f (literature comparison)
+  candidate_measurements: 3
+  rows_appended: 3
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 20 figure-only values not taken. Three printed experimental values: BC matrix in-plane (3.05, from Table S1 via the text), BC/BNPDA 70 wt% in-plane (21.7) and BC/BNPDA/GNSPDA-5 70 wt% in-plane (34.9). Through-plane values and the other filler contents/GNSPDA ratios are figure-only (Fig. 3a–c). figure_only_skipped is an estimate, because the number of filler contents per series is not stated in the text. Skipped: the previous-work 21.6 value [5], simulated 21.0/34.7, literature kf '
+  rows_rejected_at_append: []
+  rows_added:
+  - eff1bb06-441
+  - eff1bb06-442
+  - eff1bb06-443
+measurements:
+- row_id: eff1bb06-441
+  matrix_polymer: Bacterial cellulose (BC) nanofibers
+  filler_material: none
+  filler_material_original: BC matrix (kp)
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  k_matrix_W_mK: 3.05
+  k_composite_W_mK: 3.05
+  k_direction: in-plane
+  measurement_method: Laser flash (NETZSCH LFA 467 NanoFlash) thermal diffusivity; k = α·ρ·C, C from rule of mixtures with Cp measured by DSC (NETZSCH DSC214)
+  k_original_value: 3.05
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.2, EMT model description (value attributed to Table S1): ''where kp (3.05 W·m−1·K−1, Table S1), kf (180 W·m−1·K−1), and k are the in-plane thermal conductivities of BC matrix, BN fillers, and composite films, respectively;'''
+  confidence: High
+  notes: 'In-plane k of the BC matrix, used as an EMT model input and taken from the paper''s own Table S1. kf = 180 for BN is a literature value and was skipped. Corrected in verification: kp = 3.05 is the in-plane k of the BC matrix, taken from the paper''s own Table S1 and printed in the text, so it is in scope as a neat-matrix row. The paper never describes how the pure BC film was made; only filled films are cast on nylon and LBL-scraped. ''Film cast from BC solution'' is therefore an inference and should be null. All other fields are fine.'
+- row_id: eff1bb06-442
+  matrix_polymer: Bacterial cellulose (BC) nanofibers
+  filler_material: h-BN
+  filler_material_original: BNPDA (polydopamine-modified hexagonal BN, Macklin), sample BC/BNPDA (BC/BNPDA/GNSPDA-0), 70 wt%
+  filler_mean_size_um: 7.0
+  size_distribution: lateral size ~7 μm (L = 7.0 μm), thickness d = 0.5 μm (Figure S1)
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: polydopamine coating
+  filler_alignment: partially oriented in-plane stacking (XRD I002/I100 = 89)
+  processing_method: BNPDA mixed into BC solution (2 mg/mL), cast on nylon film, heated 100 °C 5 min, layer-by-layer (LBL) scraping
+  k_matrix_W_mK: 3.05
+  k_composite_W_mK: 21.7
+  k_direction: in-plane
+  measurement_method: Laser flash (NETZSCH LFA 467 NanoFlash) thermal diffusivity; k = α·ρ·C, C from rule of mixtures with Cp measured by DSC (NETZSCH DSC214)
+  k_original_value: 21.7
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph on numerical simulation (also paragraph 1: ''LBL scraping method (21.7 W·m−1·K−1)''): ''The numerical thermal conductivities of BC/BNPDA and BC/BNPDA/GNSPDA-5 composite films are separately 21.0 and 34.7 W·m−1·K−1, which are approximately consistent with the experimental values (21.7 and 34.9 W·m−1·K−1) at the fixed filler content of 70 wt% (Figure 3a).'''
+  confidence: High
+  notes: 'This work''s LBL-scraped BC/BNPDA film. The 21.6 value for vacuum-filtered BC/BNPDA is from the authors'' previous work [5] and was skipped. The 21.0 value is simulated and was skipped. Aspect ratio not stated directly (L/d = 7.0/0.5). Corrected in verification: 21.7 for this work''s LBL-scraped BC/BNPDA at 70 wt%, in-plane, is correct. It also appears in Sec. 3.2 para 1 (''LBL scraping method (21.7 ...)''). The paper never calls the BN ''platelet''; it gives only diameter ~7 μm, thickness 0.5 μm and lateral size 7.0 μm, so the shape should be null (dimensions are already in size_distribution). The other fields are correct, including hexagonal BN → h-BN and the 21.6 previous-work and 21.0 simulated values being skipped.'
+- row_id: eff1bb06-443
+  matrix_polymer: Bacterial cellulose (BC) nanofibers
+  filler_material: h-BN/graphene hybrid
+  filler_material_original: BNPDA + GNSPDA (polydopamine-modified h-BN and graphene nanosheets), sample BC/BNPDA/GNSPDA-5, 70 wt%
+  filler_mean_size_um: 7.0
+  size_distribution: BN lateral ~7 μm, thickness 0.5 μm; GNS diameter ~7 μm
+  filler_loading_wt_pct: 70.0
+  filler_loading_original_value: 70.0
+  filler_loading_original_unit: wt%
+  functionalization: polydopamine coating (both BN and GNS)
+  filler_alignment: highly oriented in-plane stacking (XRD I002/I100 = 132)
+  processing_method: BNPDA/GNSPDA mixed into BC solution (2 mg/mL), cast on nylon film, heated 100 °C 5 min, layer-by-layer (LBL) scraping
+  k_matrix_W_mK: 3.05
+  k_composite_W_mK: 34.9
+  k_direction: in-plane
+  measurement_method: Laser flash (NETZSCH LFA 467 NanoFlash) thermal diffusivity; k = α·ρ·C, C from rule of mixtures with Cp measured by DSC (NETZSCH DSC214)
+  k_original_value: 34.9
+  k_original_unit: W·m−1·K−1
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1 (also Abstract and Conclusions): ''In particular, the in-plane thermal conductivity of the BC/BNPDA/GNSPDA-5 composite film reaches 34.9 W·m−1·K−1 at the hybrid filler mass ratio of 70 wt%, which increases to 161% relative to the BC/BNPDA film (21.7 W·m−1·K−1) [5].'''
+  confidence: High
+  notes: 'Total hybrid filler 70 wt% of the film. GNSPDA is 5 wt% of the hybrid filler and BNPDA 95 wt% (i.e. ~66.5 wt% BN and ~3.5 wt% GNS of the film; this split is computed and not printed). The 34.7 value is simulated and was skipped. Corrected in verification: 34.9 in-plane for BC/BNPDA/GNSPDA-5 at 70 wt% total hybrid filler (GNSPDA 5 wt% of the filler) is correct and repeated in the abstract and conclusions. As in row 1, ''platelet'' is not stated in the paper. The notes already flag the computed 66.5/3.5 split as not printed.'

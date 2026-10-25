@@ -1,0 +1,153 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P110
+paper:
+  doi: 10.1038/srep34726
+  title: Hybrid boron nitride-natural fiber composites for enhanced thermal conductivity
+  year: 2016
+  source_url: https://doi.org/10.1038/srep34726
+extraction_log:
+- seq: 122
+  candidate_id: P6-P110
+  doi: 10.1038/srep34726
+  paper_title: Hybrid boron nitride-natural fiber composites for enhanced thermal conductivity
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1038_srep34726.txt (cache, not committed)
+  tables_inspected: Table 1 (preform feedstocks and components, vol%), Table 2 (densities and components of composites, vol%); neither contains k
+  figures_inspected: Figure 2 (k of specimens), all values also printed in text
+  candidate_measurements: 5
+  rows_appended: 5
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. All k values are printed in the text (Fig. 2 duplicates them), so no figure-only skips. Kenaf/Epoxy (0.406 W/mK) was skipped because it has no BN. For the hybrids, the total filler vol% is hBN + kenaf from Table 2, with the split in notes. The text sometimes mislabels samples (''Keaf'', ''Kenaf/Epoxy/hBN-43.6%'' listed twice in the composition sentence); Table 2 has the correct 34.2/43.6/48.4. k was measured in the axial direction of 40 mm x 5 mm disks '
+  rows_rejected_at_append: []
+  rows_added:
+  - 1f8561cc-323
+  - 1f8561cc-324
+  - 1f8561cc-325
+  - 1f8561cc-326
+  - 1f8561cc-327
+measurements:
+- row_id: 1f8561cc-323
+  matrix_polymer: Epoxy (Huntsman Araldite LY 1556 US)
+  curing_agent: Aradur 2964 (Huntsman), epoxy/hardener 2/1 vol/vol
+  filler_material: none
+  filler_material_original: pure Epoxy
+  filler_loading_vol_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: vol% (volume fraction)
+  processing_method: Hot-pressed in 40 mm steel mold at 150 °C, ~13.2 MPa, 60 min
+  k_matrix_W_mK: 0.214
+  k_composite_W_mK: 0.214
+  k_direction: through-plane (axial direction)
+  measurement_method: Transient plane source, Hot Disk TPS 1500 Thermal Constants Analyser with Kapton sensor (isotropic/anisotropic probe), axial direction, samples ~40 mm dia x 5 mm thick, single-sample testing
+  measurement_temperature_C: 20.0
+  k_original_value: 0.214
+  k_original_unit: W m-1 K−1
+  value_source: text
+  source_location: 'Results, Thermal conductivity, paragraph 1: ''Epoxy (0.214 ± 0.003 W m-1 K−1) and Kenaf/Epoxy (0.406 ± 0.001 W m−1 K−1) owned low thermal conductivities, and Keaf/Epoxy/hBN-34.2% (3.926 ± 0.064 W m−1 K−1), Kenaf/Epoxy/hBN-43.6% (6.418 ± 0.130 W m−1 K−1), Kenaf/Epoxy/hBN-48.4% (4.619 ± 0.212 W m−1 K−1), and Epoxy/hBN-69.0% (3.600 ± 0.349 W m−1 K−1) composites presented much higher thermal conductivities.'''
+  confidence: High
+  notes: ± 0.003 W/mK. Density 1.12 g/cm3 (Table 2). Whether neat epoxy was hot-pressed exactly like the composites is not stated explicitly.
+- row_id: 1f8561cc-324
+  matrix_polymer: Epoxy (Huntsman Araldite LY 1556 US)
+  curing_agent: Aradur 2964 (Huntsman), epoxy/hardener 2/1 vol/vol
+  filler_material: h-BN/kenaf fiber hybrid
+  filler_material_original: hBN (Momentive, No. 2107825) loaded on alkali-retted kenaf fiber, sample Kenaf/Epoxy/hBN-34.2% (printed as 'Keaf/Epoxy/hBN-34.2%')
+  filler_shape: hBN platelets on kenaf fibers
+  filler_mean_size_um: 13.8
+  size_distribution: hBN average diameter 13.8 ± 2.9 μm; kenaf fiber diameter 11.5 ± 1.9 μm
+  filler_loading_vol_pct: 69.1
+  filler_loading_original_value: 34.2 (hBN) + 34.9 (kenaf fiber)
+  filler_loading_original_unit: vol% (volume fraction, Table 2)
+  functionalization: none on hBN; kenaf alkali-retted (5% NaOH, 160 °C, 1 h)
+  filler_alignment: hBN ordered on fiber surfaces (fiber template); fiber preform mat
+  processing_method: hBN deposited onto wet retted kenaf fibers in water (stirred 1 h), formed into preform mat, dried 105 °C 24 h; mat mixed with epoxy and hot-pressed in 40 mm mold at 150 °C, ~13.2 MPa, 60 min
+  k_matrix_W_mK: 0.214
+  k_composite_W_mK: 3.926
+  k_direction: through-plane (axial direction)
+  measurement_method: Transient plane source, Hot Disk TPS 1500 Thermal Constants Analyser with Kapton sensor (isotropic/anisotropic probe), axial direction, samples ~40 mm dia x 5 mm thick
+  measurement_temperature_C: 20.0
+  k_original_value: 3.926
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, Thermal conductivity, paragraph 1; composition from Table 2: ''Epoxy (0.214 ± 0.003 W m-1 K−1) and Kenaf/Epoxy (0.406 ± 0.001 W m−1 K−1) owned low thermal conductivities, and Keaf/Epoxy/hBN-34.2% (3.926 ± 0.064 W m−1 K−1), Kenaf/Epoxy/hBN-43.6% (6.418 ± 0.130 W m−1 K−1), Kenaf/Epoxy/hBN-48.4% (4.619 ± 0.212 W m−1 K−1), and Epoxy/hBN-69.0% (3.600 ± 0.349 W m−1 K−1) composites presented much higher thermal conductivities.'''
+  confidence: High
+  notes: '± 0.064 W/mK. Table 2 composition (vol%): resin 30.9 / kenaf 34.9 / hBN 34.2; total filler 69.1 vol% = hBN 34.2 + kenaf 34.9 (summed from Table 2). The label says ''Keaf'' in the text (typo for Kenaf). Density 1.52 g/cm3.'
+- row_id: 1f8561cc-325
+  matrix_polymer: Epoxy (Huntsman Araldite LY 1556 US)
+  curing_agent: Aradur 2964 (Huntsman), epoxy/hardener 2/1 vol/vol
+  filler_material: h-BN/kenaf fiber hybrid
+  filler_material_original: hBN (Momentive, No. 2107825) loaded on alkali-retted kenaf fiber, sample Kenaf/Epoxy/hBN-43.6%
+  filler_shape: hBN platelets on kenaf fibers
+  filler_mean_size_um: 13.8
+  size_distribution: hBN average diameter 13.8 ± 2.9 μm; kenaf fiber diameter 11.5 ± 1.9 μm
+  filler_loading_vol_pct: 69.9
+  filler_loading_original_value: 43.6 (hBN) + 26.3 (kenaf fiber)
+  filler_loading_original_unit: vol% (volume fraction, Table 2)
+  functionalization: none on hBN; kenaf alkali-retted (5% NaOH, 160 °C, 1 h)
+  filler_alignment: hBN ordered on fiber surfaces (fiber template, micro-CT); fiber preform mat
+  processing_method: hBN deposited onto wet retted kenaf fibers in water (stirred 1 h), formed into preform mat, dried 105 °C 24 h; mat mixed with epoxy and hot-pressed in 40 mm mold at 150 °C, ~13.2 MPa, 60 min
+  k_matrix_W_mK: 0.214
+  k_composite_W_mK: 6.418
+  k_direction: through-plane (axial direction)
+  measurement_method: Transient plane source, Hot Disk TPS 1500 Thermal Constants Analyser with Kapton sensor (isotropic/anisotropic probe), axial direction, samples ~40 mm dia x 5 mm thick
+  measurement_temperature_C: 20.0
+  k_original_value: 6.418
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, Thermal conductivity, paragraph 1; composition from Table 2: ''Epoxy (0.214 ± 0.003 W m-1 K−1) and Kenaf/Epoxy (0.406 ± 0.001 W m−1 K−1) owned low thermal conductivities, and Keaf/Epoxy/hBN-34.2% (3.926 ± 0.064 W m−1 K−1), Kenaf/Epoxy/hBN-43.6% (6.418 ± 0.130 W m−1 K−1), Kenaf/Epoxy/hBN-48.4% (4.619 ± 0.212 W m−1 K−1), and Epoxy/hBN-69.0% (3.600 ± 0.349 W m−1 K−1) composites presented much higher thermal conductivities.'''
+  confidence: High
+  notes: '± 0.130 W/mK; the best sample (also in Abstract and Discussion). Table 2 composition (vol%): resin 30.1 / kenaf 26.3 / hBN 43.6; total filler 69.9 vol% (summed). Density 1.65 g/cm3. Probably made from the Kenaf/hBN-B preform (SEM reference in text).'
+- row_id: 1f8561cc-326
+  matrix_polymer: Epoxy (Huntsman Araldite LY 1556 US)
+  curing_agent: Aradur 2964 (Huntsman), epoxy/hardener 2/1 vol/vol
+  filler_material: h-BN/kenaf fiber hybrid
+  filler_material_original: hBN (Momentive, No. 2107825) loaded on alkali-retted kenaf fiber, sample Kenaf/Epoxy/hBN-48.4%
+  filler_shape: hBN platelets on kenaf fibers
+  filler_mean_size_um: 13.8
+  size_distribution: hBN average diameter 13.8 ± 2.9 μm; kenaf fiber diameter 11.5 ± 1.9 μm
+  filler_loading_vol_pct: 69.8
+  filler_loading_original_value: 48.4 (hBN) + 21.4 (kenaf fiber)
+  filler_loading_original_unit: vol% (volume fraction, Table 2)
+  functionalization: none on hBN; kenaf alkali-retted (5% NaOH, 160 °C, 1 h)
+  filler_alignment: hBN on fiber surfaces; fiber preform mat
+  processing_method: hBN deposited onto wet retted kenaf fibers in water (stirred 1 h), formed into preform mat, dried 105 °C 24 h; mat mixed with epoxy and hot-pressed in 40 mm mold at 150 °C, ~13.2 MPa, 60 min
+  k_matrix_W_mK: 0.214
+  k_composite_W_mK: 4.619
+  k_direction: through-plane (axial direction)
+  measurement_method: Transient plane source, Hot Disk TPS 1500 Thermal Constants Analyser with Kapton sensor (isotropic/anisotropic probe), axial direction, samples ~40 mm dia x 5 mm thick
+  measurement_temperature_C: 20.0
+  k_original_value: 4.619
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, Thermal conductivity, paragraph 1; composition from Table 2: ''Epoxy (0.214 ± 0.003 W m-1 K−1) and Kenaf/Epoxy (0.406 ± 0.001 W m−1 K−1) owned low thermal conductivities, and Keaf/Epoxy/hBN-34.2% (3.926 ± 0.064 W m−1 K−1), Kenaf/Epoxy/hBN-43.6% (6.418 ± 0.130 W m−1 K−1), Kenaf/Epoxy/hBN-48.4% (4.619 ± 0.212 W m−1 K−1), and Epoxy/hBN-69.0% (3.600 ± 0.349 W m−1 K−1) composites presented much higher thermal conductivities.'''
+  confidence: High
+  notes: '± 0.212 W/mK. Table 2 composition (vol%): resin 30.2 / kenaf 21.4 / hBN 48.4; total filler 69.8 vol% (summed). Density 1.66 g/cm3.'
+- row_id: 1f8561cc-327
+  matrix_polymer: Epoxy (Huntsman Araldite LY 1556 US)
+  curing_agent: Aradur 2964 (Huntsman), epoxy/hardener 2/1 vol/vol
+  filler_material: h-BN
+  filler_material_original: hBN powder (Momentive, No. 2107825), sample Epoxy/hBN-69.0%
+  filler_shape: platelet
+  filler_mean_size_um: 13.8
+  size_distribution: average diameter 13.8 ± 2.9 μm
+  filler_loading_vol_pct: 69.0
+  filler_loading_original_value: 69.0
+  filler_loading_original_unit: vol% (volume fraction, Table 2)
+  functionalization: none
+  filler_alignment: uniform, random distribution (micro-CT)
+  processing_method: Mixed with epoxy and hot-pressed in 40 mm mold at 150 °C, ~13.2 MPa, 60 min (same composite fabrication route)
+  k_matrix_W_mK: 0.214
+  k_composite_W_mK: 3.6
+  k_direction: through-plane (axial direction)
+  measurement_method: Transient plane source, Hot Disk TPS 1500 Thermal Constants Analyser with Kapton sensor (isotropic/anisotropic probe), axial direction, samples ~40 mm dia x 5 mm thick
+  measurement_temperature_C: 20.0
+  k_original_value: 3.6
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Results, Thermal conductivity, paragraph 1; composition from Table 2: ''Epoxy (0.214 ± 0.003 W m-1 K−1) and Kenaf/Epoxy (0.406 ± 0.001 W m−1 K−1) owned low thermal conductivities, and Keaf/Epoxy/hBN-34.2% (3.926 ± 0.064 W m−1 K−1), Kenaf/Epoxy/hBN-43.6% (6.418 ± 0.130 W m−1 K−1), Kenaf/Epoxy/hBN-48.4% (4.619 ± 0.212 W m−1 K−1), and Epoxy/hBN-69.0% (3.600 ± 0.349 W m−1 K−1) composites presented much higher thermal conductivities.'''
+  confidence: High
+  notes: 'Printed as 3.600 ± 0.349. Table 2: resin 31.0 / hBN 69.0 vol%, density 1.76 g/cm3. No kenaf. Exactly how the hBN/epoxy-only sample was prepared is not described separately.'
