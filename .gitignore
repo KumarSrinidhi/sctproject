@@ -12,3 +12,10 @@ venv/
 # External raw files whose licence forbids redistribution, or that are large; `argus external fetch` gets them.
 data/external/ncomms/raw/
 data/external/tagp/raw/
+
+# Secrets: never commit API keys.
+OPENALEX_API_KEY.txt
+*.key
+.env
+# Third-party files kept locally but not redistributed (see LICENSE-DATA.md).
+local_archive/
