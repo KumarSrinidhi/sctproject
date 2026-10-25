@@ -1,0 +1,105 @@
+# External datasets used to test ARGUS. They never enter data/records/.
+# Raw files are byte-identical to the download; `argus verify` checks the sha256.
+# Each licence allows redistribution with attribution; changes we make (series
+# selection, filler/matrix labels, DOIs) are recorded in the adapters' maps.
+sources:
+  evf:
+    title: EVF_Thermal_Conductivity_Dataset
+    authors: [Dimitrios Anastasiou]
+    year: 2026
+    doi: 10.6084/m9.figshare.31408854.v1
+    url: https://figshare.com/articles/dataset/EVF_Thermal_Conductivity_Dataset/31408854
+    license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    citation: >-
+      Anastasiou, D. (2026). EVF_Thermal_Conductivity_Dataset [Data set]. figshare.
+      https://doi.org/10.6084/m9.figshare.31408854.v1
+    role: >-
+      Independent test set: 293 literature points (56 series) with matrix k reported for every
+      series. The polymer + ceramic series are mapped in evf/series_map.yaml.
+    files:
+      - path: evf/raw/EVF_Thermal_Conductivity_Dataset.xlsx
+        url: https://ndownloader.figshare.com/files/62145732
+        sha256: a7590b4b0cdd4f8046076956459ea99bf99c01674e5da6784df03d967e9d29e5
+      - path: evf/raw/README.txt
+        url: https://ndownloader.figshare.com/files/62145735
+        sha256: a8e3acca538ec0dc04334c56c33af31eaf904412c1a75b047e0c9be40dc3d3fd
+  bcc:
+    title: Data Supporting "Thermal Conductivity Modeling Beyond the Dilute Limit"
+    authors: [Lu He, Kai Wu, Qiang Fu]
+    year: 2025
+    doi: 10.6084/m9.figshare.30426895.v1
+    url: https://figshare.com/articles/dataset/Data_Supporting_Thermal_Conductivity_Modeling_Beyond_the_Dilute_Limit_/30426895
+    license: MIT
+    license_url: https://opensource.org/licenses/MIT
+    citation: >-
+      He, L., Wu, K., & Fu, Q. (2025). Data Supporting "Thermal Conductivity Modeling Beyond the
+      Dilute Limit" [Data set]. figshare. https://doi.org/10.6084/m9.figshare.30426895.v1
+    role: >-
+      Physics test set: 243 points with km, kf, particle diameter and loading (no material names
+      per row), plus the authors' own model predictions, used to cross-check our implementations.
+    files:
+      - path: bcc/raw/Source data NCOMMS-25-36881A.xlsx
+        url: https://ndownloader.figshare.com/files/58982047
+        sha256: 63cde1f12431064f8d96c45af2ff2d27bc7341365610723733198b069e534a9a
+      - path: bcc/raw/README.pdf
+        url: https://ndownloader.figshare.com/files/58982098
+        sha256: b5859739991b8473fcc4ec24c84b2ce4c81d79bba62057ea079193ddb9c99bff
+  ncomms:
+    title: Supplementary Data 1 of He, Wu & Fu, Nat. Commun. 2025
+    authors: [Lu He, Kai Wu, Qiang Fu]
+    year: 2025
+    doi: 10.1038/s41467-025-67013-y
+    url: https://www.nature.com/articles/s41467-025-67013-y
+    license: CC-BY-NC-ND-4.0
+    license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/
+    citation: >-
+      He, L., Wu, K., & Fu, Q. (2025). Thermal conductivity modeling beyond the dilute limit.
+      Nature Communications. https://doi.org/10.1038/s41467-025-67013-y (Supplementary Data 1)
+    role: >-
+      Second independent test set: the labelled version of the BCC points (system, k method, Vf and
+      wt fraction, km per row). Non-commercial, no-derivatives licence, so the workbook is fetched on
+      demand and never committed; the block-to-paper map (ncomms/block_map.yaml) is our own curation
+      from Supplementary Table S3.
+    files:
+      - path: ncomms/raw/41467_2025_67013_MOESM3_ESM.xlsx
+        url: https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-025-67013-y/MediaObjects/41467_2025_67013_MOESM3_ESM.xlsx
+        sha256: fd19a19694cd1e0dcadd15b9965f84091544b1118984a555dafdc931e995382e
+        committed: false
+  tagp:
+    title: Digitized percolation datasets of Sarikhani et al. 2022 (S10)
+    authors: [Sarikhani, et al.]
+    year: 2022
+    doi: 10.1063/5.0089445
+    url: https://arxiv.org/abs/2209.07635
+    license: CC-BY-4.0
+    license_url: https://creativecommons.org/licenses/by/4.0/
+    citation: >-
+      Sarikhani, N., et al. (2022). Unified modeling and experimental realization of electrical and
+      thermal percolation in polymer composites. Applied Physics Reviews, 9, 041403. arXiv:2209.07635
+    role: >-
+      Datasets DS03 (h-BN/epoxy, Kargar et al. 2018; test set) and DS04 (BNNS/epoxy, Han et al. 2019 =
+      ARGUS P081; value cross-check), transcribed from Supplementary section S10 of the arXiv PDF into
+      tagp/tagp_thermal_datasets.csv and checked value by value by a second reading. The PDF is not
+      committed (4.8 MB); its checksum pins the version transcribed.
+    files:
+      - path: tagp/raw/2209.07635.pdf
+        url: https://arxiv.org/pdf/2209.07635
+        sha256: 7106baff2d1a731c3eba5bbd3834db41779c3521398df06fe87ee4a7afa711a5
+        committed: false
+  heliyon:
+    title: Mumtaz et al. 2024, Heliyon 10, e25381, Table 1
+    authors: [Mumtaz, et al.]
+    year: 2024
+    doi: 10.1016/j.heliyon.2024.e25381
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10862693/
+    license: CC-BY-NC-ND-4.0
+    license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/
+    citation: >-
+      Mumtaz, et al. (2024). Fillers and methods to improve the effective (out-plane) thermal
+      conductivity of polymeric thermal interface materials - a review. Heliyon, 10, e25381.
+      https://doi.org/10.1016/j.heliyon.2024.e25381
+    role: >-
+      Value cross-check only. Of its 21-row summary table we keep, as facts with attribution, the two
+      rows whose source papers are in ARGUS (heliyon/shared_rows.csv); the table itself is not copied.
+    files: []

@@ -1,0 +1,5 @@
+table_row,matrix,filler,loading_text,vol_pct,direction,k_W_mK,technique,ref_number,ref_doi
+2,epoxy,AlN-H (AlN honeycomb),47.26 vol%,47.26,in-plane,9.48,freeze-casting method,73,10.1016/j.compscitech.2020.108304
+2,epoxy,AlN-H (AlN honeycomb),47.26 vol%,47.26,through-plane,4.45,freeze-casting method,73,10.1016/j.compscitech.2020.108304
+7,Epoxy,BNNS,15 vol %,15,in-plane,6.54,Freezing assembly (bidirectional),77,10.1002/adfm.201900412
+7,Epoxy,BNNS,15 vol %,15,through-plane,0.7,Freezing assembly (bidirectional),77,10.1002/adfm.201900412

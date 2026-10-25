@@ -12,6 +12,11 @@
     r.deg = ["through-plane", "in-plane", "mixed"].includes(r.de) ? r.de : "unknown";
     BY_ID[r.id] = r;
   });
+  // Other groups' data: an optional comparison layer, off by default. These points are
+  // not ARGUS rows: never filtered, counted, tabled or exported; drawn hollow and grey
+  // beneath the ARGUS points. Papers ARGUS contains were removed when the page was built.
+  const EXT = Array.isArray(DATA.external) ? DATA.external : [];
+  const EXT_SRC = DATA.external_sources || {};
 
   const SVGNS = "http://www.w3.org/2000/svg";
   const $ = (sel) => document.querySelector(sel);
@@ -42,6 +47,11 @@
     const sup = { "-": "⁻", 0: "⁰", 1: "¹", 2: "²", 3: "³", 4: "⁴", 5: "⁵", 6: "⁶", 7: "⁷", 8: "⁸", 9: "⁹" };
     return (x / Math.pow(10, e)).toFixed(1) + "×10" + String(e).split("").map((c) => sup[c]).join("");
   };
+  const clip = (s, n) => (s.length > n ? s.slice(0, n - 1) + "…" : s);
+  const isDoi = (s) => /^10\.\d{4,9}\/\S+$/.test(s || "");
+  const extSrc = (e) => EXT_SRC[e.src] || {};
+  const extName = (e) => { const s = extSrc(e); return (s.title || e.src) + (s.short ? " (" + s.short + ")" : ""); };
+  const extLic = (e) => extSrc(e).license_label || e.lic || "";
 
   // ------------------------------------------------------------------ vocabularies
   const METHOD_LABEL = {
@@ -99,10 +109,12 @@
   const X = { min: 0, max: 82, ticks: [0, 10, 20, 30, 40, 50, 60, 70, 80] };
 
   // ------------------------------------------------------------------ state
-  const state = { on: {}, q: "", colorBy: "filler", y: "k", models: true, sort: { key: "k", dir: -1 }, pinned: null };
+  // pinned: ARGUS row id; extPin: an EXT point shown in the detail card instead (the ARGUS pin is kept)
+  const state = { on: {}, q: "", colorBy: "filler", y: "k", models: true, ext: false, sort: { key: "k", dir: -1 }, pinned: null, extPin: null };
   FILTERS.forEach((f) => { state.on[f.key] = new Set(f.options.map((o) => o[0])); });
   let lastVisible = ROWS;
   let points = [];
+  let extPoints = [];
 
   function groupOf(r) {
     const g = COLOR_BY[state.colorBy].groups;
@@ -232,6 +244,23 @@
     grid.appendChild(yt);
     svg.appendChild(grid);
 
+    // other groups' points first, so the reference curves and the ARGUS points sit on top.
+    // Points outside the axes are left out (not clamped to the edge).
+    extPoints = [];
+    let extOff = 0;
+    if (state.ext && EXT.length) {
+      const xl = sv("g", { "aria-hidden": "true" });
+      EXT.forEach((e) => {
+        const v = Y.get(e);
+        if (e.phi === null || e.phi === undefined || v === null || v === undefined ||
+          e.phi < X.min || e.phi > X.max || v < Y.min || v > Y.max) { extOff++; return; }
+        const x = sx(e.phi), y = sy(v);
+        xl.appendChild(sv("circle", { cx: x.toFixed(1), cy: y.toFixed(1), r: 3.5, fill: "none", stroke: "var(--muted)", "stroke-width": 1.25 }));
+        extPoints.push({ e, x, y });
+      });
+      svg.appendChild(xl);
+    }
+
     if (state.models) {
       const curves = [["ceiling", "3 3"], ["nan0", ""], ["nanr", "8 3"]];
       curves.forEach(([key, dash]) => {
@@ -262,7 +291,10 @@
     svg.appendChild(layer);
 
     const pin = BY_ID[state.pinned];
-    if (pin && plotted.includes(pin)) {
+    const extPin = state.extPin ? extPoints.find((p) => p.e === state.extPin) : null;
+    if (extPin) {
+      svg.appendChild(sv("circle", { cx: extPin.x, cy: extPin.y, r: 7, fill: "none", stroke: "var(--ink)", "stroke-width": 2 }));
+    } else if (!state.extPin && pin && plotted.includes(pin)) {
       svg.appendChild(sv("circle", { cx: sx(pin.phi), cy: sy(Y.get(pin)), r: 8, fill: "none", stroke: "var(--ink)", "stroke-width": 2 }));
     }
     svg.appendChild(sv("circle", { id: "hover-ring", cx: -20, cy: -20, r: 7, fill: "none", stroke: "var(--ink)", "stroke-width": 1.5, opacity: 0 }));
@@ -270,13 +302,24 @@
     $("#chart-empty").hidden = plotted.length > 0;
     const desc = "Scatter of " + (state.y === "k" ? "thermal conductivity" : "enhancement over the matrix") +
       " against filler loading for " + plotted.length + " measurements, coloured by " + COLOR_BY[state.colorBy].label.toLowerCase() +
-      ". The table below lists every value.";
+      (extPoints.length ? ", with " + extPoints.length + " hollow grey points from other groups' datasets beneath them" : "") +
+      ". The table below lists every ARGUS value.";
     $("#chart-desc").textContent = desc;
     renderLegend(plotted);
     const notPlotted = vis.length - plotted.length;
-    $("#chart-note").textContent = (notPlotted ? notPlotted + " shown measurement" + (notPlotted > 1 ? "s have" : " has") +
-      " no volume fraction (hybrid fillers or loading not convertible) and appear only in the table. " : "") +
-      (state.models ? "Reference curves are for randomly oriented h-BN platelets in epoxy (k matrix " + META.km_ref + " W/m·K)." : "");
+    const note = [];
+    if (notPlotted) {
+      note.push(notPlotted + " shown measurement" + (notPlotted > 1 ? "s have" : " has") +
+        " no volume fraction (hybrid fillers or loading not convertible) and appear only in the table.");
+    }
+    if (state.models) note.push("Reference curves are for randomly oriented h-BN platelets in epoxy (k matrix " + META.km_ref + " W/m·K).");
+    if (state.ext && EXT.length) {
+      const names = Object.keys(EXT_SRC).map((k) => EXT_SRC[k].short || EXT_SRC[k].title).join(", ");
+      note.push("Hollow grey points: " + extPoints.length + " measurements curated by other groups (" + names +
+        "), not part of ARGUS and not affected by the filters" +
+        (extOff ? "; " + extOff + " more have no value for this axis or fall outside it." : "."));
+    }
+    $("#chart-note").textContent = note.join(" ");
     return plotted.length;
   }
 
@@ -293,6 +336,13 @@
       k.appendChild(el("span", { class: "n" }, String(n)));
       box.appendChild(k);
     });
+    if (state.ext && EXT.length) {
+      const k = el("span", { class: "key" });
+      k.appendChild(el("span", { class: "dot hollow", "aria-hidden": "true" }));
+      k.appendChild(document.createTextNode("Other groups’ data, not ARGUS "));
+      k.appendChild(el("span", { class: "n" }, String(extPoints.length)));
+      box.appendChild(k);
+    }
     if (state.models) {
       [["3 3", "Maxwell ceiling (isolated spheres, filler k → ∞)"], ["", "Nan 1997, perfect interfaces"],
         ["8 3", "Nan 1997, R_K = " + sci(META.rk_median) + " m²K/W (median fit)"]].forEach(([dash, label]) => {
@@ -321,7 +371,24 @@
       const d = (p.x - x) * (p.x - x) + (p.y - y) * (p.y - y);
       if (d < bd) { bd = d; best = p; }
     }
+    // other groups' points (only while the layer is drawn) lie beneath: an ARGUS point
+    // nearby wins unless the pointer is clearly closer to the hollow marker
+    for (const p of extPoints) {
+      const d = 1.5 * ((p.x - x) * (p.x - x) + (p.y - y) * (p.y - y));
+      if (d < bd) { bd = d; best = p; }
+    }
     return best;
+  }
+
+  function extTip(tip, e) {
+    const km = e.km !== null && e.km !== undefined ? " (matrix k " + num(e.km) + " W/m·K)" : "";
+    tip.appendChild(el("strong", null, state.y === "k" ? "k = " + num(e.k) + " W/m·K" : num(e.en) + "× the matrix"));
+    tip.appendChild(el("span", { class: "m" }, e.phi.toFixed(1) + " vol% " + e.fil + " in " + e.mat));
+    if (state.y === "k") tip.appendChild(el("span", { class: "m" }, (e.en !== null && e.en !== undefined ? num(e.en) + "× the matrix" + km : "matrix k not given")));
+    else tip.appendChild(el("span", { class: "m" }, "k = " + num(e.k) + " W/m·K" + km));
+    tip.appendChild(el("span", { class: "s" }, "Other group: " + extName(e) + (e.ser ? " · " + e.ser : "")));
+    if (e.t) tip.appendChild(el("span", { class: "s" }, clip(e.t, 96)));
+    tip.appendChild(el("span", { class: "s" }, extLic(e) + " · not part of the ARGUS dataset"));
   }
 
   function showTip(p) {
@@ -332,14 +399,17 @@
       if (ring) ring.setAttribute("opacity", "0");
       return;
     }
-    const r = p.r;
     tip.textContent = "";
-    const head = state.y === "k" ? "k = " + num(r.k) + " W/m·K" : num(r.en) + "× the matrix";
-    tip.appendChild(el("strong", null, head));
-    tip.appendChild(el("span", { class: "m" }, r.phi.toFixed(1) + " vol% " + r.fil + " in " + r.mat));
-    tip.appendChild(el("span", { class: "m" }, (METHOD_LABEL[r.mc] || r.mc) + " · " + r.de));
-    const src = r.sl.length > 96 ? r.sl.slice(0, 95) + "…" : r.sl;
-    tip.appendChild(el("span", { class: "s" }, r.p + " · " + r.y + " · " + src));
+    if (p.e) {
+      extTip(tip, p.e);
+    } else {
+      const r = p.r;
+      const head = state.y === "k" ? "k = " + num(r.k) + " W/m·K" : num(r.en) + "× the matrix";
+      tip.appendChild(el("strong", null, head));
+      tip.appendChild(el("span", { class: "m" }, r.phi.toFixed(1) + " vol% " + r.fil + " in " + r.mat));
+      tip.appendChild(el("span", { class: "m" }, (METHOD_LABEL[r.mc] || r.mc) + " · " + r.de));
+      tip.appendChild(el("span", { class: "s" }, r.p + " · " + r.y + " · " + clip(r.sl, 96)));
+    }
     tip.hidden = false;
     if (ring) {
       ring.setAttribute("cx", p.x);
@@ -379,9 +449,62 @@
     }
   }
 
+  function link(href, text) {
+    return el("a", { href: href, target: "_blank", rel: "noopener noreferrer" }, text);
+  }
+
+  function renderExtDetail(box, e) {
+    const s = extSrc(e);
+    const eb = el("p", { class: "eyebrow" }, "Other groups’ data · ");
+    eb.appendChild(el("span", { class: "raw mono" }, e.id));
+    box.appendChild(eb);
+    const big = el("div", { class: "big" });
+    big.appendChild(document.createTextNode(num(e.k) + " "));
+    big.appendChild(el("small", null, "W/m·K"));
+    box.appendChild(big);
+    if (e.en !== null && e.en !== undefined) {
+      box.appendChild(el("div", { class: "enh" }, e.en.toFixed(1) + "× the matrix (matrix k " + num(e.km) + " W/m·K, as the dataset gives it)"));
+    }
+    const dl = el("dl", { class: "facts" });
+    fact(dl, "Loading", num(e.phi) + " vol%");
+    fact(dl, "Filler", e.fil);
+    fact(dl, "Matrix", e.mat);
+    fact(dl, "Dataset", (s.title || e.src) + (e.ser ? " · " + e.ser : ""));
+    const lic = extLic(e);
+    if (lic) {
+      dl.appendChild(el("dt", null, "Licence"));
+      const dd = el("dd");
+      dd.appendChild(/^https:\/\//.test(s.license_url || "") ? link(s.license_url, lic) : document.createTextNode(lic));
+      dl.appendChild(dd);
+    }
+    box.appendChild(dl);
+    box.appendChild(el("p", { class: "note" }, "Not part of the ARGUS dataset: shown as " + (s.short || "another group") +
+      " curated it, not checked against the paper by ARGUS, and not counted in the tiles, the table or the CSV."));
+    const paper = el("div", { class: "paper" });
+    if (e.t) paper.appendChild(el("span", { class: "ttl" }, e.t));
+    if (isDoi(e.doi)) {
+      const line = el("span");
+      line.appendChild(link("https://doi.org/" + e.doi, "doi:" + e.doi));
+      paper.appendChild(line);
+    }
+    if (s.citation) paper.appendChild(el("span", null, "Dataset: " + s.citation));
+    box.appendChild(paper);
+    if (BY_ID[state.pinned]) {
+      const actions = el("div", { class: "row-actions" });
+      const back = el("button", { class: "btn", type: "button" }, "Back to the ARGUS measurement");
+      back.addEventListener("click", () => pin(state.pinned));
+      actions.appendChild(back);
+      box.appendChild(actions);
+    }
+  }
+
   function renderDetail() {
     const box = $("#detail");
     box.textContent = "";
+    if (state.extPin) {
+      renderExtDetail(box, state.extPin);
+      return;
+    }
     const r = BY_ID[state.pinned];
     if (!r) {
       box.appendChild(el("p", { class: "note" }, "Select a point or a table row to see the measurement and its source."));
@@ -503,7 +626,7 @@
     }
     sorted(vis).forEach((r) => {
       const tr = el("tr", { "data-id": r.id });
-      if (r.id === state.pinned) tr.className = "pinned";
+      if (r.id === state.pinned && !state.extPin) tr.className = "pinned";
       COLS.forEach((c, i) => {
         const td = el("td", { class: (c.num ? "num" : "") + (c.wrap ? " wrap" : "") });
         if (i === 0) {
@@ -542,12 +665,25 @@
   }
 
   // ------------------------------------------------------------------ orchestration
+  function highlightRows() {
+    document.querySelectorAll("#tbody tr").forEach((tr) => {
+      tr.classList.toggle("pinned", !state.extPin && tr.getAttribute("data-id") === state.pinned);
+    });
+  }
+
   function pin(id) {
     state.pinned = id;
+    state.extPin = null;
     renderDetail();
-    document.querySelectorAll("#tbody tr").forEach((tr) => {
-      tr.classList.toggle("pinned", tr.getAttribute("data-id") === id);
-    });
+    highlightRows();
+    renderChart(lastVisible);
+  }
+
+  // an external point takes over the detail card; the ARGUS pin is kept for "Back"
+  function pinExt(e) {
+    state.extPin = e;
+    renderDetail();
+    highlightRows();
     renderChart(lastVisible);
   }
 
@@ -566,13 +702,30 @@
     buildSeg("#colorby", Object.keys(COLOR_BY).map((k) => [k, COLOR_BY[k].label]), state.colorBy, (v) => { state.colorBy = v; render(); });
     buildSeg("#ymode", Object.keys(YMODE).map((k) => [k, YMODE[k].label]), state.y, (v) => { state.y = v; renderChart(lastVisible); showTip(null); });
     $("#models").addEventListener("change", (e) => { state.models = e.target.checked; renderChart(lastVisible); });
+    const extBox = $("#external");
+    if (extBox) {
+      if (!EXT.length) extBox.closest("label").hidden = true;
+      extBox.checked = state.ext; // off by default, even if the browser restored the form
+      extBox.addEventListener("change", (e) => {
+        state.ext = e.target.checked;
+        if (!state.ext && state.extPin) {
+          state.extPin = null;
+          renderDetail();
+          highlightRows();
+        }
+        renderChart(lastVisible);
+        showTip(null);
+      });
+    }
     buildHead();
     const svg = $("#chart");
     svg.addEventListener("pointermove", (e) => showTip(nearest(e)));
     svg.addEventListener("pointerleave", () => showTip(null));
     svg.addEventListener("click", (e) => {
       const p = nearest(e);
-      if (p) pin(p.r.id);
+      if (!p) return;
+      if (p.e) pinExt(p.e);
+      else pin(p.r.id);
     });
     $("#copy-csv").addEventListener("click", async () => {
       const text = csvOf(lastVisible);

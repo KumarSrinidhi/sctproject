@@ -77,6 +77,59 @@ fillers:
     anisotropic: false
     verified: false
     source: Handbook values; not verified in the research pass.
+  # The fillers below occur only in the external test sets (data/external/), not in ARGUS.
+  SiO2:
+    density: 2.20
+    density_range: [2.17, 2.65]
+    k_in_plane: 1.4
+    k_in_plane_range: [1.3, 1.5]
+    k_through_plane: 1.4
+    k_through_plane_range: [1.3, 1.5]
+    anisotropic: false
+    verified: false
+    source: Handbook values for amorphous (fused) silica; crystalline quartz is denser and conducts ~5-10x better.
+  glass:
+    density: 2.50
+    density_range: [2.40, 2.60]
+    k_in_plane: 1.0
+    k_in_plane_range: [0.9, 1.2]
+    k_through_plane: 1.0
+    k_through_plane_range: [0.9, 1.2]
+    anisotropic: false
+    verified: false
+    source: Handbook values for soda-lime glass beads; not verified.
+  Si3N4:
+    density: 3.20
+    density_range: [3.17, 3.44]
+    k_in_plane: 30
+    k_in_plane_range: [15, 180]
+    k_through_plane: 30
+    k_through_plane_range: [15, 180]
+    anisotropic: false
+    verified: false
+    source: >-
+      Handbook values; powders and alpha-phase ~15-30, dense beta-Si3N4 ceramics 60-180.
+      Not verified.
+  SiC:
+    density: 3.21
+    density_range: [3.10, 3.22]
+    k_in_plane: 120
+    k_in_plane_range: [60, 490]
+    k_through_plane: 120
+    k_through_plane_range: [60, 490]
+    anisotropic: false
+    verified: false
+    source: Handbook values for polycrystalline SiC (single crystals up to ~490); not verified.
+  ZnO:
+    density: 5.61
+    density_range: [5.47, 5.68]
+    k_in_plane: 50
+    k_in_plane_range: [30, 60]
+    k_through_plane: 50
+    k_through_plane_range: [30, 60]
+    anisotropic: false
+    verified: false
+    source: Handbook values (single crystal ~50-60, sintered ceramics lower); not verified.
 
 matrices:
   epoxy:

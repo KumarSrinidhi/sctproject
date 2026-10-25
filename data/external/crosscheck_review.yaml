@@ -1,0 +1,40 @@
+# Human review of the value cross-check (argus external validate, section 5).
+# One entry per paper that ARGUS shares with an external source. `verdict` says
+# which side the evidence supports; `action` says what, if anything, changes in
+# ARGUS. ARGUS records change only on evidence from the source paper itself.
+reviewed: 2026-10-25
+papers:
+  10.1002/adfm.201900412:
+    argus: P081 (Han et al. 2019, BNNS aerogel / epoxy), one abstract-only row, 15 vol% -> 6.07 W/(m K), direction unknown
+    findings:
+      - source: tagp
+        result: >-
+          Exact agreement at 15 vol% (6.07). Sarikhani et al. digitized 9 more points from Fig. 1(d)
+          (1.3-20 vol%) and state they are parallel to the lamellar layers (in-plane).
+      - source: heliyon
+        result: >-
+          The review quotes 6.54 (in-plane) and 0.7 (through-plane) at 15 vol%. In the independent
+          digitization 6.54 is the 20 vol% point and 15 vol% gives 6.07, as in ARGUS (from the abstract),
+          so the review pairs the 20 vol% value with the 15 vol% loading.
+    verdict: ARGUS value confirmed by an independent extraction; the review's 6.54 belongs to 20 vol%.
+    action: >-
+      None now. If the full text becomes accessible, set the direction to in-plane and add the Fig. 1(d)
+      series (two secondary sources agree on both).
+  10.1016/j.compscitech.2020.108304:
+    argus: Wei et al. 2020 (AlN honeycomb / epoxy), 47.26 vol% -> 9.48 (parallel) and 4.45 (perpendicular)
+    findings:
+      - source: heliyon
+        result: Exact agreement for both directions.
+    verdict: ARGUS values confirmed.
+    action: None.
+  10.3390/polym14142950:
+    argus: Polymers 2022 (AlN, BN and AlN-BN in epoxy), AlN/EP at 30 wt% -> 1.1 and 75 wt% -> 6.83 W/(m K)
+    findings:
+      - source: ncomms
+        result: >-
+          No common loading. He et al. list this paper's AlN/epoxy series at 10, 20, 40, 50, 60, 70 and
+          80 wt% (0.47-6.86 W/(m K)). The paper's text gives 75 wt% as the highest AlN loading studied
+          ("AlN/EP 75 wt% ... 6.83 W/(m K)"), and the compiled 80 wt% value (6.86) is within 0.5% of the
+          paper's 75 wt% value.
+    verdict: ARGUS matches the paper's text; the compilation's top loading exceeds the paper's stated maximum.
+    action: None. Not a test row either way (the paper is in ARGUS, so the leakage guard drops it).

@@ -1,6 +1,6 @@
 # ARGUS roadmap
 
-Status as of 2026-10-23. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Research basis:
+Status as of 2026-10-25. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Research basis:
 [research report](reports/BN%20epoxy%20thermal%20conductivity%20research.md).
 
 | Phase | Goal | Status |
@@ -13,6 +13,7 @@ Status as of 2026-10-23. Architecture: [ARCHITECTURE.md](ARCHITECTURE.md). Resea
 | 5 | Machine learning with honest validation | ✅ core done, follow-ups open |
 | 6 | Acquisition at scale | ⏳ |
 | 7 | Explorer, release and course report | ✅ done (Zenodo DOI needs your account) |
+| 8 | External validation against other groups' data | ✅ done |
 
 ---
 
@@ -211,6 +212,60 @@ Next:
    (two are non-commercial, CC BY-NC), and remove the three saved captcha pages, which embed the
    fetching machine's IP address. See the checklist in `LICENSE-DATA.md`.
 3. **Report finishing:** a PDF/Word export if the course requires one.
+
+---
+
+## Phase 8: External validation ✅
+
+Goal: test the physics code, the models and the extracted values against data that other groups curated.
+Design: [ARCHITECTURE.md §8c](ARCHITECTURE.md#8c-external-validation). Results:
+[reports/external_validation.md](../reports/external_validation.md) and Section 4.5 of the course report.
+
+Search: a parallel sweep of data repositories, code hubs, paper supplements and materials databases, with
+independent verification of each candidate's licence, access and contents. Kept (`data/external/README.md`):
+- **EVF** (Anastasiou 2026, CC BY 4.0): 137 polymer + ceramic points from 14 papers, none in ARGUS.
+- **He, Wu & Fu 2025** (*Nat. Commun.*): the MIT source data for physics checks, and Supplementary Data 1
+  (CC BY-NC-ND, fetched on demand) with 131 test points from 22 papers.
+- **Sarikhani et al. 2022** (CC BY 4.0): two transcribed BN datasets, one test set and one cross-check.
+- **Mumtaz et al. 2024** (CC BY-NC-ND): two rows used for a value cross-check.
+
+Rejected: simulated datasets (lattice Boltzmann, FEM), datasets with no released data (several ML papers),
+registration-only or no-redistribution databases (PoLyInfo, NIMS CompoTherm, MaterialsMine), and
+low-provenance compilations.
+
+Done:
+- **Physics code verified.**
+  - Maxwell–Garnett, symmetric Bruggeman, Hasselman–Johnson and the Voigt–Reuss mean reproduce both
+    workbooks' published predictions to ≤10⁻⁹ (1,032 point-by-point comparisons).
+  - Asymmetric Bruggeman agrees at 171 of 242 points. At the rest, the published values fail the model's
+    equation while ours solve it to 10⁻¹³.
+- **Transfer.** Trained only on ARGUS, predicting 280 measurements from 37 unseen papers:
+  - the ensemble's typical error is ×1.35, and it clearly beats calibrated physics (×1.49);
+  - 90% intervals cover 99% of rows;
+  - the random forest, second inside ARGUS, is clearly worse than physics on unseen literature.
+- **Pooled training.** Adding the external papers clearly improves the ensemble on ARGUS's own papers
+  (MAE 0.218 → 0.201).
+- **Value cross-check.**
+  - 4 shared papers: 3 exact matches. The one difference traces to a review that pairs the 20 vol% value
+    with 15 vol%.
+  - A compilation lists loadings above the source paper's stated maximum.
+  - No ARGUS value changed. See `data/external/crosscheck_review.yaml`.
+- **Improvements adopted:**
+  - **Ensemble model:** best leave-one-paper-out MAE, ×1.65, with 90% intervals narrowed from ×/÷3.35 to
+    ×/÷2.9. It was chosen on ARGUS only and confirmed externally.
+  - **Vocabulary:** THW, GHP, HFM and "TPS, …" abbreviations are now classified.
+  - **Reference properties:** SiO₂, glass, Si₃N₄, SiC and ZnO.
+  - **Explorer:** an optional layer showing other groups' data (CC BY only).
+- **Tried and rejected:** a differential-effective-medium (asymmetric Bruggeman) feature.
+  - Unconstrained, it lowered gradient-boosting error on ARGUS (LOPO 0.221 → 0.208).
+  - The gain vanished once the feature was constrained to be monotone in loading, as every
+    loading-derived feature is. It therefore relied on unphysical behaviour.
+
+Next:
+1. If the full text of P081 (Han et al. 2019) becomes accessible, add its in-plane Fig. 1(d) series. Two
+   secondary sources agree on it.
+2. Re-run `argus external validate` whenever a dataset version changes. It is fingerprinted like every
+   other analysis.
 
 ---
 

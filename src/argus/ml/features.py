@@ -25,7 +25,9 @@ from ..physics.fit import ASPECT_P  # assumed t/D per filler, shared with the ph
 from ..vocab import filler_props
 
 FILLER_GROUP = {"h-BN": "hBN", "BN": "hBN", "BNNS": "BNNS", "cBN": "other", "AlN": "AlN",
-                "Al2O3": "oxide", "MgO": "oxide"}
+                "Al2O3": "oxide", "MgO": "oxide",
+                # only in the external test sets
+                "SiO2": "oxide", "glass": "oxide", "ZnO": "oxide", "Si3N4": "other", "SiC": "other"}
 DEFAULT_LOG_SIZE = 1.0  # log10(10 um), a fixed constant (not a data statistic) for missing sizes
 YEAR_CENTER = 2020
 

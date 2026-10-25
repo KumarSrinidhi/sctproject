@@ -94,6 +94,8 @@ data/
   tombstones.yaml       removed row ids (never reusable)
   dataset.yaml          dataset name, version, release date
   processed/            generated: rows.jsonl, measurements_enriched.csv
+  external/             other groups' datasets used for testing (never merged): sources.yaml manifest,
+                        raw files, series/block maps, crosscheck_review.yaml
 src/argus/
   schema.py     31-column row schema + record model (pydantic)
   records.py    load / save / compile record files
@@ -113,6 +115,8 @@ src/argus/
   ml/models.py      baselines + learners (grouped inner tuning, monotone boosting)
   ml/benchmark.py   paper-grouped validation, conformal intervals, ablation
   ml/report.py      Markdown report, prediction table, parity plot
+  external/         tests against other groups' data: manifest, adapters (sources/), harmonize,
+                    physics cross-check, transfer + pooled training, value cross-check, report
   fingerprint.py    dataset hash stamped into every analysis output
   report/course.py  course report rendered from results (refuses stale outputs)
   report/figures.py report figures (validated palette, small multiples)
@@ -302,7 +306,9 @@ for a paper the model has never seen.
   - ridge, with alpha chosen by an inner split that also keeps papers together;
   - calibrated physics plus a Gaussian process on the residuals;
   - gradient boosting, constrained to be non-decreasing in every loading-derived feature;
-  - a random forest.
+  - a random forest;
+  - an equal-weight ensemble of physics + GP, ridge and gradient boosting. It was chosen on ARGUS-only
+    results, before any external test, and then confirmed on external data (section 8c).
 - **Validation** (`benchmark.py`):
   - Leave-one-paper-out is the headline, alongside repeated 5-fold by paper.
   - Row-level 5-fold is reported only as a leakage contrast.
@@ -312,8 +318,44 @@ for a paper the model has never seen.
   - The ablation removes feature groups (and overlapping pairs) on identical splits, so the differences are
     paired.
 
-Headline: ×1.66 typical error on an unseen paper (gradient boosting) against ×1.91 and ×2.14 for the best
-baselines. Calibrated 90% intervals are ×/÷3.4 wide. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md).
+Headline: ×1.65 typical error on an unseen paper (ensemble; ×1.66 for gradient boosting alone), against
+×1.91 and ×2.14 for the best baselines. The ensemble's calibrated 90% intervals are ×/÷2.9 wide, against
+×/÷3.35 for gradient boosting alone. Details are in [`reports/ml_benchmark.md`](../reports/ml_benchmark.md);
+the test on other groups' data is in [`reports/external_validation.md`](../reports/external_validation.md).
+
+## 8c. External validation
+
+`argus external validate` (`src/argus/external/`) tests the toolkit against data that **other groups**
+curated. External data never enters `data/records/`; it lives in `data/external/` with a manifest
+(`sources.yaml`: licence, citation and the sha256 of every raw file) and one adapter per source
+(`external/sources/*.py`) that yields `ExternalRecord`s in the source's own words.
+
+- **Harmonizing** (`harmonize.py`): filler names are normalized to ARGUS labels and each record becomes
+  a 31-column ARGUS row (`confidence = External`). The same `enrich_row` then derives vol%, method class,
+  direction and flags, so both sides go through identical rules.
+- **Physics cross-check** (`physics_check.py`): two workbooks publish their authors' own model
+  predictions next to each point. Feeding the same inputs to `physics/emt.py` checks our code against
+  independent implementations. Where a published value disagrees, the residual of the model's defining
+  equation decides which side is wrong.
+- **Transfer** (`transfer.py`): every model is fitted on all of ARGUS and predicts the external rows.
+  - MAE comes with a cluster bootstrap over test papers. Comparisons with calibrated physics are paired.
+  - Intervals use the ARGUS leave-one-paper-out residuals, so their coverage on external rows tests the
+    stated uncertainty.
+  - Rows are split into in-domain (filler and matrix family present in ARGUS) and new.
+  - A **leakage guard** drops test rows from papers that ARGUS contains, and a paper in two test sets is
+    counted once.
+- **Pooled training:** leave-one-paper-out over ARGUS plus external papers, scored on each side and
+  compared paper by paper with ARGUS-only training. It answers whether more data would help.
+- **Value cross-check** (`crosscheck.py`): for papers present on both sides, each external point is
+  paired with the ARGUS point of the same filler at the closest loading.
+  - Loadings are compared on wt% when both sides report wt%, otherwise on vol%.
+  - Directions must be compatible. An ARGUS value of unknown direction pairs with only the closer of two
+    directional external values.
+  - Every shared paper gets a verdict in `data/external/crosscheck_review.yaml`. ARGUS records change only
+    on evidence from the source paper itself.
+- **Licences:** files whose licence forbids redistribution (CC BY-NC-ND) are not committed.
+  `argus external fetch` downloads them and checks their checksums; only our own curation (block map,
+  attributed facts) is in git.
 
 ## 9. Testing
 
