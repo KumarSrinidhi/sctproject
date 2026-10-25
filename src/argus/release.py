@@ -171,6 +171,18 @@ BUNDLE_FILES = ("thermal_conductivity_dataset.csv", "paper_inventory.csv", "extr
                 "data/exclusions.yaml", "data/tombstones.yaml", "data/processed/measurements_enriched.csv")
 BUNDLE_DIRS = ("data/records",)
 _ZIP_TIME = (2026, 1, 1, 0, 0, 0)
+# Line endings in the bundle, independent of the checkout (core.autocrlf, files rewritten by the
+# toolkit): CSVs CRLF as `.gitattributes` pins them, every other text file LF. These are the
+# bytes of a checkout with core.autocrlf=false.
+_TEXT_SUFFIXES = (".csv", ".json", ".jsonl", ".yaml", ".yml", ".md", ".cff", ".txt")
+_CRLF_SUFFIXES = (".csv",)
+
+
+def canonical_bytes(member: str, raw: bytes) -> bytes:
+    if not member.lower().endswith(_TEXT_SUFFIXES):
+        return raw
+    lf = raw.replace(b"\r\n", b"\n")
+    return lf.replace(b"\n", b"\r\n") if member.lower().endswith(_CRLF_SUFFIXES) else lf
 
 
 def bundle_members(lay: Layout) -> list[str]:
@@ -195,7 +207,11 @@ def bundle_readme(meta: dict[str, Any], members: list[str]) -> str:
 
 def build_bundle(lay: Layout, out_dir) -> tuple[Any, str]:
     """dist/ARGUS-dataset-v<version>.zip: the dataset files only (no third-party papers,
-    no code), byte-for-byte reproducible. Returns (path, sha256)."""
+    no code). Returns (path, sha256).
+
+    Reproducible: member bytes are normalised by canonical_bytes, so SHA256SUMS.txt is the same
+    on every platform and checkout; with fixed timestamps and modes, the zip itself is too, given
+    the same zlib build."""
     import hashlib
     import zipfile
     from pathlib import Path
@@ -206,7 +222,7 @@ def build_bundle(lay: Layout, out_dir) -> tuple[Any, str]:
     out_dir.mkdir(parents=True, exist_ok=True)
     name = f"ARGUS-dataset-v{meta.get('version', '0')}"
     path = out_dir / f"{name}.zip"
-    data = {m: (lay.root / m).read_bytes() for m in members}
+    data = {m: canonical_bytes(m, (lay.root / m).read_bytes()) for m in members}
     data["README.txt"] = bundle_readme(meta, members).encode("utf-8")
     sums = "".join(f"{hashlib.sha256(b).hexdigest()}  {m}\n" for m, b in sorted(data.items()))
     data["SHA256SUMS.txt"] = sums.encode("utf-8")
