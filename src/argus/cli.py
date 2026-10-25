@@ -210,6 +210,61 @@ def ml_benchmark(root: Optional[Path] = RootOpt,
                + (", figures/ml_parity_lopo.png" if fig else ""))
 
 
+acquire_app = typer.Typer(no_args_is_help=True, help="Phase 6: discover, screen and fetch new open-access papers.")
+app.add_typer(acquire_app, name="acquire")
+
+
+@acquire_app.command("search")
+def acquire_search(root: Optional[Path] = RootOpt,
+                   max_per_query: Optional[int] = typer.Option(None, help="Override max_results_per_query")):
+    """Run data/acquisition/queries.yaml on OpenAlex, screen, write candidates.csv (queries logged)."""
+    from collections import Counter
+
+    from .acquire.keys import MissingKey
+    from .acquire.run import search
+
+    lay = layout(root)
+    try:
+        rows = search(lay, max_per_query)
+    except MissingKey as e:
+        typer.echo(str(e))
+        raise typer.Exit(2)
+    c = Counter(r["reason_code"] for r in rows)
+    typer.echo(f"{len(rows)} distinct DOIs; " + ", ".join(f"{k} {v}" for k, v in c.most_common()))
+    typer.echo("wrote data/acquisition/candidates.csv; queries appended to data/acquisition/queries.jsonl")
+
+
+@acquire_app.command("fetch")
+def acquire_fetch(root: Optional[Path] = RootOpt, limit: int = typer.Option(20, help="How many papers to fetch")):
+    """Europe PMC JATS full text for included candidates with a PMCID (cached in sources/, git-ignored)."""
+    from .acquire.run import fetch
+
+    lay = layout(root)
+    done = fetch(lay, limit)
+    for r in done:
+        typer.echo(f"{r['doi']:40s} {r['jats_licence'][:50]:50s} {r['jats']}")
+    typer.echo(f"{len(done)} full texts fetched")
+
+
+@acquire_app.command("import")
+def acquire_import(extraction: Path = typer.Argument(..., help="data/acquisition/extractions/<batch>.json"),
+                   root: Optional[Path] = RootOpt, dry_run: bool = typer.Option(False, "--dry-run")):
+    """Create records from checked extractions (verifier verdicts applied; quotes re-checked)."""
+    from .acquire.importer import import_batch
+    from .acquire.run import cache_dir, read
+
+    lay = layout(root)
+    data = json.loads((extraction if extraction.is_absolute() else lay.root / extraction).read_text(encoding="utf-8"))
+    meta = {r["doi"]: {"title": r["title"], "year": r["year"], "license": r["license"]} for r in read(lay)}
+    rep = import_batch(lay, data["papers"], data["verdicts"], meta, cache_dir(lay) / "text", dry_run=dry_run)
+    typer.echo(f"{'would create' if dry_run else 'created'} {len(rep.created)} records ({', '.join(rep.created)}), "
+               f"{rep.rows_added} rows; {len(rep.excluded)} papers excluded; {len(rep.rejected)} candidate rows rejected")
+    for doi, why in rep.excluded:
+        typer.echo(f"  excluded {doi}: {why[:120]}")
+    for doi, i, why in rep.rejected:
+        typer.echo(f"  rejected {doi} row {i}: {why[:120]}")
+
+
 release_app = typer.Typer(no_args_is_help=True, help="Release artefacts (Zenodo upload bundle).")
 app.add_typer(release_app, name="release")
 
