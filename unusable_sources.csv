@@ -70,3 +70,4 @@ doi,reason,action
 10.3390/ma12244112,Phase 6 screening of full text: No thermal conductivity values printed in text or tables; k values for neat epoxy and 1/3/5/7 wt% h-BN/epoxy appear only in Figure 2 (text gives only a relative increase of 58% for 7 wt%). Table 1 contains Weibull breakdown parameters only.,unusable
 10.1038/s41598-021-86249-4,Phase 6 screening of full text: Thermal conductivity reported only in relative units (sample/PMMA reference temperature-gradient ratio) in Figure 2a; text gives only 'approximately 5 times' increase at 30 wt% hBN. No absolute k of any hBN/silicone sample printed. The only printed absolute value (0.1,unusable
 10.3390/ma19030455,"Phase 6: the only printed values use the unit mW/K, which is not a thermal conductivity; no usable row",unusable
+10.3390/molecules24101883,Phase 6 scope review: every row is out of scope (metal hybrid filler or paraffin-type PCM matrix),unusable

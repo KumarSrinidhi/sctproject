@@ -9,4 +9,4 @@ Layers (see docs/ARCHITECTURE.md):
     verify    - end-state invariants written to a verification report
 """
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"

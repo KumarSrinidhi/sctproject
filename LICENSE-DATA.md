@@ -1,6 +1,6 @@
 # Dataset licence
 
-**ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN)**, version 1.1.0
+**ARGUS: Source-verified thermal conductivity of BN- and AlN-filled polymer composites**, version 1.2.0
 © 2026 Aniket Kumar and Rao Kumar Srinidhi Reddy
 
 The dataset is licensed under the **Creative Commons Attribution 4.0 International licence (CC BY 4.0)**.
@@ -71,7 +71,7 @@ historical and superseded by this file.
 
 ## How to cite
 
-> Kumar, A., & Reddy, R. K. S. (2026). ARGUS: Source-verified thermal conductivity of polymer-ceramic composites (epoxy + BN/AlN) (Version 1.1.0) [Data set]. https://github.com/KumarSrinidhi/sctproject
+> Kumar, A., & Reddy, R. K. S. (2026). ARGUS: Source-verified thermal conductivity of BN- and AlN-filled polymer composites (Version 1.2.0) [Data set]. https://github.com/KumarSrinidhi/sctproject
 
 Machine-readable citation metadata is in `CITATION.cff`; GitHub shows it under "Cite this repository".
 

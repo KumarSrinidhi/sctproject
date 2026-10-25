@@ -19,14 +19,15 @@ extraction_log:
   tables_inspected: Table 1 (k comparison with literature; only the 'This work' row is from this paper, and it repeats the 25.1 vol% BNNSs/AgNPs sample as 3.05 W/m K, so it was not extracted again)
   figures_inspected: Fig. 4(a) k vs BNNS vol% for both series, (b) TCE, (c) TCE per vol%, (d) k vs temperature at 17.7 vol%; Fig. 6 model fits. Only the captions were available; no images.
   candidate_measurements: 3
-  rows_appended: 3
+  rows_appended: 2
   unit_conversions: none (values as printed)
   duplicate_checks: new DOI; no prior rows
   qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 6 figure-only values not taken. Three printed values: the neat epoxy and the two 25.1 vol% samples. The other loadings in Fig. 4(a) (at least 2.58, 11.7 and 17.7 vol% are named in the text, for both series) are figure-only. figure_only_skipped = 6 is a lower bound counted from those named loadings; the images were not available. The temperature-dependent k in Fig. 4(d) (17.7 vol%) is figure-only and not at room temperature. Table 1 is a literature comparison: its ''This work'' row ('
-  rows_rejected_at_append: []
+  rows_rejected_at_append:
+  - - 35bddad4-297
+    - 'scope review: out of scope: metal hybrid filler (README scope excludes metal hybrids)'
   rows_added:
   - 35bddad4-296
-  - 35bddad4-297
   - 35bddad4-298
 measurements:
 - row_id: 35bddad4-296
@@ -48,28 +49,6 @@ measurements:
   source_location: 'Results, ''Thermal conductivity of epoxy composites filled with BNNSs/AgNPs and BNNSs'', paragraph 1: ''The pure epoxy has a poor K of 0.25 W/m-K, which is in agreement with the previously reported value29.'''
   confidence: High
   notes: Neat matrix. All measurements were carried out at room temperature (Methods), but no number is given, so measurement_temperature_C is null.
-- row_id: 35bddad4-297
-  matrix_polymer: Liquid crystalline epoxy resin (LCER) DGE-BHBTMBP, DDS-cured (LCER:DDS = 13:7 by weight)
-  curing_agent: 4,4′-diaminodiphenylsulphone (DDS)
-  filler_material: BNNS/Ag hybrid
-  filler_material_original: BNNSs/AgNPs nanohybrids (silver nanoparticle-deposited BNNSs), BNNSs/AgNPs/epoxy composite at Vf = 25.1 vol% BNNSs
-  filler_shape: nanosheet (decorated with Ag nanoparticles)
-  size_distribution: BNNS lateral size 100–500 nm, thickness ~5 nm (<15 layers); AgNPs 5–20 nm
-  filler_loading_vol_pct: 25.1
-  filler_loading_original_value: 25.1
-  filler_loading_original_unit: vol%
-  functionalization: Ag nanoparticles deposited on BNNSs (AgNO3 reduced by DMF)
-  processing_method: BNNSs made by liquid-phase exfoliation of h-BN (Denka, 2 μm) in DMF; AgNPs deposited in situ; hybrid and pre-cured epoxy dispersed in butanone, bar coated on copper film, cured 150–180 °C and 220 °C for 2 h
-  k_matrix_W_mK: 0.25
-  k_composite_W_mK: 3.06
-  k_direction: unknown
-  measurement_method: Laser flash (NETZSCH LFA 467 Nano-flash) for diffusivity; Cp by DSC (TA Q-20); K = α·Cp·ρ (how density was measured is not stated)
-  k_original_value: 3.06
-  k_original_unit: W/m-K
-  value_source: text
-  source_location: 'Results, ''Thermal conductivity of epoxy composites filled with BNNSs/AgNPs and BNNSs'', paragraph 1: ''However, when the Vf reaches up to 25.1 vol %, it is seen that the K of the composite filled with BNNNs/AgNPs hybrids reaches 3.06 W/m-K, while the corresponding K for the composite filled only with BNNSs is only 1.66 W/m-K.'''
-  confidence: High
-  notes: The 25.1 vol% loading is the BNNS content (Vf); the Ag amount is not given as a vol% or wt% of the composite (synthesis used 0.80 g AgNO3 per 280 mL of 2.85 mg/mL BNNS dispersion). 3.06 is also printed in the abstract and conclusions; Table 1 ('This work') prints the same sample as 3.05 W/m K. TCE = 1123%. Measured at room temperature (Methods).
 - row_id: 35bddad4-298
   matrix_polymer: Liquid crystalline epoxy resin (LCER) DGE-BHBTMBP, DDS-cured (LCER:DDS = 13:7 by weight)
   curing_agent: 4,4′-diaminodiphenylsulphone (DDS)

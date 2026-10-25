@@ -45,6 +45,91 @@ def pct(x: float, digits: int = 0) -> str:
     return f"{100 * x:.{digits}f}%"
 
 
+COMPOSITION_GROUPS = {"loading", "physics", "filler"}
+GROUP_NAMES = {"direction": "measurement direction", "method": "measurement method",
+               "treatment": "surface treatment", "quality": "data-quality flags"}
+
+
+def ablation_summary(abl: dict[str, Any]) -> dict[str, Any]:
+    """Which feature groups beyond composition clearly help, so the prose follows the numbers.
+
+    A combined group ("direction + method") counts towards its parts only through the
+    single-group rows; the combined rows can be clear just because one part is.
+    """
+    groups = abl.get("groups", [])
+    singles = {g["group"]: g for g in groups if "+" not in g["group"]}
+    meta = {n: g for n, g in singles.items() if n not in COMPOSITION_GROUPS}
+    helps = sorted((n for n, g in meta.items() if g.get("clear")), key=lambda n: -meta[n]["delta_mae"])
+    # metadata pairs that help together while neither part does alone
+    joint = []
+    for g in groups:
+        parts = [p.strip() for p in g["group"].split("+")]
+        if (len(parts) > 1 and g.get("clear") and not set(parts) & COMPOSITION_GROUPS
+                and not any(singles.get(p, {}).get("clear") for p in parts)):
+            joint.append((parts, g["delta_mae"]))
+    in_joint = {p for parts, _ in joint for p in parts}
+    ranked = [(GROUP_NAMES.get(n, n), meta[n]["delta_mae"]) for n in helps]
+    ranked += [(" and ".join(GROUP_NAMES.get(p, p) for p in parts) + " together", d) for parts, d in joint]
+    pair = next((g for g in groups if g["group"] == "loading + physics"), None)
+    return {
+        "meta_helps": [GROUP_NAMES.get(n, n) for n in helps],
+        "meta_joint": [[GROUP_NAMES.get(p, p) for p in parts] for parts, _ in joint],
+        "meta_noise": [GROUP_NAMES.get(n, n) for n in meta if n not in helps and n not in in_joint],
+        "meta_top": max(ranked, key=lambda t: t[1])[0] if ranked else None,
+        "direction_helps": "direction" in helps or "direction" in in_joint,
+        "overlap": bool(pair and pair.get("clear")
+                        and not any(singles.get(n, {}).get("clear") for n in ("loading", "physics"))),
+    }
+
+
+METHOD_LABEL = {
+    "LFA": "laser flash", "TPS": "Hot Disk/TPS", "THB": "transient hot bridge",
+    "MTPS": "modified transient plane source", "HOT_WIRE": "hot wire", "SS_D5470": "D5470-type steady state",
+    "SS_GHFM": "guarded heat flow meter", "SS_HFM_GHP": "heat flow meter or guarded hot plate",
+    "SS_UNSPECIFIED": "steady state, apparatus not named", "PERIODIC": "periodic heating",
+    "THIN_FILM": "3ω or thermoreflectance", "IR_THERMO": "IR thermography", "UNSPECIFIED": "not stated",
+}
+RARE_METHOD_ROWS = 5
+
+
+def method_summary(method: Counter) -> dict[str, Any]:
+    """Technique classes by row count; classes under RARE_METHOD_ROWS rows are grouped together."""
+    named = [(c, n) for c, n in method.most_common() if c != "UNSPECIFIED"]
+    common = [(METHOD_LABEL.get(c, c), n) for c, n in named if n >= RARE_METHOD_ROWS]
+    rare = [(METHOD_LABEL.get(c, c), n) for c, n in named if n < RARE_METHOD_ROWS]
+    return {"common": common, "rare": rare, "rare_rows": sum(n for _, n in rare),
+            "top": [label for label, _ in common[:2]], "unspecified": method.get("UNSPECIFIED", 0)}
+
+
+def matrix_summary(mat: Counter) -> dict[str, Any]:
+    """Epoxy, the next two named matrix families, and how many other families remain."""
+    named = [(m, n) for m, n in mat.most_common() if m not in ("epoxy", "other", "")]
+    return {"next": named[:2], "n_more_families": len(named[2:]), "other_rows": mat.get("other", 0)}
+
+
+def acquisition_summary(records: list[Any], acq_dir: Path | None = None) -> dict[str, int]:
+    """Rows and papers added by the Phase 6 acquisition (extraction-log candidate ids 'P6-…').
+
+    figure_only counts the values the extractors saw only in figures of the papers that were
+    kept (data/acquisition/extractions/*.json), which were not digitized.
+    """
+    p6 = [r for r in records if any(str(e.get("candidate_id", "")).startswith("P6-") for e in r.extraction_log)]
+    kept = {str(r.paper.doi).lower() for r in p6}
+    figure_only = 0
+    for path in sorted(acq_dir.glob("*.json")) if acq_dir and acq_dir.is_dir() else []:
+        for paper in json.loads(path.read_text(encoding="utf-8")).get("papers", []):
+            n = paper.get("figure_only_skipped") or 0
+            if str(paper.get("doi", "")).lower() in kept and isinstance(n, int):
+                figure_only += n
+    return {"papers": len(p6), "rows": sum(len(r.measurements) for r in p6), "figure_only": figure_only}
+
+
+def andjoin(items: list[Any]) -> str:
+    """['a', 'b', 'c'] -> 'a, b and c'."""
+    items = [str(i) for i in items]
+    return " and ".join([", ".join(items[:-1]), items[-1]]) if len(items) > 1 else "".join(items)
+
+
 def _load(path: Path) -> dict[str, Any]:
     if not path.exists():
         raise StaleAnalysis(f"{path.name} is missing")
@@ -130,6 +215,7 @@ def build_context(lay: Layout, fig_dir: Path, fig_rel: str) -> dict[str, Any]:
     films = [p["ratio"] for p in bias["direction_pairs"] if "network" not in f"{p['shape']} {p['alignment']}".lower()]
     nets = [p["ratio"] for p in bias["direction_pairs"] if "network" in f"{p['shape']} {p['alignment']}".lower()]
     sens = {k: m["effects"].get("method:MIXED") for k, m in bias["pooled_models"].items() if not m.get("skipped")}
+    unspec = {k: m["effects"].get("method:UNSPECIFIED") for k, m in bias["pooled_models"].items() if not m.get("skipped")}
 
     # --- ml
     M = ml["models"]
@@ -149,18 +235,19 @@ def build_context(lay: Layout, fig_dir: Path, fig_rel: str) -> dict[str, Any]:
         "meta": meta, "fp": fp, "stats": stats,
         "n_rows": stats["rows"], "n_papers": stats["papers"],
         "fam": fam, "base": base, "mat": mat, "method": method,
+        "methods": method_summary(method), "mats": matrix_summary(mat), "acq": acquisition_summary(records, lay.data / "acquisition" / "extractions"),
         "density": qa_density,
         "gaps": reporting_gaps(rows),
         "figs": figs,
         "an": an, "pairs": bias["direction_pairs"], "film_A": (min(films), max(films)) if films else None,
         "net_A": (min(nets), max(nets)) if nets else None,
-        "main": main, "eff": eff, "sens": sens,
+        "main": main, "eff": eff, "sens": sens, "unspec": unspec,
         "budget": bias["uncertainty_budget"],
         "n_method_pairs": len(bias["method_pairs"]),
         "phys": phys,
         "ml": ml, "M": M, "best": best, "bbase": bbase, "leak_model": leak_model,
         "leak": {"group5": M[leak_model]["group5"]["mae_log10"], "random5": M[leak_model]["random5"]["mae_log10"]},
-        "abl": abl, "clear": clear, "time_best": time_best, "timed": timed,
+        "abl": abl, "clear": clear, "abls": ablation_summary(abl), "time_best": time_best, "timed": timed,
         "ranking": ml["ranking_lopo_mae"],
         "best_phrase": MODEL_PHRASE.get(best, best),
         "ext": external_context(ext, figs_ext(lay, fig_dir, fig_rel)) if ext else None,
@@ -285,7 +372,7 @@ def render(lay: Layout, out: Path | None = None) -> Path:
     fig_dir = out.parent / "figures"
     ctx = build_context(lay, fig_dir, "figures")
     env = Environment(undefined=StrictUndefined, trim_blocks=True, lstrip_blocks=True, keep_trailing_newline=True)
-    env.filters.update(sci=sci, f2=f2, pct=pct, median=statistics.median)
+    env.filters.update(sci=sci, f2=f2, pct=pct, median=statistics.median, andjoin=andjoin)
     src = resources.files("argus").joinpath("report/templates/course_report.md.j2").read_text(encoding="utf-8")
     text = env.from_string(src).render(**ctx)
     atomic_write_text(out, text)

@@ -5,7 +5,7 @@ import shutil
 import pytest
 
 from argus.fingerprint import StaleAnalysis, check_fresh, dataset_fingerprint
-from argus.report.course import pct, reporting_gaps, sci
+from argus.report.course import ablation_summary, andjoin, matrix_summary, method_summary, pct, reporting_gaps, sci
 
 
 def test_sci_formatting():
@@ -13,6 +13,37 @@ def test_sci_formatting():
     assert sci(2.4e-6) == "2.4×10⁻⁶"
     assert sci(1.0e3) == "1.0×10³"
     assert pct(0.982) == "98%"
+
+
+def test_ablation_summary_follows_the_numbers():
+    def g(name, delta, clear):
+        return {"group": name, "delta_mae": delta, "clear": clear}
+
+    s = ablation_summary({"groups": [g("loading + physics", 0.16, True), g("direction + method", 0.04, True),
+                                     g("direction", 0.03, True), g("matrix", 0.01, False),
+                                     g("loading", 0.0, False), g("physics", 0.01, False)]})
+    assert s["meta_helps"] == ["measurement direction"]
+    assert s["meta_noise"] == ["matrix"]
+    assert s["overlap"] is True
+    # a combined group being clear does not make each of its parts helpful
+    s = ablation_summary({"groups": [g("direction + method", 0.04, True), g("direction", 0.01, False),
+                                     g("method", 0.0, False), g("loading", 0.2, True)]})
+    assert s["meta_helps"] == [] and s["overlap"] is False
+    assert s["meta_joint"] == [["measurement direction", "measurement method"]]
+    assert s["meta_noise"] == [] and s["direction_helps"] is True
+    assert s["meta_top"] == "measurement direction and measurement method together"
+
+
+def test_prose_helpers():
+    from collections import Counter
+
+    assert andjoin([]) == "" and andjoin(["a"]) == "a"
+    assert andjoin(["a", "b"]) == "a and b" and andjoin(["a", "b", "c"]) == "a, b and c"
+    m = method_summary(Counter({"LFA": 10, "TPS": 7, "UNSPECIFIED": 9, "IR_THERMO": 1, "MTPS": 2}))
+    assert m["top"] == ["laser flash", "Hot Disk/TPS"] and m["unspecified"] == 9
+    assert m["rare_rows"] == 3 and [label for label, _ in m["rare"]] == ["modified transient plane source", "IR thermography"]
+    s = matrix_summary(Counter({"epoxy": 50, "other": 9, "silicone": 20, "PE": 10, "PVA": 1}))
+    assert s["next"] == [("silicone", 20), ("PE", 10)] and s["n_more_families"] == 1 and s["other_rows"] == 9
 
 
 def test_fingerprint_is_stable_and_sensitive(repo_layout):

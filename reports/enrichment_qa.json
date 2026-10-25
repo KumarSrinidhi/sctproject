@@ -1,59 +1,59 @@
 {
-  "rows": 656,
+  "rows": 639,
   "method_class": {
-    "LFA": 200,
+    "LFA": 198,
     "TPS": 120,
     "UNSPECIFIED": 116,
     "THB": 70,
-    "HOT_WIRE": 66,
+    "HOT_WIRE": 54,
     "SS_D5470": 38,
     "PERIODIC": 21,
     "SS_UNSPECIFIED": 14,
-    "MTPS": 5,
     "SS_HFM_GHP": 4,
+    "MTPS": 2,
     "SS_GHFM": 1,
     "IR_THERMO": 1
   },
   "method_basis": {
-    "named": 515,
+    "named": 498,
     "none": 116,
     "generic": 14,
     "instrument": 11
   },
   "direction_reported": {
-    "unknown": 313,
+    "unknown": 297,
     "through-plane": 212,
-    "in-plane": 114,
+    "in-plane": 113,
     "isotropic": 17
   },
   "direction_effective": {
-    "through-plane": 308,
-    "mixed": 148,
-    "in-plane": 114,
+    "through-plane": 307,
+    "mixed": 133,
+    "in-plane": 113,
     "unknown": 69,
     "isotropic": 17
   },
   "direction_basis": {
-    "reported": 343,
-    "method-default": 244,
+    "reported": 342,
+    "method-default": 228,
     "none": 69
   },
   "phi_basis": {
-    "converted-from-wt": 239,
-    "reported": 211,
-    "unavailable-hybrid": 121,
+    "converted-from-wt": 238,
+    "reported": 208,
+    "unavailable-hybrid": 108,
     "unavailable": 81,
     "unavailable-prefilled-matrix": 4
   },
   "k_matrix_basis": {
-    "reported": 397,
+    "reported": 380,
     "reference-default": 228,
     "unavailable": 31
   },
   "matrix_family": {
-    "epoxy": 275,
-    "silicone": 131,
-    "other": 78,
+    "epoxy": 271,
+    "silicone": 119,
+    "other": 77,
     "polyethylene": 74,
     "polyamide": 15,
     "polyimide": 14,
@@ -69,15 +69,15 @@
     "PMMA": 1
   },
   "filler_family": {
-    "BN": 390,
-    "hybrid": 155,
-    "none": 59,
+    "BN": 389,
+    "hybrid": 141,
+    "none": 57,
     "AlN": 44,
     "Al2O3": 6,
     "MgO": 2
   },
   "flags": {
-    "mixed_direction_anisotropic": 220,
+    "mixed_direction_anisotropic": 207,
     "lfa_cp_rho_unreported": 135,
     "method_unspecified": 116,
     "contact_resistance_included": 53,

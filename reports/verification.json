@@ -1,12 +1,12 @@
 {
-  "generated": "2026-10-25T21:05:26",
+  "generated": "2026-10-25T21:51:42",
   "overall": "PASS",
   "checks": [
     {
       "id": "records_load",
       "description": "All record files parse and match the schema",
       "ok": true,
-      "detail": "175 records; 0 schema errors"
+      "detail": "174 records; 0 schema errors"
     },
     {
       "id": "validation_clean",
@@ -58,27 +58,27 @@
     }
   ],
   "stats": {
-    "rows": 656,
-    "papers": 175,
+    "rows": 639,
+    "papers": 174,
     "k_min": 0.12,
     "k_max": 50.0,
-    "k_median": 1.105,
+    "k_median": 1.1,
     "year_min": 1997,
     "year_max": 2026,
     "confidence": {
-      "High": 569,
+      "High": 552,
       "Medium": 87
     },
     "value_source": {
-      "text": 449,
-      "table": 179,
+      "text": 442,
+      "table": 169,
       "figure": 28
     },
     "filler_material": {
       "h-BN": 179,
       "BNNS": 116,
-      "BN": 93,
-      "none": 59,
+      "BN": 92,
+      "none": 57,
       "AlN": 44,
       "h-BN/EG hybrid": 21,
       "h-BN/SiC hybrid": 15,
@@ -89,8 +89,6 @@
       "h-BN/Al2O3 hybrid": 6,
       "BN/carbon microfiber hybrid": 6,
       "h-BN/graphene hybrid": 6,
-      "h-BN/LMPA hybrid": 6,
-      "h-BN/GO/LMPA hybrid": 6,
       "h-BN/BNNT hybrid": 6,
       "Al2O3/BN hybrid": 5,
       "BNNS/GNP hybrid": 5,
@@ -103,7 +101,6 @@
       "h-BN/cBN hybrid": 2,
       "BNNS/diamond hybrid": 2,
       "MgO": 2,
-      "BNNS/Ag hybrid": 2,
       "h-BN/RGO hybrid": 2,
       "BN/Al2O3 hybrid": 2,
       "AlN/Al2O3/BNNT hybrid": 2,
