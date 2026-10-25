@@ -210,6 +210,30 @@ def ml_benchmark(root: Optional[Path] = RootOpt,
                + (", figures/ml_parity_lopo.png" if fig else ""))
 
 
+release_app = typer.Typer(no_args_is_help=True, help="Release artefacts (Zenodo upload bundle).")
+app.add_typer(release_app, name="release")
+
+
+@release_app.command("bundle")
+def release_bundle(root: Optional[Path] = RootOpt,
+                   out: Path = typer.Option(Path("dist"), "--out", help="Output folder (relative to the project root)")):
+    """Zip the dataset files (no code, no third-party papers) for a Zenodo upload -> dist/."""
+    from .build import expected_outputs
+    from .release import bundle_members, build_bundle, dataset_meta
+
+    lay = layout(root)
+    stale = [p.name for p, data in expected_outputs(lay).items() if not p.exists() or p.read_bytes() != data]
+    if stale:
+        typer.echo(f"Published files are out of date ({stale}); run `argus build` first.")
+        raise typer.Exit(1)
+    out_dir = out if out.is_absolute() else lay.root / out
+    path, digest = build_bundle(lay, out_dir)
+    meta = dataset_meta(lay)
+    typer.echo(f"wrote {path} ({path.stat().st_size // 1024} KB, {len(bundle_members(lay)) + 2} files)")
+    typer.echo(f"sha256 {digest}")
+    typer.echo(f"Zenodo metadata: .zenodo.json (version {meta.get('version')}, licence {meta.get('license')})")
+
+
 report_app = typer.Typer(no_args_is_help=True, help="Course report generated from the analysis outputs.")
 app.add_typer(report_app, name="report")
 

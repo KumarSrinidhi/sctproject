@@ -114,3 +114,49 @@ def test_datapackage_carries_licence_and_authors(repo_layout):
 def test_toolkit_version_is_consistent(repo_layout):
     py = (repo_layout.root / "pyproject.toml").read_text(encoding="utf-8")
     assert f'version = "{__version__}"' in py
+
+
+def test_zenodo_metadata_matches_dataset_yaml(repo_layout):
+    from argus.release import zenodo_metadata
+
+    meta = dataset_meta(repo_layout)
+    z = zenodo_metadata(meta)
+    assert z["upload_type"] == "dataset" and z["license"] == "cc-by-4.0" and z["version"] == meta["version"]
+    assert [c["name"] for c in z["creators"]] == ["Kumar, Aniket", "Reddy, Rao Kumar Srinidhi"]
+    assert z["publication_date"] == str(meta["released"]) and z["keywords"] == meta["keywords"]
+    committed = json.loads((repo_layout.root / ".zenodo.json").read_text(encoding="utf-8"))
+    assert committed == z, "run `argus build` to regenerate .zenodo.json"
+
+
+def test_doi_flows_into_citation_files():
+    from argus.release import zenodo_metadata
+
+    meta = {"title": "T", "version": "1.2.0", "released": "2027-01-01", "license": "CC-BY-4.0",
+            "authors": [{"given-names": "Aniket", "family-names": "Kumar"}], "homepage": "https://example.org",
+            "doi": "10.5281/zenodo.123", "publisher": "Zenodo"}
+    assert citation_text(meta).endswith("[Data set]. Zenodo. https://doi.org/10.5281/zenodo.123")
+    assert 'doi: "10.5281/zenodo.123"' in citation_cff(meta)
+    assert zenodo_metadata(meta)["doi"] == "10.5281/zenodo.123"
+
+
+def test_bundle_is_reproducible_and_holds_only_dataset_files(repo_layout, tmp_path):
+    import hashlib
+    import zipfile
+
+    from argus.release import build_bundle
+
+    p1, h1 = build_bundle(repo_layout, tmp_path / "a")
+    p2, h2 = build_bundle(repo_layout, tmp_path / "b")
+    assert h1 == h2 and p1.read_bytes() == p2.read_bytes()
+    names = zipfile.ZipFile(p1).namelist()
+    top = names[0].split("/")[0]
+    rel = [n.split("/", 1)[1] for n in names]
+    assert top == f"ARGUS-dataset-v{dataset_meta(repo_layout)['version']}"
+    assert "thermal_conductivity_dataset.csv" in rel and "datapackage.json" in rel and "SHA256SUMS.txt" in rel
+    assert not any(r.startswith(("work/", "src/", "tests/", "local_archive/", "data/external/")) for r in rel)
+    assert not any("OPENALEX" in r or r.endswith((".py", ".pdf")) for r in rel)
+    z = zipfile.ZipFile(p1)
+    sums = dict(line.split("  ", 1)[::-1] for line in z.read(f"{top}/SHA256SUMS.txt").decode().splitlines())
+    for r in rel:
+        if r != "SHA256SUMS.txt":
+            assert hashlib.sha256(z.read(f"{top}/{r}")).hexdigest() == sums[r]

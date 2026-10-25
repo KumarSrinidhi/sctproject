@@ -58,6 +58,7 @@ Without installing, run from the repo root with `PYTHONPATH=src python -m argus 
 | `argus ml benchmark` | Predict k for unseen papers; baselines vs models, honest validation → `reports/ml_benchmark.md` (needs the `ml` extra: `pip install -e ".[ml]"`) |
 | `argus external fetch` / `check` | Download the external test datasets that are not in git, and verify every external raw file's sha256 (needs the `external` extra) |
 | `argus external validate` | Test ARGUS against other groups' data: physics-code cross-check, models trained on ARGUS predicting external literature, pooled training, value cross-check of shared papers → `reports/external_validation.md` |
+| `argus release bundle` | Zip the dataset files (no code, no third-party papers), reproducibly, for a Zenodo upload → `dist/`; see [docs/ZENODO.md](docs/ZENODO.md) |
 | `argus report course` | Render the course report [docs/course_report/COURSE_REPORT.md](docs/course_report/COURSE_REPORT.md) and its figures from current results (needs the `report` extra; refuses stale analysis outputs) |
 | `argus report explorer` | Render the interactive data explorer `docs/explorer/index.html`, a self-contained page you can open in any browser, plus a variant for publishing as a shared link |
 | `argus new-paper --doi … --title … --year …` | Creates a record file for a new paper |

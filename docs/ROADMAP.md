@@ -206,11 +206,14 @@ Done:
   - Licences: data under CC BY 4.0 (`LICENSE-DATA.md`), code under MIT (`LICENSE`).
 
 Next:
-1. **Zenodo DOI.** Connect the repository in Zenodo's GitHub integration (needs your Zenodo account), then
-   publish a GitHub Release from `data-v1.1` to mint a DOI. Add the DOI to `data/dataset.yaml`.
-2. **Before going public:** review the third-party papers in `work/fulltext/`, which keep their own licences
-   (two are non-commercial, CC BY-NC), and remove the three saved captcha pages, which embed the
-   fetching machine's IP address. See the checklist in `LICENSE-DATA.md`.
+1. **Zenodo DOI.** The repository is private, so the upload is manual. `argus release bundle` builds the
+   upload zip and `.zenodo.json` holds the form fields; follow [ZENODO.md](ZENODO.md). Then add the
+   reserved DOI to `data/dataset.yaml` (`doi`, `publisher: Zenodo`).
+2. **Before going public:**
+   - ✅ Done on 2026-10-25: third-party files without clear redistribution rights were moved out of git,
+     including the captcha pages. Every stored file is now CC BY (`work/THIRD_PARTY.csv`).
+   - Still to do: those files remain in the git history, so publish from a fresh-history copy (see
+     `LICENSE-DATA.md`).
 3. **Report finishing:** a PDF/Word export if the course requires one.
 
 ---

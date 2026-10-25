@@ -40,8 +40,10 @@ def citation_text(meta: dict[str, Any]) -> str:
     else:
         names = parts[0] if parts else ""
     year = str(meta.get("released", ""))[:4]
+    where = f"https://doi.org/{meta['doi']}" if meta.get("doi") else meta.get("homepage", "")
+    publisher = f"{meta['publisher']}. " if meta.get("doi") and meta.get("publisher") else ""
     return (f"{names} ({year}). ARGUS: {meta.get('title', '')} (Version {meta.get('version', '')}) [Data set]. "
-            f"{meta.get('homepage', '')}")
+            f"{publisher}{where}")
 
 
 def fulltext_licences(lay: Layout) -> dict[str, tuple[str, str | None]]:
@@ -91,6 +93,8 @@ def citation_cff(meta: dict[str, Any]) -> str:
     ]
     if meta.get("version"):
         lines.append(f"version: {_q(meta['version'])}")
+    if meta.get("doi"):
+        lines.append(f"doi: {_q(meta['doi'])}")
     if meta.get("released"):
         lines.append(f"date-released: {_q(meta['released'])}")
     authors = [a for a in meta.get("authors", []) if a.get("family-names") or a.get("given-names")]
@@ -112,3 +116,106 @@ def citation_cff(meta: dict[str, Any]) -> str:
         lines.append("keywords:")
         lines += [f"  - {_q(k)}" for k in meta["keywords"]]
     return "\n".join(lines) + "\n"
+
+
+# --------------------------------------------------------------------------- Zenodo
+
+ZENODO_LICENSE = {"CC-BY-4.0": "cc-by-4.0", "MIT": "mit"}
+
+
+def zenodo_metadata(meta: dict[str, Any]) -> dict[str, Any]:
+    """Deposition metadata in Zenodo's format (.zenodo.json / the upload form).
+
+    Generated from data/dataset.yaml like CITATION.cff, so the two cannot drift.
+    """
+    creators = [{"name": ", ".join(x for x in (a.get("family-names", ""), a.get("given-names", "")) if x)}
+                for a in meta.get("authors", []) if a.get("family-names") or a.get("given-names")]
+    if not creators:
+        raise ValueError("data/dataset.yaml needs at least one author")
+    desc = " ".join(str(meta.get("description", "")).split())
+    notes = []
+    if meta.get("code_license"):
+        notes.append(f"Data licensed {meta.get('license', '')}; the argus toolkit in the repository is licensed "
+                     f"{meta['code_license']}.")
+    notes.append("Third-party papers are not included; every row cites the DOI of its source.")
+    out: dict[str, Any] = {
+        "upload_type": "dataset",
+        "title": "ARGUS: " + meta.get("title", ""),
+        "creators": creators,
+        "description": desc,
+        "version": meta.get("version", ""),
+        "publication_date": str(meta.get("released", "")),
+        "license": ZENODO_LICENSE.get(meta.get("license", ""), str(meta.get("license", "")).lower()),
+        "access_right": "open",
+        "keywords": list(meta.get("keywords", [])),
+        "notes": " ".join(notes),
+    }
+    if meta.get("homepage"):
+        out["related_identifiers"] = [{"identifier": meta["homepage"], "relation": "isSupplementedBy",
+                                       "resource_type": "software", "scheme": "url"}]
+    if meta.get("doi"):
+        out["doi"] = meta["doi"]
+    return out
+
+
+def zenodo_json(meta: dict[str, Any]) -> str:
+    import json
+
+    return json.dumps(zenodo_metadata(meta), indent=2, ensure_ascii=False) + "\n"
+
+
+# Files that make up the published dataset (relative to the repository root).
+BUNDLE_FILES = ("thermal_conductivity_dataset.csv", "paper_inventory.csv", "extraction_log.csv",
+                "uncertain_measurements.csv", "unusable_sources.csv", "datapackage.json", "CITATION.cff",
+                "LICENSE-DATA.md", "data/dataset.yaml", "data/CHANGELOG.md", "data/curation_log.yaml",
+                "data/exclusions.yaml", "data/tombstones.yaml", "data/processed/measurements_enriched.csv")
+BUNDLE_DIRS = ("data/records",)
+_ZIP_TIME = (2026, 1, 1, 0, 0, 0)
+
+
+def bundle_members(lay: Layout) -> list[str]:
+    members = [f for f in BUNDLE_FILES if (lay.root / f).exists()]
+    for d in BUNDLE_DIRS:
+        members += sorted(p.relative_to(lay.root).as_posix() for p in (lay.root / d).glob("*.yaml"))
+    return sorted(members)
+
+
+def bundle_readme(meta: dict[str, Any], members: list[str]) -> str:
+    lines = [f"ARGUS: {meta.get('title', '')}", f"Version {meta.get('version', '')} ({meta.get('released', '')})", "",
+             "Authors: " + ", ".join(author_names(meta)), f"Licence: {meta.get('license', '')} (see LICENSE-DATA.md)",
+             f"Repository: {meta.get('homepage', '')}", "", "How to cite:", "  " + citation_text(meta), "",
+             " ".join(str(meta.get("description", "")).split()), "",
+             "Main table: thermal_conductivity_dataset.csv (one measured k per row; columns described in",
+             "datapackage.json). data/processed/measurements_enriched.csv adds derived columns, each with a",
+             "*_basis column. data/records/ holds the per-paper source records (the source of truth).",
+             "SHA256SUMS.txt lists the checksum of every file.", "",
+             "Files:"] + [f"  {m}" for m in members]
+    return "\n".join(lines) + "\n"
+
+
+def build_bundle(lay: Layout, out_dir) -> tuple[Any, str]:
+    """dist/ARGUS-dataset-v<version>.zip: the dataset files only (no third-party papers,
+    no code), byte-for-byte reproducible. Returns (path, sha256)."""
+    import hashlib
+    import zipfile
+    from pathlib import Path
+
+    meta = dataset_meta(lay)
+    members = bundle_members(lay)
+    out_dir = Path(out_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
+    name = f"ARGUS-dataset-v{meta.get('version', '0')}"
+    path = out_dir / f"{name}.zip"
+    data = {m: (lay.root / m).read_bytes() for m in members}
+    data["README.txt"] = bundle_readme(meta, members).encode("utf-8")
+    sums = "".join(f"{hashlib.sha256(b).hexdigest()}  {m}\n" for m, b in sorted(data.items()))
+    data["SHA256SUMS.txt"] = sums.encode("utf-8")
+    tmp = path.with_suffix(".zip.tmp")
+    with zipfile.ZipFile(tmp, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+        for m in sorted(data):
+            info = zipfile.ZipInfo(f"{name}/{m}", date_time=_ZIP_TIME)
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o644 << 16
+            z.writestr(info, data[m])
+    tmp.replace(path)
+    return path, hashlib.sha256(path.read_bytes()).hexdigest()

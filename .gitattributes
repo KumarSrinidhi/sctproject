@@ -9,3 +9,4 @@ CITATION.cff              text eol=lf
 data/external/*/raw/**    -text
 # Curated external tables are checksummed in data/external/sources.yaml: keep them byte-stable.
 data/external/*/*.csv      -text
+.zenodo.json              text eol=lf
