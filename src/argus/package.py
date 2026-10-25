@@ -38,7 +38,7 @@ def descriptor(lay: Layout, counts: dict[str, int]) -> dict[str, Any]:
     return {
         "profile": "tabular-data-package",
         "name": meta.get("name", "argus-dataset"),
-        "title": meta.get("title", ""),
+        "title": "ARGUS: " + meta.get("title", "") if meta.get("title") else "",
         "version": meta.get("version", "0.0.0"),
         "created": f"{meta['released']}T00:00:00Z" if meta.get("released") else "",  # RFC 3339
         "description": meta.get("description", ""),
@@ -60,9 +60,20 @@ def descriptor(lay: Layout, counts: dict[str, int]) -> dict[str, Any]:
                 "path": "data/processed/measurements_enriched.csv",
                 "profile": "tabular-data-resource",
                 "encoding": "utf-8-sig",
-                "description": "Analysis-ready table: published columns plus derived columns, each with a *_basis "
+                "description": "Analysis-ready table: published columns plus derived columns. Converted or "
+                               "defaulted quantities (method, direction, vol%, wt%, k_matrix) carry a *_basis "
                                "column separating reported values from conversions and defaults.",
                 "schema": {"fields": base + _fields(DERIVED), "primaryKey": ["row_id"]},
+            },
+            {
+                "name": "uncertain-measurements",
+                "path": "uncertain_measurements.csv",
+                "profile": "tabular-data-resource",
+                "encoding": "utf-8-sig",
+                "description": (f"The {counts.get('uncertain', 0)} rows of the published dataset below High "
+                                "confidence (abstract-only, figure-digitized, or printed as approximate or as a "
+                                "bound), with the same columns."),
+                "schema": {"fields": base, "primaryKey": ["row_id"]},
             },
             {
                 "name": "papers",
@@ -72,11 +83,22 @@ def descriptor(lay: Layout, counts: dict[str, int]) -> dict[str, Any]:
                 "description": f"{counts.get('papers', 0)} source papers with row counts and k ranges.",
             },
             {
+                "name": "extraction-log",
+                "path": "extraction_log.csv",
+                "profile": "tabular-data-resource",
+                "encoding": "utf-8-sig",
+                "description": ("Chronological extraction and curation log, one entry per paper pass: how the "
+                                "source was accessed, the tables and figures inspected, QC findings and rows "
+                                "rejected."),
+            },
+            {
                 "name": "exclusions",
                 "path": "unusable_sources.csv",
                 "profile": "tabular-data-resource",
                 "encoding": "utf-8",
-                "description": "Screened sources that contribute no rows, with the reason.",
+                "description": ("Sources excluded at screening or extraction, with the reason. An action starting "
+                                "with 'recovered' or 'abstract-recovered' means rows were later "
+                                "recovered from that source after all."),
             },
         ],
     }

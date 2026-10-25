@@ -16,7 +16,7 @@ removed in the same pass). See `data/acquisition/` and `docs/ARCHITECTURE.md` §
 - **Extraction and checking:**
   - Values printed in text or tables only; figure-only values were counted, not digitized.
   - One agent extracted and a second, independent agent checked every row against the source: 406
-    candidate rows, 0 rejected, 71 descriptive fields corrected, 2 missed rows added.
+    candidate rows, 0 rejected, 71 rows corrected (80 descriptive fields), 2 missed rows added.
   - On import, every quote was re-checked as verbatim and as containing the printed k.
 - **Post-import review** resolved 78 validation problems and applied the README scope rules. 25 rows
   were dropped before release and tombstoned:
@@ -40,6 +40,14 @@ papers; v1.1 gave 0.223 (×1.67) on 218 rows from 80 papers. Calibrated physics:
 The scope widens with the data, so the dataset title becomes "BN- and AlN-filled polymer composites".
 Epoxy is still the most common matrix (271 rows), followed by silicone (119) and polyethylene (74). The
 matrix vocabulary gains thermoplastic families with handbook reference values, marked unverified.
+
+Release metadata (2026-10-26, after tag `data-v1.2`; the data are unchanged):
+- The Zenodo archive carries its own `LICENSE.txt`, and its bytes no longer depend on the checkout's line
+  endings.
+- The dataset description now says that a few rows come from public abstracts and that figure values are
+  pixel-digitized.
+- `datapackage.json` declares all five published tables. The exclusions table is described correctly: 10
+  of its 72 entries were later recovered and do contribute rows.
 
 ## 1.1.0 (2026-10-23): close open audit items
 

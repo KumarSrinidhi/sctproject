@@ -100,15 +100,17 @@ def render_outputs(lay: Layout, records: list[PaperRecord]) -> dict[Path, bytes]
     curation, excl = load_side_files(lay)
     inv = inventory(rows)
     meta = dataset_meta(lay)
+    uncertain = [r for r in rows if r["confidence"] != "High"]
+    counts = {"rows": len(rows), "papers": len(inv), "uncertain": len(uncertain)}
     outputs = {
         lay.dataset_csv: csv_bytes(rows, COLUMN_NAMES),
-        lay.uncertain_csv: csv_bytes([r for r in rows if r["confidence"] != "High"], COLUMN_NAMES),
+        lay.uncertain_csv: csv_bytes(uncertain, COLUMN_NAMES),
         lay.inventory_csv: csv_bytes(inv, INVENTORY_COLUMNS),
         lay.log_csv: csv_bytes(log_entries(records, curation), LOG_COLUMNS),
         lay.unusable_csv: csv_bytes(excl, EXCLUSION_COLUMNS, bom=False),
         lay.compiled_jsonl: jsonl_text(rows).encode("utf-8"),
         lay.processed / "measurements_enriched.csv": expected_enriched_bytes(records),
-        lay.root / "datapackage.json": descriptor_text(lay, {"rows": len(rows), "papers": len(inv)}).encode("utf-8"),
+        lay.root / "datapackage.json": descriptor_text(lay, counts).encode("utf-8"),
     }
     if meta.get("authors"):  # release metadata present: publish the citation files
         outputs[lay.root / "CITATION.cff"] = citation_cff(meta).encode("utf-8")

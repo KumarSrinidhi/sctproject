@@ -78,7 +78,7 @@ Without installing, run from the repo root with `PYTHONPATH=src python -m argus 
 | `paper_inventory.csv` | 174 papers with row counts, fillers, matrices, k ranges |
 | `extraction_log.csv` | Per-paper and per-pass audit trail (186 entries) |
 | `uncertain_measurements.csv` | 87 Medium-confidence rows (abstract-only, figure-digitized, approximate or uncertain values) |
-| `unusable_sources.csv` | 72 screened sources that contribute no rows, with reasons (incl. the Sci-Hub policy note) |
+| `unusable_sources.csv` | 72 sources excluded at screening or extraction, with reasons (incl. the Sci-Hub policy note); the 10 marked *recovered* later yielded rows |
 | `data/acquisition/` | Phase 6: discovery queries and their log, screening decisions, extraction + verification audit trail |
 | `data/records/` | **Source of truth**: one YAML file per paper |
 | `reports/` | Verification, enrichment QA and physics-fit reports (generated) |
@@ -178,6 +178,6 @@ See [docs/ROADMAP.md](docs/ROADMAP.md). In short:
 
 - **Code:** [MIT](LICENSE). This covers `src/`, `tests/`, the Python scripts in `work/`, `pyproject.toml` and `.github/`.
 - **Data:** [CC BY 4.0](LICENSE-DATA.md). This covers everything else in the repository: the published tables, `data/`, `reports/`, the documents in `docs/`, the earlier reports and figures at the root, and the legacy logs and backups. `LICENSE-DATA.md` has the full list.
-- **Third-party papers** stored in `work/fulltext/`, `work/phase4_browser/` and `work/figures/` keep their publishers' licences; two are non-commercial (CC BY-NC). Work through the checklist in `LICENSE-DATA.md` before making the repository public.
+- **Third-party papers** stored in `work/fulltext/`, `work/phase4_browser/` and `work/figures/` keep their publishers' licences; every stored file is CC BY (`work/THIRD_PARTY.csv`). Files removed on 2026-10-25 because they could not be redistributed are still in the git history; see "Third-party files in the git history" in `LICENSE-DATA.md`.
 
 Values were extracted from open-access papers only; Sci-Hub was deliberately not used. Check a value against its source before commercial or regulatory use.
