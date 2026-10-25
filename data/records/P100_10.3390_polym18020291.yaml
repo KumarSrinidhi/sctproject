@@ -1,0 +1,124 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P100
+paper:
+  doi: 10.3390/polym18020291
+  title: Tailoring Thermal Conductivity Anisotropy in Poly(vinylidene fluoride)/Boron Nitride Nanosheet Composites via Processing-Induced Filler Orientation
+  year: 2026
+  source_url: https://doi.org/10.3390/polym18020291
+extraction_log:
+- seq: 112
+  candidate_id: P6-P100
+  doi: 10.3390/polym18020291
+  paper_title: Tailoring Thermal Conductivity Anisotropy in Poly(vinylidene fluoride)/Boron Nitride Nanosheet Composites via Processing-Induced Filler Orientation
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym18020291.txt (cache, not committed)
+  tables_inspected: Table 1 (DSC parameters only, no k values)
+  figures_inspected: Figure 4 (in-plane and bulk k vs. PVDF/BNNs ratio for compression- and injection-molded samples); captions only, values not read from figure
+  candidate_measurements: 4
+  rows_appended: 4
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 12 figure-only values not taken. Only the 90/10 samples have printed k values (4 rows). The 80/20, 70/30 and 60/40 samples (2 methods x 2 directions = 12 values) and any neat-PVDF values appear only in Figure 4 and were skipped. Neat PVDF k is not printed. The paper calls the filler BNNs (nanosheets exfoliated by ball milling) but also refers to it as hexagonal BN platelets; BNNS used. 'Bulk' k mapped to through-plane, as the abstract and conclusions use 'through-plane' for the sa
+  rows_rejected_at_append: []
+  rows_added:
+  - ff17d60b-277
+  - ff17d60b-278
+  - ff17d60b-279
+  - ff17d60b-280
+measurements:
+- row_id: ff17d60b-277
+  matrix_polymer: PVDF (poly(vinylidene fluoride), FR903, Shanghai Huayi Sanaifu)
+  filler_material: BNNS
+  filler_material_original: BNNs (ball-milled exfoliated boron nitride, ~10 μm), sample PVDF/BNNs 90/10 injection-molded
+  filler_shape: nanosheets / platelets
+  filler_mean_size_um: 10.0
+  size_distribution: ~10 μm diameter (particle size statistics in Figure 1b)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 90/10
+  filler_loading_original_unit: PVDF/BNNs mass ratio
+  functionalization: none
+  filler_alignment: aligned along injection flow direction (in-plane of disc)
+  processing_method: Melt blending in torque rheometer (210 °C, 30 rpm, 6 min), cryogenic crushing, injection molding (600 bar, 190 °C barrel, 25 °C mold, 30 s cooling) into 30 mm x 4 mm discs
+  k_composite_W_mK: 1.26
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500 S (Hot Disk AB); 5 tests averaged; discs 30 mm diameter x 4 mm
+  measurement_temperature_C: 20.0
+  k_original_value: 1.26
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''In thermal conductivity testing, PVDF/BNNs composites (injection-molded) exhibit significant anisotropy; the in-plane thermal conductivity reaches 1.26 W/(m·K), while the bulk thermal conductivity was only 0.40 W/(m·K).'''
+  confidence: High
+  notes: Injection-molded PVDF/BNNs 90/10. Same value in abstract and conclusions. Test environment 20 ± 3 °C.
+- row_id: ff17d60b-278
+  matrix_polymer: PVDF (poly(vinylidene fluoride), FR903, Shanghai Huayi Sanaifu)
+  filler_material: BNNS
+  filler_material_original: BNNs (ball-milled exfoliated boron nitride, ~10 μm), sample PVDF/BNNs 90/10 injection-molded
+  filler_shape: nanosheets / platelets
+  filler_mean_size_um: 10.0
+  size_distribution: ~10 μm diameter (particle size statistics in Figure 1b)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 90/10
+  filler_loading_original_unit: PVDF/BNNs mass ratio
+  functionalization: none
+  filler_alignment: aligned along injection flow direction (in-plane of disc)
+  processing_method: Melt blending in torque rheometer (210 °C, 30 rpm, 6 min), cryogenic crushing, injection molding (600 bar, 190 °C barrel, 25 °C mold, 30 s cooling) into 30 mm x 4 mm discs
+  k_composite_W_mK: 0.4
+  k_direction: 'through-plane (paper: "bulk"; abstract and conclusions call it "through-plane")'
+  measurement_method: Transient plane source, Hot Disk TPS 2500 S (Hot Disk AB); 5 tests averaged; discs 30 mm diameter x 4 mm
+  measurement_temperature_C: 20.0
+  k_original_value: 0.4
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''In thermal conductivity testing, PVDF/BNNs composites (injection-molded) exhibit significant anisotropy; the in-plane thermal conductivity reaches 1.26 W/(m·K), while the bulk thermal conductivity was only 0.40 W/(m·K).'''
+  confidence: High
+  notes: Injection-molded PVDF/BNNs 90/10. Printed as 0.40. Test environment 20 ± 3 °C.
+- row_id: ff17d60b-279
+  matrix_polymer: PVDF (poly(vinylidene fluoride), FR903, Shanghai Huayi Sanaifu)
+  filler_material: BNNS
+  filler_material_original: BNNs (ball-milled exfoliated boron nitride, ~10 μm), sample PVDF/BNNs 90/10 compression-molded
+  filler_shape: nanosheets / platelets
+  filler_mean_size_um: 10.0
+  size_distribution: ~10 μm diameter (particle size statistics in Figure 1b)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 90/10
+  filler_loading_original_unit: PVDF/BNNs mass ratio
+  functionalization: none
+  filler_alignment: random (no orientation)
+  processing_method: Melt blending in torque rheometer (210 °C, 30 rpm, 6 min), cryogenic crushing, compression molding (hot-press 10 MPa, 200 °C, 10 min; cold-press 8 MPa, 10 min) into 30 mm x 4 mm discs
+  k_composite_W_mK: 0.41
+  k_direction: in-plane
+  measurement_method: Transient plane source, Hot Disk TPS 2500 S (Hot Disk AB); 5 tests averaged; discs 30 mm diameter x 4 mm
+  measurement_temperature_C: 20.0
+  k_original_value: 0.41
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''When the PVDF/BNNs mass ratio was 90/10, the in-plane and bulk thermal conductivities were 0.41 W/(m·K) and 0.42 W/(m·K), respectively, close to the bulk thermal conductivity of injection-molded samples.'''
+  confidence: High
+  notes: Compression-molded PVDF/BNNs 90/10. Abstract rounds both directions to 'around 0.41 W/(m·K)'. Test environment 20 ± 3 °C.
+- row_id: ff17d60b-280
+  matrix_polymer: PVDF (poly(vinylidene fluoride), FR903, Shanghai Huayi Sanaifu)
+  filler_material: BNNS
+  filler_material_original: BNNs (ball-milled exfoliated boron nitride, ~10 μm), sample PVDF/BNNs 90/10 compression-molded
+  filler_shape: nanosheets / platelets
+  filler_mean_size_um: 10.0
+  size_distribution: ~10 μm diameter (particle size statistics in Figure 1b)
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 90/10
+  filler_loading_original_unit: PVDF/BNNs mass ratio
+  functionalization: none
+  filler_alignment: random (no orientation)
+  processing_method: Melt blending in torque rheometer (210 °C, 30 rpm, 6 min), cryogenic crushing, compression molding (hot-press 10 MPa, 200 °C, 10 min; cold-press 8 MPa, 10 min) into 30 mm x 4 mm discs
+  k_composite_W_mK: 0.42
+  k_direction: 'through-plane (paper: "bulk")'
+  measurement_method: Transient plane source, Hot Disk TPS 2500 S (Hot Disk AB); 5 tests averaged; discs 30 mm diameter x 4 mm
+  measurement_temperature_C: 20.0
+  k_original_value: 0.42
+  k_original_unit: W/(m·K)
+  value_source: text
+  source_location: 'Section 3.2, paragraph 1: ''When the PVDF/BNNs mass ratio was 90/10, the in-plane and bulk thermal conductivities were 0.41 W/(m·K) and 0.42 W/(m·K), respectively, close to the bulk thermal conductivity of injection-molded samples.'''
+  confidence: High
+  notes: Compression-molded PVDF/BNNs 90/10. Test environment 20 ± 3 °C.

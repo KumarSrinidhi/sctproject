@@ -1,12 +1,12 @@
 {
-  "generated": "2026-10-25T20:39:24",
+  "generated": "2026-10-25T20:42:15",
   "overall": "PASS",
   "checks": [
     {
       "id": "records_load",
       "description": "All record files parse and match the schema",
       "ok": true,
-      "detail": "95 records; 0 schema errors"
+      "detail": "104 records; 0 schema errors"
     },
     {
       "id": "validation_clean",
@@ -58,33 +58,33 @@
     }
   ],
   "stats": {
-    "rows": 258,
-    "papers": 95,
-    "k_min": 0.17,
+    "rows": 293,
+    "papers": 104,
+    "k_min": 0.12,
     "k_max": 47.03,
-    "k_median": 1.0350000000000001,
+    "k_median": 0.95,
     "year_min": 1997,
     "year_max": 2026,
     "confidence": {
-      "High": 194,
-      "Medium": 64
+      "High": 228,
+      "Medium": 65
     },
     "value_source": {
-      "text": 158,
-      "table": 72,
+      "text": 187,
+      "table": 78,
       "figure": 28
     },
     "filler_material": {
-      "h-BN": 85,
+      "h-BN": 100,
+      "BNNS": 57,
       "BN": 54,
-      "BNNS": 53,
-      "AlN": 20,
+      "AlN": 27,
       "BN/graphene hybrid": 11,
+      "none": 10,
       "Al2O3": 6,
       "Al2O3/BN hybrid": 5,
       "h-BN/CNT hybrid": 3,
       "Al2O3/BNNS hybrid": 2,
-      "none": 2,
       "cBN": 2,
       "h-BN/AlN hybrid": 2,
       "h-BN/cBN hybrid": 2,
@@ -95,7 +95,8 @@
       "BNNS hybrid": 1,
       "AlN/BN hybrid": 1,
       "Al2O3/graphene hybrid": 1,
-      "BNNS/SiC hybrid": 1
+      "BNNS/SiC hybrid": 1,
+      "h-BN/multilayer graphene hybrid": 1
     }
   }
 }

@@ -1,0 +1,221 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P099
+paper:
+  doi: 10.3390/polym13030459
+  title: 'Hypergravity-Induced Accumulation: A New, Efficient, and Simple Strategy to Improve the Thermal Conductivity of Boron Nitride Filled Polymer Composites'
+  year: 2021
+  source_url: https://doi.org/10.3390/polym13030459
+extraction_log:
+- seq: 111
+  candidate_id: P6-P099
+  doi: 10.3390/polym13030459
+  paper_title: 'Hypergravity-Induced Accumulation: A New, Efficient, and Simple Strategy to Improve the Thermal Conductivity of Boron Nitride Filled Polymer Composites'
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym13030459.txt (cache, not committed)
+  tables_inspected: Table 1 (centrifugation speed vs relative gravity acceleration; no k values)
+  figures_inspected: Figure 6 (neat SR and BN/SR through-plane k), Figure 7 (k vs initial concentration, speed, acceleration), Figure 8b (k by position and direction), Figure 8c (literature comparison)
+  candidate_measurements: 8
+  rows_appended: 8
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 25 figure-only values not taken. BN is sBN (spherical assemblies of h-BN sheets, 54 ± 18 µm) or h-BN sheets (average 5 µm). The paper confirms by XRD that sBN is h-BN, so both are coded h-BN. Every hypergravity loading is the INITIAL wt% in the raw mixture; BN settles toward the bottom, so the real local content is higher and is never quantified. Ranges printed in the text were not recorded as rows because each spans several samples and the individual values are only in figures: s'
+  rows_rejected_at_append: []
+  rows_added:
+  - f6d6e0a7-269
+  - f6d6e0a7-270
+  - f6d6e0a7-271
+  - f6d6e0a7-272
+  - f6d6e0a7-273
+  - f6d6e0a7-274
+  - f6d6e0a7-275
+  - f6d6e0a7-276
+measurements:
+- row_id: f6d6e0a7-269
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: none
+  filler_material_original: neat silicone rubber, hypergravity treated
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Centrifuged (hypergravity treatment) before heat curing at 60 °C 2 h then 120 °C 2 h
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 0.2
+  k_direction: 'through-plane (Figure 6a caption: through-plane thermal conductivity)'
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 0.2
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 2: ''The thermal conductivity in different parts of neat silicone rubber is almost the same (~0.2 W/mK, Figure 6a), suggesting that hypergravity did not cause accumulation in neat silicone rubber.'''
+  confidence: High
+  notes: Approximate value (~0.2) printed for all positions (top, middle and bottom) of neat SR.
+- row_id: f6d6e0a7-270
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: h-BN
+  filler_material_original: sBN (spherical assembled h-BN), sample sBN/SR-35% without hypergravity treatment
+  filler_shape: spherical assemblies of h-BN sheets
+  filler_mean_size_um: 54.0
+  size_distribution: 54 ± 18 µm
+  filler_loading_wt_pct: 35.0
+  filler_loading_original_value: 35.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Mechanical stirring 2 min + mortar grinding 30 min, vacuum degassing 20 min, cast in stainless steel mold, heat-cured 60 °C 2 h + 120 °C 2 h (no hypergravity)
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.5
+  k_direction: 'through-plane (Figure 6b caption: through-plane thermal conductivity)'
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 1.5
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 3: ''For instance, sBN/SR-35% composite prepared without hypergravity treatments has a thermal conductivity of 1.5 W/mK, sBN/SR-35% composites prepared with hypergravity treatments have higher thermal conductivity (1.9–3.7 W/mK), and the sBN/SR-40%-15,000 rpm composite has the highest (4.0 W/mK) (Figure 6b).'''
+  confidence: High
+  notes: Conventional reference sample without hypergravity; the composition is uniform. The k_matrix value is the ~0.2 W/mK of hypergravity-treated neat SR.
+- row_id: f6d6e0a7-271
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: h-BN
+  filler_material_original: sBN (spherical assembled h-BN), sample sBN/SR-40%-15,000 rpm-Bottom
+  filler_shape: spherical assemblies of h-BN sheets
+  filler_mean_size_um: 54.0
+  size_distribution: 54 ± 18 µm
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: none (hypergravity-induced settling/accumulation; near-isotropic k)
+  processing_method: Mechanical stirring 2 min + mortar grinding 30 min, centrifuged 30 min at 15,000 rpm (~20,000 g), heat-cured 60 °C 2 h + 120 °C 2 h; specimen cut from bottom of tube
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 4.0
+  k_direction: through-plane (bottom position; Figure 6b/7/8b through-plane)
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 4.0
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 3: ''For instance, sBN/SR-35% composite prepared without hypergravity treatments has a thermal conductivity of 1.5 W/mK, sBN/SR-35% composites prepared with hypergravity treatments have higher thermal conductivity (1.9–3.7 W/mK), and the sBN/SR-40%-15,000 rpm composite has the highest (4.0 W/mK) (Figure 6b).'''
+  confidence: High
+  notes: The 40 wt% is the INITIAL sBN concentration in the raw mixture. The actual BN content in the bottom specimen is higher because of accumulation and is not reported. The paper states that all Figure 7 values are through-plane at the bottom position. It is the highest value in the paper and is repeated in the abstract and conclusions.
+- row_id: f6d6e0a7-272
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: h-BN
+  filler_material_original: sBN (spherical assembled h-BN), sample sBN/SR-40%-15,000 rpm-Bottom (in-plane specimen)
+  filler_shape: spherical assemblies of h-BN sheets
+  filler_mean_size_um: 54.0
+  size_distribution: 54 ± 18 µm
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: none (hypergravity-induced settling/accumulation; near-isotropic k)
+  processing_method: Mechanical stirring 2 min + mortar grinding 30 min, centrifuged 30 min at 15,000 rpm (~20,000 g), heat-cured 60 °C 2 h + 120 °C 2 h; specimen cut from bottom of tube
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 3.2
+  k_direction: in-plane (bottom position; 'in the other direction 3.2 W/mK')
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 3.2
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 7 (discussing Figure 8b): ''The quasi-isotropy means the thermal conductivity at two directions is quite close (in one direction 4.0 W/mK and in the other direction 3.2 W/mK), which is quite different from the conventional anisotropic thermal conductivity reported in the literature [44,45].'''
+  confidence: High
+  notes: The bottom-position direction is assigned from the preceding sentence, which says the bottom has higher k through-plane than in-plane, so 4.0 is through-plane and 3.2 is in-plane. The sample is sBN/SR-40%-15,000 rpm (Figure 8b caption). The loading is the initial wt% in the raw mixture.
+- row_id: f6d6e0a7-273
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: h-BN
+  filler_material_original: sBN (spherical assembled h-BN), sample sBN/SR-40%-15,000 rpm-Middle (in-plane specimen)
+  filler_shape: spherical assemblies of h-BN sheets
+  filler_mean_size_um: 54.0
+  size_distribution: 54 ± 18 µm
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: none (isotropic k in middle position)
+  processing_method: Mechanical stirring 2 min + mortar grinding 30 min, centrifuged 30 min at 15,000 rpm (~20,000 g), heat-cured 60 °C 2 h + 120 °C 2 h; specimen cut from middle of tube
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 3.2
+  k_direction: in-plane (middle position)
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 3.2
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 7 (discussing Figure 8b): ''Figure 8b suggests that the sBN/SR-15,000 rpm composite has the same in-plane and through-plane thermal conductivity in the middle position (3.2 W/mK).'''
+  confidence: High
+  notes: The text names the sample 'sBN/SR-15,000 rpm'. The Figure 8b caption identifies it as sBN/SR-40%-15,000 rpm. The loading is the initial wt% in the raw mixture.
+- row_id: f6d6e0a7-274
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: h-BN
+  filler_material_original: sBN (spherical assembled h-BN), sample sBN/SR-40%-15,000 rpm-Middle (through-plane specimen)
+  filler_shape: spherical assemblies of h-BN sheets
+  filler_mean_size_um: 54.0
+  size_distribution: 54 ± 18 µm
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  filler_alignment: none (isotropic k in middle position)
+  processing_method: Mechanical stirring 2 min + mortar grinding 30 min, centrifuged 30 min at 15,000 rpm (~20,000 g), heat-cured 60 °C 2 h + 120 °C 2 h; specimen cut from middle of tube
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 3.2
+  k_direction: through-plane (middle position)
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 3.2
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 7 (discussing Figure 8b): ''Figure 8b suggests that the sBN/SR-15,000 rpm composite has the same in-plane and through-plane thermal conductivity in the middle position (3.2 W/mK).'''
+  confidence: High
+  notes: The text names the sample 'sBN/SR-15,000 rpm'. The Figure 8b caption identifies it as sBN/SR-40%-15,000 rpm. The loading is the initial wt% in the raw mixture.
+- row_id: f6d6e0a7-275
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: h-BN
+  filler_material_original: sBN (spherical assembled h-BN), sample sBN/SR-30%-3000 rpm (bottom)
+  filler_shape: spherical assemblies of h-BN sheets
+  filler_mean_size_um: 54.0
+  size_distribution: 54 ± 18 µm
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Mechanical stirring 2 min + mortar grinding 30 min, centrifuged 30 min at 3000 rpm (~800 g), heat-cured 60 °C 2 h + 120 °C 2 h; specimen cut from bottom of tube
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 1.6
+  k_direction: through-plane (bottom position; 'all the thermal conductivity in Figure 7 refers to the through-plane thermal conductivity in the bottom position')
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 1.6
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 5: ''In the case of sBN/SR composites (Figure 7b), the sBN/SR-30%-3000 rpm composite has a thermal conductivity of 1.6 W/mK, while the sBN/SR-30%-15,000 rpm composite has an obviously higher value (3.6 W/mK).'''
+  confidence: High
+  notes: The loading is the initial sBN wt% in the raw mixture. The bottom-position content is higher and is not reported.
+- row_id: f6d6e0a7-276
+  matrix_polymer: Addition-type two-part (A-B) silicone rubber diluted with dimethyl silicone oil (Part A:Part B:oil = 10:1:11 by mass)
+  curing_agent: Silicone Part B (addition-cure A-B system); heat-cured 60 °C 2 h + 120 °C 2 h
+  filler_material: h-BN
+  filler_material_original: sBN (spherical assembled h-BN), sample sBN/SR-30%-15,000 rpm (bottom)
+  filler_shape: spherical assemblies of h-BN sheets
+  filler_mean_size_um: 54.0
+  size_distribution: 54 ± 18 µm
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt%
+  functionalization: none
+  processing_method: Mechanical stirring 2 min + mortar grinding 30 min, centrifuged 30 min at 15,000 rpm (~20,000 g), heat-cured 60 °C 2 h + 120 °C 2 h; specimen cut from bottom of tube
+  k_matrix_W_mK: 0.2
+  k_composite_W_mK: 3.6
+  k_direction: through-plane (bottom position; 'all the thermal conductivity in Figure 7 refers to the through-plane thermal conductivity in the bottom position')
+  measurement_method: Steady heat flow method, DRL-III thermal conductivity meter (Xiangtan Instrument), ASTM D5470
+  k_original_value: 3.6
+  k_original_unit: W/mK
+  value_source: text
+  source_location: 'Section 3.3, paragraph 5: ''In the case of sBN/SR composites (Figure 7b), the sBN/SR-30%-3000 rpm composite has a thermal conductivity of 1.6 W/mK, while the sBN/SR-30%-15,000 rpm composite has an obviously higher value (3.6 W/mK).'''
+  confidence: High
+  notes: The loading is the initial sBN wt% in the raw mixture. The bottom-position content is higher and is not reported.

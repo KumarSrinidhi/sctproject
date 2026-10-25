@@ -1,0 +1,67 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P097
+paper:
+  doi: 10.3390/polym11081340
+  title: Fabrication and Enhanced Thermal Conductivity of Boron Nitride and Polyarylene Ether Nitrile Hybrids
+  year: 2019
+  source_url: https://doi.org/10.3390/polym11081340
+extraction_log:
+- seq: 109
+  candidate_id: P6-P097
+  doi: 10.3390/polym11081340
+  paper_title: Fabrication and Enhanced Thermal Conductivity of Boron Nitride and Polyarylene Ether Nitrile Hybrids
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_polym11081340.txt (cache, not committed)
+  tables_inspected: Table 1 (gel content, crosslink density, Tg, Td, mechanical and electrical properties; no thermal conductivity values)
+  figures_inspected: Figure 10 (k vs BN-CN content), Figure 11 (Agari model fit; modelled)
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: 'Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 3 figure-only values not taken. Only two k values are printed: the neat matrix (0.30) and the 16 wt% hybrid (0.74). The 4, 8 and 12 wt% hybrids appear only in Figure 10, so they are skipped (3). The abstract and conclusions repeat 0.74. BNNS/PEN (0.45) and BN@SPEN/PEN (0.7) in the Introduction come from other papers and are excluded. Units are printed as W/(m·k) with a lowercase k. The paper does not state the measurement direction or temperature.'
+  rows_rejected_at_append: []
+  rows_added:
+  - c15aaed9-263
+  - c15aaed9-264
+measurements:
+- row_id: c15aaed9-263
+  matrix_polymer: Phthalonitrile end-capped polyarylene ether nitrile (PEN-Ph), self-crosslinked into PEN
+  filler_material: none
+  filler_material_original: none, sample PEN-g-BN0 (PEN)
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt%
+  processing_method: Solution casting from NMP onto glass, stepwise drying 90-200 °C, then cured at 340 °C for 4 h (self-crosslinking of -CN groups)
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 0.3
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA 457; disks ~12.7 mm diameter, 1 mm thick
+  k_original_value: 0.3
+  k_original_unit: W/(m·k)
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph discussing Figure 10: ''Specifically, for PEN-g-BN0 (PEN), the thermal conductivity is 0.30 W/(m·k).'''
+  confidence: High
+  notes: Neat cured PEN reference (0 wt% BN-CN).
+- row_id: c15aaed9-264
+  matrix_polymer: Phthalonitrile end-capped polyarylene ether nitrile (PEN-Ph), self-crosslinked into PEN
+  filler_material: h-BN
+  filler_material_original: Phthalonitrile-modified BN (BN-CN, from hexagonal boron nitride), sample PEN-g-BN16
+  filler_loading_wt_pct: 16.0
+  filler_loading_original_value: 16.0
+  filler_loading_original_unit: wt%
+  functionalization: Hydroxylated by ball milling in NaOH, then reacted with isophorone diisocyanate (IPDI) and 3-aminophenoxyphthalonitrile (3-APN) to give phthalonitrile-grafted BN (BN-CN), covalently crosslinked to the PEN matrix
+  processing_method: Solution casting from NMP onto glass, stepwise drying 90-200 °C, then cured at 340 °C for 4 h (self-crosslinking of -CN groups)
+  k_matrix_W_mK: 0.3
+  k_composite_W_mK: 0.74
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA 457; disks ~12.7 mm diameter, 1 mm thick
+  k_original_value: 0.74
+  k_original_unit: W/(m·k)
+  value_source: text
+  source_location: 'Section 3 (Results and Discussion), paragraph discussing Figure 10: ''It increases to 0.74 W/(m·k), an increase of 146.7%, when the BN-CN content is 16 wt %.'''
+  confidence: High
+  notes: Loading is wt% of modified BN-CN. The paper names the source BN as hexagonal BN (J&K Chemicals).

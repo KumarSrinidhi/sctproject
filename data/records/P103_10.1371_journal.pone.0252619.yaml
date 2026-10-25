@@ -1,0 +1,159 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P103
+paper:
+  doi: 10.1371/journal.pone.0252619
+  title: Study on aluminum nitride/addition-cure liquid silicone rubber composite for high-voltage power encapsulation
+  year: 2021
+  source_url: https://doi.org/10.1371/journal.pone.0252619
+extraction_log:
+- seq: 115
+  candidate_id: P6-P103
+  doi: 10.1371/journal.pone.0252619
+  paper_title: Study on aluminum nitride/addition-cure liquid silicone rubber composite for high-voltage power encapsulation
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.1371_journal.pone.0252619.txt (cache, not committed)
+  tables_inspected: Table 1 (density, heat capacity), Table 2 (Weibull parameters), Table 3 (encapsulation module parameters incl. measured thermal conductivities), Table 4 (simulated vs measured temperatures, not k)
+  figures_inspected: Fig 2 (thermal conductivity vs AlN content); same values are printed in Table 3, so nothing was figure-only
+  candidate_measurements: 6
+  rows_appended: 6
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 0 figure-only values not taken. Table 3 is in the 'Simulation and experiment' section, but its k column holds the measured laser-flash values (fed into the ANSYS Icepak model), not simulated ones. The text repeats the 0 and 50 wt% values, so I made one row per sample from the table. Direction is not stated (laser flash on discs). Room temperature has no number. The fumed silica content is not given.
+  rows_rejected_at_append: []
+  rows_added:
+  - e00f4f87-285
+  - e00f4f87-286
+  - e00f4f87-287
+  - e00f4f87-288
+  - e00f4f87-289
+  - e00f4f87-290
+measurements:
+- row_id: e00f4f87-285
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (1000 cSt, 0.82 mol% vinyl) crosslinked with polymethylhydrogensiloxane'
+  curing_agent: Polymethylhydrogensiloxane (PHMS, nSi-Vi:nSi-H = 1:1.2) with Karstedt's Pt catalyst and 1-ethynyl-1-cyclohexanol inhibitor; cured 120 °C, 150 min
+  filler_material: none
+  filler_material_original: Pure ALSR, mass fraction 0
+  filler_loading_vol_pct: 0.0
+  filler_loading_wt_pct: 0.0
+  filler_loading_original_value: 0.0
+  filler_loading_original_unit: wt% (mass fraction)
+  processing_method: Mechanical stirring, cast into stainless-steel molds, vacuum deaeration, oven cure at 120 °C for 150 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.16
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA467 (thermal diffusivity and Cp), density by Archimedes principle; Tc = λ × Cp × ρ; cylindrical samples 10 mm diameter, 1.5–2 mm thick; room temperature
+  k_original_value: 0.16
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 3: ''0 | 29.580 | 0.16 | 7.12 | 249.74*86.24*39.34'''
+  confidence: High
+  notes: Neat matrix. Also printed in the text as 'pure ALSR (0.16 W/(m·K))'. Measured at room temperature (no number given). Whether the neat sample contained the fumed silica anti-settle agent is not stated.
+- row_id: e00f4f87-286
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (1000 cSt, 0.82 mol% vinyl) crosslinked with polymethylhydrogensiloxane'
+  curing_agent: Polymethylhydrogensiloxane (PHMS, nSi-Vi:nSi-H = 1:1.2) with Karstedt's Pt catalyst and 1-ethynyl-1-cyclohexanol inhibitor; cured 120 °C, 150 min
+  filler_material: AlN
+  filler_material_original: Aluminum nitride (Shanghai Cwnano, avg 1 μm), AlN/ALSR 10 wt%
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 10.0
+  filler_loading_original_value: 10.0
+  filler_loading_original_unit: wt% (mass fraction)
+  functionalization: none
+  processing_method: AlN and fumed nano-silica dispersed by mechanical stirring (150 min), cast into stainless-steel molds, vacuum deaeration, oven cure at 120 °C for 150 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.198
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA467 (thermal diffusivity and Cp), density by Archimedes principle; Tc = λ × Cp × ρ; cylindrical samples 10 mm diameter, 1.5–2 mm thick; room temperature
+  k_original_value: 0.198
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 3: ''10 | 26.446 | 0.198 | 7.96 | 251.42*87.92*41.02'''
+  confidence: High
+  notes: Measured k listed in Table 3 (module-simulation input table; the values are the measured ones from Fig 2). Also contains fumed nano-silica (7 nm, anti-settle agent), amount not stated.
+- row_id: e00f4f87-287
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (1000 cSt, 0.82 mol% vinyl) crosslinked with polymethylhydrogensiloxane'
+  curing_agent: Polymethylhydrogensiloxane (PHMS, nSi-Vi:nSi-H = 1:1.2) with Karstedt's Pt catalyst and 1-ethynyl-1-cyclohexanol inhibitor; cured 120 °C, 150 min
+  filler_material: AlN
+  filler_material_original: Aluminum nitride (Shanghai Cwnano, avg 1 μm), AlN/ALSR 20 wt%
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 20.0
+  filler_loading_original_value: 20.0
+  filler_loading_original_unit: wt% (mass fraction)
+  functionalization: none
+  processing_method: AlN and fumed nano-silica dispersed by mechanical stirring (150 min), cast into stainless-steel molds, vacuum deaeration, oven cure at 120 °C for 150 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.245
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA467 (thermal diffusivity and Cp), density by Archimedes principle; Tc = λ × Cp × ρ; cylindrical samples 10 mm diameter, 1.5–2 mm thick; room temperature
+  k_original_value: 0.245
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 3: ''20 | 25.833 | 0.245 | 8.16 | 251.82*88.32*41.42'''
+  confidence: High
+  notes: Measured k listed in Table 3. Also contains fumed nano-silica (7 nm, anti-settle agent), amount not stated.
+- row_id: e00f4f87-288
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (1000 cSt, 0.82 mol% vinyl) crosslinked with polymethylhydrogensiloxane'
+  curing_agent: Polymethylhydrogensiloxane (PHMS, nSi-Vi:nSi-H = 1:1.2) with Karstedt's Pt catalyst and 1-ethynyl-1-cyclohexanol inhibitor; cured 120 °C, 150 min
+  filler_material: AlN
+  filler_material_original: Aluminum nitride (Shanghai Cwnano, avg 1 μm), AlN/ALSR 30 wt%
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 30.0
+  filler_loading_original_value: 30.0
+  filler_loading_original_unit: wt% (mass fraction)
+  functionalization: none
+  processing_method: AlN and fumed nano-silica dispersed by mechanical stirring (150 min), cast into stainless-steel molds, vacuum deaeration, oven cure at 120 °C for 150 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.313
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA467 (thermal diffusivity and Cp), density by Archimedes principle; Tc = λ × Cp × ρ; cylindrical samples 10 mm diameter, 1.5–2 mm thick; room temperature
+  k_original_value: 0.313
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 3: ''30 | 24.939 | 0.313 | 8.45 | 252.4*88.9*42'''
+  confidence: High
+  notes: Measured k listed in Table 3. Also contains fumed nano-silica (7 nm, anti-settle agent), amount not stated.
+- row_id: e00f4f87-289
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (1000 cSt, 0.82 mol% vinyl) crosslinked with polymethylhydrogensiloxane'
+  curing_agent: Polymethylhydrogensiloxane (PHMS, nSi-Vi:nSi-H = 1:1.2) with Karstedt's Pt catalyst and 1-ethynyl-1-cyclohexanol inhibitor; cured 120 °C, 150 min
+  filler_material: AlN
+  filler_material_original: Aluminum nitride (Shanghai Cwnano, avg 1 μm), AlN/ALSR 40 wt%
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 40.0
+  filler_loading_original_value: 40.0
+  filler_loading_original_unit: wt% (mass fraction)
+  functionalization: none
+  processing_method: AlN and fumed nano-silica dispersed by mechanical stirring (150 min), cast into stainless-steel molds, vacuum deaeration, oven cure at 120 °C for 150 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.399
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA467 (thermal diffusivity and Cp), density by Archimedes principle; Tc = λ × Cp × ρ; cylindrical samples 10 mm diameter, 1.5–2 mm thick; room temperature
+  k_original_value: 0.399
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 3: ''40 | 23.542 | 0.399 | 8.95 | 253.4*89.9*43'''
+  confidence: High
+  notes: Measured k listed in Table 3; 40 wt% chosen as the optimal ratio for module encapsulation. Also contains fumed nano-silica (7 nm, anti-settle agent), amount not stated.
+- row_id: e00f4f87-290
+  matrix_polymer: 'Addition-cure liquid silicone rubber (ALSR): vinyl-terminated PDMS (1000 cSt, 0.82 mol% vinyl) crosslinked with polymethylhydrogensiloxane'
+  curing_agent: Polymethylhydrogensiloxane (PHMS, nSi-Vi:nSi-H = 1:1.2) with Karstedt's Pt catalyst and 1-ethynyl-1-cyclohexanol inhibitor; cured 120 °C, 150 min
+  filler_material: AlN
+  filler_material_original: Aluminum nitride (Shanghai Cwnano, avg 1 μm), AlN/ALSR 50 wt%
+  filler_mean_size_um: 1.0
+  filler_loading_wt_pct: 50.0
+  filler_loading_original_value: 50.0
+  filler_loading_original_unit: wt% (mass fraction)
+  functionalization: none
+  processing_method: AlN and fumed nano-silica dispersed by mechanical stirring (150 min), cast into stainless-steel molds, vacuum deaeration, oven cure at 120 °C for 150 min
+  k_matrix_W_mK: 0.16
+  k_composite_W_mK: 0.505
+  k_direction: unknown
+  measurement_method: Laser flash, Netzsch LFA467 (thermal diffusivity and Cp), density by Archimedes principle; Tc = λ × Cp × ρ; cylindrical samples 10 mm diameter, 1.5–2 mm thick; room temperature
+  k_original_value: 0.505
+  k_original_unit: W/(m·K)
+  value_source: table
+  source_location: 'Table 3: ''50 | 22.736 | 0.505 | 9.26 | 254.02*90.52*43.62'''
+  confidence: High
+  notes: 'Measured k listed in Table 3. The text gives the same value: 0.505 W (m-1 K-1) at 50 wt%, 3.16× pure ALSR. Also contains fumed nano-silica (7 nm, anti-settle agent), amount not stated.'

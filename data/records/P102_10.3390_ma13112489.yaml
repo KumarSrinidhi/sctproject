@@ -1,0 +1,70 @@
+# ARGUS curated extraction record: one paper, all measurements taken from it.
+# Every value must be traceable via source_location. Edit by hand or with the
+# argus CLI, then run `argus validate` and `argus build`.
+schema_version: 1
+paper_id: P102
+paper:
+  doi: 10.3390/ma13112489
+  title: Performance of Silicone Rubber Composites Filled with Aluminum Nitride and Alumina Tri-Hydrate
+  year: 2020
+  source_url: https://doi.org/10.3390/ma13112489
+extraction_log:
+- seq: 114
+  candidate_id: P6-P102
+  doi: 10.3390/ma13112489
+  paper_title: Performance of Silicone Rubber Composites Filled with Aluminum Nitride and Alumina Tri-Hydrate
+  date_processed: '2026-10-25'
+  access_result: Europe PMC JATS full text (OA; cc-by)
+  files_inspected: sources/text/10.3390_ma13112489.txt (cache, not committed)
+  tables_inspected: No tables in the text rendering (the recipe is given in the text of Section 2.2)
+  figures_inspected: Figure 7 (thermal conductivity of SR composites, SR/ATH/AlN and SR/ATH/AlN–VTMS series at 6 ATH/AlN ratios). Values for the pure-AlN end points are printed in Section 3.6 and extracted; the mixed ATH/AlN points are only in the figure.
+  candidate_measurements: 2
+  rows_appended: 2
+  unit_conversions: none (values as printed)
+  duplicate_checks: new DOI; no prior rows
+  qc_findings: Extracted by one agent, every row checked against the source by an independent verifier; quotes verified verbatim; 8 figure-only values not taken. Only the two all-AlN samples have printed k. The four mixed ATH/AlN compositions in each of the two series (8 points) appear only in Figure 7 and were skipped. Neat SR k is not printed. Direction is not stated (laser flash).
+  rows_rejected_at_append: []
+  rows_added:
+  - ccea83ac-283
+  - ccea83ac-284
+measurements:
+- row_id: ccea83ac-283
+  matrix_polymer: High-temperature-vulcanized silicone rubber (MVQ110, Wynca; vinyl 0.23 wt%, Mw 680,000 g/mol)
+  curing_agent: 2,5-bis(tert-butylperoxy)-2,5-dimethyl hexane (DBPMH), 0.5 phr
+  filler_material: AlN
+  filler_material_original: AlN (ZH-AlN010, ~10 μm, 99.0%), sample SR/AlN150
+  filler_mean_size_um: 10.0
+  filler_loading_original_value: 150.0
+  filler_loading_original_unit: phr (parts by weight per 100 SR)
+  functionalization: none (no VTMS)
+  processing_method: Two-roll mill (6 inch) compounding, hot-press vulcanization at 170 °C, 15 MPa, 10 min
+  k_composite_W_mK: 0.275
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 427) for thermal diffusivity; Cp by DSC (NETZSCH, 10 °C/min, N2); density by density tester (MatsuHaku MH-300A); κ = α × Cp × ρ
+  measurement_temperature_C: 25.0
+  k_original_value: 0.275
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.6, paragraph 1: ''After all of the ATH particles are replaced by AlN, the SR/AlN150 and the SR/AlN150–VTMS composites exhibit thermal conductivities of 0.275 W m−1 K−1 and 0.307 W m−1 K−1, respectively, 37.5% and 30.1% higher than those for the SR/ATH150 (0.200 W m−1 K−1) and SR/ATH150–VTMS (0.236 W m−1 K−1) composites, respectively.'''
+  confidence: High
+  notes: 'All 150 phr of filler is AlN (no ATH). Recipe: SR 100, filler 150, DBPMH 0.5, VTMS 0 parts by weight. Temperature from the general statement ''All measurements were performed at 25 °C unless mentioned otherwise''. Neat SR k not printed. SR/ATH150 (0.200) not extracted (no AlN).'
+- row_id: ccea83ac-284
+  matrix_polymer: High-temperature-vulcanized silicone rubber (MVQ110, Wynca; vinyl 0.23 wt%, Mw 680,000 g/mol)
+  curing_agent: 2,5-bis(tert-butylperoxy)-2,5-dimethyl hexane (DBPMH), 0.5 phr
+  filler_material: AlN
+  filler_material_original: AlN (ZH-AlN010, ~10 μm, 99.0%) with VTMS coupling agent, sample SR/AlN150–VTMS
+  filler_mean_size_um: 10.0
+  filler_loading_original_value: 150.0
+  filler_loading_original_unit: phr (parts by weight per 100 SR)
+  functionalization: vinyl tri-methoxysilane (VTMS) silane coupling agent, 1.0 phr, added during mixing
+  processing_method: Two-roll mill (6 inch) compounding, hot-press vulcanization at 170 °C, 15 MPa, 10 min
+  k_composite_W_mK: 0.307
+  k_direction: unknown
+  measurement_method: Laser flash (NETZSCH LFA 427) for thermal diffusivity; Cp by DSC (NETZSCH, 10 °C/min, N2); density by density tester (MatsuHaku MH-300A); κ = α × Cp × ρ
+  measurement_temperature_C: 25.0
+  k_original_value: 0.307
+  k_original_unit: W m−1 K−1
+  value_source: text
+  source_location: 'Section 3.6, paragraph 1: ''After all of the ATH particles are replaced by AlN, the SR/AlN150 and the SR/AlN150–VTMS composites exhibit thermal conductivities of 0.275 W m−1 K−1 and 0.307 W m−1 K−1, respectively, 37.5% and 30.1% higher than those for the SR/ATH150 (0.200 W m−1 K−1) and SR/ATH150–VTMS (0.236 W m−1 K−1) composites, respectively.'''
+  confidence: High
+  notes: 'All 150 phr of filler is AlN (no ATH). Recipe: SR 100, filler 150, DBPMH 0.5, VTMS 1.0 parts by weight. Temperature from the general statement ''All measurements were performed at 25 °C unless mentioned otherwise''. SR/ATH150–VTMS (0.236) not extracted (no AlN).'
