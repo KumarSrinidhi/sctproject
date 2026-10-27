@@ -6,6 +6,17 @@ All values are traceable to a specific paper, table, figure, or text location. N
 
 **Dataset v1.2.0** (2026-10-25): **639 rows / 174 papers**, up from 258 / 95 in v1.1 (tag `data-v1.1`). The 381 new rows come from 79 open-access papers found and checked with the Phase 6 acquisition tools. See [data/CHANGELOG.md](data/CHANGELOG.md).
 
+## Start here
+
+- **[Course report](docs/course_report/COURSE_REPORT.md)** (Semiconductor Characterization Techniques): what the measurement method does to the reported k, with figures and a reporting checklist.
+- **Interactive explorer:** download [`docs/explorer/index.html`](docs/explorer/index.html) and open it in a browser. It is one offline file; click any point to see its verbatim source quote and DOI.
+- **The data:** [`thermal_conductivity_dataset.csv`](thermal_conductivity_dataset.csv) (one measured k per row), with columns described in [`datapackage.json`](datapackage.json).
+
+Main findings:
+- **Direction matters most.** The same sample reads a median **4.1×** higher in-plane than through-plane, so an isotropic transient sensor can read up to about 3.4× a laser-flash value.
+- **Between papers, the instrument is not detectable** (×1.01, 95% CI 0.70–1.48). Paper-to-paper scatter (×1.87) far exceeds instrument uncertainty (about 8%).
+- **Prediction for an unseen paper:** about ×1.7 typical error, against ×2.1 for calibrated physics. Random row splits overstate accuracy.
+
 **Tested on other groups' data** (`argus external validate`, [report](reports/external_validation.md)):
 - Our effective-medium code reproduces 6 of 7 published model columns of two independent implementations
   exactly. Where the seventh (asymmetric Bruggeman) differs, the published values fail the model's own
